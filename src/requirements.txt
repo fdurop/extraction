@@ -1,0 +1,32 @@
+# 深度学习框架
+torch>=2.0.0
+transformers>=4.30.0
+
+# PDF和文档处理
+PyMuPDF>=1.23.0
+
+# 图像处理
+pillow>=9.5.0
+
+# 数值计算
+numpy>=1.24.0
+
+# 进度条和工具
+tqdm>=4.65.0
+
+# OCR和文档解析
+easyocr>=1.7.0
+pytesseract>=0.3.10
+opencv-python>=4.8.0
+
+# 表格和公式解析
+tabula-py>=2.7.0
+camelot-py[cv]>=0.10.1
+pdfplumber>=0.9.0
+
+# 数据处理
+pandas>=2.0.0
+regex>=2023.6.3
+
+# PPTX 处理
+python-pptx>=0.6.23
