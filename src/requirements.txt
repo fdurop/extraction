@@ -1,0 +1,49 @@
+# ========================================
+# src/ 目录依赖（与项目根目录同步）
+# ========================================
+
+# PyTorch
+torch==2.2.2
+
+# DeepSeek-VL
+transformers==4.38.2
+accelerate==0.27.0
+attrdict2
+einops==0.7.0
+timm==0.9.16
+sentencepiece==0.1.99
+
+# OCR
+paddleocr==2.7.3
+paddlepaddle-gpu==2.6.0
+
+# 图像处理
+opencv-python==4.6.0
+Pillow==10.2.0
+Wand==0.6.13
+imageio==2.34.0
+
+# 文档处理
+PyMuPDF==1.23.26
+pdfplumber==0.10.4
+camelot-py[cv]==0.11.0
+python-pptx==0.6.23
+python-docx==1.1.0
+ghostscript==0.7
+
+# 数据处理
+numpy==1.26.4
+pandas==2.2.0
+scipy==1.12.0
+openpyxl==3.1.2
+xlrd==2.0.1
+
+# 实用工具
+requests==2.31.0
+tqdm==4.66.2
+colorama==0.4.6
+pypinyin==0.50.0
+markdown==3.5.2
+mdtex2html==1.3.0
+Pygments==2.17.2
+tiktoken==0.5.2
