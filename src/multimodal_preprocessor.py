@@ -72,7 +72,7 @@ class MultimodalPreprocessor:
         LoggerSetup.log_session_start(self.logger)
         
         print("\n" + "=" * 60)
-        print("🚀 多模态数据提取系统 - 初始化开始")
+        print("多模态数据提取系统 - 初始化开始")
         print("=" * 60)
         print(f"   配置: DeepSeek-VL={use_deepseek}, CLIP={use_clip}")
         
@@ -80,13 +80,13 @@ class MultimodalPreprocessor:
         self.logger.info(f"使用DeepSeek-VL: {use_deepseek}, 使用CLIP: {use_clip}")
         
         # 检测设备
-        print("\n📱 [步骤 1/4] 检测计算设备...")
+        print("\n[步骤 1/4] 检测计算设备...")
         self.device = "cuda" if torch.cuda.is_available() else "cpu"
         if self.device == "cuda":
             gpu_name = torch.cuda.get_device_name(0)
-            print(f"   ✅ 检测到 CUDA GPU: {gpu_name}")
+            print(f"   [OK] 检测到 CUDA GPU: {gpu_name}")
         else:
-            print(f"   ⚠️  未检测到GPU，将使用CPU（速度较慢）")
+            print(f"   [WARN] 未检测到GPU，将使用CPU（速度较慢）")
         self.logger.info(f"检测到计算设备: {self.device}")
         
         # 设置模型使用选项
@@ -94,19 +94,19 @@ class MultimodalPreprocessor:
         self.use_clip = use_clip
         
         # 创建输出目录
-        print("\n📁 [步骤 2/4] 创建输出目录...")
+        print("\n[步骤 2/4] 创建输出目录...")
         dirs = ["text", "images", "formulas", "tables", "code", "logs"]
         for d in dirs:
             os.makedirs(f"output/{d}", exist_ok=True)
-        print(f"   ✅ 输出目录创建完成: {', '.join(dirs)}")
+        print(f"   [OK] 输出目录创建完成: {', '.join(dirs)}")
         self.logger.info("输出目录创建完成: text, images, formulas, tables, code, logs")
         
         # 初始化DeepSeek-VL模型
-        print("\n🤖 [步骤 3/4] 初始化 AI 模型...")
+        print("\n[步骤 3/4] 初始化 AI 模型...")
         self.deepseek_vl = None
         if self.use_deepseek and DeepSeekVLWrapper is not None:
             try:
-                print("   ⏳ 正在初始化 DeepSeek-VL（这是最耗时的步骤）...")
+                print("   正在初始化 DeepSeek-VL（这是最耗时的步骤）...")
                 self.logger.info("开始初始化DeepSeek-VL模型")
                 self.deepseek_vl = DeepSeekVLWrapper(
                     model_path="./models/deepseek-vl-7b-chat",
@@ -165,8 +165,8 @@ class MultimodalPreprocessor:
                     self.use_clip = False
         
         # 初始化OCR引擎（首次运行较慢）
-        print("\n📝 [步骤 4/4] 初始化 OCR 引擎...")
-        print("   ⏳ 正在加载 PaddleOCR 中文+英文模型...")
+        print("\n[步骤 4/4] 初始化 OCR 引擎...")
+        print("   正在加载 PaddleOCR 中文+英文模型...")
         print("      （首次运行需要下载，可能需要1-3分钟）")
         self.logger.info("开始初始化OCR引擎")
         
@@ -184,10 +184,10 @@ class MultimodalPreprocessor:
                 show_log=False
             )
             device_info = "GPU加速" if use_gpu else "CPU模式"
-            print(f"   ✅ OCR引擎初始化完成 (PaddleOCR {device_info})")
+            print(f"   [OK] OCR引擎初始化完成 (PaddleOCR {device_info})")
             self.logger.info(f"OCR引擎初始化成功 (PaddleOCR, gpu={use_gpu})")
         except Exception as e:
-            print(f"   ⚠️  OCR初始化失败: {e}")
+            print(f"   [WARN] OCR初始化失败: {e}")
             print("      → 将继续运行，但跳过OCR公式识别功能")
             self.logger.warning(f"OCR初始化失败: {e}")
             self.ocr_reader = None
@@ -196,10 +196,10 @@ class MultimodalPreprocessor:
         self.results = []
         
         print("\n" + "=" * 60)
-        print("✅ 初始化完成！系统已就绪")
+        print("[OK] 初始化完成！系统已就绪")
         print("=" * 60)
         log_path = LoggerSetup.get_log_file_path()
-        print(f"📄 日志文件: {log_path}\n")
+        print(f"日志文件: {log_path}\n")
         self.logger.info("多模态预处理工具初始化完成")
         self.logger.info(f"日志文件路径: {log_path}")
 
@@ -949,7 +949,7 @@ if __name__ == "__main__":
         main_logger.info("处理器初始化完成")
         
         # 检查输入目录中的PDF文件
-        input_dir = "input"
+        input_dir = r"E:\fdurop\extraction-main\src\input" # "input"
         if not os.path.exists(input_dir):
             os.makedirs(input_dir, exist_ok=True)
             print(f"[ERROR] 输入目录不存在，已创建: {input_dir}")
@@ -960,13 +960,13 @@ if __name__ == "__main__":
                           if f.lower().endswith(('.pdf', '.pptx')) and not f.startswith('~$')]
 
             if not input_files:
-                print(f"\n❌ 错误：在 {input_dir} 目录中未找到PDF/PPTX文件")
+                print(f"\n[ERROR] 错误：在 {input_dir} 目录中未找到PDF/PPTX文件")
                 print("   请将PDF或PPTX文件放入input目录后重新运行")
             else:
                 pdf_count = sum(1 for f in input_files if f.lower().endswith('.pdf'))
                 pptx_count = sum(1 for f in input_files if f.lower().endswith('.pptx'))
                 print("\n" + "=" * 60)
-                print(f"📂 扫描到文件: {pdf_count} 个PDF, {pptx_count} 个PPTX")
+                print(f"扫描到文件: {pdf_count} 个PDF, {pptx_count} 个PPTX")
                 print("=" * 60)
                 main_logger.info(f"找到 {pdf_count} 个PDF文件, {pptx_count} 个PPTX文件")
 
@@ -975,7 +975,7 @@ if __name__ == "__main__":
                 
                 for idx, in_file in enumerate(input_files, 1):
                     input_path = os.path.join(input_dir, in_file)
-                    print(f"\n📄 [{idx}/{len(input_files)}] 正在处理: {in_file}")
+                    print(f"\n[{idx}/{len(input_files)}] 正在处理: {in_file}")
                     main_logger.info(f"开始处理文件 [{idx}/{len(input_files)}]: {in_file}")
                     
                     if in_file.lower().endswith('.pdf'):
@@ -992,13 +992,13 @@ if __name__ == "__main__":
                             pptx_processor.process_pptx_file_advanced(input_path)
                             pptx_processors.append(pptx_processor)
                     
-                    print(f"   ✅ [{idx}/{len(input_files)}] 完成: {in_file}")
+                    print(f"   [OK] [{idx}/{len(input_files)}] 完成: {in_file}")
                     main_logger.info(f"完成处理文件 [{idx}/{len(input_files)}]: {in_file}")
 
                 print("\n" + "=" * 60)
-                print("🎉 所有文件处理完成！")
+                print("所有文件处理完成！")
                 print("=" * 60)
-                print(f"📁 结果保存目录: output/")
+                print(f"结果保存目录: output/")
                 print(f"   ├─ text/      (文本内容)")
                 print(f"   ├─ images/    (图片及描述)")
                 print(f"   ├─ formulas/  (公式)")
@@ -1045,7 +1045,7 @@ if __name__ == "__main__":
                 
                 # 会话成功结束
                 LoggerSetup.log_session_end(main_logger, success=True)
-                print(f"\n📋 完整日志已保存至: {LoggerSetup.get_log_file_path()}")
+                print(f"\n完整日志已保存至: {LoggerSetup.get_log_file_path()}")
                 
     except Exception as e:
         print(f"[ERROR] 处理过程中发生错误: {e}")
@@ -1053,4 +1053,4 @@ if __name__ == "__main__":
         import traceback
         traceback.print_exc()
         LoggerSetup.log_session_end(main_logger, success=False)
-        print(f"\n📋 错误日志已保存至: {LoggerSetup.get_log_file_path()}")
+        print(f"\n错误日志已保存至: {LoggerSetup.get_log_file_path()}")

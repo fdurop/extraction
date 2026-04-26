@@ -1,0 +1,30 @@
+2025-10-25 04:02:52 - Main - INFO - log_session_start:91 - ================================================================================
+2025-10-25 04:02:52 - Main - INFO - log_session_start:92 - 新处理会话开始
+2025-10-25 04:02:52 - Main - INFO - log_session_start:93 - 日志文件: logs\processing_20251025_040252.log
+2025-10-25 04:02:52 - Main - INFO - log_session_start:94 - ================================================================================
+2025-10-25 04:02:52 - Main - INFO - <module>:944 - 多模态PDF数据预处理器启动
+2025-10-25 04:02:52 - MultimodalPreprocessor - INFO - log_session_start:91 - ================================================================================
+2025-10-25 04:02:52 - MultimodalPreprocessor - INFO - log_session_start:92 - 新处理会话开始
+2025-10-25 04:02:52 - MultimodalPreprocessor - INFO - log_session_start:93 - 日志文件: logs\processing_20251025_040252.log
+2025-10-25 04:02:52 - MultimodalPreprocessor - INFO - log_session_start:94 - ================================================================================
+2025-10-25 04:02:52 - MultimodalPreprocessor - INFO - __init__:79 - 开始初始化多模态预处理工具
+2025-10-25 04:02:52 - MultimodalPreprocessor - INFO - __init__:80 - 使用DeepSeek-VL: True, 使用CLIP: False
+2025-10-25 04:02:52 - MultimodalPreprocessor - INFO - __init__:90 - 检测到计算设备: cuda
+2025-10-25 04:02:52 - MultimodalPreprocessor - INFO - __init__:102 - 输出目录创建完成: text, images, formulas, tables, code, logs
+2025-10-25 04:02:52 - MultimodalPreprocessor - INFO - __init__:110 - 开始初始化DeepSeek-VL模型
+2025-10-25 04:02:52 - DeepSeekVLWrapper - INFO - __init__:50 - 开始初始化DeepSeek-VL模型
+2025-10-25 04:02:52 - DeepSeekVLWrapper - INFO - __init__:58 - 使用设备: cuda
+2025-10-25 04:02:52 - DeepSeekVLWrapper - ERROR - __init__:62 - 模型路径不存在: ./models/deepseek-vl-7b-chat
+2025-10-25 04:02:52 - MultimodalPreprocessor - ERROR - __init__:118 - DeepSeek-VL初始化失败: 模型路径不存在: ./models/deepseek-vl-7b-chat
+Traceback (most recent call last):
+  File "E:\fdurop\extraction-main\src\multimodal_preprocessor.py", line 111, in __init__
+    self.deepseek_vl = DeepSeekVLWrapper(
+                       ^^^^^^^^^^^^^^^^^^
+  File "E:\fdurop\extraction-main\src\deepseek_vl_wrapper.py", line 63, in __init__
+    raise FileNotFoundError(f"模型路径不存在: {model_path}")
+FileNotFoundError: 模型路径不存在: ./models/deepseek-vl-7b-chat
+2025-10-25 04:02:52 - MultimodalPreprocessor - INFO - __init__:171 - 开始初始化OCR引擎
+2025-10-25 04:02:52 - MultimodalPreprocessor - WARNING - __init__:192 - OCR初始化失败: Unknown argument: use_gpu
+2025-10-25 04:02:52 - MultimodalPreprocessor - INFO - __init__:203 - 多模态预处理工具初始化完成
+2025-10-25 04:02:52 - MultimodalPreprocessor - INFO - __init__:204 - 日志文件路径: logs\processing_20251025_040252.log
+2025-10-25 04:02:52 - Main - INFO - <module>:949 - 处理器初始化完成

@@ -64,15 +64,15 @@ class DeepSeekVLWrapper:
         self.logger.info(f"模型路径: {model_path}")
         
         # 加载处理器
-        print("   ⏳ [1/3] 正在加载 VLChatProcessor...")
+        print("    [1/3] 正在加载 VLChatProcessor...")
         self.logger.info("加载VLChatProcessor")
         self.vl_chat_processor = VLChatProcessor.from_pretrained(model_path)
         self.tokenizer = self.vl_chat_processor.tokenizer
-        print("   ✅ [1/3] VLChatProcessor 加载完成")
+        print("   [OK] [1/3] VLChatProcessor 加载完成")
         self.logger.info("VLChatProcessor加载成功")
         
         # 加载模型 - 按照官方标准方式
-        print("   ⏳ [2/3] 正在加载主模型 (13.7GB，需要1-3分钟)...")
+        print("    [2/3] 正在加载主模型 (13.7GB，需要1-3分钟)...")
         print("        └─ 正在从磁盘读取模型文件...")
         self.logger.info("开始加载主模型")
         
@@ -85,7 +85,7 @@ class DeepSeekVLWrapper:
             )
             print("        └─ 模型文件加载完成，正在转换数据类型并移动到GPU...")
             self.vl_gpt = self.vl_gpt.to(torch.bfloat16).cuda().eval()
-            print("   ✅ [2/3] 主模型加载完成并已移至GPU")
+            print("   [OK] [2/3] 主模型加载完成并已移至GPU")
         else:
             # CPU模式：强制float32（按照DeepSeek官方建议）
             print("        └─ CPU模式：强制加载为float32...")
@@ -99,10 +99,10 @@ class DeepSeekVLWrapper:
             # 二次确保所有参数为float32
             self.vl_gpt = self.vl_gpt.float()
             self.vl_gpt = self.vl_gpt.eval()
-            print("   ✅ [2/3] 主模型加载完成（CPU float32模式）")
+            print("   [OK] [2/3] 主模型加载完成（CPU float32模式）")
             self.logger.info("Float32强制转换完成")
         
-        print("   ✅ [3/3] DeepSeek-VL 初始化完成！\n")
+        print("   [OK] [3/3] DeepSeek-VL 初始化完成！\n")
         self.logger.info("DeepSeek-VL模型加载完成")
     
     @torch.inference_mode()

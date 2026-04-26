@@ -253,7 +253,7 @@ class AdvancedPPTProcessor:
                 result = subprocess.run(cmd, capture_output=True, text=True)
                 
                 if result.returncode == 0 and os.path.exists(png_path):
-                    print(f"  ✓ 转换成功: {png_path}")
+                    print(f"  [OK] 转换成功: {png_path}")
                     return png_path
                 else:
                     print(f"  ImageMagick转换失败: {result.stderr}")
@@ -273,7 +273,7 @@ class AdvancedPPTProcessor:
                 img.save(filename=png_path)
             
             if os.path.exists(png_path):
-                print(f"  ✓ Wand转换成功: {png_path}")
+                print(f"  [OK] Wand转换成功: {png_path}")
                 return png_path
                 
         except ImportError:
@@ -376,7 +376,7 @@ class AdvancedPPTProcessor:
                             "latex": formula_result.get("latex", ""),
                             "formula_details": formula_result
                         })
-                        print(f"  ✓ 公式识别完成")
+                        print(f"  [OK] 公式识别完成")
                         formula_recognized = True
                         
                         # 将公式保存到 output/formulas/ 文件夹
@@ -402,7 +402,7 @@ class AdvancedPPTProcessor:
                             
                             print(f"  → 公式已保存至: {formula_json_path}")
                         except Exception as save_error:
-                            print(f"  ⚠ 保存公式文件失败: {save_error}")
+                            print(f"  [WARN] 保存公式文件失败: {save_error}")
                     else:
                         print(f"  ✗ 公式识别未返回有效结果")
                         
@@ -432,7 +432,7 @@ class AdvancedPPTProcessor:
                             "language": code_result.get("language", ""),
                             "code_details": code_result
                         })
-                        print(f"  ✓ 代码识别完成")
+                        print(f"  [OK] 代码识别完成")
                         code_recognized = True
                         
                         # 将代码保存到 output/code/ 文件夹
@@ -486,7 +486,7 @@ class AdvancedPPTProcessor:
                             print(f"  → 代码已保存至: {code_file_path}")
                             print(f"  → 元数据已保存至: {code_json_path}")
                         except Exception as save_error:
-                            print(f"  ⚠ 保存代码文件失败: {save_error}")
+                            print(f"  [WARN] 保存代码文件失败: {save_error}")
                     else:
                         print(f"  ✗ 代码识别未返回有效结果")
                         
@@ -507,7 +507,7 @@ class AdvancedPPTProcessor:
             has_professional_content = has_formula or has_code or self._contains_professional_terms(general_description)
             
             if not has_professional_content:
-                print(f"  ⚠️ 图片缺少专业内容，标记为需要人工补充")
+                print(f"  [WARN] 图片缺少专业内容，标记为需要人工补充")
                 self.images_without_professional_content.append({
                     "image_path": image_path,
                     "description": general_description[:300] if general_description else "未获取到描述",
@@ -931,7 +931,7 @@ class AdvancedPPTProcessor:
         教师可以手动填写未能自动识别的内容
         """
         if not self.failed_recognitions:
-            print("\n✅ 所有公式和代码都已成功识别，无需人工补充！")
+            print("\n[OK] 所有公式和代码都已成功识别，无需人工补充！")
             return
         
         print("\n" + "="*70)
@@ -968,16 +968,16 @@ class AdvancedPPTProcessor:
                     print("无效输入，请输入 y、n 或 v")
         
         print("\n" + "="*70)
-        print("✅ 人工补充完成！")
+        print("[OK] 人工补充完成！")
         print("="*70)
     
     def _manual_formula_input(self, item):
         """手动输入公式"""
-        print("\n📝 请输入公式信息（直接按Enter跳过某项）：")
+        print("\n 请输入公式信息（直接按Enter跳过某项）：")
         
         latex = input("  LaTeX公式: ").strip()
         if not latex:
-            print("  ⚠️ 未输入LaTeX，已跳过")
+            print("  [WARN] 未输入LaTeX，已跳过")
             return
         
         formula_name = input("  公式名称（可选）: ").strip()
@@ -1002,9 +1002,9 @@ class AdvancedPPTProcessor:
             with open(formula_json_path, "w", encoding="utf-8") as f:
                 json.dump(formula_output, f, ensure_ascii=False, indent=2)
             
-            print(f"  ✅ 公式已保存至: {formula_json_path}")
+            print(f"  [OK] 公式已保存至: {formula_json_path}")
         except Exception as e:
-            print(f"  ❌ 保存失败: {e}")
+            print(f"  [ERROR] 保存失败: {e}")
     
     def _extract_and_add_professional_terms(self, description):
         """
@@ -1068,11 +1068,11 @@ class AdvancedPPTProcessor:
         教师手动输入图片的专业含义
         """
         if not self.images_without_professional_content:
-            print("\n✅ 所有图片都包含专业内容，无需补充！")
+            print("\n[OK] 所有图片都包含专业内容，无需补充！")
             return
         
         print("\n" + "="*70)
-        print("📚 发现一些图片可能缺少专业内容解释")
+        print(" 发现一些图片可能缺少专业内容解释")
         print("="*70)
         print(f"共发现 {len(self.images_without_professional_content)} 张图片需要专业解释\n")
         
@@ -1100,16 +1100,16 @@ class AdvancedPPTProcessor:
                     print("无效输入，请输入 y、n 或 v")
         
         print("\n" + "="*70)
-        print("✅ 专业内容补充完成！")
+        print("[OK] 专业内容补充完成！")
         print("="*70)
     
     def _manual_professional_explanation(self, item):
         """手动输入图片的专业解释"""
-        print("\n📝 请输入图片的专业解释（直接按Enter跳过某项）：")
+        print("\n 请输入图片的专业解释（直接按Enter跳过某项）：")
         
         professional_explanation = input("  专业解释（必填）: ").strip()
         if not professional_explanation:
-            print("  ⚠️ 未输入专业解释，已跳过")
+            print("  [WARN] 未输入专业解释，已跳过")
             return
         
         key_concepts = input("  关键概念（用逗号分隔）: ").strip()
@@ -1136,7 +1136,7 @@ class AdvancedPPTProcessor:
             with open(explanation_path, "w", encoding="utf-8") as f:
                 json.dump(explanation_data, f, ensure_ascii=False, indent=2)
             
-            print(f"  ✅ 专业解释已保存至: {explanation_path}")
+            print(f"  [OK] 专业解释已保存至: {explanation_path}")
             
             # 将关键概念加入术语库
             if key_concepts:
@@ -1146,14 +1146,14 @@ class AdvancedPPTProcessor:
                         self.professional_terms.add(concept)
                         
         except Exception as e:
-            print(f"  ❌ 保存失败: {e}")
+            print(f"  [ERROR] 保存失败: {e}")
     
     def generate_professional_terms_library(self):
         """
         生成并保存专业术语库
         """
         if not self.professional_terms:
-            print("\n⚠️ 未提取到专业术语")
+            print("\n[WARN] 未提取到专业术语")
             return
         
         try:
@@ -1172,15 +1172,15 @@ class AdvancedPPTProcessor:
             with open(library_path, "w", encoding="utf-8") as f:
                 json.dump(terms_data, f, ensure_ascii=False, indent=2)
             
-            print(f"\n📚 专业术语库已生成: {library_path}")
+            print(f"\n 专业术语库已生成: {library_path}")
             print(f"   共收录 {len(self.professional_terms)} 个专业术语")
             
         except Exception as e:
-            print(f"\n❌ 专业术语库生成失败: {e}")
+            print(f"\n[ERROR] 专业术语库生成失败: {e}")
     
     def _manual_code_input(self, item):
         """手动输入代码"""
-        print("\n📝 请输入代码信息：")
+        print("\n 请输入代码信息：")
         
         language = input("  编程语言: ").strip()
         if not language:
@@ -1196,7 +1196,7 @@ class AdvancedPPTProcessor:
         
         code_content = "\n".join(code_lines)
         if not code_content.strip():
-            print("  ⚠️ 未输入代码，已跳过")
+            print("  [WARN] 未输入代码，已跳过")
             return
         
         functionality = input("  代码功能说明（可选）: ").strip()
@@ -1235,10 +1235,10 @@ class AdvancedPPTProcessor:
             with open(code_json_path, "w", encoding="utf-8") as f:
                 json.dump(code_metadata, f, ensure_ascii=False, indent=2)
             
-            print(f"  ✅ 代码已保存至: {code_file_path}")
-            print(f"  ✅ 元数据已保存至: {code_json_path}")
+            print(f"  [OK] 代码已保存至: {code_file_path}")
+            print(f"  [OK] 元数据已保存至: {code_json_path}")
         except Exception as e:
-            print(f"  ❌ 保存失败: {e}")
+            print(f"  [ERROR] 保存失败: {e}")
 
     def _process_text_and_tables_traditional(self, file_path, base_filename):
         """使用传统python-pptx方法处理文本和表格"""
@@ -1369,10 +1369,10 @@ class AdvancedPPTProcessor:
                             "extraction_method": "python_pptx_optimized"
                         })
                         
-                        print(f"✓ 提取表格 {table_counter}: {len(data_matrix)}行 x {len(data_matrix[0]) if data_matrix else 0}列")
+                        print(f"[OK] 提取表格 {table_counter}: {len(data_matrix)}行 x {len(data_matrix[0]) if data_matrix else 0}列")
                         print(f"  位置: left={table_position['left']:.2f}in, top={table_position['top']:.2f}in")
                     else:
-                        print(f"⚠ 跳过空表格 {table_counter}")
+                        print(f"[WARN] 跳过空表格 {table_counter}")
 
     def _save_pptx_metadata(self, file_path, base_filename, slide_image_mapping):
         """
