@@ -1,0 +1,23 @@
+{
+  "original_path": "output/qwen_qwen3.7-plus_1/debug/images/w10-1-直线运动平台（下）_slide_6_img_2.png",
+  "enhanced_path": "output/qwen_qwen3.7-plus_1/debug/images/w10-1-直线运动平台（下）_slide_6_img_2_enhanced.png",
+  "description": "# 步进电机调速原理 —— 时间中断计算速度\n\n## 代码解析\n\n这段代码实现了一种**基于时间累加的步进电机平滑调速算法**（类似 DDA / Bresenham 算法），无需硬件定时器即可实现精确的速度控制。\n\n---\n\n## 核心变量\n\n| 变量 | 含义 |\n|------|------|\n| `currentLoopTime` | 当前循环的时间戳（微秒） |\n| `lastLoopTime` | 上一次循环的时间戳 |\n| `dt` | 两次循环之间的时间间隔（μs） |\n| `speedPerPulse` | 每个微秒应发送的脉冲数（速度参数） |\n| `pulse2Send` | 待发送脉冲的**累加值**（浮点数） |\n\n---\n\n## 算法流程\n\n```\n每次 loop() 执行：\n┌─────────────────────────────────────────────┐\n│  1. 计算时间差 dt = current - last           │\n│  2. 累加脉冲量: pulse2Send += speedPerPulse × dt │\n│  3. 判断 |pulse2Send| ≥ 0.5 ?               │\n│     ├─ 是 → 调用 step() 步进一格             │\n│     │        然后 pulse2Send = 1（扣除已发送）│\n│     └─ 否 → 等待下次循环继续累加              │\n│  4. 更新 lastLoopTime                        │\n└─────────────────────────────────────────────┘\n```\n\n---\n\n## 关键设计思想\n\n### 1️⃣ 浮点累加器（Fractional Accumulator）\n\n```\npulse2Send += speedPerPulse * dt;\n```\n\n- `speedPerPulse` 的单位是 **脉冲/微秒**\n- 乘以时间间隔 `dt` 后，得到这段时间内**应该发送的脉冲数**（可能是小数）\n- 通过**累加**小数部分，避免精度丢失\n\n### 2️⃣ 阈值判断（0.5 阈值）\n\n```cpp\nif (abs(pulse2Send) >= 0.5) {\n    step(pulse2Send > 0);  // 正负决定方向\n}\n```\n\n- 当累加值达到 **0.5** 时触发步进（四舍五入思想）\n- `pulse2Send > 0` → 正转；`pulse2Send < 0` → 反转\n\n### 3️⃣ 扣除已发送脉冲\n\n```cpp\nif (pulse2Send > 0) {\n    pulse2Send -= 1;   // 正转扣除1\n} else {\n    pulse2Send += 1;   // 反转扣除1\n}\n```\n\n- 步进后只扣除 **1个脉冲**，剩余小数部分继续累加\n- 这保证了**长期平均速度**的精确性\n\n---\n\n## 举例说明\n\n假设 `speedPerPulse = 0.0003` 脉冲/μs（即 300 脉冲/秒），`dt ≈ 1000μs`",
+  "metadata": {
+    "generation": {
+      "method": "qwen_api",
+      "backend": "api",
+      "provider": "qwen",
+      "model": "qwen3.7-plus",
+      "status": "success",
+      "api_error": null
+    }
+  },
+  "error": null,
+  "method": "qwen_api",
+  "backend": "api",
+  "provider": "qwen",
+  "model": "qwen3.7-plus",
+  "status": "success",
+  "api_error": null,
+  "indexable": true
+}

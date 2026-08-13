@@ -1,0 +1,23 @@
+{
+  "original_path": "output/qwen_qwen3.7-plus/images/w08-1-步进电机驱动器_p3_img4.png",
+  "enhanced_path": "output/qwen_qwen3.7-plus/images/w08-1-步进电机驱动器_p3_img4.png",
+  "description": "这张图片是复旦大学机电智控实验室关于《机电系统原理及实践》课程的PPT课件，主要讲解了**如何使用H桥电路来驱动步进电机**。\n\n以下是对图片内容的详细解读和知识点梳理，帮助你理解这一页PPT的核心内容：\n\n### 1. 课件基本信息\n*   **课程名称**：机电系统原理及实践 —— 步进电机驱动器与外部中断\n*   **实验室**：机电智控实验室\n*   **联系人/邮箱**：tangguoan@fudan.edu.cn, mmguo@fudan.edu.cn\n*   **章节**：§1 用双H桥驱动步进电机\n\n### 2. 核心电路图解析：H桥电路\n图片下方展示了一个经典的**H桥电路**，文字说明指出这是由“四路固态继电器”组成的。\n\n*   **电路结构**：\n    *   中间蓝色的 **M** 代表电机（Motor），这里指步进电机的其中一相线圈。\n    *   电路分为左右两臂，每臂有上下两个开关（固态继电器）。\n    *   **电源**：上方连接 $V+$（正极），下方连接 $V-$（负极/地）。\n    *   **控制端**：ch1, ch2, ch3, ch4 分别控制四个开关的导通与断开。\n\n*   **元件符号**：\n    *   图中的圆圈符号代表**固态继电器**（Solid State Relay, SSR）或光耦隔离的开关元件。\n    *   左侧：ch1控制上管（A1-B1），ch2控制下管（A2-B2）。\n    *   右侧：ch3控制上管（A3-B3），ch4控制下管（A4-B4）。\n\n### 3. H桥驱动原理（如何控制电机）\nH桥的主要作用是**改变流过电机的电流方向**，从而控制电机的正反转。对于步进电机，这需要快速切换。\n\n根据图中电路，控制逻辑如下（假设 ch1-ch4 为高电平有效）：\n\n| 动作 | 导通的开关 (ch) | 电流路径 | 电机两端电压 | 结果 |\n| :--- | :--- | :--- | :--- | :--- |\n| **正转** | **ch1, ch4** | $V+ /rightarrow A1 /rightarrow B1 /rightarrow M /rightarrow A4 /rightarrow B4 /rightarrow V-$ | 左正右负 | 电机向一个方向转动 |\n| **反转** | **ch2, ch3** | $V+ /rightarrow A3 /rightarrow B3 /rightarrow M /rightarrow A2 /rightarrow B2 /rightarrow V-$ | 左负右正 | 电机向相反方向转动 |\n| **停止/刹车** | ch1, ch3 (或 ch2, ch4) | 电机两端接同电位 | 0V (或短接) | 电机停止（能耗制动或自由停止） |\n| **滑行** | 全断 | 无电流 | 断路 | 电机自由滑行停止 |\n\n**⚠️ 重要禁忌（Shoot-through）**：\n绝对不能同时导通同一侧的上下开关（例如 **ch1 和 ch2 同时导通**",
+  "metadata": {
+    "generation": {
+      "method": "qwen_api",
+      "backend": "api",
+      "provider": "qwen",
+      "model": "qwen3.7-plus",
+      "status": "success",
+      "api_error": null
+    }
+  },
+  "error": null,
+  "method": "qwen_api",
+  "backend": "api",
+  "provider": "qwen",
+  "model": "qwen3.7-plus",
+  "status": "success",
+  "api_error": null,
+  "indexable": true
+}

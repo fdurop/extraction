@@ -1,0 +1,11 @@
+{
+  "source_image": "output/qwen_qwen3.7-plus/images/w10-1-直线运动平台（下）_slide_6_img_2.png",
+  "extraction_method": "deepseek_vl_智能识别",
+  "language": "cpp",
+  "description": "实现步进电机的速度控制。通过计算循环时间间隔，累加需要发送的脉冲数，当累加值达到步进阈值时，根据方向执行步进操作并调整累加值，从而实现平滑的速度控制。",
+  "code_file": "w10-1-直线运动平台（下）_pptx_page_6_code_1.cpp",
+  "page": 6,
+  "index": 1,
+  "timestamp": "2026-08-03T22:05:03.697903",
+  "raw_response": "语言: C++ (Arduino)\n```cpp\n// loop 函数仅用于实现速度控制\nvoid loop() {\n  uint32_t currentLoopTime = micros();\n  if (inMoving) {\n    // 循环之间的间隔\n    uint32_t dt = currentLoopTime - lastLoopTime;\n\n    // 角度累加，以脉冲数为单位\n    pulse2Send += speedPerPulse * dt;\n\n    // 是否需要步进一格。\n    if (abs(pulse2Send) >= 0.5) {\n      step(pulse2Send > 0); // 根据方向，步进一格\n\n      // 已完成步进，调整累加值\n      if (pulse2Send > 0) {\n        pulse2Send -= 1;\n      } else {\n        pulse2Send += 1;\n      }\n    }\n  }\n\n  lastLoopTime = currentLoopTime;\n}\n```\n功能: 实现步进电机的速度控制。通过计算循环时间间隔，累加需要发送的脉冲数，当累加值达到步进阈值时，根据方向执行步进操作并调整累加值，从而实现平滑的速度控制。"
+}

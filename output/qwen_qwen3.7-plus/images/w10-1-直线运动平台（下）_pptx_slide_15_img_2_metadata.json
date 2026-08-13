@@ -1,0 +1,8 @@
+{
+  "original_path": "output/qwen_qwen3.7-plus/images/w10-1-直线运动平台（下）_slide_15_img_3.png",
+  "enhanced_path": "output/qwen_qwen3.7-plus/images/w10-1-直线运动平台（下）_slide_15_img_3_enhanced.png",
+  "description": "# §4.1 输入整形（Input Shaping）\n\n## 公式解析\n\n$$C = /frac{C}{/tau^2}$$\n\n这是输入整形技术中的一个**系数归一化/缩放**公式。\n\n---\n\n## 背景知识\n\n**输入整形（Input Shaping）** 是一种用于抑制系统残余振动的开环控制方法，由 Singer 和 Seering 于 1990 年提出。\n\n### 核心思想\n\n将原始命令信号与一系列**脉冲序列**进行卷积，使得各脉冲激发的振动相互抵消：\n\n$$/text{整形后命令} = /sum_{i=1}^{n} A_i /cdot /delta(t - t_i) * /text{原始命令}$$\n\n其中：\n| 符号 | 含义 |\n|------|------|\n| $A_i$ | 第 $i$ 个脉冲的幅值（系数） |\n| $t_i$ | 第 $i$ 个脉冲的时间位置 |\n| $/tau$ | 系统的**阻尼振荡周期** |\n\n---\n\n## 公式 $C = C//tau^2$ 的含义\n\n该公式表示对整形系数 $C$ 进行**时间尺度归一化**：\n\n- **$/tau$**：系统的阻尼周期，$/tau = /dfrac{2/pi}{/omega_d} = /dfrac{2/pi}{/omega_n/sqrt{1-/zeta^2}}$\n- 除以 $/tau^2$ 是为了将系数**无量纲化**，使整形器设计独立于具体的时间尺度\n\n### 常见整形器系数示例\n\n**ZV（Zero Vibration）整形器**（两脉冲）：\n\n$$A_1 = /frac{1}{1+K}, /quad A_2 = /frac{K}{1+K}, /quad K = e^{-/zeta/pi//sqrt{1-/zeta^2}}$$\n\n**ZVD（Zero Vibration and Derivative）整形器**（三脉冲）：\n\n$$A_1 = /frac{1}{1+2K+K^2}, /quad A_2 = /frac{2K}{1+2K+K^2}, /quad A_3 = /frac{K^2}{1+2K+K^2}$$\n\n---\n\n## 应用流程\n\n```\n原始命令 → [输入整形器] → 整形后命令 → [被控对象] → 无残余振动的响应\n```\n\n该归一化步骤确保整形器参数在不同时间尺度的系统间具有**通用性**。\n\n如需进一步解释具体上下文（如某本教材的完整推导），请提供更多信息！",
+  "metadata": {},
+  "error": null,
+  "method": "qwen_api"
+}

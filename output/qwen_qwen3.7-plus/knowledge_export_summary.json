@@ -1,0 +1,14 @@
+{
+  "documents": 1,
+  "pages": 12,
+  "content_items": 19,
+  "nodes": 31,
+  "vectors": {
+    "backend": "hash_text_v1",
+    "dim": 384,
+    "count": 31,
+    "matrix_path": "output/qwen_qwen3.7-plus/vectors/vector_matrix.npy",
+    "metadata_path": "output/qwen_qwen3.7-plus/vectors/vector_index.json"
+  },
+  "updated_at": "2026-08-05T19:32:57.421873"
+}

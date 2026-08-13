@@ -1,0 +1,16 @@
+{
+  "page": 6,
+  "formula_count": 1,
+  "formulas": [
+    {
+      "source_image": "output/qwen_qwen3.7-plus/images/w10-1-直线运动平台（下）_slide_6_img_1.png",
+      "extraction_method": "deepseek_vl_智能识别",
+      "latex": "$/theta(t_1) = /theta(t_0) + /int_{t_0}^{t_1} /omega(t) /mathrm{d}t$ 及 $/theta[n/Delta t] = /theta[(n-1)/Delta t] + /omega[n/Delta t]/Delta t$",
+      "description": "",
+      "raw_response": "LaTeX: $/theta(t_1) = /theta(t_0) + /int_{t_0}^{t_1} /omega(t) /mathrm{d}t$ 及 $/theta[n/Delta t] = /theta[(n-1)/Delta t] + /omega[n/Delta t]/Delta t$\n\n名称: 步进电机角位移与转速关系公式（连续积分形式及其离散化近似）\n\n含义:\n1.  **连续形式**：描述了步进电机在连续时间内的运动学关系。$t_1$ 时刻的转角 $/theta(t_1)$ 等于初始时刻 $t_0$ 的转角 $/theta(t_0)$ 加上从 $t_0$ 到 $t_1$ 期间转速 $/omega(t)$ 对时间的积分（即转过的角度）。\n2.  **离散形式**：这是上述积分公式在数字控制系统（如单片机 loop 循环）中的离散化实现。它表示当前时刻 $n/Delta t$ 的累积转角等于上一时刻 $(n-1)/Delta t$ 的转角加上当前转速乘以时间间隔 $/Delta t$。这是一种一阶数值积分（欧拉法/矩形法）。\n\n变量:\n*   $/theta(t)$: 步进电机的转角（连续变量）。\n*   $/omega(t)$: 步进电机的转速（连续变量）。\n*   $t_0, t_1$: 时间区间的起始和结束时刻。\n*   $/Delta t$: 每次程序循环（loop）的时间间隔（采样周期）。\n*   $n$: 离散时间的步数索引（整数，表示第 $n$ 次循环）。\n*   $/theta[n/Delta t]$: 离散化后的累积转角值。经无量纲化后，单位为“脉冲数”。\n*   $/omega[n/Delta t]$: 离散化后的转速值。经无量纲化后，单位为“脉冲数/微秒”。\n\n条件:\n*   **适用场景**：步进电机的运动控制算法，特别是基于时间片的数字控制。\n*   **近似条件**：离散公式假设在极短的时间 $/Delta t$ 内转速 $/omega$ 保持不变。\n*   **无量纲化**：公式中的 $/theta$ 和 $/omega$ 已用“每脉冲转角 $/Delta /theta$",
+      "page_num": 5,
+      "image_index": 0
+    }
+  ],
+  "timestamp": "2026-08-03T22:04:34.576221"
+}

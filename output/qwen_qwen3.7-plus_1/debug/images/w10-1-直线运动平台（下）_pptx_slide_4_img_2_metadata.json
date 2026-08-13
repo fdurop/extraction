@@ -1,0 +1,23 @@
+{
+  "original_path": "output/qwen_qwen3.7-plus_1/debug/images/w10-1-直线运动平台（下）_slide_4_img_2.png",
+  "enhanced_path": "output/qwen_qwen3.7-plus_1/debug/images/w10-1-直线运动平台（下）_slide_4_img_2_enhanced.png",
+  "description": "# §2.1 滑台定位 — 详解与实现\n\n---\n\n## 一、核心参数梳理\n\n| 参数 | 值 | 说明 |\n|------|------|------|\n| 导程 (lead) | **10 mm/rev** | 丝杠转一圈，滑台移动 10 mm |\n| 细分数 | **400** | 每转需要 400 个脉冲 |\n| 每脉冲位移 | **0.025 mm** | 10 mm ÷ 400 = 25 μm/pulse |\n\n---\n\n## 二、任务①：测算滑台行程（脉冲数）\n\n### 计算公式\n\n$$/text{总脉冲数} = /frac{/text{行程 (mm)}}{/text{导程 (mm/rev)}} /times /text{细分数}$$\n\n$$/text{总脉冲数} = /frac{/text{行程}}{10} /times 400 = /text{行程} /times 40$$\n\n### 示例\n\n假设滑台物理行程为 **100 mm**：\n\n$$/text{总脉冲数} = 100 /times 40 = /mathbf{4000 /text{ pulses}}$$\n\n> 📌 实际行程需要用尺子测量，或查阅滑台型号规格书。\n\n---\n\n## 三、任务②：电位器控制绝对定位\n\n### 原理\n\n```\n电位器 (0~1023)  →  映射到  →  脉冲数 (0~总脉冲数)  →  滑台位置\n```\n\n### Arduino 代码框架 (`w10-s3-sliderAbsLocation.ino`)\n\n```cpp\n#include <AccelStepper.h>\n\n/ 引脚定义\nconst int potPin = A0;          / 电位器接 A0\nconst int stepPin = 2;          / 脉冲引脚\nconst int dirPin = 3;           / 方向引脚\n\n/ 参数\nconst int microsteps = 400;     / 细分数\nconst int lead = 10;            / 导程 mm/rev\nconst int strokeMM = 100;       / 行程 (mm)，需实测\nconst long totalPulses = (long)strokeMM * 400 / lead;  / = 4000\n\nAccelStepper stepper(AccelStepper::DRIVER, stepPin, dirPin);\n\nlong targetPulse = 0;\nlong currentPulse = 0;\n\nvoid setup() {\n  Serial.begin(9600);\n  stepper.setMaxSpeed(2000);    / 最大速度 (pulses/s)\n  stepper.setAcceleration(500); / 加速度\n  stepper.setCurrentPosition(0);\n}\n\nvoid loop() {\n  /  读取电位器 (0~1023)\n  int potVal = analogRead(potPin);\n\n  / ② 映射到脉冲数范围\n  targetPulse = map(potVal, 0, 1023, 0, totalPulses);",
+  "metadata": {
+    "generation": {
+      "method": "qwen_api",
+      "backend": "api",
+      "provider": "qwen",
+      "model": "qwen3.7-plus",
+      "status": "success",
+      "api_error": null
+    }
+  },
+  "error": null,
+  "method": "qwen_api",
+  "backend": "api",
+  "provider": "qwen",
+  "model": "qwen3.7-plus",
+  "status": "success",
+  "api_error": null,
+  "indexable": true
+}

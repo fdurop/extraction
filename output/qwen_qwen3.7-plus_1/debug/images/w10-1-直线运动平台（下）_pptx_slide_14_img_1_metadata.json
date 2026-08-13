@@ -1,0 +1,23 @@
+{
+  "original_path": "output/qwen_qwen3.7-plus_1/debug/images/w10-1-直线运动平台（下）_slide_14_img_1.png",
+  "enhanced_path": "output/qwen_qwen3.7-plus_1/debug/images/w10-1-直线运动平台（下）_slide_14_img_1_enhanced.png",
+  "description": "根据您提供的图片和文字，这是关于控制理论中**输入整形（Input Shaping）**技术的一个定义说明。\n\n**图片文字内容转录：**\n> $/tilde{U}_s(s)$ 为整形后输入的拉氏变换\n\n**内容解读：**\n这段内容通常出现在自动控制原理或振动控制的教材/课件中（对应您提到的 §4.1 输入整形）。\n\n*   **背景**：输入整形（Input Shaping）是一种通过修改系统的参考输入信号，来消除或减少系统残余振动的技术。\n*   **符号含义**：\n    *   $s$：拉普拉斯算子（复频域变量）。\n    *   $/tilde{U}_s(s)$：表示经过“整形器”（Shaper）处理后的**新输入信号**的拉普拉斯变换（Laplace Transform）。下标 $s$ 通常代表 \"shaped\"（整形后的）。\n    *   通常它与原始输入 $U(s)$ 和整形器传递函数 $I(s)$ 的关系为：$/tilde{U}_s(s) = I(s) /cdot U(s)$。\n\n如果您是在做题或整理笔记，这句话是在定义公式中的变量 $/tilde{U}_s(s)$。",
+  "metadata": {
+    "generation": {
+      "method": "qwen_api",
+      "backend": "api",
+      "provider": "qwen",
+      "model": "qwen3.7-plus",
+      "status": "success",
+      "api_error": null
+    }
+  },
+  "error": null,
+  "method": "qwen_api",
+  "backend": "api",
+  "provider": "qwen",
+  "model": "qwen3.7-plus",
+  "status": "success",
+  "api_error": null,
+  "indexable": true
+}

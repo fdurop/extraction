@@ -1,0 +1,30 @@
+{
+  "page_num": 6,
+  "raw_text": "delay\n函数的缺点\n难以实现复杂的\n定时逻辑\n；\n阻塞\n程序运行。\n需精确定时的任务应采用\n时间中断\n。\n例如：\n在固定的时间间隔设置速度数值\n。\n时间中断的设置方法与开发板密切相关。\nArduino Uno R3 \n有三个内部定时器\nTimer0/2 — 8 \n位\nTimer1 — 16 \n位\n§3.2 \n时间中断\n17-\nw10-s5-blink\n.ino",
+  "cleaned_text": "delay 函数的缺点 难以实现复杂的 定时逻辑 ； 阻塞 程序运行。 需精确定时的任务应采用 时间中断 。 例如： 在固定的时间间隔设置速度数值 。 时间中断的设置方法与开发板密切相关。 Arduino Uno R3 有三个内部定时器 Timer0/2 — 8 位 Timer1 — 16 位 §3.2 时间中断 17- w10-s5-blink .ino",
+  "key_points": [
+    "程序运行。",
+    "。",
+    "例如：",
+    "。",
+    "时间中断的设置方法与开发板密切相关。",
+    "Arduino Uno R3",
+    "Timer0/2 — 8",
+    "Timer1 — 16"
+  ],
+  "technical_terms": [
+    "Arduino",
+    "间中断的设置方法",
+    "Uno"
+  ],
+  "has_images": true,
+  "image_count": 1,
+  "image_paths": [
+    "output/qwen_qwen3.7-plus/images/w10-1-直线运动平台（下）_slide_7_img_1.png"
+  ],
+  "metadata": {
+    "char_count": 183,
+    "word_count": 31,
+    "line_count": 25
+  }
+}

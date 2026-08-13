@@ -1,0 +1,19 @@
+{
+  "page_num": 2,
+  "raw_text": "§1 \n滑台初始化复位\n上电后\n触碰滑台边界\n：滑台缓缓移至一侧边缘，触发接近开关；\n到达起始位置\n：反向移动，一旦接近开关复位，立即停止；\n等待控制指令\n。\n17-\nw10-s1-sliderReset\n.ino\n问题：在初始化过程中，启停开关不起作用，如何改进？",
+  "cleaned_text": "§1 滑台初始化复位 上电后 触碰滑台边界 ：滑台缓缓移至一侧边缘，触发接近开关； 到达起始位置 ：反向移动，一旦接近开关复位，立即停止； 等待控制指令 。 17- w10-s1-sliderReset .ino 问题：在初始化过程中，启停开关不起作用，如何改进？",
+  "key_points": [
+    "。"
+  ],
+  "technical_terms": [
+    "等待控制"
+  ],
+  "has_images": false,
+  "image_count": 0,
+  "image_paths": [],
+  "metadata": {
+    "char_count": 133,
+    "word_count": 13,
+    "line_count": 13
+  }
+}

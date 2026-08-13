@@ -1,0 +1,23 @@
+{
+  "original_path": "output/qwen_qwen3.7-plus/images/w08-1-步进电机驱动器_p8_img2.png",
+  "enhanced_path": "output/qwen_qwen3.7-plus/images/w08-1-步进电机驱动器_p8_img2.png",
+  "description": "# Arduino 外部中断 —— 知识点整理与代码解析\n\n## 一、核心概念\n\n**ISR（Interrupt Service Routine，中断服务程序）**：当外部事件触发时，CPU 暂停当前主程序，转而执行 ISR，执行完毕后返回主程序继续运行。\n\n---\n\n## 二、中断号与引脚对应关系\n\n| 中断号 | UNO | MEGA | Leonardo |\n|--------|-----|------|----------|\n| int0   | D2  | D2   | D3       |\n| int1   | D3  | D3   | D2       |\n| int2   | —   | D21  | D0       |\n| int3   | —   | D20  | D1       |\n| int4   | —   | D19  | —        |\n| int5   | —   | D18  | —        |\n\n> ⚠️ **注意**：不同板型的中断引脚不同，编程时建议使用 `digitalPinToInterrupt(pin)` 函数自动转换，避免硬编码中断号。\n\n---\n\n## 三、中断触发方式\n\n| 模式 | 含义 |\n|------|------|\n| `RISING` | 上升沿触发（低→高） |\n| `FALLING` | 下降沿触发（高→低） |\n| `CHANGE` | 电平变化触发（任意跳变） |\n| `LOW` | 低电平触发 |\n\n---\n\n## 四、关键函数\n\n```cpp\nattachInterrupt(interruptNo, ISR, mode);  // 绑定中断\ndetachInterrupt(interrupt);               // 解除中断\ninterrupts();     // 全局开启中断\nnoInterrupts();   // 全局关闭中断\n```\n\n---\n\n## 五、代码逐行解析\n\n```cpp\nconst byte ledPin = 13;                    // LED 引脚\nconst byte interruptPin = 2;               // 中断引脚（UNO 上对应 int0）\nvolatile byte state = LOW;                 // ⭐ volatile 关键字！\n\nvoid setup() {\n  pinMode(ledPin, OUTPUT);\n  pinMode(interruptPin, INPUT_PULLUP);     // 内部上拉，默认高电平\n  // 将引脚2映射为中断号0，触发模式为 CHANGE\n  attachInterrupt(digitalPinToInterrupt(interruptPin), blink, CHANGE);\n}\n\nvoid loop() {\n  digitalWrite(ledPin, state);             // 主循环只负责写 LED\n}\n\nvoid blink() {                             // ISR：中断服务程序\n  state = !state;                          // 翻转状态\n}\n```\n\n### 🔑 关键要点\n\n1. **`volatile` 关键字**：`state` 变量在 ISR 和 `loop()` 中都被访问，必须声明为 `volatile`，告诉编译器不要优化该变量，每次从内存重新读取。\n\n2. **`INPUT_PULLUP`**：启用内部上拉电阻，引脚默认高电平；按下按钮时拉低，产生电平变化。\n\n3. **`CHANGE` 模式**：每次电平变化（按下和松开各一次）都会触发 ISR，所以 **按一次按钮 LED 会翻转两次**（亮→灭→",
+  "metadata": {
+    "generation": {
+      "method": "qwen_api",
+      "backend": "api",
+      "provider": "qwen",
+      "model": "qwen3.7-plus",
+      "status": "success",
+      "api_error": null
+    }
+  },
+  "error": null,
+  "method": "qwen_api",
+  "backend": "api",
+  "provider": "qwen",
+  "model": "qwen3.7-plus",
+  "status": "success",
+  "api_error": null,
+  "indexable": true
+}

@@ -1,0 +1,23 @@
+{
+  "original_path": "output/qwen_qwen3.7-plus_1/debug/images/w10-1-直线运动平台（下）_p10_img2.jpeg",
+  "enhanced_path": "output/qwen_qwen3.7-plus_1/debug/images/w10-1-直线运动平台（下）_p10_img2_enhanced.jpeg",
+  "description": "这张图片展示了复旦大学机电智控实验室关于**“机电系统原理及实践”**课程中**“直线运动平台”**控制技术的教学内容，具体聚焦于**§4.1 输入整形（Input Shaping）**技术。\n\n以下是对图片内容的详细解读和知识点总结：\n\n### 1. PPT 课件内容解读\n*   **核心主题**：输入整形（Input Shaping）。\n*   **理论基础**：**前馈控制（Feed-Forward Control, FFC）**。\n    *   **定义**：按干扰量的变化来提前补偿其对被控变量的影响。\n    *   **特点**：属于开环控制，因此不存在闭环控制中常见的稳定性问题（如震荡发散）。\n    *   **结论**：输入整形本质上就是一种前馈控制方式。\n*   **物理模型**：PPT右侧展示了一个简化的物理模型——电机驱动滑块（质量 $m$），滑块下通过绳索（长度 $l$）悬挂一个摆（角度 $/theta$）。这通常被称为**吊车系统（Crane System）**或**柔性负载系统**。\n\n### 2. 实验演示图片解析\n图片下方展示了两个对比实验，直观地演示了输入整形的效果。实验装置是一个直线运动平台（导轨），下方悬挂了一个圆锥形的摆锤（模拟柔性负载或吊钩）。\n\n*   **下图（无整形 / No Shaping）**：\n    *   **现象**：当直线平台快速移动并停止时，下方的摆锤发生了**剧烈的摆动**。\n    *   **原因**：电机直接接收阶跃信号（突然加速、突然停止），系统的惯性导致悬挂物产生残留振动（Residual Vibration）。在工业应用中，这会导致定位不准、效率降低甚至危险。\n\n*   **上图（输入整形 / Input Shaping）**：\n    *   **现象**：直线平台同样进行了移动，但下方的摆锤**几乎保持静止**，或者摆动非常微小，迅速稳定。\n    *   **原因**：系统使用了“输入整形”算法。控制器没有直接发送简单的阶跃信号给电机，而是发送了一串经过特殊设计的脉冲信号。这些脉冲产生的振动相互抵消，从而消除了残留振动。\n\n### 3. 深入知识点：什么是输入整形（Input Shaping）？\n\n输入整形是一种用于消除机电系统（特别是柔性系统）残留振动的技术。\n\n*   **基本原理**：\n    它利用系统的自然频率（Natural Frequency）和阻尼比（Damping Ratio），将原始的输入命令（如阶跃信号）与一系列脉冲（Impulse Sequence）进行**卷积**。\n    *   简单来说，就是把一个大的动作分解成几个小的动作。\n    *   第一个脉冲启动系统，产生振动；\n    *   第二个脉冲在特定的时间点（通常是半个周期后）发出，产生的振动与第一个脉冲的振动**相位相反**，从而相互抵消（相消干涉）。\n\n*   **常见整形器**：\n    *   **ZV (Zero Vibration) 整形器**：最简单的两脉冲整形器，能完全消除特定频率下的振动，但对参数变化敏感（鲁棒性差）。\n    *   **ZVD (Zero Vibration and Derivative) 整形器**：三脉冲整形器，不仅消除振动，还对频率变化不",
+  "metadata": {
+    "generation": {
+      "method": "qwen_api",
+      "backend": "api",
+      "provider": "qwen",
+      "model": "qwen3.7-plus",
+      "status": "success",
+      "api_error": null
+    }
+  },
+  "error": null,
+  "method": "qwen_api",
+  "backend": "api",
+  "provider": "qwen",
+  "model": "qwen3.7-plus",
+  "status": "success",
+  "api_error": null,
+  "indexable": true
+}

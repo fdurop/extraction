@@ -1,0 +1,23 @@
+{
+  "original_path": "output/qwen_qwen3.7-plus_1/debug/images/w10-1-直线运动平台（下）_slide_4_img_3.png",
+  "enhanced_path": "output/qwen_qwen3.7-plus_1/debug/images/w10-1-直线运动平台（下）_slide_4_img_3_enhanced.png",
+  "description": "# §2.1 滑台定位 — 丝杠驱动原理\n\n## 核心公式\n\n丝杠转速（即滑台移动速度）由以下两个因素决定：\n\n$$n = /frac{f}{N /times S}$$\n\n| 参数 | 含义 | 说明 |\n|------|------|------|\n| **f** | 单位时间脉冲数（脉冲频率） | 由Arduino程序控制，单位：pulse/s |\n| **N** | 驱动器细分数 | 如 1/2/4/8/16 细分 |\n| **S** | 电机每转所需脉冲数（整步时） | 通常 200 pulse/rev（1.8°步距角） |\n\n## 滑台位移计算\n\n$$L = /frac{f /times t}{N /times S} /times P$$\n\n其中 **P** = 丝杠导程（mm/rev），即丝杠转一圈滑台移动的距离。\n\n---\n\n## 两个实验文件解析\n\n### 📄 `w10-s2-calSliderStroke.ino` — 计算滑台行程\n\n```cpp\n/ 目标：通过发送固定数量脉冲，计算滑台实际行程\n/ 公式：行程 = (脉冲数 / (细分数 × 200)) × 导程\n\nconst int stepPin = 2;\nconst int dirPin  = 3;\n\nconst long totalPulses = 16000;  / 总脉冲数\nconst int microStep    = 8;      / 细分设置\nconst float lead       = 4.0;    / 丝杠导程 4mm/rev\n\nvoid setup() {\n  pinMode(stepPin, OUTPUT);\n  pinMode(dirPin,  OUTPUT);\n  Serial.begin(9600);\n\n  digitalWrite(dirPin, HIGH);  / 设定方向\n\n  / 发送脉冲\n  for (long i = 0; i < totalPulses; i++) {\n    digitalWrite(stepPin, HIGH);\n    delayMicroseconds(500);    / 控制速度\n    digitalWrite(stepPin, LOW);\n    delayMicroseconds(500);\n  }\n\n  / 计算理论行程\n  float stroke = (float)totalPulses / (microStep * 200.0) * lead;\n  Serial.print(\"理论行程: \");\n  Serial.print(stroke);\n  Serial.println(\" mm\");\n}\n\nvoid loop() {}\n```\n\n**计算示例：**\n$$L = /frac{16000}{8 /times 200} /times 4 = /frac{16000}{1600} /times 4 = 10 /times 4 = 40 /text{ mm}$$\n\n---\n\n### 📄 `w10-s3-sliderAbsLocation.ino` — 滑台绝对位置控制\n\n```cpp\n/ 目标：控制滑台移动到指定的绝对位置（mm）\n\nconst int stepPin = 2;\nconst int dirPin  = 3;\n\nconst int microStep = 8;\nconst float lead    = 4.0;",
+  "metadata": {
+    "generation": {
+      "method": "qwen_api",
+      "backend": "api",
+      "provider": "qwen",
+      "model": "qwen3.7-plus",
+      "status": "success",
+      "api_error": null
+    }
+  },
+  "error": null,
+  "method": "qwen_api",
+  "backend": "api",
+  "provider": "qwen",
+  "model": "qwen3.7-plus",
+  "status": "success",
+  "api_error": null,
+  "indexable": true
+}

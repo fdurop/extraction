@@ -1,0 +1,23 @@
+{
+  "original_path": "output/qwen_qwen3.7-plus_1/debug/images/w08-1-步进电机驱动器_p8_img2.png",
+  "enhanced_path": "output/qwen_qwen3.7-plus_1/debug/images/w08-1-步进电机驱动器_p8_img2_enhanced.png",
+  "description": "这张图片是复旦大学机电智控实验室关于“机电系统原理及实践”课程的教学课件，主要讲解了 **Arduino的外部中断（External Interrupt）** 原理及实践代码。\n\n以下是对图片内容的详细整理、代码转录以及原理解析：\n\n### 1. 核心知识点整理\n\n**中断引脚映射表（数字引脚 -> 中断号）：**\n不同型号的Arduino板，外部中断对应的引脚不同。\n*   **UNO**: D2 (int0), D3 (int1)\n*   **MEGA**: D2 (int0), D3 (int1), D21 (int2), D20 (int3), D19 (int4), D18 (int5)\n*   **Leonardo**: D3 (int0), D2 (int1), D0 (int2), D1 (int3)\n\n**中断触发方式：**\n*   `RISING`: 上升沿触发（电平从低变高）\n*   `FALLING`: 下降沿触发（电平从高变低）\n*   `CHANGE`: 电平变化触发（只要变了就触发，无论高低）\n*   `LOW`: 低电平触发\n\n**常用函数：**\n*   `attachInterrupt(interruptNo, ISR, mode)`: 绑定中断。\n*   `detachInterrupt(interrupt)`: 解除中断。\n*   `interrupts()` / `noInterrupts()`: 全局开启/关闭中断。\n\n---\n\n### 2. 代码转录 (w08-s2-extInterrupt.ino)\n\n图片底部的代码展示了如何使用外部中断控制LED。以下是可复制的文本代码：\n\n```cpp\nconst byte ledPin = 13;\nconst byte interruptPin = 2;\nvolatile byte state = LOW;\n\nvoid setup() {\n  pinMode(ledPin, OUTPUT);\n  pinMode(interruptPin, INPUT_PULLUP);\n  attachInterrupt(digitalPinToInterrupt(interruptPin), blink, CHANGE);\n}\n\nvoid loop() {\n  digitalWrite(ledPin, state);\n}\n\nvoid blink() {\n  state = !state;\n}\n```\n\n---\n\n### 3. 代码详细解析\n\n这段代码的功能是：**通过连接在D2引脚的按钮（或开关），控制板载LED（D13）的亮灭。**\n\n**关键点分析：**\n\n1.  **`volatile` 关键字**：\n    *   代码中定义了 `volatile byte state = LOW;`。\n    *   **原因**：`state` 变量既在主程序 `loop()` 中被读取，又在中断服务程序 `blink()` 中被修改。`volatile` 告诉编译器不要优化这个变量，每次读取时都要从内存中重新获取，防止因为编译器优化导致主程序读不到中断里修改后的新值。这是中断编程的**铁律**。\n\n2.  **`digitalPinToInterrupt()` 函数**：\n    *   代码使用了 `attachInterrupt(digitalPinToInterrupt(interruptPin), ...)`。\n    *   **原因**：`attachInterrupt` 的第一个参数需要的是**中断号**（如0, 1），而不是引脚号（如2, 3）。这个函数自动将引脚号（D2）转换为对应的中断号（Interrupt",
+  "metadata": {
+    "generation": {
+      "method": "qwen_api",
+      "backend": "api",
+      "provider": "qwen",
+      "model": "qwen3.7-plus",
+      "status": "success",
+      "api_error": null
+    }
+  },
+  "error": null,
+  "method": "qwen_api",
+  "backend": "api",
+  "provider": "qwen",
+  "model": "qwen3.7-plus",
+  "status": "success",
+  "api_error": null,
+  "indexable": true
+}

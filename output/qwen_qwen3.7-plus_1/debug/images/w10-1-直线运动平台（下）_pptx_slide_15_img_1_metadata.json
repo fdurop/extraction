@@ -1,0 +1,23 @@
+{
+  "original_path": "output/qwen_qwen3.7-plus_1/debug/images/w10-1-直线运动平台（下）_slide_15_img_1.png",
+  "enhanced_path": "output/qwen_qwen3.7-plus_1/debug/images/w10-1-直线运动平台（下）_slide_15_img_1_enhanced.png",
+  "description": "根据你提供的图片和文字，这看起来像是关于**控制理论**中**输入整形（Input Shaping）**技术的课件或笔记片段。\n\n以下是图片内容的转录以及它与“输入整形”这一主题的关联解释：\n\n### 1. 图片内容转录\n图片展示的是拉普拉斯变换的**延时性质（Time Delay Property / Time Shifting Property）**：\n\n$$ /mathcal{L}[f(t-/tau)] = e^{-s/tau}F(s) $$\n\n*   **含义**：如果一个时间信号 $f(t)$ 在时间轴上向右平移（延迟）了 $/tau$，那么它的拉普拉斯变换等于原信号的拉普拉斯变换 $F(s)$ 乘以因子 $e^{-s/tau}$。\n\n### 2. 与“输入整形 (Input Shaping)”的关系\n标题“§4.1 输入整形”表明这是该章节的开头。这个延时性质公式是输入整形技术的**数学基础**。\n\n*   **输入整形的核心思想**：输入整形是一种开环控制方法，用于减少机械系统的残余振动。它的基本做法是将原始的控制指令（如阶跃信号）与一系列脉冲序列进行卷积。\n*   **公式的应用**：\n    一个典型的输入整形器（Input Shaper）的传递函数 $I(s)$ 通常写成如下形式：\n    $$ I(s) = /sum_{i=1}^{n} A_i e^{-s t_i} $$\n    其中：\n    *   $A_i$ 是第 $i$ 个脉冲的幅值。\n    *   $t_i$ 是第 $i$ 个脉冲的时间延迟。\n    *   **$e^{-s t_i}$ 正是来自你图片中的延时性质**。它表示在时域上，信号被延迟了 $t_i$ 时间。\n\n**总结**：\n这一页笔记应该是在讲：利用拉普拉斯变换的**延时性质**（$e^{-s/tau}$），我们可以构造出包含时间延迟的整形器，通过叠加不同时刻（$/tau$）的输入信号，来抵消系统的振动。",
+  "metadata": {
+    "generation": {
+      "method": "qwen_api",
+      "backend": "api",
+      "provider": "qwen",
+      "model": "qwen3.7-plus",
+      "status": "success",
+      "api_error": null
+    }
+  },
+  "error": null,
+  "method": "qwen_api",
+  "backend": "api",
+  "provider": "qwen",
+  "model": "qwen3.7-plus",
+  "status": "success",
+  "api_error": null,
+  "indexable": true
+}

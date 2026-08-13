@@ -1,0 +1,23 @@
+{
+  "original_path": "output/qwen_qwen3.7-plus_1/debug/images/w10-1-直线运动平台（下）_slide_5_img_1.png",
+  "enhanced_path": "output/qwen_qwen3.7-plus_1/debug/images/w10-1-直线运动平台（下）_slide_5_img_1_enhanced.png",
+  "description": "# §2.2 低通滤波（LPF）—— 移动平均法实现\n\n## 核心公式理解\n\n移动平均的**递归形式**（关键优化）：\n\n$$y[n] = y[n-1] + /frac{x[n] - x[n-M]}{M}$$\n\n> 每次只需 **加一个新值、减一个旧值**，无需重新求和，效率从 O(M) 降到 O(1)。\n\n---\n\n## 实现思路\n\n```\n数组 buffer[M]：环形缓冲区，存储最近 M 个采样值\n变量 idx：当前待插入新数据的位置（同时也是待删除旧数据的位置）\n变量 sum：当前累加和（可选，用于初始化）\n```\n\n---\n\n## Arduino 代码实现\n\n```cpp\n/ w10-s3-sliderAbsLocation-LPF.ino\n/ 带低通滤波的滑台绝对位置控制\n\nconst int M = 10;          / 移动平均窗口大小\nfloat buffer[M];           / 历史数据数组（长度 M）\nint idx = 0;               / 待插入新数据的位置（也是待删除旧数据的位置）\nfloat y_prev = 0;          / 上一次的滤波输出 y[n-1]\nbool firstRun = true;      / 首次运行标志\n\n/ 滑台相关引脚（根据实际硬件修改）\nconst int potPin = A0;     / 电位器/位置传感器\nconst int motorPin = 9;    / 电机控制引脚\n\nvoid setup() {\n  Serial.begin(9600);\n  \n  / 初始化缓冲区\n  for (int i = 0; i < M; i++) {\n    buffer[i] = 0;\n  }\n}\n\nvoid loop() {\n  / 1. 读取原始位置信号\n  float x_new = analogRead(potPin);  / 0~1023\n  \n  / 2. 低通滤波（移动平均）\n  float y_new;\n  \n  if (firstRun) {\n    / 首次运行：用前 M 个数据初始化\n    buffer[idx] = x_new;\n    idx = (idx + 1) % M;\n    \n    / 计算初始平均值\n    float sum = 0;\n    for (int i = 0; i < M; i++) {\n      sum += buffer[i];\n    }\n    y_new = sum / M;\n    y_prev = y_new;\n    firstRun = false;\n  } else {\n    / 递归公式：y[n] = y[n-1] + (x[n] - x[n-M]) / M\n    float x_old = buffer[idx];       / 待删除的旧数据 x[n-M]\n    buffer[idx] = x_new;             / 插入新数据\n    idx = (idx + 1) % M;             / 更新索引（环形）\n    \n    y_new = y_prev + (x_new - x_old) / M;\n    y_prev = y_new;\n  }\n  \n  / 3. 使用滤波后的值进行控制\n  / 例如：控制电机使滑台到达目标位置\n  / float target = 512;",
+  "metadata": {
+    "generation": {
+      "method": "qwen_api",
+      "backend": "api",
+      "provider": "qwen",
+      "model": "qwen3.7-plus",
+      "status": "success",
+      "api_error": null
+    }
+  },
+  "error": null,
+  "method": "qwen_api",
+  "backend": "api",
+  "provider": "qwen",
+  "model": "qwen3.7-plus",
+  "status": "success",
+  "api_error": null,
+  "indexable": true
+}

@@ -5,11 +5,13 @@ __pycache__/
 *.pyo
 
 config/vlm_api.yaml
-input/
-logs/
-output/
+input/*
+!input/.gitkeep
+logs/*
+!logs/.gitkeep
 
-models/
+models/*
+!models/.gitkeep
 *.safetensors
 *.bin
 *.pt

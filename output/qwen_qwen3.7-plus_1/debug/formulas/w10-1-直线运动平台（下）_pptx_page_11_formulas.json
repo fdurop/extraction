@@ -1,0 +1,19 @@
+{
+  "page": 11,
+  "formula_count": 1,
+  "formulas": [
+    {
+      "source_image": "output/qwen_qwen3.7-plus_1/debug/images/w10-1-直线运动平台（下）_slide_11_img_2.png",
+      "extraction_method": "qwen_api_智能识别",
+      "backend": "api",
+      "provider": "qwen",
+      "model": "qwen3.7-plus",
+      "latex": "$/ddot{/theta}(t) + 2/omega_n/zeta/dot{/theta}(t) + /omega_n^2/theta(t) = /frac{/ddot{u}_s(t)}{l}$，其中 $/omega_n = /sqrt{/frac{g}{l}}$，$/zeta = /frac{c}{2m/sqrt{gl}}$",
+      "description": "该公式组描述了一个单摆系统在存在阻尼的情况下，受到基础加速度（如地震或地面运动）激励时的角位移响应规律。第一个方程是系统的动力学微分方程，后两个方程分别定义了系统的固有频率和阻尼比。",
+      "raw_response": "LaTeX: $/ddot{/theta}(t) + 2/omega_n/zeta/dot{/theta}(t) + /omega_n^2/theta(t) = /frac{/ddot{u}_s(t)}{l}$，其中 $/omega_n = /sqrt{/frac{g}{l}}$，$/zeta = /frac{c}{2m/sqrt{gl}}$\n名称: 阻尼单摆受基础激励的运动方程（或二阶线性振动系统方程）\n含义: 该公式组描述了一个单摆系统在存在阻尼的情况下，受到基础加速度（如地震或地面运动）激励时的角位移响应规律。第一个方程是系统的动力学微分方程，后两个方程分别定义了系统的固有频率和阻尼比。\n变量:\n- $/theta(t)$: 摆角（角位移），随时间 $t$ 变化\n- $/dot{/theta}(t)$: 角速度（$/theta$ 对时间的一阶导数）\n- $/ddot{/theta}(t)$: 角加速度（$/theta$ 对时间的二阶导数）\n- $/omega_n$: 系统的固有频率（自然频率）\n- $/zeta$: 阻尼比\n- $u_s(t)$: 基础位移（如地面位移）\n- $/ddot{u}_s(t)$: 基础加速度（如地面加速度）\n- $l$: 摆长\n- $g$: 重力加速度\n- $c$: 阻尼系数\n- $m$: 摆球质量\n条件: 小角度摆动假设（即 $/sin/theta /approx /theta$，使方程线性化）；线性阻尼假设。",
+      "page_num": 10,
+      "image_index": 0
+    }
+  ],
+  "timestamp": "2026-08-05T22:26:29.289802"
+}

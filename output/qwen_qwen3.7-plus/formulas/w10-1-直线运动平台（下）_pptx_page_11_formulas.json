@@ -1,0 +1,16 @@
+{
+  "page": 11,
+  "formula_count": 1,
+  "formulas": [
+    {
+      "source_image": "output/qwen_qwen3.7-plus/images/w10-1-直线运动平台（下）_slide_11_img_2.png",
+      "extraction_method": "deepseek_vl_智能识别",
+      "latex": "$/ddot{/theta}(t) + 2/omega_n/zeta/dot{/theta}(t) + /omega_n^2/theta(t) = /frac{/ddot{u}_s(t)}{l}$，其中 $/omega_n = /sqrt{/frac{g}{l}}$，$/zeta = /frac{c}{2m/sqrt{gl}}$",
+      "description": "该公式组描述了一个单摆系统在受到基底加速度激励下的运动规律。主方程是一个二阶线性常微分方程，表示角加速度、阻尼项、恢复力项与外部激励（基底加速度引起的惯性力）之间的平衡关系。下方公式分别定义了系统的固有频率和阻尼比。",
+      "raw_response": "LaTeX: $/ddot{/theta}(t) + 2/omega_n/zeta/dot{/theta}(t) + /omega_n^2/theta(t) = /frac{/ddot{u}_s(t)}{l}$，其中 $/omega_n = /sqrt{/frac{g}{l}}$，$/zeta = /frac{c}{2m/sqrt{gl}}$\n名称: 阻尼单摆受迫振动方程（线性化）及其参数定义\n含义: 该公式组描述了一个单摆系统在受到基底加速度激励下的运动规律。主方程是一个二阶线性常微分方程，表示角加速度、阻尼项、恢复力项与外部激励（基底加速度引起的惯性力）之间的平衡关系。下方公式分别定义了系统的固有频率和阻尼比。\n变量:\n- $/theta(t)$: 摆角（角位移），$/dot{/theta}(t)$ 为角速度，$/ddot{/theta}(t)$ 为角加速度。\n- $/omega_n$: 系统的固有频率（自然频率）。\n- $/zeta$: 阻尼比。\n- $l$: 摆长。\n- $/ddot{u}_s(t)$: 基底（支座）的加速度激励。\n- $g$: 重力加速度。\n- $c$: 阻尼系数。\n- $m$: 摆球质量。\n条件: 适用于小角度摆动（$/sin/theta /approx /theta$）的线性近似情况，且假设阻尼为线性粘性阻尼。",
+      "page_num": 10,
+      "image_index": 0
+    }
+  ],
+  "timestamp": "2026-08-03T22:07:36.203603"
+}

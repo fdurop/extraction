@@ -1,0 +1,23 @@
+{
+  "original_path": "output/qwen_qwen3.7-plus_1/debug/images/w08-1-步进电机驱动器_p8_img3.png",
+  "enhanced_path": "output/qwen_qwen3.7-plus_1/debug/images/w08-1-步进电机驱动器_p8_img3_enhanced.png",
+  "description": "这份内容来自复旦大学机电智控实验室关于“机电系统原理及实践”课程的课件，主要讲解了 **Arduino 外部中断（External Interrupts）** 的核心概念、硬件映射及编程方法。\n\n以下是对课件内容的详细整理和知识点解析，帮助你更好地理解和实践：\n\n### 1. 核心概念：ISR (中断服务程序)\n*   **定义**：ISR (Interrupt Service Routine) 是当特定事件（中断）发生时，CPU 暂停当前主程序，转去执行的一段代码。\n*   **特点**：ISR 应该尽可能**短小精悍**，执行速度快。通常用于处理紧急任务（如读取传感器数据、改变电机状态），避免在主循环 `loop()` 中轮询，从而提高系统响应效率。\n\n### 2. 中断触发方式 (Mode)\n课件底部的波形图清晰地展示了电平变化：\n*   **RISING (上升沿)**：信号从 LOW (低电平) 变为 HIGH (高电平) 的瞬间触发。\n*   **FALLING (下降沿)**：信号从 HIGH (高电平) 变为 LOW (低电平) 的瞬间触发。\n*   **CHANGE (变化)**：只要电平发生改变（无论是上升还是下降）都触发。\n*   **LOW (低电平)**：只要引脚处于低电平状态，就会持续触发中断（注意：这可能会导致中断频繁执行，需谨慎使用）。\n\n### 3. 中断号与引脚的对应关系\n不同型号的 Arduino 开发板，支持外部中断的引脚和对应的中断号是不同的。\n\n| 开发板型号 | 中断号 (Interrupt No.) | 对应的数字引脚 (Digital Pin) |\n| :--- | :--- | :--- |\n| **UNO** | 0 (`int0`) | **D2** |\n| | 1 (`int1`) | **D3** |\n| **MEGA 2560** | 0, 1 | D2, D3 |\n| | 2, 3, 4, 5 | D21, D20, D19, D18 |\n| **Leonardo** | 0, 1 | D3, D2 (注意顺序反了) |\n| | 2, 3 | D0, D1 |\n\n> **提示**：课件中提到了“数字端口号转中断号”，在实际编程中，推荐使用 `digitalPinToInterrupt(pin)` 函数，这样代码兼容性更好，不需要死记硬背中断号。\n\n### 4. Arduino 相关函数 API\n\n*   **`attachInterrupt(interrupt, ISR, mode)`**\n    *   **作用**：绑定/初始化中断。\n    *   **参数**：\n        *   `interrupt`: 中断号（推荐使用 `digitalPinToInterrupt(pin)`）。\n        *   `ISR`: 中断发生时调用的函数名（不能带参数，不能有返回值）。\n        *   `mode`: 触发模式 (RISING, FALLING, CHANGE, LOW)。\n*   **`detachInterrupt(interrupt)`**\n    *   **作用**：关闭/解除指定的中断。\n*   **`interrupts()` / `noInterrupts()`**\n    *   **作用**：全局开启或关闭所有中断。常用于保护关键代码段不被中断",
+  "metadata": {
+    "generation": {
+      "method": "qwen_api",
+      "backend": "api",
+      "provider": "qwen",
+      "model": "qwen3.7-plus",
+      "status": "success",
+      "api_error": null
+    }
+  },
+  "error": null,
+  "method": "qwen_api",
+  "backend": "api",
+  "provider": "qwen",
+  "model": "qwen3.7-plus",
+  "status": "success",
+  "api_error": null,
+  "indexable": true
+}

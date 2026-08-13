@@ -1,0 +1,2 @@
+﻿序号,LaTeX公式,描述,来源图像,提取方法
+1,$\tilde{U}_s(s)$,该表达式表示经过整形（如整流、滤波或波形 shaping）处理后的输入信号在复频域（s域）中的拉普拉斯变换结果。通常用于控制理论或电路分析中描述系统的输入。,output/qwen_qwen3.7-plus_1/debug/images/w10-1-直线运动平台（下）_slide_14_img_1.png,qwen_api_智能识别

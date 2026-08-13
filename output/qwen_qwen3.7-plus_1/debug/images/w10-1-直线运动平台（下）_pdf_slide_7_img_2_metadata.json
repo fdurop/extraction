@@ -1,0 +1,23 @@
+{
+  "original_path": "output/qwen_qwen3.7-plus_1/debug/images/w10-1-直线运动平台（下）_p7_img3.png",
+  "enhanced_path": "output/qwen_qwen3.7-plus_1/debug/images/w10-1-直线运动平台（下）_p7_img3_enhanced.png",
+  "description": "# 课件解读：时间中断（Timer Interrupt）\n\n## 一、为什么不用 `delay()`？\n\n| 问题 | 说明 |\n|------|------|\n| **阻塞运行** | `delay()` 会暂停整个程序，期间无法响应其他任务 |\n| **逻辑简单** | 难以实现复杂的定时逻辑（如多任务并行定时） |\n| **精度不足** | 不适合需要精确定时的场景（如固定间隔设置电机速度） |\n\n> ✅ **解决方案**：使用**时间中断**——在后台定时触发，不阻塞主程序。\n\n---\n\n## 二、Arduino Uno R3 的定时器资源\n\n| 定时器 | 位数 | 说明 |\n|--------|------|------|\n| **Timer0** | 8位 | 被 `millis()`/`delay()` 占用 |\n| **Timer1** | **16位** | 精度更高，适合精确定时（本例使用） |\n| **Timer2** | 8位 | 可用于其他定时任务 |\n\n---\n\n## 三、代码解析（`w10-s5-blink.ino`）\n\n```cpp\n#include <TimerOne.h>\n\nvoid setup() {\n    pinMode(LED_BUILTIN, OUTPUT);\n\n    // ① 初始化 Timer1，周期 = 1秒（1×10⁶ 微秒）\n    Timer1.initialize(long(1 * 1E6));\n\n    // ② 绑定中断响应函数（每1秒自动调用 LED()）\n    Timer1.attachInterrupt(LED);\n\n    // ③ 启动定时器\n    Timer1.start();\n}\n\nvoid LED() {\n    static bool light = true;       // 静态变量，保持状态\n    digitalWrite(LED_BUILTIN, light);\n    light = !light;                 // 翻转状态\n}\n\nvoid loop() {\n    // 主循环可以执行其他任务，不受LED闪烁影响！\n}\n```\n\n### 执行流程图\n\n```\n主程序 loop() ──→ 自由执行其他任务（不阻塞）\n                      │\n                      ▼\n         ┌── Timer1 每1秒触发 ──\n         │                      │\n         ▼                      ▼\n    调用 LED()           翻转LED状态\n    (中断服务函数)        亮 ↔ 灭\n```\n\n---\n\n## 四、关键要点\n\n1. **`static bool light`**：静态局部变量，函数退出后值不丢失，实现状态保持。\n2. **中断服务函数（ISR）应尽量简短**：避免在中断中执行耗时操作。\n3. **Timer1 是16位定时器**：最大定时周期 = 2¹⁶ × 时钟周期，精度远高于8位定时器。\n4. **与直线运动平台的关联**：在电机控制中，需要在**固定时间间隔**更新速度/位置指令，时间中断比 `delay()` 更合适。\n\n---\n\n## 五、与直线运动平台的联系\n\n在直线运动平台控制中，典型应用场景：\n\n```\n时间中断（如每10ms）\n    │\n    ├── 读取编码器位置\n    ├── 计算PID控制量\n    ├── 更新PWM输出（",
+  "metadata": {
+    "generation": {
+      "method": "qwen_api",
+      "backend": "api",
+      "provider": "qwen",
+      "model": "qwen3.7-plus",
+      "status": "success",
+      "api_error": null
+    }
+  },
+  "error": null,
+  "method": "qwen_api",
+  "backend": "api",
+  "provider": "qwen",
+  "model": "qwen3.7-plus",
+  "status": "success",
+  "api_error": null,
+  "indexable": true
+}

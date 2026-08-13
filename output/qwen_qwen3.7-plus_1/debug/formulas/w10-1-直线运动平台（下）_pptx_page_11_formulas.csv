@@ -1,0 +1,2 @@
+﻿序号,LaTeX公式,描述,来源图像,提取方法
+1,$\ddot{\theta}(t) + 2\omega_n\zeta\dot{\theta}(t) + \omega_n^2\theta(t) = \frac{\ddot{u}_s(t)}{l}$，其中 $\omega_n = \sqrt{\frac{g}{l}}$，$\zeta = \frac{c}{2m\sqrt{gl}}$,该公式组描述了一个单摆系统在存在阻尼的情况下，受到基础加速度（如地震或地面运动）激励时的角位移响应规律。第一个方程是系统的动力学微分方程，后两个方程分别定义了系统的固有频率和阻尼比。,output/qwen_qwen3.7-plus_1/debug/images/w10-1-直线运动平台（下）_slide_11_img_2.png,qwen_api_智能识别

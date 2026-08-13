@@ -1,0 +1,23 @@
+{
+  "original_path": "output/qwen_qwen3.7-plus_1/debug/images/w09-1-直线运动平台（上） - 副本_p7_img5.jpeg",
+  "enhanced_path": "output/qwen_qwen3.7-plus_1/debug/images/w09-1-直线运动平台（上） - 副本_p7_img5_enhanced.jpeg",
+  "description": "这张图片是关于**机电系统原理及实践**课程中“直线运动平台”部分的PPT幻灯片，主要讲解了**急停开关（Emergency Switch）**的原理和接线方式。\n\n以下是对图片内容的详细整理和原理解析：\n\n### 1. 课程信息\n*   **课程名称**：机电系统原理及实践—— 直线运动平台（上）\n*   **实验室/作者**：机电智控实验室 (tangguoan@fudan.edu.cn, mmguo@fudan.edu.cn)\n*   **章节**：§2.3 急停开关\n\n### 2. 急停开关基础概念\n*   **定义**：又称紧急开关（emergency switch）。\n*   **作用**：在紧急情况下迅速切断设备电源或控制信号，保障人员和设备安全。\n*   **安装位置**：一般接在**控制回路**中（而不是直接切断主电源，虽然也可以，但在现代机电系统中通常控制使能信号）。\n\n### 3. 触点类型（核心知识点）\n急停开关通常包含两组触点，用于不同的控制逻辑：\n*   **NO (Normally Open，常开触点)**：\n    *   **状态**：平时断开，**按下后导通**。\n    *   **端子编号**：图中对应 **23 - 24**（通常工业标准中23-24为NO）。\n    *   **用途**：通常用于启动信号或报警信号（按下后触发）。\n*   **NC (Normally Closed，常闭触点)**：\n    *   **状态**：平时导通，**按下后断开**。\n    *   **端子编号**：图中对应 **11 - 12**（通常工业标准中11-12为NC）。\n    *   **用途**：**急停功能主要使用NC触点**。因为安全逻辑要求“断线即停”或“按下即停”。\n\n### 4. 接线原理分析（图中下半部分）\n图片展示了一个利用急停开关控制驱动器**使能端（ENA）**的接线逻辑。\n\n*   **组件**：\n    *   5V 电源\n    *   驱动器 (ENA+, ENA-)\n    *   急停开关\n    *   GND (地)\n\n*   **逻辑推演（基于安全设计原则）**：\n    通常驱动器的使能（Enable）需要高电平或闭合回路才能工作。为了安全，我们必须使用 **NC（常闭）触点**（即图中的 11-12 端子）。\n\n    *   **正常状态（未按下）**：\n        *   NC触点（11-12）是**导通**的。\n        *   电路路径：5V $/rightarrow$ ENA+ $/rightarrow$ (驱动器内部) $/rightarrow$ ENA- $/rightarrow$ 急停开关(NC) $/rightarrow$ GND。\n        *   结果：回路闭合，驱动器获得使能信号，电机可以工作。\n\n    *   **紧急状态（按下急停）**：\n        *   NC触点（11-12）**断开**。\n        *   电路路径被切断。\n        *   结果：ENA回路断开，驱动器失去使能信号",
+  "metadata": {
+    "generation": {
+      "method": "qwen_api",
+      "backend": "api",
+      "provider": "qwen",
+      "model": "qwen3.7-plus",
+      "status": "success",
+      "api_error": null
+    }
+  },
+  "error": null,
+  "method": "qwen_api",
+  "backend": "api",
+  "provider": "qwen",
+  "model": "qwen3.7-plus",
+  "status": "success",
+  "api_error": null,
+  "indexable": true
+}

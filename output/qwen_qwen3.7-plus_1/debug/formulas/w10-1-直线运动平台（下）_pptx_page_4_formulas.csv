@@ -1,0 +1,2 @@
+﻿序号,LaTeX公式,描述,来源图像,提取方法
+1,"$\begin{cases} x = r \cos \theta \\ y = r \sin \theta \\ z = \frac{P}{2\pi} \theta \end{cases}$ （或向量形式 $\mathbf{r}(t) = (r \cos t, r \sin t, ct)$）",该公式描述了空间中一点在绕圆柱轴线匀速旋转的同时，沿轴线方向匀速移动所形成的轨迹。图片展示的正是一个具有螺旋槽（螺纹）的圆柱体（螺杆），其几何形状即由圆柱螺旋面构成。,output/qwen_qwen3.7-plus_1/debug/images/w10-1-直线运动平台（下）_slide_4_img_3.png,qwen_api_智能识别

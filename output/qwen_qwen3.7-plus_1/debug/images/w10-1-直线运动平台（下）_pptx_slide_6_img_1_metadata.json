@@ -1,0 +1,23 @@
+{
+  "original_path": "output/qwen_qwen3.7-plus_1/debug/images/w10-1-直线运动平台（下）_slide_6_img_1.png",
+  "enhanced_path": "output/qwen_qwen3.7-plus_1/debug/images/w10-1-直线运动平台（下）_slide_6_img_1_enhanced.png",
+  "description": "# §3.1 步进电机调速原理 —— 时间中断计算速度\n\n## 一、连续时间模型\n\n步进电机的转角 $/theta(t)$ 与转速 $/omega(t)$ 满足积分关系：\n\n$$/theta(t_1) = /theta(t_0) + /int_{t_0}^{t_1} /omega(t)/, dt$$\n\n即：**角位移 = 初始角位移 + 转速对时间的积分**。\n\n---\n\n## 二、离散化（数值积分）\n\n设 $/Delta t$ 为每次 loop 循环的时间间隔（即定时中断周期），将积分近似为矩形法：\n\n$$/theta[n/Delta t] = /theta[(n-1)/Delta t] + /omega[n/Delta t] /cdot /Delta t$$\n\n> 每次循环累加一个\"角位移增量\" $/omega /cdot /Delta t$。\n\n---\n\n## 三、无量纲化（脉冲化）\n\n用**每脉冲转角 $/Delta/theta$** 对 $/theta$ 和 $/omega$ 进行归一化：\n\n| 物理量 | 原始单位 | 无量纲化后单位 |\n|--------|----------|----------------|\n| $/theta$ | 弧度（rad） | **脉冲数** |\n| $/omega$ | rad/s | **脉冲数/微秒** |\n\n此时 $/Delta/theta = 1$（一个脉冲对应一个单位角位移）。\n\n---\n\n## 四、脉冲输出判决（核心算法）\n\n$$/text{当 } |/theta[n/Delta t]| /geq 0.5 /text{ 时，电机转动一格（发一个脉冲）}$$\n\n同时累加值 **∓1**（正转减1，反转加1，或反之），使 $/theta$ 回到 $[-0.5, 0.5)$ 区间。\n\n### 误差分析\n\n由于判决阈值为 0.5，角位移的累积误差始终满足：\n\n$$|/text{误差}| < /frac{/Delta/theta}{2}$$\n\n即**误差不超过半个脉冲对应的角度**。\n\n---\n\n## 五、算法流程图\n\n```\n每次定时中断（周期 Δt）：\n  1. 读取目标转速 ω\n  2. θ += ω × Δt          / 累加角位移\n  3. if |θ| ≥ 0.5:\n       发送一个脉冲         / 电机转动一格\n       θ -= sign(θ) × 1    / 扣除已输出的脉冲\n```\n\n---\n\n## 六、举例说明\n\n假设 $/omega = 0.3$ 脉冲/μs，$/Delta t = 1$ μs：\n\n| 循环次数 n | θ 累加值 | 是否发脉冲 | 发脉冲后 θ |\n|:---:|:---:|:---:|:---:|\n| 1 | 0.3 | 否 | 0.3 |\n| 2 | 0.6 | **是** | −0.4 |\n| 3 | −0.1 | 否 | −0.1 |\n| 4 | 0.2 | 否 | 0.2 |\n| 5 |",
+  "metadata": {
+    "generation": {
+      "method": "qwen_api",
+      "backend": "api",
+      "provider": "qwen",
+      "model": "qwen3.7-plus",
+      "status": "success",
+      "api_error": null
+    }
+  },
+  "error": null,
+  "method": "qwen_api",
+  "backend": "api",
+  "provider": "qwen",
+  "model": "qwen3.7-plus",
+  "status": "success",
+  "api_error": null,
+  "indexable": true
+}

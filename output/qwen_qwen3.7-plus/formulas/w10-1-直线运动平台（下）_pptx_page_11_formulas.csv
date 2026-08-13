@@ -1,0 +1,2 @@
+﻿序号,LaTeX公式,描述,来源图像,提取方法
+1,$/ddot{/theta}(t) + 2/omega_n/zeta/dot{/theta}(t) + /omega_n^2/theta(t) = /frac{/ddot{u}_s(t)}{l}$，其中 $/omega_n = /sqrt{/frac{g}{l}}$，$/zeta = /frac{c}{2m/sqrt{gl}}$,该公式组描述了一个单摆系统在受到基底加速度激励下的运动规律。主方程是一个二阶线性常微分方程，表示角加速度、阻尼项、恢复力项与外部激励（基底加速度引起的惯性力）之间的平衡关系。下方公式分别定义了系统的固有频率和阻尼比。,output/qwen_qwen3.7-plus/images/w10-1-直线运动平台（下）_slide_11_img_2.png,deepseek_vl_智能识别

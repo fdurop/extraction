@@ -1,0 +1,23 @@
+{
+  "original_path": "output/qwen_qwen3.7-plus_1/debug/images/w10-1-直线运动平台（下）_slide_15_img_4.png",
+  "enhanced_path": "output/qwen_qwen3.7-plus_1/debug/images/w10-1-直线运动平台（下）_slide_15_img_4_enhanced.png",
+  "description": "根据您提供的图片和文字，这是关于控制理论中**输入整形（Input Shaping）**技术的一个公式。\n\n### 1. 公式转录\n图片中的数学公式为：\n\n$$ /tilde{u}_s(t) = /frac{1}{2}[u_s(t) + u_s(t - 2/tau)] $$\n\n### 2. 公式解读\n这个公式描述了一种信号处理或控制输入修正的方法，具体含义如下：\n\n*   **$/tilde{u}_s(t)$**：表示经过“整形”后的新输入信号（修正后的控制量）。\n*   **$u_s(t)$**：表示原始的输入信号（命令信号）。\n*   **$u_s(t - 2/tau)$**：表示原始信号延迟了 $2/tau$ 时间后的信号。\n*   **$/frac{1}{2}$**：权重系数，表示取两个信号的平均值。\n\n### 3. 物理意义与应用背景（输入整形）\n在“输入整形”（Input Shaping）技术中，这个公式通常用于**抑制柔性系统的残余振动**。\n\n*   **原理**：它实际上是将原始命令 $u_s(t)$ 与一个脉冲序列（Impulse Sequence）进行卷积。这里的脉冲序列由两个脉冲组成：一个在 $t=0$ 时刻，幅值为 0.5；另一个在 $t=2/tau$ 时刻，幅值为 0.5。\n*   **延迟时间 $2/tau$ 的选择**：为了消除系统的振动，延迟时间 $2/tau$ 通常被设置为系统固有振动周期的**一半**（即 $2/tau = T_d / 2 = /pi / /omega_d$）。\n    *   当延迟时间为半周期时，第二个脉冲产生的振动与第一个脉冲产生的振动相位相反（相差180度），从而相互抵消，实现“零振动”（Zero Vibration, ZV）。\n*   **效果**：通过这种简单的加权平均和延迟，可以平滑控制输入，防止系统在阶跃响应时产生剧烈的振荡。\n\n**总结：** 这是一个典型的**ZV（零振动）输入整形器**的时域表达式，通过将当前信号与半个周期前的信号取平均，来消除特定频率的振动。",
+  "metadata": {
+    "generation": {
+      "method": "qwen_api",
+      "backend": "api",
+      "provider": "qwen",
+      "model": "qwen3.7-plus",
+      "status": "success",
+      "api_error": null
+    }
+  },
+  "error": null,
+  "method": "qwen_api",
+  "backend": "api",
+  "provider": "qwen",
+  "model": "qwen3.7-plus",
+  "status": "success",
+  "api_error": null,
+  "indexable": true
+}

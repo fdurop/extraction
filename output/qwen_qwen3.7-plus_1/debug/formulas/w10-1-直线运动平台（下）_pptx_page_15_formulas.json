@@ -1,0 +1,19 @@
+{
+  "page": 15,
+  "formula_count": 1,
+  "formulas": [
+    {
+      "source_image": "output/qwen_qwen3.7-plus_1/debug/images/w10-1-直线运动平台（下）_slide_15_img_4.png",
+      "extraction_method": "qwen_api_智能识别",
+      "backend": "api",
+      "provider": "qwen",
+      "model": "qwen3.7-plus",
+      "latex": "$/tilde{u}_s(t) = /frac{1}{2}[u_s(t) + u_s(t - 2/tau)]$",
+      "description": "该公式表示处理后的信号 $/tilde{u}_s(t)$ 是原始信号 $u_s(t)$ 与其延迟了 $2/tau$ 时间后的信号 $u_s(t-2/tau)$ 的算术平均值。在信号处理中，这相当于一个简单的有限脉冲响应（FIR）滤波器（梳状滤波器的一种），用于平滑信号或提取特定频率成分。",
+      "raw_response": "LaTeX: $/tilde{u}_s(t) = /frac{1}{2}[u_s(t) + u_s(t - 2/tau)]$\n名称: 信号延迟平均公式（或两点移动平均公式）\n含义: 该公式表示处理后的信号 $/tilde{u}_s(t)$ 是原始信号 $u_s(t)$ 与其延迟了 $2/tau$ 时间后的信号 $u_s(t-2/tau)$ 的算术平均值。在信号处理中，这相当于一个简单的有限脉冲响应（FIR）滤波器（梳状滤波器的一种），用于平滑信号或提取特定频率成分。\n变量:\n- $/tilde{u}_s(t)$：处理后的信号（或估计信号、平均信号）。\n- $u_s(t)$：原始输入信号在时刻 $t$ 的值。\n- $u_s(t - 2/tau)$：原始输入信号在时刻 $t - 2/tau$ 的值（即延迟了 $2/tau$ 的信号）。\n- $/tau$：时间参数（通常代表半个码元周期或特定的延迟时间）。\n- $t$：时间变量。\n条件: 适用于连续时间或离散时间信号处理系统，常用于通信系统中的码间干扰控制、信号平滑或噪声抑制。",
+      "page_num": 14,
+      "image_index": 2
+    }
+  ],
+  "timestamp": "2026-08-05T22:33:02.909244"
+}

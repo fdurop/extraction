@@ -1,0 +1,17 @@
+{
+  "page_num": 7,
+  "raw_text": "§3.3 \n实践：\n滑台的简谐运动\n17-\nw10-s6-sliderHarmonicMotion\n.ino\n限时 \n30 \n分钟",
+  "cleaned_text": "§3.3 实践： 滑台的简谐运动 17- w10-s6-sliderHarmonicMotion .ino 限时 30 分钟",
+  "key_points": [
+    "实践："
+  ],
+  "technical_terms": [],
+  "has_images": false,
+  "image_count": 0,
+  "image_paths": [],
+  "metadata": {
+    "char_count": 65,
+    "word_count": 9,
+    "line_count": 9
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "original_path": "output/qwen_qwen3.7-plus/images/w10-1-直线运动平台（下）_slide_6_img_1.png",
+  "enhanced_path": "output/qwen_qwen3.7-plus/images/w10-1-直线运动平台（下）_slide_6_img_1_enhanced.png",
+  "description": "# §3.1 步进电机调速原理 —— 时间中断计算速度\n\n## 核心思想\n\n这张幻灯片介绍了一种基于**累加器（Accumulator）**的步进电机速度控制算法，通过时间中断来精确控制电机转速。\n\n---\n\n## 1. 连续模型\n\n步进电机的转角 $/theta(t)$ 与转速 $/omega(t)$ 的关系为：\n\n$$/theta(t_1) = /theta(t_0) + /int_{t_0}^{t_1} /omega(t)/,dt$$\n\n即：**角位移 = 角速度对时间的积分**。\n\n---\n\n## 2. 离散化\n\n设 $/Delta t$ 为每次循环（loop）的时间间隔，将积分离散化：\n\n$$/theta[n/Delta t] = /theta[(n-1)/Delta t] + /omega[n/Delta t] /cdot /Delta t$$\n\n> 每个周期累加一次\"角增量\"，这就是**累加器**的核心思想。\n\n---\n\n## 3. 无量纲化（关键步骤）\n\n用**每脉冲转角 $/Delta/theta$** 对 $/theta$ 和 $/omega$ 进行归一化：\n\n| 物理量 | 原始单位 | 无量纲化后单位 |\n|--------|----------|----------------|\n| $/theta$ | 弧度（rad） | **脉冲数** |\n| $/omega$ | rad/s | **脉冲数/微秒** |\n\n这样，$/theta$ 的值直接表示\"应该发出多少个脉冲\"。\n\n---\n\n## 4. 脉冲输出判决\n\n$$/text{当 } |/theta[n/Delta t]| /geq 0.5 /text{ 时，电机转动一格（发一个脉冲）}$$\n\n同时累加值 **∓1**（正转减1，反转加1），即：\n\n```\nθ[nΔt] = θ[(n-1)Δt] + ω·Δt\n\nif |θ[nΔt]| ≥ 0.5:\n    发出一个脉冲（电机转一格）\n    θ[nΔt] = θ[nΔt] ∓ 1   // 扣除已输出的脉冲\n```\n\n---\n\n## 5. 误差分析\n\n由于采用 **0.5 阈值判决**，角位移的误差始终小于：\n\n$$/frac{/Delta/theta}{2}$$\n\n即**最多差半个步距角**，精度非常高。\n\n---\n\n## 直观理解\n\n> 想象一个水桶，每个周期往里面倒 $/omega /cdot /Delta t$ 的水（角增量）。当水满到 0.5 以上时，就\"倒出一格\"（发一个脉冲），桶里剩下的水继续累积。这样即使速度很慢（每个周期增量很小），也能在多个周期后准确发出脉冲，**不会丢失步数**。\n\n这种算法本质上就是 **Bresenham 画线算法**在电机控制中的应用，也称为 **DDA（数字微分分析器）** 方法。",
+  "metadata": {},
+  "error": null,
+  "method": "qwen_api"
+}

@@ -1,0 +1,23 @@
+{
+  "original_path": "output/qwen_qwen3.7-plus/images/w08-1-步进电机驱动器_p8_img3.png",
+  "enhanced_path": "output/qwen_qwen3.7-plus/images/w08-1-步进电机驱动器_p8_img3.png",
+  "description": "这张图片是复旦大学机电智控实验室关于**“机电系统原理及实践”**课程的PPT课件，主要讲解了**Arduino的外部中断（External Interrupt）**机制。\n\n以下是对图片内容的详细解读和知识点总结，以及针对“实践”部分的代码示例补充：\n\n### 1. 核心概念：ISR (中断服务程序)\n*   **ISR (Interrupt Service Routine)**：当外部中断发生时，CPU会暂停当前正在执行的主程序，转而去执行一段特定的代码，这段代码就是ISR。执行完毕后，再回到主程序继续执行。\n*   **注意**：ISR代码应该尽可能短小精悍，不要使用 `delay()` 等阻塞函数。\n\n### 2. 中断号与引脚的对应关系\n不同型号的Arduino板子，支持外部中断的引脚（数字端口）是不同的。PPT中列出了三种常见板型的映射关系（注意：PPT中 \"Lernardo\" 应为 **Leonardo**）：\n\n| 中断号 (Interrupt No.) | UNO 引脚 | MEGA 引脚 | Leonardo 引脚 |\n| :--- | :--- | :--- | :--- |\n| **int 0** | D2 | D2 | D3 |\n| **int 1** | D3 | D3 | D2 |\n| **int 2** | - | D21 | D0 |\n| **int 3** | - | D20 | D1 |\n| **int 4** | - | D19 | - |\n| **int 5** | - | D18 | - |\n\n*   **编程提示**：在代码中，通常使用 `digitalPinToInterrupt(pin)` 函数将数字引脚号转换为中断号，这样代码兼容性更好。例如：`attachInterrupt(digitalPinToInterrupt(2), myISR, RISING);`\n\n### 3. 中断触发方式 (Mode)\n结合图片底部的波形图，四种触发模式解释如下：\n\n*   **RISING (上升沿)**：信号从 **LOW (低电平)** 变为 **HIGH (高电平)** 的瞬间触发。（如图中左侧上升沿）\n*   **FALLING (下降沿)**：信号从 **HIGH (高电平)** 变为 **LOW (低电平)** 的瞬间触发。（如图中右侧下降沿）\n*   **CHANGE (变化)**：只要电平发生改变（无论是从低到高，还是从高到低）都会触发。\n*   **LOW (低电平)**：只要引脚处于低电平状态，就会不断触发中断（慎用，容易卡死）。\n\n### 4. Arduino 相关函数\n*   `attachInterrupt(interrupt, ISR, mode)`：\n    *   功能：初始化并绑定中断。\n    *   参数：中断号、函数名（ISR）、触发模式。\n*   `detachInterrupt(interrupt)`：\n    *   功能：关闭/解除指定的中断。\n*   `interrupts()` / `noInterrupts()`：\n    *   功能：全局允许或禁用所有中断。通常用于保护关键代码段不被中断打断。\n\n---\n\n### 5. 实践代码示例 (w08-s2-extInterrupt.ino)\n虽然图片中没有给出具体代码，但根据标题，",
+  "metadata": {
+    "generation": {
+      "method": "qwen_api",
+      "backend": "api",
+      "provider": "qwen",
+      "model": "qwen3.7-plus",
+      "status": "success",
+      "api_error": null
+    }
+  },
+  "error": null,
+  "method": "qwen_api",
+  "backend": "api",
+  "provider": "qwen",
+  "model": "qwen3.7-plus",
+  "status": "success",
+  "api_error": null,
+  "indexable": true
+}

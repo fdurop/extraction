@@ -1,0 +1,2 @@
+﻿序号,LaTeX公式,描述,来源图像,提取方法
+1,$\theta(t_1) = \theta(t_0) + \int_{t_0}^{t_1} \omega(t) \mathrm{d}t$ 及 $\theta[n\Delta t] = \theta[(n-1)\Delta t] + \omega[n\Delta t]\Delta t$,,output/qwen_qwen3.7-plus_1/debug/images/w10-1-直线运动平台（下）_slide_6_img_1.png,qwen_api_智能识别

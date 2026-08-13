@@ -1,0 +1,8 @@
+{
+  "original_path": "output/qwen_qwen3.7-plus/images/w10-1-直线运动平台（下）_slide_14_img_1.png",
+  "enhanced_path": "output/qwen_qwen3.7-plus/images/w10-1-直线运动平台（下）_slide_14_img_1_enhanced.png",
+  "description": "根据您提供的图片和文字，这是关于控制理论中**输入整形（Input Shaping）**的内容。\n\n**图片文字内容转录：**\n> $/tilde{U}_s(s)$ 为整形后输入的拉氏变换\n\n---\n\n### **知识点解析**\n\n在输入整形（Input Shaping）技术中，这个定义通常用于描述信号经过整形器处理后的状态。\n\n1.  **符号含义**：\n    *   $U(s)$：通常指**原始输入**信号的拉氏变换。\n    *   $/tilde{U}_s(s)$：指**整形后（Shaped）**输入信号的拉氏变换。这里的波浪号 $/sim$ 和下标 $s$ (shaped) 表示信号已经被修改过，以消除系统的残余振动。\n\n2.  **数学关系**：\n    输入整形的核心思想是在时域上将原始输入信号与一系列脉冲（Impulse Sequence）进行卷积。在拉氏域（频域）中，卷积变为乘法。\n    公式通常表示为：\n    $$ /tilde{U}_s(s) = U(s) /cdot I(s) $$\n    其中 $I(s)$ 是**输入整形器（Input Shaper）**的传递函数，通常形式为：\n    $$ I(s) = /sum_{i=1}^{n} A_i e^{-s t_i} $$\n    *   $A_i$：第 $i$ 个脉冲的幅值。\n    *   $t_i$：第 $i$ 个脉冲的时间延迟。\n\n**总结**：这句话定义了 $/tilde{U}_s(s)$ 这个变量，即它是原始控制指令经过“整形”算法处理后，发送给系统的最终控制信号的拉氏变换形式。",
+  "metadata": {},
+  "error": null,
+  "method": "qwen_api"
+}

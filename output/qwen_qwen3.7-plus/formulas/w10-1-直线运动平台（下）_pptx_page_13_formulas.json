@@ -1,0 +1,16 @@
+{
+  "page": 13,
+  "formula_count": 1,
+  "formulas": [
+    {
+      "source_image": "output/qwen_qwen3.7-plus/images/w10-1-直线运动平台（下）_slide_13_img_1.png",
+      "extraction_method": "deepseek_vl_智能识别",
+      "latex": "$s_{1,2} = /mp i/omega_n$",
+      "description": "该公式描述了二阶线性系统在无阻尼状态下的特征根（极点）位置。此时系统处于临界稳定状态（等幅振荡），极点位于复平面的虚轴上。",
+      "raw_response": "LaTeX: $s_{1,2} = /mp i/omega_n$\n名称: 二阶系统无阻尼极点公式\n含义: 该公式描述了二阶线性系统在无阻尼状态下的特征根（极点）位置。此时系统处于临界稳定状态（等幅振荡），极点位于复平面的虚轴上。\n变量:\n- $s_{1,2}$: 系统的两个极点（特征根）。\n- $i$: 虚数单位（工程中常用 $j$ 表示）。\n- $/omega_n$: 系统的无阻尼自然频率（Undamped natural frequency）。\n条件: 适用于阻尼比 $/zeta = 0$ 的二阶系统。",
+      "page_num": 12,
+      "image_index": 0
+    }
+  ],
+  "timestamp": "2026-08-03T22:09:47.472636"
+}

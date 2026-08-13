@@ -1,0 +1,23 @@
+{
+  "original_path": "output/qwen_qwen3.7-plus_1/debug/images/w10-1-直线运动平台（下）_slide_15_img_3.png",
+  "enhanced_path": "output/qwen_qwen3.7-plus_1/debug/images/w10-1-直线运动平台（下）_slide_15_img_3_enhanced.png",
+  "description": "# §4.1 输入整形（Input Shaping）\n\n## 公式解读\n\n$$C = C / /tau^2$$\n\n这是输入整形技术中对**代价函数（Cost Function）** 的归一化处理，其中：\n\n| 符号 | 含义 |\n|------|------|\n| $C$ | 代价函数（衡量系统振动/性能的指标） |\n| $/tau$ | 特征时间常数（通常为系统振动周期或时间延迟） |\n| $/tau^2$ | 归一化因子 |\n\n---\n\n## 输入整形的基本原理\n\n输入整形是一种**前馈控制**技术，用于抑制柔性系统的残余振动。\n\n### 核心思想\n\n将原始输入信号 $u(t)$ 与一系列脉冲序列卷积，生成整形后的输入：\n\n$$u_{/text{shaped}}(t) = u(t) * /sum_{i=1}^{n} A_i /, /delta(t - t_i)$$\n\n其中：\n- $A_i$：第 $i$ 个脉冲的幅值\n- $t_i$：第 $i$ 个脉冲的时间延迟\n- $/delta(t)$：狄拉克脉冲函数\n\n### 二阶系统模型\n\n对于典型二阶系统：\n\n$$/ddot{x} + 2/zeta/omega_n /dot{x} + /omega_n^2 x = /omega_n^2 u(t)$$\n\n- $/omega_n$：自然频率\n- $/zeta$：阻尼比\n- 振动周期 $T = /frac{2/pi}{/omega_n}$，此时 $/tau$ 常取为 $T$ 或相关时间尺度\n\n---\n\n## 归一化的意义\n\n$$C = /frac{C}{/tau^2}$$\n\n将代价函数除以 $/tau^2$ 的目的是：\n\n1. **无量纲化**：消除时间量纲，使优化问题与具体时间尺度无关\n2. **通用性**：使设计方法适用于不同频率的系统\n3. **优化便利**：归一化后的代价函数更便于数值优化求解\n\n---\n\n## 常见输入整形器\n\n| 整形器类型 | 脉冲数 | 特点 |\n|-----------|--------|------|\n| **ZV（零振动）** | 2 | 最简单，对参数变化敏感 |\n| **ZVD（零振动+导数）** | 3 | 鲁棒性更好 |\n| **ZVDD** | 4 | 更高鲁棒性 |\n| **EI（额外不敏感）** | 3 | 在指定范围内抑制振动 |\n\n### ZV 整形器示例\n\n$$A_1 = /frac{1}{1+K}, /quad A_2 = /frac{K}{1+K}, /quad t_1 = 0, /quad t_2 = /frac{T}{2}$$\n\n其中 $K = e^{-/zeta/pi/sqrt{1-/zeta^2}}$\n\n---\n\n如果您需要进一步解释某个具体部分（如代价函数的具体形式、优化过程等），请告诉我！",
+  "metadata": {
+    "generation": {
+      "method": "qwen_api",
+      "backend": "api",
+      "provider": "qwen",
+      "model": "qwen3.7-plus",
+      "status": "success",
+      "api_error": null
+    }
+  },
+  "error": null,
+  "method": "qwen_api",
+  "backend": "api",
+  "provider": "qwen",
+  "model": "qwen3.7-plus",
+  "status": "success",
+  "api_error": null,
+  "indexable": true
+}

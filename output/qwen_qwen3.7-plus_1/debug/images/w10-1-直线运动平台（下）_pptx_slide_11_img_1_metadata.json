@@ -1,0 +1,23 @@
+{
+  "original_path": "output/qwen_qwen3.7-plus_1/debug/images/w10-1-直线运动平台（下）_slide_11_img_2.png",
+  "enhanced_path": "output/qwen_qwen3.7-plus_1/debug/images/w10-1-直线运动平台（下）_slide_11_img_2_enhanced.png",
+  "description": "这张图片展示了一个典型的**二阶振荡系统**（如起重机/吊车吊运系统或单摆）的动力学模型，这是**输入整形（Input Shaping）**技术的基础。\n\n以下是图片内容的详细转录与解析：\n\n### 1. 系统动力学方程\n图片最上方给出了系统的微分方程：\n$$ /ddot{/theta}(t) + 2/omega_n/zeta/dot{/theta}(t) + /omega_n^2/theta(t) = /frac{/ddot{u}_s(t)}{l} $$\n\n*   **物理含义**：这是一个受迫振动方程。\n    *   $/theta(t)$：摆角（例如吊车绳索与垂直方向的夹角）。\n    *   $/ddot{u}_s(t)$：基座（小车）的加速度，这是系统的**控制输入**。\n    *   $l$：摆长（绳长）。\n    *   方程表明：小车的加速度 $/ddot{u}_s(t)$ 会驱动摆角 $/theta(t)$ 发生变化（即引起晃动）。\n\n### 2. 关键参数定义\n*   **固有频率 (Natural Frequency)**：\n    $$ /omega_n = /sqrt{/frac{g}{l}} $$\n    这是系统自由振荡的频率，仅取决于重力 $g$ 和绳长 $l$。\n\n*   **阻尼比 (Damping Ratio)**：\n    $$ /zeta = /frac{c}{2m/sqrt{gl}} $$\n    其中 $c$ 为阻尼系数，$m$ 为质量。阻尼比决定了系统振动的衰减速度。\n\n---\n\n### 3. 背景知识：与“输入整形”的关系\n你提供的标题是“§4.1 输入整形”。在这个背景下，这个方程的意义如下：\n\n*   **问题**：当小车移动（输入 $/ddot{u}_s(t)$）时，负载会像钟摆一样晃动（$/theta(t) /neq 0$）。\n*   **目标**：设计一个输入信号，使得小车移动到位后，负载**不晃动**（即残余振动为零）。\n*   **输入整形 (Input Shaping) 的原理**：\n    利用上述方程的线性特性，将控制输入（加速度命令）与一系列**脉冲序列**进行卷积。通过精心计算脉冲的时间和幅度，使得第一个脉冲引起的振动与后续脉冲引起的振动**相互抵消**，从而消除 $/theta(t)$。\n\n如果你需要关于如何针对这个方程设计**ZV（零振动）整形器**或**ZVD整形器**的具体步骤，请告诉我！",
+  "metadata": {
+    "generation": {
+      "method": "qwen_api",
+      "backend": "api",
+      "provider": "qwen",
+      "model": "qwen3.7-plus",
+      "status": "success",
+      "api_error": null
+    }
+  },
+  "error": null,
+  "method": "qwen_api",
+  "backend": "api",
+  "provider": "qwen",
+  "model": "qwen3.7-plus",
+  "status": "success",
+  "api_error": null,
+  "indexable": true
+}

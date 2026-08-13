@@ -1,0 +1,29 @@
+{
+  "page_num": 9,
+  "raw_text": "§4.1 \n输入整形\n前馈控制（\nF\need-\nF\norward \nC\nontrol\n，\nFFC\n）\n按干扰量的变化来\n提前补偿\n其对被控变量的影响。\n开环\n控制，无稳定性问题。\n输入整形即为一种前馈控制方式。\n17-",
+  "cleaned_text": "§4.1 输入整形 前馈控制（ F eed- F orward C ontrol ， FFC ） 按干扰量的变化来 提前补偿 其对被控变量的影响。 开环 控制，无稳定性问题。 输入整形即为一种前馈控制方式。 17-",
+  "key_points": [
+    "F",
+    "F",
+    "C",
+    "FFC",
+    "其对被控变量的影响。",
+    "控制，无稳定性问题。",
+    "输入整形即为一种前馈控制方式。"
+  ],
+  "technical_terms": [
+    "FFC",
+    "前馈控制",
+    "输入整形即为一种前馈控制"
+  ],
+  "has_images": true,
+  "image_count": 1,
+  "image_paths": [
+    "output/qwen_qwen3.7-plus_1/debug/images/w10-1-直线运动平台（下）_slide_10_img_1.png"
+  ],
+  "metadata": {
+    "char_count": 109,
+    "word_count": 19,
+    "line_count": 19
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "original_path": "output/qwen_qwen3.7-plus_1/debug/images/w10-1-直线运动平台（下）_p6_img2.png",
+  "enhanced_path": "output/qwen_qwen3.7-plus_1/debug/images/w10-1-直线运动平台（下）_p6_img2_enhanced.png",
+  "description": "这份资料来自复旦大学机电智控实验室，主要讲解了**步进电机调速的数学原理**以及**如何在代码（Arduino/C++环境）中实现这种调速算法**。\n\n这是一种非常经典的**基于时间积分的脉冲累加算法**（类似于数字微分分析器 DDA 或 Bresenham 算法的思想），用于在非固定频率的循环中平滑地控制电机速度。\n\n以下是对PPT原理和代码的详细对应解析：\n\n### 1. 数学原理 (PPT部分)\n\nPPT的核心思想是将连续的旋转运动转化为离散的脉冲发送。\n\n*   **连续公式**：$/theta(t_1) = /theta(t_0) + /int_{t_0}^{t_1} /omega(t) dt$\n    *   含义：当前的角度 = 初始角度 + 速度对时间的积分。\n*   **离散化公式**：$/theta[n/Delta t] = /theta[(n-1)/Delta t] + /omega[n/Delta t] /cdot /Delta t$\n    *   含义：在每一个循环周期（$/Delta t$）内，新的角度 = 旧角度 + 速度 $/times$ 时间间隔。\n*   **无量纲化**：\n    *   将角度单位转化为“脉冲数”（即走了多少步）。\n    *   将速度单位转化为“脉冲数/微秒”。\n*   **步进触发条件**：\n    *   当累加的角度值 $/ge 0.5$（即超过半个脉冲的阈值，实际上代码中是为了四舍五入或达到一个完整脉冲的临界点）时，电机转动一格（发送一个脉冲）。\n    *   **关键操作**：转动后，累加值减去 1（$/mp 1$）。这样做的目的是**保留余数**，确保长期的角度误差始终小于半个脉冲（$/Delta/theta/2$），从而实现高精度的速度控制。\n\n### 2. 代码实现解析 (图片代码部分)\n\n这段代码完美实现了上述数学原理。\n\n```cpp\n/ loop 函数仅用于实现速度控制\nvoid loop() {\n  uint32_t currentLoopTime = micros(); / 获取当前时间（微秒）\n  \n  if (inMoving) {\n    / 1. 计算时间间隔 dt (对应公式中的 Δt)\n    / 循环之间的间隔\n    uint32_t dt = currentLoopTime - lastLoopTime;\n\n    / 2. 角度累加 (对应公式 θ = θ + ω * Δt)\n    / 角度累加，以脉冲数为单位\n    / pulse2Send 就是累加器，speedPerPulse 是速度(脉冲/微秒)\n    pulse2Send += speedPerPulse * dt;\n\n    / 3. 判断是否需要步进 (对应PPT: 当... >= 0.5，电机就转动一格)\n    / 是否需要步进一格。\n    if (abs(pulse2Send) >= 0.5) { \n      / 根据方向，步进一格。pulse2Send > 0 表示正转，否则反转\n      step(pulse2Send > 0); \n\n      / 4. 调整累",
+  "metadata": {
+    "generation": {
+      "method": "qwen_api",
+      "backend": "api",
+      "provider": "qwen",
+      "model": "qwen3.7-plus",
+      "status": "success",
+      "api_error": null
+    }
+  },
+  "error": null,
+  "method": "qwen_api",
+  "backend": "api",
+  "provider": "qwen",
+  "model": "qwen3.7-plus",
+  "status": "success",
+  "api_error": null,
+  "indexable": true
+}

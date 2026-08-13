@@ -1,0 +1,2 @@
+﻿序号,LaTeX公式,描述,来源图像,提取方法
+1,$\tilde{u}_s(t) = \frac{1}{2}[u_s(t) + u_s(t - 2\tau)]$,该公式表示处理后的信号 $\tilde{u}_s(t)$ 是原始信号 $u_s(t)$ 与其延迟了 $2\tau$ 时间后的信号 $u_s(t-2\tau)$ 的算术平均值。在信号处理中，这相当于一个简单的有限脉冲响应（FIR）滤波器（梳状滤波器的一种），用于平滑信号或提取特定频率成分。,output/qwen_qwen3.7-plus_1/debug/images/w10-1-直线运动平台（下）_slide_15_img_4.png,qwen_api_智能识别

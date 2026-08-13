@@ -1,0 +1,23 @@
+{
+  "original_path": "output/qwen_qwen3.7-plus/images/w08-1-步进电机驱动器_p11_img2.jpeg",
+  "enhanced_path": "output/qwen_qwen3.7-plus/images/w08-1-步进电机驱动器_p11_img2.jpeg",
+  "description": "这是一份来自**复旦大学机电智控实验室**（郭安堂/郭明老师）的课程课件，主题是**《机电系统原理及实践——步进电机驱动器与外部中断》**。\n\n你提供的图片包含了PPT幻灯片内容以及一款具体的商品化步进电机驱动器（雷赛智能 Leadshine DM432C）的实物图。\n\n为了帮助你更好地理解这部分内容，我将结合PPT文字和实物图，为你梳理出**核心知识点**和**实践操作指南**。\n\n---\n\n### 1. 课程核心知识点 (基于PPT文本)\n\n*   **商品化驱动器的优势**：相比自己搭建的原理样机（如H桥电路），商品化驱动器体积小巧、功能丰富（过流保护、细分控制等）。\n*   **接线原则**：\n    *   **共地**：控制回路的所有“–”端（PUL-, DIR-, ENA-）必须与MCU（单片机）的GND共地。\n    *   **信号线**：\n        *   **PUL+**：脉冲信号（控制转动速度和角度）。\n        *   **DIR+**：方向信号（控制正反转）。\n        *   **ENA+**：使能信号（控制驱动器是否工作，通常高电平有效，不接或接低电平默认为使能）。\n*   **细分概念**：\n    *   标准步进电机步距角通常为 **1.8°**（即一圈360° / 1.8° = 200步）。\n    *   **细分**：驱动器将一个步距角分成多个微步来走，使运行更平滑。细分数通常是2的整数次幂（2, 4, 8, 16...）。\n    *   **脉冲/圈 (Pulse/rev)**：如果细分设为N，则转一圈需要 $200 /times N$ 个脉冲。\n\n---\n\n### 2. 实物图解：雷赛 DM432C 驱动器详解\n\n图片中的驱动器型号为 **DM432C**，这是一款微步驱动器。我们需要关注它的**接口**和**拨码开关（DIP Switch）**设置。\n\n#### A. 接口定义 (从上到下，从左到右)\n\n1.  **Signal (控制回路 - 接MCU)**：\n    *   `PUL+`, `PUL-`：脉冲输入。\n    *   `DIR+`, `DIR-`：方向输入。\n    *   `ENA+`, `ENA-`：使能输入。\n    *   *注意：PPT中提到“所有-与MCU共地”，所以 PUL-, DIR-, ENA- 接 Arduino GND。PUL+, DIR+, ENA+ 接 Arduino 数字引脚。*\n\n2.  **PA Settings (拨码开关 SW1-SW8)**：\n    *   用于设置电流和细分（详见下文）。\n\n3.  **High Voltage (动力回路 - 接电源和电机)**：\n    *   `GND`, `+Vdc`：接直流电源（注意电压范围 +Vdc: +20V~+40V）。\n    *   `A+`, `A-`, `B+`,",
+  "metadata": {
+    "generation": {
+      "method": "qwen_api",
+      "backend": "api",
+      "provider": "qwen",
+      "model": "qwen3.7-plus",
+      "status": "success",
+      "api_error": null
+    }
+  },
+  "error": null,
+  "method": "qwen_api",
+  "backend": "api",
+  "provider": "qwen",
+  "model": "qwen3.7-plus",
+  "status": "success",
+  "api_error": null,
+  "indexable": true
+}

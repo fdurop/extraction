@@ -1,0 +1,23 @@
+{
+  "original_path": "output/qwen_qwen3.7-plus_1/debug/images/w10-1-直线运动平台（下）_slide_4_img_1.png",
+  "enhanced_path": "output/qwen_qwen3.7-plus_1/debug/images/w10-1-直线运动平台（下）_slide_4_img_1_enhanced.png",
+  "description": "# §2.1 滑台定位 — 丝杠驱动原理\n\n## 核心公式\n\n丝杠转速（或滑台移动速度）由以下因素决定：\n\n$$v = /frac{f_{pulse} /times P}{N_{step} /times S_{micro}}$$\n\n其中：\n\n| 参数 | 含义 | 说明 |\n|------|------|------|\n| $f_{pulse}$ | 单位时间脉冲数 | 即脉冲频率（Hz），由程序控制 |\n| $P$ | 丝杠导程 | 丝杠旋转一圈，螺母移动的距离（mm） |\n| $N_{step}$ | 步进电机每圈步数 | 通常为 200 步/圈（1.8°/步） |\n| $S_{micro}$ | 驱动器细分数 | 如 1、2、4、8、16 等 |\n\n## 两个实验文件说明\n\n### 📄 `w10-s2-calSliderStroke.ino` — 计算滑台行程\n- **目的**：通过发送已知数量的脉冲，测量/计算滑台的实际行程\n- **关键逻辑**：\n  ```\n  行程 = (脉冲数 / 细分数) × (导程 / 每圈步数)\n  ```\n\n### 📄 `w10-s3-sliderAbsLocation.ino` — 滑台绝对位置定位\n- **目的**：控制滑台移动到指定的绝对位置\n- **关键逻辑**：\n  ```\n  目标脉冲数 = (目标位置 × 每圈步数 × 细分数) / 导程\n  ```\n\n## 举例计算\n\n假设：\n- 丝杠导程 $P = 4/text{ mm}$\n- 步进电机 $200/text{ 步/圈}$\n- 驱动器细分 $S = 8$\n- 脉冲频率 $f = 1000/text{ Hz}$\n\n则：\n$$v = /frac{1000 /times 4}{200 /times 8} = 2.5 /text{ mm/s}$$\n\n> **细分的作用**：细分数越大，每步移动距离越小 → 定位精度越高，但最高速度会降低（相同脉冲频率下）。\n\n---\n\n需要我进一步解释代码实现细节或帮你分析这两个 `.ino` 文件的具体逻辑吗？",
+  "metadata": {
+    "generation": {
+      "method": "qwen_api",
+      "backend": "api",
+      "provider": "qwen",
+      "model": "qwen3.7-plus",
+      "status": "success",
+      "api_error": null
+    }
+  },
+  "error": null,
+  "method": "qwen_api",
+  "backend": "api",
+  "provider": "qwen",
+  "model": "qwen3.7-plus",
+  "status": "success",
+  "api_error": null,
+  "indexable": true
+}

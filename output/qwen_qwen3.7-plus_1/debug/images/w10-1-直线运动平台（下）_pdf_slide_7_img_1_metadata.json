@@ -1,0 +1,23 @@
+{
+  "original_path": "output/qwen_qwen3.7-plus_1/debug/images/w10-1-直线运动平台（下）_p7_img2.png",
+  "enhanced_path": "output/qwen_qwen3.7-plus_1/debug/images/w10-1-直线运动平台（下）_p7_img2_enhanced.png",
+  "description": "根据您提供的文本和图片内容，这是复旦大学机电智控实验室关于《机电系统原理及实践》课程的课件片段。这两部分内容主要讲解了 **Arduino 编程中的“中断”机制**，特别是从基本概念过渡到了**时间中断（Timer Interrupt）**的应用。\n\n以下是对这两部分内容的整理和核心知识点总结：\n\n### 1. 核心概念：什么是中断？（基于图片 §2.1）\n\n图片生动地解释了中断（Interrupt）的本质和流程。\n\n*   **定义**：CPU 在执行程序时，对某个突发事件（程序自身或外界触发）做出的一种反应。\n*   **生动比喻**：\n    *   **用户程序（主程序）**：你在看书。\n    *   **中断信号**：电话铃响了。\n    *   **中断响应/处理**：你放下书，去接电话（进行交流）。\n    *   **中断返回**：挂断电话，回到刚才看书的地方（断点）继续看。\n*   **处理流程**：中断请求 $/rightarrow$ 中断响应 $/rightarrow$ 中断处理 $/rightarrow$ 中断返回。\n*   **本质**：中断处理本质上是一个函数，称为 **ISR (Interrupt Service Routine，中断服务函数)**。\n*   **分类**：Arduino 常见的中断有 **外部中断** 和 **时间中断**。\n\n### 2. 为什么要使用时间中断？（基于文本内容）\n\n文本部分重点解释了为什么在电机控制（直线运动平台）中，我们需要用“时间中断”来替代简单的 `delay()` 函数。\n\n*   **`delay()` 函数的缺点**：\n    *   **阻塞运行**：在 `delay` 期间，CPU 什么都不做，程序被“卡住”了。\n    *   **逻辑简单**：难以实现复杂的定时逻辑（比如既要控制电机速度，又要读取传感器数据）。\n*   **时间中断的优势**：\n    *   **非阻塞**：主程序可以继续运行其他任务。\n    *   **精确定时**：适合需要严格时间控制的任务，例如文本中提到的“**在固定的时间间隔设置速度数值**”。\n\n### 3. Arduino 的硬件资源：定时器（Timer）\n\n文本提到了 Arduino Uno R3 的内部定时器资源，这是实现时间中断的硬件基础：\n\n*   **Timer0 / Timer2**：8 位定时器（计数范围 0-255）。\n    *   *注：Timer0 通常被 `millis()` 和 `delay()` 占用，修改它会影响系统时间函数。*\n*   **Timer1**：16 位定时器（计数范围 0-65535）。\n    *   *注：精度更高，定时范围更长，常用于电机控制等需要高精度定时的场景。*\n\n### 4. 综合理解：从 Blink 到电机控制\n\n文本中提到了文件名 `w10-s5-blink.ino`。这通常是一个教学案例：\n*   **初级阶段**：用 `delay(1000)` 让 LED 每秒闪烁一次（阻塞式）。\n*   **进阶阶段（本课内容）**：利用 **Timer1 时间中断**，每隔 1 秒触发一次 ISR 函数来翻转 LED 状态。\n*   **最终应用**：将",
+  "metadata": {
+    "generation": {
+      "method": "qwen_api",
+      "backend": "api",
+      "provider": "qwen",
+      "model": "qwen3.7-plus",
+      "status": "success",
+      "api_error": null
+    }
+  },
+  "error": null,
+  "method": "qwen_api",
+  "backend": "api",
+  "provider": "qwen",
+  "model": "qwen3.7-plus",
+  "status": "success",
+  "api_error": null,
+  "indexable": true
+}

@@ -1,0 +1,23 @@
+{
+  "original_path": "output/qwen_qwen3.7-plus_1/debug/images/w10-1-直线运动平台（下）_slide_12_img_1.png",
+  "enhanced_path": "output/qwen_qwen3.7-plus_1/debug/images/w10-1-直线运动平台（下）_slide_12_img_1_enhanced.png",
+  "description": "根据您提供的图片内容，这是关于**输入整形（Input Shaping）**技术中常见的二阶系统动力学模型（通常用于描述吊车防摇系统或倒立摆的线性化模型）。\n\n以下是图片内容的文本和公式转录：\n\n### §4.1 输入整形\n\n**系统运动方程：**\n$$ /ddot{/theta}(t) + 2/omega_n/zeta/dot{/theta}(t) + /omega_n^2/theta(t) = /frac{/ddot{u}_s(t)}{l} $$\n\n**参数定义：**\n\n1.  **固有频率 (Natural Frequency)：**\n    $$ /omega_n = /sqrt{/frac{g}{l}} $$\n\n2.  **阻尼比 (Damping Ratio)：**\n    $$ /zeta = /frac{c}{2m/sqrt{gl}}, /quad c /text{ 为阻尼。} $$\n\n---\n\n### 公式含义简析：\n*   **$/theta(t)$**：系统的输出角度（例如摆角）。\n*   **$u_s(t)$**：系统的输入位移（例如小车的位移），方程右边 $/ddot{u}_s(t)$ 代表输入加速度。\n*   **$l$**：摆长或杆长。\n*   **$g$**：重力加速度。\n*   **$m$**：质量。\n*   **$c$**：阻尼系数。\n\n**背景知识：**\n在“输入整形”控制中，目标是设计输入信号 $u_s(t)$（通常是通过对原始指令进行卷积一系列脉冲），使得系统响应 $/theta(t)$ 在运动结束后残余振动为零。这个方程就是描述该系统如何对输入加速度产生响应的基础模型。",
+  "metadata": {
+    "generation": {
+      "method": "qwen_api",
+      "backend": "api",
+      "provider": "qwen",
+      "model": "qwen3.7-plus",
+      "status": "success",
+      "api_error": null
+    }
+  },
+  "error": null,
+  "method": "qwen_api",
+  "backend": "api",
+  "provider": "qwen",
+  "model": "qwen3.7-plus",
+  "status": "success",
+  "api_error": null,
+  "indexable": true
+}

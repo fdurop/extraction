@@ -1,0 +1,19 @@
+{
+  "page_num": 8,
+  "raw_text": "§3.4 \n实践：\n滑台以指定时长移动指定距离\n17-\nw10-s7-sliderSmoothPath\n.ino\n限时 \n30 \n分钟",
+  "cleaned_text": "§3.4 实践： 滑台以指定时长移动指定距离 17- w10-s7-sliderSmoothPath .ino 限时 30 分钟",
+  "key_points": [
+    "实践："
+  ],
+  "technical_terms": [
+    "w10-s7-sliderSmoothPath"
+  ],
+  "has_images": false,
+  "image_count": 0,
+  "image_paths": [],
+  "metadata": {
+    "char_count": 67,
+    "word_count": 9,
+    "line_count": 9
+  }
+}

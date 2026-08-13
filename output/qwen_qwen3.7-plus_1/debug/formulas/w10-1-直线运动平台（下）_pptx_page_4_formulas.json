@@ -1,0 +1,19 @@
+{
+  "page": 4,
+  "formula_count": 1,
+  "formulas": [
+    {
+      "source_image": "output/qwen_qwen3.7-plus_1/debug/images/w10-1-直线运动平台（下）_slide_4_img_3.png",
+      "extraction_method": "qwen_api_智能识别",
+      "backend": "api",
+      "provider": "qwen",
+      "model": "qwen3.7-plus",
+      "latex": "$/begin{cases} x = r /cos /theta / y = r /sin /theta / z = /frac{P}{2/pi} /theta /end{cases}$ （或向量形式 $/mathbf{r}(t) = (r /cos t, r /sin t, ct)$）",
+      "description": "该公式描述了空间中一点在绕圆柱轴线匀速旋转的同时，沿轴线方向匀速移动所形成的轨迹。图片展示的正是一个具有螺旋槽（螺纹）的圆柱体（螺杆），其几何形状即由圆柱螺旋面构成。",
+      "raw_response": "LaTeX: $/begin{cases} x = r /cos /theta / y = r /sin /theta / z = /frac{P}{2/pi} /theta /end{cases}$ （或向量形式 $/mathbf{r}(t) = (r /cos t, r /sin t, ct)$）\n\n名称: 圆柱螺旋线参数方程 (Cylindrical Helix Parametric Equation)\n\n含义: 该公式描述了空间中一点在绕圆柱轴线匀速旋转的同时，沿轴线方向匀速移动所形成的轨迹。图片展示的正是一个具有螺旋槽（螺纹）的圆柱体（螺杆），其几何形状即由圆柱螺旋面构成。\n\n变量:\n*   $x, y, z$: 空间直角坐标系中的坐标。\n*   $r$: 圆柱的半径（螺旋线的半径）。\n*   $/theta$ (或 $t$): 参数，表示旋转的角度（弧度）。\n*   $P$: 螺距 (Pitch)，即螺旋线旋转一周 ($2/pi$) 沿轴向移动的距离。\n*   $c$ (或 $/frac{P}{2/pi}$): 螺旋升率常数。\n\n条件: 适用于描述等螺距的圆柱螺旋结构，如普通螺杆、弹簧、蜗杆等机械零件的几何建模。",
+      "page_num": 3,
+      "image_index": 2
+    }
+  ],
+  "timestamp": "2026-08-05T22:21:58.229584"
+}

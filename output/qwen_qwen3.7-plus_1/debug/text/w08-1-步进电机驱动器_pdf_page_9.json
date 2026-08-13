@@ -1,0 +1,44 @@
+{
+  "page_num": 8,
+  "raw_text": "机电系统原理及实践—— 步进电机驱动器与外部中断\n机电智控实验室tangguoan@fudan.edu.cn mmguo@fudan.edu.cn\n§3 步进电机驱动器原理样机\n模块化设计思想\n封装驱动器功能。\n便于维护、升级和复用。\n上、下位机构型\n下位机：底层—控制电机。\n11-9\n\n监听外部中断，接收上位机指令；\n\n驱动步进电机。\n上位机：顶层—实际应用(运动控制)。\n\n确定电机转向与转速；\n\n发送控制脉冲至下位机的外部中断端口。\n通道6\nA\nB\n通道5\nA\nB\n通道4\nA\nB\n通道3\nA\nB\n通道2\nA\nB\n通道1\nA\nB\n通道8\nA\nB\n通道7\nA\nB\nDC+\nDC-\nD5\nD6\nD7\nD8\nD9\nD10\nD11\nD12\nCH1\nCH2\nCH3\nCH4\nCH5\nCH6\nCH7\nCH8\n5V\nGND\nPUL+/D2\nDIR+/D4\nD4\nD5\nGND\nDIR-/GND\nPUL-/GND\nGND\nENA+\nENA-\n接电源-\nA\nA\nB\nB\n接电源+\n下位机\nslave\n上位机\nhost\n步进电机驱动器\n原理样机\nPUL：接收脉冲信号，触发外部中断。\nDIR：读取输入电平，确定电机转动放向。\nGND：共地，共地，共地！一致的参考电压。\n对接端子\n复旦大学 机电智控实验室\n",
+  "cleaned_text": "机电系统原理及实践—— 步进电机驱动器与外部中断 机电智控实验室tangguoan@fudan.edu.cn mmguo@fudan.edu.cn §3 步进电机驱动器原理样机 模块化设计思想 封装驱动器功能。 便于维护、升级和复用。 上、下位机构型 下位机：底层—控制电机。 11-9  监听外部中断，接收上位机指令；  驱动步进电机。 上位机：顶层—实际应用(运动控制)。  确定电机转向与转速；  发送控制脉冲至下位机的外部中断端口。 通道6 A B 通道5 A B 通道4 A B 通道3 A B 通道2 A B 通道1 A B 通道8 A B 通道7 A B DC+ DC- D5 D6 D7 D8 D9 D10 D11 D12 CH1 CH2 CH3 CH4 CH5 CH6 CH7 CH8 5V GND PUL+/D2 DIR+/D4 D4 D5 GND DIR-/GND PUL-/GND GND ENA+ ENA- 接电源- A A B B 接电源+ 下位机 slave 上位机 host 步进电机驱动器 原理样机 PUL：接收脉冲信号，触发外部中断。 DIR：读取输入电平，确定电机转动放向。 GND：共地，共地，共地！一致的参考电压。 对接端子 复旦大学 机电智控实验室",
+  "key_points": [
+    "封装驱动器功能。",
+    "便于维护、升级和复用。",
+    "下位机：底层—控制电机。",
+    "驱动步进电机。",
+    "上位机：顶层—实际应用(运动控制)。",
+    "发送控制脉冲至下位机的外部中断端口。",
+    "A",
+    "B",
+    "A",
+    "B"
+  ],
+  "technical_terms": [
+    "DC",
+    "DIR",
+    "ENA",
+    "GND",
+    "PUL",
+    "制脉冲至下位机的外部中断",
+    "发送控制",
+    "封装驱动器",
+    "控制电机",
+    "机电系统",
+    "步进电机驱动器",
+    "步进电机驱动器与外部中断",
+    "监听外部中断",
+    "确定电机",
+    "触发外部中断",
+    "运动控制",
+    "驱动步进电机"
+  ],
+  "has_images": false,
+  "image_count": 0,
+  "image_paths": [],
+  "metadata": {
+    "char_count": 557,
+    "word_count": 93,
+    "line_count": 90
+  }
+}

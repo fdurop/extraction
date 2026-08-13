@@ -1,0 +1,8 @@
+{
+  "original_path": "output/qwen_qwen3.7-plus/images/w10-1-直线运动平台（下）_slide_12_img_1.png",
+  "enhanced_path": "output/qwen_qwen3.7-plus/images/w10-1-直线运动平台（下）_slide_12_img_1_enhanced.png",
+  "description": "根据您提供的图片内容，这是关于**输入整形（Input Shaping）**技术中涉及的系统动力学模型，通常用于起重机防摇控制或倒立摆系统。\n\n以下是图片内容的详细转录和公式整理：\n\n### §4.1 输入整形\n\n**1. 系统运动方程（二阶微分方程）：**\n\n$$ /ddot{/theta}(t) + 2/omega_n/zeta/dot{/theta}(t) + /omega_n^2/theta(t) = /frac{/ddot{u}_s(t)}{l} $$\n\n*   $/theta(t)$：摆角（输出）\n*   $/ddot{u}_s(t)$：输入加速度（基座加速度）\n*   $l$：摆长\n\n**2. 固有频率（Natural Frequency）：**\n\n$$ /text{固有频率 } /omega_n = /sqrt{/frac{g}{l}} $$\n\n*   $g$：重力加速度\n*   $l$：摆长\n\n**3. 阻尼比（Damping Ratio）：**\n\n$$ /text{阻尼比 } /zeta = /frac{c}{2m/sqrt{gl}}, /quad c /text{ 为阻尼。} $$\n\n*   $c$：阻尼系数\n*   $m$：质量\n*   $g, l$：同上\n\n---\n\n**LaTeX 代码供参考：**\n\n```latex\n/ddot{/theta}(t) + 2/omega_n/zeta/dot{/theta}(t) + /omega_n^2/theta(t) = /frac{/ddot{u}_s(t)}{l}.\n\n/text{固有频率 } /omega_n = /sqrt{/frac{g}{l}},\n\n/text{阻尼比 } /zeta = /frac{c}{2m/sqrt{gl}}, c /text{ 为阻尼。}\n```",
+  "metadata": {},
+  "error": null,
+  "method": "qwen_api"
+}

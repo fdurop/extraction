@@ -1,0 +1,19 @@
+{
+  "page": 12,
+  "formula_count": 1,
+  "formulas": [
+    {
+      "source_image": "output/qwen_qwen3.7-plus_1/debug/images/w10-1-直线运动平台（下）_slide_12_img_1.png",
+      "extraction_method": "qwen_api_智能识别",
+      "backend": "api",
+      "provider": "qwen",
+      "model": "qwen3.7-plus",
+      "latex": "LaTeX:\n$$ /ddot{/theta}(t) + 2/omega_n/zeta/dot{/theta}(t) + /omega_n^2/theta(t) = /frac{/ddot{u}_s(t)}{l} $$\n$$ /omega_n = /sqrt{/frac{g}{l}} $$\n$$ /zeta = /frac{c}{2m/sqrt{gl}} $$\n\n名称: 阻尼单摆受迫振动方程（或单摆地震响应方程）\n\n含义: 该公式组描述了一个带有阻尼的单摆系统，在底部支撑点受到水平加速度 $/ddot{u}_s(t)$（如地震波）激励时的运动微分方程。第一个公式是系统的运动方程（二阶线性常微分方程），后两个公式分别定义了系统的固有频率和阻尼比。\n\n变量:\n- $/theta(t)$: 摆角（角位移），$/dot{/theta}(t)$ 和 $/ddot{/theta}(t)$ 分别为角速度和角加速度。\n- $/omega_n$: 系统的固有圆频率。\n- $/zeta$: 阻尼比。\n- $u_s(t)$: 支撑点（地面）的位移，$/ddot{u}_s(t)$ 为其加速度。\n- $l$: 摆长。\n- $g$: 重力加速度。\n- $c$: 阻尼系数（图片注明 $c$ 为阻尼）。\n- $m$: 摆球质量。\n\n条件:\n- 小角度摆动假设（$/sin/theta /approx /theta$），即线性化近似。\n- 线性粘性阻尼。\n- 摆杆为刚体且不可伸长。",
+      "description": "该公式组描述了一个带有阻尼的单摆系统，在底部支撑点受到水平加速度 $/ddot{u}_s(t)$（如地震波）激励时的运动微分方程。第一个公式是系统的运动方程（二阶线性常微分方程），后两个公式分别定义了系统的固有频率和阻尼比。",
+      "raw_response": "LaTeX:\n$$ /ddot{/theta}(t) + 2/omega_n/zeta/dot{/theta}(t) + /omega_n^2/theta(t) = /frac{/ddot{u}_s(t)}{l} $$\n$$ /omega_n = /sqrt{/frac{g}{l}} $$\n$$ /zeta = /frac{c}{2m/sqrt{gl}} $$\n\n名称: 阻尼单摆受迫振动方程（或单摆地震响应方程）\n\n含义: 该公式组描述了一个带有阻尼的单摆系统，在底部支撑点受到水平加速度 $/ddot{u}_s(t)$（如地震波）激励时的运动微分方程。第一个公式是系统的运动方程（二阶线性常微分方程），后两个公式分别定义了系统的固有频率和阻尼比。\n\n变量:\n- $/theta(t)$: 摆角（角位移），$/dot{/theta}(t)$ 和 $/ddot{/theta}(t)$ 分别为角速度和角加速度。\n- $/omega_n$: 系统的固有圆频率。\n- $/zeta$: 阻尼比。\n- $u_s(t)$: 支撑点（地面）的位移，$/ddot{u}_s(t)$ 为其加速度。\n- $l$: 摆长。\n- $g$: 重力加速度。\n- $c$: 阻尼系数（图片注明 $c$ 为阻尼）。\n- $m$: 摆球质量。\n\n条件:\n- 小角度摆动假设（$/sin/theta /approx /theta$），即线性化近似。\n- 线性粘性阻尼。\n- 摆杆为刚体且不可伸长。",
+      "page_num": 11,
+      "image_index": 0
+    }
+  ],
+  "timestamp": "2026-08-05T22:28:11.029396"
+}

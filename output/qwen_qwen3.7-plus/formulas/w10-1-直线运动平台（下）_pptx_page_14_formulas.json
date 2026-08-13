@@ -1,0 +1,16 @@
+{
+  "page": 14,
+  "formula_count": 1,
+  "formulas": [
+    {
+      "source_image": "output/qwen_qwen3.7-plus/images/w10-1-直线运动平台（下）_slide_14_img_1.png",
+      "extraction_method": "deepseek_vl_智能识别",
+      "latex": "$/tilde{U}_s(s)$",
+      "description": "该表达式表示经过整形（或预处理）后的输入信号在复频域（s域）的数学描述。通常用于控制系统或信号处理分析中，将时域信号转换到频域以便进行系统分析。",
+      "raw_response": "LaTeX: $/tilde{U}_s(s)$\n名称: 整形后输入信号的拉普拉斯变换\n含义: 该表达式表示经过整形（或预处理）后的输入信号在复频域（s域）的数学描述。通常用于控制系统或信号处理分析中，将时域信号转换到频域以便进行系统分析。\n变量:\n*   $/tilde{U}_s(s)$：整形后输入信号的拉普拉斯变换函数。波浪号 $/tilde{}$ 通常表示经过某种变换或处理（如整形），下标 $s$ 可能指代 source（源）或 specific input（特定输入）。\n*   $s$：拉普拉斯变换的复变量（复频率），通常 $s = /sigma + j/omega$。\n条件: 适用于线性时不变系统（LTI）的分析，且原时域信号需满足拉普拉斯变换的收敛条件（如绝对可积）。",
+      "page_num": 13,
+      "image_index": 0
+    }
+  ],
+  "timestamp": "2026-08-03T22:10:28.221002"
+}

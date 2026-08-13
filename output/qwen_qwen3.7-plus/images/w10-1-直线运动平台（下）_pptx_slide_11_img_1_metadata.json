@@ -1,0 +1,8 @@
+{
+  "original_path": "output/qwen_qwen3.7-plus/images/w10-1-直线运动平台（下）_slide_11_img_2.png",
+  "enhanced_path": "output/qwen_qwen3.7-plus/images/w10-1-直线运动平台（下）_slide_11_img_2_enhanced.png",
+  "description": "根据您提供的图片和文字，这是关于**输入整形（Input Shaping）**控制理论课件的一部分（§4.1），主要描述了一个二阶振荡系统（如吊车吊重系统或单摆）的动力学方程。\n\n以下是图片内容的详细转录和LaTeX公式代码：\n\n### 核心方程\n这是一个带有阻尼的二阶线性微分方程，描述了摆角 $/theta(t)$ 与输入加速度 $/ddot{u}_s(t)$ 之间的关系：\n\n$$ /ddot{/theta}(t) + 2/omega_n/zeta/dot{/theta}(t) + /omega_n^2/theta(t) = /frac{/ddot{u}_s(t)}{l} $$\n\n### 参数定义\n\n1.  **固有频率 (Natural Frequency)** $/omega_n$：\n    $$ /omega_n = /sqrt{/frac{g}{l}} $$\n    *(其中 $g$ 为重力加速度，$l$ 为摆长)*\n\n2.  **阻尼比 (Damping Ratio)** $/zeta$：\n    $$ /zeta = /frac{c}{2m/sqrt{gl}} $$\n    *(其中 $c$ 为阻尼系数，$m$ 为质量)*\n\n---\n\n### 背景解释\n在**输入整形（Input Shaping）**技术中，这个方程通常用来建模柔性系统（例如桥式吊车）。\n*   **目标**：通过设计输入信号 $u_s(t)$（小车的位移/加速度），使得系统到达目标位置时，残余振动 $/theta(t)$ 为零。\n*   **方法**：利用系统的固有频率 $/omega_n$ 和阻尼比 $/zeta$ 来设计一系列脉冲（Impulse sequence），这些脉冲相互叠加，从而抵消系统的振动。",
+  "metadata": {},
+  "error": null,
+  "method": "qwen_api"
+}

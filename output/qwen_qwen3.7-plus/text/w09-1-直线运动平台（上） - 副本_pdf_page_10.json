@@ -1,0 +1,46 @@
+{
+  "page_num": 9,
+  "raw_text": "机电系统原理及实践—— 直线运动平台（上）\n机电智控实验室tangguoan@fudan.edu.cn mmguo@fudan.edu.cn\n§3.1 在面板上搭建并测试控制系统\n步骤3：用左/右限位开关和急停开关使电机停止。\n拉电阻：通过一个\n电阻将状态不确定\n的信号线箝位至高\n电平（上拉，pull\nup）或低电平（下\n拉，pull down），\n以防止因悬空而出\n现不确定的状态。\nD8：监测EMG状态\nHIGH：开关导通\nLOW ：开关断开\n本实验不需要接D8和\n下拉电阻。\n12-10\nENA+：使能\n高电平时，电机disabled\nEMG：NO（黑）\nLIM：NO，COM\nA\nA\nB\nB\nPUL+\nPUL-\nDIR+\nDIR-\nENA+\nENA-\nGND\nEMG\nD7\nGND\nD6\nGND\nGND\nD5\nCOM\n右移\n左移\nD4\nGND\nA0\n5V\nD8\n5V\n 下拉电阻\nA\nA\nB\nB\n+Vdc GND\nD10\nGND\nLIM-左\nD11\nD12\nZ1\nZ2\nLIM-右\n方向\n操纵杆\nUNO\n步进电机\n驱动器\n步进\n电机\nDI\nDI\nDO\nDO\nDI\n启停\n开关\n强电\n电源\n电位器\n限位\n开关\n急停\n开关\n",
+  "cleaned_text": "机电系统原理及实践—— 直线运动平台（上） 机电智控实验室tangguoan@fudan.edu.cn mmguo@fudan.edu.cn §3.1 在面板上搭建并测试控制系统 步骤3：用左/右限位开关和急停开关使电机停止。 拉电阻：通过一个 电阻将状态不确定 的信号线箝位至高 电平（上拉，pull up）或低电平（下 拉，pull down）， 以防止因悬空而出 现不确定的状态。 D8：监测EMG状态 HIGH：开关导通 LOW ：开关断开 本实验不需要接D8和 下拉电阻。 12-10 ENA+：使能 高电平时，电机disabled EMG：NO（黑） LIM：NO，COM A A B B PUL+ PUL- DIR+ DIR- ENA+ ENA- GND EMG D7 GND D6 GND GND D5 COM 右移 左移 D4 GND A0 5V D8 5V 下拉电阻 A A B B +Vdc GND D10 GND LIM-左 D11 D12 Z1 Z2 LIM-右 方向 操纵杆 UNO 步进电机 驱动器 步进 电机 DI DI DO DO DI 启停 开关 强电 电源 电位器 限位 开关 急停 开关",
+  "key_points": [
+    "步骤3：用左/右限位开关和急停开关使电机停止。",
+    "现不确定的状态。",
+    "D8：监测EMG状态",
+    "HIGH：开关导通",
+    "LOW ：开关断开",
+    "下拉电阻。",
+    "ENA+：使能",
+    "EMG：NO（黑）",
+    "LIM：NO，COM",
+    "A"
+  ],
+  "technical_terms": [
+    "Vdc",
+    "COM",
+    "机电系统",
+    "ENA",
+    "建并测试控制系统",
+    "DIR",
+    "LIM",
+    "B",
+    "LOW",
+    "DI",
+    "EMG",
+    "GND",
+    "A",
+    "NO",
+    "PUL",
+    "HIGH",
+    "DO",
+    "上搭建并测试控制",
+    "UNO"
+  ],
+  "has_images": false,
+  "image_count": 0,
+  "image_paths": [],
+  "metadata": {
+    "char_count": 516,
+    "word_count": 90,
+    "line_count": 85
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "original_path": "output/qwen_qwen3.7-plus_1/debug/images/w10-1-直线运动平台（下）_slide_13_img_1.png",
+  "enhanced_path": "output/qwen_qwen3.7-plus_1/debug/images/w10-1-直线运动平台（下）_slide_13_img_1_enhanced.png",
+  "description": "根据你提供的图片和文字内容，这看起来是**控制理论**或**机器人控制**课程中关于**输入整形（Input Shaping）**技术的笔记或课件。\n\n以下是对这部分内容的详细解析：\n\n### 1. 图片内容解析：两个极点\n图片中展示了一个二阶系统的极点分布：\n$$s_{1,2} = /mp i/omega_n$$\n（通常写作 $s_{1,2} = /pm i/omega_n$）\n\n*   **数学含义**：这是复平面 $s$ 上的两个根，位于虚轴上。实部为0，虚部为 $/pm /omega_n$。\n*   **物理含义**：这代表一个**无阻尼（Undamped）振荡系统**。\n    *   阻尼比 $/zeta = 0$。\n    *   系统没有能量损耗，一旦受到激励，会以固有频率 $/omega_n$ 进行等幅振荡，永远不会停止。\n*   **对应的传递函数**：\n    通常形式为：\n    $$G(s) = /frac{/omega_n^2}{s^2 + /omega_n^2}$$\n    （或者 $/frac{K}{s^2 + /omega_n^2}$）\n\n### 2. 文字内容解析：§4.1 输入整形\n**输入整形（Input Shaping）** 是一种开环控制策略，主要用于抑制柔性系统（如起重机、机器人手臂、航天器太阳能板）的残余振动。\n\n*   **为什么要用输入整形？**\n    正如图片所示，很多柔性系统的模型可以简化为二阶振荡系统（极点就在虚轴附近，$/zeta$ 很小）。如果不加控制，系统运动后会一直晃动。输入整形通过修改输入信号（通常是命令信号），使得系统运动结束后振动为零。\n\n### 3. 知识点串联：针对该极点的输入整形\n针对图片中 $s_{1,2} = /pm i/omega_n$ （即 $/zeta=0$）的情况，最基础的输入整形器是 **ZV (Zero Vibration) 整形器**。\n\n*   **原理**：利用两个脉冲（Impulse）来抵消振动。\n*   **参数设计**：\n    对于无阻尼系统，ZV 整形器包含两个脉冲：\n    1.  **幅度**：$A_1 = 0.5, A_2 = 0.5$ （两个脉冲各占一半能量）。\n    2.  **时间间隔**：$T = /frac{/pi}{/omega_n}$ （即半个振荡周期）。\n\n**总结**：\n这一页PPT的核心逻辑是：\n1.  首先定义我们要控制的对象模型：一个具有两个虚轴极点 $s = /pm i/omega_n$ 的无阻尼振荡系统（传递函数）。\n2.  然后（在后续内容中）会讲解如何设计输入整形器（如 ZV 整形器），利用时间延迟和脉冲幅度的组合，来消除这个特定极点带来的振动。",
+  "metadata": {
+    "generation": {
+      "method": "qwen_api",
+      "backend": "api",
+      "provider": "qwen",
+      "model": "qwen3.7-plus",
+      "status": "success",
+      "api_error": null
+    }
+  },
+  "error": null,
+  "method": "qwen_api",
+  "backend": "api",
+  "provider": "qwen",
+  "model": "qwen3.7-plus",
+  "status": "success",
+  "api_error": null,
+  "indexable": true
+}
