@@ -5,6 +5,13 @@
 
 import sys
 import os
+import shutil
+import re
+
+if hasattr(sys.stdout, "reconfigure"):
+    sys.stdout.reconfigure(encoding="utf-8", errors="replace")
+if hasattr(sys.stderr, "reconfigure"):
+    sys.stderr.reconfigure(encoding="utf-8", errors="replace")
 
 # ========================================
 # ONNX 屏蔽（必需！transformers会触发ONNX导入）
@@ -57,15 +64,49 @@ project_root = find_and_set_project_root()
 sys.path.insert(0, current_dir)
 
 import torch
-from paddleocr import PaddleOCR
+try:
+    from paddleocr import PaddleOCR
+except ImportError:
+    PaddleOCR = None
 
 # 导入模块
 from core import ImageProcessor, TextProcessor, FormulaExtractor, TableExtractor, CodeExtractor
 from parsers import PDFParser, PPTXParser
-from utils import OutputManager, FileUtils
+from utils import OutputManager, FileUtils, create_vlm_client, load_vlm_config
 
 # 导入日志配置（src2目录下已有logger_config.py）
 from logger_config import get_logger, LoggerSetup
+
+
+def _build_output_base_dir(vlm_config):
+    provider = str(vlm_config.get("provider") or "qwen").strip().lower()
+    model = str(vlm_config.get("model") or "model").strip().lower()
+
+    def safe(name):
+        chars = []
+        for ch in name:
+            if ch.isalnum() or ch in {"-", "_", "."}:
+                chars.append(ch)
+            else:
+                chars.append("_")
+        cleaned = "".join(chars).strip("._")
+        return cleaned or "model"
+
+    base_name = f"{safe(provider)}_{safe(model)}"
+    output_root = "output"
+    os.makedirs(output_root, exist_ok=True)
+
+    pattern = re.compile(rf"^{re.escape(base_name)}_(\d+)$")
+    max_index = 0
+    for name in os.listdir(output_root):
+        path = os.path.join(output_root, name)
+        if not os.path.isdir(path):
+            continue
+        match = pattern.match(name)
+        if match:
+            max_index = max(max_index, int(match.group(1)))
+
+    return os.path.join(output_root, f"{base_name}_{max_index + 1}")
 
 
 class MultimodalPreprocessor:
@@ -87,7 +128,10 @@ class MultimodalPreprocessor:
         print("多模态数据提取系统 - 重构版 v2.0")
         print("=" * 60)
         print(f"   工作目录: {os.getcwd()}")
-        print(f"   配置: DeepSeek-VL={use_deepseek}, CLIP={use_clip}")
+        self.vlm_config = load_vlm_config()
+        self.output_base_dir = _build_output_base_dir(self.vlm_config)
+        print(f"   配置: API-VLM={self.vlm_config.get('provider', 'qwen')}, DeepSeek-VL={use_deepseek}, CLIP={use_clip}")
+        print(f"   输出目录: {self.output_base_dir}")
         
         self.logger.info("开始初始化多模态预处理工具（重构版）")
         self.logger.info(f"使用DeepSeek-VL: {use_deepseek}, 使用CLIP: {use_clip}")
@@ -105,6 +149,8 @@ class MultimodalPreprocessor:
         # 初始化OCR引擎
         print("\n[步骤 2/5] 初始化OCR引擎...")
         try:
+            if PaddleOCR is None:
+                raise ImportError("paddleocr is not installed")
             # 尝试使用show_log参数（新版本）
             try:
                 self.ocr_engine = PaddleOCR(use_angle_cls=True, lang='ch', show_log=False)
@@ -119,10 +165,22 @@ class MultimodalPreprocessor:
             self.logger.warning(f"PaddleOCR初始化失败: {e}")
             self.ocr_engine = None
         
-        # 初始化DeepSeek-VL
+        # 初始化API VLM / DeepSeek-VL
         print("\n[步骤 3/5] 初始化多模态模型...")
+        self.vlm_client = create_vlm_client(logger=self.logger)
         self.deepseek_wrapper = None
-        if use_deepseek:
+        if self.vlm_client:
+            self.deepseek_wrapper = self.vlm_client
+            print(f"   [OK] API多模态模型已启用: {self.vlm_client.provider}/{self.vlm_client.model}")
+            self.logger.info(f"API VLM enabled: {self.vlm_client.provider}/{self.vlm_client.model}")
+        elif self.vlm_config.get("enabled", True):
+            print(f"   [WARN] API多模态模型未启用：请填写 {self.vlm_config.get('config_path', 'config/vlm_api.yaml')} 中的 api_key")
+            self.logger.warning("API VLM is not available; image descriptions will be limited.")
+
+        allow_local_fallback = str(self.vlm_config.get("allow_local_deepseek_fallback", False)).lower() in {
+            "1", "true", "yes", "on"
+        }
+        if self.deepseek_wrapper is None and use_deepseek and allow_local_fallback:
             try:
                 from utils.deepseek_vl_wrapper import DeepSeekVLWrapper
                 self.deepseek_wrapper = DeepSeekVLWrapper()
@@ -141,10 +199,11 @@ class MultimodalPreprocessor:
             use_deepseek=False,  # 不在ImageProcessor中重新加载
             use_clip=use_clip,
             device=self.device,
-            logger=self.logger
+            logger=self.logger,
+            vlm_client=self.vlm_client
         )
         # 直接使用主程序已加载的DeepSeek-VL
-        if self.deepseek_wrapper:
+        if self.deepseek_wrapper and self.deepseek_wrapper is not self.vlm_client:
             self.image_processor.deepseek_wrapper = self.deepseek_wrapper
             self.image_processor.use_deepseek = True
         self.text_processor = TextProcessor(logger=self.logger)
@@ -159,13 +218,13 @@ class MultimodalPreprocessor:
         
         # 初始化输出管理器
         print("\n[步骤 5/5] 初始化输出管理...")
-        self.output_manager = OutputManager(base_dir="output", logger=self.logger)
+        self.output_manager = OutputManager(base_dir=self.output_base_dir, logger=self.logger)
         print("   [OK] 输出目录创建完成")
         
         print("\n" + "=" * 60)
         print(" 初始化完成！系统就绪")
         print("=" * 60)
-        log_path = os.path.join("output", "logs", "app.log")
+        log_path = os.path.join(self.output_base_dir, "debug", "logs", "app.log")
         if os.path.exists(log_path):
             print(f" 日志文件: {log_path}")
         print("")
@@ -174,6 +233,28 @@ class MultimodalPreprocessor:
         
         # 专业术语库
         self.professional_terms = set()
+
+    def _vlm_source_metadata(self):
+        if self.vlm_client:
+            return {
+                "extraction_method": f"{self.vlm_client.provider}_api_智能识别",
+                "backend": "api",
+                "provider": self.vlm_client.provider,
+                "model": self.vlm_client.model,
+            }
+        if self.deepseek_wrapper:
+            return {
+                "extraction_method": "deepseek_vl_本地智能识别",
+                "backend": "local",
+                "provider": "deepseek",
+                "model": getattr(self.deepseek_wrapper, "model_name", None) or "deepseek-vl",
+            }
+        return {
+            "extraction_method": "none",
+            "backend": "none",
+            "provider": None,
+            "model": None,
+        }
     
     def process_file(self, file_path: str):
         """
@@ -208,15 +289,24 @@ class MultimodalPreprocessor:
         self.logger.info(f"开始处理PDF: {file_path}")
         
         # 使用PDF解析器
-        parser = PDFParser(logger=self.logger)
+        parser = PDFParser(
+            logger=self.logger,
+            output_images_dir=os.path.join(self.output_base_dir, "debug", "images"),
+        )
         result = parser.parse(file_path)
         
         if not result.get("success"):
             print(f"[ERROR] PDF解析失败")
             return
         
-        filename = result["filename"]
+        original_filename = result["filename"]
+        filename = f"{original_filename}_pdf"
         pages = result["pages"]
+        result["metadata"].update({
+            "file_name": original_filename,
+            "file_type": "pdf",
+            "file_path": file_path,
+        })
         
         print(f"   总页数: {len(pages)}")
         
@@ -280,15 +370,24 @@ class MultimodalPreprocessor:
         self.logger.info(f"开始处理PPTX: {file_path}")
         
         # 使用PPTX解析器
-        parser = PPTXParser(logger=self.logger)
+        parser = PPTXParser(
+            logger=self.logger,
+            output_images_dir=os.path.join(self.output_base_dir, "debug", "images"),
+        )
         result = parser.parse(file_path)
         
         if not result.get("success"):
             print(f"[ERROR] PPTX解析失败")
             return
         
-        filename = result["filename"]
+        original_filename = result["filename"]
+        filename = f"{original_filename}_pptx"
         pages = result["pages"]
+        result["metadata"].update({
+            "file_name": original_filename,
+            "file_type": "pptx",
+            "file_path": file_path,
+        })
         image_mapping = result["metadata"].get("image_mapping", {})
         
         print(f"   总幻灯片数: {len(pages)}")
@@ -366,9 +465,10 @@ class MultimodalPreprocessor:
                             
                             if formula_result and formula_result.get("latex"):
                                 # 保存公式结果
+                                source_metadata = self._vlm_source_metadata()
                                 formula_data = {
                                     "source_image": img_path,
-                                    "extraction_method": "deepseek_vl_智能识别",
+                                    **source_metadata,
                                     "latex": formula_result.get("latex", ""),
                                     "description": formula_result.get("description", ""),
                                     "raw_response": formula_result.get("raw_response", ""),
@@ -392,9 +492,10 @@ class MultimodalPreprocessor:
                             # 三重检测：has_code=True 且 code非空
                             if code_result and code_result.get("has_code") and code_result.get("code"):
                                 # 保存代码结果
+                                source_metadata = self._vlm_source_metadata()
                                 code_data = {
                                     "source_image": img_path,
-                                    "extraction_method": "deepseek_vl_智能识别",
+                                    **source_metadata,
                                     "code": code_result.get("code", ""),
                                     "language": code_result.get("language", "txt"),
                                     "description": code_result.get("description", ""),
@@ -418,9 +519,10 @@ class MultimodalPreprocessor:
                             
                             if table_result and table_result.get("table_data"):
                                 # 保存表格结果（简化格式）
+                                source_metadata = self._vlm_source_metadata()
                                 table_data = {
                                     "source_image": img_path,
-                                    "extraction_method": "deepseek_vl_智能识别",
+                                    **source_metadata,
                                     "headers": table_result.get("headers", ""),
                                     "content": table_result.get("table_data", ""),
                                     "description": table_result.get("description", ""),
@@ -485,8 +587,40 @@ def main():
     main_logger.info("多模态数据预处理器启动（重构版）")
     
     try:
+        use_deepseek = os.getenv("EXTRACTION_USE_DEEPSEEK", "1").strip().lower() not in {
+            "0", "false", "no", "off"
+        }
+        startup_vlm_config = load_vlm_config()
+        startup_allow_local_fallback = str(
+            startup_vlm_config.get("allow_local_deepseek_fallback", False)
+        ).lower() in {"1", "true", "yes", "on"}
+        if not startup_allow_local_fallback:
+            use_deepseek = False
+        force_deepseek = os.getenv("EXTRACTION_FORCE_DEEPSEEK", "0").strip().lower() in {
+            "1", "true", "yes", "on"
+        }
+        min_vram_gb_raw = os.getenv("EXTRACTION_DEEPSEEK_MIN_VRAM_GB", "14").strip()
+        try:
+            min_vram_gb = float(min_vram_gb_raw)
+        except ValueError:
+            min_vram_gb = 14.0
+        if use_deepseek and not force_deepseek and torch.cuda.is_available():
+            free_bytes, total_bytes = torch.cuda.mem_get_info()
+            free_gb = free_bytes / (1024 ** 3)
+            total_gb = total_bytes / (1024 ** 3)
+            if free_gb < min_vram_gb:
+                print(
+                    f"[WARN] 当前GPU可用显存约 {free_gb:.1f}GB / 总显存 {total_gb:.1f}GB，"
+                    f"低于 DeepSeek-VL 安全阈值 {min_vram_gb:.1f}GB。"
+                )
+                print("[WARN] 已自动关闭本地 DeepSeek-VL，避免显存压力导致系统不稳定。")
+                print("[INFO] 如需强制尝试，请设置 EXTRACTION_FORCE_DEEPSEEK=1。")
+                use_deepseek = False
+        max_files_raw = os.getenv("EXTRACTION_MAX_FILES", "").strip()
+        max_files = int(max_files_raw) if max_files_raw.isdigit() else None
+
         # 初始化处理器
-        processor = MultimodalPreprocessor(use_deepseek=True, use_clip=False)
+        processor = MultimodalPreprocessor(use_deepseek=use_deepseek, use_clip=False)
         main_logger.info("处理器初始化完成")
         
         # 检查输入目录中的文件
@@ -499,6 +633,8 @@ def main():
         
         # 查找所有支持的文件
         input_files = FileUtils.get_files(input_dir, extensions=['.pdf', '.pptx'])
+        if max_files is not None:
+            input_files = input_files[:max_files]
         
         if not input_files:
             print(f"[ERROR] 未在 {input_dir} 目录找到PDF或PPTX文件")
@@ -535,12 +671,18 @@ def main():
             else:
                 print(f"   {name}: {info['count']} 个文件")
         
-        print(f"\n结果保存目录: output/")
-        print(f"   ├─ text/      (文本内容)")
-        print(f"   ├─ images/    (图片及描述)")
-        print(f"   ├─ formulas/  (公式)")
-        print(f"   ├─ tables/    (表格)")
-        print(f"   └─ code/      (代码)")
+        print(f"\n结果保存目录: {processor.output_base_dir}/")
+        print("   ├─ kg_data/  (下游知识图谱和向量检索交付文件)")
+        print("   └─ debug/    (人工检查和中间调试文件)")
+
+        log_file = LoggerSetup.get_log_file_path()
+        if log_file and os.path.exists(log_file):
+            output_log_dir = os.path.join(processor.output_base_dir, "debug", "logs")
+            os.makedirs(output_log_dir, exist_ok=True)
+            output_log_file = os.path.join(output_log_dir, os.path.basename(log_file))
+            shutil.copy2(log_file, output_log_file)
+            print(f"   日志副本: {output_log_file}")
+            main_logger.info(f"日志副本已保存: {output_log_file}")
         
         main_logger.info("所有文件处理完成")
         

@@ -1,0 +1,15 @@
+# VLM API configuration template for the extraction pipeline.
+# Copy this file to vlm_api.yaml and fill api_key locally.
+
+vlm:
+  enabled: true
+  provider: qwen
+  api_key: ""
+  model: qwen3.7-plus
+  base_url: https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions
+  timeout_seconds: 120
+  retry_count: 2
+  max_tokens: 700
+  temperature: 0.1
+  image_detail: auto
+  allow_local_deepseek_fallback: false

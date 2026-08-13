@@ -9,6 +9,34 @@ import csv
 from typing import Dict, Any, List
 from datetime import datetime
 
+from .knowledge_exporter import KnowledgeExporter
+
+
+def _relpath(value):
+    if not value:
+        return ""
+    try:
+        return os.path.relpath(str(value), os.getcwd()).replace(os.sep, "/")
+    except Exception:
+        return str(value).replace("\\", "/")
+
+
+def _normalize_paths(value):
+    if isinstance(value, dict):
+        return {key: _normalize_paths(item) for key, item in value.items()}
+    if isinstance(value, list):
+        return [_normalize_paths(item) for item in value]
+    if isinstance(value, str):
+        looks_like_path = (
+            "\\" in value
+            or value.startswith("input/")
+            or value.startswith("output/")
+            or value.startswith("input\\")
+            or value.startswith("output\\")
+        )
+        return _relpath(value) if looks_like_path else value
+    return value
+
 
 class OutputManager:
     """统一的输出管理器"""
@@ -22,16 +50,20 @@ class OutputManager:
             logger: 日志记录器
         """
         self.base_dir = base_dir
+        self.debug_dir = os.path.join(base_dir, "debug")
+        self.kg_dir = os.path.join(base_dir, "kg_data")
         self.logger = logger
+        self.knowledge_exporter = KnowledgeExporter(base_dir=self.kg_dir, logger=logger)
         
         # 创建输出目录结构
         self.dirs = {
-            "text": os.path.join(base_dir, "text"),
-            "images": os.path.join(base_dir, "images"),
-            "formulas": os.path.join(base_dir, "formulas"),
-            "tables": os.path.join(base_dir, "tables"),
-            "code": os.path.join(base_dir, "code"),
-            "logs": os.path.join(base_dir, "logs")
+            "text": os.path.join(self.debug_dir, "text"),
+            "images": os.path.join(self.debug_dir, "images"),
+            "formulas": os.path.join(self.debug_dir, "formulas"),
+            "tables": os.path.join(self.debug_dir, "tables"),
+            "code": os.path.join(self.debug_dir, "code"),
+            "logs": os.path.join(self.debug_dir, "logs"),
+            "document_metadata": os.path.join(self.debug_dir, "document_metadata")
         }
         
         self._create_directories()
@@ -57,7 +89,8 @@ class OutputManager:
             )
             
             with open(output_file, 'w', encoding='utf-8') as f:
-                json.dump(data, f, ensure_ascii=False, indent=2)
+                json.dump(_normalize_paths(data), f, ensure_ascii=False, indent=2)
+            self.knowledge_exporter.add_text(data, filename, page_num)
             
             if self.logger:
                 self.logger.debug(f"保存文本: {output_file}")
@@ -83,7 +116,8 @@ class OutputManager:
             )
             
             with open(output_file, 'w', encoding='utf-8') as f:
-                json.dump(data, f, ensure_ascii=False, indent=2)
+                json.dump(_normalize_paths(data), f, ensure_ascii=False, indent=2)
+            self.knowledge_exporter.add_image(data, filename, page_num, img_index)
             
             if self.logger:
                 self.logger.debug(f"保存图像元数据: {output_file}")
@@ -118,7 +152,7 @@ class OutputManager:
             }
             
             with open(json_file, 'w', encoding='utf-8') as f:
-                json.dump(output_data, f, ensure_ascii=False, indent=2)
+                json.dump(_normalize_paths(output_data), f, ensure_ascii=False, indent=2)
             
             # 2. 保存CSV格式
             csv_file = os.path.join(
@@ -137,12 +171,13 @@ class OutputManager:
                         '序号': idx,
                         'LaTeX公式': formula.get('latex', ''),
                         '描述': formula.get('description', ''),
-                        '来源图像': formula.get('source_image', ''),
+                        '来源图像': _relpath(formula.get('source_image', '')),
                         '提取方法': formula.get('extraction_method', '')
                     })
             
             if self.logger:
                 self.logger.info(f"保存 {len(formulas)} 个公式: JSON={json_file}, CSV={csv_file}")
+            self.knowledge_exporter.add_formulas(formulas, filename, page_num)
             
         except Exception as e:
             if self.logger:
@@ -174,7 +209,7 @@ class OutputManager:
                     del table_copy['dataframe']
                 
                 with open(json_file, 'w', encoding='utf-8') as f:
-                    json.dump(table_copy, f, ensure_ascii=False, indent=2)
+                    json.dump(_normalize_paths(table_copy), f, ensure_ascii=False, indent=2)
                 
                 # 2. 保存CSV格式
                 csv_file = os.path.join(
@@ -193,6 +228,7 @@ class OutputManager:
             
             if self.logger:
                 self.logger.info(f"保存 {len(tables)} 个表格 (JSON + CSV)")
+            self.knowledge_exporter.add_tables(tables, filename, page_num)
                 
         except Exception as e:
             if self.logger:
@@ -264,7 +300,7 @@ class OutputManager:
                 )
                 
                 metadata = {
-                    "source_image": code_block.get('source_image', ''),
+                    "source_image": _relpath(code_block.get('source_image', '')),
                     "extraction_method": code_block.get('extraction_method', ''),
                     "language": language,
                     "description": code_block.get('description', ''),
@@ -276,10 +312,11 @@ class OutputManager:
                 }
                 
                 with open(metadata_file, 'w', encoding='utf-8') as f:
-                    json.dump(metadata, f, ensure_ascii=False, indent=2)
+                    json.dump(_normalize_paths(metadata), f, ensure_ascii=False, indent=2)
                 
                 if self.logger:
                     self.logger.info(f"保存代码: {os.path.basename(code_file)} + metadata.json")
+            self.knowledge_exporter.add_code(code_blocks, filename, page_num)
             
         except Exception as e:
             if self.logger:
@@ -294,10 +331,12 @@ class OutputManager:
             filename: 文件名
         """
         try:
-            output_file = os.path.join(self.base_dir, f"{filename}_metadata.json")
+            output_file = os.path.join(self.dirs["document_metadata"], f"{filename}_metadata.json")
             
             with open(output_file, 'w', encoding='utf-8') as f:
-                json.dump(metadata, f, ensure_ascii=False, indent=2)
+                json.dump(_normalize_paths(metadata), f, ensure_ascii=False, indent=2)
+            self.knowledge_exporter.register_document(filename, metadata)
+            self.knowledge_exporter.finalize()
             
             if self.logger:
                 self.logger.info(f"保存元数据: {output_file}")
@@ -314,7 +353,7 @@ class OutputManager:
             filename: 文件名
         """
         try:
-            output_file = os.path.join(self.base_dir, f"{filename}.json")
+            output_file = os.path.join(self.debug_dir, f"{filename}.json")
             
             terms_data = {
                 "total_terms": len(terms),
@@ -367,5 +406,12 @@ class OutputManager:
                     "count": 0,
                     "path": dir_path
                 }
-        
+        summary["kg_data"] = {
+            "count": len(os.listdir(self.kg_dir)) if os.path.exists(self.kg_dir) else 0,
+            "path": self.kg_dir,
+        }
+        summary["debug"] = {
+            "count": len(os.listdir(self.debug_dir)) if os.path.exists(self.debug_dir) else 0,
+            "path": self.debug_dir,
+        }
         return summary

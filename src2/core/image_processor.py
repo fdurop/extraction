@@ -11,8 +11,17 @@ from PIL import Image, ImageEnhance
 from typing import Optional, Dict, Any
 
 
+def _relative_path(path: Optional[str]) -> str:
+    if not path:
+        return ""
+    try:
+        return os.path.relpath(path, os.getcwd()).replace(os.sep, "/")
+    except Exception:
+        return str(path).replace("\\", "/")
+
+
 class ImageProcessor:
-    def __init__(self, use_deepseek=True, use_clip=False, device="cuda", logger=None, deepseek_wrapper=None):
+    def __init__(self, use_deepseek=True, use_clip=False, device="cuda", logger=None, deepseek_wrapper=None, vlm_client=None):
         """
         初始化图像处理器
         
@@ -30,6 +39,7 @@ class ImageProcessor:
         
         # 延迟加载模型
         self.deepseek_wrapper = deepseek_wrapper  # 优先使用传入的实例
+        self.vlm_client = vlm_client
         self.clip_model = None
         self.clip_processor = None
         
@@ -117,8 +127,10 @@ class ImageProcessor:
             enhancer = ImageEnhance.Sharpness(img)
             img = enhancer.enhance(1.3)
             
-            # 保存增强后的图像
-            enhanced_path = image_path.replace('.', '_enhanced.')
+            # Only change the file name suffix. Replacing every "." also changes
+            # model directories such as qwen3.7-plus.
+            root, ext = os.path.splitext(image_path)
+            enhanced_path = f"{root}_enhanced{ext}"
             img.save(enhanced_path)
             
             return enhanced_path
@@ -142,17 +154,44 @@ class ImageProcessor:
             "image_path": image_path,
             "description": "",
             "method": "none",
-            "enhanced": False
+            "enhanced": False,
+            "backend": "none",
+            "provider": None,
+            "model": None,
+            "status": "not_started",
+            "api_error": None,
         }
         
+        # Prefer the configured remote VLM API.
+        if self.vlm_client:
+            try:
+                description = self.vlm_client.generate_description(image_path, context)
+                result["description"] = description
+                result["method"] = getattr(self.vlm_client, "provider_name", "vlm_api")
+                result["backend"] = "api"
+                result["provider"] = getattr(self.vlm_client, "provider", None)
+                result["model"] = getattr(self.vlm_client, "model", None)
+                result["status"] = "success"
+                return result
+            except Exception as e:
+                result["api_error"] = str(e)
+                result["status"] = "api_failed"
+                if self.logger:
+                    self.logger.warning(f"VLM API描述生成失败，尝试本地/备用模型: {e}")
+
         # 优先使用DeepSeek-VL
         if self.use_deepseek and self.deepseek_wrapper:
             try:
                 description = self._generate_with_deepseek(image_path, context)
                 result["description"] = description
-                result["method"] = "deepseek"
+                result["method"] = getattr(self.deepseek_wrapper, "provider_name", "deepseek")
+                result["backend"] = "local"
+                result["provider"] = "deepseek"
+                result["model"] = getattr(self.deepseek_wrapper, "model_name", None) or "deepseek-vl"
+                result["status"] = "success"
                 return result
             except Exception as e:
+                result["status"] = "local_failed"
                 if self.logger:
                     self.logger.warning(f"DeepSeek-VL描述生成失败，尝试CLIP: {e}")
         
@@ -162,11 +201,18 @@ class ImageProcessor:
                 description = self._generate_with_clip(image_path)
                 result["description"] = description
                 result["method"] = "clip"
+                result["backend"] = "local"
+                result["provider"] = "clip"
+                result["model"] = "openai/clip-vit-base-patch32"
+                result["status"] = "success"
                 return result
             except Exception as e:
+                result["status"] = "clip_failed"
                 if self.logger:
                     self.logger.error(f"CLIP描述生成失败: {e}")
         
+        if result["status"] in {"not_started", "api_failed"}:
+            result["status"] = "no_model_succeeded"
         return result
     
     def _generate_with_deepseek(self, image_path: str, context: str = "") -> str:
@@ -231,11 +277,18 @@ class ImageProcessor:
             处理结果字典
         """
         result = {
-            "original_path": image_path,
+            "original_path": _relative_path(image_path),
             "enhanced_path": None,
             "description": None,
             "metadata": {},
-            "error": None
+            "error": None,
+            "method": "none",
+            "backend": "none",
+            "provider": None,
+            "model": None,
+            "status": "not_started",
+            "api_error": None,
+            "indexable": False,
         }
         
         # 检查文件是否存在
@@ -258,22 +311,38 @@ class ImageProcessor:
         # 1. 图像增强
         try:
             enhanced_path = self.enhance_image(image_path)
-            result["enhanced_path"] = enhanced_path
+            result["enhanced_path"] = _relative_path(enhanced_path)
         except Exception as e:
             if self.logger:
                 self.logger.warning(f"图像增强失败: {e}")
-            result["enhanced_path"] = image_path
+            result["enhanced_path"] = _relative_path(image_path)
         
         # 2. 生成描述
         try:
-            desc_result = self.generate_description(result["enhanced_path"], page_text)
+            desc_image_path = enhanced_path if "enhanced_path" in locals() else image_path
+            desc_result = self.generate_description(desc_image_path, page_text)
             # desc_result 是字典 {"description": "...", "method": "..."}
             result["description"] = desc_result.get("description", "")
             result["method"] = desc_result.get("method", "unknown")
+            result["backend"] = desc_result.get("backend", "unknown")
+            result["provider"] = desc_result.get("provider")
+            result["model"] = desc_result.get("model")
+            result["status"] = desc_result.get("status", "unknown")
+            result["api_error"] = desc_result.get("api_error")
+            result["indexable"] = bool(result["description"])
+            result["metadata"]["generation"] = {
+                "method": result["method"],
+                "backend": result["backend"],
+                "provider": result["provider"],
+                "model": result["model"],
+                "status": result["status"],
+                "api_error": result["api_error"],
+            }
         except Exception as e:
             error_msg = f"图像描述生成失败: {e}"
             if self.logger:
                 self.logger.error(error_msg)
             result["error"] = error_msg
+            result["status"] = "failed"
         
         return result

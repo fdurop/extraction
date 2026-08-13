@@ -104,27 +104,54 @@ class TextProcessor:
             专业术语列表
         """
         terms = []
-        
-        # 提取英文专业术语（通常是大写或驼峰命名）
-        english_terms = re.findall(r'\b[A-Z][a-zA-Z]*(?:[A-Z][a-z]*)*\b', text)
-        terms.extend(english_terms)
-        
-        # 提取常见技术术语模式
-        # 例如：XXX系统、XXX算法、XXX方法等
+        stop_words = {
+            "On", "Off", "Low", "High", "Forward", "Average", "Input", "Output",
+            "Power", "Control", "Service", "Routine", "Pass", "Filter", "Moving",
+        }
+        allow_words = {"Arduino", "Uno", "UNO", "MEGA", "Leonardo"}
+
+        text_without_email = re.sub(r'\b[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}\b', ' ', text)
+
+        english_candidates = re.findall(r'\b[A-Za-z][A-Za-z0-9_+-]{1,}\b', text_without_email)
+        for term in english_candidates:
+            if term in stop_words:
+                continue
+            if term in allow_words:
+                terms.append(term)
+                continue
+            if term.isupper() and len(term) >= 2:
+                terms.append(term)
+                continue
+            if re.search(r'\d', term) and len(term) >= 3:
+                terms.append(term)
+
         chinese_patterns = [
-            r'[\u4e00-\u9fa5]{2,6}(?:系统|算法|方法|模型|理论|技术|协议|标准)',
-            r'[\u4e00-\u9fa5]{2,6}(?:控制|检测|识别|分析|处理)',
+            r'[\u4e00-\u9fa5]{2,10}(?:系统|算法|方法|模型|理论|技术|协议|标准)',
+            r'[\u4e00-\u9fa5]{2,10}(?:控制|检测|识别|分析|处理)',
+            r'[\u4e00-\u9fa5]{2,10}(?:电机|驱动器|中断|滑台|传感器|执行器)',
         ]
-        
         for pattern in chinese_patterns:
-            matches = re.findall(pattern, text)
-            terms.extend(matches)
-        
-        # 去重并更新术语库
-        unique_terms = list(set(terms))
+            terms.extend(re.findall(pattern, text_without_email))
+
+        unique_terms = sorted({term.strip() for term in terms if self._is_valid_term(term)})
         self.professional_terms.update(unique_terms)
-        
-        return unique_terms[:20]  # 最多返回20个术语
+
+        return unique_terms[:20]
+
+    @staticmethod
+    def _is_valid_term(term: str) -> bool:
+        term = (term or "").strip()
+        if len(term) < 2 or len(term) > 30:
+            return False
+        if re.fullmatch(r'[A-Za-z]', term):
+            return False
+        if re.fullmatch(r'[A-Z]{1,3}\d{1,2}[+-]?', term):
+            return False
+        if re.fullmatch(r'\d+', term):
+            return False
+        if re.search(r'[\u4e00-\u9fa5]', term) and len(term) < 3:
+            return False
+        return True
     
     def get_text_context(self, full_text: str, target_text: str, context_length: int = 100) -> str:
         """
