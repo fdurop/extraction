@@ -17,6 +17,3 @@ models/*
 *.pt
 *.pth
 *.onnx
-
-DeepSeek-VL-main/**/__pycache__/
-DeepSeek-VL-main/**/*.py[cod]

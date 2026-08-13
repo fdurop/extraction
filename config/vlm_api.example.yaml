@@ -12,4 +12,3 @@ vlm:
   max_tokens: 700
   temperature: 0.1
   image_detail: auto
-  allow_local_deepseek_fallback: false

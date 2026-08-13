@@ -13,28 +13,6 @@ if hasattr(sys.stdout, "reconfigure"):
 if hasattr(sys.stderr, "reconfigure"):
     sys.stderr.reconfigure(encoding="utf-8", errors="replace")
 
-# ========================================
-# ONNX 屏蔽（必需！transformers会触发ONNX导入）
-# ========================================
-class _FakeONNX:
-    """简单的假ONNX模块"""
-    def __getattr__(self, name):
-        return _FakeONNX()
-    def __call__(self, *args, **kwargs):
-        return _FakeONNX()
-
-# 批量屏蔽所有可能的ONNX模块
-_onnx_modules = [
-    'torch.onnx', 'torch.onnx._internal', 'torch.onnx._internal.exporter',
-    'torch.onnx.symbolic_helper', 'torch.onnx.utils', 'torch.onnx.operators',
-    'torch.onnx.symbolic_opset9', 'torch.onnx.symbolic_opset11',
-    'torch.onnx.symbolic_opset12', 'torch.onnx.symbolic_opset13',
-    'torch.onnx.symbolic_opset14', 'torch.onnx.symbolic_opset15',
-    'torch.onnx.symbolic_registry'
-]
-for _mod in _onnx_modules:
-    sys.modules[_mod] = _FakeONNX()
-
 # 获取当前文件的绝对路径
 current_dir = os.path.dirname(os.path.abspath(__file__))
 
@@ -43,27 +21,26 @@ def find_and_set_project_root():
     """查找项目根目录并设置为工作目录"""
     current = os.path.abspath(current_dir)
     for _ in range(5):
-        # 检查是否包含DeepSeek-VL-main（项目根目录标志）
-        if os.path.exists(os.path.join(current, 'DeepSeek-VL-main')):
+        if os.path.isfile(os.path.join(current, 'run_src2.py')) and os.path.isdir(
+            os.path.join(current, 'src2')
+        ):
             os.chdir(current)
             return current
         parent = os.path.dirname(current)
         if parent == current:
             break
         current = parent
-    # 如果找不到，尝试向上一级（src2的父目录）
     parent = os.path.dirname(current_dir)
-    if os.path.exists(os.path.join(parent, 'DeepSeek-VL-main')):
+    if os.path.isfile(os.path.join(parent, 'run_src2.py')):
         os.chdir(parent)
         return parent
-    return None
+    raise RuntimeError("无法定位项目根目录：需要 run_src2.py 和 src2/ 目录")
 
 project_root = find_and_set_project_root()
 
 # 添加src2目录到路径（这样可以直接导入core、parsers、utils）
 sys.path.insert(0, current_dir)
 
-import torch
 try:
     from paddleocr import PaddleOCR
 except ImportError:
@@ -112,14 +89,8 @@ def _build_output_base_dir(vlm_config):
 class MultimodalPreprocessor:
     """多模态数据预处理器 - 重构版"""
     
-    def __init__(self, use_deepseek=True, use_clip=False):
-        """
-        初始化多模态预处理工具
-        
-        Args:
-            use_deepseek: 是否使用DeepSeek-VL（推荐，功能更强大）
-            use_clip: 是否使用CLIP（仅用于备份）
-        """
+    def __init__(self):
+        """初始化基于远程多模态 API 的预处理工具。"""
         # 初始化日志系统
         self.logger = get_logger("MultimodalPreprocessor")
         LoggerSetup.log_session_start(self.logger)
@@ -130,24 +101,18 @@ class MultimodalPreprocessor:
         print(f"   工作目录: {os.getcwd()}")
         self.vlm_config = load_vlm_config()
         self.output_base_dir = _build_output_base_dir(self.vlm_config)
-        print(f"   配置: API-VLM={self.vlm_config.get('provider', 'qwen')}, DeepSeek-VL={use_deepseek}, CLIP={use_clip}")
+        print(
+            f"   配置: API-VLM={self.vlm_config.get('provider', 'qwen')}/"
+            f"{self.vlm_config.get('model', 'model')}"
+        )
         print(f"   输出目录: {self.output_base_dir}")
         
         self.logger.info("开始初始化多模态预处理工具（重构版）")
-        self.logger.info(f"使用DeepSeek-VL: {use_deepseek}, 使用CLIP: {use_clip}")
-        
-        # 检测设备
-        print("\n[步骤 1/5] 检测计算设备...")
-        self.device = "cuda" if torch.cuda.is_available() else "cpu"
-        if self.device == "cuda":
-            gpu_name = torch.cuda.get_device_name(0)
-            print(f"   [OK] 检测到 CUDA GPU: {gpu_name}")
-        else:
-            print(f"   [WARN] 未检测到GPU，将使用CPU（速度较慢）")
-        self.logger.info(f"检测到计算设备: {self.device}")
+        self.logger.info("运行模式: remote_api")
+        print("\n[步骤 1/4] 检查远程 API 配置...")
         
         # 初始化OCR引擎
-        print("\n[步骤 2/5] 初始化OCR引擎...")
+        print("\n[步骤 2/4] 初始化OCR引擎...")
         try:
             if PaddleOCR is None:
                 raise ImportError("paddleocr is not installed")
@@ -165,59 +130,30 @@ class MultimodalPreprocessor:
             self.logger.warning(f"PaddleOCR初始化失败: {e}")
             self.ocr_engine = None
         
-        # 初始化API VLM / DeepSeek-VL
-        print("\n[步骤 3/5] 初始化多模态模型...")
+        print("\n[步骤 3/4] 初始化多模态 API...")
         self.vlm_client = create_vlm_client(logger=self.logger)
-        self.deepseek_wrapper = None
         if self.vlm_client:
-            self.deepseek_wrapper = self.vlm_client
             print(f"   [OK] API多模态模型已启用: {self.vlm_client.provider}/{self.vlm_client.model}")
             self.logger.info(f"API VLM enabled: {self.vlm_client.provider}/{self.vlm_client.model}")
         elif self.vlm_config.get("enabled", True):
             print(f"   [WARN] API多模态模型未启用：请填写 {self.vlm_config.get('config_path', 'config/vlm_api.yaml')} 中的 api_key")
             self.logger.warning("API VLM is not available; image descriptions will be limited.")
 
-        allow_local_fallback = str(self.vlm_config.get("allow_local_deepseek_fallback", False)).lower() in {
-            "1", "true", "yes", "on"
-        }
-        if self.deepseek_wrapper is None and use_deepseek and allow_local_fallback:
-            try:
-                from utils.deepseek_vl_wrapper import DeepSeekVLWrapper
-                self.deepseek_wrapper = DeepSeekVLWrapper()
-                print("   [OK] DeepSeek-VL模型加载成功")
-                self.logger.info("DeepSeek-VL模型加载成功")
-            except Exception as e:
-                print(f"   [WARN] DeepSeek-VL加载失败: {e}")
-                print(f"   [INFO] 将继续运行，但图像描述功能将受限")
-                self.logger.warning(f"DeepSeek-VL加载失败: {e}")
-                self.deepseek_wrapper = None
-        
-        # 初始化核心处理器
-        print("\n[步骤 4/5] 初始化核心处理模块...")
-        # 将已加载的DeepSeek-VL实例传递给ImageProcessor，避免重复加载
+        print("\n[步骤 4/4] 初始化核心处理与输出模块...")
         self.image_processor = ImageProcessor(
-            use_deepseek=False,  # 不在ImageProcessor中重新加载
-            use_clip=use_clip,
-            device=self.device,
             logger=self.logger,
             vlm_client=self.vlm_client
         )
-        # 直接使用主程序已加载的DeepSeek-VL
-        if self.deepseek_wrapper and self.deepseek_wrapper is not self.vlm_client:
-            self.image_processor.deepseek_wrapper = self.deepseek_wrapper
-            self.image_processor.use_deepseek = True
         self.text_processor = TextProcessor(logger=self.logger)
         self.formula_extractor = FormulaExtractor(
             ocr_engine=self.ocr_engine,
-            deepseek_wrapper=self.deepseek_wrapper,
+            deepseek_wrapper=self.vlm_client,
             logger=self.logger
         )
         self.table_extractor = TableExtractor(logger=self.logger)
         self.code_extractor = CodeExtractor(logger=self.logger)
         print("   [OK] 核心处理模块初始化完成")
         
-        # 初始化输出管理器
-        print("\n[步骤 5/5] 初始化输出管理...")
         self.output_manager = OutputManager(base_dir=self.output_base_dir, logger=self.logger)
         print("   [OK] 输出目录创建完成")
         
@@ -241,13 +177,6 @@ class MultimodalPreprocessor:
                 "backend": "api",
                 "provider": self.vlm_client.provider,
                 "model": self.vlm_client.model,
-            }
-        if self.deepseek_wrapper:
-            return {
-                "extraction_method": "deepseek_vl_本地智能识别",
-                "backend": "local",
-                "provider": "deepseek",
-                "model": getattr(self.deepseek_wrapper, "model_name", None) or "deepseek-vl",
             }
         return {
             "extraction_method": "none",
@@ -587,40 +516,11 @@ def main():
     main_logger.info("多模态数据预处理器启动（重构版）")
     
     try:
-        use_deepseek = os.getenv("EXTRACTION_USE_DEEPSEEK", "1").strip().lower() not in {
-            "0", "false", "no", "off"
-        }
-        startup_vlm_config = load_vlm_config()
-        startup_allow_local_fallback = str(
-            startup_vlm_config.get("allow_local_deepseek_fallback", False)
-        ).lower() in {"1", "true", "yes", "on"}
-        if not startup_allow_local_fallback:
-            use_deepseek = False
-        force_deepseek = os.getenv("EXTRACTION_FORCE_DEEPSEEK", "0").strip().lower() in {
-            "1", "true", "yes", "on"
-        }
-        min_vram_gb_raw = os.getenv("EXTRACTION_DEEPSEEK_MIN_VRAM_GB", "14").strip()
-        try:
-            min_vram_gb = float(min_vram_gb_raw)
-        except ValueError:
-            min_vram_gb = 14.0
-        if use_deepseek and not force_deepseek and torch.cuda.is_available():
-            free_bytes, total_bytes = torch.cuda.mem_get_info()
-            free_gb = free_bytes / (1024 ** 3)
-            total_gb = total_bytes / (1024 ** 3)
-            if free_gb < min_vram_gb:
-                print(
-                    f"[WARN] 当前GPU可用显存约 {free_gb:.1f}GB / 总显存 {total_gb:.1f}GB，"
-                    f"低于 DeepSeek-VL 安全阈值 {min_vram_gb:.1f}GB。"
-                )
-                print("[WARN] 已自动关闭本地 DeepSeek-VL，避免显存压力导致系统不稳定。")
-                print("[INFO] 如需强制尝试，请设置 EXTRACTION_FORCE_DEEPSEEK=1。")
-                use_deepseek = False
         max_files_raw = os.getenv("EXTRACTION_MAX_FILES", "").strip()
         max_files = int(max_files_raw) if max_files_raw.isdigit() else None
 
         # 初始化处理器
-        processor = MultimodalPreprocessor(use_deepseek=use_deepseek, use_clip=False)
+        processor = MultimodalPreprocessor()
         main_logger.info("处理器初始化完成")
         
         # 检查输入目录中的文件

@@ -1,7 +1,4 @@
-"""
-src2重构版运行脚本
-解决路径问题，从项目根目录运行
-"""
+"""API 多模态抽取流程入口。"""
 
 import sys
 import os
@@ -19,22 +16,17 @@ sys.path.insert(0, project_root)
 print("\n检查关键路径:")
 print(f"  src2目录: {os.path.exists(src2_path)} - {src2_path}")
 
-deepseek_path = os.path.join(project_root, 'DeepSeek-VL-main')
-print(f"  DeepSeek-VL: {os.path.exists(deepseek_path)} - {deepseek_path}")
-
-model_path = os.path.join(project_root, 'models', 'deepseek-vl-7b-chat')
-print(f"  模型目录: {os.path.exists(model_path)} - {model_path}")
-
 input_path = os.path.join(project_root, 'input')
 print(f"  输入目录: {os.path.exists(input_path)} - {input_path}")
+config_path = os.path.join(project_root, 'config', 'vlm_api.yaml')
+print(f"  API配置: {os.path.exists(config_path)} - {config_path}")
 
-# 切换到src2目录执行
-os.chdir(src2_path)
+os.chdir(project_root)
 print(f"\n当前工作目录: {os.getcwd()}")
 
 # 导入并运行主程序
 print("\n" + "="*60)
-print("开始运行src2重构版")
+print("开始运行 API 多模态抽取流程")
 print("="*60 + "\n")
 
 try:
