@@ -1,0 +1,23 @@
+{
+  "original_path": "output/qwen_qwen3.7-plus_3/debug/images/w10-1-直线运动平台（下）_slide_11_img_2.png",
+  "enhanced_path": "output/qwen_qwen3.7-plus_3/debug/images/w10-1-直线运动平台（下）_slide_11_img_2_enhanced.png",
+  "description": "这张图片展示了一个典型的**二阶振荡系统**（如单摆或起重机负载）的动力学方程及其参数定义，属于控制理论中**输入整形（Input Shaping）**技术的基础模型。\n\n以下是图片内容的详细转录和解析：\n\n### 1. 数学公式转录 (LaTeX)\n\n**系统微分方程：**\n$$ /ddot{/theta}(t) + 2/omega_n/zeta/dot{/theta}(t) + /omega_n^2/theta(t) = /frac{/ddot{u}_s(t)}{l} $$\n\n**参数定义：**\n*   **固有频率 (Natural Frequency)：**\n    $$ /omega_n = /sqrt{/frac{g}{l}} $$\n*   **阻尼比 (Damping Ratio)：**\n    $$ /zeta = /frac{c}{2m/sqrt{gl}}, /quad c /text{ 为阻尼} $$\n\n---\n\n### 2. 物理意义解析\n\n这个模型通常用于描述**桥式起重机（Overhead Crane）**或**悬挂摆**系统，用于分析防摇控制问题。\n\n*   **$/theta(t)$**：摆角（负载相对于垂直方向的摆动角度）。\n*   **$u_s(t)$**：小车（台车）的位移。\n*   **$/ddot{u}_s(t)$**：小车的加速度。这是系统的**控制输入**。方程右边表明，小车的加速度会激发负载的摆动。\n*   **$l$**：摆长（绳长）。\n*   **$g$**：重力加速度。\n*   **$m$**：负载质量。\n*   **$c$**：阻尼系数（空气阻力或摩擦）。\n\n### 3. 与“输入整形 (Input Shaping)”的关系\n\n标题中的“§4.1 输入整形”表明这是该章节的开头部分。\n\n*   **背景**：在起重机操作中，移动小车（输入 $/ddot{u}_s(t)$）会导致负载摆动（输出 $/theta(t)$）。\n*   **目的**：输入整形技术的目的是设计一个特殊的输入信号序列，使得在系统运动结束后，残余振动 $/theta(t)$ 为零。\n*   **关键参数**：为了设计这个整形器（通常是一系列脉冲），必须准确知道系统的**固有频率 $/omega_n$** 和 **阻尼比 $/zeta$**。图片中的公式正是为了定义这两个关键参数。\n\n**总结：** 这张PPT建立了系统的数学模型，告诉学生：只要知道了绳长 $l$、重力 $g$ 和阻尼 $c$，就能算出 $/omega_n$ 和 $/zeta$，进而利用输入整形技术来消除摆动。",
+  "metadata": {
+    "generation": {
+      "method": "qwen_api",
+      "backend": "api",
+      "provider": "qwen",
+      "model": "qwen3.7-plus",
+      "status": "success",
+      "api_error": null
+    }
+  },
+  "error": null,
+  "method": "qwen_api",
+  "backend": "api",
+  "provider": "qwen",
+  "model": "qwen3.7-plus",
+  "status": "success",
+  "api_error": null,
+  "indexable": true
+}

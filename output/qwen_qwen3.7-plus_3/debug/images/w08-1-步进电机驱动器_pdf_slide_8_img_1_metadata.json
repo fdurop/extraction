@@ -1,0 +1,23 @@
+{
+  "original_path": "output/qwen_qwen3.7-plus_3/debug/images/w08-1-步进电机驱动器_p8_img2.png",
+  "enhanced_path": "output/qwen_qwen3.7-plus_3/debug/images/w08-1-步进电机驱动器_p8_img2_enhanced.png",
+  "description": "# Arduino 外部中断知识整理\n\n## 一、中断号与引脚对应关系\n\n| 中断号 | UNO | MEGA | Leonardo |\n|--------|-----|------|----------|\n| int0   | D2  | D2   | D3       |\n| int1   | D3  | D3   | D2       |\n| int2   | —   | D21  | D0       |\n| int3   | —   | D20  | D1       |\n| int4   | —   | D19  | —        |\n| int5   | —   | D18  | —        |\n\n> ⚠️ **注意**：不同开发板的中断引脚不同，编程时建议使用 `digitalPinToInterrupt(pin)` 函数自动转换，避免硬编码中断号。\n\n---\n\n## 二、中断触发方式\n\n| 模式 | 含义 |\n|------|------|\n| `RISING` | 上升沿触发（低→高） |\n| `FALLING` | 下降沿触发（高→低） |\n| `CHANGE` | 电平变化触发（任意变化） |\n| `LOW` | 低电平触发 |\n\n---\n\n## 三、核心函数\n\n```cpp\nattachInterrupt(interruptNo, ISR, mode);  // 绑定中断\ndetachInterrupt(interrupt);               // 解除中断\ninterrupts();     // 全局开启中断\nnoInterrupts();   // 全局关闭中断\n```\n\n---\n\n## 四、代码解析\n\n```cpp\nconst byte ledPin = 13;\nconst byte interruptPin = 2;\nvolatile byte state = LOW;  // ⭐ volatile 关键字：防止编译器优化，确保ISR修改的值被主程序读取\n```\n\n### 执行流程：\n\n```\n┌─────────────────────────────────────────────┐\n│  setup()                                    │\n│  ├── ledPin → OUTPUT                        │\n│  ├── interruptPin → INPUT_PULLUP（内部上拉） │\n│  └── 绑定中断：D2引脚，CHANGE模式，blink函数 │\n└─────────────────────────────────────────────┘\n                    │\n                    ▼\n┌─────────────────────────────────────────────┐\n│  loop()                                     │\n│  └── 持续将 state 写入 ledPin               │\n│      （state 由中断服务程序修改）             │\n└─────────────────────────────────────────────┘\n                    │\n                    ▼\n┌─────────────────────────────────────────────┐\n│  blink() — 中断服务程序(ISR)                 │\n│  └── state = !state;  （翻转状态）           │\n└─────────────────────────────────────────────┘\n```\n\n### 效果：\n每次 D2 引脚电平发生变化（按下/松开按钮），LED 状态翻转一次，实现**按键控制 LED 开关**。\n\n---\n\n## 五、ISR 编写注意事项\n\n1. **ISR 要尽量短小**：中断执行期间会阻塞主程序和其他中断\n2. **共享变量用 `volatile` 修饰**：如代码中的 `state`\n3. **ISR 中避免使用 `delay()`",
+  "metadata": {
+    "generation": {
+      "method": "qwen_api",
+      "backend": "api",
+      "provider": "qwen",
+      "model": "qwen3.7-plus",
+      "status": "success",
+      "api_error": null
+    }
+  },
+  "error": null,
+  "method": "qwen_api",
+  "backend": "api",
+  "provider": "qwen",
+  "model": "qwen3.7-plus",
+  "status": "success",
+  "api_error": null,
+  "indexable": true
+}

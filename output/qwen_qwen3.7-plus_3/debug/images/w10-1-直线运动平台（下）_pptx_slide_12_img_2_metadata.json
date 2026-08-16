@@ -1,0 +1,23 @@
+{
+  "original_path": "output/qwen_qwen3.7-plus_3/debug/images/w10-1-直线运动平台（下）_slide_12_img_2.png",
+  "enhanced_path": "output/qwen_qwen3.7-plus_3/debug/images/w10-1-直线运动平台（下）_slide_12_img_2_enhanced.png",
+  "description": "根据您提供的图片内容，这是关于**输入整形（Input Shaping）**技术中关于**残余振动**理论基础的课件（可能是第17页）。\n\n以下是图片内容的文字整理和公式转录：\n\n### §4.1 输入整形\n\n*   **滑块停止后，单摆的振动称为残余振动；**\n*   **残余振动属于自由振动；**\n*   **自由振动的位移函数由**\n    $$e^{-/zeta/omega_n t}/sin(/omega_d t) /text{ 和 } e^{-/zeta/omega_n t}/cos(/omega_d t)$$\n    **叠加而成；**\n    *   其中，$/omega_d = /omega_n/sqrt{1-/zeta^2}$ 为振荡频率。\n*   **以下忽略阻尼，即 $c=0$，$/zeta=0$，$/omega_d = /omega_n$。**\n    *   振动不衰减。\n\n---\n\n### 内容解析：\n这张幻灯片主要是在为“输入整形”控制算法做数学建模的铺垫：\n\n1.  **定义问题**：首先定义了什么是“残余振动”（Residual Vibration），即系统（如机械臂、吊车）在指令动作结束后，由于惯性产生的持续晃动。\n2.  **数学模型**：指出这种振动本质上是二阶系统的**自由振动**。其通解形式包含正弦和余弦项，并带有指数衰减项（$e^{-/zeta/omega_n t}$）。\n3.  **简化假设**：为了便于后续推导输入整形算法（如ZV、ZVD等整形器），课件假设系统**无阻尼**（$/zeta=0$）。在这种理想情况下，振动不会随时间衰减，公式简化为简单的正弦/余弦函数 $A/sin(/omega_n t) + B/cos(/omega_n t)$。这是输入整形理论中最经典的推导起点。",
+  "metadata": {
+    "generation": {
+      "method": "qwen_api",
+      "backend": "api",
+      "provider": "qwen",
+      "model": "qwen3.7-plus",
+      "status": "success",
+      "api_error": null
+    }
+  },
+  "error": null,
+  "method": "qwen_api",
+  "backend": "api",
+  "provider": "qwen",
+  "model": "qwen3.7-plus",
+  "status": "success",
+  "api_error": null,
+  "indexable": true
+}

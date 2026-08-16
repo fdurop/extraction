@@ -1,0 +1,23 @@
+{
+  "original_path": "output/qwen_qwen3.7-plus_3/debug/images/w10-1-直线运动平台（下）_slide_15_img_2.png",
+  "enhanced_path": "output/qwen_qwen3.7-plus_3/debug/images/w10-1-直线运动平台（下）_slide_15_img_2_enhanced.png",
+  "description": "# §4.1 输入整形（Input Shaping）— 第17页解析\n\n## 一、求 $/mathcal{L}^{-1}(/widetilde{U}_s(s))$\n\n### 推导过程\n\n对于**无阻尼二阶系统**，其极点为 $s_1 = j/omega_n$，$s_2 = -j/omega_n$。输入整形器的传递函数为：\n\n$$/widetilde{U}_s(s) = C(e^{-s/tau} - e^{s_2/tau})(e^{-s/tau} - e^{s_1/tau})U_s(s)$$\n\n展开乘积（利用 $e^{j/omega_n/tau} + e^{-j/omega_n/tau} = 2/cos(/omega_n/tau)$）：\n\n$$= C/left[1 - 2e^{-s/tau}/cos(/omega_n/tau) + e^{-2s/tau}/right]U_s(s)$$\n\n利用拉普拉斯逆变换的**时移性质** $/mathcal{L}^{-1}/{e^{-s/tau}F(s)/} = f(t-/tau)$，得到时域表达式：\n\n$$/boxed{/widetilde{u}_s(t) = C/big[u_s(t) - 2/cos(/omega_n/tau)/,u_s(t-/tau) + u_s(t-2/tau)/big]}$$\n\n令 $c_1 = C$，$c_2 = 2C/cos(/omega_n/tau)$，即：\n\n$$/widetilde{u}_s(t) = c_1 u_s(t) - c_2 u_s(t-/tau) + c_1 u_s(t-2/tau)$$\n\n---\n\n## 二、确定参数的三条原则\n\n| 原则 | 条件 | 结果 |\n|------|------|------|\n| **凸函数整形后仍为凸函数** | $c_1 /geq 0,/; c_2 /geq 0$ | $c_2 = 2C/cos(/omega_n/tau) = 0$ |\n| **延时尽可能短** | $/tau$ 取最小正值 | $/tau = /dfrac{/pi}{2/omega_n}$ |\n| **总位移保持不变** | 脉冲面积之和 = 1 | $c_1 = /dfrac{1}{2}$ |\n\n### 详细解释\n\n1. **$c_2 = 0$**：由 $/cos(/omega_n/tau) = 0$ 得 $/omega_n/tau = /frac{/pi}{2} + k/pi$\n\n2. **$/tau$ 最小**：取 $k=0$，得 $/tau = /dfrac{/pi}{2/omega_n}$\n\n3. **$c_1 = 1/2$**：由 $c_1 + c_1 = 1$（总增益为1，保证稳态值不变），得 $C = 1/2$\n\n---\n\n## 三、最终结果\n\n代入参数后，整形输入为：\n\n$$/widetilde{u}_s(t) = /frac",
+  "metadata": {
+    "generation": {
+      "method": "qwen_api",
+      "backend": "api",
+      "provider": "qwen",
+      "model": "qwen3.7-plus",
+      "status": "success",
+      "api_error": null
+    }
+  },
+  "error": null,
+  "method": "qwen_api",
+  "backend": "api",
+  "provider": "qwen",
+  "model": "qwen3.7-plus",
+  "status": "success",
+  "api_error": null,
+  "indexable": true
+}

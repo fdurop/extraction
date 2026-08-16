@@ -1,0 +1,23 @@
+{
+  "original_path": "output/qwen_qwen3.7-plus_2/debug/images/w10-1-直线运动平台（下）_p4_img2.jpeg",
+  "enhanced_path": "output/qwen_qwen3.7-plus_2/debug/images/w10-1-直线运动平台（下）_p4_img2_enhanced.jpeg",
+  "description": "这张图片是复旦大学机电智控实验室关于“机电系统原理及实践”课程的PPT课件，主要讲解了**直线运动平台（丝杆滑台）**的原理及定位实践。\n\n以下是对课件内容的详细整理以及针对实践任务的代码思路解析：\n\n### 1. 核心知识点整理\n\n**丝杆滑台的基本参数：**\n*   **行程 (Stroke)**：滑台能移动的最大范围（起点到终点的距离）。\n*   **导程 (Lead)**：丝杆转动一圈，滑台产生的线性位移。\n    *   本次实验设定：**10 mm/rev** (毫米/转)。\n*   **螺距 (Pitch) 与 导程的关系**：\n    *   **单线螺纹**：导程 = 螺距 ($L=P$)。\n    *   **多线螺纹**：导程 = 螺距 × 线数 ($L=n /times P$)。\n    *   *图示解释了单线（螺旋线只有一条）和双线（螺旋线有两条，导程是螺距的2倍）的区别。*\n\n**速度控制原理：**\n*   **公式**：$滑台速度 = 导程 /times 丝杠转速$。\n*   **结论**：导程越大，滑台能达到的最大速度越大（但在相同转速下，分辨率会降低）。\n*   **转速决定因素**：取决于**单位时间内的脉冲数**（脉冲频率）和**驱动器细分设置**。\n\n---\n\n### 2. 实践任务解析与代码思路\n\n课件中提到了两个具体的实践任务（对应两个 `.ino` 文件），限时20分钟。\n\n#### 任务一：测算滑台的行程 (`w10-s2-calSliderStroke.ino`)\n*   **条件**：步进电机驱动器细分数设为 **400**（通常指每转脉冲数 Pulse Per Revolution, PPR = 400。如果是200步的电机，这意味着2细分）。\n*   **目标**：计算滑台总共能走多远（行程）。\n*   **原理**：\n    *   已知导程 $L = 10 /text{ mm/rev}$。\n    *   已知每转脉冲数 $N = 400 /text{ pulses/rev}$。\n    *   分辨率（每个脉冲走的距离）= $10 /text{ mm} / 400 = 0.025 /text{ mm/pulse}$。\n    *   如果你让电机一直转动直到碰到物理极限（或限位开关），记录发出的总脉冲数 $P_{total}$。\n    *   **行程** = $P_{total} /times 0.025 /text{ mm}$。\n\n#### 任务二：用电位器控制滑台的绝对位置 (`w10-s3-sliderAbsLocation.ino`)\n*   **目标**：旋转电位器，滑台移动到对应的位置（绝对定位）。\n*   **原理**：\n    *   电位器输出模拟值（Arduino通常是 0~1023）。\n    *   需要将 0~1023 映射到滑台的 **0 ~ 最大行程脉冲数**。\n    *",
+  "metadata": {
+    "generation": {
+      "method": "qwen_api",
+      "backend": "api",
+      "provider": "qwen",
+      "model": "qwen3.7-plus",
+      "status": "success",
+      "api_error": null
+    }
+  },
+  "error": null,
+  "method": "qwen_api",
+  "backend": "api",
+  "provider": "qwen",
+  "model": "qwen3.7-plus",
+  "status": "success",
+  "api_error": null,
+  "indexable": true
+}

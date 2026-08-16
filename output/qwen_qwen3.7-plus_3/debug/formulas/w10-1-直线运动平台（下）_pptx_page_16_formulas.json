@@ -1,0 +1,19 @@
+{
+  "page": 16,
+  "formula_count": 1,
+  "formulas": [
+    {
+      "source_image": "output/qwen_qwen3.7-plus_3/debug/images/w10-1-直线运动平台（下）_slide_16_img_1.png",
+      "extraction_method": "qwen_api_智能识别",
+      "backend": "api",
+      "provider": "qwen",
+      "model": "qwen3.7-plus",
+      "latex": "$v(t) = /frac{6Lt(T-t)}{T^3}$ 和 $/tilde{v}(t) = /frac{1}{2}[v(t) + v(t-2/tau)]$",
+      "description": "",
+      "raw_response": "LaTeX: $v(t) = /frac{6Lt(T-t)}{T^3}$ 和 $/tilde{v}(t) = /frac{1}{2}[v(t) + v(t-2/tau)]$\n\n名称: 滑台速度规划公式与输入整形公式\n\n含义:\n1.  **原始速度公式** $v(t) = /frac{6Lt(T-t)}{T^3}$：这是一个基于三次多项式轨迹规划的速度曲线。它描述了滑台在总时间 $T$ 内移动总距离 $L$ 的过程。该速度曲线呈抛物线状，起始时刻 ($t=0$) 和结束时刻 ($t=T$) 的速度均为 0，实现了平滑的加减速。\n2.  **输入整形公式** $/tilde{v}(t) = /frac{1}{2}[v(t) + v(t-2/tau)]$：这是输入整形（Input Shaping）技术的一种应用。它通过将原始速度信号 $v(t)$ 与延迟了 $2/tau$ 时间的信号 $v(t-2/tau)$ 进行加权平均（各占 1/2），来生成新的控制速度 $/tilde{v}(t)$。这种处理通常用于抑制机械系统的残余振动，使运动更平稳。\n\n变量:\n*   $v(t)$: $t$ 时刻的原始设定速度。\n*   $/tilde{v}(t)$: $t$ 时刻经过输入整形后的速度。\n*   $L$: 滑台移动的总距离（需小于最大行程）。\n*   $T$: 指定的移动总时长。\n*   $t$: 当前时间变量。\n*   $/tau$: 延迟时间参数（通常与系统的固有振动周期有关）。\n\n条件:\n*   适用于滑台运动控制系统。\n*   时间范围通常满足 $0 /le t /le T$。\n*   距离 $L$ 必须小于滑台的物理行程。\n*   输入整形公式中，对于 $t < 2/tau$ 的部分，通常 $v(t-2/tau)$ 视为 0 或根据边界条件处理。",
+      "page_num": 15,
+      "image_index": 0
+    }
+  ],
+  "timestamp": "2026-08-16T21:51:41.991226"
+}

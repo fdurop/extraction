@@ -1,0 +1,50 @@
+{
+  "page_num": 7,
+  "raw_text": "机电系统原理及实践—— 步进电机驱动器与外部中断\n机电智控实验室tangguoan@fudan.edu.cn mmguo@fudan.edu.cn\nISR：中断服务程序\n数字端口号转中断号\n§2.2 Arduino的外部中断\n中断号与中断引脚\n中断触发方式\nRISING (上升沿)\nFALLING (下降沿)\nCHANGE (变化)\nLOW (低电平)\n11-8\n中断号\nint0\nint1\nint2\nint3\nint4\nint5\nUNO\nD2\nD3\n——\n——\n——\n——\nMEGA\nD2\nD3\nD21\nD20\nD19\nD18\nLernardo\nD3\nD2\nD0\nD1\n——\n——\nArduino提供的相关函数\nattachInterrupt(interruptNo, ISR, mode)：初始化中断\ndetachInterrupt(interrupt)：关闭中断\ninterrupts()和noInterrupts()：允许和禁用中断\n实践\nw08-s2-extInterrupt.ino\n复旦大学 机电智控实验室\n",
+  "cleaned_text": "机电系统原理及实践—— 步进电机驱动器与外部中断 机电智控实验室tangguoan@fudan.edu.cn mmguo@fudan.edu.cn ISR：中断服务程序 数字端口号转中断号 §2.2 Arduino的外部中断 中断号与中断引脚 中断触发方式 RISING (上升沿) FALLING (下降沿) CHANGE (变化) LOW (低电平) 11-8 中断号 int0 int1 int2 int3 int4 int5 UNO D2 D3 —— —— —— —— MEGA D2 D3 D21 D20 D19 D18 Lernardo D3 D2 D0 D1 —— —— Arduino提供的相关函数 attachInterrupt(interruptNo, ISR, mode)：初始化中断 detachInterrupt(interrupt)：关闭中断 interrupts()和noInterrupts()：允许和禁用中断 实践 w08-s2-extInterrupt.ino 复旦大学 机电智控实验室",
+  "key_points": [
+    "ISR：中断服务程序",
+    "UNO",
+    "D2",
+    "D3",
+    "MEGA",
+    "D2",
+    "D3",
+    "D21",
+    "D20",
+    "D19"
+  ],
+  "technical_terms": [
+    "CHANGE",
+    "FALLING",
+    "ISR",
+    "LOW",
+    "MEGA",
+    "RISING",
+    "UNO",
+    "int0",
+    "int1",
+    "int2",
+    "int3",
+    "int4",
+    "int5",
+    "w08-s2-extInterrupt",
+    "中断号与中断",
+    "允许和禁用中断",
+    "关闭中断",
+    "初始化中断",
+    "数字端口号转中断",
+    "机电系统"
+  ],
+  "has_images": true,
+  "image_count": 2,
+  "image_paths": [
+    "output/qwen_qwen3.7-plus_3/debug/images/w08-1-步进电机驱动器_p8_img2.png",
+    "output/qwen_qwen3.7-plus_3/debug/images/w08-1-步进电机驱动器_p8_img3.png"
+  ],
+  "metadata": {
+    "char_count": 473,
+    "word_count": 57,
+    "line_count": 48
+  }
+}

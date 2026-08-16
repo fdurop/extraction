@@ -1,0 +1,2 @@
+﻿序号,LaTeX公式,描述,来源图像,提取方法
+1,$v(t) = \frac{6Lt(T-t)}{T^3}$ 和 $\tilde{v}(t) = \frac{1}{2}[v(t) + v(t-2\tau)]$,,output/qwen_qwen3.7-plus_3/debug/images/w10-1-直线运动平台（下）_slide_16_img_1.png,qwen_api_智能识别

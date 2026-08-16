@@ -1,0 +1,17 @@
+{
+  "page": 9,
+  "formula_count": 1,
+  "formulas": [
+    {
+      "type": "equation",
+      "content": "val = analogRead(A0)",
+      "variable": "val",
+      "expression": "analogRead(A0)",
+      "position": [
+        121,
+        141
+      ]
+    }
+  ],
+  "timestamp": "2026-08-16T19:33:40.376355"
+}

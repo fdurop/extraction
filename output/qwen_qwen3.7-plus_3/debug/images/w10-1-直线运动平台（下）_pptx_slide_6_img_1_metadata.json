@@ -1,0 +1,23 @@
+{
+  "original_path": "output/qwen_qwen3.7-plus_3/debug/images/w10-1-直线运动平台（下）_slide_6_img_1.png",
+  "enhanced_path": "output/qwen_qwen3.7-plus_3/debug/images/w10-1-直线运动平台（下）_slide_6_img_1_enhanced.png",
+  "description": "# §3.1 步进电机调速原理 —— 时间中断计算速度\n\n## 一、连续时间模型\n\n步进电机的转角 $/theta(t)$ 与转速 $/omega(t)$ 满足积分关系：\n\n$$/theta(t_1) = /theta(t_0) + /int_{t_0}^{t_1} /omega(t)/, dt$$\n\n即：**角位移 = 初始角位移 + 转速对时间的积分**。\n\n---\n\n## 二、离散化（数值积分）\n\n设 $/Delta t$ 为每次 loop 循环的时间间隔（即定时器中断周期），将积分近似为矩形法：\n\n$$/theta[n/Delta t] = /theta[(n-1)/Delta t] + /omega[n/Delta t] /cdot /Delta t$$\n\n> 每次中断时，用当前转速 $/omega$ 乘以时间间隔 $/Delta t$，累加到角位移 $/theta$ 中。\n\n---\n\n## 三、无量纲化（脉冲化）\n\n用**每脉冲转角 $/Delta/theta$** 对 $/theta$ 和 $/omega$ 进行归一化：\n\n| 物理量 | 原始单位 | 无量纲化后单位 |\n|--------|----------|----------------|\n| $/theta$ | 弧度（rad） | **脉冲数** |\n| $/omega$ | rad/s | **脉冲数/微秒** |\n\n这样，$/theta$ 的值直接表示\"积累了多少个脉冲的角位移\"。\n\n---\n\n## 四、脉冲输出判决（核心算法）\n\n$$/text{当 } |/theta[n/Delta t]| /geq 0.5 /text{ 时，电机转动一格（发一个脉冲）}$$\n\n同时：\n- 若 $/theta /geq 0.5$，累加值 **减 1**（$/theta /leftarrow /theta - 1$）\n- 若 $/theta /leq -0.5$，累加值 **加 1**（$/theta /leftarrow /theta + 1$）\n\n### 误差分析\n\n由于在 $|/theta| /geq 0.5$ 时才触发脉冲，触发后 $/theta$ 被减去 $/pm 1$，剩余值始终满足：\n\n$$|/theta| < 0.5 /quad /Rightarrow /quad /text{角位移误差} < /frac{/Delta/theta}{2}$$\n\n---\n\n## 五、算法流程图\n\n```\n每次定时器中断（周期 Δt）:\n    θ ← θ + ω × Δt          / 累加角位移\n    \n    if |θ| ≥ 0.5:            / 达到一个脉冲的阈值\n        发送一个脉冲          / 电机转动一格\n        θ ← θ - sign(θ)      / 扣除已输出的脉冲\n```\n\n---\n\n## 六、直观理解\n\n这本质上是一个 **Bresenham 画线算法** 的变体（数字微分分析器 DDA）：\n\n- $/omega /times /Delta t$ 通常是一个**小数**（如 0.3 脉冲/次）\n- 每次中断累加这个小数\n- 累加值超过 0.5 时",
+  "metadata": {
+    "generation": {
+      "method": "qwen_api",
+      "backend": "api",
+      "provider": "qwen",
+      "model": "qwen3.7-plus",
+      "status": "success",
+      "api_error": null
+    }
+  },
+  "error": null,
+  "method": "qwen_api",
+  "backend": "api",
+  "provider": "qwen",
+  "model": "qwen3.7-plus",
+  "status": "success",
+  "api_error": null,
+  "indexable": true
+}

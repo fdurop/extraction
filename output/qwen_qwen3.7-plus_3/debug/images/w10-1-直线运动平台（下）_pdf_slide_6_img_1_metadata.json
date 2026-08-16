@@ -1,0 +1,23 @@
+{
+  "original_path": "output/qwen_qwen3.7-plus_3/debug/images/w10-1-直线运动平台（下）_p6_img2.png",
+  "enhanced_path": "output/qwen_qwen3.7-plus_3/debug/images/w10-1-直线运动平台（下）_p6_img2_enhanced.png",
+  "description": "这份资料来自复旦大学机电智控实验室，主要讲解了**步进电机（或脉冲控制类电机）的平滑调速原理**，并提供了一段基于Arduino/嵌入式C语言的实现代码。\n\n核心思想是利用**数字积分法（类似DDA算法或Bresenham算法）**，通过软件累加来计算何时发送脉冲，从而实现高精度的速度控制，而不需要频繁硬件定时器的频率。\n\n以下是对PPT原理和代码的详细解读：\n\n### 1. 数学原理 (PPT部分)\n\nPPT展示了从连续时间到离散时间的推导过程：\n\n*   **连续积分公式**：\n    $$ /theta(t_1) = /theta(t_0) + /int_{t_0}^{t_1} /omega(t) dt $$\n    意思是：**当前位置 = 初始位置 + 速度对时间的积分**。\n\n*   **离散化（计算机实现）**：\n    $$ /theta[n/Delta t] = /theta[(n-1)/Delta t] + /omega[n/Delta t] /cdot /Delta t $$\n    在计算机的 `loop` 循环中，我们无法做连续积分，只能做累加。\n    *   $/Delta t$ (`dt`)：每次循环的时间间隔。\n    *   $/omega$ (`speedPerPulse`)：当前的速度（单位：脉冲数/微秒）。\n    *   $/theta$ (`pulse2Send`)：累加的角度（单位：脉冲数）。\n\n*   **无量纲化与阈值判断**：\n    *   将角度单位化为“脉冲数”。\n    *   **核心逻辑**：当累加值 $/theta /ge 0.5$ 时，说明积累的“角度”已经足够电机转动一格（一个步距角）。\n    *   **误差控制**：电机转动一格后，累加值减去 1（$/mp 1$）。这样余数会保留到下一次循环，保证长期的角度误差始终小于 0.5 个脉冲（即 $/Delta/theta/2$）。\n\n### 2. 代码实现 (截图部分)\n\n这段代码完美实现了上述数学原理，通常运行在 Arduino 的 `loop()` 函数或高频定时器中断中。\n\n```cpp\n/ loop 函数仅用于实现速度控制\nvoid loop() {\n  uint32_t currentLoopTime = micros(); / 获取当前时间（微秒）\n  \n  if (inMoving) { / 如果电机处于运动状态\n    / 1. 计算时间间隔 dt\n    uint32_t dt = currentLoopTime - lastLoopTime;\n\n    / 2. 角度累加 (核心公式: θ_new = θ_old + ω * dt)\n    / speedPerPulse 其实是速度，单位是 \"脉冲数/微秒\"\n    / pulse2Send 是累加器，表示“待发送的脉冲数”（可以是小数）\n    pulse2Send += speedPerPulse * dt;\n\n    / 3. 判断是否需要步进一格 (阈值 0.5)\n    / 使用 abs() 是为了支持正反转（速度可以是负数）\n    if (abs(pulse2Send) >= 0.5) {\n      \n      / 4. 执行步进",
+  "metadata": {
+    "generation": {
+      "method": "qwen_api",
+      "backend": "api",
+      "provider": "qwen",
+      "model": "qwen3.7-plus",
+      "status": "success",
+      "api_error": null
+    }
+  },
+  "error": null,
+  "method": "qwen_api",
+  "backend": "api",
+  "provider": "qwen",
+  "model": "qwen3.7-plus",
+  "status": "success",
+  "api_error": null,
+  "indexable": true
+}

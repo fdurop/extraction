@@ -1,0 +1,23 @@
+{
+  "original_path": "output/qwen_qwen3.7-plus_2/debug/images/w08-1-步进电机驱动器_p8_img2.png",
+  "enhanced_path": "output/qwen_qwen3.7-plus_2/debug/images/w08-1-步进电机驱动器_p8_img2_enhanced.png",
+  "description": "# Arduino 外部中断知识整理\n\n## 一、中断号与引脚对应关系\n\n| 中断号 | UNO | MEGA | Leonardo |\n|--------|-----|------|----------|\n| int0   | D2  | D2   | D3       |\n| int1   | D3  | D3   | D2       |\n| int2   | —   | D21  | D0       |\n| int3   | —   | D20  | D1       |\n| int4   | —   | D19  | —        |\n| int5   | —   | D18  | —        |\n\n> ⚠️ **注意**：不同板型的中断引脚不同，建议使用 `digitalPinToInterrupt(pin)` 函数自动转换，避免硬编码中断号。\n\n---\n\n## 二、中断触发方式\n\n| 模式 | 含义 |\n|------|------|\n| `RISING` | 上升沿触发（低→高） |\n| `FALLING` | 下降沿触发（高→低） |\n| `CHANGE` | 电平变化触发（任意变化） |\n| `LOW` | 低电平触发 |\n\n---\n\n## 三、核心函数\n\n```cpp\nattachInterrupt(digitalPinToInterrupt(pin), ISR, mode);  // 绑定中断\ndetachInterrupt(digitalPinToInterrupt(pin));              // 解除中断\ninterrupts();      // 全局开启中断\nnoInterrupts();    // 全局关闭中断\n```\n\n---\n\n## 四、代码解析\n\n```cpp\nconst byte ledPin = 13;\nconst byte interruptPin = 2;\nvolatile byte state = LOW;  // ⭐ volatile 关键字：防止编译器优化，确保ISR修改的值被主循环读取\n```\n\n### 执行流程：\n\n```\n┌─────────────────────────────────────────────┐\n│  setup()                                    │\n│  ├── ledPin(13) → OUTPUT                    │\n│  ├── interruptPin(2) → INPUT_PULLUP         │\n│  └── 绑定中断：D2引脚变化 → 调用 blink()     │\n└─────────────────────────────────────────────┘\n                    │\n                    ▼\n┌─────────────────────────────────────────────┐\n│  loop()                                     │\n│  └── 持续将 state 写入 LED                  │\n│      state=LOW → LED灭                      │\n│      state=HIGH → LED亮                     │\n└─────────────────────────────────────────────┘\n                    ▲\n                    │ 中断触发\n┌─────────────────────────────────────────────┐\n│  blink() [ISR]                              │\n│  └── state = !state  (翻转状态)             │\n└─────────────────────────────────────────────┘\n```\n\n### 关键要点：\n\n1. **`volatile` 关键字**：`state` 变量在中断服务程序（ISR）中被修改，必须声明为 `volatile`，否则编译器可能优化掉对它的读取，导致主循环看不到变化。\n\n2. **ISR 应尽量简短**：中断服务程序中只做最简单的操作（翻转状态），避免使用",
+  "metadata": {
+    "generation": {
+      "method": "qwen_api",
+      "backend": "api",
+      "provider": "qwen",
+      "model": "qwen3.7-plus",
+      "status": "success",
+      "api_error": null
+    }
+  },
+  "error": null,
+  "method": "qwen_api",
+  "backend": "api",
+  "provider": "qwen",
+  "model": "qwen3.7-plus",
+  "status": "success",
+  "api_error": null,
+  "indexable": true
+}

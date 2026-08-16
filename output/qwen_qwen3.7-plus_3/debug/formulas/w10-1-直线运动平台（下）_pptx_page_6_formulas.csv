@@ -1,0 +1,2 @@
+﻿序号,LaTeX公式,描述,来源图像,提取方法
+1,$\text{pulse2Send} \mathrel{+}= \text{speedPerPulse} \times \Delta t$，其中 $\Delta t = t_{\text{current}} - t_{\text{last}}$,该公式是运动学基本公式 $s = v \cdot t$ 的离散化实现。在每个控制循环中，将速度（单位时间内的脉冲数）乘以时间间隔 $\Delta t$，得到该时间段内应发送的脉冲增量，并累加到 `pulse2Send` 变量中。当累加值达到 0.5（即半个脉冲）时，触发一次步进动作，并从累加值中扣除 1 个脉冲，从而实现平滑的速度控制。,output/qwen_qwen3.7-plus_3/debug/images/w10-1-直线运动平台（下）_slide_6_img_2.png,qwen_api_智能识别

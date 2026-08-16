@@ -1,0 +1,23 @@
+{
+  "original_path": "output/qwen_qwen3.7-plus_3/debug/images/w10-1-直线运动平台（下）_slide_6_img_2.png",
+  "enhanced_path": "output/qwen_qwen3.7-plus_3/debug/images/w10-1-直线运动平台（下）_slide_6_img_2_enhanced.png",
+  "description": "# 步进电机调速原理 —— 时间中断计算速度（DDA算法）\n\n## 核心思想\n\n这段代码使用 **DDA（数字微分分析器）** 算法，通过**时间累加**的方式实现步进电机的平滑调速，而非传统的固定延时方式。\n\n---\n\n## 代码逐行解析\n\n```\n┌─────────────────────────────────────────────────────┐\n│  每次 loop() 执行时：                                  │\n│                                                       │\n│  ① 获取当前时间 → currentLoopTime = micros()          │\n│  ② 计算时间差   → dt = currentLoopTime - lastLoopTime │\n│  ③ 累加脉冲量   → pulse2Send += speedPerPulse × dt    │\n│  ④ 判断是否步进 → |pulse2Send| ≥ 0.5 ?                │\n│  ⑤ 执行步进     → step(direction)                     │\n│  ⑥ 修正累加值   → pulse2Send = 1                     │\n└─────────────────────────────────────────────────────┘\n```\n\n---\n\n## 关键变量说明\n\n| 变量 | 含义 | 单位 |\n|------|------|------|\n| `dt` | 两次循环之间的时间间隔 | 微秒 (μs) |\n| `speedPerPulse` | 每个微秒应发送的脉冲数 | 脉冲/μs |\n| `pulse2Send` | 待发送的脉冲累加值（浮点） | 脉冲数 |\n\n---\n\n## 工作原理图示\n\n```\n时间轴 ──────────────────────────────────────────►\n\npulse2Send 累加过程（假设 speedPerPulse = 0.3 脉冲/μs）：\n\n  dt=1μs:  pulse2Send = 0.0 + 0.3 = 0.3  → < 0.5，不步进\n  dt=1μs:  pulse2Send = 0.3 + 0.3 = 0.6  → ≥ 0.5，步进！pulse2Send = 0.6-1 = -0.4\n  dt=1μs:  pulse2Send = -0.4 + 0.3 = -0.1 → < 0.5，不步进\n  dt=1μs:  pulse2Send = -0.1 + 0.3 = 0.2  → < 0.5，不步进\n  dt=1μs:  pulse2Send = 0.2 + 0.3 = 0.5  → ≥ 0.5，步进！pulse2Send = 0.5-1 = -0.5\n  ...\n\n  平均速度 = 2步 / 5μs = 0.4 脉冲/μs ≈ 目标速度\n```\n\n---\n\n## 与传统方法的对比\n\n```\n┌──────────────────┬──────────────────────────────────┐\n│   传统延时法      │   DDA时间累加法（本代码）           │\n├──────────────────┼──────────────────────────────────┤\n│ delay(固定",
+  "metadata": {
+    "generation": {
+      "method": "qwen_api",
+      "backend": "api",
+      "provider": "qwen",
+      "model": "qwen3.7-plus",
+      "status": "success",
+      "api_error": null
+    }
+  },
+  "error": null,
+  "method": "qwen_api",
+  "backend": "api",
+  "provider": "qwen",
+  "model": "qwen3.7-plus",
+  "status": "success",
+  "api_error": null,
+  "indexable": true
+}

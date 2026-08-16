@@ -1,0 +1,35 @@
+{
+  "page_num": 5,
+  "raw_text": "机电系统原理及实践—— 直线运动平台（上）\n机电智控实验室tangguoan@fudan.edu.cn mmguo@fudan.edu.cn\n§2.2 接近开关\n无机械触点，用途比限位开关更丰富。\n检测原理：电感式、磁感式、电容式、光电式。\n类型分NPN 和PNP 两大类。\n12-6\n金属电感式接近开关\n检测面\n棕：DC+\n蓝：GND\n黑：DI\nPNP型\n导通时，\n负载上的\n电流从接\n近开关流\n向外部。\nNPN型\n导通时，\n负载上的\n电流从外\n部流向接\n近开关。\n传\n感\n电\n路\n负载\nDC+\nGND\n棕\n黑\n蓝\n传\n感\n电\n路\n负载\nDC+\nGND\n棕\n黑\n蓝\nNPN NO：检测到金\n属，DI口读到低电平\n",
+  "cleaned_text": "机电系统原理及实践—— 直线运动平台（上） 机电智控实验室tangguoan@fudan.edu.cn mmguo@fudan.edu.cn §2.2 接近开关 无机械触点，用途比限位开关更丰富。 检测原理：电感式、磁感式、电容式、光电式。 类型分NPN 和PNP 两大类。 12-6 金属电感式接近开关 检测面 棕：DC+ 蓝：GND 黑：DI PNP型 导通时， 负载上的 电流从接 近开关流 向外部。 NPN型 导通时， 负载上的 电流从外 部流向接 近开关。 传 感 电 路 负载 DC+ GND 棕 黑 蓝 传 感 电 路 负载 DC+ GND 棕 黑 蓝 NPN NO：检测到金 属，DI口读到低电平",
+  "key_points": [
+    "无机械触点，用途比限位开关更丰富。",
+    "检测原理：电感式、磁感式、电容式、光电式。",
+    "类型分NPN 和PNP 两大类。",
+    "PNP型",
+    "向外部。",
+    "NPN型",
+    "近开关。",
+    "DC+",
+    "GND",
+    "DC+"
+  ],
+  "technical_terms": [
+    "DC",
+    "DI",
+    "GND",
+    "NO",
+    "NPN",
+    "机电系统"
+  ],
+  "has_images": true,
+  "image_count": 1,
+  "image_paths": [
+    "output/qwen_qwen3.7-plus_3/debug/images/w09-1-直线运动平台（上） - 副本_p6_img3.jpeg"
+  ],
+  "metadata": {
+    "char_count": 310,
+    "word_count": 52,
+    "line_count": 47
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "original_path": "output/qwen_qwen3.7-plus_3/debug/images/w09-1-直线运动平台（上） - 副本_p5_img3.jpeg",
+  "enhanced_path": "output/qwen_qwen3.7-plus_3/debug/images/w09-1-直线运动平台（上） - 副本_p5_img3_enhanced.jpeg",
+  "description": "这张图片是关于**机电系统原理及实践**课程中关于**直线运动平台**的第一部分，重点讲解了**限位开关（Limit Switch）**的原理与Arduino实践。\n\n为了帮助你更好地理解和完成这个实验，我为你整理了核心知识点、电路接线分析以及对应的Arduino参考代码。\n\n### 1. 核心知识点总结\n\n*   **什么是限位开关？**\n    *   也叫行程开关。\n    *   **作用**：给运动机构“画地为牢”，防止它跑过头（撞机），或者让它到了位置就停下来/掉头。\n    *   **原理**：机械式接触（有物理触点），就像家里的电灯开关一样，按下去就通电/断电。\n*   **引脚定义（关键）**：\n    *   **COM (Common)**：公共端。\n    *   **NO (Normally Open)**：常开触点。**平时断开，按下（限位）时闭合导通**。\n    *   **NC (Normally Closed)**：常闭触点。平时导通，按下时断开。（本实验中未使用NC）。\n*   **PPT中的逻辑**：\n    *   文字说明：“限位时，NO与COM导通”。这意味着当机器碰到开关，开关被压下，电路接通。\n\n### 2. 电路接线分析（看图说话）\n\n根据PPT中间的电路图，接线逻辑如下：\n\n*   **电源/地**：两个开关的 **COM端** 都连接到了 **GND**（地）。\n*   **信号线**：\n    *   **限位开关1** 的 **NO端** 连接到了 Arduino 的 **D11** 引脚。\n    *   **限位开关2** 的 **NO端** 连接到了 Arduino 的 **D12** 引脚。\n*   **工作原理**：\n    *   **未限位时**：开关没被压下，NO与COM断开。D11/D12引脚处于悬空状态（需要在代码中开启内部上拉电阻，使其保持高电平 HIGH）。\n    *   **限位时（触发）**：开关被压下，NO与COM导通。因为COM接了GND，所以D11/D12引脚被拉低，读到 **低电平 (LOW)**。\n\n### 3. 实践代码示例 (Arduino)\n\nPPT中提到了使用 `digitalRead()` 和 `Serial.print()`，以下是完整的参考代码，你可以直接上传到Arduino UNO进行测试：\n\n```cpp\n// 定义引脚\nconst int limitSwitch1Pin = 11; // 限位开关1 接 D11\nconst int limitSwitch2Pin = 12; // 限位开关2 接 D12\n\nvoid setup() {\n  // 初始化串口通信，波特率9600\n  Serial.begin(9600);\n  \n  // 设置引脚为输入模式，并开启内部上拉电阻\n  // 这一点非常重要！因为COM接了GND，如果不加上拉电阻，引脚状态会不稳定。\n  // INPUT_PULLUP 意味着：默认读到高电平(HIGH)，接地后读到低电平(LOW)。\n  pinMode(limitSwitch1Pin, INPUT_PULLUP);\n  pinMode(limitSwitch2Pin, INPUT_PULLUP);\n  \n  Serial.println(\"System Ready.",
+  "metadata": {
+    "generation": {
+      "method": "qwen_api",
+      "backend": "api",
+      "provider": "qwen",
+      "model": "qwen3.7-plus",
+      "status": "success",
+      "api_error": null
+    }
+  },
+  "error": null,
+  "method": "qwen_api",
+  "backend": "api",
+  "provider": "qwen",
+  "model": "qwen3.7-plus",
+  "status": "success",
+  "api_error": null,
+  "indexable": true
+}

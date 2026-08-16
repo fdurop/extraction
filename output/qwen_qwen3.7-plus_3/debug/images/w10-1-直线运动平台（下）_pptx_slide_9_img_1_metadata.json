@@ -1,0 +1,23 @@
+{
+  "original_path": "output/qwen_qwen3.7-plus_3/debug/images/w10-1-直线运动平台（下）_slide_9_img_1.png",
+  "enhanced_path": "output/qwen_qwen3.7-plus_3/debug/images/w10-1-直线运动平台（下）_slide_9_img_1_enhanced.png",
+  "description": "# w10-s7-sliderSmoothPath.ino — 滑台抛物线型平滑路径运动\n\n## 核心原理\n\n速度曲线为**抛物线型**，启停时刻速度均为零：\n\n$$v(t) = /frac{6Lt(T-t)}{T^3}, /quad x(t) = /frac{6Lt^2}{T^3}/left(/frac{T}{2}-/frac{t}{3}/right)$$\n\n## 完整代码\n\n```cpp\n/*\n * w10-s7-sliderSmoothPath.ino\n * §3.4 实践：滑台以指定时长 T 移动指定距离 L\n * 速度曲线：v(t) = 6Lt(T-t)/T³  （抛物线型，启停速度为零）\n * 位移曲线：x(t) = 6Lt²(T/2 - t/3)/T³\n *\n * 架构：\n *   - Timer1 中断（固定周期）：计算当前速度，累加脉冲数\n *   - loop 循环：检测按钮、显示状态\n */\n\n#include <TimerOne.h>\n\n/ ==================== 引脚定义 ====================\nconst int STEP_PIN  = 2;    / 步进脉冲输出\nconst int DIR_PIN   = 3;    / 方向控制\nconst int BTN_PIN   = 4;    / 启停按钮（低电平有效）\nconst int LIMIT_PIN = 5;    / 限位开关（复位用，低电平触发）\n\n/ ==================== 运动参数 ====================\nconst long T_TOTAL   = 5000;    / 总时长 T（ms），例如 5 秒\nconst long L_DIST    = 10000;   / 总距离 L（脉冲数），需小于行程\nconst long TIMER_US  = 1000;    / 定时器中断周期（us），1ms\n\n/ ==================== 状态变量 ====================\nvolatile bool g_running  = false;   / 是否正在运动\nvolatile bool g_started  = false;   / 是否已启动过\nvolatile long g_elapsed  = 0;       / 已用时间（ms）\nvolatile long g_pulseAcc = 0;       / 脉冲累加器（定点数）\nvolatile bool g_pulseHi  = false;   / 脉冲高电平标志\n\nconst long ACCUM_SCALE = 10000;     / 累加器放大倍数（提高精度）\n\n/ ==================== setup ====================\nvoid setup() {\n  Serial.begin(115200);\n\n  pinMode(STEP_PIN,  OUTPUT);\n  pinMode(DIR_PIN,   OUTPUT);\n  pinMode(BTN_PIN,   INPUT_PULLUP);\n  pinMode(LIMIT_PIN, INPUT_PULLUP);\n\n  digitalWrite(STEP_PIN, LOW);\n  digitalWrite(DIR_PIN,  HIGH);   / 默认工作方向\n\n  / ① 滑台初始化复位\n  resetSlider();\n\n  / ③ 设置时间中断\n  Timer1.initialize(TIMER_US);\n  Timer1.attachInterrupt(timerISR);\n\n  Serial.println(\"===== 系统就绪 =====\");\n  Serial.print(\"T = \"); Serial.print(T_TOTAL); Serial.println(\" ms\");\n  Serial.print(\"",
+  "metadata": {
+    "generation": {
+      "method": "qwen_api",
+      "backend": "api",
+      "provider": "qwen",
+      "model": "qwen3.7-plus",
+      "status": "success",
+      "api_error": null
+    }
+  },
+  "error": null,
+  "method": "qwen_api",
+  "backend": "api",
+  "provider": "qwen",
+  "model": "qwen3.7-plus",
+  "status": "success",
+  "api_error": null,
+  "indexable": true
+}

@@ -1,0 +1,19 @@
+{
+  "page": 6,
+  "formula_count": 1,
+  "formulas": [
+    {
+      "source_image": "output/qwen_qwen3.7-plus_3/debug/images/w10-1-直线运动平台（下）_slide_6_img_2.png",
+      "extraction_method": "qwen_api_智能识别",
+      "backend": "api",
+      "provider": "qwen",
+      "model": "qwen3.7-plus",
+      "latex": "$/text{pulse2Send} /mathrel{+}= /text{speedPerPulse} /times /Delta t$，其中 $/Delta t = t_{/text{current}} - t_{/text{last}}$",
+      "description": "该公式是运动学基本公式 $s = v /cdot t$ 的离散化实现。在每个控制循环中，将速度（单位时间内的脉冲数）乘以时间间隔 $/Delta t$，得到该时间段内应发送的脉冲增量，并累加到 `pulse2Send` 变量中。当累加值达到 0.5（即半个脉冲）时，触发一次步进动作，并从累加值中扣除 1 个脉冲，从而实现平滑的速度控制。",
+      "raw_response": "LaTeX: $/text{pulse2Send} /mathrel{+}= /text{speedPerPulse} /times /Delta t$，其中 $/Delta t = t_{/text{current}} - t_{/text{last}}$\n\n名称: 离散时间速度积分公式（步进电机脉冲累加控制）\n\n含义: 该公式是运动学基本公式 $s = v /cdot t$ 的离散化实现。在每个控制循环中，将速度（单位时间内的脉冲数）乘以时间间隔 $/Delta t$，得到该时间段内应发送的脉冲增量，并累加到 `pulse2Send` 变量中。当累加值达到 0.5（即半个脉冲）时，触发一次步进动作，并从累加值中扣除 1 个脉冲，从而实现平滑的速度控制。\n\n变量:\n- $/text{pulse2Send}$：待发送的脉冲累加值（浮点数，以脉冲数为单位）\n- $/text{speedPerPulse}$：每个微秒（或时间单位）应发送的脉冲数，即脉冲频率/速度\n- $/Delta t$（即 `dt`）：当前循环与上一次循环之间的时间间隔（微秒）\n- $t_{/text{current}}$（即 `currentLoopTime`）：当前循环的时间戳\n- $t_{/text{last}}$（即 `lastLoopTime`）：上一次循环的时间戳\n\n条件:\n- 适用于步进电机的开环速度控制场景\n- 要求控制循环周期相对稳定（`loop()` 函数被周期性调用）\n- 仅在 `inMoving` 为真（电机处于运动状态）时执行\n- 采用 0.5 脉冲阈值进行步进触发，实现亚脉冲精度的速度平滑控制（Bresenham 算法思想的变体）",
+      "page_num": 5,
+      "image_index": 1
+    }
+  ],
+  "timestamp": "2026-08-16T21:35:32.188651"
+}

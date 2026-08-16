@@ -382,7 +382,7 @@ class MultimodalPreprocessor:
                 # === 智能识别：根据图像描述判断是否需要进一步识别公式或代码 ===
                 general_description = img_result.get("description", "")
                 
-                if general_description and self.deepseek_wrapper is not None:
+                if general_description and self.vlm_client is not None:
                     # 检测公式关键词（更严格）
                     formula_keywords = ['公式', '方程', '数学表达式', '计算式', 'formula', 'equation', 
                                        'LaTeX', '积分', '微分', '导数', '求导', '函数式', '数学式']
@@ -410,7 +410,7 @@ class MultimodalPreprocessor:
                     if has_formula:
                         try:
                             print(f"      ↳ [智能检测] 发现公式关键词，启动专门公式识别...")
-                            formula_result = self.deepseek_wrapper.recognize_formula(img_path)
+                            formula_result = self.vlm_client.recognize_formula(img_path)
                             
                             if formula_result and formula_result.get("latex"):
                                 # 保存公式结果
@@ -436,7 +436,7 @@ class MultimodalPreprocessor:
                     if has_code:
                         try:
                             print(f"      ↳ [智能检测] 发现代码关键词，启动专门代码识别...")
-                            code_result = self.deepseek_wrapper.recognize_code(img_path)
+                            code_result = self.vlm_client.recognize_code(img_path)
                             
                             # 三重检测：has_code=True 且 code非空
                             if code_result and code_result.get("has_code") and code_result.get("code"):
@@ -464,7 +464,7 @@ class MultimodalPreprocessor:
                     if has_table:
                         try:
                             print(f"      ↳ [智能检测] 发现表格关键词，启动专门表格识别...")
-                            table_result = self.deepseek_wrapper.recognize_table(img_path)
+                            table_result = self.vlm_client.recognize_table(img_path)
                             
                             if table_result and table_result.get("table_data"):
                                 # 保存表格结果（简化格式）

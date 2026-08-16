@@ -1,0 +1,23 @@
+{
+  "original_path": "output/qwen_qwen3.7-plus_3/debug/images/w10-1-直线运动平台（下）_slide_14_img_2.png",
+  "enhanced_path": "output/qwen_qwen3.7-plus_3/debug/images/w10-1-直线运动平台（下）_slide_14_img_2_enhanced.png",
+  "description": "# §4.1 输入整形（Input Shaping）—— 消除残余振动\n\n## 核心思想\n\n对于一个具有固有频率 $/omega_n$ 的欠阻尼/无阻尼系统，其传递函数含有极点 $s = /pm i/omega_n$。为了**消除残余振动**，我们在整形输入 $/tilde{U}_s(s)$ 中配置两个零点，恰好抵消这些极点：\n\n$$s_1 = -i/omega_n, /quad s_2 = i/omega_n$$\n\n---\n\n## 数学推导\n\n### 1. 整形后的输出\n\n$$/tilde{/Theta}(s) = /frac{s^2}{l(s^2 + /omega_n^2)} /tilde{U}_s(s) = /frac{s^2}{l(s^2 + /omega_n^2)} /cdot C(s - s_1)(s - s_2) U_s(s)$$\n\n由于 $(s - s_1)(s - s_2) = (s + i/omega_n)(s - i/omega_n) = s^2 + /omega_n^2$，**极点被零点完全抵消**，系统不再产生残余振动。\n\n### 2. 利用 L'Hôpital 法则将零点转化为时延形式\n\n关键极限：\n\n$$/lim_{s /to s_1} /frac{e^{-s/tau} - e^{-s_1/tau}}{s - s_1} = -/tau e^{-s_1/tau} /neq 0$$\n\n$$/lim_{s /to s_2} /frac{e^{-s/tau} - e^{-s_2/tau}}{s - s_2} = -/tau e^{-s_2/tau} /neq 0$$\n\n由此可得等价关系：\n\n$$s - s_1 /;/Leftrightarrow/; /frac{e^{-s/tau} - e^{-s_1/tau}}{-/tau e^{-s_1/tau}}, /qquad s - s_2 /;/Leftrightarrow/; /frac{e^{-s/tau} - e^{-s_2/tau}}{-/tau e^{-s_2/tau}}$$\n\n### 3. 最终结果\n\n将两个因子相乘，并利用 $s_1 + s_2 = 0$（即 $e^{-(s_1+s_2)/tau} = 1$），以及 $e^{-s_1/tau} = e^{s_2/tau}$、$e^{-s_2/tau} = e^{s_1/tau}$：\n\n$$/boxed{/tilde{U}_s(s) = /frac{C}{/tau^2}/left(e^{-s/tau} - e^{s_2/tau}/right)/left(e^{-s/tau} - e^{s_1/tau}/right) U_s(s)}$$\n\n---\n\n## 物理意义\n\n| 要素 | 含义 |\n|------|------|\n| $e^{-s/tau}$ | 时延算子，表示信号延迟 $/tau$ |\n| 两个零点 $s_1, s_2$ | 在系统固有频率处",
+  "metadata": {
+    "generation": {
+      "method": "qwen_api",
+      "backend": "api",
+      "provider": "qwen",
+      "model": "qwen3.7-plus",
+      "status": "success",
+      "api_error": null
+    }
+  },
+  "error": null,
+  "method": "qwen_api",
+  "backend": "api",
+  "provider": "qwen",
+  "model": "qwen3.7-plus",
+  "status": "success",
+  "api_error": null,
+  "indexable": true
+}

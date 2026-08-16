@@ -1,0 +1,23 @@
+{
+  "original_path": "output/qwen_qwen3.7-plus_3/debug/images/w10-1-直线运动平台（下）_slide_12_img_1.png",
+  "enhanced_path": "output/qwen_qwen3.7-plus_3/debug/images/w10-1-直线运动平台（下）_slide_12_img_1_enhanced.png",
+  "description": "根据您提供的图片内容，这是关于**输入整形（Input Shaping）**技术中常见的二阶系统动力学模型，通常用于描述起重机吊摆或类似系统的振动控制。\n\n以下是图片中公式的 LaTeX 文本转录和简要说明：\n\n### 1. 系统运动方程\n这是一个标准的二阶线性微分方程，描述了角度 $/theta(t)$ 随时间的变化：\n\n$$ /ddot{/theta}(t) + 2/omega_n/zeta/dot{/theta}(t) + /omega_n^2/theta(t) = /frac{/ddot{u}_s(t)}{l} $$\n\n*   $/theta(t)$：摆角（输出）。\n*   $/ddot{u}_s(t)$：基座或小车的加速度（输入）。\n*   $l$：摆长。\n\n### 2. 固有频率 (Natural Frequency)\n$$ /omega_n = /sqrt{/frac{g}{l}} $$\n*   这是单摆系统的固有频率，$g$ 为重力加速度。\n\n### 3. 阻尼比 (Damping Ratio)\n$$ /zeta = /frac{c}{2m/sqrt{gl}}, /quad c /text{ 为阻尼} $$\n*   这是阻尼比 $/zeta$ 的定义式，其中 $c$ 是阻尼系数，$m$ 是质量。\n*   注：标准形式通常为 $/zeta = /frac{c}{2m/omega_n}$，代入 $/omega_n$ 后即得到图中的公式。\n\n---\n\n**背景补充：**\n在“输入整形”（Input Shaping）控制中，目标通常是设计输入信号 $/ddot{u}_s(t)$（通常是一系列脉冲），使得系统响应 $/theta(t)$ 在运动结束后残余振动为零。这个方程就是进行输入整形设计的基础模型。",
+  "metadata": {
+    "generation": {
+      "method": "qwen_api",
+      "backend": "api",
+      "provider": "qwen",
+      "model": "qwen3.7-plus",
+      "status": "success",
+      "api_error": null
+    }
+  },
+  "error": null,
+  "method": "qwen_api",
+  "backend": "api",
+  "provider": "qwen",
+  "model": "qwen3.7-plus",
+  "status": "success",
+  "api_error": null,
+  "indexable": true
+}

@@ -1,0 +1,23 @@
+{
+  "original_path": "output/qwen_qwen3.7-plus_3/debug/images/w10-1-直线运动平台（下）_slide_15_img_1.png",
+  "enhanced_path": "output/qwen_qwen3.7-plus_3/debug/images/w10-1-直线运动平台（下）_slide_15_img_1_enhanced.png",
+  "description": "根据你提供的文本和图片，这看起来像是控制理论或信号处理课程中关于**输入整形（Input Shaping）**的笔记片段。\n\n图片中展示的是拉普拉斯变换（Laplace Transform）的一个核心性质——**延时性质（Time Shifting Property）**，这也是输入整形技术的数学基础。\n\n以下是对该内容的详细解读：\n\n### 1. 图片公式解读\n图片中的公式为：\n$$ /mathcal{L}[f(t-/tau)] = e^{-s/tau}F(s) $$\n\n*   **含义**：如果一个时间函数 $f(t)$ 在时间轴上向右平移（延迟）了 $/tau$ 个单位，变成 $f(t-/tau)$，那么它的拉普拉斯变换等于原函数变换 $F(s)$ 乘以 $e^{-s/tau}$。\n*   **前提**：通常要求 $t < /tau$ 时 $f(t-/tau) = 0$（即因果信号）。\n\n### 2. 与“输入整形” (Input Shaping) 的关系\n你提到的文本“§4.1 输入整形”表明这是该章节的内容。这个公式在输入整形中非常关键，原因如下：\n\n*   **输入整形的原理**：输入整形技术通过将一个参考输入信号与一系列**脉冲（Impulses）**进行卷积，来消除系统的振动。这些脉冲之间具有特定的**时间延迟**。\n*   **脉冲序列的表示**：一个典型的输入整形器（例如ZV整形器）由两个脉冲组成：\n    $$ I(t) = A_1 /delta(t) + A_2 /delta(t - /tau) $$\n    其中 $/delta(t)$ 是单位脉冲函数，$/tau$ 是延迟时间。\n*   **应用延时性质**：\n    为了分析系统响应，我们需要对 $I(t)$ 进行拉普拉斯变换。利用图片中的**延时性质**（已知 $/mathcal{L}[/delta(t)] = 1$）：\n    $$ /mathcal{L}[/delta(t - /tau)] = e^{-s/tau} /cdot 1 = e^{-s/tau} $$\n    所以整个整形器的传递函数为：\n    $$ I(s) = A_1 + A_2 e^{-s/tau} $$\n\n### 总结\n这一页笔记的核心逻辑是：\n**输入整形依赖于在特定时间 $/tau$ 后施加信号 $/rightarrow$ 在数学处理（拉普拉斯变换）时，时间上的延迟 $/tau$ 对应于频域（s域）中乘以因子 $e^{-s/tau}$。**\n\n这个性质使得我们可以方便地在频域中计算整形后的系统响应，从而设计出能抵消振动的脉冲幅值 $A_i$ 和延迟时间 $/tau$。",
+  "metadata": {
+    "generation": {
+      "method": "qwen_api",
+      "backend": "api",
+      "provider": "qwen",
+      "model": "qwen3.7-plus",
+      "status": "success",
+      "api_error": null
+    }
+  },
+  "error": null,
+  "method": "qwen_api",
+  "backend": "api",
+  "provider": "qwen",
+  "model": "qwen3.7-plus",
+  "status": "success",
+  "api_error": null,
+  "indexable": true
+}

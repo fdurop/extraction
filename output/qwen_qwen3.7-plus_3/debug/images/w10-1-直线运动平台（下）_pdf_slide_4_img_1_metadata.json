@@ -1,0 +1,23 @@
+{
+  "original_path": "output/qwen_qwen3.7-plus_3/debug/images/w10-1-直线运动平台（下）_p4_img2.jpeg",
+  "enhanced_path": "output/qwen_qwen3.7-plus_3/debug/images/w10-1-直线运动平台（下）_p4_img2_enhanced.jpeg",
+  "description": "这张图片是复旦大学机电智控实验室关于“直线运动平台”课程的课件截图。主要讲解了丝杆滑台的参数原理以及相关的Arduino实践任务。\n\n为了帮助你更好地理解或完成课程作业，我为你整理了**核心知识点解析**以及**实践任务的代码思路**。\n\n### 1. 核心知识点梳理\n\n*   **导程 (Lead) vs 螺距 (Pitch)**：\n    *   **螺距 (P)**：螺纹上相邻两牙在中径线上对应两点间的轴向距离。\n    *   **导程 (L)**：同一条螺旋线上的相邻两牙在中径线上对应两点间的轴向距离（即转一圈走的距离）。\n    *   **关系**：\n        *   单线螺纹：$L = P$\n        *   多线螺纹（如双线）：$L = P /times /text{线数}$\n    *   **本例参数**：导程 $L = 10/text{ mm/rev}$（转一圈走10毫米）。\n\n*   **速度与脉冲的关系**：\n    *   滑台速度 $v = /text{导程} /times /text{转速}$。\n    *   **关键换算**：\n        *   驱动器细分数设为 **400**。这意味着电机转一圈需要 **400个脉冲**。\n        *   因为转一圈走10mm，所以 **400个脉冲 = 10mm**。\n        *   **分辨率**：$10/text{ mm} / 400 = 0.025/text{ mm/pulse}$（每个脉冲走0.025毫米）。\n\n---\n\n### 2. 实践任务指导\n\n课件中提到了两个Arduino实践任务（`.ino`文件），以下是具体的实现思路：\n\n#### 任务一：测算滑台的行程 (`w10-s2-calSliderStroke.ino`)\n**目标**：通过程序测算出滑台能走多远（或者验证行程）。\n**思路**：\n1.  让电机以恒定速度转动。\n2.  记录发送的脉冲总数。\n3.  当滑台到达物理极限（或者你手动停止时），停止发送脉冲。\n4.  **计算公式**：\n    $$ /text{行程 (mm)} = /frac{/text{总脉冲数}}{400} /times 10 $$\n    或者反过来，如果你知道物理行程（比如100mm），你可以算出需要的总脉冲数：\n    $$ /text{总脉冲数} = /frac{100/text{ mm}}{10/text{ mm}} /times 400 = 4000/text{ pulses} $$\n\n#### 任务二：用电位器控制滑台的绝对位置 (`w10-s3-sliderAbsLocation.ino`)\n**目标**：旋转电位器，滑台移动到对应的位置（绝对定位）。\n**逻辑流程**：\n1.  **读取电位器**：使用 `analogRead(A0)` 读取值（范围 0~1023）。\n2.  **映射位置**：将 0~1023 映射到滑台的脉冲范围（例如 0~",
+  "metadata": {
+    "generation": {
+      "method": "qwen_api",
+      "backend": "api",
+      "provider": "qwen",
+      "model": "qwen3.7-plus",
+      "status": "success",
+      "api_error": null
+    }
+  },
+  "error": null,
+  "method": "qwen_api",
+  "backend": "api",
+  "provider": "qwen",
+  "model": "qwen3.7-plus",
+  "status": "success",
+  "api_error": null,
+  "indexable": true
+}

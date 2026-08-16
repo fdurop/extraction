@@ -1,0 +1,23 @@
+{
+  "original_path": "output/qwen_qwen3.7-plus_3/debug/images/w08-1-步进电机驱动器_p8_img3.png",
+  "enhanced_path": "output/qwen_qwen3.7-plus_3/debug/images/w08-1-步进电机驱动器_p8_img3_enhanced.png",
+  "description": "这份资料来自复旦大学机电智控实验室的课程《机电系统原理及实践》，主要讲解了 **Arduino 外部中断（External Interrupts）** 的核心概念、硬件映射关系以及相关的编程函数。\n\n以下是对这份课件内容的详细整理和知识点解析，帮助你更好地理解和实践：\n\n### 1. 核心概念：什么是中断？\n*   **ISR (Interrupt Service Routine)**：中断服务程序。\n    *   **通俗解释**：想象你在写作业（主程序 `loop`），突然电话响了（中断信号）。你停下笔，去接电话（执行 ISR），接完后回来继续写作业。\n    *   **作用**：让单片机能够实时响应外部突发事件，而不需要一直在 `loop` 里轮询检查（Polling），效率更高。\n\n### 2. 中断触发方式 (Mode)\n结合课件底部的波形图，四种触发模式定义如下：\n*   **RISING (上升沿)**：信号从 **LOW (低电平)** 变为 **HIGH (高电平)** 的瞬间触发。\n*   **FALLING (下降沿)**：信号从 **HIGH (高电平)** 变为 **LOW (低电平)** 的瞬间触发。\n*   **CHANGE (变化)**：只要电平发生改变（无论是上升还是下降）都触发。\n*   **LOW (低电平)**：只要引脚处于低电平状态，就会不断触发（通常不推荐，容易卡死）。\n\n### 3. 中断号与引脚的对应关系\n不同型号的 Arduino 开发板，支持外部中断的引脚是不同的。课件中的表格非常关键：\n\n| 中断号 (Interrupt No.) | Arduino UNO | Arduino MEGA 2560 | Arduino Leonardo |\n| :--- | :--- | :--- | :--- |\n| **0 (int0)** | **D2** | **D2** | **D3** |\n| **1 (int1)** | **D3** | **D3** | **D2** |\n| **2 (int2)** | - | **D21** | **D0** |\n| **3 (int3)** | - | **D20** | **D1** |\n| **4 (int4)** | - | **D19** | - |\n| **5 (int5)** | - | **D18** | - |\n\n*   **注意**：最常用的 **UNO** 板只有两个外部中断引脚：**D2** 和 **D3**。\n\n### 4. 关键函数 API\n课件列出了 Arduino 处理中断的四个核心函数：\n\n1.  **`attachInterrupt(interrupt, ISR, mode)`**\n    *   **功能**：开启并配置中断。\n    *   **参数**：\n        *   `interrupt`：中断号（如 0, 1）或引脚号（现代写法推荐用 `digitalPinToInterrupt(pin)`）。\n        *   `ISR`：中断发生时调用的函数名（**注意：函数名不能带括号**）。\n        *   `mode`：触发模式（RISING, FALLING 等）。\n2.  **`detachInterrupt(interrupt)`**\n    *   **功能**：关闭指定的中断，之后该引脚的变化不再触发 ISR。\n3.",
+  "metadata": {
+    "generation": {
+      "method": "qwen_api",
+      "backend": "api",
+      "provider": "qwen",
+      "model": "qwen3.7-plus",
+      "status": "success",
+      "api_error": null
+    }
+  },
+  "error": null,
+  "method": "qwen_api",
+  "backend": "api",
+  "provider": "qwen",
+  "model": "qwen3.7-plus",
+  "status": "success",
+  "api_error": null,
+  "indexable": true
+}

@@ -1,0 +1,19 @@
+{
+  "page": 4,
+  "formula_count": 1,
+  "formulas": [
+    {
+      "source_image": "output/qwen_qwen3.7-plus_3/debug/images/w10-1-直线运动平台（下）_slide_4_img_3.png",
+      "extraction_method": "qwen_api_智能识别",
+      "backend": "api",
+      "provider": "qwen",
+      "model": "qwen3.7-plus",
+      "latex": "$$ /begin{cases} x = r /cos /theta / y = r /sin /theta / z = /frac{p}{2/pi} /theta /end{cases} $$",
+      "description": "该公式描述了空间中一点绕圆柱轴线旋转并沿轴线匀速移动的轨迹。在工程中，这对应螺纹、弹簧或螺杆的几何形状。红色部分突出了螺旋的路径（或螺旋面）。",
+      "raw_response": "由于图片中并未直接包含文本形式的数学公式，而是展示了一个**圆柱螺旋线（或螺纹/螺杆）**的3D几何模型，以下提取描述该几何形状最核心的数学/工程公式：\n\nLaTeX: $$ /begin{cases} x = r /cos /theta / y = r /sin /theta / z = /frac{p}{2/pi} /theta /end{cases} $$\n（注：这也是螺旋面的基础生成方程，若考虑螺纹宽度，则涉及螺旋面方程 $/mathbf{r}(u, v) = (u /cos v, u /sin v, cv)$）\n\n名称: **圆柱螺旋线参数方程** (Parametric Equation of a Circular Helix) 或 **螺纹螺旋升角公式** ($/tan /alpha = /frac{L}{/pi d}$)\n\n含义: 该公式描述了空间中一点绕圆柱轴线旋转并沿轴线匀速移动的轨迹。在工程中，这对应螺纹、弹簧或螺杆的几何形状。红色部分突出了螺旋的路径（或螺旋面）。\n\n变量:\n*   $x, y, z$: 空间直角坐标系中的坐标。\n*   $r$: 圆柱的半径（或螺旋线的半径）。\n*   $/theta$ (或 $t$): 参数，表示旋转的角度（弧度）。\n*   $p$: 螺距 (Pitch)，即螺旋线旋转一周 ($2/pi$) 在轴向上前进的距离。\n*   (若指螺旋升角公式：$/alpha$ 为螺旋升角，$L$ 为导程，$d$ 为圆柱直径)。\n\n条件: 适用于圆柱面上的螺旋运动，$r > 0$。在机械工程中，适用于标准圆柱螺纹的几何描述。",
+      "page_num": 3,
+      "image_index": 2
+    }
+  ],
+  "timestamp": "2026-08-16T21:33:23.937824"
+}

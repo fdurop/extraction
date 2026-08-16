@@ -1,0 +1,23 @@
+{
+  "original_path": "output/qwen_qwen3.7-plus_3/debug/images/w10-1-直线运动平台（下）_slide_5_img_1.png",
+  "enhanced_path": "output/qwen_qwen3.7-plus_3/debug/images/w10-1-直线运动平台（下）_slide_5_img_1_enhanced.png",
+  "description": "# §2.2 低通滤波（LPF）—— 移动平均法\n\n## 核心公式\n\n$$y[n] = y[n-1] + /frac{x[n] - x[n-M]}{M}$$\n\n**关键思想**：不需要每次重新求和 M 个元素，只需在上一轮结果基础上 **加新值、减旧值**，效率从 O(M) 降到 O(1)。\n\n---\n\n## Arduino 代码实现\n\n```cpp\n/ w10-s3-sliderAbsLocation-LPF.ino\n/ 带低通滤波的滑台绝对位置控制\n\nconst int M = 10;          / 移动平均窗口大小\nfloat history[M];          / 长度为 M 的数组，记录历史数据\nint writeIndex = 0;        / 待插入新数据的位置（同时也是待删除旧数据的位置）\nfloat y_prev = 0;          / 上一轮滤波输出 y[n-1]\nbool firstRun = true;      / 首次运行标志\n\nvoid setup() {\n  Serial.begin(9600);\n  / 初始化历史数组\n  for (int i = 0; i < M; i++) {\n    history[i] = 0;\n  }\n}\n\nvoid loop() {\n  / 1. 读取原始传感器数据（滑台位置）\n  float x_new = analogRead(A0);  / 假设位置传感器接在 A0\n\n  / 2. 低通滤波（移动平均）\n  float y_new;\n  if (firstRun) {\n    / 首次运行：用当前值填充整个历史数组\n    for (int i = 0; i < M; i++) {\n      history[i] = x_new;\n    }\n    y_new = x_new;\n    firstRun = false;\n  } else {\n    / 递归公式：y[n] = y[n-1] + (x[n] - x[n-M]) / M\n    float x_old = history[writeIndex];  / 待删除的旧数据\n    y_new = y_prev + (x_new - x_old) / M;\n  }\n\n  / 3. 更新历史数组：在 writeIndex 位置插入新数据（覆盖旧数据）\n  history[writeIndex] = x_new;\n\n  / 4. 更新 writeIndex（循环缓冲区）\n  writeIndex = (writeIndex + 1) % M;\n\n  / 5. 更新 y_prev\n  y_prev = y_new;\n\n  / 6. 输出结果\n  Serial.print(\"Raw: \");\n  Serial.print(x_new);\n  Serial.print(\"  Filtered: \");\n  Serial.println(y_new);\n\n  / 7. 用滤波后的值控制滑台（示例）\n  / controlSlider(y_new);\n\n  delay(50);  / 采样间隔\n}\n```\n\n---\n\n## 关键要点图解\n\n```\nhistory 数组（循环缓冲区）：\n┌─────┬─────┬─────┬─────┬─────┐\n│ x[n-9]│x[n-8]│x[n-7]│x[n-6]",
+  "metadata": {
+    "generation": {
+      "method": "qwen_api",
+      "backend": "api",
+      "provider": "qwen",
+      "model": "qwen3.7-plus",
+      "status": "success",
+      "api_error": null
+    }
+  },
+  "error": null,
+  "method": "qwen_api",
+  "backend": "api",
+  "provider": "qwen",
+  "model": "qwen3.7-plus",
+  "status": "success",
+  "api_error": null,
+  "indexable": true
+}

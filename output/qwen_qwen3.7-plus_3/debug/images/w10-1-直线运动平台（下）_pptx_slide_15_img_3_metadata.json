@@ -1,0 +1,23 @@
+{
+  "original_path": "output/qwen_qwen3.7-plus_3/debug/images/w10-1-直线运动平台（下）_slide_15_img_3.png",
+  "enhanced_path": "output/qwen_qwen3.7-plus_3/debug/images/w10-1-直线运动平台（下）_slide_15_img_3_enhanced.png",
+  "description": "# §4.1 输入整形（Input Shaping）\n\n## 公式解析\n\n$$C = /frac{C}{/tau^2}$$\n\n## 背景说明\n\n**输入整形（Input Shaping）** 是一种前馈控制技术，用于抑制柔性系统的残余振动。其核心思想是通过对输入信号进行卷积（与一系列脉冲序列），使得系统响应中的振动分量相互抵消。\n\n## 公式含义\n\n该公式表示对代价函数（或性能指标）$C$ 进行**归一化处理**：\n\n| 符号 | 含义 |\n|------|------|\n| $C$ | 代价函数 / 性能指标（Cost function） |\n| $/tau$ | 系统的时间常数或自然周期相关参数 |\n| $/tau^2$ | 归一化因子 |\n\n## 归一化的目的\n\n1. **无量纲化**：将 $C$ 除以 $/tau^2$ 后，使表达式变为无量纲形式，便于不同系统之间的比较。\n2. **简化设计**：归一化后，整形器的设计参数不再依赖于具体的系统尺度，具有更好的通用性。\n3. **优化求解**：在求解最优整形器参数时，归一化可以改善数值条件，提高求解稳定性。\n\n## 输入整形的基本原理\n\n输入整形器通常由一系列脉冲组成：\n\n$$I(t) = /sum_{i=1}^{n} A_i /, /delta(t - t_i)$$\n\n其中：\n- $A_i$：第 $i$ 个脉冲的幅值\n- $t_i$：第 $i$ 个脉冲的时间\n- 约束条件：$/sum A_i = 1$（保证稳态增益不变）\n\n常见的整形器类型包括：\n- **ZV（Zero Vibration）整形器**：2个脉冲\n- **ZVD（Zero Vibration and Derivative）整形器**：3个脉冲\n- **ZVDD 整形器**：4个脉冲\n\n> 归一化后的代价函数 $C/tau^2$ 常用于评估整形器的**鲁棒性**和**灵敏度**，是优化整形器设计的重要指标。",
+  "metadata": {
+    "generation": {
+      "method": "qwen_api",
+      "backend": "api",
+      "provider": "qwen",
+      "model": "qwen3.7-plus",
+      "status": "success",
+      "api_error": null
+    }
+  },
+  "error": null,
+  "method": "qwen_api",
+  "backend": "api",
+  "provider": "qwen",
+  "model": "qwen3.7-plus",
+  "status": "success",
+  "api_error": null,
+  "indexable": true
+}

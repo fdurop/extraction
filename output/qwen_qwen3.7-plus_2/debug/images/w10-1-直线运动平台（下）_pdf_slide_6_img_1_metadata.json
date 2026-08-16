@@ -1,0 +1,23 @@
+{
+  "original_path": "output/qwen_qwen3.7-plus_2/debug/images/w10-1-直线运动平台（下）_p6_img2.png",
+  "enhanced_path": "output/qwen_qwen3.7-plus_2/debug/images/w10-1-直线运动平台（下）_p6_img2_enhanced.png",
+  "description": "这份资料来自复旦大学机电智控实验室，主要讲解了**步进电机调速的软件实现原理**，特别是如何通过“时间累加”的方式来实现平滑的速度控制。\n\n以下是对PPT理论与代码实现的详细对应解读：\n\n### 1. 核心理论：离散积分法调速\n\nPPT中展示的核心数学逻辑是将连续的旋转运动转化为离散的脉冲控制。\n\n*   **连续公式**：$/theta(t_1) = /theta(t_0) + /int_{t_0}^{t_1} /omega(t) dt$\n    *   意思是：当前的角度 = 初始角度 + 速度对时间的积分。\n*   **离散化公式**：$/theta[n] = /theta[n-1] + /omega[n] /cdot /Delta t$\n    *   在计算机程序中，我们无法做连续积分，只能每隔一段时间（$/Delta t$，即代码中的 `dt`）计算一次增量。\n*   **无量纲化**：\n    *   将角度 $/theta$ 的单位定义为“脉冲数”（Step/Pulse）。\n    *   将速度 $/omega$ 的单位定义为“脉冲数/微秒”。\n*   **关键算法（Bresenham/DDA思想）**：\n    *   由于速度 $/omega$ 通常很小（例如 0.001 脉冲/微秒），直接乘时间可能得到小数。电机不能发“0.5个脉冲”。\n    *   **策略**：设置一个累加器。每次循环把计算出的“小数脉冲”加进去。\n    *   **触发条件**：当累加值 $/ge 0.5$ 时，说明累积的误差已经足够让电机走一步了，于是发送一个脉冲指令，并将累加值减去 1（如果是反向则加 1）。\n    *   **效果**：这样可以将角位移误差始终控制在 $/Delta/theta/2$（即半个脉冲）以内，实现非常平滑的调速。\n\n---\n\n### 2. 代码逐行解析\n\n截图中的代码完美实现了上述理论。这是一个典型的 Arduino `loop()` 函数结构。\n\n```cpp\n/ loop 函数仅用于实现速度控制\nvoid loop() {\n  uint32_t currentLoopTime = micros(); / 获取当前时间（微秒）\n  \n  if (inMoving) { / 如果电机处于运动状态\n    / 1. 计算时间间隔 dt\n    / 循环之间的间隔\n    uint32_t dt = currentLoopTime - lastLoopTime; \n\n    / 2. 角度累加（核心公式：θ = θ + ω * dt）\n    / 角度累加，以脉冲数为单位\n    / speedPerPulse 其实就是 PPT 中的 ω (速度，单位：脉冲数/微秒)\n    / pulse2Send 就是累加器 (相当于 PPT 中的 θ 的增量部分)\n    pulse2Send += speedPerPulse * dt; \n\n    / 3. 判断是否需要步进一格 (阈值判断)\n    / 是否需要步进一格。\n    if (abs(pulse2Send) >= 0.5) { \n      / 根据方向，步进一格。\n      / pulse2Send > 0 表示",
+  "metadata": {
+    "generation": {
+      "method": "qwen_api",
+      "backend": "api",
+      "provider": "qwen",
+      "model": "qwen3.7-plus",
+      "status": "success",
+      "api_error": null
+    }
+  },
+  "error": null,
+  "method": "qwen_api",
+  "backend": "api",
+  "provider": "qwen",
+  "model": "qwen3.7-plus",
+  "status": "success",
+  "api_error": null,
+  "indexable": true
+}

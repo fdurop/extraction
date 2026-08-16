@@ -1,0 +1,36 @@
+{
+  "page_num": 5,
+  "raw_text": "机电系统原理及实践—— 步进电机驱动器与外部中断\n机电智控实验室tangguoan@fudan.edu.cn mmguo@fudan.edu.cn\n步进电机的双H桥驱动电路\n11-6\nDC+\nDC-\nIN1\nIN2\nIN3\nIN4\nIN5\nIN6\nIN7\nIN8\nA1\nB1\nA2\nB2\nA3\nB3\nA4\nB4\nA5\nB5\nA6\nB6\nA7\nB7\nA8\nB8\nA+\nA-\nB+\nB-\n0V\n+Vdc\nD12\nD11\nD10\nD9\nD8\nD7\nD6\nD5\nGND\n5V\n用固态继电器驱动步进电机\nUNO\n下位机\n6芯\n插座\n6芯\n插头\n接步进电机\n接电源-\n接电源+\n6芯\n插座\nw08-s1-dualHBridge.ino\n对接端子在\n模块化中的\n作用\n复旦大学 机电智控实验室\n",
+  "cleaned_text": "机电系统原理及实践—— 步进电机驱动器与外部中断 机电智控实验室tangguoan@fudan.edu.cn mmguo@fudan.edu.cn 步进电机的双H桥驱动电路 11-6 DC+ DC- IN1 IN2 IN3 IN4 IN5 IN6 IN7 IN8 A1 B1 A2 B2 A3 B3 A4 B4 A5 B5 A6 B6 A7 B7 A8 B8 A+ A- B+ B- 0V +Vdc D12 D11 D10 D9 D8 D7 D6 D5 GND 5V 用固态继电器驱动步进电机 UNO 下位机 6芯 插座 6芯 插头 接步进电机 接电源- 接电源+ 6芯 插座 w08-s1-dualHBridge.ino 对接端子在 模块化中的 作用 复旦大学 机电智控实验室",
+  "key_points": [
+    "DC+",
+    "DC-",
+    "IN1",
+    "IN2",
+    "IN3",
+    "IN4",
+    "IN5",
+    "IN6",
+    "IN7",
+    "IN8"
+  ],
+  "technical_terms": [
+    "DC",
+    "GND",
+    "UNO",
+    "w08-s1-dualHBridge",
+    "接步进电机",
+    "机电系统",
+    "步进电机",
+    "步进电机驱动器与外部中断",
+    "用固态继电器驱动步进电机"
+  ],
+  "has_images": false,
+  "image_count": 0,
+  "image_paths": [],
+  "metadata": {
+    "char_count": 340,
+    "word_count": 66,
+    "line_count": 64
+  }
+}

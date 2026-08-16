@@ -1,0 +1,23 @@
+{
+  "original_path": "output/qwen_qwen3.7-plus_3/debug/images/w08-1-步进电机驱动器_p11_img2.jpeg",
+  "enhanced_path": "output/qwen_qwen3.7-plus_3/debug/images/w08-1-步进电机驱动器_p11_img2_enhanced.jpeg",
+  "description": "这张图片是复旦大学机电智控实验室关于《机电系统原理及实践》课程的课件，主要讲解了**商品化步进电机驱动器**（以雷赛智能 DM432C 为例）的原理、接口定义及设置方法。\n\n以下是对图片内容的详细解读和知识点总结，帮助你更好地理解和进行实践：\n\n### 1. 核心概念：商品化驱动器 vs. 原理样机\n*   **原理样机**：通常指在实验室里用分立元件（如MOS管、H桥电路）搭建的驱动电路，用于理解原理，但体积大、功能单一、保护机制少。\n*   **商品化驱动器（如DM432C）**：\n    *   **优势**：体积小巧、功能丰富（过流保护、过热保护、细分控制等）。\n    *   **实践目标**：在课程实践中，用这种成熟的驱动器替换掉之前搭建的原理样机，使系统更稳定。\n\n### 2. 接口定义与接线规则\n图片中明确指出了接线的重要原则：**“所有‘–’与MCU共地”**。这是信号传输的基础，否则控制信号无法被识别。\n\n*   **控制回路（Signal）**：连接单片机（MCU，如Arduino）。\n    *   **PUL+ / PUL-**：脉冲信号。MCU发一个脉冲，电机走一步（或一个微步）。频率决定速度。\n    *   **DIR+ / DIR-**：方向信号。高/低电平决定电机正转还是反转。\n    *   **ENA+ / ENA-**：使能信号。通常低电平有效（或高电平，视具体驱动器而定，DM432C通常是ENA高电平脱机/禁用，低电平使能）。\n*   **动力回路（High Voltage）**：连接电源和电机。\n    *   **+Vdc / GND**：接直流电源（图片右下角标注 +Vdc: +20V~+40V）。\n    *   **A+, A-, B+, B-**：接步进电机的两相线圈。\n\n### 3. DM432C 拨码开关设置详解（重点）\n驱动器侧面的表格是设置的核心，通过拨码开关（SW1-SW8）来配置电流和细分。\n\n#### A. 电流设置 (Current Table) - SW1, SW2, SW3, SW4\n*   **作用**：设定输出给电机的电流大小。电流越大，力矩越大，但发热也越大。\n*   **参数关系**：`Peak (峰值) = RMS (有效值) × 1.4`。\n*   **设置方法**：查看 SW1, SW2, SW3 的 on/off 组合。\n    *   例如：SW1=off, SW2=off, SW3=off (Default) -> Peak 1.31A。\n    *   例如：SW1=on, SW2=on, SW3=on -> Peak 3.20A (最大电流)。\n*   **SW4 (自动半流功能)**：\n    *   **SW4 = off**：Half current（半流）。当电机停止转动约1秒后，电流自动减半。这能显著降低电机和驱动器的发热。",
+  "metadata": {
+    "generation": {
+      "method": "qwen_api",
+      "backend": "api",
+      "provider": "qwen",
+      "model": "qwen3.7-plus",
+      "status": "success",
+      "api_error": null
+    }
+  },
+  "error": null,
+  "method": "qwen_api",
+  "backend": "api",
+  "provider": "qwen",
+  "model": "qwen3.7-plus",
+  "status": "success",
+  "api_error": null,
+  "indexable": true
+}

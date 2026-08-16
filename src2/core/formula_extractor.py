@@ -87,11 +87,13 @@ class FormulaExtractor:
         formulas = []
         
         # 匹配简单方程式：a = b + c
-        equation_pattern = r'\b([a-zA-Z_]\w*)\s*=\s*([\w\s\+\-\*/\(\)\^\.]+)'
+        equation_pattern = r'\b([a-zA-Z_]\w*)\s*=\s*([^\n\r;]{1,160})'
         for match in re.finditer(equation_pattern, text):
-            # 验证右侧是否包含数学运算符
-            right_side = match.group(2)
-            if any(op in right_side for op in ['+', '-', '*', '/', '^', '(', ')']):
+            right_side = match.group(2).strip()
+            is_function_call = re.search(r'[A-Za-z_]\w*\s*\(', right_side) is not None
+            has_arithmetic = re.search(r'[A-Za-z0-9_)\]]\s*[+\-*/^]\s*[A-Za-z0-9_(\[]', right_side) is not None
+            looks_like_code = any(token in match.group(0) for token in [';', '==', '!=', '++', '--'])
+            if has_arithmetic and not is_function_call and not looks_like_code:
                 formulas.append({
                     "type": "equation",
                     "content": match.group(0),

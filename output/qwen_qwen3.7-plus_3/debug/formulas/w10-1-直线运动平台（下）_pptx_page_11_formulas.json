@@ -1,0 +1,19 @@
+{
+  "page": 11,
+  "formula_count": 1,
+  "formulas": [
+    {
+      "source_image": "output/qwen_qwen3.7-plus_3/debug/images/w10-1-直线运动平台（下）_slide_11_img_2.png",
+      "extraction_method": "qwen_api_智能识别",
+      "backend": "api",
+      "provider": "qwen",
+      "model": "qwen3.7-plus",
+      "latex": "$/ddot{/theta}(t) + 2/omega_n/zeta/dot{/theta}(t) + /omega_n^2/theta(t) = /frac{/ddot{u}_s(t)}{l}$，其中 $/omega_n = /sqrt{/frac{g}{l}}$，$/zeta = /frac{c}{2m/sqrt{gl}}$",
+      "description": "该公式组描述了一个单摆系统在存在阻尼的情况下，受到基底水平加速度（如地震波或地面运动 $/ddot{u}_s(t)$）激励时的动力学行为。主方程为二阶线性常微分方程，下方两式分别给出了系统的固有频率和阻尼比的计算公式。",
+      "raw_response": "LaTeX: $/ddot{/theta}(t) + 2/omega_n/zeta/dot{/theta}(t) + /omega_n^2/theta(t) = /frac{/ddot{u}_s(t)}{l}$，其中 $/omega_n = /sqrt{/frac{g}{l}}$，$/zeta = /frac{c}{2m/sqrt{gl}}$\n名称: 阻尼单摆受迫振动方程（及参数定义）\n含义: 该公式组描述了一个单摆系统在存在阻尼的情况下，受到基底水平加速度（如地震波或地面运动 $/ddot{u}_s(t)$）激励时的动力学行为。主方程为二阶线性常微分方程，下方两式分别给出了系统的固有频率和阻尼比的计算公式。\n变量:\n- $/theta(t)$: 摆角（角位移），$/dot{/theta}(t)$ 为角速度，$/ddot{/theta}(t)$ 为角加速度。\n- $/omega_n$: 系统的固有频率。\n- $/zeta$: 阻尼比。\n- $u_s(t)$: 基底位移，$/ddot{u}_s(t)$ 为基底加速度。\n- $l$: 摆长。\n- $g$: 重力加速度。\n- $c$: 阻尼系数。\n- $m$: 质量（摆球质量）。\n条件: 小角度近似（即 $/sin/theta /approx /theta$），系统为线性阻尼系统。",
+      "page_num": 10,
+      "image_index": 1
+    }
+  ],
+  "timestamp": "2026-08-16T21:41:15.891779"
+}

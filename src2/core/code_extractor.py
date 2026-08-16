@@ -21,7 +21,11 @@ class CodeExtractor:
         self.language_keywords = {
             'python': ['def ', 'import ', 'class ', 'if __name__', 'print(', 'return '],
             'java': ['public class', 'private ', 'public static void main', 'System.out'],
-            'cpp': ['#include', 'int main(', 'std::', 'cout <<', 'namespace '],
+            'cpp': [
+                '#include', 'int main(', 'std::', 'cout <<', 'namespace ',
+                'void setup(', 'void loop(', 'pinMode(', 'digitalWrite(',
+                'attachInterrupt('
+            ],
             'c': ['#include', 'int main(', 'printf(', 'scanf('],
             'javascript': ['function ', 'const ', 'let ', 'var ', 'console.log', '=>'],
             'matlab': ['function ', 'end', 'plot(', 'disp(', '%.', 'clear all'],
@@ -121,19 +125,40 @@ class CodeExtractor:
         return code_blocks
     
     def _detect_inline_code(self, text: str) -> Optional[Dict[str, Any]]:
-        """检测单行或小段代码"""
-        # 检测是否包含代码特征
-        language = self._detect_language(text)
-        
-        if language != 'unknown':
-            return {
-                "type": "inline",
-                "language": language,
-                "code": text.strip(),
-                "lines": len(text.split('\n'))
-            }
-        
-        return None
+        """检测没有 Markdown 标记的连续代码，优先避免把课件正文当代码。"""
+        lines = [line.rstrip() for line in text.splitlines() if line.strip()]
+        if len(lines) < 3:
+            return None
+
+        code_patterns = [
+            r'^\s*#include\s*[<"]',
+            r'^\s*(?:def|class|import|from)\s+',
+            r'^\s*(?:public|private|protected|static)\s+',
+            r'^\s*(?:void|int|float|double|char|bool|byte|const|volatile)\b.*[;{]$',
+            r'^\s*(?:if|else|for|while|switch|return)\s*(?:\(|\b)',
+            r'^\s*[A-Za-z_]\w*\s*\([^;]*\)\s*;\s*$',
+            r'^\s*[A-Za-z_]\w*(?:\.[A-Za-z_]\w*)*\s*=.*;\s*$',
+            r'^\s*[{}]\s*$',
+        ]
+        code_lines = [
+            line for line in lines
+            if any(re.search(pattern, line) for pattern in code_patterns)
+        ]
+
+        # A few API names in explanatory prose are not a code block.
+        if len(code_lines) < 3 or len(code_lines) / len(lines) < 0.35:
+            return None
+
+        code = '\n'.join(code_lines)
+        language = self._detect_language(code)
+        if language == 'unknown':
+            return None
+        return {
+            "type": "inline",
+            "language": language,
+            "code": code,
+            "lines": len(code_lines),
+        }
     
     def _detect_language(self, code: str) -> str:
         """

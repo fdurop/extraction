@@ -1,0 +1,23 @@
+{
+  "original_path": "output/qwen_qwen3.7-plus_3/debug/images/w10-1-直线运动平台（下）_slide_14_img_1.png",
+  "enhanced_path": "output/qwen_qwen3.7-plus_3/debug/images/w10-1-直线运动平台（下）_slide_14_img_1_enhanced.png",
+  "description": "根据您提供的图片和文字，这似乎是关于控制理论中**输入整形（Input Shaping）**技术的笔记或课件内容。\n\n以下是图片内容的文字识别及详细解释：\n\n### 1. 图片文字内容\n图片中的文字为：\n> **$/tilde{U}_s(s)$ 为整形后输入的拉氏变换**\n\n### 2. 含义解释\n这句话定义了符号 $/tilde{U}_s(s)$ 的物理和数学意义：\n*   **$/tilde{U}_s(s)$**：这是经过“整形”（Shaping）处理后的控制输入信号。波浪号（$/sim$）通常表示“修改后”或“估计值”，下标 $s$ 可能代表 \"shaped\"（整形后的）。\n*   **拉氏变换**：表示这个信号是在复频域（s域）中表示的，而不是时域 $u(t)$。\n\n### 3. 背景知识：输入整形 (Input Shaping)\n在 §4.1 输入整形这一节中，通常涉及以下核心概念：\n\n输入整形是一种用于**抑制系统残余振动**的技术。它的基本原理是将原始的输入命令与一系列脉冲序列进行卷积。\n\n在拉普拉斯域（s域）中，时域的卷积变成了乘法。公式通常如下：\n\n$$ /tilde{U}_s(s) = U(s) /cdot I(s) $$\n\n其中：\n*   $U(s)$：原始输入信号的拉氏变换（例如阶跃信号）。\n*   $I(s)$：整形器（Input Shaper）的传递函数。它通常由一系列延迟脉冲组成，形式为 $/sum_{i=1}^{n} A_i e^{-s t_i}$（其中 $A_i$ 是幅值，$t_i$ 是时间延迟）。\n*   $/tilde{U}_s(s)$：即您图片中提到的**整形后输入**。\n\n**总结**：这张图是在告诉读者，在后续的公式推导中，看到 $/tilde{U}_s(s)$ 就要知道它代表的是**已经经过整形器处理过的输入信号**。",
+  "metadata": {
+    "generation": {
+      "method": "qwen_api",
+      "backend": "api",
+      "provider": "qwen",
+      "model": "qwen3.7-plus",
+      "status": "success",
+      "api_error": null
+    }
+  },
+  "error": null,
+  "method": "qwen_api",
+  "backend": "api",
+  "provider": "qwen",
+  "model": "qwen3.7-plus",
+  "status": "success",
+  "api_error": null,
+  "indexable": true
+}

@@ -1,0 +1,25 @@
+{
+  "page_num": 3,
+  "raw_text": "机电系统原理及实践—— 直线运动平台（上）\n机电智控实验室tangguoan@fudan.edu.cn mmguo@fudan.edu.cn\n§1.2 多轴直线运动平台\n12-4\nZ\n轴\n直交型机械臂\n",
+  "cleaned_text": "机电系统原理及实践—— 直线运动平台（上） 机电智控实验室tangguoan@fudan.edu.cn mmguo@fudan.edu.cn §1.2 多轴直线运动平台 12-4 Z 轴 直交型机械臂",
+  "key_points": [
+    "Z"
+  ],
+  "technical_terms": [
+    "机电系统"
+  ],
+  "has_images": true,
+  "image_count": 5,
+  "image_paths": [
+    "output/qwen_qwen3.7-plus_3/debug/images/w09-1-直线运动平台（上） - 副本_p4_img3.jpeg",
+    "output/qwen_qwen3.7-plus_3/debug/images/w09-1-直线运动平台（上） - 副本_p4_img4.jpeg",
+    "output/qwen_qwen3.7-plus_3/debug/images/w09-1-直线运动平台（上） - 副本_p4_img5.jpeg",
+    "output/qwen_qwen3.7-plus_3/debug/images/w09-1-直线运动平台（上） - 副本_p4_img6.jpeg",
+    "output/qwen_qwen3.7-plus_3/debug/images/w09-1-直线运动平台（上） - 副本_p4_img7.jpeg"
+  ],
+  "metadata": {
+    "char_count": 101,
+    "word_count": 10,
+    "line_count": 8
+  }
+}

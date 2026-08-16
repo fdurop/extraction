@@ -1,5 +1,6 @@
-# VLM API configuration template for the extraction pipeline.
-# Copy this file to vlm_api.yaml and fill api_key locally.
+# GitHub-safe API configuration template for the extraction pipeline.
+# The model names and endpoints below match the currently verified runtime.
+# Copy this file to vlm_api.yaml and fill api_key only in the local copy.
 
 vlm:
   enabled: true
@@ -13,7 +14,8 @@ vlm:
   temperature: 0.1
   image_detail: auto
 
-# Dedicated semantic-vector API. If api_key is empty, vlm.api_key is reused.
+# Dedicated semantic-vector API verified with 1024-dimensional output.
+# If api_key is empty, vlm.api_key is reused.
 embedding:
   enabled: true
   provider: qwen

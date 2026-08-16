@@ -1,0 +1,25 @@
+﻿序号,LaTeX公式,描述,来源图像,提取方法
+1,"LaTeX: 
+$$ s^2\theta(s) + \omega_n^2\theta(s) = \frac{s^2 U_s(s)}{l} \Rightarrow \theta(s) = \frac{s^2}{l(s^2 + \omega_n^2)} U_s(s) $$
+$$ \mathcal{L}[\sin(\omega_n t)] = \frac{\omega_n}{s^2 + \omega_n^2} = \frac{\omega_n}{(s + i\omega_n)(s - i\omega_n)} $$
+$$ \mathcal{L}[\cos(\omega_n t)] = \frac{s}{s^2 + \omega_n^2} = \frac{s}{(s + i\omega_n)(s - i\omega_n)} $$
+
+名称: 单摆方程的拉普拉斯变换及三角函数的拉普拉斯变换
+
+含义: 
+1. 第一行公式展示了单摆运动微分方程在零初始条件下进行拉普拉斯（Laplace）变换后的结果，并推导出了系统输出（摆角 $\theta$）与输入（$U_s$）之间的传递函数关系。
+2. 第二、三行公式展示了正弦和余弦自由振动函数的拉普拉斯变换，并将其分母分解为共轭复极点形式 $(s \pm i\omega_n)$，用于分析系统的极点分布。
+
+变量: 
+*   $s$: 拉普拉斯变换的复变量（复频率）。
+*   $\theta(s)$: 摆角 $\theta(t)$ 的拉普拉斯变换。
+*   $\omega_n$: 系统的固有频率（自然频率）。
+*   $U_s(s)$: 输入信号（如底座位移或加速度）的拉普拉斯变换。
+*   $l$: 单摆的摆长。
+*   $t$: 时间变量。
+*   $i$: 虚数单位 ($i^2 = -1$)。
+*   $\mathcal{L}[\cdot]$: 拉普拉斯变换算子。
+
+条件: 
+*   适用于线性系统分析（单摆通常需满足小角度近似 $\sin\theta \approx \theta$）。
+*   公式推导基于零初始条件（即 $t=0$ 时 $\theta(0)=0, \dot{\theta}(0)=0",,output/qwen_qwen3.7-plus_3/debug/images/w10-1-直线运动平台（下）_slide_13_img_2.png,qwen_api_智能识别

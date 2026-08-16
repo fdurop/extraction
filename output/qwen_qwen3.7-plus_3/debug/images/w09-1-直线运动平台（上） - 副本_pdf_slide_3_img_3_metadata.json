@@ -1,0 +1,23 @@
+{
+  "original_path": "output/qwen_qwen3.7-plus_3/debug/images/w09-1-直线运动平台（上） - 副本_p3_img5.jpeg",
+  "enhanced_path": "output/qwen_qwen3.7-plus_3/debug/images/w09-1-直线运动平台（上） - 副本_p3_img5_enhanced.jpeg",
+  "description": "这份内容看起来像是复旦大学机电智控实验室（Tang Guoan老师课程）关于**“机电系统原理及实践”**课程的PPT课件笔记。\n\n既然你分享了这部分关于**“单轴直线运动平台”**的基础知识，我为你整理了核心知识点，并对图片中的传动方式进行了详细解读，帮助你更好地复习或理解。\n\n---\n\n### 📝 核心知识点整理：单轴直线运动平台\n\n#### 1. 定义与功能\n*   **核心功能**：将电机的**旋转运动**通过传动机构转换为**直线运动**。\n*   **应用场景**：广泛应用于工业自动化，是机器人和自动化操作的核心设备。\n*   **三大特点**：高精度、高稳定性、高效率。\n\n#### 2. 四大结构组成\n一个完整的直线运动平台通常包含以下四个部分：\n\n1.  **导轨 (Guide Rail)**：\n    *   **作用**：支撑和引导滑块运动的基础。\n    *   **要求**：刚性高（不变形）、摩擦系数低（运动顺畅）。\n2.  **滑块 (Slider/Carriage)**：\n    *   **作用**：承载工件或工具的平台，在导轨上做直线运动。\n3.  **传动装置 (Transmission)**：\n    *   **链路**：电机 $/rightarrow$ 减速器 $/rightarrow$ 联轴器 $/rightarrow$ 传动机构（丝杆或齿带）。\n4.  **控制系统 (Control System)**：\n    *   **组成**：驱动器 + 上位机（电脑/PLC）。\n    *   **作用**：控制滑块的运动轨迹、速度和位置。\n\n---\n\n### 🔍 图片内容深度解析：两种主流传动方式\n\nPPT中展示了两种最常见的将旋转转化为直线运动的方式，它们的优缺点截然不同，适用于不同场景：\n\n#### 方案 A：齿带传动 (Belt Drive) —— 左图\n*   **结构**：步进电机 $/rightarrow$ 同步齿带 $/rightarrow$ 带动滑块移动。\n*   **特点**：\n    *   **速度快**：适合高速运动。\n    *   **行程长**：可以做得很长（几米甚至更长）。\n    *   **精度相对较低**：皮带会有弹性变形，不适合极高精度的定位。\n    *   **噪音**：相对较大。\n*   **适用场景**：3D打印机（X/Y轴）、激光切割机、长距离搬运。\n\n#### 方案 B：丝杆传动 (Ball Screw Drive) —— 右图\n*   **结构**：步进电机 $/rightarrow$ 联轴器 $/rightarrow$ 丝杆 $/rightarrow$ 滑块（通过螺母与丝杆啮合）。\n*   **特点**：\n    *   **精度高**：定位非常准确。\n    *   **推力大**：能承载较重的负载。\n    *   **自锁性**：断电后通常能保持位置（取决于导程角）。\n    *   **行程受限**：丝杆太长会弯曲（临界转速问题），通常行程在1-2米以内。\n*   **适用场景**：数控机床 (CNC)、精密测量仪器、半导体制造设备。\n\n---\n\n### 🔩 关键组件：联轴器 (Coupling)\n\n图片中间展示了联轴器，它是连接**电机轴**和**丝杆轴",
+  "metadata": {
+    "generation": {
+      "method": "qwen_api",
+      "backend": "api",
+      "provider": "qwen",
+      "model": "qwen3.7-plus",
+      "status": "success",
+      "api_error": null
+    }
+  },
+  "error": null,
+  "method": "qwen_api",
+  "backend": "api",
+  "provider": "qwen",
+  "model": "qwen3.7-plus",
+  "status": "success",
+  "api_error": null,
+  "indexable": true
+}

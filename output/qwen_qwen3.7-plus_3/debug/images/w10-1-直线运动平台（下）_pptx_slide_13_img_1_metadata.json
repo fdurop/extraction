@@ -1,0 +1,23 @@
+{
+  "original_path": "output/qwen_qwen3.7-plus_3/debug/images/w10-1-直线运动平台（下）_slide_13_img_1.png",
+  "enhanced_path": "output/qwen_qwen3.7-plus_3/debug/images/w10-1-直线运动平台（下）_slide_13_img_1_enhanced.png",
+  "description": "根据您提供的文本和图片，这看起来像是控制理论课程中关于**输入整形（Input Shaping）**的笔记或课件片段。\n\n以下是对内容的详细解读和知识点梳理：\n\n### 1. 内容转录\n*   **章节**：§4.1\n*   **主题**：输入整形 (Input Shaping)\n*   **对象**：传递函数 (Transfer Function)\n*   **图片文字**：\n    *   **两个极点**\n    *   公式：$s_{1,2} = /mp i/omega_n$\n\n### 2. 数学与物理含义\n图片中的公式 $s_{1,2} = /mp i/omega_n$ 描述了一个系统的极点分布情况：\n\n*   **极点位置**：这两个极点位于复平面的**虚轴**上（实部为0，虚部为 $/pm /omega_n$）。\n*   **系统类型**：这对应于一个**无阻尼二阶系统**（Undamped Second-Order System），即阻尼比 $/zeta = 0$。\n*   **传递函数形式**：具有这种极点的典型传递函数通常形式为：\n    $$ G(s) = /frac{/omega_n^2}{s^2 + /omega_n^2} $$\n    （注：具体分子取决于系统的增益和零点，但分母特征方程为 $s^2 + /omega_n^2 = 0$）。\n*   **动态响应**：这种系统受到激励后，会产生**等幅振荡**（频率为 $/omega_n$），振动永远不会自然衰减。\n\n### 3. 与“输入整形” (Input Shaping) 的关系\n在“输入整形”这一节中出现这个公式，通常是为了作为**被控对象模型**来进行讲解：\n\n1.  **问题背景**：由于系统极点 $s = /pm i/omega_n$ 在虚轴上，系统极其容易产生持续振动（例如起重机吊重、柔性机械臂）。\n2.  **整形目标**：输入整形技术的目的就是通过修改输入信号（通常是卷积一系列脉冲），使得系统响应在特定时间后**残余振动为零**。\n3.  **设计原理**：\n    *   为了消除这两个极点引起的振动，输入整形器（如 ZV 零振动整形器）设计的脉冲序列 $A_1, A_2, /dots$ 和时间 $t_1, t_2, /dots$ 必须满足幅值和相位条件。\n    *   具体来说，就是要让输入信号在 $s = /pm i/omega_n$ 处的拉普拉斯变换值为0（即零点抵消极点），从而消除振荡。\n\n**总结**：这张幻灯片是在定义一个**无阻尼振荡系统**（两个纯虚极点），这是输入整形技术最基础的应用场景之一。接下来的内容（§4.1 后续部分）很可能是讲解如何针对这个特定的传递函数设计脉冲序列（如 ZV 或 ZVD 整形器）。",
+  "metadata": {
+    "generation": {
+      "method": "qwen_api",
+      "backend": "api",
+      "provider": "qwen",
+      "model": "qwen3.7-plus",
+      "status": "success",
+      "api_error": null
+    }
+  },
+  "error": null,
+  "method": "qwen_api",
+  "backend": "api",
+  "provider": "qwen",
+  "model": "qwen3.7-plus",
+  "status": "success",
+  "api_error": null,
+  "indexable": true
+}

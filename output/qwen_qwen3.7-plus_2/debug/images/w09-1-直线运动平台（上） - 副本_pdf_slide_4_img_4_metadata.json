@@ -1,0 +1,23 @@
+{
+  "original_path": "output/qwen_qwen3.7-plus_2/debug/images/w09-1-直线运动平台（上） - 副本_p4_img6.jpeg",
+  "enhanced_path": "output/qwen_qwen3.7-plus_2/debug/images/w09-1-直线运动平台（上） - 副本_p4_img6_enhanced.jpeg",
+  "description": "这张图片是一份关于机电系统课程的教学幻灯片（PPT）截图。以下是图片内容的详细整理和解析：\n\n### 1. 文本内容提取\n*   **课程名称**：机电系统原理及实践—— 直线运动平台（上）\n*   **实验室/联系信息**：\n    *   机电智控实验室\n    *   邮箱：tangguoan@fudan.edu.cn / mmguo@fudan.edu.cn （从邮箱后缀可以看出这是**复旦大学**的课程）\n*   **章节标题**：§1.2 多轴直线运动平台\n*   **页码**：12-4\n*   **图片标题**：Z轴直交型机械臂\n\n### 2. 图片内容解析\n图片展示了一个**直交型机械臂（Cartesian Robot / Rectangular Coordinate Robot）**的3D模型或实物图。\n\n*   **结构特点**：\n    *   **直交型（Cartesian）**：指的是机器人的运动轴（X、Y、Z轴）互相垂直，呈直角坐标系分布。这种结构也被称为直角坐标机器人或龙门式机器人。\n    *   **多轴直线运动**：图中可以看到明显的**直线导轨**（Linear Guides）和**滑块**。\n        *   **底部（X轴/Y轴）**：有长条形的导轨底座，用于水平方向的移动。\n        *   **立柱（Z轴）**：两侧有垂直竖立的导轨，用于垂直方向的升降运动。\n        *   **顶部横梁**：连接两个Z轴，保证运动的同步性和稳定性（防止扭转）。\n    *   **驱动部件**：在导轨的末端可以看到蓝色的圆柱体，这通常是**步进电机**或**伺服电机**，配合丝杠或同步带将旋转运动转化为直线运动。\n\n### 3. 知识点拓展（基于课程主题）\n这一页PPT主要讲解的是**多轴直线运动平台**的构成。\n*   **应用场景**：这种平台广泛应用于3D打印机、CNC数控机床、点胶机、自动化流水线等需要高精度空间定位的场合。\n*   **优点**：\n    *   **控制简单**：各轴运动相互独立（解耦），控制算法相对简单（不需要像机械臂那样进行复杂的逆运动学解算）。\n    *   **精度高**：直线导轨能提供很高的刚性和定位精度。\n    *   **负载能力强**：特别是龙门式结构（如图），可以承载较重的负载。\n\n如果你需要关于这个机械臂的具体原理（如电机选型、导轨计算）或者后续PPT的内容，请随时告诉我！",
+  "metadata": {
+    "generation": {
+      "method": "qwen_api",
+      "backend": "api",
+      "provider": "qwen",
+      "model": "qwen3.7-plus",
+      "status": "success",
+      "api_error": null
+    }
+  },
+  "error": null,
+  "method": "qwen_api",
+  "backend": "api",
+  "provider": "qwen",
+  "model": "qwen3.7-plus",
+  "status": "success",
+  "api_error": null,
+  "indexable": true
+}

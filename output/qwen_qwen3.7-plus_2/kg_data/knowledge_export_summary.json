@@ -1,0 +1,14 @@
+{
+  "documents": 3,
+  "pages": 43,
+  "content_items": 71,
+  "nodes": 114,
+  "vectors": {
+    "status": "pending",
+    "backend": "not_built",
+    "model": null,
+    "dim": 0,
+    "count": 0
+  },
+  "updated_at": "2026-08-16T19:36:53.616566"
+}

@@ -1,0 +1,2 @@
+﻿序号,LaTeX公式,描述,来源图像,提取方法
+1,$$ \begin{cases} x = r \cos \theta \\ y = r \sin \theta \\ z = \frac{p}{2\pi} \theta \end{cases} $$,该公式描述了空间中一点绕圆柱轴线旋转并沿轴线匀速移动的轨迹。在工程中，这对应螺纹、弹簧或螺杆的几何形状。红色部分突出了螺旋的路径（或螺旋面）。,output/qwen_qwen3.7-plus_3/debug/images/w10-1-直线运动平台（下）_slide_4_img_3.png,qwen_api_智能识别

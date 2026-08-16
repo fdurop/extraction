@@ -1,0 +1,98 @@
+[
+  {
+    "document_id": "doc_734b0dcb18f2",
+    "user_id": "default_user",
+    "course_id": "default_course",
+    "file_name": "w08-1-步进电机驱动器",
+    "file_type": "pdf",
+    "file_path": "input/w08-1-步进电机驱动器.pdf",
+    "page_count": 12,
+    "chapter_title": "w08-1-步进电机驱动器_pdf",
+    "document_order": null,
+    "metadata": {
+      "filename": "input/w08-1-步进电机驱动器.pdf",
+      "format": "pdf",
+      "total_pages": 12,
+      "pdf_metadata": {
+        "format": "PDF 1.7",
+        "title": "机电系统原理及实践",
+        "author": "郭 明旻",
+        "subject": "",
+        "keywords": "",
+        "creator": "Acrobat PDFMaker 25 PowerPoint 版",
+        "producer": "Adobe PDF Library 25.1.211",
+        "creationDate": "D:20250407111214+08'00'",
+        "modDate": "D:20250407111727+08'00'",
+        "trapped": "",
+        "encryption": "Standard V5 R6 256-bit AES"
+      },
+      "file_name": "w08-1-步进电机驱动器",
+      "file_type": "pdf",
+      "file_path": "input/w08-1-步进电机驱动器.pdf"
+    }
+  },
+  {
+    "document_id": "doc_e3f9d5ecb045",
+    "user_id": "default_user",
+    "course_id": "default_course",
+    "file_name": "w09-1-直线运动平台（上） - 副本",
+    "file_type": "pdf",
+    "file_path": "input/w09-1-直线运动平台（上） - 副本.pdf",
+    "page_count": 13,
+    "chapter_title": "w09-1-直线运动平台（上） - 副本_pdf",
+    "document_order": null,
+    "metadata": {
+      "filename": "input/w09-1-直线运动平台（上） - 副本.pdf",
+      "format": "pdf",
+      "total_pages": 13,
+      "pdf_metadata": {
+        "format": "PDF 1.7",
+        "title": "",
+        "author": "",
+        "subject": "",
+        "keywords": "",
+        "creator": "Microsoft® PowerPoint® LTSC",
+        "producer": "pdf-lib (https://github.com/Hopding/pdf-lib)",
+        "creationDate": "D:20250513082607+08'00'",
+        "modDate": "D:20250513082927+08'00'",
+        "trapped": "",
+        "encryption": "Standard V5 R6 256-bit AES"
+      },
+      "file_name": "w09-1-直线运动平台（上） - 副本",
+      "file_type": "pdf",
+      "file_path": "input/w09-1-直线运动平台（上） - 副本.pdf"
+    }
+  },
+  {
+    "document_id": "doc_8b84288698e4",
+    "user_id": "default_user",
+    "course_id": "default_course",
+    "file_name": "w10-1-直线运动平台（下）",
+    "file_type": "pdf",
+    "file_path": "input/w10-1-直线运动平台（下）.pdf",
+    "page_count": 18,
+    "chapter_title": "w10-1-直线运动平台（下）_pdf",
+    "document_order": null,
+    "metadata": {
+      "filename": "input/w10-1-直线运动平台（下）.pdf",
+      "format": "pdf",
+      "total_pages": 18,
+      "pdf_metadata": {
+        "format": "PDF 1.7",
+        "title": "机电系统原理及实践",
+        "author": "郭 明旻",
+        "subject": "",
+        "keywords": "",
+        "creator": "Acrobat PDFMaker 26 PowerPoint 版",
+        "producer": "Adobe PDF Library 26.1.25",
+        "creationDate": "D:20260515141140+08'00'",
+        "modDate": "D:20260515141501+08'00'",
+        "trapped": "",
+        "encryption": "Standard V5 R6 256-bit AES"
+      },
+      "file_name": "w10-1-直线运动平台（下）",
+      "file_type": "pdf",
+      "file_path": "input/w10-1-直线运动平台（下）.pdf"
+    }
+  }
+]

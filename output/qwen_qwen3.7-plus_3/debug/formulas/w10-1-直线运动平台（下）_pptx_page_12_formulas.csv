@@ -1,0 +1,2 @@
+﻿序号,LaTeX公式,描述,来源图像,提取方法
+1,$\omega_d = \omega_n \sqrt{1 - \zeta^2}$ （以及位移函数项 $e^{-\zeta \omega_n t} \sin(\omega_d t)$ 和 $e^{-\zeta \omega_n t} \cos(\omega_d t)$）,该公式描述了阻尼振动系统中，实际振荡频率 $\omega_d$ 与无阻尼固有频率 $\omega_n$ 及阻尼比 $\zeta$ 之间的关系。图片同时指出，自由振动（残余振动）的位移函数是由衰减指数项 $e^{-\zeta \omega_n t}$ 与三角函数项 $\sin(\omega_d t)$ 和 $\cos(\omega_d t)$ 线性叠加而成的。,output/qwen_qwen3.7-plus_3/debug/images/w10-1-直线运动平台（下）_slide_12_img_2.png,qwen_api_智能识别

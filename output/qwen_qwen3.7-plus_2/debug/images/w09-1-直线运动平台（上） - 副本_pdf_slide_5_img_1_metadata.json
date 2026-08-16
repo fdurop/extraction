@@ -1,0 +1,23 @@
+{
+  "original_path": "output/qwen_qwen3.7-plus_2/debug/images/w09-1-直线运动平台（上） - 副本_p5_img3.jpeg",
+  "enhanced_path": "output/qwen_qwen3.7-plus_2/debug/images/w09-1-直线运动平台（上） - 副本_p5_img3_enhanced.jpeg",
+  "description": "这张图片是关于**机电系统原理及实践**课程中“直线运动平台”部分的课件，主要讲解了**限位开关（Limit Switch）**的基础知识和Arduino实践接线。\n\n以下是对课件内容的详细解读、原理分析以及对应的实践代码：\n\n### 1. 核心知识点总结\n*   **定义**：限位开关（又称行程开关）是一种用于限制机械运动位置的传感器。当运动机构碰到开关时，开关动作，使电路断开或闭合，从而让机器停止或改变方向。\n*   **类型**：有触点、机械式接触（物理碰撞触发）。\n*   **作用**：主要用于控制回路，提供**限位保护**（防止机器撞坏）和**运动控制**（知道到了终点）。\n*   **接口类型**：DI (Digital Input，数字输入)。\n\n### 2. 限位开关引脚说明\n图片中的实物是一个典型的微动开关，有三个引脚：\n*   **COM (Common)**：公共端。\n*   **NO (Normally Open)**：常开触点。平时断开，**限位时（按下）与COM导通**。\n*   **NC (Normally Closed)**：常闭触点。平时导通，限位时断开。\n\n**课件中的接线逻辑（重点）：**\n根据课件中的电路图（右侧部分）：\n*   **COM** 接 **GND**（地）。\n*   **NO** 接 **DI**（数字输入引脚，如D11, D12）。\n*   **原理**：\n    *   **未限位时**：NO与COM断开。引脚处于悬空状态（如果在代码中开启内部上拉电阻 `INPUT_PULLUP`，则读取为 **HIGH/高电平**）。\n    *   **限位时（触发）**：NO与COM导通。引脚直接连通GND，读取为 **LOW/低电平**。\n\n### 3. 实践代码 (Arduino)\n根据课件要求：“用 `digitalRead` 检测，用 `Serial.print` 显示状态”，以下是完整的Arduino示例代码。\n\n**接线方式：**\n*   限位开关1：COM接GND，NO接D11。\n*   限位开关2：COM接GND，NO接D12。\n\n```cpp\n// 定义引脚\nconst int limitSwitch1_Pin = 11;\nconst int limitSwitch2_Pin = 12;\n\nvoid setup() {\n  // 初始化串口通信，波特率9600\n  Serial.begin(9600);\n  \n  // 设置引脚为输入模式\n  // 注意：因为COM接了GND，我们需要开启内部上拉电阻(INPUT_PULLUP)\n  // 这样平时引脚是高电平(HIGH)，按下开关接地变成低电平(LOW)\n  pinMode(limitSwitch1_Pin, INPUT_PULLUP);\n  pinMode(limitSwitch2_Pin, INPUT_PULLUP);\n  \n  Serial.println(\"System Ready...\");\n}\n\nvoid loop() {\n  // 读取开关状态\n  int val1 = digitalRead(limitSwitch1_Pin);\n  int val2 = digitalRead(limitSwitch2_Pin);\n\n  // 打印状态\n  Serial.print(\"Limit Switch 1 (D11): \");\n  if (val1 == LOW) {\n    Serial.println(\"",
+  "metadata": {
+    "generation": {
+      "method": "qwen_api",
+      "backend": "api",
+      "provider": "qwen",
+      "model": "qwen3.7-plus",
+      "status": "success",
+      "api_error": null
+    }
+  },
+  "error": null,
+  "method": "qwen_api",
+  "backend": "api",
+  "provider": "qwen",
+  "model": "qwen3.7-plus",
+  "status": "success",
+  "api_error": null,
+  "indexable": true
+}

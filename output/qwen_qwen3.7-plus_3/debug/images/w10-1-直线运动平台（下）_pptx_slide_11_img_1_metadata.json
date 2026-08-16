@@ -1,0 +1,23 @@
+{
+  "original_path": "output/qwen_qwen3.7-plus_3/debug/images/w10-1-直线运动平台（下）_slide_11_img_1.png",
+  "enhanced_path": "output/qwen_qwen3.7-plus_3/debug/images/w10-1-直线运动平台（下）_slide_11_img_1_enhanced.png",
+  "description": "这是一个经典的**输入整形（Input Shaping）**或**防摆控制（Anti-sway Control）**问题，常见于桥式起重机或机械臂的控制理论中。\n\n以下是针对该问题的详细分析和设计方案：\n\n### 1. 问题物理建模\n\n首先，我们需要建立单摆的运动方程。\n设滑块位移为 $u_s(t)$，摆角为 $/theta(t)$（假设小角度摆动，$/sin/theta /approx /theta, /cos/theta /approx 1$）。\n\n根据牛顿第二定律或拉格朗日方程，单摆相对于滑块的运动方程（线性化后）为：\n$$ ml^2 /ddot{/theta} + mgl/theta = -ml /ddot{u}_s $$\n整理得：\n$$ /ddot{/theta} + /omega_n^2 /theta = -/frac{1}{l} /ddot{u}_s(t) $$\n其中，$/omega_n = /sqrt{/frac{g}{l}}$ 是单摆的固有频率，固有周期 $T = /frac{2/pi}{/omega_n} = 2/pi/sqrt{/frac{l}{g}}$。\n\n**目标：** 设计 $u_s(t)$，使得当 $t > t_f$（滑块到达B点）时，$/theta(t) /approx 0$ 且 $/dot{/theta}(t) /approx 0$。\n\n### 2. 输入整形（Input Shaping）原理\n\n输入整形技术的核心思想是：**通过修改输入信号（这里是位移或加速度），利用系统自身的振动特性，让后续产生的振动相互抵消。**\n\n对于无阻尼系统（或低阻尼），最常用的整形器是 **ZV（Zero Vibration，零振动）整形器**。\nZV 整形器由两个脉冲组成：\n*   第一个脉冲：时间 $t_1 = 0$，幅值 $A_1 = 0.5$\n*   第二个脉冲：时间 $t_2 = /frac{T}{2}$（半个周期），幅值 $A_2 = 0.5$\n\n**物理直觉：** 如果你推一下秋千，秋千会摆动。如果你在半个周期后（秋千荡回来时）再推一下（力度相同），两次的效果会相互抵消，秋千就会停下来。\n\n### 3. 位移函数 $u_s(t)$ 的设计方案\n\n我们可以采用**命令平滑（Command Smoothing）**的方法。假设我们有一个理想的、平滑的基础位移函数 $u_{base}(t)$，它描述滑块从 A 点（0）移动到 B 点（距离 $L$）的过程。\n\n为了满足输入整形的要求，我们将基础函数与 ZV 整形器进行卷积（叠加）。\n\n**设计公式：**\n$$ u_s(t) = /frac{1}{2} u_{base}(t) + /frac{1}{2} u_{base}/left(t - /frac{T}{2}/right) $$\n\n其中：\n*   $T = 2/pi/sqrt{/frac{l}{g}}$ 是单摆的固有周期。\n*   $u_{base}(t)$ 是一个从 0 增加到 $L$ 的单调函数（例如 S 型曲线或梯形速度曲线对应的位移），且满足",
+  "metadata": {
+    "generation": {
+      "method": "qwen_api",
+      "backend": "api",
+      "provider": "qwen",
+      "model": "qwen3.7-plus",
+      "status": "success",
+      "api_error": null
+    }
+  },
+  "error": null,
+  "method": "qwen_api",
+  "backend": "api",
+  "provider": "qwen",
+  "model": "qwen3.7-plus",
+  "status": "success",
+  "api_error": null,
+  "indexable": true
+}

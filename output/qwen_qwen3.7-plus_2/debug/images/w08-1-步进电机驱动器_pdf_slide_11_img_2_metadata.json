@@ -1,0 +1,23 @@
+{
+  "original_path": "output/qwen_qwen3.7-plus_2/debug/images/w08-1-步进电机驱动器_p11_img3.jpeg",
+  "enhanced_path": "output/qwen_qwen3.7-plus_2/debug/images/w08-1-步进电机驱动器_p11_img3_enhanced.jpeg",
+  "description": "这张图片是复旦大学机电智控实验室关于《机电系统原理及实践》课程的PPT幻灯片，主要讲解了**商品化步进电机驱动器**的使用原理及实践。\n\n以下是对图片内容的详细解读和知识点梳理，希望能帮助你理解或完成相关实验：\n\n### 1. 核心知识点梳理\n\n*   **驱动器特点**：相比自己搭建的H桥电路（原理样机），商品化驱动器体积更小、功能更丰富（自带保护、细分功能等）。\n*   **接线原则（非常重要）**：\n    *   **共地**：控制回路的所有“–”端（PUL-, DIR-, ENA-）必须与MCU（如Arduino/STM32）的GND连接在一起。这是信号参考电平的基础，不共地会导致控制信号无效或损坏器件。\n*   **控制信号定义**：\n    *   **PUL+ (Pulse)**：脉冲信号。每给一个脉冲，电机转动一个步距角（或细分后的角度）。\n    *   **DIR+ (Direction)**：方向信号。高电平或低电平决定电机正转还是反转。\n    *   **ENA+ (Enable)**：使能信号。通常低电平有效（或高电平有效，视具体型号），用于开启或关闭电机输出（脱机状态）。\n*   **细分（Microstepping）概念**：\n    *   **基础步距角**：常见的两相步进电机步距角为1.8°，即转一圈需要 $360 / 1.8 = 200$ 个脉冲。\n    *   **细分作用**：通过驱动器内部电流控制，将一个步距角分成更小的步。细分数通常是2的整数次幂（2, 4, 8, 16, 32...）。\n    *   **计算公式**：如果细分为 $N$，则转一圈需要的脉冲数 = $200 /times N$。细分越高，电机运行越平滑，噪音越小，分辨率越高。\n\n### 2. 图片实物解读（驱动器面板）\n\n图片展示了一个典型的步进电机驱动器（看起来类似DM542或TB6600的工业级版本）：\n\n*   **蓝色拨码开关 (DIP Switch)**：\n    *   标有1-8号开关。\n    *   **功能**：用于设置**细分（Microstep）**和**电流（Current）**。\n    *   **ON方向**：图片左侧标有“ON”和向下箭头，说明开关拨到下方是开启（ON），上方是关闭（OFF）。\n    *   **设置表**：虽然图片上方文字模糊，但通常驱动器表面会印有表格。例如：\n        *   SW1, SW2, SW3 设置细分（如 ON, OFF, OFF 代表 200脉冲/圈）。\n        *   SW4, SW5, SW6 设置电流大小（根据电机额定电流选择，防止过热或力矩不足）。\n*   **绿色接线端子**：\n    *   **左侧/右侧**：通常一边接控制信号（PUL, DIR, ENA），另一边接电机线（A+, A-, B+, B-）和电源（VCC, GND）。PPT中提到“",
+  "metadata": {
+    "generation": {
+      "method": "qwen_api",
+      "backend": "api",
+      "provider": "qwen",
+      "model": "qwen3.7-plus",
+      "status": "success",
+      "api_error": null
+    }
+  },
+  "error": null,
+  "method": "qwen_api",
+  "backend": "api",
+  "provider": "qwen",
+  "model": "qwen3.7-plus",
+  "status": "success",
+  "api_error": null,
+  "indexable": true
+}

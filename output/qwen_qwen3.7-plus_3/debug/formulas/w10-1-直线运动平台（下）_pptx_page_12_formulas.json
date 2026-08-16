@@ -1,0 +1,19 @@
+{
+  "page": 12,
+  "formula_count": 1,
+  "formulas": [
+    {
+      "source_image": "output/qwen_qwen3.7-plus_3/debug/images/w10-1-直线运动平台（下）_slide_12_img_2.png",
+      "extraction_method": "qwen_api_智能识别",
+      "backend": "api",
+      "provider": "qwen",
+      "model": "qwen3.7-plus",
+      "latex": "$/omega_d = /omega_n /sqrt{1 - /zeta^2}$ （以及位移函数项 $e^{-/zeta /omega_n t} /sin(/omega_d t)$ 和 $e^{-/zeta /omega_n t} /cos(/omega_d t)$）",
+      "description": "该公式描述了阻尼振动系统中，实际振荡频率 $/omega_d$ 与无阻尼固有频率 $/omega_n$ 及阻尼比 $/zeta$ 之间的关系。图片同时指出，自由振动（残余振动）的位移函数是由衰减指数项 $e^{-/zeta /omega_n t}$ 与三角函数项 $/sin(/omega_d t)$ 和 $/cos(/omega_d t)$ 线性叠加而成的。",
+      "raw_response": "LaTeX: $/omega_d = /omega_n /sqrt{1 - /zeta^2}$ （以及位移函数项 $e^{-/zeta /omega_n t} /sin(/omega_d t)$ 和 $e^{-/zeta /omega_n t} /cos(/omega_d t)$）\n\n名称: 阻尼固有频率（振荡频率）公式及自由振动位移函数\n\n含义: 该公式描述了阻尼振动系统中，实际振荡频率 $/omega_d$ 与无阻尼固有频率 $/omega_n$ 及阻尼比 $/zeta$ 之间的关系。图片同时指出，自由振动（残余振动）的位移函数是由衰减指数项 $e^{-/zeta /omega_n t}$ 与三角函数项 $/sin(/omega_d t)$ 和 $/cos(/omega_d t)$ 线性叠加而成的。\n\n变量:\n- $/omega_d$: 阻尼固有频率（或称振荡频率）\n- $/omega_n$: 无阻尼固有频率\n- $/zeta$: 阻尼比\n- $t$: 时间\n- $c$: 阻尼系数（图片中提到忽略阻尼时 $c=0$）\n\n条件: 主要适用于欠阻尼状态（$0 < /zeta < 1$），此时系统会发生振荡。\n- 当 $/zeta = 0$（无阻尼）时，$/omega_d = /omega_n$，振动不衰减。\n- 当 $/zeta /ge 1$ 时，系统不再振荡（临界阻尼或过阻尼）。",
+      "page_num": 11,
+      "image_index": 1
+    }
+  ],
+  "timestamp": "2026-08-16T21:43:35.230181"
+}

@@ -1,0 +1,23 @@
+{
+  "original_path": "output/qwen_qwen3.7-plus_3/debug/images/w09-1-直线运动平台（上） - 副本_p3_img4.jpeg",
+  "enhanced_path": "output/qwen_qwen3.7-plus_3/debug/images/w09-1-直线运动平台（上） - 副本_p3_img4_enhanced.jpeg",
+  "description": "这份内容看起来是复旦大学机电智控实验室关于《机电系统原理及实践》课程的课件笔记，主要介绍了**单轴直线运动平台**的基础知识。\n\n为了帮助你更好地理解和复习，我将文本和图片中的关键信息进行了整理和结构化总结：\n\n### 1. 课程基本信息\n*   **课程名称**：机电系统原理及实践—— 直线运动平台（上）\n*   **所属实验室**：机电智控实验室\n*   **联系邮箱**：tangguoan@fudan.edu.cn / mmguo@fudan.edu.cn\n\n### 2. 核心概念：单轴直线运动平台\n*   **定义**：一种将电机的**转动**通过传动机构转换为**直线运动**的工业设备。\n*   **地位**：它是自动化操作的核心，本质上使直线运动平台成为**机器人的一种**（执行机构）。\n*   **三大特点**：\n    1.  高精度\n    2.  高稳定性\n    3.  高效率\n\n### 3. 结构组成（四大模块）\n根据课件描述及图片标注，平台主要由以下部分组成：\n\n1.  **导轨 (Guide Rail)**\n    *   **作用**：支撑和引导滑块运动的基础。\n    *   **要求**：刚性高，摩擦系数低。\n2.  **滑块 (Slider/Carriage)**\n    *   **作用**：承载工件或工具的平台，在导轨上做直线运动。\n3.  **传动装置 (Transmission)**\n    *   **组成**：电机 + 减速器 + 联轴器 + 传动机构。\n    *   **关键部件 - 联轴器**：连接电机轴和传动轴。类型包括**刚性、弹性、柔性**，需根据需求选择。\n4.  **控制系统 (Control System)**\n    *   **组成**：驱动器 + 上位机。\n    *   **作用**：控制滑块的运动（位置、速度等）。\n\n### 4. 两种常见的传动方式（基于图片文字）\n图片中间部分对比了两种主要的传动结构：\n\n*   **方案 A：齿带传动 (Belt Drive)**\n    *   **路径**：步进电机 $/rightarrow$ 齿带 $/rightarrow$ 与滑块啮合 $/rightarrow$ 带动滑块移动。\n    *   **特点**（通常情况）：速度快，行程长，但精度相对丝杆较低。\n*   **方案 B：丝杆传动 (Screw Drive / Ball Screw)**\n    *   **路径**：步进电机 $/rightarrow$ 联轴器 $/rightarrow$ 丝杆 $/rightarrow$ 带动滑块移动。\n    *   **特点**（通常情况）：精度高，推力大，自锁性好，但速度相对较慢。\n\n### 5. 实物图解析\n课件最下方的实物图展示的是一个典型的**丝杆传动直线模组**：\n*   左侧黑色方块是**步进电机**。\n*   电机连接着白色的**联轴器**。\n*   中间长长的螺纹杆是**丝杆**。\n*   两侧平行的金属杆是**导轨**。\n*   中间黑色的块状物是**滑块**（负载平台）。\n\n---\n**学习建议**：\n这一节主要建立了直线运动平台的物理模型。接下来的课程",
+  "metadata": {
+    "generation": {
+      "method": "qwen_api",
+      "backend": "api",
+      "provider": "qwen",
+      "model": "qwen3.7-plus",
+      "status": "success",
+      "api_error": null
+    }
+  },
+  "error": null,
+  "method": "qwen_api",
+  "backend": "api",
+  "provider": "qwen",
+  "model": "qwen3.7-plus",
+  "status": "success",
+  "api_error": null,
+  "indexable": true
+}

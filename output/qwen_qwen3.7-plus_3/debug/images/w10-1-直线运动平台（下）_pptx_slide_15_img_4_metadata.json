@@ -1,0 +1,23 @@
+{
+  "original_path": "output/qwen_qwen3.7-plus_3/debug/images/w10-1-直线运动平台（下）_slide_15_img_4.png",
+  "enhanced_path": "output/qwen_qwen3.7-plus_3/debug/images/w10-1-直线运动平台（下）_slide_15_img_4_enhanced.png",
+  "description": "根据你提供的图片和文字，这是关于**控制理论**中**输入整形（Input Shaping）**技术的一个公式。\n\n以下是详细的解析：\n\n### 1. 公式转录\n图片中的数学公式为：\n$$ /tilde{u}_s(t) = /frac{1}{2}[u_s(t) + u_s(t - 2/tau)] $$\n\n### 2. 公式含义解析\n这个公式描述了一个**两脉冲输入整形器（Two-impulse Input Shaper）**，或者更具体地说，是一种**Posicast 控制器**的时域表达形式。\n\n*   **$u_s(t)$**：原始的输入信号（Reference Input）。\n*   **$/tilde{u}_s(t)$**：经过整形后的新输入信号（Shaped Input）。\n*   **$2/tau$**：延迟时间。\n*   **$/frac{1}{2}$**：增益系数。\n\n### 3. 物理意义与应用背景\n在“§4.1 输入整形”这个章节下，这个公式通常用于**抑制系统的残余振动**（例如起重机吊重、机械臂运动等）。\n\n*   **原理（Posicast 控制）**：\n    它的基本思想是将原始命令信号分成两部分。\n    1.  第一部分 $/frac{1}{2}u_s(t)$ 立即执行。\n    2.  第二部分 $/frac{1}{2}u_s(t - 2/tau)$ 延迟一段时间 $2/tau$ 后执行。\n    \n    当这两个信号叠加时，如果延迟时间 $2/tau$ 设置得当（通常设置为系统振荡周期的一半，即 $T/2$），第一部分信号引起的振动和第二部分信号引起的振动会在相位上相反，从而**相互抵消**，实现“零振动”（Zero Vibration, ZV）。\n\n*   **系数 $/frac{1}{2}$ 的作用**：\n    两个系数相加 $/frac{1}{2} + /frac{1}{2} = 1$。这保证了整形后的信号在稳态时的幅值与原始信号一致，即**不改变系统的稳态增益**。\n\n*   **适用场景**：\n    这个特定的公式（系数均为 1/2）通常适用于**无阻尼系统**（$/zeta = 0$）。如果系统有阻尼，两个脉冲的幅度通常是不一样的（第一个小，第二个大）。\n\n### 总结\n这是一个经典的**等幅两脉冲输入整形器**公式，用于通过延迟叠加的方式消除系统的振荡。",
+  "metadata": {
+    "generation": {
+      "method": "qwen_api",
+      "backend": "api",
+      "provider": "qwen",
+      "model": "qwen3.7-plus",
+      "status": "success",
+      "api_error": null
+    }
+  },
+  "error": null,
+  "method": "qwen_api",
+  "backend": "api",
+  "provider": "qwen",
+  "model": "qwen3.7-plus",
+  "status": "success",
+  "api_error": null,
+  "indexable": true
+}

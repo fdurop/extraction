@@ -1,0 +1,23 @@
+{
+  "original_path": "output/qwen_qwen3.7-plus_3/debug/images/w10-1-直线运动平台（下）_slide_4_img_1.png",
+  "enhanced_path": "output/qwen_qwen3.7-plus_3/debug/images/w10-1-直线运动平台（下）_slide_4_img_1_enhanced.png",
+  "description": "# §2.1 滑台定位 — 丝杠驱动原理与代码解析\n\n## 核心公式\n\n$$n = /frac{f}{N /cdot m} /quad /text{(r/s)}$$\n\n| 符号 | 含义 |\n|------|------|\n| $f$ | 单位时间脉冲数（脉冲频率，Hz） |\n| $N$ | 驱动器细分数 |\n| $m$ | 电机每转步数（通常200步/转） |\n\n滑台移动速度：\n\n$$v = n /times P = /frac{f /cdot P}{N /cdot m} /quad /text{(mm/s)}$$\n\n其中 $P$ 为丝杠导程（mm/转）。\n\n---\n\n## 代码1：`w10-s2-calSliderStroke.ino` — 计算滑台行程\n\n```cpp\n/ 滑台行程计算\n/ 丝杠导程 P = 4mm，电机步距角 1.8°（200步/转），细分 N = 8\n\nconst int P = 4;          / 丝杠导程 (mm/转)\nconst int stepsPerRev = 200; / 电机每转步数\nconst int microstep = 8;   / 驱动器细分数\n\n/ 总脉冲数 → 滑台位移\nfloat pulsesToDistance(long pulses) {\n  float revolutions = (float)pulses / (stepsPerRev * microstep);\n  return revolutions * P;  / mm\n}\n\n/ 滑台位移 → 所需脉冲数\nlong distanceToPulses(float distance_mm) {\n  float revolutions = distance_mm / P;\n  return (long)(revolutions * stepsPerRev * microstep);\n}\n\nvoid setup() {\n  Serial.begin(9600);\n  \n  long pulses = 16000;\n  float dist = pulsesToDistance(pulses);\n  Serial.print(pulses);\n  Serial.print(\" 脉冲 → 滑台移动: \");\n  Serial.print(dist);\n  Serial.println(\" mm\");\n  \n  float target = 50.0; / mm\n  long needed = distanceToPulses(target);\n  Serial.print(\"移动 \");\n  Serial.print(target);\n  Serial.print(\" mm 需要: \");\n  Serial.print(needed);\n  Serial.println(\" 脉冲\");\n}\n\nvoid loop() {}\n```\n\n---\n\n## 代码2：`w10-s3-sliderAbsLocation.ino` — 滑台绝对位置控制\n\n```cpp\n#include <AccelStepper.h>\n\nconst int P = 4;            / 丝杠导程 (mm)\nconst int stepsPerRev = 200;\nconst int microstep = 8;\nconst float stepsPerMM = (float)(stepsPerRev * microstep) / P; / 步/mm\n\n/ 定义步进电机引脚 (DIR, STEP)\nAccelStepper stepper(AccelStepper::DRIVER, 2, 3);\n\nfloat currentPos_mm = 0.0;  / 当前绝对位置 (mm)\n\nvoid moveToAbsolute(float target_mm) {\n  long",
+  "metadata": {
+    "generation": {
+      "method": "qwen_api",
+      "backend": "api",
+      "provider": "qwen",
+      "model": "qwen3.7-plus",
+      "status": "success",
+      "api_error": null
+    }
+  },
+  "error": null,
+  "method": "qwen_api",
+  "backend": "api",
+  "provider": "qwen",
+  "model": "qwen3.7-plus",
+  "status": "success",
+  "api_error": null,
+  "indexable": true
+}

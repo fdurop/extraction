@@ -17,13 +17,24 @@ class ImageFilterDecision:
     stats: Dict[str, float]
 
 
+def _rgb_on_white(img: Image.Image) -> Image.Image:
+    """Convert transparent teaching graphics without turning transparency black."""
+    if img.mode == "P" and "transparency" in img.info:
+        img = img.convert("RGBA")
+    if img.mode in {"RGBA", "LA"} or "transparency" in img.info:
+        rgba = img.convert("RGBA")
+        background = Image.new("RGBA", rgba.size, (255, 255, 255, 255))
+        return Image.alpha_composite(background, rgba).convert("RGB")
+    return img.convert("RGB")
+
+
 def analyze_image(image_path: str) -> ImageFilterDecision:
     try:
         if not os.path.exists(image_path):
             return ImageFilterDecision(False, "missing_file", {})
 
         with Image.open(image_path) as img:
-            img = img.convert("RGB")
+            img = _rgb_on_white(img)
             width, height = img.size
             arr = np.asarray(img, dtype=np.uint8)
 
@@ -93,7 +104,7 @@ def image_signature(image_path: str) -> str:
             return f"vector:{suffix}:{digest}"
 
         with Image.open(image_path) as img:
-            img = img.convert("RGB")
+            img = _rgb_on_white(img)
             width, height = img.size
             small = img.convert("L").resize((16, 16))
             values = np.asarray(small, dtype=np.float32).reshape(-1)

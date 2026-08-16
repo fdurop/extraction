@@ -1,0 +1,23 @@
+{
+  "original_path": "output/qwen_qwen3.7-plus_3/debug/images/w09-1-直线运动平台（上） - 副本_p4_img6.jpeg",
+  "enhanced_path": "output/qwen_qwen3.7-plus_3/debug/images/w09-1-直线运动平台（上） - 副本_p4_img6_enhanced.jpeg",
+  "description": "这张图片是一份关于机电系统课程的教学幻灯片（PPT）截图。以下是图片内容的详细整理和解析：\n\n### 1. 文本内容转录\n*   **课程名称**：机电系统原理及实践—— 直线运动平台（上）\n*   **实验室/联系人**：机电智控实验室 tangguoan@fudan.edu.cn mmguo@fudan.edu.cn （注：这是复旦大学相关课程的联系方式）\n*   **章节**：§1.2 多轴直线运动平台\n*   **页码**：12-4\n*   **图片标题**：Z轴直交型机械臂\n\n### 2. 图片内容解析\n图片展示了一个典型的**直角坐标机器人（Cartesian Robot）**，也常被称为**三轴直线运动平台**或**龙门架结构**。虽然PPT文字标注为“Z轴直交型机械臂”，但在工业和学术领域，这种结构通常被称为**XYZ三轴平台**。\n\n**结构分析：**\n*   **直交（Cartesian/Rectangular）**：指各个运动轴（X、Y、Z）互相垂直，呈直角坐标系分布。\n*   **底部导轨（X轴）**：图片最下方有两条平行的长导轨，这是基础轴，通常负责左右方向的运动。\n*   **垂直立柱（Z轴）**：在底座上方竖立着两个黑色的立柱（导轨），负责上下方向的运动。\n*   **顶部横梁**：连接两个立柱，保持结构的刚性和同步性。\n*   **中间横梁（Y轴）**：在两个立柱之间或底座上方，通常会有负责前后运动的轴。\n\n### 3. 知识点拓展（基于课程主题）\n既然这是“直线运动平台”的课件，这个模型主要涉及以下机电知识点：\n\n1.  **自由度（DOF）**：这是一个多轴系统，通常具备3个自由度（X, Y, Z），可以实现空间内的任意点位到达。\n2.  **传动方式**：\n    *   **丝杆（Ball Screw）**：用于高精度、高负载的直线运动（将旋转运动转化为直线运动）。\n    *   **同步带（Timing Belt）**：用于长行程、高速度的运动。\n    *   **直线电机（Linear Motor）**：直接驱动，无机械传动间隙，速度极快（高端应用）。\n3.  **导向机构**：图中明显的黑色长条通常是**直线导轨（Linear Guide Rail）**，配合滑块使用，保证运动的直线度和承载能力。\n4.  **应用场景**：这种“直交型机械臂”广泛应用于3D打印机、CNC数控机床、点胶机、激光切割机和自动化拾放（Pick and Place）设备中。\n\n如果你需要关于这个具体机械臂的更多原理讲解（比如电机选型、控制逻辑），或者需要后续课件的内容，请告诉我！",
+  "metadata": {
+    "generation": {
+      "method": "qwen_api",
+      "backend": "api",
+      "provider": "qwen",
+      "model": "qwen3.7-plus",
+      "status": "success",
+      "api_error": null
+    }
+  },
+  "error": null,
+  "method": "qwen_api",
+  "backend": "api",
+  "provider": "qwen",
+  "model": "qwen3.7-plus",
+  "status": "success",
+  "api_error": null,
+  "indexable": true
+}
