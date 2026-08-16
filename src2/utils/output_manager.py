@@ -336,7 +336,9 @@ class OutputManager:
             with open(output_file, 'w', encoding='utf-8') as f:
                 json.dump(_normalize_paths(metadata), f, ensure_ascii=False, indent=2)
             self.knowledge_exporter.register_document(filename, metadata)
-            self.knowledge_exporter.finalize()
+            # Refresh structured JSON after each document. Paid embeddings are
+            # generated once, after every input document has been processed.
+            self.knowledge_exporter.finalize(build_vectors=False)
             
             if self.logger:
                 self.logger.info(f"保存元数据: {output_file}")
@@ -385,6 +387,10 @@ class OutputManager:
         }
         return extensions.get(language.lower(), 'txt')
     
+    def finalize(self):
+        """Write the final handoff files and build embeddings exactly once."""
+        self.knowledge_exporter.finalize(build_vectors=True)
+
     def get_output_summary(self) -> Dict[str, Any]:
         """
         获取输出摘要

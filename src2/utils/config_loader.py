@@ -94,3 +94,40 @@ def load_vlm_config(config_path: str | None = None) -> Dict[str, Any]:
 
     vlm["config_path"] = path
     return vlm
+
+
+def load_embedding_config(config_path: str | None = None) -> Dict[str, Any]:
+    """Load the embedding API config, reusing the VLM key by default."""
+    project_root = find_project_root(os.path.dirname(__file__))
+    path = config_path or os.getenv(
+        "EXTRACTION_VLM_CONFIG",
+        os.path.join(project_root, "config", "vlm_api.yaml"),
+    )
+    data = load_simple_yaml(path)
+    vlm = dict(data.get("vlm") or {})
+    embedding = dict(data.get("embedding") or {})
+
+    env_key = os.getenv("EMBEDDING_API_KEY") or os.getenv("DASHSCOPE_API_KEY")
+    env_model = os.getenv("QWEN_EMBEDDING_MODEL") or os.getenv("EMBEDDING_MODEL")
+    if env_key:
+        embedding["api_key"] = env_key
+    elif not embedding.get("api_key"):
+        embedding["api_key"] = vlm.get("api_key", "")
+    if env_model:
+        embedding["model"] = env_model
+
+    embedding.setdefault("enabled", True)
+    embedding.setdefault("provider", "qwen")
+    embedding.setdefault("model", "qwen3.7-text-embedding")
+    embedding.setdefault("base_url", "https://dashscope.aliyuncs.com/api/v1")
+    embedding.setdefault("dimension", 1024)
+    embedding.setdefault("batch_size", 10)
+    embedding.setdefault("timeout_seconds", 120)
+    embedding.setdefault("retry_count", 2)
+    embedding.setdefault("output_type", "dense")
+    embedding.setdefault(
+        "query_instruction",
+        "Retrieve relevant evidence from Chinese educational course materials.",
+    )
+    embedding["config_path"] = path
+    return embedding

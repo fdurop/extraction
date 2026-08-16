@@ -12,3 +12,17 @@ vlm:
   max_tokens: 700
   temperature: 0.1
   image_detail: auto
+
+# Dedicated semantic-vector API. If api_key is empty, vlm.api_key is reused.
+embedding:
+  enabled: true
+  provider: qwen
+  api_key: ""
+  model: qwen3.7-text-embedding
+  base_url: https://dashscope.aliyuncs.com/api/v1
+  dimension: 1024
+  batch_size: 10
+  timeout_seconds: 120
+  retry_count: 2
+  output_type: dense
+  query_instruction: "Retrieve relevant evidence from Chinese educational course materials."

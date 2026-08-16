@@ -49,7 +49,13 @@ except ImportError:
 # 导入模块
 from core import ImageProcessor, TextProcessor, FormulaExtractor, TableExtractor, CodeExtractor
 from parsers import PDFParser, PPTXParser
-from utils import OutputManager, FileUtils, create_vlm_client, load_vlm_config
+from utils import (
+    OutputManager,
+    FileUtils,
+    create_vlm_client,
+    load_embedding_config,
+    load_vlm_config,
+)
 
 # 导入日志配置（src2目录下已有logger_config.py）
 from logger_config import get_logger, LoggerSetup
@@ -100,15 +106,29 @@ class MultimodalPreprocessor:
         print("=" * 60)
         print(f"   工作目录: {os.getcwd()}")
         self.vlm_config = load_vlm_config()
+        self.embedding_config = load_embedding_config()
         self.output_base_dir = _build_output_base_dir(self.vlm_config)
         print(
             f"   配置: API-VLM={self.vlm_config.get('provider', 'qwen')}/"
             f"{self.vlm_config.get('model', 'model')}"
         )
+        print(
+            f"   配置: API-Embedding={self.embedding_config.get('provider', 'qwen')}/"
+            f"{self.embedding_config.get('model', 'model')} "
+            f"({self.embedding_config.get('dimension', 1024)} dimensions)"
+        )
         print(f"   输出目录: {self.output_base_dir}")
         
         self.logger.info("开始初始化多模态预处理工具（重构版）")
         self.logger.info("运行模式: remote_api")
+        self.logger.info(
+            "API models: vision=%s/%s embedding=%s/%s dim=%s",
+            self.vlm_config.get("provider"),
+            self.vlm_config.get("model"),
+            self.embedding_config.get("provider"),
+            self.embedding_config.get("model"),
+            self.embedding_config.get("dimension"),
+        )
         print("\n[步骤 1/4] 检查远程 API 配置...")
         
         # 初始化OCR引擎
@@ -557,6 +577,9 @@ def main():
         # 保存专业术语库
         if processor.professional_terms:
             processor.output_manager.save_professional_terms(processor.professional_terms)
+
+        # Build the dedicated text embedding index once for the complete run.
+        processor.output_manager.finalize()
         
         # 显示处理摘要
         print("\n" + "=" * 60)

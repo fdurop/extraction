@@ -409,7 +409,7 @@ class KnowledgeExporter:
             ids.append(element_id)
         return ids
 
-    def finalize(self):
+    def finalize(self, build_vectors: bool = True):
         self._fix_page_links()
         os.makedirs(self.base_dir, exist_ok=True)
 
@@ -431,8 +431,21 @@ class KnowledgeExporter:
         self._write_json("relationships.json", self._build_relationships())
         self._write_json("schema.json", self._build_schema())
 
-        vector_records = list(self.nodes.values())
-        vector_summary = build_vector_index(vector_records, os.path.join(self.base_dir, "vectors"))
+        if build_vectors:
+            vector_records = list(self.nodes.values())
+            vector_summary = build_vector_index(
+                vector_records,
+                os.path.join(self.base_dir, "vectors"),
+                logger=self.logger,
+            )
+        else:
+            vector_summary = {
+                "status": "pending",
+                "backend": "not_built",
+                "model": None,
+                "dim": 0,
+                "count": 0,
+            }
         self._write_json("knowledge_export_summary.json", {
             "documents": len(self.documents),
             "pages": len(self.pages),
@@ -442,7 +455,8 @@ class KnowledgeExporter:
             "updated_at": datetime.now().isoformat(),
         })
         if self.logger:
-            self.logger.info("Unified knowledge export completed")
+            state = "with vectors" if build_vectors else "without vectors"
+            self.logger.info("Unified knowledge export completed %s", state)
 
     def _build_relationships(self) -> List[Dict[str, Any]]:
         relationships: List[Dict[str, Any]] = []
