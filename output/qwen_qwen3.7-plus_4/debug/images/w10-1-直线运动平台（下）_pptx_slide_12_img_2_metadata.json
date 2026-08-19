@@ -1,0 +1,33 @@
+{
+  "original_path": "output/qwen_qwen3.7-plus_4/debug/images/w10-1-直线运动平台（下）_slide_12_img_2.png",
+  "enhanced_path": "output/qwen_qwen3.7-plus_4/debug/images/w10-1-直线运动平台（下）_slide_12_img_2_enhanced.png",
+  "description": "图片展示了关于振动理论的教学幻灯片，主要讲解了残余振动和自由振动的概念及其数学表达。具体内容如下：\n\n*   **概念定义**：指出滑块停止后，单摆的振动称为**残余振动**，且残余振动属于**自由振动**。\n*   **位移函数**：说明自由振动的位移函数由两项叠加而成，分别为 $e^{-/zeta/omega_n t}/sin(/omega_d t)$ 和 $e^{-/zeta/omega_n t}/cos(/omega_d t)$。\n*   **参数公式**：给出了振荡频率的计算公式 $/omega_d = /omega_n/sqrt{1-/zeta^2}$。\n*   **简化条件**：设定后续分析忽略阻尼，即 $c=0$，$/zeta=0$，此时 $/omega_d = /omega_n$，且振动不衰减。",
+  "metadata": {
+    "generation": {
+      "method": "qwen_api",
+      "backend": "api",
+      "provider": "qwen",
+      "model": "qwen3.7-plus",
+      "status": "success",
+      "api_error": null
+    },
+    "review": {
+      "required": false,
+      "status": null,
+      "reason": null,
+      "course_relevant": true
+    }
+  },
+  "error": null,
+  "method": "qwen_api",
+  "backend": "api",
+  "provider": "qwen",
+  "model": "qwen3.7-plus",
+  "status": "success",
+  "api_error": null,
+  "indexable": true,
+  "review_required": false,
+  "review_reason": null,
+  "review_status": null,
+  "course_relevant": true
+}

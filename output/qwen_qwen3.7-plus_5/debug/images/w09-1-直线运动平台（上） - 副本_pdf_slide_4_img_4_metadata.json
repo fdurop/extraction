@@ -1,0 +1,33 @@
+{
+  "original_path": "output/qwen_qwen3.7-plus_5/debug/images/w09-1-直线运动平台（上） - 副本_p4_img6.jpeg",
+  "enhanced_path": "output/qwen_qwen3.7-plus_5/debug/images/w09-1-直线运动平台（上） - 副本_p4_img6_enhanced.jpeg",
+  "description": "图片展示了一个直交型机械臂（Cartesian robot）的三维结构模型，对应上下文中的“Z轴直交型机械臂”。\n\n**关键对象与结构：**\n*   **整体结构：** 这是一个多轴直线运动平台，呈现龙门架或框架式结构，由互相垂直的导轨和立柱组成。\n*   **底部导轨（X轴）：** 图片最下方有两条平行的长导轨（带有黄色/黑色条纹），作为基础支撑和第一轴运动轨道。\n*   **中间横梁（Y轴）：** 一个黑色的横梁组件垂直跨越在底部导轨上，可以在底部导轨上滑动。横梁连接处有红色和紫色的机械部件。\n*   **垂直立柱（Z轴）：** 在中间横梁上竖立着两个黑色的垂直立柱，立柱底部有驱动装置。\n*   **顶部横杆：** 两个垂直立柱的顶部通过一根银白色的横杆连接，横杆左端有一个蓝色的电机或驱动组件。\n*   **驱动组件：** 在结构的各个关键节点（如导轨末端、立柱顶部）可以看到蓝色或黑色的圆柱形物体，代表电机或执行器。\n\n该图直观地展示了多轴直线运动平台的空间布局，体现了X、Y、Z三轴直交（垂直）的运动关系。",
+  "metadata": {
+    "generation": {
+      "method": "qwen_api",
+      "backend": "api",
+      "provider": "qwen",
+      "model": "qwen3.7-plus",
+      "status": "success",
+      "api_error": null
+    },
+    "review": {
+      "required": false,
+      "status": null,
+      "reason": null,
+      "course_relevant": true
+    }
+  },
+  "error": null,
+  "method": "qwen_api",
+  "backend": "api",
+  "provider": "qwen",
+  "model": "qwen3.7-plus",
+  "status": "success",
+  "api_error": null,
+  "indexable": true,
+  "review_required": false,
+  "review_reason": null,
+  "review_status": null,
+  "course_relevant": true
+}

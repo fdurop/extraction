@@ -1,0 +1,33 @@
+{
+  "original_path": "output/qwen_qwen3.7-plus_5/debug/images/w10-1-直线运动平台（下）_slide_15_img_2.png",
+  "enhanced_path": "output/qwen_qwen3.7-plus_5/debug/images/w10-1-直线运动平台（下）_slide_15_img_2_enhanced.png",
+  "description": "图片展示了关于输入整形技术的数学推导和参数确定原则，主要包含两部分内容：\n\n**1. 求 $\\mathcal{L}^{-1}(\\tilde{U}_s(s))$ 的推导过程**\n*   首先给出了频域表达式：$\\tilde{U}_s(s) = C(e^{-s\\tau} - e^{s_2\\tau})(e^{-s\\tau} - e^{s_1\\tau})U_s(s) = C[1 - 2e^{-s\\tau}\\cos(\\omega_n\\tau) + e^{-2s\\tau}]U_s(s)$。\n*   通过拉普拉斯逆变换得到时域表达式：$\\Rightarrow \\tilde{u}_s(t) = C[u_s(t) - 2\\cos(\\omega_n\\tau)u_s(t-\\tau) + u_s(t-2\\tau)]$。\n*   最后将其整理为系数形式：即 $\\tilde{u}_s(t) = c_1 u_s(t) - c_2 u_s(t-\\tau) + c_1 u_s(t-2\\tau)$。\n\n**2. 确定参数的原则**\n列出了三个原则及其对应的数学结论：\n*   **凸函数经过整形后仍为凸函数**：要求 $c_1$ 和 $c_2$ 都非负，推导出 $\\Rightarrow c_2 = 2C\\cos(\\omega_n\\tau) = 0$；\n*   **延时尽可能短**：要求 $\\tau$ 尽可能小，推导出 $\\Rightarrow \\tau = \\frac{\\pi}{2\\omega_n}$；\n*   **总位移保持不变**：推导出 $\\Rightarrow c_1 = 1/2$。",
+  "metadata": {
+    "generation": {
+      "method": "qwen_api",
+      "backend": "api",
+      "provider": "qwen",
+      "model": "qwen3.7-plus",
+      "status": "success",
+      "api_error": null
+    },
+    "review": {
+      "required": false,
+      "status": null,
+      "reason": null,
+      "course_relevant": true
+    }
+  },
+  "error": null,
+  "method": "qwen_api",
+  "backend": "api",
+  "provider": "qwen",
+  "model": "qwen3.7-plus",
+  "status": "success",
+  "api_error": null,
+  "indexable": true,
+  "review_required": false,
+  "review_reason": null,
+  "review_status": null,
+  "course_relevant": true
+}

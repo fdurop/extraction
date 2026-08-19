@@ -4,6 +4,8 @@
 """
 
 import re
+from collections import Counter
+from math import ceil
 from typing import List, Dict, Any, Optional
 
 
@@ -18,7 +20,13 @@ class TextProcessor:
         self.logger = logger
         self.professional_terms = set()
     
-    def process_text(self, text: str, page_num: int = 0, image_paths: List[str] = None) -> Dict[str, Any]:
+    def process_text(
+        self,
+        text: str,
+        page_num: int = 0,
+        image_paths: List[str] = None,
+        repeated_lines: Optional[set] = None,
+    ) -> Dict[str, Any]:
         """
         处理文本内容
         
@@ -33,12 +41,13 @@ class TextProcessor:
         if image_paths is None:
             image_paths = []
         
+        cleaned_text = self._clean_text(text, repeated_lines=repeated_lines)
         result = {
             "page_num": page_num,
             "raw_text": text,
-            "cleaned_text": self._clean_text(text),
-            "key_points": self._extract_key_points(text),
-            "technical_terms": self._extract_technical_terms(text),
+            "cleaned_text": cleaned_text,
+            "key_points": self._extract_key_points(cleaned_text),
+            "technical_terms": self._extract_technical_terms(cleaned_text),
             "has_images": len(image_paths) > 0,
             "image_count": len(image_paths),
             "image_paths": image_paths,
@@ -51,7 +60,7 @@ class TextProcessor:
         
         return result
     
-    def _clean_text(self, text: str) -> str:
+    def _clean_text(self, text: str, repeated_lines: Optional[set] = None) -> str:
         """
         清理文本（去除多余空白、特殊字符等）
         
@@ -61,11 +70,42 @@ class TextProcessor:
         Returns:
             清理后的文本
         """
-        # 去除多余空白
-        text = re.sub(r'\s+', ' ', text)
-        # 去除特殊控制字符
-        text = re.sub(r'[\x00-\x08\x0b-\x0c\x0e-\x1f\x7f-\x9f]', '', text)
-        return text.strip()
+        repeated_lines = repeated_lines or set()
+        retained = []
+        for raw_line in str(text or "").splitlines():
+            line = re.sub(r'[\x00-\x08\x0b-\x0c\x0e-\x1f\x7f-\x9f\ue000-\uf8ff]', '', raw_line)
+            line = re.sub(r'\s+', ' ', line).strip()
+            normalized = self._normalize_line(line)
+            if not line or normalized in repeated_lines:
+                continue
+            if re.fullmatch(r'\d{1,3}\s*[-–—]\s*\d{0,3}', line):
+                continue
+            line = re.sub(r'\b[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}\b', '', line)
+            line = re.sub(r'\s+', ' ', line).strip()
+            if line:
+                retained.append(line)
+        return "\n".join(retained)
+
+    @classmethod
+    def find_repeated_lines(cls, page_texts: List[str], ratio: float = 0.6) -> set:
+        """Find document-level headers/footers repeated on most pages."""
+        if len(page_texts) < 3:
+            return set()
+        counts = Counter()
+        for text in page_texts:
+            page_lines = {
+                cls._normalize_line(line)
+                for line in str(text or "").splitlines()
+                if cls._normalize_line(line)
+            }
+            counts.update(page_lines)
+        threshold = max(3, ceil(len(page_texts) * ratio))
+        return {line for line, count in counts.items() if count >= threshold and len(line) <= 120}
+
+    @staticmethod
+    def _normalize_line(line: str) -> str:
+        line = re.sub(r'[\ue000-\uf8ff]', '', str(line or ""))
+        return re.sub(r'\s+', ' ', line).strip().casefold()
     
     def _extract_key_points(self, text: str) -> List[str]:
         """

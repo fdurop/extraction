@@ -1,0 +1,18 @@
+﻿Current Table (Peak=RMS×1.4),,,,Pulse/rev Table,,,
+Peak,RMS,SW1,SW2,SW3,Pulse/rev,SW5,SW6,SW7,SW8
+Default,,off,on,on,Default,off,on,on,on
+1.31A,0.94A,off,on,on,400,off,on,off,on
+1.63A,1.16A,on,off,on,800,on,off,on,on
+1.94A,1.39A,off,off,on,1600,off,off,on,on
+2.24A,1.60A,off,on,off,3200,on,on,off,on
+2.55A,1.82A,on,off,off,6400,off,on,off,on
+2.87A,2.05A,on,on,off,12800,on,off,off,on
+3.20A,2.29A,off,off,off,25600,off,off,off,on
+,,,,,1000,off,on,on,off
+,,,,,2000,off,on,off,off
+,,,,,4000,on,off,on,off
+,,,,,5000,off,off,on,off
+,,,,,8000,on,on,off,off
+,,,,,10000,off,on,off,off
+,,,,,20000,on,off,off,off
+,,,,,25000,off,off,off,off

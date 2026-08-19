@@ -6,13 +6,17 @@
 from .image_processor import ImageProcessor
 from .text_processor import TextProcessor
 from .formula_extractor import FormulaExtractor
+from .formula_validator import FormulaValidator
 from .table_extractor import TableExtractor
+from .table_validator import TableValidator
 from .code_extractor import CodeExtractor
 
 __all__ = [
     'ImageProcessor',
     'TextProcessor',
     'FormulaExtractor',
+    'FormulaValidator',
     'TableExtractor',
+    'TableValidator',
     'CodeExtractor'
 ]

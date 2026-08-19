@@ -1,0 +1,33 @@
+{
+  "page_num": 10,
+  "raw_text": "机电系统原理及实践—— 步进电机驱动器与外部中断\n机电智控实验室tangguoan@fudan.edu.cn mmguo@fudan.edu.cn\n§4 商品化步进电机驱动器\n体积相对小巧，功能丰富。\n控制回路：所有“–”与MCU共地。\nPUL+：脉冲\nDIR+：方向\nENA+：使能\n细分选择：脉冲/圈（pulse/rev）\n步进电机一般每个脉冲转1.8°.\n细分数为2 的整数次幂。\n实践：用商品化驱动器代替原理样机。\n11-11\n细\n分\n选\n择\n电\n流\n选\n择\n拨码开关\n拨\n码\n开\n关\n控\n制\n回\n路\n动\n力\n回\n路\nw08-s3-hostMCU.ino\n复旦大学 机电智控实验室\n",
+  "cleaned_text": "机电系统原理及实践—— 步进电机驱动器与外部中断 机电智控实验室tangguoan@fudan.edu.cn mmguo@fudan.edu.cn §4 商品化步进电机驱动器 体积相对小巧，功能丰富。 控制回路：所有“–”与MCU共地。 PUL+：脉冲 DIR+：方向 ENA+：使能 细分选择：脉冲/圈（pulse/rev） 步进电机一般每个脉冲转1.8°. 细分数为2 的整数次幂。 实践：用商品化驱动器代替原理样机。 11-11 细 分 选 择 电 流 选 择 拨码开关 拨 码 开 关 控 制 回 路 动 力 回 路 w08-s3-hostMCU.ino 复旦大学 机电智控实验室",
+  "key_points": [
+    "体积相对小巧，功能丰富。",
+    "控制回路：所有“–”与MCU共地。",
+    "细分数为2 的整数次幂。",
+    "实践：用商品化驱动器代替原理样机。"
+  ],
+  "technical_terms": [
+    "DIR",
+    "ENA",
+    "PUL",
+    "w08-s3-hostMCU",
+    "商品化步进电机驱动器",
+    "机电系统",
+    "步进电机",
+    "步进电机驱动器与外部中断",
+    "用商品化驱动器"
+  ],
+  "has_images": true,
+  "image_count": 2,
+  "image_paths": [
+    "output/qwen_qwen3.7-plus_4/debug/images/w08-1-步进电机驱动器_p11_img2.jpeg",
+    "output/qwen_qwen3.7-plus_4/debug/images/w08-1-步进电机驱动器_p11_img3.jpeg"
+  ],
+  "metadata": {
+    "char_count": 304,
+    "word_count": 41,
+    "line_count": 37
+  }
+}

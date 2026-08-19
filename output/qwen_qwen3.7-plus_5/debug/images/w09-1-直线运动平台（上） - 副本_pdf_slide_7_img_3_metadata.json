@@ -1,0 +1,33 @@
+{
+  "original_path": "output/qwen_qwen3.7-plus_5/debug/images/w09-1-直线运动平台（上） - 副本_p7_img5.jpeg",
+  "enhanced_path": "output/qwen_qwen3.7-plus_5/debug/images/w09-1-直线运动平台（上） - 副本_p7_img5_enhanced.jpeg",
+  "description": "图片展示了急停开关的触点模块实物图。主体为黄色外壳，上下分布着四个金属接线端子，顶部标有数字“24”和“12”，底部标有“23”和“11”。模块中央有两个触点组件，左侧为绿色，右侧为红色。结合上下文“§2.3 急停开关”及“一对NO触点 一对NC触点”，该图展示了急停开关的常开（NO）和常闭（NC）触点及其对应的引脚编号（通常11-12为NC回路，23-24为NO回路），用于说明其物理结构和电气接口。",
+  "metadata": {
+    "generation": {
+      "method": "qwen_api",
+      "backend": "api",
+      "provider": "qwen",
+      "model": "qwen3.7-plus",
+      "status": "success",
+      "api_error": null
+    },
+    "review": {
+      "required": false,
+      "status": null,
+      "reason": null,
+      "course_relevant": true
+    }
+  },
+  "error": null,
+  "method": "qwen_api",
+  "backend": "api",
+  "provider": "qwen",
+  "model": "qwen3.7-plus",
+  "status": "success",
+  "api_error": null,
+  "indexable": true,
+  "review_required": false,
+  "review_reason": null,
+  "review_status": null,
+  "course_relevant": true
+}

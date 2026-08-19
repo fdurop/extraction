@@ -1,0 +1,33 @@
+{
+  "original_path": "output/qwen_qwen3.7-plus_6/debug/images/w09-1-直线运动平台（上） - 副本_p7_img4.jpeg",
+  "enhanced_path": "output/qwen_qwen3.7-plus_6/debug/images/w09-1-直线运动平台（上） - 副本_p7_img4_enhanced.jpeg",
+  "description": "类型：照片\n图片展示一个急停开关实物。顶部为红色蘑菇头按钮，下方依次为黄色环圈、黑色螺纹安装座及透明底座。透过透明外壳可见内部机械结构，包含黄色支架与金属触点组件。侧面设有黑色接线端子模块。结合页面文字标注，该器件含一对NO触点和一对NC触点，用于连接5V、ENA+、ENA-及GND线路以控制驱动器。",
+  "metadata": {
+    "generation": {
+      "method": "qwen_api",
+      "backend": "api",
+      "provider": "qwen",
+      "model": "qwen3.7-plus",
+      "status": "success",
+      "api_error": null
+    },
+    "review": {
+      "required": false,
+      "status": null,
+      "reason": null,
+      "course_relevant": true
+    }
+  },
+  "error": null,
+  "method": "qwen_api",
+  "backend": "api",
+  "provider": "qwen",
+  "model": "qwen3.7-plus",
+  "status": "success",
+  "api_error": null,
+  "indexable": true,
+  "review_required": false,
+  "review_reason": null,
+  "review_status": null,
+  "course_relevant": true
+}

@@ -6,8 +6,10 @@
 import os
 import json
 import csv
+import shutil
 from typing import Dict, Any, List
 from datetime import datetime
+from PIL import Image
 
 from .knowledge_exporter import KnowledgeExporter
 
@@ -21,20 +23,25 @@ def _relpath(value):
         return str(value).replace("\\", "/")
 
 
-def _normalize_paths(value):
+_PATH_KEYS = {
+    "path", "paths", "file_path", "source_path", "source_image",
+    "original_path", "enhanced_path", "image_path", "image_paths",
+    "page_image_path", "review_image_path", "metadata_path", "matrix_path",
+}
+
+
+def _normalize_paths(value, key=None):
     if isinstance(value, dict):
-        return {key: _normalize_paths(item) for key, item in value.items()}
+        return {item_key: _normalize_paths(item, item_key) for item_key, item in value.items()}
     if isinstance(value, list):
-        return [_normalize_paths(item) for item in value]
+        return [_normalize_paths(item, key) for item in value]
     if isinstance(value, str):
-        looks_like_path = (
-            "\\" in value
-            or value.startswith("input/")
-            or value.startswith("output/")
-            or value.startswith("input\\")
-            or value.startswith("output\\")
+        has_drive = bool(os.path.splitdrive(value)[0])
+        explicit_path = has_drive or value.startswith(("\\\\", "/")) or value.startswith(
+            ("input/", "output/", "debug/", "kg_data/", "input\\", "output\\", "debug\\", "kg_data\\")
         )
-        return _relpath(value) if looks_like_path else value
+        if key in _PATH_KEYS or explicit_path:
+            return _relpath(value)
     return value
 
 
@@ -52,6 +59,9 @@ class OutputManager:
         self.base_dir = base_dir
         self.debug_dir = os.path.join(base_dir, "debug")
         self.kg_dir = os.path.join(base_dir, "kg_data")
+        self.ex_items_dir = os.path.join(base_dir, "ex_items")
+        self.formula_review_dir = os.path.join(base_dir, "formula_review_items")
+        self.table_review_dir = os.path.join(base_dir, "table_review_items")
         self.logger = logger
         self.knowledge_exporter = KnowledgeExporter(base_dir=self.kg_dir, logger=logger)
         
@@ -63,7 +73,10 @@ class OutputManager:
             "tables": os.path.join(self.debug_dir, "tables"),
             "code": os.path.join(self.debug_dir, "code"),
             "logs": os.path.join(self.debug_dir, "logs"),
-            "document_metadata": os.path.join(self.debug_dir, "document_metadata")
+            "document_metadata": os.path.join(self.debug_dir, "document_metadata"),
+            "ex_items": self.ex_items_dir,
+            "formula_review_items": self.formula_review_dir,
+            "table_review_items": self.table_review_dir,
         }
         
         self._create_directories()
@@ -117,6 +130,8 @@ class OutputManager:
             
             with open(output_file, 'w', encoding='utf-8') as f:
                 json.dump(_normalize_paths(data), f, ensure_ascii=False, indent=2)
+            if data.get("review_required"):
+                self._save_review_item(data, filename, page_num, img_index)
             self.knowledge_exporter.add_image(data, filename, page_num, img_index)
             
             if self.logger:
@@ -124,6 +139,60 @@ class OutputManager:
         except Exception as e:
             if self.logger:
                 self.logger.error(f"保存图像元数据失败: {e}")
+
+    def _save_review_item(self, data: Dict[str, Any], filename: str, page_num: int, img_index: int):
+        """Save an image and metadata in the legacy frontend's ex_items format."""
+        base_name = f"{filename}_slide_{page_num+1}_img_{img_index+1}"
+        preview_file = os.path.join(self.ex_items_dir, f"{base_name}_enhanced.png")
+        metadata_file = os.path.join(self.ex_items_dir, f"{base_name}_metadata.json")
+
+        source_path = data.get("enhanced_path") or data.get("original_path") or data.get("image_path")
+        if source_path and not os.path.isabs(str(source_path)):
+            source_path = os.path.join(os.getcwd(), str(source_path).replace("/", os.sep))
+
+        preview_saved = False
+        if source_path and os.path.exists(source_path):
+            try:
+                with Image.open(source_path) as image:
+                    if image.mode == "RGBA":
+                        background = Image.new("RGB", image.size, "white")
+                        background.paste(image, mask=image.getchannel("A"))
+                        image = background
+                    elif image.mode != "RGB":
+                        image = image.convert("RGB")
+                    image.save(preview_file, format="PNG")
+                preview_saved = True
+            except Exception:
+                try:
+                    if str(source_path).lower().endswith(".png"):
+                        shutil.copy2(source_path, preview_file)
+                        preview_saved = True
+                except Exception as exc:
+                    if self.logger:
+                        self.logger.warning(f"待审核图片预览保存失败: {exc}")
+
+        review_data = dict(data)
+        review_data.update({
+            "review_required": True,
+            "review_status": data.get("review_status") or "pending",
+            "review_reason": data.get("review_reason") or "unknown",
+            "source_document": filename,
+            "page_num": page_num + 1,
+            "image_index": img_index + 1,
+            "review_image_path": _relpath(preview_file) if preview_saved else "",
+        })
+        if preview_saved:
+            review_data["enhanced_path"] = _relpath(preview_file)
+
+        with open(metadata_file, "w", encoding="utf-8") as f:
+            json.dump(_normalize_paths(review_data), f, ensure_ascii=False, indent=2)
+
+        if self.logger:
+            self.logger.warning(
+                "图片进入人工审核队列: %s reason=%s",
+                metadata_file,
+                review_data["review_reason"],
+            )
     
     def save_formulas(self, formulas: List[Dict[str, Any]], filename: str, page_num: int):
         """
@@ -144,10 +213,19 @@ class OutputManager:
                 f"{filename}_page_{page_num+1}_formulas.json"
             )
             
+            normalized_formulas = []
+            for idx, formula in enumerate(formulas):
+                item = dict(formula)
+                item.setdefault("formula_id", f"{filename}_page_{page_num+1}_formula_{idx+1}")
+                item.setdefault("page_num", page_num + 1)
+                normalized_formulas.append(item)
+
             output_data = {
                 "page": page_num + 1,
-                "formula_count": len(formulas),
-                "formulas": formulas,
+                "formula_count": len(normalized_formulas),
+                "accepted_count": sum(not item.get("review_required") for item in normalized_formulas),
+                "review_count": sum(bool(item.get("review_required")) for item in normalized_formulas),
+                "formulas": normalized_formulas,
                 "timestamp": datetime.now().isoformat()
             }
             
@@ -162,22 +240,41 @@ class OutputManager:
             
             with open(csv_file, 'w', encoding='utf-8-sig', newline='') as f:
                 # 定义CSV字段
-                fieldnames = ['序号', 'LaTeX公式', '描述', '来源图像', '提取方法']
+                fieldnames = [
+                    '序号', 'LaTeX公式', '名称', '描述', '来源图像', '提取方法',
+                    '置信度', '验证状态', '是否需审核'
+                ]
                 writer = csv.DictWriter(f, fieldnames=fieldnames)
                 writer.writeheader()
                 
-                for idx, formula in enumerate(formulas, 1):
+                for idx, formula in enumerate(normalized_formulas, 1):
                     writer.writerow({
                         '序号': idx,
                         'LaTeX公式': formula.get('latex', ''),
+                        '名称': formula.get('name', ''),
                         '描述': formula.get('description', ''),
                         '来源图像': _relpath(formula.get('source_image', '')),
-                        '提取方法': formula.get('extraction_method', '')
+                        '提取方法': formula.get('extraction_method', ''),
+                        '置信度': formula.get('confidence', ''),
+                        '验证状态': formula.get('validation_status', ''),
+                        '是否需审核': formula.get('review_required', False),
                     })
+
+            for idx, formula in enumerate(normalized_formulas):
+                if formula.get("review_required"):
+                    self._save_modality_review_item(
+                        formula, self.formula_review_dir, "formula", filename, page_num, idx
+                    )
+
+            accepted = [item for item in normalized_formulas if not item.get("review_required")]
             
             if self.logger:
-                self.logger.info(f"保存 {len(formulas)} 个公式: JSON={json_file}, CSV={csv_file}")
-            self.knowledge_exporter.add_formulas(formulas, filename, page_num)
+                self.logger.info(
+                    f"保存 {len(normalized_formulas)} 个公式，正式={len(accepted)}，"
+                    f"待审核={len(normalized_formulas) - len(accepted)}: JSON={json_file}, CSV={csv_file}"
+                )
+            if accepted:
+                self.knowledge_exporter.add_formulas(accepted, filename, page_num)
             
         except Exception as e:
             if self.logger:
@@ -194,9 +291,14 @@ class OutputManager:
         """
         if not tables:
             return
-        
+
         try:
-            for table_idx, table in enumerate(tables):
+            normalized_tables = []
+            for table_idx, original_table in enumerate(tables):
+                table = dict(original_table)
+                table.setdefault("table_id", f"{filename}_page_{page_num+1}_table_{table_idx+1}")
+                table.setdefault("page_num", page_num + 1)
+                normalized_tables.append(table)
                 # 1. 保存JSON格式
                 json_file = os.path.join(
                     self.dirs["tables"],
@@ -217,22 +319,72 @@ class OutputManager:
                     f"{filename}_page_{page_num+1}_table_{table_idx+1}.csv"
                 )
                 
-                # 使用table中的json数据来生成CSV
-                if 'json' in table and table['json']:
+                if table.get("csv"):
                     with open(csv_file, 'w', encoding='utf-8-sig', newline='') as f:
-                        if len(table['json']) > 0:
-                            fieldnames = list(table['json'][0].keys())
-                            writer = csv.DictWriter(f, fieldnames=fieldnames)
-                            writer.writeheader()
-                            writer.writerows(table['json'])
+                        f.write(str(table["csv"]))
+                elif table.get("json"):
+                    with open(csv_file, 'w', encoding='utf-8-sig', newline='') as f:
+                        fieldnames = list(table['json'][0].keys())
+                        writer = csv.DictWriter(f, fieldnames=fieldnames)
+                        writer.writeheader()
+                        writer.writerows(table['json'])
+
+                if table.get("review_required"):
+                    self._save_modality_review_item(
+                        table, self.table_review_dir, "table", filename, page_num, table_idx
+                    )
             
             if self.logger:
                 self.logger.info(f"保存 {len(tables)} 个表格 (JSON + CSV)")
-            self.knowledge_exporter.add_tables(tables, filename, page_num)
+            accepted = [table for table in normalized_tables if not table.get("review_required")]
+            if accepted:
+                self.knowledge_exporter.add_tables(accepted, filename, page_num)
                 
         except Exception as e:
             if self.logger:
                 self.logger.error(f"保存表格失败: {e}")
+
+    def _save_modality_review_item(
+        self,
+        item: Dict[str, Any],
+        review_dir: str,
+        kind: str,
+        filename: str,
+        page_num: int,
+        index: int,
+    ):
+        """Persist one formula/table review item and an optional PNG preview."""
+        base_name = f"{filename}_page_{page_num+1}_{kind}_{index+1}"
+        metadata_file = os.path.join(review_dir, f"{base_name}.json")
+        preview_file = os.path.join(review_dir, f"{base_name}.png")
+        source_path = item.get("source_image")
+        if source_path and not os.path.isabs(str(source_path)):
+            source_path = os.path.join(os.getcwd(), str(source_path).replace("/", os.sep))
+
+        review_item = dict(item)
+        if source_path and os.path.exists(source_path):
+            try:
+                with Image.open(source_path) as image:
+                    if image.mode == "RGBA":
+                        background = Image.new("RGB", image.size, "white")
+                        background.paste(image, mask=image.getchannel("A"))
+                        image = background
+                    elif image.mode != "RGB":
+                        image = image.convert("RGB")
+                    image.save(preview_file, format="PNG")
+                review_item["review_image_path"] = _relpath(preview_file)
+            except Exception as exc:
+                if self.logger:
+                    self.logger.warning(f"{kind}待审核预览保存失败: {exc}")
+
+        review_item.update({
+            "review_required": True,
+            "review_status": item.get("review_status") or "pending",
+            "source_document": filename,
+            "page_num": page_num + 1,
+        })
+        with open(metadata_file, "w", encoding="utf-8") as f:
+            json.dump(_normalize_paths(review_item), f, ensure_ascii=False, indent=2, default=str)
     
     def save_code(self, code_blocks: List[Dict[str, Any]], filename: str, page_num: int):
         """
@@ -308,7 +460,10 @@ class OutputManager:
                     "page": page_num + 1,
                     "index": idx + 1,
                     "timestamp": datetime.now().isoformat(),
-                    "raw_response": code_block.get('raw_response', '')
+                    "raw_response": code_block.get('raw_response', ''),
+                    "backend": code_block.get('backend', ''),
+                    "provider": code_block.get('provider', ''),
+                    "model": code_block.get('model', ''),
                 }
                 
                 with open(metadata_file, 'w', encoding='utf-8') as f:

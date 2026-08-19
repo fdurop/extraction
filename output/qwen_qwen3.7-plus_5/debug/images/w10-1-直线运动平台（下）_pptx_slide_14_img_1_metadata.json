@@ -1,0 +1,33 @@
+{
+  "original_path": "output/qwen_qwen3.7-plus_5/debug/images/w10-1-直线运动平台（下）_slide_14_img_1.png",
+  "enhanced_path": "output/qwen_qwen3.7-plus_5/debug/images/w10-1-直线运动平台（下）_slide_14_img_1_enhanced.png",
+  "description": "图片展示了一个深蓝色背景的圆角矩形文本框，内部包含白色文字和数学公式。文字内容分为两行，第一行为“$\\tilde{U}_s(s)$ 为整形后”，第二行为“输入的拉氏变换”。整体含义是定义符号 $\\tilde{U}_s(s)$ 代表经过整形处理后的输入信号的拉普拉斯变换。这与页面上下文“§4.1 输入整形”紧密相关，是对该章节中数学符号的解释。",
+  "metadata": {
+    "generation": {
+      "method": "qwen_api",
+      "backend": "api",
+      "provider": "qwen",
+      "model": "qwen3.7-plus",
+      "status": "success",
+      "api_error": null
+    },
+    "review": {
+      "required": false,
+      "status": null,
+      "reason": null,
+      "course_relevant": true
+    }
+  },
+  "error": null,
+  "method": "qwen_api",
+  "backend": "api",
+  "provider": "qwen",
+  "model": "qwen3.7-plus",
+  "status": "success",
+  "api_error": null,
+  "indexable": true,
+  "review_required": false,
+  "review_reason": null,
+  "review_status": null,
+  "course_relevant": true
+}

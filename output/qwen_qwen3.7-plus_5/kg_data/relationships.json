@@ -1,0 +1,2162 @@
+[
+  {
+    "relationship_id": "rel_course_contains_doc_734b0dcb18f2",
+    "source_id": "default_course",
+    "target_id": "doc_734b0dcb18f2",
+    "relationship_type": "COURSE_CONTAINS_DOCUMENT",
+    "weight": 1.0,
+    "properties": {
+      "document_order": null
+    }
+  },
+  {
+    "relationship_id": "rel_course_contains_doc_e3f9d5ecb045",
+    "source_id": "default_course",
+    "target_id": "doc_e3f9d5ecb045",
+    "relationship_type": "COURSE_CONTAINS_DOCUMENT",
+    "weight": 1.0,
+    "properties": {
+      "document_order": null
+    }
+  },
+  {
+    "relationship_id": "rel_course_contains_doc_af60fdc9c262",
+    "source_id": "default_course",
+    "target_id": "doc_af60fdc9c262",
+    "relationship_type": "COURSE_CONTAINS_DOCUMENT",
+    "weight": 1.0,
+    "properties": {
+      "document_order": null
+    }
+  },
+  {
+    "relationship_id": "rel_doc_contains_page_74baa1e4aff3",
+    "source_id": "doc_734b0dcb18f2",
+    "target_id": "page_74baa1e4aff3",
+    "relationship_type": "DOCUMENT_CONTAINS_PAGE",
+    "weight": 1.0,
+    "properties": {
+      "page_no": 1
+    }
+  },
+  {
+    "relationship_id": "rel_doc_contains_page_6cafe233be82",
+    "source_id": "doc_734b0dcb18f2",
+    "target_id": "page_6cafe233be82",
+    "relationship_type": "DOCUMENT_CONTAINS_PAGE",
+    "weight": 1.0,
+    "properties": {
+      "page_no": 2
+    }
+  },
+  {
+    "relationship_id": "rel_prev_page_6cafe233be82",
+    "source_id": "page_74baa1e4aff3",
+    "target_id": "page_6cafe233be82",
+    "relationship_type": "NEXT_PAGE",
+    "weight": 1.0,
+    "properties": {}
+  },
+  {
+    "relationship_id": "rel_doc_contains_page_59ac3f463ce3",
+    "source_id": "doc_734b0dcb18f2",
+    "target_id": "page_59ac3f463ce3",
+    "relationship_type": "DOCUMENT_CONTAINS_PAGE",
+    "weight": 1.0,
+    "properties": {
+      "page_no": 3
+    }
+  },
+  {
+    "relationship_id": "rel_prev_page_59ac3f463ce3",
+    "source_id": "page_6cafe233be82",
+    "target_id": "page_59ac3f463ce3",
+    "relationship_type": "NEXT_PAGE",
+    "weight": 1.0,
+    "properties": {}
+  },
+  {
+    "relationship_id": "rel_doc_contains_page_5c1aa00d0f68",
+    "source_id": "doc_734b0dcb18f2",
+    "target_id": "page_5c1aa00d0f68",
+    "relationship_type": "DOCUMENT_CONTAINS_PAGE",
+    "weight": 1.0,
+    "properties": {
+      "page_no": 4
+    }
+  },
+  {
+    "relationship_id": "rel_prev_page_5c1aa00d0f68",
+    "source_id": "page_59ac3f463ce3",
+    "target_id": "page_5c1aa00d0f68",
+    "relationship_type": "NEXT_PAGE",
+    "weight": 1.0,
+    "properties": {}
+  },
+  {
+    "relationship_id": "rel_doc_contains_page_2cff3570f708",
+    "source_id": "doc_734b0dcb18f2",
+    "target_id": "page_2cff3570f708",
+    "relationship_type": "DOCUMENT_CONTAINS_PAGE",
+    "weight": 1.0,
+    "properties": {
+      "page_no": 5
+    }
+  },
+  {
+    "relationship_id": "rel_prev_page_2cff3570f708",
+    "source_id": "page_5c1aa00d0f68",
+    "target_id": "page_2cff3570f708",
+    "relationship_type": "NEXT_PAGE",
+    "weight": 1.0,
+    "properties": {}
+  },
+  {
+    "relationship_id": "rel_doc_contains_page_a7f15e438fbc",
+    "source_id": "doc_734b0dcb18f2",
+    "target_id": "page_a7f15e438fbc",
+    "relationship_type": "DOCUMENT_CONTAINS_PAGE",
+    "weight": 1.0,
+    "properties": {
+      "page_no": 6
+    }
+  },
+  {
+    "relationship_id": "rel_prev_page_a7f15e438fbc",
+    "source_id": "page_2cff3570f708",
+    "target_id": "page_a7f15e438fbc",
+    "relationship_type": "NEXT_PAGE",
+    "weight": 1.0,
+    "properties": {}
+  },
+  {
+    "relationship_id": "rel_doc_contains_page_61219e08acba",
+    "source_id": "doc_734b0dcb18f2",
+    "target_id": "page_61219e08acba",
+    "relationship_type": "DOCUMENT_CONTAINS_PAGE",
+    "weight": 1.0,
+    "properties": {
+      "page_no": 7
+    }
+  },
+  {
+    "relationship_id": "rel_prev_page_61219e08acba",
+    "source_id": "page_a7f15e438fbc",
+    "target_id": "page_61219e08acba",
+    "relationship_type": "NEXT_PAGE",
+    "weight": 1.0,
+    "properties": {}
+  },
+  {
+    "relationship_id": "rel_doc_contains_page_03da444ea093",
+    "source_id": "doc_734b0dcb18f2",
+    "target_id": "page_03da444ea093",
+    "relationship_type": "DOCUMENT_CONTAINS_PAGE",
+    "weight": 1.0,
+    "properties": {
+      "page_no": 8
+    }
+  },
+  {
+    "relationship_id": "rel_prev_page_03da444ea093",
+    "source_id": "page_61219e08acba",
+    "target_id": "page_03da444ea093",
+    "relationship_type": "NEXT_PAGE",
+    "weight": 1.0,
+    "properties": {}
+  },
+  {
+    "relationship_id": "rel_doc_contains_page_f9b297da42b6",
+    "source_id": "doc_734b0dcb18f2",
+    "target_id": "page_f9b297da42b6",
+    "relationship_type": "DOCUMENT_CONTAINS_PAGE",
+    "weight": 1.0,
+    "properties": {
+      "page_no": 9
+    }
+  },
+  {
+    "relationship_id": "rel_prev_page_f9b297da42b6",
+    "source_id": "page_03da444ea093",
+    "target_id": "page_f9b297da42b6",
+    "relationship_type": "NEXT_PAGE",
+    "weight": 1.0,
+    "properties": {}
+  },
+  {
+    "relationship_id": "rel_doc_contains_page_5507eb95d822",
+    "source_id": "doc_734b0dcb18f2",
+    "target_id": "page_5507eb95d822",
+    "relationship_type": "DOCUMENT_CONTAINS_PAGE",
+    "weight": 1.0,
+    "properties": {
+      "page_no": 10
+    }
+  },
+  {
+    "relationship_id": "rel_prev_page_5507eb95d822",
+    "source_id": "page_f9b297da42b6",
+    "target_id": "page_5507eb95d822",
+    "relationship_type": "NEXT_PAGE",
+    "weight": 1.0,
+    "properties": {}
+  },
+  {
+    "relationship_id": "rel_doc_contains_page_795ae4912dec",
+    "source_id": "doc_734b0dcb18f2",
+    "target_id": "page_795ae4912dec",
+    "relationship_type": "DOCUMENT_CONTAINS_PAGE",
+    "weight": 1.0,
+    "properties": {
+      "page_no": 11
+    }
+  },
+  {
+    "relationship_id": "rel_prev_page_795ae4912dec",
+    "source_id": "page_5507eb95d822",
+    "target_id": "page_795ae4912dec",
+    "relationship_type": "NEXT_PAGE",
+    "weight": 1.0,
+    "properties": {}
+  },
+  {
+    "relationship_id": "rel_doc_contains_page_ba1128c12c38",
+    "source_id": "doc_734b0dcb18f2",
+    "target_id": "page_ba1128c12c38",
+    "relationship_type": "DOCUMENT_CONTAINS_PAGE",
+    "weight": 1.0,
+    "properties": {
+      "page_no": 12
+    }
+  },
+  {
+    "relationship_id": "rel_prev_page_ba1128c12c38",
+    "source_id": "page_795ae4912dec",
+    "target_id": "page_ba1128c12c38",
+    "relationship_type": "NEXT_PAGE",
+    "weight": 1.0,
+    "properties": {}
+  },
+  {
+    "relationship_id": "rel_doc_contains_page_1646909e3819",
+    "source_id": "doc_e3f9d5ecb045",
+    "target_id": "page_1646909e3819",
+    "relationship_type": "DOCUMENT_CONTAINS_PAGE",
+    "weight": 1.0,
+    "properties": {
+      "page_no": 1
+    }
+  },
+  {
+    "relationship_id": "rel_doc_contains_page_02a104052e44",
+    "source_id": "doc_e3f9d5ecb045",
+    "target_id": "page_02a104052e44",
+    "relationship_type": "DOCUMENT_CONTAINS_PAGE",
+    "weight": 1.0,
+    "properties": {
+      "page_no": 2
+    }
+  },
+  {
+    "relationship_id": "rel_prev_page_02a104052e44",
+    "source_id": "page_1646909e3819",
+    "target_id": "page_02a104052e44",
+    "relationship_type": "NEXT_PAGE",
+    "weight": 1.0,
+    "properties": {}
+  },
+  {
+    "relationship_id": "rel_doc_contains_page_f9f4cbfa5dc7",
+    "source_id": "doc_e3f9d5ecb045",
+    "target_id": "page_f9f4cbfa5dc7",
+    "relationship_type": "DOCUMENT_CONTAINS_PAGE",
+    "weight": 1.0,
+    "properties": {
+      "page_no": 3
+    }
+  },
+  {
+    "relationship_id": "rel_prev_page_f9f4cbfa5dc7",
+    "source_id": "page_02a104052e44",
+    "target_id": "page_f9f4cbfa5dc7",
+    "relationship_type": "NEXT_PAGE",
+    "weight": 1.0,
+    "properties": {}
+  },
+  {
+    "relationship_id": "rel_doc_contains_page_901ec990c697",
+    "source_id": "doc_e3f9d5ecb045",
+    "target_id": "page_901ec990c697",
+    "relationship_type": "DOCUMENT_CONTAINS_PAGE",
+    "weight": 1.0,
+    "properties": {
+      "page_no": 4
+    }
+  },
+  {
+    "relationship_id": "rel_prev_page_901ec990c697",
+    "source_id": "page_f9f4cbfa5dc7",
+    "target_id": "page_901ec990c697",
+    "relationship_type": "NEXT_PAGE",
+    "weight": 1.0,
+    "properties": {}
+  },
+  {
+    "relationship_id": "rel_doc_contains_page_de817608b124",
+    "source_id": "doc_e3f9d5ecb045",
+    "target_id": "page_de817608b124",
+    "relationship_type": "DOCUMENT_CONTAINS_PAGE",
+    "weight": 1.0,
+    "properties": {
+      "page_no": 5
+    }
+  },
+  {
+    "relationship_id": "rel_prev_page_de817608b124",
+    "source_id": "page_901ec990c697",
+    "target_id": "page_de817608b124",
+    "relationship_type": "NEXT_PAGE",
+    "weight": 1.0,
+    "properties": {}
+  },
+  {
+    "relationship_id": "rel_doc_contains_page_0f383012bd96",
+    "source_id": "doc_e3f9d5ecb045",
+    "target_id": "page_0f383012bd96",
+    "relationship_type": "DOCUMENT_CONTAINS_PAGE",
+    "weight": 1.0,
+    "properties": {
+      "page_no": 6
+    }
+  },
+  {
+    "relationship_id": "rel_prev_page_0f383012bd96",
+    "source_id": "page_de817608b124",
+    "target_id": "page_0f383012bd96",
+    "relationship_type": "NEXT_PAGE",
+    "weight": 1.0,
+    "properties": {}
+  },
+  {
+    "relationship_id": "rel_doc_contains_page_a089db2d9658",
+    "source_id": "doc_e3f9d5ecb045",
+    "target_id": "page_a089db2d9658",
+    "relationship_type": "DOCUMENT_CONTAINS_PAGE",
+    "weight": 1.0,
+    "properties": {
+      "page_no": 7
+    }
+  },
+  {
+    "relationship_id": "rel_prev_page_a089db2d9658",
+    "source_id": "page_0f383012bd96",
+    "target_id": "page_a089db2d9658",
+    "relationship_type": "NEXT_PAGE",
+    "weight": 1.0,
+    "properties": {}
+  },
+  {
+    "relationship_id": "rel_doc_contains_page_21216eab96cb",
+    "source_id": "doc_e3f9d5ecb045",
+    "target_id": "page_21216eab96cb",
+    "relationship_type": "DOCUMENT_CONTAINS_PAGE",
+    "weight": 1.0,
+    "properties": {
+      "page_no": 8
+    }
+  },
+  {
+    "relationship_id": "rel_prev_page_21216eab96cb",
+    "source_id": "page_a089db2d9658",
+    "target_id": "page_21216eab96cb",
+    "relationship_type": "NEXT_PAGE",
+    "weight": 1.0,
+    "properties": {}
+  },
+  {
+    "relationship_id": "rel_doc_contains_page_67fabb8b3e59",
+    "source_id": "doc_e3f9d5ecb045",
+    "target_id": "page_67fabb8b3e59",
+    "relationship_type": "DOCUMENT_CONTAINS_PAGE",
+    "weight": 1.0,
+    "properties": {
+      "page_no": 9
+    }
+  },
+  {
+    "relationship_id": "rel_prev_page_67fabb8b3e59",
+    "source_id": "page_21216eab96cb",
+    "target_id": "page_67fabb8b3e59",
+    "relationship_type": "NEXT_PAGE",
+    "weight": 1.0,
+    "properties": {}
+  },
+  {
+    "relationship_id": "rel_doc_contains_page_ba5dd672fb79",
+    "source_id": "doc_e3f9d5ecb045",
+    "target_id": "page_ba5dd672fb79",
+    "relationship_type": "DOCUMENT_CONTAINS_PAGE",
+    "weight": 1.0,
+    "properties": {
+      "page_no": 10
+    }
+  },
+  {
+    "relationship_id": "rel_prev_page_ba5dd672fb79",
+    "source_id": "page_67fabb8b3e59",
+    "target_id": "page_ba5dd672fb79",
+    "relationship_type": "NEXT_PAGE",
+    "weight": 1.0,
+    "properties": {}
+  },
+  {
+    "relationship_id": "rel_doc_contains_page_5e6fdc7dbd16",
+    "source_id": "doc_e3f9d5ecb045",
+    "target_id": "page_5e6fdc7dbd16",
+    "relationship_type": "DOCUMENT_CONTAINS_PAGE",
+    "weight": 1.0,
+    "properties": {
+      "page_no": 11
+    }
+  },
+  {
+    "relationship_id": "rel_prev_page_5e6fdc7dbd16",
+    "source_id": "page_ba5dd672fb79",
+    "target_id": "page_5e6fdc7dbd16",
+    "relationship_type": "NEXT_PAGE",
+    "weight": 1.0,
+    "properties": {}
+  },
+  {
+    "relationship_id": "rel_doc_contains_page_c16e2ae7ef0d",
+    "source_id": "doc_e3f9d5ecb045",
+    "target_id": "page_c16e2ae7ef0d",
+    "relationship_type": "DOCUMENT_CONTAINS_PAGE",
+    "weight": 1.0,
+    "properties": {
+      "page_no": 12
+    }
+  },
+  {
+    "relationship_id": "rel_prev_page_c16e2ae7ef0d",
+    "source_id": "page_5e6fdc7dbd16",
+    "target_id": "page_c16e2ae7ef0d",
+    "relationship_type": "NEXT_PAGE",
+    "weight": 1.0,
+    "properties": {}
+  },
+  {
+    "relationship_id": "rel_doc_contains_page_b3b9a6592b48",
+    "source_id": "doc_e3f9d5ecb045",
+    "target_id": "page_b3b9a6592b48",
+    "relationship_type": "DOCUMENT_CONTAINS_PAGE",
+    "weight": 1.0,
+    "properties": {
+      "page_no": 13
+    }
+  },
+  {
+    "relationship_id": "rel_prev_page_b3b9a6592b48",
+    "source_id": "page_c16e2ae7ef0d",
+    "target_id": "page_b3b9a6592b48",
+    "relationship_type": "NEXT_PAGE",
+    "weight": 1.0,
+    "properties": {}
+  },
+  {
+    "relationship_id": "rel_doc_contains_page_52e5b2bf5d24",
+    "source_id": "doc_af60fdc9c262",
+    "target_id": "page_52e5b2bf5d24",
+    "relationship_type": "DOCUMENT_CONTAINS_PAGE",
+    "weight": 1.0,
+    "properties": {
+      "page_no": 1
+    }
+  },
+  {
+    "relationship_id": "rel_doc_contains_page_13f40b41d0dd",
+    "source_id": "doc_af60fdc9c262",
+    "target_id": "page_13f40b41d0dd",
+    "relationship_type": "DOCUMENT_CONTAINS_PAGE",
+    "weight": 1.0,
+    "properties": {
+      "page_no": 2
+    }
+  },
+  {
+    "relationship_id": "rel_prev_page_13f40b41d0dd",
+    "source_id": "page_52e5b2bf5d24",
+    "target_id": "page_13f40b41d0dd",
+    "relationship_type": "NEXT_PAGE",
+    "weight": 1.0,
+    "properties": {}
+  },
+  {
+    "relationship_id": "rel_doc_contains_page_c171068c306a",
+    "source_id": "doc_af60fdc9c262",
+    "target_id": "page_c171068c306a",
+    "relationship_type": "DOCUMENT_CONTAINS_PAGE",
+    "weight": 1.0,
+    "properties": {
+      "page_no": 3
+    }
+  },
+  {
+    "relationship_id": "rel_prev_page_c171068c306a",
+    "source_id": "page_13f40b41d0dd",
+    "target_id": "page_c171068c306a",
+    "relationship_type": "NEXT_PAGE",
+    "weight": 1.0,
+    "properties": {}
+  },
+  {
+    "relationship_id": "rel_doc_contains_page_2fade7adbff7",
+    "source_id": "doc_af60fdc9c262",
+    "target_id": "page_2fade7adbff7",
+    "relationship_type": "DOCUMENT_CONTAINS_PAGE",
+    "weight": 1.0,
+    "properties": {
+      "page_no": 4
+    }
+  },
+  {
+    "relationship_id": "rel_prev_page_2fade7adbff7",
+    "source_id": "page_c171068c306a",
+    "target_id": "page_2fade7adbff7",
+    "relationship_type": "NEXT_PAGE",
+    "weight": 1.0,
+    "properties": {}
+  },
+  {
+    "relationship_id": "rel_doc_contains_page_2b3fe32d8c65",
+    "source_id": "doc_af60fdc9c262",
+    "target_id": "page_2b3fe32d8c65",
+    "relationship_type": "DOCUMENT_CONTAINS_PAGE",
+    "weight": 1.0,
+    "properties": {
+      "page_no": 5
+    }
+  },
+  {
+    "relationship_id": "rel_prev_page_2b3fe32d8c65",
+    "source_id": "page_2fade7adbff7",
+    "target_id": "page_2b3fe32d8c65",
+    "relationship_type": "NEXT_PAGE",
+    "weight": 1.0,
+    "properties": {}
+  },
+  {
+    "relationship_id": "rel_doc_contains_page_0fba9583ad7f",
+    "source_id": "doc_af60fdc9c262",
+    "target_id": "page_0fba9583ad7f",
+    "relationship_type": "DOCUMENT_CONTAINS_PAGE",
+    "weight": 1.0,
+    "properties": {
+      "page_no": 6
+    }
+  },
+  {
+    "relationship_id": "rel_prev_page_0fba9583ad7f",
+    "source_id": "page_2b3fe32d8c65",
+    "target_id": "page_0fba9583ad7f",
+    "relationship_type": "NEXT_PAGE",
+    "weight": 1.0,
+    "properties": {}
+  },
+  {
+    "relationship_id": "rel_doc_contains_page_0d151fa2004e",
+    "source_id": "doc_af60fdc9c262",
+    "target_id": "page_0d151fa2004e",
+    "relationship_type": "DOCUMENT_CONTAINS_PAGE",
+    "weight": 1.0,
+    "properties": {
+      "page_no": 7
+    }
+  },
+  {
+    "relationship_id": "rel_prev_page_0d151fa2004e",
+    "source_id": "page_0fba9583ad7f",
+    "target_id": "page_0d151fa2004e",
+    "relationship_type": "NEXT_PAGE",
+    "weight": 1.0,
+    "properties": {}
+  },
+  {
+    "relationship_id": "rel_doc_contains_page_36eac0b46d55",
+    "source_id": "doc_af60fdc9c262",
+    "target_id": "page_36eac0b46d55",
+    "relationship_type": "DOCUMENT_CONTAINS_PAGE",
+    "weight": 1.0,
+    "properties": {
+      "page_no": 8
+    }
+  },
+  {
+    "relationship_id": "rel_prev_page_36eac0b46d55",
+    "source_id": "page_0d151fa2004e",
+    "target_id": "page_36eac0b46d55",
+    "relationship_type": "NEXT_PAGE",
+    "weight": 1.0,
+    "properties": {}
+  },
+  {
+    "relationship_id": "rel_doc_contains_page_9efc55c7aa9a",
+    "source_id": "doc_af60fdc9c262",
+    "target_id": "page_9efc55c7aa9a",
+    "relationship_type": "DOCUMENT_CONTAINS_PAGE",
+    "weight": 1.0,
+    "properties": {
+      "page_no": 9
+    }
+  },
+  {
+    "relationship_id": "rel_prev_page_9efc55c7aa9a",
+    "source_id": "page_36eac0b46d55",
+    "target_id": "page_9efc55c7aa9a",
+    "relationship_type": "NEXT_PAGE",
+    "weight": 1.0,
+    "properties": {}
+  },
+  {
+    "relationship_id": "rel_doc_contains_page_9a51034a1a86",
+    "source_id": "doc_af60fdc9c262",
+    "target_id": "page_9a51034a1a86",
+    "relationship_type": "DOCUMENT_CONTAINS_PAGE",
+    "weight": 1.0,
+    "properties": {
+      "page_no": 10
+    }
+  },
+  {
+    "relationship_id": "rel_prev_page_9a51034a1a86",
+    "source_id": "page_9efc55c7aa9a",
+    "target_id": "page_9a51034a1a86",
+    "relationship_type": "NEXT_PAGE",
+    "weight": 1.0,
+    "properties": {}
+  },
+  {
+    "relationship_id": "rel_doc_contains_page_d1430d88b6c5",
+    "source_id": "doc_af60fdc9c262",
+    "target_id": "page_d1430d88b6c5",
+    "relationship_type": "DOCUMENT_CONTAINS_PAGE",
+    "weight": 1.0,
+    "properties": {
+      "page_no": 11
+    }
+  },
+  {
+    "relationship_id": "rel_prev_page_d1430d88b6c5",
+    "source_id": "page_9a51034a1a86",
+    "target_id": "page_d1430d88b6c5",
+    "relationship_type": "NEXT_PAGE",
+    "weight": 1.0,
+    "properties": {}
+  },
+  {
+    "relationship_id": "rel_doc_contains_page_dea3fd826c43",
+    "source_id": "doc_af60fdc9c262",
+    "target_id": "page_dea3fd826c43",
+    "relationship_type": "DOCUMENT_CONTAINS_PAGE",
+    "weight": 1.0,
+    "properties": {
+      "page_no": 12
+    }
+  },
+  {
+    "relationship_id": "rel_prev_page_dea3fd826c43",
+    "source_id": "page_d1430d88b6c5",
+    "target_id": "page_dea3fd826c43",
+    "relationship_type": "NEXT_PAGE",
+    "weight": 1.0,
+    "properties": {}
+  },
+  {
+    "relationship_id": "rel_doc_contains_page_e805f09f441d",
+    "source_id": "doc_af60fdc9c262",
+    "target_id": "page_e805f09f441d",
+    "relationship_type": "DOCUMENT_CONTAINS_PAGE",
+    "weight": 1.0,
+    "properties": {
+      "page_no": 13
+    }
+  },
+  {
+    "relationship_id": "rel_prev_page_e805f09f441d",
+    "source_id": "page_dea3fd826c43",
+    "target_id": "page_e805f09f441d",
+    "relationship_type": "NEXT_PAGE",
+    "weight": 1.0,
+    "properties": {}
+  },
+  {
+    "relationship_id": "rel_doc_contains_page_f0eccb8beaaa",
+    "source_id": "doc_af60fdc9c262",
+    "target_id": "page_f0eccb8beaaa",
+    "relationship_type": "DOCUMENT_CONTAINS_PAGE",
+    "weight": 1.0,
+    "properties": {
+      "page_no": 14
+    }
+  },
+  {
+    "relationship_id": "rel_prev_page_f0eccb8beaaa",
+    "source_id": "page_e805f09f441d",
+    "target_id": "page_f0eccb8beaaa",
+    "relationship_type": "NEXT_PAGE",
+    "weight": 1.0,
+    "properties": {}
+  },
+  {
+    "relationship_id": "rel_doc_contains_page_d20342354a94",
+    "source_id": "doc_af60fdc9c262",
+    "target_id": "page_d20342354a94",
+    "relationship_type": "DOCUMENT_CONTAINS_PAGE",
+    "weight": 1.0,
+    "properties": {
+      "page_no": 15
+    }
+  },
+  {
+    "relationship_id": "rel_prev_page_d20342354a94",
+    "source_id": "page_f0eccb8beaaa",
+    "target_id": "page_d20342354a94",
+    "relationship_type": "NEXT_PAGE",
+    "weight": 1.0,
+    "properties": {}
+  },
+  {
+    "relationship_id": "rel_doc_contains_page_5917a0ab2446",
+    "source_id": "doc_af60fdc9c262",
+    "target_id": "page_5917a0ab2446",
+    "relationship_type": "DOCUMENT_CONTAINS_PAGE",
+    "weight": 1.0,
+    "properties": {
+      "page_no": 16
+    }
+  },
+  {
+    "relationship_id": "rel_prev_page_5917a0ab2446",
+    "source_id": "page_d20342354a94",
+    "target_id": "page_5917a0ab2446",
+    "relationship_type": "NEXT_PAGE",
+    "weight": 1.0,
+    "properties": {}
+  },
+  {
+    "relationship_id": "rel_doc_contains_page_5873b21c7a75",
+    "source_id": "doc_af60fdc9c262",
+    "target_id": "page_5873b21c7a75",
+    "relationship_type": "DOCUMENT_CONTAINS_PAGE",
+    "weight": 1.0,
+    "properties": {
+      "page_no": 17
+    }
+  },
+  {
+    "relationship_id": "rel_prev_page_5873b21c7a75",
+    "source_id": "page_5917a0ab2446",
+    "target_id": "page_5873b21c7a75",
+    "relationship_type": "NEXT_PAGE",
+    "weight": 1.0,
+    "properties": {}
+  },
+  {
+    "relationship_id": "rel_doc_contains_page_5ec01a1087ca",
+    "source_id": "doc_af60fdc9c262",
+    "target_id": "page_5ec01a1087ca",
+    "relationship_type": "DOCUMENT_CONTAINS_PAGE",
+    "weight": 1.0,
+    "properties": {
+      "page_no": 18
+    }
+  },
+  {
+    "relationship_id": "rel_prev_page_5ec01a1087ca",
+    "source_id": "page_5873b21c7a75",
+    "target_id": "page_5ec01a1087ca",
+    "relationship_type": "NEXT_PAGE",
+    "weight": 1.0,
+    "properties": {}
+  },
+  {
+    "relationship_id": "rel_page_contains_text_d308afb8c4ee",
+    "source_id": "page_74baa1e4aff3",
+    "target_id": "text_d308afb8c4ee",
+    "relationship_type": "PAGE_CONTAINS_CONTENT",
+    "weight": 1.0,
+    "properties": {
+      "content_type": "text"
+    }
+  },
+  {
+    "relationship_id": "rel_page_contains_text_1c35b9413d52",
+    "source_id": "page_6cafe233be82",
+    "target_id": "text_1c35b9413d52",
+    "relationship_type": "PAGE_CONTAINS_CONTENT",
+    "weight": 1.0,
+    "properties": {
+      "content_type": "text"
+    }
+  },
+  {
+    "relationship_id": "rel_page_contains_text_bf74ff66f544",
+    "source_id": "page_59ac3f463ce3",
+    "target_id": "text_bf74ff66f544",
+    "relationship_type": "PAGE_CONTAINS_CONTENT",
+    "weight": 1.0,
+    "properties": {
+      "content_type": "text"
+    }
+  },
+  {
+    "relationship_id": "rel_page_contains_figure_c5d925be09ae",
+    "source_id": "page_59ac3f463ce3",
+    "target_id": "figure_c5d925be09ae",
+    "relationship_type": "PAGE_CONTAINS_CONTENT",
+    "weight": 1.0,
+    "properties": {
+      "content_type": "image"
+    }
+  },
+  {
+    "relationship_id": "rel_page_contains_figure_56b6393da5a6",
+    "source_id": "page_59ac3f463ce3",
+    "target_id": "figure_56b6393da5a6",
+    "relationship_type": "PAGE_CONTAINS_CONTENT",
+    "weight": 1.0,
+    "properties": {
+      "content_type": "image"
+    }
+  },
+  {
+    "relationship_id": "rel_page_contains_figure_7ea61340db92",
+    "source_id": "page_59ac3f463ce3",
+    "target_id": "figure_7ea61340db92",
+    "relationship_type": "PAGE_CONTAINS_CONTENT",
+    "weight": 1.0,
+    "properties": {
+      "content_type": "image"
+    }
+  },
+  {
+    "relationship_id": "rel_page_contains_table_1374cf0a53ce",
+    "source_id": "page_59ac3f463ce3",
+    "target_id": "table_1374cf0a53ce",
+    "relationship_type": "PAGE_CONTAINS_CONTENT",
+    "weight": 1.0,
+    "properties": {
+      "content_type": "table"
+    }
+  },
+  {
+    "relationship_id": "rel_page_contains_text_e43b8657b8db",
+    "source_id": "page_5c1aa00d0f68",
+    "target_id": "text_e43b8657b8db",
+    "relationship_type": "PAGE_CONTAINS_CONTENT",
+    "weight": 1.0,
+    "properties": {
+      "content_type": "text"
+    }
+  },
+  {
+    "relationship_id": "rel_page_contains_text_324ad6e40b28",
+    "source_id": "page_2cff3570f708",
+    "target_id": "text_324ad6e40b28",
+    "relationship_type": "PAGE_CONTAINS_CONTENT",
+    "weight": 1.0,
+    "properties": {
+      "content_type": "text"
+    }
+  },
+  {
+    "relationship_id": "rel_page_contains_text_8a9947905cb3",
+    "source_id": "page_a7f15e438fbc",
+    "target_id": "text_8a9947905cb3",
+    "relationship_type": "PAGE_CONTAINS_CONTENT",
+    "weight": 1.0,
+    "properties": {
+      "content_type": "text"
+    }
+  },
+  {
+    "relationship_id": "rel_page_contains_text_d66ae4f74068",
+    "source_id": "page_61219e08acba",
+    "target_id": "text_d66ae4f74068",
+    "relationship_type": "PAGE_CONTAINS_CONTENT",
+    "weight": 1.0,
+    "properties": {
+      "content_type": "text"
+    }
+  },
+  {
+    "relationship_id": "rel_page_contains_text_b1d3467053af",
+    "source_id": "page_03da444ea093",
+    "target_id": "text_b1d3467053af",
+    "relationship_type": "PAGE_CONTAINS_CONTENT",
+    "weight": 1.0,
+    "properties": {
+      "content_type": "text"
+    }
+  },
+  {
+    "relationship_id": "rel_page_contains_figure_feb9c343c666",
+    "source_id": "page_03da444ea093",
+    "target_id": "figure_feb9c343c666",
+    "relationship_type": "PAGE_CONTAINS_CONTENT",
+    "weight": 1.0,
+    "properties": {
+      "content_type": "image"
+    }
+  },
+  {
+    "relationship_id": "rel_page_contains_figure_8b9b6fbd9874",
+    "source_id": "page_03da444ea093",
+    "target_id": "figure_8b9b6fbd9874",
+    "relationship_type": "PAGE_CONTAINS_CONTENT",
+    "weight": 1.0,
+    "properties": {
+      "content_type": "image"
+    }
+  },
+  {
+    "relationship_id": "rel_page_contains_text_ff8b1b4bfec2",
+    "source_id": "page_f9b297da42b6",
+    "target_id": "text_ff8b1b4bfec2",
+    "relationship_type": "PAGE_CONTAINS_CONTENT",
+    "weight": 1.0,
+    "properties": {
+      "content_type": "text"
+    }
+  },
+  {
+    "relationship_id": "rel_page_contains_text_3856f4275ef2",
+    "source_id": "page_5507eb95d822",
+    "target_id": "text_3856f4275ef2",
+    "relationship_type": "PAGE_CONTAINS_CONTENT",
+    "weight": 1.0,
+    "properties": {
+      "content_type": "text"
+    }
+  },
+  {
+    "relationship_id": "rel_page_contains_text_1ddf3255552b",
+    "source_id": "page_795ae4912dec",
+    "target_id": "text_1ddf3255552b",
+    "relationship_type": "PAGE_CONTAINS_CONTENT",
+    "weight": 1.0,
+    "properties": {
+      "content_type": "text"
+    }
+  },
+  {
+    "relationship_id": "rel_page_contains_figure_c4c65629d287",
+    "source_id": "page_795ae4912dec",
+    "target_id": "figure_c4c65629d287",
+    "relationship_type": "PAGE_CONTAINS_CONTENT",
+    "weight": 1.0,
+    "properties": {
+      "content_type": "image"
+    }
+  },
+  {
+    "relationship_id": "rel_page_contains_figure_adc896b16429",
+    "source_id": "page_795ae4912dec",
+    "target_id": "figure_adc896b16429",
+    "relationship_type": "PAGE_CONTAINS_CONTENT",
+    "weight": 1.0,
+    "properties": {
+      "content_type": "image"
+    }
+  },
+  {
+    "relationship_id": "rel_page_contains_formula_6f3ccad272cc",
+    "source_id": "page_795ae4912dec",
+    "target_id": "formula_6f3ccad272cc",
+    "relationship_type": "PAGE_CONTAINS_CONTENT",
+    "weight": 1.0,
+    "properties": {
+      "content_type": "equation"
+    }
+  },
+  {
+    "relationship_id": "rel_page_contains_text_e01fc6a6cea5",
+    "source_id": "page_ba1128c12c38",
+    "target_id": "text_e01fc6a6cea5",
+    "relationship_type": "PAGE_CONTAINS_CONTENT",
+    "weight": 1.0,
+    "properties": {
+      "content_type": "text"
+    }
+  },
+  {
+    "relationship_id": "rel_page_contains_text_f67f453cd167",
+    "source_id": "page_1646909e3819",
+    "target_id": "text_f67f453cd167",
+    "relationship_type": "PAGE_CONTAINS_CONTENT",
+    "weight": 1.0,
+    "properties": {
+      "content_type": "text"
+    }
+  },
+  {
+    "relationship_id": "rel_page_contains_text_872589403257",
+    "source_id": "page_02a104052e44",
+    "target_id": "text_872589403257",
+    "relationship_type": "PAGE_CONTAINS_CONTENT",
+    "weight": 1.0,
+    "properties": {
+      "content_type": "text"
+    }
+  },
+  {
+    "relationship_id": "rel_page_contains_text_ef652aed69c8",
+    "source_id": "page_f9f4cbfa5dc7",
+    "target_id": "text_ef652aed69c8",
+    "relationship_type": "PAGE_CONTAINS_CONTENT",
+    "weight": 1.0,
+    "properties": {
+      "content_type": "text"
+    }
+  },
+  {
+    "relationship_id": "rel_page_contains_figure_890010931103",
+    "source_id": "page_f9f4cbfa5dc7",
+    "target_id": "figure_890010931103",
+    "relationship_type": "PAGE_CONTAINS_CONTENT",
+    "weight": 1.0,
+    "properties": {
+      "content_type": "image"
+    }
+  },
+  {
+    "relationship_id": "rel_page_contains_figure_d4c8f47099ac",
+    "source_id": "page_f9f4cbfa5dc7",
+    "target_id": "figure_d4c8f47099ac",
+    "relationship_type": "PAGE_CONTAINS_CONTENT",
+    "weight": 1.0,
+    "properties": {
+      "content_type": "image"
+    }
+  },
+  {
+    "relationship_id": "rel_page_contains_figure_8825794180ad",
+    "source_id": "page_f9f4cbfa5dc7",
+    "target_id": "figure_8825794180ad",
+    "relationship_type": "PAGE_CONTAINS_CONTENT",
+    "weight": 1.0,
+    "properties": {
+      "content_type": "image"
+    }
+  },
+  {
+    "relationship_id": "rel_page_contains_text_b962d56f880f",
+    "source_id": "page_901ec990c697",
+    "target_id": "text_b962d56f880f",
+    "relationship_type": "PAGE_CONTAINS_CONTENT",
+    "weight": 1.0,
+    "properties": {
+      "content_type": "text"
+    }
+  },
+  {
+    "relationship_id": "rel_page_contains_figure_f246cc8c3d8e",
+    "source_id": "page_901ec990c697",
+    "target_id": "figure_f246cc8c3d8e",
+    "relationship_type": "PAGE_CONTAINS_CONTENT",
+    "weight": 1.0,
+    "properties": {
+      "content_type": "image"
+    }
+  },
+  {
+    "relationship_id": "rel_page_contains_figure_099615de1372",
+    "source_id": "page_901ec990c697",
+    "target_id": "figure_099615de1372",
+    "relationship_type": "PAGE_CONTAINS_CONTENT",
+    "weight": 1.0,
+    "properties": {
+      "content_type": "image"
+    }
+  },
+  {
+    "relationship_id": "rel_page_contains_figure_7615c1ded49d",
+    "source_id": "page_901ec990c697",
+    "target_id": "figure_7615c1ded49d",
+    "relationship_type": "PAGE_CONTAINS_CONTENT",
+    "weight": 1.0,
+    "properties": {
+      "content_type": "image"
+    }
+  },
+  {
+    "relationship_id": "rel_page_contains_figure_00d05198e391",
+    "source_id": "page_901ec990c697",
+    "target_id": "figure_00d05198e391",
+    "relationship_type": "PAGE_CONTAINS_CONTENT",
+    "weight": 1.0,
+    "properties": {
+      "content_type": "image"
+    }
+  },
+  {
+    "relationship_id": "rel_page_contains_figure_2395db6faf40",
+    "source_id": "page_901ec990c697",
+    "target_id": "figure_2395db6faf40",
+    "relationship_type": "PAGE_CONTAINS_CONTENT",
+    "weight": 1.0,
+    "properties": {
+      "content_type": "image"
+    }
+  },
+  {
+    "relationship_id": "rel_page_contains_text_bf7031a0f6e9",
+    "source_id": "page_de817608b124",
+    "target_id": "text_bf7031a0f6e9",
+    "relationship_type": "PAGE_CONTAINS_CONTENT",
+    "weight": 1.0,
+    "properties": {
+      "content_type": "text"
+    }
+  },
+  {
+    "relationship_id": "rel_page_contains_figure_4eb88c9cd270",
+    "source_id": "page_de817608b124",
+    "target_id": "figure_4eb88c9cd270",
+    "relationship_type": "PAGE_CONTAINS_CONTENT",
+    "weight": 1.0,
+    "properties": {
+      "content_type": "image"
+    }
+  },
+  {
+    "relationship_id": "rel_page_contains_text_3ecd1cc3d197",
+    "source_id": "page_0f383012bd96",
+    "target_id": "text_3ecd1cc3d197",
+    "relationship_type": "PAGE_CONTAINS_CONTENT",
+    "weight": 1.0,
+    "properties": {
+      "content_type": "text"
+    }
+  },
+  {
+    "relationship_id": "rel_page_contains_figure_85ad614f1388",
+    "source_id": "page_0f383012bd96",
+    "target_id": "figure_85ad614f1388",
+    "relationship_type": "PAGE_CONTAINS_CONTENT",
+    "weight": 1.0,
+    "properties": {
+      "content_type": "image"
+    }
+  },
+  {
+    "relationship_id": "rel_page_contains_text_7c47eb13ba11",
+    "source_id": "page_a089db2d9658",
+    "target_id": "text_7c47eb13ba11",
+    "relationship_type": "PAGE_CONTAINS_CONTENT",
+    "weight": 1.0,
+    "properties": {
+      "content_type": "text"
+    }
+  },
+  {
+    "relationship_id": "rel_page_contains_figure_80eefe6283c1",
+    "source_id": "page_a089db2d9658",
+    "target_id": "figure_80eefe6283c1",
+    "relationship_type": "PAGE_CONTAINS_CONTENT",
+    "weight": 1.0,
+    "properties": {
+      "content_type": "image"
+    }
+  },
+  {
+    "relationship_id": "rel_page_contains_figure_d05533821aa2",
+    "source_id": "page_a089db2d9658",
+    "target_id": "figure_d05533821aa2",
+    "relationship_type": "PAGE_CONTAINS_CONTENT",
+    "weight": 1.0,
+    "properties": {
+      "content_type": "image"
+    }
+  },
+  {
+    "relationship_id": "rel_page_contains_figure_e36075e00d90",
+    "source_id": "page_a089db2d9658",
+    "target_id": "figure_e36075e00d90",
+    "relationship_type": "PAGE_CONTAINS_CONTENT",
+    "weight": 1.0,
+    "properties": {
+      "content_type": "image"
+    }
+  },
+  {
+    "relationship_id": "rel_page_contains_text_ac7bdb786b77",
+    "source_id": "page_21216eab96cb",
+    "target_id": "text_ac7bdb786b77",
+    "relationship_type": "PAGE_CONTAINS_CONTENT",
+    "weight": 1.0,
+    "properties": {
+      "content_type": "text"
+    }
+  },
+  {
+    "relationship_id": "rel_page_contains_text_5c3fa689e356",
+    "source_id": "page_67fabb8b3e59",
+    "target_id": "text_5c3fa689e356",
+    "relationship_type": "PAGE_CONTAINS_CONTENT",
+    "weight": 1.0,
+    "properties": {
+      "content_type": "text"
+    }
+  },
+  {
+    "relationship_id": "rel_page_contains_text_fa48957c16f4",
+    "source_id": "page_ba5dd672fb79",
+    "target_id": "text_fa48957c16f4",
+    "relationship_type": "PAGE_CONTAINS_CONTENT",
+    "weight": 1.0,
+    "properties": {
+      "content_type": "text"
+    }
+  },
+  {
+    "relationship_id": "rel_page_contains_text_fea2fb2fd04b",
+    "source_id": "page_5e6fdc7dbd16",
+    "target_id": "text_fea2fb2fd04b",
+    "relationship_type": "PAGE_CONTAINS_CONTENT",
+    "weight": 1.0,
+    "properties": {
+      "content_type": "text"
+    }
+  },
+  {
+    "relationship_id": "rel_page_contains_text_801f0b9ef1f9",
+    "source_id": "page_c16e2ae7ef0d",
+    "target_id": "text_801f0b9ef1f9",
+    "relationship_type": "PAGE_CONTAINS_CONTENT",
+    "weight": 1.0,
+    "properties": {
+      "content_type": "text"
+    }
+  },
+  {
+    "relationship_id": "rel_page_contains_text_5d94f95991f1",
+    "source_id": "page_b3b9a6592b48",
+    "target_id": "text_5d94f95991f1",
+    "relationship_type": "PAGE_CONTAINS_CONTENT",
+    "weight": 1.0,
+    "properties": {
+      "content_type": "text"
+    }
+  },
+  {
+    "relationship_id": "rel_page_contains_text_ff86f26e6c41",
+    "source_id": "page_52e5b2bf5d24",
+    "target_id": "text_ff86f26e6c41",
+    "relationship_type": "PAGE_CONTAINS_CONTENT",
+    "weight": 1.0,
+    "properties": {
+      "content_type": "text"
+    }
+  },
+  {
+    "relationship_id": "rel_page_contains_text_485e6073bbc6",
+    "source_id": "page_13f40b41d0dd",
+    "target_id": "text_485e6073bbc6",
+    "relationship_type": "PAGE_CONTAINS_CONTENT",
+    "weight": 1.0,
+    "properties": {
+      "content_type": "text"
+    }
+  },
+  {
+    "relationship_id": "rel_page_contains_text_bb08e822df33",
+    "source_id": "page_c171068c306a",
+    "target_id": "text_bb08e822df33",
+    "relationship_type": "PAGE_CONTAINS_CONTENT",
+    "weight": 1.0,
+    "properties": {
+      "content_type": "text"
+    }
+  },
+  {
+    "relationship_id": "rel_page_contains_text_505e0e2ee12c",
+    "source_id": "page_2fade7adbff7",
+    "target_id": "text_505e0e2ee12c",
+    "relationship_type": "PAGE_CONTAINS_CONTENT",
+    "weight": 1.0,
+    "properties": {
+      "content_type": "text"
+    }
+  },
+  {
+    "relationship_id": "rel_page_contains_figure_4b416b36a8d6",
+    "source_id": "page_2fade7adbff7",
+    "target_id": "figure_4b416b36a8d6",
+    "relationship_type": "PAGE_CONTAINS_CONTENT",
+    "weight": 1.0,
+    "properties": {
+      "content_type": "image"
+    }
+  },
+  {
+    "relationship_id": "rel_page_contains_figure_1beb7c629acf",
+    "source_id": "page_2fade7adbff7",
+    "target_id": "figure_1beb7c629acf",
+    "relationship_type": "PAGE_CONTAINS_CONTENT",
+    "weight": 1.0,
+    "properties": {
+      "content_type": "image"
+    }
+  },
+  {
+    "relationship_id": "rel_page_contains_figure_c6250357b829",
+    "source_id": "page_2fade7adbff7",
+    "target_id": "figure_c6250357b829",
+    "relationship_type": "PAGE_CONTAINS_CONTENT",
+    "weight": 1.0,
+    "properties": {
+      "content_type": "image"
+    }
+  },
+  {
+    "relationship_id": "rel_page_contains_formula_d33b003c4dc9",
+    "source_id": "page_2fade7adbff7",
+    "target_id": "formula_d33b003c4dc9",
+    "relationship_type": "PAGE_CONTAINS_CONTENT",
+    "weight": 1.0,
+    "properties": {
+      "content_type": "equation"
+    }
+  },
+  {
+    "relationship_id": "rel_page_contains_formula_42e1ac60739e",
+    "source_id": "page_2fade7adbff7",
+    "target_id": "formula_42e1ac60739e",
+    "relationship_type": "PAGE_CONTAINS_CONTENT",
+    "weight": 1.0,
+    "properties": {
+      "content_type": "equation"
+    }
+  },
+  {
+    "relationship_id": "rel_page_contains_formula_53b98fe386be",
+    "source_id": "page_2fade7adbff7",
+    "target_id": "formula_53b98fe386be",
+    "relationship_type": "PAGE_CONTAINS_CONTENT",
+    "weight": 1.0,
+    "properties": {
+      "content_type": "equation"
+    }
+  },
+  {
+    "relationship_id": "rel_page_contains_text_4a26f8d1665b",
+    "source_id": "page_2b3fe32d8c65",
+    "target_id": "text_4a26f8d1665b",
+    "relationship_type": "PAGE_CONTAINS_CONTENT",
+    "weight": 1.0,
+    "properties": {
+      "content_type": "text"
+    }
+  },
+  {
+    "relationship_id": "rel_page_contains_figure_a1391f855d1e",
+    "source_id": "page_2b3fe32d8c65",
+    "target_id": "figure_a1391f855d1e",
+    "relationship_type": "PAGE_CONTAINS_CONTENT",
+    "weight": 1.0,
+    "properties": {
+      "content_type": "image"
+    }
+  },
+  {
+    "relationship_id": "rel_page_contains_formula_908d5fa90421",
+    "source_id": "page_2b3fe32d8c65",
+    "target_id": "formula_908d5fa90421",
+    "relationship_type": "PAGE_CONTAINS_CONTENT",
+    "weight": 1.0,
+    "properties": {
+      "content_type": "equation"
+    }
+  },
+  {
+    "relationship_id": "rel_page_contains_text_82c438c4fcd5",
+    "source_id": "page_0fba9583ad7f",
+    "target_id": "text_82c438c4fcd5",
+    "relationship_type": "PAGE_CONTAINS_CONTENT",
+    "weight": 1.0,
+    "properties": {
+      "content_type": "text"
+    }
+  },
+  {
+    "relationship_id": "rel_page_contains_figure_aadcf71cc4f8",
+    "source_id": "page_0fba9583ad7f",
+    "target_id": "figure_aadcf71cc4f8",
+    "relationship_type": "PAGE_CONTAINS_CONTENT",
+    "weight": 1.0,
+    "properties": {
+      "content_type": "image"
+    }
+  },
+  {
+    "relationship_id": "rel_page_contains_figure_7e7b0fedcc36",
+    "source_id": "page_0fba9583ad7f",
+    "target_id": "figure_7e7b0fedcc36",
+    "relationship_type": "PAGE_CONTAINS_CONTENT",
+    "weight": 1.0,
+    "properties": {
+      "content_type": "image"
+    }
+  },
+  {
+    "relationship_id": "rel_page_contains_code_a03f423e40e8",
+    "source_id": "page_0fba9583ad7f",
+    "target_id": "code_a03f423e40e8",
+    "relationship_type": "PAGE_CONTAINS_CONTENT",
+    "weight": 1.0,
+    "properties": {
+      "content_type": "code"
+    }
+  },
+  {
+    "relationship_id": "rel_page_contains_formula_74090a49ae96",
+    "source_id": "page_0fba9583ad7f",
+    "target_id": "formula_74090a49ae96",
+    "relationship_type": "PAGE_CONTAINS_CONTENT",
+    "weight": 1.0,
+    "properties": {
+      "content_type": "equation"
+    }
+  },
+  {
+    "relationship_id": "rel_page_contains_formula_4cbc5b8ae175",
+    "source_id": "page_0fba9583ad7f",
+    "target_id": "formula_4cbc5b8ae175",
+    "relationship_type": "PAGE_CONTAINS_CONTENT",
+    "weight": 1.0,
+    "properties": {
+      "content_type": "equation"
+    }
+  },
+  {
+    "relationship_id": "rel_page_contains_formula_44a85c96cd78",
+    "source_id": "page_0fba9583ad7f",
+    "target_id": "formula_44a85c96cd78",
+    "relationship_type": "PAGE_CONTAINS_CONTENT",
+    "weight": 1.0,
+    "properties": {
+      "content_type": "equation"
+    }
+  },
+  {
+    "relationship_id": "rel_page_contains_formula_35417212d51b",
+    "source_id": "page_0fba9583ad7f",
+    "target_id": "formula_35417212d51b",
+    "relationship_type": "PAGE_CONTAINS_CONTENT",
+    "weight": 1.0,
+    "properties": {
+      "content_type": "equation"
+    }
+  },
+  {
+    "relationship_id": "rel_page_contains_formula_016859596b05",
+    "source_id": "page_0fba9583ad7f",
+    "target_id": "formula_016859596b05",
+    "relationship_type": "PAGE_CONTAINS_CONTENT",
+    "weight": 1.0,
+    "properties": {
+      "content_type": "equation"
+    }
+  },
+  {
+    "relationship_id": "rel_page_contains_formula_e0ad31a697ae",
+    "source_id": "page_0fba9583ad7f",
+    "target_id": "formula_e0ad31a697ae",
+    "relationship_type": "PAGE_CONTAINS_CONTENT",
+    "weight": 1.0,
+    "properties": {
+      "content_type": "equation"
+    }
+  },
+  {
+    "relationship_id": "rel_page_contains_formula_ccdb6073cebb",
+    "source_id": "page_0fba9583ad7f",
+    "target_id": "formula_ccdb6073cebb",
+    "relationship_type": "PAGE_CONTAINS_CONTENT",
+    "weight": 1.0,
+    "properties": {
+      "content_type": "equation"
+    }
+  },
+  {
+    "relationship_id": "rel_page_contains_text_a4378e5f927b",
+    "source_id": "page_0d151fa2004e",
+    "target_id": "text_a4378e5f927b",
+    "relationship_type": "PAGE_CONTAINS_CONTENT",
+    "weight": 1.0,
+    "properties": {
+      "content_type": "text"
+    }
+  },
+  {
+    "relationship_id": "rel_page_contains_figure_9ddd88feb699",
+    "source_id": "page_0d151fa2004e",
+    "target_id": "figure_9ddd88feb699",
+    "relationship_type": "PAGE_CONTAINS_CONTENT",
+    "weight": 1.0,
+    "properties": {
+      "content_type": "image"
+    }
+  },
+  {
+    "relationship_id": "rel_page_contains_code_f45ef1d41584",
+    "source_id": "page_0d151fa2004e",
+    "target_id": "code_f45ef1d41584",
+    "relationship_type": "PAGE_CONTAINS_CONTENT",
+    "weight": 1.0,
+    "properties": {
+      "content_type": "code"
+    }
+  },
+  {
+    "relationship_id": "rel_page_contains_text_045f236f677e",
+    "source_id": "page_36eac0b46d55",
+    "target_id": "text_045f236f677e",
+    "relationship_type": "PAGE_CONTAINS_CONTENT",
+    "weight": 1.0,
+    "properties": {
+      "content_type": "text"
+    }
+  },
+  {
+    "relationship_id": "rel_page_contains_figure_eef19aeeb855",
+    "source_id": "page_36eac0b46d55",
+    "target_id": "figure_eef19aeeb855",
+    "relationship_type": "PAGE_CONTAINS_CONTENT",
+    "weight": 1.0,
+    "properties": {
+      "content_type": "image"
+    }
+  },
+  {
+    "relationship_id": "rel_page_contains_formula_53adba9164cd",
+    "source_id": "page_36eac0b46d55",
+    "target_id": "formula_53adba9164cd",
+    "relationship_type": "PAGE_CONTAINS_CONTENT",
+    "weight": 1.0,
+    "properties": {
+      "content_type": "equation"
+    }
+  },
+  {
+    "relationship_id": "rel_page_contains_formula_1e4e73db5290",
+    "source_id": "page_36eac0b46d55",
+    "target_id": "formula_1e4e73db5290",
+    "relationship_type": "PAGE_CONTAINS_CONTENT",
+    "weight": 1.0,
+    "properties": {
+      "content_type": "equation"
+    }
+  },
+  {
+    "relationship_id": "rel_page_contains_text_7be3faea9b96",
+    "source_id": "page_9efc55c7aa9a",
+    "target_id": "text_7be3faea9b96",
+    "relationship_type": "PAGE_CONTAINS_CONTENT",
+    "weight": 1.0,
+    "properties": {
+      "content_type": "text"
+    }
+  },
+  {
+    "relationship_id": "rel_page_contains_figure_6390de163df5",
+    "source_id": "page_9efc55c7aa9a",
+    "target_id": "figure_6390de163df5",
+    "relationship_type": "PAGE_CONTAINS_CONTENT",
+    "weight": 1.0,
+    "properties": {
+      "content_type": "image"
+    }
+  },
+  {
+    "relationship_id": "rel_page_contains_formula_b117bed502cd",
+    "source_id": "page_9efc55c7aa9a",
+    "target_id": "formula_b117bed502cd",
+    "relationship_type": "PAGE_CONTAINS_CONTENT",
+    "weight": 1.0,
+    "properties": {
+      "content_type": "equation"
+    }
+  },
+  {
+    "relationship_id": "rel_page_contains_formula_4624c178541f",
+    "source_id": "page_9efc55c7aa9a",
+    "target_id": "formula_4624c178541f",
+    "relationship_type": "PAGE_CONTAINS_CONTENT",
+    "weight": 1.0,
+    "properties": {
+      "content_type": "equation"
+    }
+  },
+  {
+    "relationship_id": "rel_page_contains_text_73747b5d7087",
+    "source_id": "page_9a51034a1a86",
+    "target_id": "text_73747b5d7087",
+    "relationship_type": "PAGE_CONTAINS_CONTENT",
+    "weight": 1.0,
+    "properties": {
+      "content_type": "text"
+    }
+  },
+  {
+    "relationship_id": "rel_page_contains_figure_53ece13e9e68",
+    "source_id": "page_9a51034a1a86",
+    "target_id": "figure_53ece13e9e68",
+    "relationship_type": "PAGE_CONTAINS_CONTENT",
+    "weight": 1.0,
+    "properties": {
+      "content_type": "image"
+    }
+  },
+  {
+    "relationship_id": "rel_page_contains_text_2a05af6639d4",
+    "source_id": "page_d1430d88b6c5",
+    "target_id": "text_2a05af6639d4",
+    "relationship_type": "PAGE_CONTAINS_CONTENT",
+    "weight": 1.0,
+    "properties": {
+      "content_type": "text"
+    }
+  },
+  {
+    "relationship_id": "rel_page_contains_figure_a8acd1ce2599",
+    "source_id": "page_d1430d88b6c5",
+    "target_id": "figure_a8acd1ce2599",
+    "relationship_type": "PAGE_CONTAINS_CONTENT",
+    "weight": 1.0,
+    "properties": {
+      "content_type": "image"
+    }
+  },
+  {
+    "relationship_id": "rel_page_contains_figure_01ee6a498fd0",
+    "source_id": "page_d1430d88b6c5",
+    "target_id": "figure_01ee6a498fd0",
+    "relationship_type": "PAGE_CONTAINS_CONTENT",
+    "weight": 1.0,
+    "properties": {
+      "content_type": "image"
+    }
+  },
+  {
+    "relationship_id": "rel_page_contains_formula_7009b4d71bbe",
+    "source_id": "page_d1430d88b6c5",
+    "target_id": "formula_7009b4d71bbe",
+    "relationship_type": "PAGE_CONTAINS_CONTENT",
+    "weight": 1.0,
+    "properties": {
+      "content_type": "equation"
+    }
+  },
+  {
+    "relationship_id": "rel_page_contains_formula_c2cf259ab91c",
+    "source_id": "page_d1430d88b6c5",
+    "target_id": "formula_c2cf259ab91c",
+    "relationship_type": "PAGE_CONTAINS_CONTENT",
+    "weight": 1.0,
+    "properties": {
+      "content_type": "equation"
+    }
+  },
+  {
+    "relationship_id": "rel_page_contains_formula_7672edebe612",
+    "source_id": "page_d1430d88b6c5",
+    "target_id": "formula_7672edebe612",
+    "relationship_type": "PAGE_CONTAINS_CONTENT",
+    "weight": 1.0,
+    "properties": {
+      "content_type": "equation"
+    }
+  },
+  {
+    "relationship_id": "rel_page_contains_formula_a7af8a8f5ee2",
+    "source_id": "page_d1430d88b6c5",
+    "target_id": "formula_a7af8a8f5ee2",
+    "relationship_type": "PAGE_CONTAINS_CONTENT",
+    "weight": 1.0,
+    "properties": {
+      "content_type": "equation"
+    }
+  },
+  {
+    "relationship_id": "rel_page_contains_text_abe8c756c1b3",
+    "source_id": "page_dea3fd826c43",
+    "target_id": "text_abe8c756c1b3",
+    "relationship_type": "PAGE_CONTAINS_CONTENT",
+    "weight": 1.0,
+    "properties": {
+      "content_type": "text"
+    }
+  },
+  {
+    "relationship_id": "rel_page_contains_figure_bd9592e962b8",
+    "source_id": "page_dea3fd826c43",
+    "target_id": "figure_bd9592e962b8",
+    "relationship_type": "PAGE_CONTAINS_CONTENT",
+    "weight": 1.0,
+    "properties": {
+      "content_type": "image"
+    }
+  },
+  {
+    "relationship_id": "rel_page_contains_figure_25254ae0653e",
+    "source_id": "page_dea3fd826c43",
+    "target_id": "figure_25254ae0653e",
+    "relationship_type": "PAGE_CONTAINS_CONTENT",
+    "weight": 1.0,
+    "properties": {
+      "content_type": "image"
+    }
+  },
+  {
+    "relationship_id": "rel_page_contains_formula_cf78e5356845",
+    "source_id": "page_dea3fd826c43",
+    "target_id": "formula_cf78e5356845",
+    "relationship_type": "PAGE_CONTAINS_CONTENT",
+    "weight": 1.0,
+    "properties": {
+      "content_type": "equation"
+    }
+  },
+  {
+    "relationship_id": "rel_page_contains_formula_c88c37a9bb0a",
+    "source_id": "page_dea3fd826c43",
+    "target_id": "formula_c88c37a9bb0a",
+    "relationship_type": "PAGE_CONTAINS_CONTENT",
+    "weight": 1.0,
+    "properties": {
+      "content_type": "equation"
+    }
+  },
+  {
+    "relationship_id": "rel_page_contains_formula_ac22d0ca0908",
+    "source_id": "page_dea3fd826c43",
+    "target_id": "formula_ac22d0ca0908",
+    "relationship_type": "PAGE_CONTAINS_CONTENT",
+    "weight": 1.0,
+    "properties": {
+      "content_type": "equation"
+    }
+  },
+  {
+    "relationship_id": "rel_page_contains_formula_be582015b0ef",
+    "source_id": "page_dea3fd826c43",
+    "target_id": "formula_be582015b0ef",
+    "relationship_type": "PAGE_CONTAINS_CONTENT",
+    "weight": 1.0,
+    "properties": {
+      "content_type": "equation"
+    }
+  },
+  {
+    "relationship_id": "rel_page_contains_formula_9a965a8c56ad",
+    "source_id": "page_dea3fd826c43",
+    "target_id": "formula_9a965a8c56ad",
+    "relationship_type": "PAGE_CONTAINS_CONTENT",
+    "weight": 1.0,
+    "properties": {
+      "content_type": "equation"
+    }
+  },
+  {
+    "relationship_id": "rel_page_contains_formula_c148962e4982",
+    "source_id": "page_dea3fd826c43",
+    "target_id": "formula_c148962e4982",
+    "relationship_type": "PAGE_CONTAINS_CONTENT",
+    "weight": 1.0,
+    "properties": {
+      "content_type": "equation"
+    }
+  },
+  {
+    "relationship_id": "rel_page_contains_formula_0f25fb51ec66",
+    "source_id": "page_dea3fd826c43",
+    "target_id": "formula_0f25fb51ec66",
+    "relationship_type": "PAGE_CONTAINS_CONTENT",
+    "weight": 1.0,
+    "properties": {
+      "content_type": "equation"
+    }
+  },
+  {
+    "relationship_id": "rel_page_contains_formula_1089d9be6861",
+    "source_id": "page_dea3fd826c43",
+    "target_id": "formula_1089d9be6861",
+    "relationship_type": "PAGE_CONTAINS_CONTENT",
+    "weight": 1.0,
+    "properties": {
+      "content_type": "equation"
+    }
+  },
+  {
+    "relationship_id": "rel_page_contains_formula_bfae83123edb",
+    "source_id": "page_dea3fd826c43",
+    "target_id": "formula_bfae83123edb",
+    "relationship_type": "PAGE_CONTAINS_CONTENT",
+    "weight": 1.0,
+    "properties": {
+      "content_type": "equation"
+    }
+  },
+  {
+    "relationship_id": "rel_page_contains_text_b4554470063f",
+    "source_id": "page_e805f09f441d",
+    "target_id": "text_b4554470063f",
+    "relationship_type": "PAGE_CONTAINS_CONTENT",
+    "weight": 1.0,
+    "properties": {
+      "content_type": "text"
+    }
+  },
+  {
+    "relationship_id": "rel_page_contains_figure_ef9d04a18a5f",
+    "source_id": "page_e805f09f441d",
+    "target_id": "figure_ef9d04a18a5f",
+    "relationship_type": "PAGE_CONTAINS_CONTENT",
+    "weight": 1.0,
+    "properties": {
+      "content_type": "image"
+    }
+  },
+  {
+    "relationship_id": "rel_page_contains_figure_32503c638133",
+    "source_id": "page_e805f09f441d",
+    "target_id": "figure_32503c638133",
+    "relationship_type": "PAGE_CONTAINS_CONTENT",
+    "weight": 1.0,
+    "properties": {
+      "content_type": "image"
+    }
+  },
+  {
+    "relationship_id": "rel_page_contains_formula_1921cc399724",
+    "source_id": "page_e805f09f441d",
+    "target_id": "formula_1921cc399724",
+    "relationship_type": "PAGE_CONTAINS_CONTENT",
+    "weight": 1.0,
+    "properties": {
+      "content_type": "equation"
+    }
+  },
+  {
+    "relationship_id": "rel_page_contains_formula_3901af95bb06",
+    "source_id": "page_e805f09f441d",
+    "target_id": "formula_3901af95bb06",
+    "relationship_type": "PAGE_CONTAINS_CONTENT",
+    "weight": 1.0,
+    "properties": {
+      "content_type": "equation"
+    }
+  },
+  {
+    "relationship_id": "rel_page_contains_formula_3bd684298c9d",
+    "source_id": "page_e805f09f441d",
+    "target_id": "formula_3bd684298c9d",
+    "relationship_type": "PAGE_CONTAINS_CONTENT",
+    "weight": 1.0,
+    "properties": {
+      "content_type": "equation"
+    }
+  },
+  {
+    "relationship_id": "rel_page_contains_formula_bd8f47fc68e3",
+    "source_id": "page_e805f09f441d",
+    "target_id": "formula_bd8f47fc68e3",
+    "relationship_type": "PAGE_CONTAINS_CONTENT",
+    "weight": 1.0,
+    "properties": {
+      "content_type": "equation"
+    }
+  },
+  {
+    "relationship_id": "rel_page_contains_text_e53a2160dbc2",
+    "source_id": "page_f0eccb8beaaa",
+    "target_id": "text_e53a2160dbc2",
+    "relationship_type": "PAGE_CONTAINS_CONTENT",
+    "weight": 1.0,
+    "properties": {
+      "content_type": "text"
+    }
+  },
+  {
+    "relationship_id": "rel_page_contains_figure_4cbb537aa2e2",
+    "source_id": "page_f0eccb8beaaa",
+    "target_id": "figure_4cbb537aa2e2",
+    "relationship_type": "PAGE_CONTAINS_CONTENT",
+    "weight": 1.0,
+    "properties": {
+      "content_type": "image"
+    }
+  },
+  {
+    "relationship_id": "rel_page_contains_figure_c03fda417402",
+    "source_id": "page_f0eccb8beaaa",
+    "target_id": "figure_c03fda417402",
+    "relationship_type": "PAGE_CONTAINS_CONTENT",
+    "weight": 1.0,
+    "properties": {
+      "content_type": "image"
+    }
+  },
+  {
+    "relationship_id": "rel_page_contains_formula_761f0113d555",
+    "source_id": "page_f0eccb8beaaa",
+    "target_id": "formula_761f0113d555",
+    "relationship_type": "PAGE_CONTAINS_CONTENT",
+    "weight": 1.0,
+    "properties": {
+      "content_type": "equation"
+    }
+  },
+  {
+    "relationship_id": "rel_page_contains_formula_adc3e78d0a5d",
+    "source_id": "page_f0eccb8beaaa",
+    "target_id": "formula_adc3e78d0a5d",
+    "relationship_type": "PAGE_CONTAINS_CONTENT",
+    "weight": 1.0,
+    "properties": {
+      "content_type": "equation"
+    }
+  },
+  {
+    "relationship_id": "rel_page_contains_formula_83288fafd334",
+    "source_id": "page_f0eccb8beaaa",
+    "target_id": "formula_83288fafd334",
+    "relationship_type": "PAGE_CONTAINS_CONTENT",
+    "weight": 1.0,
+    "properties": {
+      "content_type": "equation"
+    }
+  },
+  {
+    "relationship_id": "rel_page_contains_formula_4991ac21b891",
+    "source_id": "page_f0eccb8beaaa",
+    "target_id": "formula_4991ac21b891",
+    "relationship_type": "PAGE_CONTAINS_CONTENT",
+    "weight": 1.0,
+    "properties": {
+      "content_type": "equation"
+    }
+  },
+  {
+    "relationship_id": "rel_page_contains_formula_fd73177307ef",
+    "source_id": "page_f0eccb8beaaa",
+    "target_id": "formula_fd73177307ef",
+    "relationship_type": "PAGE_CONTAINS_CONTENT",
+    "weight": 1.0,
+    "properties": {
+      "content_type": "equation"
+    }
+  },
+  {
+    "relationship_id": "rel_page_contains_formula_3070d98f773c",
+    "source_id": "page_f0eccb8beaaa",
+    "target_id": "formula_3070d98f773c",
+    "relationship_type": "PAGE_CONTAINS_CONTENT",
+    "weight": 1.0,
+    "properties": {
+      "content_type": "equation"
+    }
+  },
+  {
+    "relationship_id": "rel_page_contains_text_909bd113c6c6",
+    "source_id": "page_d20342354a94",
+    "target_id": "text_909bd113c6c6",
+    "relationship_type": "PAGE_CONTAINS_CONTENT",
+    "weight": 1.0,
+    "properties": {
+      "content_type": "text"
+    }
+  },
+  {
+    "relationship_id": "rel_page_contains_figure_c55eac6890ca",
+    "source_id": "page_d20342354a94",
+    "target_id": "figure_c55eac6890ca",
+    "relationship_type": "PAGE_CONTAINS_CONTENT",
+    "weight": 1.0,
+    "properties": {
+      "content_type": "image"
+    }
+  },
+  {
+    "relationship_id": "rel_page_contains_figure_ab7f638bf0f1",
+    "source_id": "page_d20342354a94",
+    "target_id": "figure_ab7f638bf0f1",
+    "relationship_type": "PAGE_CONTAINS_CONTENT",
+    "weight": 1.0,
+    "properties": {
+      "content_type": "image"
+    }
+  },
+  {
+    "relationship_id": "rel_page_contains_figure_fa8bed530a8e",
+    "source_id": "page_d20342354a94",
+    "target_id": "figure_fa8bed530a8e",
+    "relationship_type": "PAGE_CONTAINS_CONTENT",
+    "weight": 1.0,
+    "properties": {
+      "content_type": "image"
+    }
+  },
+  {
+    "relationship_id": "rel_page_contains_figure_1d9347a4e8cb",
+    "source_id": "page_d20342354a94",
+    "target_id": "figure_1d9347a4e8cb",
+    "relationship_type": "PAGE_CONTAINS_CONTENT",
+    "weight": 1.0,
+    "properties": {
+      "content_type": "image"
+    }
+  },
+  {
+    "relationship_id": "rel_page_contains_formula_9edb56a90d30",
+    "source_id": "page_d20342354a94",
+    "target_id": "formula_9edb56a90d30",
+    "relationship_type": "PAGE_CONTAINS_CONTENT",
+    "weight": 1.0,
+    "properties": {
+      "content_type": "equation"
+    }
+  },
+  {
+    "relationship_id": "rel_page_contains_formula_e9aebb5ce93e",
+    "source_id": "page_d20342354a94",
+    "target_id": "formula_e9aebb5ce93e",
+    "relationship_type": "PAGE_CONTAINS_CONTENT",
+    "weight": 1.0,
+    "properties": {
+      "content_type": "equation"
+    }
+  },
+  {
+    "relationship_id": "rel_page_contains_formula_5f636435abdc",
+    "source_id": "page_d20342354a94",
+    "target_id": "formula_5f636435abdc",
+    "relationship_type": "PAGE_CONTAINS_CONTENT",
+    "weight": 1.0,
+    "properties": {
+      "content_type": "equation"
+    }
+  },
+  {
+    "relationship_id": "rel_page_contains_formula_3e7669280470",
+    "source_id": "page_d20342354a94",
+    "target_id": "formula_3e7669280470",
+    "relationship_type": "PAGE_CONTAINS_CONTENT",
+    "weight": 1.0,
+    "properties": {
+      "content_type": "equation"
+    }
+  },
+  {
+    "relationship_id": "rel_page_contains_formula_8eb1cdc95f23",
+    "source_id": "page_d20342354a94",
+    "target_id": "formula_8eb1cdc95f23",
+    "relationship_type": "PAGE_CONTAINS_CONTENT",
+    "weight": 1.0,
+    "properties": {
+      "content_type": "equation"
+    }
+  },
+  {
+    "relationship_id": "rel_page_contains_formula_ff6010aba8bd",
+    "source_id": "page_d20342354a94",
+    "target_id": "formula_ff6010aba8bd",
+    "relationship_type": "PAGE_CONTAINS_CONTENT",
+    "weight": 1.0,
+    "properties": {
+      "content_type": "equation"
+    }
+  },
+  {
+    "relationship_id": "rel_page_contains_formula_a6990ce808af",
+    "source_id": "page_d20342354a94",
+    "target_id": "formula_a6990ce808af",
+    "relationship_type": "PAGE_CONTAINS_CONTENT",
+    "weight": 1.0,
+    "properties": {
+      "content_type": "equation"
+    }
+  },
+  {
+    "relationship_id": "rel_page_contains_formula_cc4d106c8d65",
+    "source_id": "page_d20342354a94",
+    "target_id": "formula_cc4d106c8d65",
+    "relationship_type": "PAGE_CONTAINS_CONTENT",
+    "weight": 1.0,
+    "properties": {
+      "content_type": "equation"
+    }
+  },
+  {
+    "relationship_id": "rel_page_contains_formula_99c8a5bcfb17",
+    "source_id": "page_d20342354a94",
+    "target_id": "formula_99c8a5bcfb17",
+    "relationship_type": "PAGE_CONTAINS_CONTENT",
+    "weight": 1.0,
+    "properties": {
+      "content_type": "equation"
+    }
+  },
+  {
+    "relationship_id": "rel_page_contains_text_603dce6b8ba6",
+    "source_id": "page_5917a0ab2446",
+    "target_id": "text_603dce6b8ba6",
+    "relationship_type": "PAGE_CONTAINS_CONTENT",
+    "weight": 1.0,
+    "properties": {
+      "content_type": "text"
+    }
+  },
+  {
+    "relationship_id": "rel_page_contains_figure_99433fd84daf",
+    "source_id": "page_5917a0ab2446",
+    "target_id": "figure_99433fd84daf",
+    "relationship_type": "PAGE_CONTAINS_CONTENT",
+    "weight": 1.0,
+    "properties": {
+      "content_type": "image"
+    }
+  },
+  {
+    "relationship_id": "rel_page_contains_formula_40df65180ac3",
+    "source_id": "page_5917a0ab2446",
+    "target_id": "formula_40df65180ac3",
+    "relationship_type": "PAGE_CONTAINS_CONTENT",
+    "weight": 1.0,
+    "properties": {
+      "content_type": "equation"
+    }
+  },
+  {
+    "relationship_id": "rel_page_contains_formula_918233f1c02c",
+    "source_id": "page_5917a0ab2446",
+    "target_id": "formula_918233f1c02c",
+    "relationship_type": "PAGE_CONTAINS_CONTENT",
+    "weight": 1.0,
+    "properties": {
+      "content_type": "equation"
+    }
+  },
+  {
+    "relationship_id": "rel_page_contains_text_debb41c7c8e1",
+    "source_id": "page_5873b21c7a75",
+    "target_id": "text_debb41c7c8e1",
+    "relationship_type": "PAGE_CONTAINS_CONTENT",
+    "weight": 1.0,
+    "properties": {
+      "content_type": "text"
+    }
+  }
+]

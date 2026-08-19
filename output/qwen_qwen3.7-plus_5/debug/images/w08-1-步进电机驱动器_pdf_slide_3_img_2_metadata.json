@@ -1,0 +1,33 @@
+{
+  "original_path": "output/qwen_qwen3.7-plus_5/debug/images/w08-1-步进电机驱动器_p3_img3.png",
+  "enhanced_path": "output/qwen_qwen3.7-plus_5/debug/images/w08-1-步进电机驱动器_p3_img3_enhanced.png",
+  "description": "图片展示了“§3 步进电机原理”的教学内容，主要包含文字说明、电机运转示意图和状态表格。\n\n**文字说明部分**：\n标题下方列出了“驱动方式”的两个要点：\n1.  依照一定次序，改变A相和B相的电流方向。\n2.  相位相差 90°。\n\n**示意图部分**：\n中间展示了8幅步进电机的截面原理图，编号从1到8，分两行排列。\n-   每幅图包含一个圆形的定子，周围分布着四个线圈，分别标记为 $A$、$\\bar{A}$、$B$、$\\bar{B}$。\n-   中心是一个矩形转子，标有 $N$ 极和 $S$ 极。\n-   线圈旁边标注了红色的 $S/N$ 或蓝色的 $N/S$，表示通电后产生的磁极。\n-   随着编号1至8的顺序，转子呈现顺时针旋转的状态，展示了不同通电组合下转子的位置变化（例如从图1的竖直位置转到图3的水平位置）。\n\n**表格部分**：\n右侧有一个三列的表格，表头为“phase”、“A相”、“B相”。表格列出了8个相位（1-8）对应的电流状态，其中“+”、“-”代表电流方向，“×”代表不通电。具体数据如下：\n-   **1**: A相 +, B相 ×\n-   **2**: A相 +, B相 +\n-   **3**: A相 ×, B相 +\n-   **4**: A相 -, B相 +\n-   **5**: A相 -, B相 ×\n-   **6**: A相 -, B相 -\n-   **7**: A相 ×, B相 -\n-   **8**: A相 +, B相 -\n表格行背景色在深粉色和浅粉色之间交替，对应单相通电和双相通电的切换过程（八拍驱动）。",
+  "metadata": {
+    "generation": {
+      "method": "qwen_api",
+      "backend": "api",
+      "provider": "qwen",
+      "model": "qwen3.7-plus",
+      "status": "success",
+      "api_error": null
+    },
+    "review": {
+      "required": false,
+      "status": null,
+      "reason": null,
+      "course_relevant": true
+    }
+  },
+  "error": null,
+  "method": "qwen_api",
+  "backend": "api",
+  "provider": "qwen",
+  "model": "qwen3.7-plus",
+  "status": "success",
+  "api_error": null,
+  "indexable": true,
+  "review_required": false,
+  "review_reason": null,
+  "review_status": null,
+  "course_relevant": true
+}

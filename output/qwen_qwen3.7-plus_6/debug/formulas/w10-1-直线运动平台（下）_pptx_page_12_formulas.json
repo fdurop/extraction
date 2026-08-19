@@ -1,0 +1,373 @@
+{
+  "page": 12,
+  "formula_count": 7,
+  "accepted_count": 7,
+  "review_count": 0,
+  "formulas": [
+    {
+      "source_image": "output/qwen_qwen3.7-plus_6/debug/images/w10-1-直线运动平台（下）_slide_12_img_1.png",
+      "source_type": "image_vlm",
+      "extraction_method": "qwen_api_formula",
+      "backend": "api",
+      "provider": "qwen",
+      "model": "qwen3.7-plus",
+      "image_index": 0,
+      "raw_response": "{\n  \"has_formula\": true,\n  \"formulas\": [\n    {\n      \"latex\": \"\\\\ddot{\\\\theta}(t) + 2\\\\omega_n\\\\zeta\\\\dot{\\\\theta}(t) + \\\\omega_n^2\\\\theta(t) = \\\\frac{\\\\ddot{u}_s(t)}{l}\",\n      \"name\": \"单摆运动微分方程\",\n      \"meaning\": \"描述受迫阻尼单摆的角加速度、角速度与转角关系的二阶线性微分方程\",\n      \"symbols\": [\n        {\n          \"symbol\": \"\\\\theta(t)\",\n          \"meaning\": \"摆角（随时间变化的函数）\",\n          \"unit\": \"rad\"\n        },\n        {\n          \"symbol\": \"\\\\ddot{\\\\theta}(t)\",\n          \"meaning\": \"角加速度\",\n          \"unit\": \"rad/s²\"\n        },\n        {\n          \"symbol\": \"\\\\dot{\\\\theta}(t)\",\n          \"meaning\": \"角速度\",\n          \"unit\": \"rad/s\"\n        },\n        {\n          \"symbol\": \"\\\\omega_n\",\n          \"meaning\": \"固有频率\",\n          \"unit\": \"rad/s\"\n        },\n        {\n          \"symbol\": \"\\\\zeta\",\n          \"meaning\": \"阻尼比\",\n          \"unit\": null\n        },\n        {\n          \"symbol\": \"\\\\ddot{u}_s(t)\",\n          \"meaning\": \"支座水平加速度激励\",\n          \"unit\": \"m/s²\"\n        },\n        {\n          \"symbol\": \"l\",\n          \"meaning\": \"摆长\",\n          \"unit\": \"m\"\n        }\n      ],\n      \"conditions\": [],\n      \"uncertain_symbols\": [],\n      \"confidence\": 0.98\n    },\n    {\n      \"latex\": \"\\\\omega_n = \\\\sqrt{\\\\frac{g}{l}}\",\n      \"name\": \"固有频率公式\",\n      \"meaning\": \"无阻尼单摆的固有角频率表达式\",\n      \"symbols\": [\n        {\n          \"symbol\": \"\\\\omega_n\",\n          \"meaning\": \"固有频率\",\n          \"unit\": \"rad/s\"\n        },\n        {\n          \"symbol\": \"g\",\n          \"meaning\": \"重力加速度\",\n          \"unit\": \"m/s²\"\n        },\n        {\n          \"symbol\": \"l\",\n          \"meaning\": \"摆长\",\n          \"unit\": \"m\"\n        }\n      ],\n      \"conditions\": [],\n      \"uncertain_symbols\": [],\n      \"confidence\": 1.0\n    },\n    {\n      \"latex\": \"\\\\zeta = \\\\frac{c}{2m\\\\sqrt{gl}}\",\n      \"name\": \"阻尼比定义式\",\n      \"meaning\": \"阻尼比与阻尼系数、质量、重力加速度和摆长的关系\",\n      \"symbols\": [\n        {\n          \"symbol\": \"\\\\zeta\",\n          \"meaning\": \"阻尼比\",\n          \"unit\": null\n        },\n        {\n          \"symbol\": \"c\",\n          \"meaning\": \"阻尼系数\",\n          \"unit\": \"N·s/m\"\n        },\n        {\n          \"symbol\": \"m\",\n          \"meaning\": \"摆锤质量\",\n          \"unit\": \"kg\"\n        },\n        {\n          \"symbol\": \"g\",\n          \"meaning\": \"重力加速度\",\n          \"unit\": \"m/s²\"\n        },\n        {\n          \"symbol\": \"l\",\n          \"meaning\": \"摆长\",\n          \"unit\": \"m\"\n        }\n      ],\n      \"conditions\": [\n        \"c 为阻尼\"\n      ],\n      \"uncertain_symbols\": [],\n      \"confidence\": 0.97\n    }\n  ]\n}",
+      "parse_error": null,
+      "partial_response": false,
+      "review_reason": null,
+      "latex": "\\ddot{\\theta}(t) + 2\\omega_n\\zeta\\dot{\\theta}(t) + \\omega_n^2\\theta(t) = \\frac{\\ddot{u}_s(t)}{l}",
+      "name": "单摆运动微分方程",
+      "meaning": "描述受迫阻尼单摆的角加速度、角速度与转角关系的二阶线性微分方程",
+      "symbols": [
+        {
+          "symbol": "\\theta(t)",
+          "meaning": "摆角（随时间变化的函数）",
+          "unit": "rad"
+        },
+        {
+          "symbol": "\\ddot{\\theta}(t)",
+          "meaning": "角加速度",
+          "unit": "rad/s²"
+        },
+        {
+          "symbol": "\\dot{\\theta}(t)",
+          "meaning": "角速度",
+          "unit": "rad/s"
+        },
+        {
+          "symbol": "\\omega_n",
+          "meaning": "固有频率",
+          "unit": "rad/s"
+        },
+        {
+          "symbol": "\\zeta",
+          "meaning": "阻尼比",
+          "unit": null
+        },
+        {
+          "symbol": "\\ddot{u}_s(t)",
+          "meaning": "支座水平加速度激励",
+          "unit": "m/s²"
+        },
+        {
+          "symbol": "l",
+          "meaning": "摆长",
+          "unit": "m"
+        }
+      ],
+      "conditions": [],
+      "uncertain_symbols": [],
+      "confidence": 0.98,
+      "plain_text": "\\ddot{\\theta}(t) + 2\\omega_n\\zeta\\dot{\\theta}(t) + \\omega_n^2\\theta(t) = \\frac{\\ddot{u}_s(t)}{l}",
+      "description": "描述受迫阻尼单摆的角加速度、角速度与转角关系的二阶线性微分方程",
+      "validation_issues": [],
+      "validation_status": "passed",
+      "review_required": false,
+      "review_status": null,
+      "indexable": true,
+      "formula_id": "w10-1-直线运动平台（下）_pptx_page_12_formula_1",
+      "page_num": 12
+    },
+    {
+      "source_image": "output/qwen_qwen3.7-plus_6/debug/images/w10-1-直线运动平台（下）_slide_12_img_1.png",
+      "source_type": "image_vlm",
+      "extraction_method": "qwen_api_formula",
+      "backend": "api",
+      "provider": "qwen",
+      "model": "qwen3.7-plus",
+      "image_index": 0,
+      "raw_response": "{\n  \"has_formula\": true,\n  \"formulas\": [\n    {\n      \"latex\": \"\\\\ddot{\\\\theta}(t) + 2\\\\omega_n\\\\zeta\\\\dot{\\\\theta}(t) + \\\\omega_n^2\\\\theta(t) = \\\\frac{\\\\ddot{u}_s(t)}{l}\",\n      \"name\": \"单摆运动微分方程\",\n      \"meaning\": \"描述受迫阻尼单摆的角加速度、角速度与转角关系的二阶线性微分方程\",\n      \"symbols\": [\n        {\n          \"symbol\": \"\\\\theta(t)\",\n          \"meaning\": \"摆角（随时间变化的函数）\",\n          \"unit\": \"rad\"\n        },\n        {\n          \"symbol\": \"\\\\ddot{\\\\theta}(t)\",\n          \"meaning\": \"角加速度\",\n          \"unit\": \"rad/s²\"\n        },\n        {\n          \"symbol\": \"\\\\dot{\\\\theta}(t)\",\n          \"meaning\": \"角速度\",\n          \"unit\": \"rad/s\"\n        },\n        {\n          \"symbol\": \"\\\\omega_n\",\n          \"meaning\": \"固有频率\",\n          \"unit\": \"rad/s\"\n        },\n        {\n          \"symbol\": \"\\\\zeta\",\n          \"meaning\": \"阻尼比\",\n          \"unit\": null\n        },\n        {\n          \"symbol\": \"\\\\ddot{u}_s(t)\",\n          \"meaning\": \"支座水平加速度激励\",\n          \"unit\": \"m/s²\"\n        },\n        {\n          \"symbol\": \"l\",\n          \"meaning\": \"摆长\",\n          \"unit\": \"m\"\n        }\n      ],\n      \"conditions\": [],\n      \"uncertain_symbols\": [],\n      \"confidence\": 0.98\n    },\n    {\n      \"latex\": \"\\\\omega_n = \\\\sqrt{\\\\frac{g}{l}}\",\n      \"name\": \"固有频率公式\",\n      \"meaning\": \"无阻尼单摆的固有角频率表达式\",\n      \"symbols\": [\n        {\n          \"symbol\": \"\\\\omega_n\",\n          \"meaning\": \"固有频率\",\n          \"unit\": \"rad/s\"\n        },\n        {\n          \"symbol\": \"g\",\n          \"meaning\": \"重力加速度\",\n          \"unit\": \"m/s²\"\n        },\n        {\n          \"symbol\": \"l\",\n          \"meaning\": \"摆长\",\n          \"unit\": \"m\"\n        }\n      ],\n      \"conditions\": [],\n      \"uncertain_symbols\": [],\n      \"confidence\": 1.0\n    },\n    {\n      \"latex\": \"\\\\zeta = \\\\frac{c}{2m\\\\sqrt{gl}}\",\n      \"name\": \"阻尼比定义式\",\n      \"meaning\": \"阻尼比与阻尼系数、质量、重力加速度和摆长的关系\",\n      \"symbols\": [\n        {\n          \"symbol\": \"\\\\zeta\",\n          \"meaning\": \"阻尼比\",\n          \"unit\": null\n        },\n        {\n          \"symbol\": \"c\",\n          \"meaning\": \"阻尼系数\",\n          \"unit\": \"N·s/m\"\n        },\n        {\n          \"symbol\": \"m\",\n          \"meaning\": \"摆锤质量\",\n          \"unit\": \"kg\"\n        },\n        {\n          \"symbol\": \"g\",\n          \"meaning\": \"重力加速度\",\n          \"unit\": \"m/s²\"\n        },\n        {\n          \"symbol\": \"l\",\n          \"meaning\": \"摆长\",\n          \"unit\": \"m\"\n        }\n      ],\n      \"conditions\": [\n        \"c 为阻尼\"\n      ],\n      \"uncertain_symbols\": [],\n      \"confidence\": 0.97\n    }\n  ]\n}",
+      "parse_error": null,
+      "partial_response": false,
+      "review_reason": null,
+      "latex": "\\omega_n = \\sqrt{\\frac{g}{l}}",
+      "name": "固有频率公式",
+      "meaning": "无阻尼单摆的固有角频率表达式",
+      "symbols": [
+        {
+          "symbol": "\\omega_n",
+          "meaning": "固有频率",
+          "unit": "rad/s"
+        },
+        {
+          "symbol": "g",
+          "meaning": "重力加速度",
+          "unit": "m/s²"
+        },
+        {
+          "symbol": "l",
+          "meaning": "摆长",
+          "unit": "m"
+        }
+      ],
+      "conditions": [],
+      "uncertain_symbols": [],
+      "confidence": 1.0,
+      "plain_text": "\\omega_n = \\sqrt{\\frac{g}{l}}",
+      "description": "无阻尼单摆的固有角频率表达式",
+      "validation_issues": [],
+      "validation_status": "passed",
+      "review_required": false,
+      "review_status": null,
+      "indexable": true,
+      "formula_id": "w10-1-直线运动平台（下）_pptx_page_12_formula_2",
+      "page_num": 12
+    },
+    {
+      "source_image": "output/qwen_qwen3.7-plus_6/debug/images/w10-1-直线运动平台（下）_slide_12_img_1.png",
+      "source_type": "image_vlm",
+      "extraction_method": "qwen_api_formula",
+      "backend": "api",
+      "provider": "qwen",
+      "model": "qwen3.7-plus",
+      "image_index": 0,
+      "raw_response": "{\n  \"has_formula\": true,\n  \"formulas\": [\n    {\n      \"latex\": \"\\\\ddot{\\\\theta}(t) + 2\\\\omega_n\\\\zeta\\\\dot{\\\\theta}(t) + \\\\omega_n^2\\\\theta(t) = \\\\frac{\\\\ddot{u}_s(t)}{l}\",\n      \"name\": \"单摆运动微分方程\",\n      \"meaning\": \"描述受迫阻尼单摆的角加速度、角速度与转角关系的二阶线性微分方程\",\n      \"symbols\": [\n        {\n          \"symbol\": \"\\\\theta(t)\",\n          \"meaning\": \"摆角（随时间变化的函数）\",\n          \"unit\": \"rad\"\n        },\n        {\n          \"symbol\": \"\\\\ddot{\\\\theta}(t)\",\n          \"meaning\": \"角加速度\",\n          \"unit\": \"rad/s²\"\n        },\n        {\n          \"symbol\": \"\\\\dot{\\\\theta}(t)\",\n          \"meaning\": \"角速度\",\n          \"unit\": \"rad/s\"\n        },\n        {\n          \"symbol\": \"\\\\omega_n\",\n          \"meaning\": \"固有频率\",\n          \"unit\": \"rad/s\"\n        },\n        {\n          \"symbol\": \"\\\\zeta\",\n          \"meaning\": \"阻尼比\",\n          \"unit\": null\n        },\n        {\n          \"symbol\": \"\\\\ddot{u}_s(t)\",\n          \"meaning\": \"支座水平加速度激励\",\n          \"unit\": \"m/s²\"\n        },\n        {\n          \"symbol\": \"l\",\n          \"meaning\": \"摆长\",\n          \"unit\": \"m\"\n        }\n      ],\n      \"conditions\": [],\n      \"uncertain_symbols\": [],\n      \"confidence\": 0.98\n    },\n    {\n      \"latex\": \"\\\\omega_n = \\\\sqrt{\\\\frac{g}{l}}\",\n      \"name\": \"固有频率公式\",\n      \"meaning\": \"无阻尼单摆的固有角频率表达式\",\n      \"symbols\": [\n        {\n          \"symbol\": \"\\\\omega_n\",\n          \"meaning\": \"固有频率\",\n          \"unit\": \"rad/s\"\n        },\n        {\n          \"symbol\": \"g\",\n          \"meaning\": \"重力加速度\",\n          \"unit\": \"m/s²\"\n        },\n        {\n          \"symbol\": \"l\",\n          \"meaning\": \"摆长\",\n          \"unit\": \"m\"\n        }\n      ],\n      \"conditions\": [],\n      \"uncertain_symbols\": [],\n      \"confidence\": 1.0\n    },\n    {\n      \"latex\": \"\\\\zeta = \\\\frac{c}{2m\\\\sqrt{gl}}\",\n      \"name\": \"阻尼比定义式\",\n      \"meaning\": \"阻尼比与阻尼系数、质量、重力加速度和摆长的关系\",\n      \"symbols\": [\n        {\n          \"symbol\": \"\\\\zeta\",\n          \"meaning\": \"阻尼比\",\n          \"unit\": null\n        },\n        {\n          \"symbol\": \"c\",\n          \"meaning\": \"阻尼系数\",\n          \"unit\": \"N·s/m\"\n        },\n        {\n          \"symbol\": \"m\",\n          \"meaning\": \"摆锤质量\",\n          \"unit\": \"kg\"\n        },\n        {\n          \"symbol\": \"g\",\n          \"meaning\": \"重力加速度\",\n          \"unit\": \"m/s²\"\n        },\n        {\n          \"symbol\": \"l\",\n          \"meaning\": \"摆长\",\n          \"unit\": \"m\"\n        }\n      ],\n      \"conditions\": [\n        \"c 为阻尼\"\n      ],\n      \"uncertain_symbols\": [],\n      \"confidence\": 0.97\n    }\n  ]\n}",
+      "parse_error": null,
+      "partial_response": false,
+      "review_reason": null,
+      "latex": "\\zeta = \\frac{c}{2m\\sqrt{gl}}",
+      "name": "阻尼比定义式",
+      "meaning": "阻尼比与阻尼系数、质量、重力加速度和摆长的关系",
+      "symbols": [
+        {
+          "symbol": "\\zeta",
+          "meaning": "阻尼比",
+          "unit": null
+        },
+        {
+          "symbol": "c",
+          "meaning": "阻尼系数",
+          "unit": "N·s/m"
+        },
+        {
+          "symbol": "m",
+          "meaning": "摆锤质量",
+          "unit": "kg"
+        },
+        {
+          "symbol": "g",
+          "meaning": "重力加速度",
+          "unit": "m/s²"
+        },
+        {
+          "symbol": "l",
+          "meaning": "摆长",
+          "unit": "m"
+        }
+      ],
+      "conditions": [
+        "c 为阻尼"
+      ],
+      "uncertain_symbols": [],
+      "confidence": 0.97,
+      "plain_text": "\\zeta = \\frac{c}{2m\\sqrt{gl}}",
+      "description": "阻尼比与阻尼系数、质量、重力加速度和摆长的关系",
+      "validation_issues": [],
+      "validation_status": "passed",
+      "review_required": false,
+      "review_status": null,
+      "indexable": true,
+      "formula_id": "w10-1-直线运动平台（下）_pptx_page_12_formula_3",
+      "page_num": 12
+    },
+    {
+      "source_image": "output/qwen_qwen3.7-plus_6/debug/images/w10-1-直线运动平台（下）_slide_12_img_2.png",
+      "source_type": "image_vlm",
+      "extraction_method": "qwen_api_formula",
+      "backend": "api",
+      "provider": "qwen",
+      "model": "qwen3.7-plus",
+      "image_index": 1,
+      "raw_response": "{\n  \"has_formula\": true,\n  \"formulas\": [\n    {\n      \"latex\": \"e^{-\\\\zeta \\\\omega_n t} \\\\sin(\\\\omega_d t)\",\n      \"name\": \"自由振动位移函数分量\",\n      \"meaning\": \"自由振动的位移函数由该正弦分量与余弦分量叠加而成\",\n      \"symbols\": [\n        {\n          \"symbol\": \"\\\\zeta\",\n          \"meaning\": \"阻尼比\",\n          \"unit\": null\n        },\n        {\n          \"symbol\": \"\\\\omega_n\",\n          \"meaning\": \"固有频率\",\n          \"unit\": null\n        },\n        {\n          \"symbol\": \"t\",\n          \"meaning\": \"时间\",\n          \"unit\": null\n        },\n        {\n          \"symbol\": \"\\\\omega_d\",\n          \"meaning\": \"振荡频率\",\n          \"unit\": null\n        }\n      ],\n      \"conditions\": [],\n      \"uncertain_symbols\": [],\n      \"confidence\": 1.0\n    },\n    {\n      \"latex\": \"e^{-\\\\zeta \\\\omega_n t} \\\\cos(\\\\omega_d t)\",\n      \"name\": \"自由振动位移函数分量\",\n      \"meaning\": \"自由振动的位移函数由该余弦分量与正弦分量叠加而成\",\n      \"symbols\": [\n        {\n          \"symbol\": \"\\\\zeta\",\n          \"meaning\": \"阻尼比\",\n          \"unit\": null\n        },\n        {\n          \"symbol\": \"\\\\omega_n\",\n          \"meaning\": \"固有频率\",\n          \"unit\": null\n        },\n        {\n          \"symbol\": \"t\",\n          \"meaning\": \"时间\",\n          \"unit\": null\n        },\n        {\n          \"symbol\": \"\\\\omega_d\",\n          \"meaning\": \"振荡频率\",\n          \"unit\": null\n        }\n      ],\n      \"conditions\": [],\n      \"uncertain_symbols\": [],\n      \"confidence\": 1.0\n    },\n    {\n      \"latex\": \"\\\\omega_d = \\\\omega_n \\\\sqrt{1 - \\\\zeta^2}\",\n      \"name\": \"振荡频率公式\",\n      \"meaning\": \"定义了有阻尼系统的振荡频率（阻尼自然频率）\",\n      \"symbols\": [\n        {\n          \"symbol\": \"\\\\omega_d\",\n          \"meaning\": \"振荡频率\",\n          \"unit\": null\n        },\n        {\n          \"symbol\": \"\\\\omega_n\",\n          \"meaning\": \"固有频率\",\n          \"unit\": null\n        },\n        {\n          \"symbol\": \"\\\\zeta\",\n          \"meaning\": \"阻尼比\",\n          \"unit\": null\n        }\n      ],\n      \"conditions\": [],\n      \"uncertain_symbols\": [],\n      \"confidence\": 1.0\n    },\n    {\n      \"latex\": \"c = 0, \\\\quad \\\\zeta = 0, \\\\quad \\\\omega_d = \\\\omega_n\",\n      \"name\": \"忽略阻尼条件\",\n      \"meaning\": \"当忽略阻尼时，阻尼系数c和阻尼比ζ均为0，此时振荡频率等于固有频率\",\n      \"symbols\": [\n        {\n          \"symbol\": \"c\",\n          \"meaning\": \"阻尼系数\",\n          \"unit\": null\n        },\n        {\n          \"symbol\": \"\\\\zeta\",\n          \"meaning\": \"阻尼比\",\n          \"unit\": null\n        },\n        {\n          \"symbol\": \"\\\\omega_d\",\n          \"meaning\": \"振荡频率\",\n          \"unit\": null\n        },\n        {\n          \"symbol\": \"\\\\omega_n\",\n          \"meaning\": \"固有频率\",\n          \"unit\": null\n        }\n      ],\n      \"conditions\": [\n        \"忽略阻尼\"\n      ],\n      \"uncertain_symbols\": [],\n      \"confidence\": 1.0\n    }\n  ]\n}",
+      "parse_error": null,
+      "partial_response": false,
+      "review_reason": null,
+      "latex": "e^{-\\zeta \\omega_n t} \\sin(\\omega_d t)",
+      "name": "自由振动位移函数分量",
+      "meaning": "自由振动的位移函数由该正弦分量与余弦分量叠加而成",
+      "symbols": [
+        {
+          "symbol": "\\zeta",
+          "meaning": "阻尼比",
+          "unit": null
+        },
+        {
+          "symbol": "\\omega_n",
+          "meaning": "固有频率",
+          "unit": null
+        },
+        {
+          "symbol": "t",
+          "meaning": "时间",
+          "unit": null
+        },
+        {
+          "symbol": "\\omega_d",
+          "meaning": "振荡频率",
+          "unit": null
+        }
+      ],
+      "conditions": [],
+      "uncertain_symbols": [],
+      "confidence": 1.0,
+      "plain_text": "e^{-\\zeta \\omega_n t} \\sin(\\omega_d t)",
+      "description": "自由振动的位移函数由该正弦分量与余弦分量叠加而成",
+      "validation_issues": [],
+      "validation_status": "passed",
+      "review_required": false,
+      "review_status": null,
+      "indexable": true,
+      "formula_id": "w10-1-直线运动平台（下）_pptx_page_12_formula_4",
+      "page_num": 12
+    },
+    {
+      "source_image": "output/qwen_qwen3.7-plus_6/debug/images/w10-1-直线运动平台（下）_slide_12_img_2.png",
+      "source_type": "image_vlm",
+      "extraction_method": "qwen_api_formula",
+      "backend": "api",
+      "provider": "qwen",
+      "model": "qwen3.7-plus",
+      "image_index": 1,
+      "raw_response": "{\n  \"has_formula\": true,\n  \"formulas\": [\n    {\n      \"latex\": \"e^{-\\\\zeta \\\\omega_n t} \\\\sin(\\\\omega_d t)\",\n      \"name\": \"自由振动位移函数分量\",\n      \"meaning\": \"自由振动的位移函数由该正弦分量与余弦分量叠加而成\",\n      \"symbols\": [\n        {\n          \"symbol\": \"\\\\zeta\",\n          \"meaning\": \"阻尼比\",\n          \"unit\": null\n        },\n        {\n          \"symbol\": \"\\\\omega_n\",\n          \"meaning\": \"固有频率\",\n          \"unit\": null\n        },\n        {\n          \"symbol\": \"t\",\n          \"meaning\": \"时间\",\n          \"unit\": null\n        },\n        {\n          \"symbol\": \"\\\\omega_d\",\n          \"meaning\": \"振荡频率\",\n          \"unit\": null\n        }\n      ],\n      \"conditions\": [],\n      \"uncertain_symbols\": [],\n      \"confidence\": 1.0\n    },\n    {\n      \"latex\": \"e^{-\\\\zeta \\\\omega_n t} \\\\cos(\\\\omega_d t)\",\n      \"name\": \"自由振动位移函数分量\",\n      \"meaning\": \"自由振动的位移函数由该余弦分量与正弦分量叠加而成\",\n      \"symbols\": [\n        {\n          \"symbol\": \"\\\\zeta\",\n          \"meaning\": \"阻尼比\",\n          \"unit\": null\n        },\n        {\n          \"symbol\": \"\\\\omega_n\",\n          \"meaning\": \"固有频率\",\n          \"unit\": null\n        },\n        {\n          \"symbol\": \"t\",\n          \"meaning\": \"时间\",\n          \"unit\": null\n        },\n        {\n          \"symbol\": \"\\\\omega_d\",\n          \"meaning\": \"振荡频率\",\n          \"unit\": null\n        }\n      ],\n      \"conditions\": [],\n      \"uncertain_symbols\": [],\n      \"confidence\": 1.0\n    },\n    {\n      \"latex\": \"\\\\omega_d = \\\\omega_n \\\\sqrt{1 - \\\\zeta^2}\",\n      \"name\": \"振荡频率公式\",\n      \"meaning\": \"定义了有阻尼系统的振荡频率（阻尼自然频率）\",\n      \"symbols\": [\n        {\n          \"symbol\": \"\\\\omega_d\",\n          \"meaning\": \"振荡频率\",\n          \"unit\": null\n        },\n        {\n          \"symbol\": \"\\\\omega_n\",\n          \"meaning\": \"固有频率\",\n          \"unit\": null\n        },\n        {\n          \"symbol\": \"\\\\zeta\",\n          \"meaning\": \"阻尼比\",\n          \"unit\": null\n        }\n      ],\n      \"conditions\": [],\n      \"uncertain_symbols\": [],\n      \"confidence\": 1.0\n    },\n    {\n      \"latex\": \"c = 0, \\\\quad \\\\zeta = 0, \\\\quad \\\\omega_d = \\\\omega_n\",\n      \"name\": \"忽略阻尼条件\",\n      \"meaning\": \"当忽略阻尼时，阻尼系数c和阻尼比ζ均为0，此时振荡频率等于固有频率\",\n      \"symbols\": [\n        {\n          \"symbol\": \"c\",\n          \"meaning\": \"阻尼系数\",\n          \"unit\": null\n        },\n        {\n          \"symbol\": \"\\\\zeta\",\n          \"meaning\": \"阻尼比\",\n          \"unit\": null\n        },\n        {\n          \"symbol\": \"\\\\omega_d\",\n          \"meaning\": \"振荡频率\",\n          \"unit\": null\n        },\n        {\n          \"symbol\": \"\\\\omega_n\",\n          \"meaning\": \"固有频率\",\n          \"unit\": null\n        }\n      ],\n      \"conditions\": [\n        \"忽略阻尼\"\n      ],\n      \"uncertain_symbols\": [],\n      \"confidence\": 1.0\n    }\n  ]\n}",
+      "parse_error": null,
+      "partial_response": false,
+      "review_reason": null,
+      "latex": "e^{-\\zeta \\omega_n t} \\cos(\\omega_d t)",
+      "name": "自由振动位移函数分量",
+      "meaning": "自由振动的位移函数由该余弦分量与正弦分量叠加而成",
+      "symbols": [
+        {
+          "symbol": "\\zeta",
+          "meaning": "阻尼比",
+          "unit": null
+        },
+        {
+          "symbol": "\\omega_n",
+          "meaning": "固有频率",
+          "unit": null
+        },
+        {
+          "symbol": "t",
+          "meaning": "时间",
+          "unit": null
+        },
+        {
+          "symbol": "\\omega_d",
+          "meaning": "振荡频率",
+          "unit": null
+        }
+      ],
+      "conditions": [],
+      "uncertain_symbols": [],
+      "confidence": 1.0,
+      "plain_text": "e^{-\\zeta \\omega_n t} \\cos(\\omega_d t)",
+      "description": "自由振动的位移函数由该余弦分量与正弦分量叠加而成",
+      "validation_issues": [],
+      "validation_status": "passed",
+      "review_required": false,
+      "review_status": null,
+      "indexable": true,
+      "formula_id": "w10-1-直线运动平台（下）_pptx_page_12_formula_5",
+      "page_num": 12
+    },
+    {
+      "source_image": "output/qwen_qwen3.7-plus_6/debug/images/w10-1-直线运动平台（下）_slide_12_img_2.png",
+      "source_type": "image_vlm",
+      "extraction_method": "qwen_api_formula",
+      "backend": "api",
+      "provider": "qwen",
+      "model": "qwen3.7-plus",
+      "image_index": 1,
+      "raw_response": "{\n  \"has_formula\": true,\n  \"formulas\": [\n    {\n      \"latex\": \"e^{-\\\\zeta \\\\omega_n t} \\\\sin(\\\\omega_d t)\",\n      \"name\": \"自由振动位移函数分量\",\n      \"meaning\": \"自由振动的位移函数由该正弦分量与余弦分量叠加而成\",\n      \"symbols\": [\n        {\n          \"symbol\": \"\\\\zeta\",\n          \"meaning\": \"阻尼比\",\n          \"unit\": null\n        },\n        {\n          \"symbol\": \"\\\\omega_n\",\n          \"meaning\": \"固有频率\",\n          \"unit\": null\n        },\n        {\n          \"symbol\": \"t\",\n          \"meaning\": \"时间\",\n          \"unit\": null\n        },\n        {\n          \"symbol\": \"\\\\omega_d\",\n          \"meaning\": \"振荡频率\",\n          \"unit\": null\n        }\n      ],\n      \"conditions\": [],\n      \"uncertain_symbols\": [],\n      \"confidence\": 1.0\n    },\n    {\n      \"latex\": \"e^{-\\\\zeta \\\\omega_n t} \\\\cos(\\\\omega_d t)\",\n      \"name\": \"自由振动位移函数分量\",\n      \"meaning\": \"自由振动的位移函数由该余弦分量与正弦分量叠加而成\",\n      \"symbols\": [\n        {\n          \"symbol\": \"\\\\zeta\",\n          \"meaning\": \"阻尼比\",\n          \"unit\": null\n        },\n        {\n          \"symbol\": \"\\\\omega_n\",\n          \"meaning\": \"固有频率\",\n          \"unit\": null\n        },\n        {\n          \"symbol\": \"t\",\n          \"meaning\": \"时间\",\n          \"unit\": null\n        },\n        {\n          \"symbol\": \"\\\\omega_d\",\n          \"meaning\": \"振荡频率\",\n          \"unit\": null\n        }\n      ],\n      \"conditions\": [],\n      \"uncertain_symbols\": [],\n      \"confidence\": 1.0\n    },\n    {\n      \"latex\": \"\\\\omega_d = \\\\omega_n \\\\sqrt{1 - \\\\zeta^2}\",\n      \"name\": \"振荡频率公式\",\n      \"meaning\": \"定义了有阻尼系统的振荡频率（阻尼自然频率）\",\n      \"symbols\": [\n        {\n          \"symbol\": \"\\\\omega_d\",\n          \"meaning\": \"振荡频率\",\n          \"unit\": null\n        },\n        {\n          \"symbol\": \"\\\\omega_n\",\n          \"meaning\": \"固有频率\",\n          \"unit\": null\n        },\n        {\n          \"symbol\": \"\\\\zeta\",\n          \"meaning\": \"阻尼比\",\n          \"unit\": null\n        }\n      ],\n      \"conditions\": [],\n      \"uncertain_symbols\": [],\n      \"confidence\": 1.0\n    },\n    {\n      \"latex\": \"c = 0, \\\\quad \\\\zeta = 0, \\\\quad \\\\omega_d = \\\\omega_n\",\n      \"name\": \"忽略阻尼条件\",\n      \"meaning\": \"当忽略阻尼时，阻尼系数c和阻尼比ζ均为0，此时振荡频率等于固有频率\",\n      \"symbols\": [\n        {\n          \"symbol\": \"c\",\n          \"meaning\": \"阻尼系数\",\n          \"unit\": null\n        },\n        {\n          \"symbol\": \"\\\\zeta\",\n          \"meaning\": \"阻尼比\",\n          \"unit\": null\n        },\n        {\n          \"symbol\": \"\\\\omega_d\",\n          \"meaning\": \"振荡频率\",\n          \"unit\": null\n        },\n        {\n          \"symbol\": \"\\\\omega_n\",\n          \"meaning\": \"固有频率\",\n          \"unit\": null\n        }\n      ],\n      \"conditions\": [\n        \"忽略阻尼\"\n      ],\n      \"uncertain_symbols\": [],\n      \"confidence\": 1.0\n    }\n  ]\n}",
+      "parse_error": null,
+      "partial_response": false,
+      "review_reason": null,
+      "latex": "\\omega_d = \\omega_n \\sqrt{1 - \\zeta^2}",
+      "name": "振荡频率公式",
+      "meaning": "定义了有阻尼系统的振荡频率（阻尼自然频率）",
+      "symbols": [
+        {
+          "symbol": "\\omega_d",
+          "meaning": "振荡频率",
+          "unit": null
+        },
+        {
+          "symbol": "\\omega_n",
+          "meaning": "固有频率",
+          "unit": null
+        },
+        {
+          "symbol": "\\zeta",
+          "meaning": "阻尼比",
+          "unit": null
+        }
+      ],
+      "conditions": [],
+      "uncertain_symbols": [],
+      "confidence": 1.0,
+      "plain_text": "\\omega_d = \\omega_n \\sqrt{1 - \\zeta^2}",
+      "description": "定义了有阻尼系统的振荡频率（阻尼自然频率）",
+      "validation_issues": [],
+      "validation_status": "passed",
+      "review_required": false,
+      "review_status": null,
+      "indexable": true,
+      "formula_id": "w10-1-直线运动平台（下）_pptx_page_12_formula_6",
+      "page_num": 12
+    },
+    {
+      "source_image": "output/qwen_qwen3.7-plus_6/debug/images/w10-1-直线运动平台（下）_slide_12_img_2.png",
+      "source_type": "image_vlm",
+      "extraction_method": "qwen_api_formula",
+      "backend": "api",
+      "provider": "qwen",
+      "model": "qwen3.7-plus",
+      "image_index": 1,
+      "raw_response": "{\n  \"has_formula\": true,\n  \"formulas\": [\n    {\n      \"latex\": \"e^{-\\\\zeta \\\\omega_n t} \\\\sin(\\\\omega_d t)\",\n      \"name\": \"自由振动位移函数分量\",\n      \"meaning\": \"自由振动的位移函数由该正弦分量与余弦分量叠加而成\",\n      \"symbols\": [\n        {\n          \"symbol\": \"\\\\zeta\",\n          \"meaning\": \"阻尼比\",\n          \"unit\": null\n        },\n        {\n          \"symbol\": \"\\\\omega_n\",\n          \"meaning\": \"固有频率\",\n          \"unit\": null\n        },\n        {\n          \"symbol\": \"t\",\n          \"meaning\": \"时间\",\n          \"unit\": null\n        },\n        {\n          \"symbol\": \"\\\\omega_d\",\n          \"meaning\": \"振荡频率\",\n          \"unit\": null\n        }\n      ],\n      \"conditions\": [],\n      \"uncertain_symbols\": [],\n      \"confidence\": 1.0\n    },\n    {\n      \"latex\": \"e^{-\\\\zeta \\\\omega_n t} \\\\cos(\\\\omega_d t)\",\n      \"name\": \"自由振动位移函数分量\",\n      \"meaning\": \"自由振动的位移函数由该余弦分量与正弦分量叠加而成\",\n      \"symbols\": [\n        {\n          \"symbol\": \"\\\\zeta\",\n          \"meaning\": \"阻尼比\",\n          \"unit\": null\n        },\n        {\n          \"symbol\": \"\\\\omega_n\",\n          \"meaning\": \"固有频率\",\n          \"unit\": null\n        },\n        {\n          \"symbol\": \"t\",\n          \"meaning\": \"时间\",\n          \"unit\": null\n        },\n        {\n          \"symbol\": \"\\\\omega_d\",\n          \"meaning\": \"振荡频率\",\n          \"unit\": null\n        }\n      ],\n      \"conditions\": [],\n      \"uncertain_symbols\": [],\n      \"confidence\": 1.0\n    },\n    {\n      \"latex\": \"\\\\omega_d = \\\\omega_n \\\\sqrt{1 - \\\\zeta^2}\",\n      \"name\": \"振荡频率公式\",\n      \"meaning\": \"定义了有阻尼系统的振荡频率（阻尼自然频率）\",\n      \"symbols\": [\n        {\n          \"symbol\": \"\\\\omega_d\",\n          \"meaning\": \"振荡频率\",\n          \"unit\": null\n        },\n        {\n          \"symbol\": \"\\\\omega_n\",\n          \"meaning\": \"固有频率\",\n          \"unit\": null\n        },\n        {\n          \"symbol\": \"\\\\zeta\",\n          \"meaning\": \"阻尼比\",\n          \"unit\": null\n        }\n      ],\n      \"conditions\": [],\n      \"uncertain_symbols\": [],\n      \"confidence\": 1.0\n    },\n    {\n      \"latex\": \"c = 0, \\\\quad \\\\zeta = 0, \\\\quad \\\\omega_d = \\\\omega_n\",\n      \"name\": \"忽略阻尼条件\",\n      \"meaning\": \"当忽略阻尼时，阻尼系数c和阻尼比ζ均为0，此时振荡频率等于固有频率\",\n      \"symbols\": [\n        {\n          \"symbol\": \"c\",\n          \"meaning\": \"阻尼系数\",\n          \"unit\": null\n        },\n        {\n          \"symbol\": \"\\\\zeta\",\n          \"meaning\": \"阻尼比\",\n          \"unit\": null\n        },\n        {\n          \"symbol\": \"\\\\omega_d\",\n          \"meaning\": \"振荡频率\",\n          \"unit\": null\n        },\n        {\n          \"symbol\": \"\\\\omega_n\",\n          \"meaning\": \"固有频率\",\n          \"unit\": null\n        }\n      ],\n      \"conditions\": [\n        \"忽略阻尼\"\n      ],\n      \"uncertain_symbols\": [],\n      \"confidence\": 1.0\n    }\n  ]\n}",
+      "parse_error": null,
+      "partial_response": false,
+      "review_reason": null,
+      "latex": "c = 0, \\quad \\zeta = 0, \\quad \\omega_d = \\omega_n",
+      "name": "忽略阻尼条件",
+      "meaning": "当忽略阻尼时，阻尼系数c和阻尼比ζ均为0，此时振荡频率等于固有频率",
+      "symbols": [
+        {
+          "symbol": "c",
+          "meaning": "阻尼系数",
+          "unit": null
+        },
+        {
+          "symbol": "\\zeta",
+          "meaning": "阻尼比",
+          "unit": null
+        },
+        {
+          "symbol": "\\omega_d",
+          "meaning": "振荡频率",
+          "unit": null
+        },
+        {
+          "symbol": "\\omega_n",
+          "meaning": "固有频率",
+          "unit": null
+        }
+      ],
+      "conditions": [
+        "忽略阻尼"
+      ],
+      "uncertain_symbols": [],
+      "confidence": 1.0,
+      "plain_text": "c = 0, \\quad \\zeta = 0, \\quad \\omega_d = \\omega_n",
+      "description": "当忽略阻尼时，阻尼系数c和阻尼比ζ均为0，此时振荡频率等于固有频率",
+      "validation_issues": [],
+      "validation_status": "passed",
+      "review_required": false,
+      "review_status": null,
+      "indexable": true,
+      "formula_id": "w10-1-直线运动平台（下）_pptx_page_12_formula_7",
+      "page_num": 12
+    }
+  ],
+  "timestamp": "2026-08-19T10:41:34.938875"
+}

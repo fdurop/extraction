@@ -1,0 +1,38 @@
+{
+  "page_num": 9,
+  "raw_text": "机电系统原理及实践—— 步进电机驱动器与外部中断\n机电智控实验室tangguoan@fudan.edu.cn mmguo@fudan.edu.cn\n实践：上位机通过驱动器原理样机控制步进电机。\n11-10\n每500步换一次方向。\n评分规则\n1. 基准分（30 分钟之内完成）\n1 ~ 4 名：100 / 95 / 90 / 88\n2. 扣分\n强/弱电接错：扣20 分/次\n线头脱落：扣10 分/次\n线路杂乱：扣2 ~ 20 分\n代码不规范：扣2 ~ 10 分\n超时：扣2 分/ 5分钟\nA1\nB1\nA2\nD12\nD11\nD10\nD9\nD8\nD7\nD6\nD5\nGND\n5V\n用固态继电器驱动步进电机\nUNO\n下位机\n6芯\n插座\nDIR+(高低电平表示方向)\nDIR-(GND)\nPUL-(GND)\nENA+(悬空或G N D 使能)\nENA-(GND)\nD2\nGND\nGND\nGND\nD4\nD3\nD4\nGND\nGND\nGND\nD5\n跳线\nUNO\n上位机\n6芯\n插头\nw08-s3-slaveMCU.ino\nw08-s3-hostMCU.ino\n复旦大学 机电智控实验室\n",
+  "cleaned_text": "实践：上位机通过驱动器原理样机控制步进电机。\n每500步换一次方向。\n评分规则\n1. 基准分（30 分钟之内完成）\n1 ~ 4 名：100 / 95 / 90 / 88\n2. 扣分\n强/弱电接错：扣20 分/次\n线头脱落：扣10 分/次\n线路杂乱：扣2 ~ 20 分\n代码不规范：扣2 ~ 10 分\n超时：扣2 分/ 5分钟\nA1\nB1\nA2\nD12\nD11\nD10\nD9\nD8\nD7\nD6\nD5\nGND\n5V\n用固态继电器驱动步进电机\nUNO\n下位机\n6芯\n插座\nDIR+(高低电平表示方向)\nDIR-(GND)\nPUL-(GND)\nENA+(悬空或G N D 使能)\nENA-(GND)\nD2\nGND\nGND\nGND\nD4\nD3\nD4\nGND\nGND\nGND\nD5\n跳线\nUNO\n上位机\n6芯\n插头\nw08-s3-slaveMCU.ino\nw08-s3-hostMCU.ino",
+  "key_points": [
+    "实践：上位机通过驱动器原理样机控制步进电机。",
+    "每500步换一次方向。",
+    "1. 基准分（30 分钟之内完成）",
+    "2. 扣分",
+    "A1",
+    "B1",
+    "A2",
+    "D12",
+    "D11",
+    "D10"
+  ],
+  "technical_terms": [
+    "DIR",
+    "ENA",
+    "GND",
+    "PUL",
+    "UNO",
+    "w08-s3-hostMCU",
+    "w08-s3-slaveMCU",
+    "上位机通过驱动器",
+    "原理样机控制步进电机",
+    "机通过驱动器原理样机控制",
+    "用固态继电器驱动步进电机"
+  ],
+  "has_images": false,
+  "image_count": 0,
+  "image_paths": [],
+  "metadata": {
+    "char_count": 485,
+    "word_count": 84,
+    "line_count": 57
+  }
+}

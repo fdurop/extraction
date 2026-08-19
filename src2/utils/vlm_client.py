@@ -4,8 +4,9 @@ import base64
 import json
 import mimetypes
 import os
+import re
 import time
-from typing import Any, Dict, Optional
+from typing import Any, Dict, List, Optional
 
 import requests
 
@@ -31,6 +32,12 @@ class ApiVLMClient:
         self.max_tokens = int(config.get("max_tokens") or 700)
         self.temperature = float(config.get("temperature") or 0.1)
         self.image_detail = str(config.get("image_detail") or "auto")
+        self.formula_max_tokens = int(config.get("formula_max_tokens") or 2000)
+        self.table_max_tokens = int(config.get("table_max_tokens") or 1500)
+        self.table_timeout_seconds = int(config.get("table_timeout_seconds") or 150)
+        self.table_retry_count = int(config.get("table_retry_count") or 1)
+        thinking_value = config.get("enable_thinking", False)
+        self.enable_thinking = str(thinking_value).lower() in {"1", "true", "yes", "on"}
 
     @property
     def available(self) -> bool:
@@ -38,29 +45,61 @@ class ApiVLMClient:
 
     def generate_description(self, image_path: str, prompt: Optional[str] = None) -> str:
         prompt = prompt or (
-            "请分析这张教学材料图片。请提取核心概念、关键文字、图表/公式/代码信息、"
-            "与课程知识点的关系，并给出适合构建知识图谱和向量检索的结构化中文描述。"
+            "请对这张教学材料图片做忠实、可检索的中文描述。先标明内容类型（示意图、照片、"
+            "表格、公式、代码或其他），再转录关键可见文字，最后说明图中明确展示的组件、"
+            "连线、坐标轴或步骤关系。只描述图片中可见且可确认的信息；不要根据常识补充原理、"
+            "用途或课程结论，不确定内容明确写“不确定”。普通图片控制在350个汉字以内；"
+            "若存在表格、公式或代码，只指出其存在和主题，具体内容由专用识别流程处理。"
         )
-        return self._chat_with_image(image_path, prompt)
+        return self._chat_with_image(
+            image_path, prompt, max_tokens=min(self.max_tokens, 500), operation="image_description"
+        )
 
-    def recognize_formula(self, image_path: str) -> Dict[str, Any]:
+    def recognize_formula(self, image_path: str, context: str = "") -> Dict[str, Any]:
         prompt = (
-            "请识别图片中的数学、物理或工程公式。按以下格式回答：\n"
-            "LaTeX: [公式]\n"
-            "名称: [公式名称]\n"
-            "含义: [公式含义]\n"
-            "变量: [变量说明]\n"
-            "条件: [适用条件]"
+            "识别图片中实际可见的数学、物理或工程公式，只输出合法JSON，不要输出Markdown代码块。"
+            "严格保留下标、上标、分数、根号、积分上下限、矩阵、希腊字母、数字和正负号；不得补写不可见内容。"
+            "无法确认的字符在LaTeX中写为?，并加入uncertain_symbols。JSON格式："
+            '{"has_formula":true,"formulas":[{"latex":"","uncertain_symbols":[],"confidence":0.0}]}. '
+            "没有公式时返回 {\"has_formula\":false,\"formulas\":[]}。"
+            "每个公式只允许返回latex、uncertain_symbols、confidence三个字段；不要解释公式含义、"
+            "不要展开符号列表。同一条跨行公式应合并为一个latex字符串。"
+            f"页面上下文仅用于消歧，不得用于补写公式：{(context or '')[:800]}"
         )
-        response = self._chat_with_image(image_path, prompt, max_tokens=500)
-        latex = ""
-        description = ""
-        for line in response.splitlines():
-            if "latex:" in line.lower():
-                latex = line.split(":", 1)[1].strip()
-            elif line.startswith(("含义:", "意义:", "说明:")):
-                description = line.split(":", 1)[1].strip()
-        return {"latex": latex or response.strip(), "description": description, "raw_response": response}
+        response = self._chat_with_image(
+            image_path, prompt, max_tokens=self.formula_max_tokens, operation="formula"
+        )
+        parsed = self._parse_json_object(response)
+        if parsed is not None:
+            parsed["raw_response"] = response
+            parsed.setdefault("formulas", [])
+            return parsed
+
+        recovered = self._recover_formula_objects(response)
+        if recovered:
+            return {
+                "has_formula": True,
+                "formulas": recovered,
+                "parse_error": "truncated_json",
+                "partial_response": True,
+                "review_required": True,
+                "review_reason": "partial_json_recovered",
+                "raw_response": response,
+            }
+
+        # Preserve an unparseable response for manual review instead of treating
+        # arbitrary prose as valid LaTeX.
+        latex_match = re.search(r"LaTeX\s*[:：]\s*(.+?)(?:\n|$)", response, re.IGNORECASE)
+        return {
+            "has_formula": bool(latex_match),
+            "formulas": [{
+                "latex": latex_match.group(1).strip() if latex_match else "",
+                "confidence": 0.35,
+                "uncertain_symbols": ["json_parse_failed"],
+            }],
+            "parse_error": "invalid_json",
+            "raw_response": response,
+        }
 
     def recognize_code(self, image_path: str) -> Dict[str, Any]:
         prompt = (
@@ -72,7 +111,7 @@ class ApiVLMClient:
             "```\n"
             "功能: [功能说明]"
         )
-        response = self._chat_with_image(image_path, prompt, max_tokens=700)
+        response = self._chat_with_image(image_path, prompt, max_tokens=700, operation="code")
         lower = response.lower()
         result = {
             "code": "",
@@ -100,31 +139,109 @@ class ApiVLMClient:
         result["has_code"] = len(result["code"]) >= 10
         return result
 
-    def recognize_table(self, image_path: str) -> Dict[str, Any]:
+    def recognize_table(self, image_path: str, context: str = "") -> Dict[str, Any]:
         prompt = (
-            "请识别图片中的表格。尽量保留表头、行列关系和单元格内容。"
-            "请按以下格式回答：\n"
-            "表头: [列1, 列2, ...]\n"
-            "数据:\n"
-            "[用Markdown表格或逐行文本表示]\n"
-            "说明: [表格主题和用途]"
+            "识别图片中实际可见的表格，只输出合法JSON，不要输出Markdown代码块。"
+            "严格保留原始行列、空单元格、数字、小数点、百分号、正负号和单位，不得推测被遮挡内容。"
+            "多级表头用二维headers表示，无法确认的单元格填null并在uncertain_cells记录[row,col]。JSON格式："
+            '{"has_table":true,"title":"","headers":[[""]],"cells":[[""]],'
+            '"merged_cells":[],"units":{},"footnotes":[],"uncertain_cells":[],"confidence":0.0}. '
+            "没有表格时返回 {\"has_table\":false,\"headers\":[],\"cells\":[]}。"
+            f"页面上下文仅用于消歧：{(context or '')[:800]}"
         )
-        response = self._chat_with_image(image_path, prompt, max_tokens=800)
-        headers = ""
-        description = ""
-        for line in response.splitlines():
-            if line.startswith(("表头:", "Headers:")):
-                headers = line.split(":", 1)[1].strip()
-            elif line.startswith(("说明:", "Description:")):
-                description = line.split(":", 1)[1].strip()
+        response = self._chat_with_image(
+            image_path,
+            prompt,
+            max_tokens=self.table_max_tokens,
+            timeout_seconds=self.table_timeout_seconds,
+            retry_count=self.table_retry_count,
+            operation="table",
+        )
+        parsed = self._parse_json_object(response)
+        if parsed is not None:
+            parsed["raw_response"] = response
+            return parsed
         return {
-            "table_data": response,
-            "headers": headers,
-            "description": description,
+            "has_table": True,
+            "headers": [],
+            "cells": [],
+            "confidence": 0.0,
+            "parse_error": "invalid_json",
             "raw_response": response,
         }
 
-    def _chat_with_image(self, image_path: str, prompt: str, max_tokens: Optional[int] = None) -> str:
+    @staticmethod
+    def _parse_json_object(response: str) -> Optional[Dict[str, Any]]:
+        text = str(response or "").strip()
+        text = re.sub(r"^```(?:json)?\s*", "", text, flags=re.IGNORECASE)
+        text = re.sub(r"\s*```$", "", text)
+        start = text.find("{")
+        end = text.rfind("}")
+        if start < 0 or end <= start:
+            return None
+        try:
+            parsed = json.loads(text[start:end + 1])
+            return parsed if isinstance(parsed, dict) else None
+        except (TypeError, ValueError, json.JSONDecodeError):
+            return None
+
+    @staticmethod
+    def _recover_formula_objects(response: str) -> List[Dict[str, Any]]:
+        """Recover complete objects from a truncated top-level formulas array."""
+        text = str(response or "")
+        match = re.search(r'"formulas"\s*:\s*\[', text)
+        if not match:
+            return []
+
+        recovered = []
+        start = None
+        depth = 0
+        in_string = False
+        escaped = False
+        for index in range(match.end(), len(text)):
+            char = text[index]
+            if in_string:
+                if escaped:
+                    escaped = False
+                elif char == "\\":
+                    escaped = True
+                elif char == '"':
+                    in_string = False
+                continue
+            if char == '"':
+                in_string = True
+            elif char == "{":
+                if depth == 0:
+                    start = index
+                depth += 1
+            elif char == "}" and depth:
+                depth -= 1
+                if depth == 0 and start is not None:
+                    try:
+                        item = json.loads(text[start:index + 1])
+                    except (TypeError, ValueError, json.JSONDecodeError):
+                        item = None
+                    if isinstance(item, dict) and "latex" in item:
+                        uncertain = list(item.get("uncertain_symbols") or [])
+                        if "partial_json_response" not in uncertain:
+                            uncertain.append("partial_json_response")
+                        item["uncertain_symbols"] = uncertain
+                        item["confidence"] = min(float(item.get("confidence") or 0.5), 0.65)
+                        recovered.append(item)
+                    start = None
+            elif char == "]" and depth == 0:
+                break
+        return recovered
+
+    def _chat_with_image(
+        self,
+        image_path: str,
+        prompt: str,
+        max_tokens: Optional[int] = None,
+        timeout_seconds: Optional[int] = None,
+        retry_count: Optional[int] = None,
+        operation: str = "vision",
+    ) -> str:
         if not self.available:
             raise RuntimeError("VLM API is not configured. Please fill config/vlm_api.yaml or set env vars.")
         image_url = self._image_to_data_url(image_path)
@@ -144,6 +261,7 @@ class ApiVLMClient:
             ],
             "temperature": self.temperature,
             "max_tokens": max_tokens or self.max_tokens,
+            "enable_thinking": self.enable_thinking,
         }
         headers = {
             "Authorization": f"Bearer {self.api_key}",
@@ -151,24 +269,48 @@ class ApiVLMClient:
         }
 
         last_error: Exception | None = None
-        for attempt in range(self.retry_count + 1):
+        request_timeout = timeout_seconds or self.timeout_seconds
+        request_retries = self.retry_count if retry_count is None else retry_count
+        for attempt in range(request_retries + 1):
             try:
                 response = requests.post(
                     self.base_url,
                     headers=headers,
                     data=json.dumps(payload, ensure_ascii=False).encode("utf-8"),
-                    timeout=self.timeout_seconds,
+                    timeout=request_timeout,
                 )
                 if response.status_code >= 400:
                     raise RuntimeError(f"HTTP {response.status_code}: {response.text[:500]}")
                 data = response.json()
                 content = data["choices"][0]["message"]["content"]
+                usage = data.get("usage") or {}
+                details = usage.get("completion_tokens_details") or usage.get("output_tokens_details") or {}
+                if self.logger:
+                    self.logger.info(
+                        "VLM API success: operation=%s model=%s prompt_tokens=%s "
+                        "completion_tokens=%s reasoning_tokens=%s total_tokens=%s",
+                        operation,
+                        self.model,
+                        usage.get("prompt_tokens"),
+                        usage.get("completion_tokens"),
+                        details.get("reasoning_tokens"),
+                        usage.get("total_tokens"),
+                    )
                 if isinstance(content, list):
                     return "".join(part.get("text", "") for part in content if isinstance(part, dict)).strip()
                 return str(content).strip()
             except Exception as exc:
                 last_error = exc
-                if attempt < self.retry_count:
+                if self.logger:
+                    self.logger.warning(
+                        "VLM API attempt failed: operation=%s model=%s attempt=%s/%s error=%s",
+                        operation,
+                        self.model,
+                        attempt + 1,
+                        request_retries + 1,
+                        exc,
+                    )
+                if attempt < request_retries:
                     time.sleep(1.5 * (attempt + 1))
         raise RuntimeError(f"VLM API request failed: {last_error}")
 

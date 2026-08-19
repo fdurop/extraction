@@ -1,0 +1,33 @@
+{
+  "original_path": "output/qwen_qwen3.7-plus_5/debug/images/w10-1-直线运动平台（下）_slide_4_img_1.png",
+  "enhanced_path": "output/qwen_qwen3.7-plus_5/debug/images/w10-1-直线运动平台（下）_slide_4_img_1_enhanced.png",
+  "description": "图片展示了一个丝杠（或螺杆）的3D模型局部。左侧为光滑的圆柱形轴端，右侧为连续的螺旋螺纹结构。结合页面上下文中的“丝杠转速”和“滑台定位”，该图直观展示了课程中涉及的机械传动部件——丝杠的物理形态。",
+  "metadata": {
+    "generation": {
+      "method": "qwen_api",
+      "backend": "api",
+      "provider": "qwen",
+      "model": "qwen3.7-plus",
+      "status": "success",
+      "api_error": null
+    },
+    "review": {
+      "required": false,
+      "status": null,
+      "reason": null,
+      "course_relevant": true
+    }
+  },
+  "error": null,
+  "method": "qwen_api",
+  "backend": "api",
+  "provider": "qwen",
+  "model": "qwen3.7-plus",
+  "status": "success",
+  "api_error": null,
+  "indexable": true,
+  "review_required": false,
+  "review_reason": null,
+  "review_status": null,
+  "course_relevant": true
+}

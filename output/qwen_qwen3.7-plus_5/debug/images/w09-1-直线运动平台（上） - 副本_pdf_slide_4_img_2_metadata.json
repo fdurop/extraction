@@ -1,0 +1,33 @@
+{
+  "original_path": "output/qwen_qwen3.7-plus_5/debug/images/w09-1-直线运动平台（上） - 副本_p4_img4.jpeg",
+  "enhanced_path": "output/qwen_qwen3.7-plus_5/debug/images/w09-1-直线运动平台（上） - 副本_p4_img4_enhanced.jpeg",
+  "description": "图片展示了一个直交型机械臂（多轴直线运动平台）的三维渲染模型。\n\n**关键对象与结构：**\n*   **整体结构：** 这是一个直角坐标机器人（Gantry robot）的结构，由相互垂直的直线导轨组成，用于实现多轴直线运动。\n*   **底部导轨：** 图片下方有两条平行的长导轨（呈金黄色/黄褐色），两端装有黑色的模块（可能是电机座或支撑端）。\n*   **横梁导轨：** 一条导轨垂直跨越在底部两条平行导轨之上，形成平面运动基础（通常对应X轴或Y轴）。\n*   **Z轴组件：** 在横梁导轨上安装有一个垂直向上的组件（对应上下文中的“Z轴”）。该组件包含蓝色的圆柱形部件（可能是电机或气缸）、绿色的连接块以及粉色的滑块/平台机构。\n*   **侧边组件：** 左侧导轨末端连接有一个蓝色的组件，看起来像是驱动单元。\n\n该图直观地展示了多轴直线运动平台的空间布局，特别是Z轴在直交型结构中的安装位置。",
+  "metadata": {
+    "generation": {
+      "method": "qwen_api",
+      "backend": "api",
+      "provider": "qwen",
+      "model": "qwen3.7-plus",
+      "status": "success",
+      "api_error": null
+    },
+    "review": {
+      "required": false,
+      "status": null,
+      "reason": null,
+      "course_relevant": true
+    }
+  },
+  "error": null,
+  "method": "qwen_api",
+  "backend": "api",
+  "provider": "qwen",
+  "model": "qwen3.7-plus",
+  "status": "success",
+  "api_error": null,
+  "indexable": true,
+  "review_required": false,
+  "review_reason": null,
+  "review_status": null,
+  "course_relevant": true
+}

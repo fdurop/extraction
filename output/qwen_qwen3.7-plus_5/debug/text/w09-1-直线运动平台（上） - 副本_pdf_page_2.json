@@ -1,0 +1,18 @@
+{
+  "page_num": 1,
+  "raw_text": "机电系统原理及实践—— 直线运动平台（上）\n机电智控实验室tangguoan@fudan.edu.cn mmguo@fudan.edu.cn\n内容提要—— 步进电机综合应用（上）\n12-2\n直线运动平台\n限位开关、接近开关和急停开关——控制回路的输入信号\n实践：搭建直线运动平台\n作业：实现滑台初始化复位\n",
+  "cleaned_text": "内容提要—— 步进电机综合应用（上）\n直线运动平台\n限位开关、接近开关和急停开关——控制回路的输入信号\n实践：搭建直线运动平台\n作业：实现滑台初始化复位",
+  "key_points": [],
+  "technical_terms": [
+    "实现滑台",
+    "步进电机"
+  ],
+  "has_images": false,
+  "image_count": 0,
+  "image_paths": [],
+  "metadata": {
+    "char_count": 153,
+    "word_count": 11,
+    "line_count": 9
+  }
+}

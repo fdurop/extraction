@@ -1,0 +1,33 @@
+{
+  "original_path": "output/qwen_qwen3.7-plus_5/debug/images/w08-1-步进电机驱动器_p8_img2.png",
+  "enhanced_path": "output/qwen_qwen3.7-plus_5/debug/images/w08-1-步进电机驱动器_p8_img2_enhanced.png",
+  "description": "图片展示了一段Arduino C++代码，对应上下文中的实践文件 `w08-s2-extInterrupt.ino`，用于演示外部中断的配置与使用。\n\n代码包含以下部分：\n1.  **全局变量定义**：\n    *   `const byte ledPin = 13;`：定义LED引脚为13。\n    *   `const byte interruptPin = 2;`：定义中断引脚为2。\n    *   `volatile byte state = LOW;`：定义易失性变量 `state`，初始值为 `LOW`，用于在中断和主循环间共享状态。\n\n2.  **`void setup()` 函数**：\n    *   `pinMode(ledPin, OUTPUT);`：设置LED引脚为输出模式。\n    *   `pinMode(interruptPin, INPUT_PULLUP);`：设置中断引脚为输入上拉模式。\n    *   `attachInterrupt(digitalPinToInterrupt(interruptPin), blink, CHANGE);`：初始化中断。这里使用了 `digitalPinToInterrupt()` 函数将数字引脚2转换为中断号，绑定了中断服务程序 `blink`，触发方式设置为 `CHANGE`（变化）。\n\n3.  **`void loop()` 函数**：\n    *   `digitalWrite(ledPin, state);`：将 `state` 的值写入LED引脚，控制LED亮灭。\n\n4.  **`void blink()` 函数（ISR）**：\n    *   `state = !state;`：这是中断服务程序，当触发中断时执行，将 `state` 变量取反。",
+  "metadata": {
+    "generation": {
+      "method": "qwen_api",
+      "backend": "api",
+      "provider": "qwen",
+      "model": "qwen3.7-plus",
+      "status": "success",
+      "api_error": null
+    },
+    "review": {
+      "required": false,
+      "status": null,
+      "reason": null,
+      "course_relevant": true
+    }
+  },
+  "error": null,
+  "method": "qwen_api",
+  "backend": "api",
+  "provider": "qwen",
+  "model": "qwen3.7-plus",
+  "status": "success",
+  "api_error": null,
+  "indexable": true,
+  "review_required": false,
+  "review_reason": null,
+  "review_status": null,
+  "course_relevant": true
+}

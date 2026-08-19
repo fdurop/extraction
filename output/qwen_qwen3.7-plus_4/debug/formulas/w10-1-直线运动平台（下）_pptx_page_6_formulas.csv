@@ -1,0 +1,8 @@
+﻿序号,LaTeX公式,名称,描述,来源图像,提取方法,置信度,验证状态,是否需审核
+1,\theta(t_1) = \theta(t_0) + \int_{t_0}^{t_1} \omega(t) \mathrm{d}t,步进电机转角连续积分公式,描述步进电机从时刻t0到t1的转角变化，等于初始转角加上角速度对时间的积分,output/qwen_qwen3.7-plus_4/debug/images/w10-1-直线运动平台（下）_slide_6_img_1.png,qwen_api_formula,0.95,passed,False
+2,\theta[n\Delta t] = \theta[(n-1)\Delta t] + \omega[n\Delta t]\Delta t,转角离散化递推公式,将连续积分公式离散化，用于计算机循环计算转角,output/qwen_qwen3.7-plus_4/debug/images/w10-1-直线运动平台（下）_slide_6_img_1.png,qwen_api_formula,0.95,passed,False
+3,|\theta[n\Delta t]| \ge 0.5,电机转动触发条件,当无量纲化后的转角绝对值大于等于0.5时，电机转动一格,output/qwen_qwen3.7-plus_4/debug/images/w10-1-直线运动平台（下）_slide_6_img_1.png,qwen_api_formula,0.9,passed,False
+4,\Delta \theta / 2,角位移误差上限,角位移的误差始终小于每脉冲转角的一半,output/qwen_qwen3.7-plus_4/debug/images/w10-1-直线运动平台（下）_slide_6_img_1.png,qwen_api_formula,0.9,passed,False
+5,dt = currentLoopTime - lastLoopTime,时间间隔计算,计算两次循环之间的时间间隔,output/qwen_qwen3.7-plus_4/debug/images/w10-1-直线运动平台（下）_slide_6_img_2.png,qwen_api_formula,0.95,passed,False
+6,pulse2Send += speedPerPulse \times dt,脉冲累加公式,根据每脉冲速度和时间的乘积累加待发送脉冲数,output/qwen_qwen3.7-plus_4/debug/images/w10-1-直线运动平台（下）_slide_6_img_2.png,qwen_api_formula,0.95,passed,False
+7,|pulse2Send| \geq 0.5,步进判断条件,判断待发送脉冲数的绝对值是否达到步进阈值,output/qwen_qwen3.7-plus_4/debug/images/w10-1-直线运动平台（下）_slide_6_img_2.png,qwen_api_formula,0.95,passed,False

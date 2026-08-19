@@ -1,0 +1,33 @@
+{
+  "original_path": "output/qwen_qwen3.7-plus_6/debug/images/w08-1-步进电机驱动器_p8_img3.png",
+  "enhanced_path": "output/qwen_qwen3.7-plus_6/debug/images/w08-1-步进电机驱动器_p8_img3_enhanced.png",
+  "description": "类型：示意图\n图片展示了一个数字信号的脉冲波形图。蓝色折线描绘了电平从低到高的跳变及回落过程。波形左侧垂直上升沿旁标注有竖排文字“RISING”，顶部高电平平台上方标注“HIGH”，右侧垂直下降沿旁标注有竖排文字“FALLING”，底部起始和结束的低电平处均标注“LOW”。该图直观对应课程文本中关于外部中断触发方式（上升沿、下降沿）的定义。",
+  "metadata": {
+    "generation": {
+      "method": "qwen_api",
+      "backend": "api",
+      "provider": "qwen",
+      "model": "qwen3.7-plus",
+      "status": "success",
+      "api_error": null
+    },
+    "review": {
+      "required": false,
+      "status": null,
+      "reason": null,
+      "course_relevant": true
+    }
+  },
+  "error": null,
+  "method": "qwen_api",
+  "backend": "api",
+  "provider": "qwen",
+  "model": "qwen3.7-plus",
+  "status": "success",
+  "api_error": null,
+  "indexable": true,
+  "review_required": false,
+  "review_reason": null,
+  "review_status": null,
+  "course_relevant": true
+}

@@ -1,0 +1,33 @@
+{
+  "original_path": "output/qwen_qwen3.7-plus_5/debug/images/w10-1-直线运动平台（下）_slide_11_img_2.png",
+  "enhanced_path": "output/qwen_qwen3.7-plus_5/debug/images/w10-1-直线运动平台（下）_slide_11_img_2_enhanced.png",
+  "description": "图片展示了一组描述二阶振动系统动力学特性的数学公式，内容包含以下三个部分：\n\n1.  **系统微分方程**：位于顶部，公式为 $\\ddot{\\theta}(t) + 2\\omega_n\\zeta\\dot{\\theta}(t) + \\omega_n^2\\theta(t) = \\frac{\\ddot{u}_s(t)}{l}$。这是一个典型的二阶常系数线性微分方程，描述了系统角度 $\\theta(t)$ 随时间的变化与输入 $\\ddot{u}_s(t)$ 之间的关系。\n2.  **固有频率**：位于中间，红色文字标注“固有频率”，后接公式 $\\omega_n = \\sqrt{\\frac{g}{l}}$。\n3.  **阻尼比**：位于底部，红色文字标注“阻尼比”，后接公式 $\\zeta = \\frac{c}{2m\\sqrt{gl}}$，并在末尾注明“$c$ 为阻尼”。\n\n这些公式定义了系统的固有频率和阻尼比，是分析系统振动特性（如上下文提到的“输入整形”技术中用于抑制振动）的基础模型。",
+  "metadata": {
+    "generation": {
+      "method": "qwen_api",
+      "backend": "api",
+      "provider": "qwen",
+      "model": "qwen3.7-plus",
+      "status": "success",
+      "api_error": null
+    },
+    "review": {
+      "required": false,
+      "status": null,
+      "reason": null,
+      "course_relevant": true
+    }
+  },
+  "error": null,
+  "method": "qwen_api",
+  "backend": "api",
+  "provider": "qwen",
+  "model": "qwen3.7-plus",
+  "status": "success",
+  "api_error": null,
+  "indexable": true,
+  "review_required": false,
+  "review_reason": null,
+  "review_status": null,
+  "course_relevant": true
+}

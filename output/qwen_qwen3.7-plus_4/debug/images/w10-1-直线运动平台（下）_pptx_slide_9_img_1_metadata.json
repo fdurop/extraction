@@ -1,0 +1,33 @@
+{
+  "original_path": "output/qwen_qwen3.7-plus_4/debug/images/w10-1-直线运动平台（下）_slide_9_img_1.png",
+  "enhanced_path": "output/qwen_qwen3.7-plus_4/debug/images/w10-1-直线运动平台（下）_slide_9_img_1_enhanced.png",
+  "description": "这张图片展示了关于“滑台以指定时长移动指定距离”的实践步骤和算法原理，与页面上下文（§3.4 实践）紧密相关。\n\n图片内容包含以下关键信息：\n\n**1. 操作流程步骤：**\n*   **① 滑台初始化复位；**\n*   **② 设置指定时长 $T$ 和距离 $L$（小于行程）；**（文字为红色，表示强调）\n*   **③ 设置时间中断，等待启停按钮；**\n*   **④ 启动后，滑台按设定速度进行移动。**\n\n**2. 具体的运动学公式与控制逻辑：**\n*   **速度公式**：$v(t) = 6Lt(T-t)/T^3$。\n    *   说明：抛物线型，**启停时刻速度均为零**（红色文字）。\n*   **位移公式**：$x(t) = /int_{0}^{T} v(t)/text{d}t = 6Lt^2(/frac{T}{2} - /frac{t}{3})/T^3$。（注：图中积分上限写作 $T$，但结果表达式含有变量 $t$，实际上应为对时间 $t$ 的积分）。\n*   **时间中断**：设置速度（转换为脉冲数）。\n*   **loop循环**：根据速度发送脉冲。\n\n这些内容详细解释了如何通过抛物线速度规划（Smooth Path）来控制滑台在指定时间 $T$ 内移动距离 $L$，并给出了具体的代码实现逻辑（中断与循环）。",
+  "metadata": {
+    "generation": {
+      "method": "qwen_api",
+      "backend": "api",
+      "provider": "qwen",
+      "model": "qwen3.7-plus",
+      "status": "success",
+      "api_error": null
+    },
+    "review": {
+      "required": false,
+      "status": null,
+      "reason": null,
+      "course_relevant": true
+    }
+  },
+  "error": null,
+  "method": "qwen_api",
+  "backend": "api",
+  "provider": "qwen",
+  "model": "qwen3.7-plus",
+  "status": "success",
+  "api_error": null,
+  "indexable": true,
+  "review_required": false,
+  "review_reason": null,
+  "review_status": null,
+  "course_relevant": true
+}

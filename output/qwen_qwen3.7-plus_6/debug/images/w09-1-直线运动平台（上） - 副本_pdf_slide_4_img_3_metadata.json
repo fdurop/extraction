@@ -1,0 +1,33 @@
+{
+  "original_path": "output/qwen_qwen3.7-plus_6/debug/images/w09-1-直线运动平台（上） - 副本_p4_img5.jpeg",
+  "enhanced_path": "output/qwen_qwen3.7-plus_6/debug/images/w09-1-直线运动平台（上） - 副本_p4_img5_enhanced.jpeg",
+  "description": "类型：示意图\n图片展示了一个直交型机械臂的三维模型。该装置由三个相互垂直的直线运动轴组成，包含X、Y、Z三个方向的导轨和滑块结构。每个轴的末端或连接处均安装有圆柱形电机（呈蓝色）。整体构型呈现为龙门式或悬臂式结构，用于实现空间内的多轴直线运动。图片上方标注有文字“Z轴”及“直交型机械臂”。",
+  "metadata": {
+    "generation": {
+      "method": "qwen_api",
+      "backend": "api",
+      "provider": "qwen",
+      "model": "qwen3.7-plus",
+      "status": "success",
+      "api_error": null
+    },
+    "review": {
+      "required": false,
+      "status": null,
+      "reason": null,
+      "course_relevant": true
+    }
+  },
+  "error": null,
+  "method": "qwen_api",
+  "backend": "api",
+  "provider": "qwen",
+  "model": "qwen3.7-plus",
+  "status": "success",
+  "api_error": null,
+  "indexable": true,
+  "review_required": false,
+  "review_reason": null,
+  "review_status": null,
+  "course_relevant": true
+}

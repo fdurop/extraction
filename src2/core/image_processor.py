@@ -4,6 +4,7 @@
 """
 
 import os
+import re
 from PIL import Image, ImageEnhance
 from typing import Optional, Dict, Any
 
@@ -113,7 +114,18 @@ class ImageProcessor:
         # Prefer the configured remote VLM API.
         if self.vlm_client:
             try:
-                description = self.vlm_client.generate_description(image_path, context)
+                prompt = (
+                    "请忠实描述这张教学材料图片，并判断它是否承载课程知识。\n"
+                    "如果图片只是校徽、水印、装饰、二维码、无关照片，或无法从图片中获得与本页课程有关的信息，"
+                    "请以[COURSE_IRRELEVANT]开头并简要说明原因。\n"
+                    "如果图片与课程相关，第一句写“类型：示意图/照片/表格/公式/代码/其他”中的一种，"
+                    "随后只记录可见的关键文字、对象、连线、坐标轴、步骤或空间关系。"
+                    "禁止使用Markdown，禁止推测用途、原理和课程结论；上下文只用于辨认缩写，不得补写图片内容。"
+                    "若是表格、公式或代码，只概括主题，不要在通用描述里完整转录，专用流程会另行识别。"
+                    "总长度尽量控制在300个汉字以内。\n"
+                    f"页面上下文：{(context or '')[:800]}"
+                )
+                description = self.vlm_client.generate_description(image_path, prompt)
                 result["description"] = description
                 result["method"] = getattr(self.vlm_client, "provider_name", "vlm_api")
                 result["backend"] = "api"
@@ -155,6 +167,10 @@ class ImageProcessor:
             "status": "not_started",
             "api_error": None,
             "indexable": False,
+            "review_required": False,
+            "review_reason": None,
+            "review_status": None,
+            "course_relevant": None,
         }
         
         # 检查文件是否存在
@@ -195,7 +211,26 @@ class ImageProcessor:
             result["model"] = desc_result.get("model")
             result["status"] = desc_result.get("status", "unknown")
             result["api_error"] = desc_result.get("api_error")
-            result["indexable"] = bool(result["description"])
+            description = str(result["description"] or "").strip()
+            irrelevant_marker = bool(
+                re.match(r"^\s*\[?COURSE[_ -]?IRRELEVANT\]?", description, re.IGNORECASE)
+                or re.match(r"^\s*\[?课程无关\]?", description)
+            )
+            if result["status"] != "success":
+                result["review_required"] = True
+                result["review_reason"] = "api_failed"
+            elif not description:
+                result["review_required"] = True
+                result["review_reason"] = "empty_description"
+            elif irrelevant_marker:
+                result["review_required"] = True
+                result["review_reason"] = "course_irrelevant"
+
+            result["review_status"] = "pending" if result["review_required"] else None
+            result["course_relevant"] = False if irrelevant_marker else (
+                True if result["status"] == "success" and description else None
+            )
+            result["indexable"] = bool(description) and not result["review_required"]
             result["metadata"]["generation"] = {
                 "method": result["method"],
                 "backend": result["backend"],
@@ -203,6 +238,12 @@ class ImageProcessor:
                 "model": result["model"],
                 "status": result["status"],
                 "api_error": result["api_error"],
+            }
+            result["metadata"]["review"] = {
+                "required": result["review_required"],
+                "status": result["review_status"],
+                "reason": result["review_reason"],
+                "course_relevant": result["course_relevant"],
             }
         except Exception as e:
             error_msg = f"图像描述生成失败: {e}"

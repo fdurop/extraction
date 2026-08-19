@@ -1,0 +1,8 @@
+﻿序号,LaTeX公式,名称,描述,来源图像,提取方法,置信度,验证状态,是否需审核
+1,\ddot{\theta}(t) + 2\omega_n\zeta\dot{\theta}(t) + \omega_n^2\theta(t) = \frac{\ddot{u}_s(t)}{l},单摆运动微分方程,描述受迫阻尼单摆的角加速度、角速度与转角关系的二阶线性微分方程,output/qwen_qwen3.7-plus_6/debug/images/w10-1-直线运动平台（下）_slide_12_img_1.png,qwen_api_formula,0.98,passed,False
+2,\omega_n = \sqrt{\frac{g}{l}},固有频率公式,无阻尼单摆的固有角频率表达式,output/qwen_qwen3.7-plus_6/debug/images/w10-1-直线运动平台（下）_slide_12_img_1.png,qwen_api_formula,1.0,passed,False
+3,\zeta = \frac{c}{2m\sqrt{gl}},阻尼比定义式,阻尼比与阻尼系数、质量、重力加速度和摆长的关系,output/qwen_qwen3.7-plus_6/debug/images/w10-1-直线运动平台（下）_slide_12_img_1.png,qwen_api_formula,0.97,passed,False
+4,e^{-\zeta \omega_n t} \sin(\omega_d t),自由振动位移函数分量,自由振动的位移函数由该正弦分量与余弦分量叠加而成,output/qwen_qwen3.7-plus_6/debug/images/w10-1-直线运动平台（下）_slide_12_img_2.png,qwen_api_formula,1.0,passed,False
+5,e^{-\zeta \omega_n t} \cos(\omega_d t),自由振动位移函数分量,自由振动的位移函数由该余弦分量与正弦分量叠加而成,output/qwen_qwen3.7-plus_6/debug/images/w10-1-直线运动平台（下）_slide_12_img_2.png,qwen_api_formula,1.0,passed,False
+6,\omega_d = \omega_n \sqrt{1 - \zeta^2},振荡频率公式,定义了有阻尼系统的振荡频率（阻尼自然频率）,output/qwen_qwen3.7-plus_6/debug/images/w10-1-直线运动平台（下）_slide_12_img_2.png,qwen_api_formula,1.0,passed,False
+7,"c = 0, \quad \zeta = 0, \quad \omega_d = \omega_n",忽略阻尼条件,当忽略阻尼时，阻尼系数c和阻尼比ζ均为0，此时振荡频率等于固有频率,output/qwen_qwen3.7-plus_6/debug/images/w10-1-直线运动平台（下）_slide_12_img_2.png,qwen_api_formula,1.0,passed,False

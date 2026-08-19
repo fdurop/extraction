@@ -1,0 +1,33 @@
+{
+  "original_path": "output/qwen_qwen3.7-plus_4/debug/images/w10-1-直线运动平台（下）_slide_14_img_2.png",
+  "enhanced_path": "output/qwen_qwen3.7-plus_4/debug/images/w10-1-直线运动平台（下）_slide_14_img_2_enhanced.png",
+  "description": "这张图片展示了关于“输入整形”（Input Shaping）控制理论的数学推导过程，主要包含以下三个部分的知识点：\n\n1.  **消除残余振动**：\n    *   文本指出需要在 $U_s(s)$ 中配置两个零点 $s_1 = -i/omega_n$ 和 $s_2 = i/omega_n$。\n    *   给出了系统输出的拉普拉斯变换公式：$/tilde{/theta}(s) = /frac{s^2}{l(s^2+/omega_n^2)}/tilde{U}_s(s) = /frac{s^2}{l(s^2+/omega_n^2)} /cdot C(s-s_1)(s-s_2)U_s(s)$。\n\n2.  **输入整形**：\n    *   目标是求 $/tilde{U}_s(s)$ 的 Laplace 逆变换。\n    *   公式为：$/tilde{u}_s(t) = /mathcal{L}^{-1}[C(s-s_1)(s-s_2)U_s(s)]$。\n\n3.  **如何求 Laplace 逆变换（利用 l'Hôpital 法则）**：\n    *   展示了两个极限计算过程，用于处理 $s /to s_1$ 和 $s /to s_2$ 时的不定式：\n        *   $/lim_{s /to s_1} /frac{e^{-s/tau} - e^{-s_1/tau}}{s-s_1} = -/tau e^{-s_1/tau} /neq 0$\n        *   $/lim_{s /to s_2} /frac{e^{-s/tau} - e^{-s_2/tau}}{s-s_2} = -/tau e^{-s_2/tau} /neq 0$\n    *   最后给出了 $/tilde{U}_s(s)$ 的等价表达式推导结果：\n        $/tilde{U}_s(s) = C(s-s_1)(s-s_2)U_s(s) /Leftrightarrow /tilde{U}_s(s) = /frac{C}{/tau^2}(e^{-s/tau} - e^{s_2/tau})(e^{-s/tau} - e^{s_1/tau})U_s(s)$。\n    *(注：根据 $s_1, s_2$ 的共轭关系，$e^{s_2/tau}$ 即 $e^{-s_1/tau}$，$e^{s_1/tau}$ 即 $e^{-s_2/tau}$，这是利用极限近似替换 $(s-s_1)$ 和 $(s-s_2)$ 项的结果)*。",
+  "metadata": {
+    "generation": {
+      "method": "qwen_api",
+      "backend": "api",
+      "provider": "qwen",
+      "model": "qwen3.7-plus",
+      "status": "success",
+      "api_error": null
+    },
+    "review": {
+      "required": false,
+      "status": null,
+      "reason": null,
+      "course_relevant": true
+    }
+  },
+  "error": null,
+  "method": "qwen_api",
+  "backend": "api",
+  "provider": "qwen",
+  "model": "qwen3.7-plus",
+  "status": "success",
+  "api_error": null,
+  "indexable": true,
+  "review_required": false,
+  "review_reason": null,
+  "review_status": null,
+  "course_relevant": true
+}

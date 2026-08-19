@@ -1,0 +1,7 @@
+﻿序号,LaTeX公式,名称,描述,来源图像,提取方法,置信度,验证状态,是否需审核
+1,s_1 = -i\omega_n,,,output/qwen_qwen3.7-plus_6/debug/images/w10-1-直线运动平台（下）_slide_14_img_2.png,qwen_api_formula,0.37,review,True
+2,s_2 = i\omega_n,,,output/qwen_qwen3.7-plus_6/debug/images/w10-1-直线运动平台（下）_slide_14_img_2.png,qwen_api_formula,0.37,review,True
+3,\widetilde{\theta}(s) = \frac{s^2}{l(s^2 + \omega_n^2)} \widetilde{U}_s(s) = \frac{s^2}{l(s^2 + \omega_n^2)} \cdot C(s - s_1)(s - s_2)U_s(s),,,output/qwen_qwen3.7-plus_6/debug/images/w10-1-直线运动平台（下）_slide_14_img_2.png,qwen_api_formula,0.37,review,True
+4,\widetilde{u}_s(t) = \mathcal{L}^{-1}[C(s - s_1)(s - s_2)U_s(s)],,,output/qwen_qwen3.7-plus_6/debug/images/w10-1-直线运动平台（下）_slide_14_img_2.png,qwen_api_formula,0.37,review,True
+5,\lim_{s \to s_1} \frac{e^{-s\tau} - e^{-s_1\tau}}{s - s_1} = -\tau e^{-s_1\tau} \neq 0,,,output/qwen_qwen3.7-plus_6/debug/images/w10-1-直线运动平台（下）_slide_14_img_2.png,qwen_api_formula,0.37,review,True
+6,\lim_{s \to s_2} \frac{e^{-s\tau} - e^{-s_2\tau}}{s - s_2} = -\tau e^{-s_2\tau} \neq 0,,,output/qwen_qwen3.7-plus_6/debug/images/w10-1-直线运动平台（下）_slide_14_img_2.png,qwen_api_formula,0.37,review,True

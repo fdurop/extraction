@@ -1,0 +1,5 @@
+﻿序号,LaTeX公式,名称,描述,来源图像,提取方法,置信度,验证状态,是否需审核
+1,u_s(t),位移函数,滑块从横杆左端A点移动到右端B的位移函数,output/qwen_qwen3.7-plus_5/debug/images/w10-1-直线运动平台（下）_slide_11_img_1.png,qwen_api_formula,0.95,passed,False
+2,\ddot{\theta}(t) + 2\omega_n\zeta\dot{\theta}(t) + \omega_n^2\theta(t) = \frac{\ddot{u}_s(t)}{l},运动微分方程,描述系统的动力学响应,output/qwen_qwen3.7-plus_5/debug/images/w10-1-直线运动平台（下）_slide_11_img_2.png,qwen_api_formula,0.95,passed,False
+3,\omega_n = \sqrt{\frac{g}{l}},固有频率公式,计算系统的固有频率,output/qwen_qwen3.7-plus_5/debug/images/w10-1-直线运动平台（下）_slide_11_img_2.png,qwen_api_formula,0.95,passed,False
+4,\zeta = \frac{c}{2m\sqrt{gl}},阻尼比公式,计算系统的阻尼比,output/qwen_qwen3.7-plus_5/debug/images/w10-1-直线运动平台（下）_slide_11_img_2.png,qwen_api_formula,0.9,passed,False

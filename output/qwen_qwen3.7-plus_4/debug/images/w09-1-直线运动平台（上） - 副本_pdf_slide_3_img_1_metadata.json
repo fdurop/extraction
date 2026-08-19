@@ -1,0 +1,33 @@
+{
+  "original_path": "output/qwen_qwen3.7-plus_4/debug/images/w09-1-直线运动平台（上） - 副本_p3_img3.jpeg",
+  "enhanced_path": "output/qwen_qwen3.7-plus_4/debug/images/w09-1-直线运动平台（上） - 副本_p3_img3_enhanced.jpeg",
+  "description": "图片展示了一个单轴直线运动平台的齿带传动结构实物图（或3D模型图），直观呈现了课程文本中提到的结构组成。\n\n**关键对象与结构：**\n*   **步进电机**：位于图片右侧，为黑色方块状物体，表面有散热鳍片，作为动力源。\n*   **齿带（同步带）**：图片中间白色的环形带，带有明显的齿纹。它连接电机轴端的同步轮（图中被遮挡或集成在黑色座体内）与滑块。\n*   **导轨与滑块**：图片左侧延伸出的银色长条为导轨，中间黑色的机械结构为滑块/安装座。\n*   **传动关系**：展示了文本中描述的“将电机的转动通过传动机构转换为直线运动”。电机转动带动白色齿带，齿带与滑块合（或连接），从而带动滑块沿导轨进行直线运动。\n\n该图对应页面文本中列出的“齿带传动”、“步进电机”、“导轨”、“齿带”等关键词，是§1.1节中关于直线运动平台结构组成的具体实例展示。",
+  "metadata": {
+    "generation": {
+      "method": "qwen_api",
+      "backend": "api",
+      "provider": "qwen",
+      "model": "qwen3.7-plus",
+      "status": "success",
+      "api_error": null
+    },
+    "review": {
+      "required": false,
+      "status": null,
+      "reason": null,
+      "course_relevant": true
+    }
+  },
+  "error": null,
+  "method": "qwen_api",
+  "backend": "api",
+  "provider": "qwen",
+  "model": "qwen3.7-plus",
+  "status": "success",
+  "api_error": null,
+  "indexable": true,
+  "review_required": false,
+  "review_reason": null,
+  "review_status": null,
+  "course_relevant": true
+}

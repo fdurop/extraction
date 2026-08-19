@@ -1,0 +1,13 @@
+{
+  "user_id": "default_user",
+  "course_id": "default_course",
+  "course_name": "default_course",
+  "created_at": "2026-08-19T10:37:13.108405",
+  "updated_at": "2026-08-19T10:43:32.828487",
+  "documents": [
+    "doc_734b0dcb18f2",
+    "doc_af60fdc9c262",
+    "doc_e3f9d5ecb045"
+  ],
+  "output_schema": "multimodal_graphrag_extraction_v1"
+}

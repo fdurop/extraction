@@ -1,0 +1,33 @@
+{
+  "original_path": "output/qwen_qwen3.7-plus_5/debug/images/w09-1-直线运动平台（上） - 副本_p4_img3.jpeg",
+  "enhanced_path": "output/qwen_qwen3.7-plus_5/debug/images/w09-1-直线运动平台（上） - 副本_p4_img3_enhanced.jpeg",
+  "description": "图片展示了一个直交型机械臂（多轴直线运动平台）的实物图，具体结构如下：\n\n1.  **整体布局**：装置由三个直线运动模组组成，呈现空间直角坐标（XYZ轴）的布局形态。\n2.  **水平模组**：图中有两个呈“T”型或十字型排列的长条形线性模组（滑台）。外壳为银白色金属材质。左侧模组侧面印有“HIGUNG”字样及红色Logo，右侧模组印有“SHANG”字样及红色Logo。模组上方均配有黑色的拖链（电缆保护链），用于随动保护线缆。\n3.  **垂直模组（Z轴）**：在水平模组的交汇处竖直安装了一个直线模组，对应页面文字中的“Z轴”。其顶部装有黑色的驱动电机。\n4.  **末端结构**：Z轴模组的下部有一个黑色的安装块/滑块，表面有白色标签或接口，用于安装末端执行器。\n\n该图片直观展示了课程“§1.2 多轴直线运动平台”中提到的“Z轴直交型机械臂”的机械结构。",
+  "metadata": {
+    "generation": {
+      "method": "qwen_api",
+      "backend": "api",
+      "provider": "qwen",
+      "model": "qwen3.7-plus",
+      "status": "success",
+      "api_error": null
+    },
+    "review": {
+      "required": false,
+      "status": null,
+      "reason": null,
+      "course_relevant": true
+    }
+  },
+  "error": null,
+  "method": "qwen_api",
+  "backend": "api",
+  "provider": "qwen",
+  "model": "qwen3.7-plus",
+  "status": "success",
+  "api_error": null,
+  "indexable": true,
+  "review_required": false,
+  "review_reason": null,
+  "review_status": null,
+  "course_relevant": true
+}

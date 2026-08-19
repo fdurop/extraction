@@ -1,0 +1,166 @@
+{
+  "page": 11,
+  "formula_count": 3,
+  "accepted_count": 3,
+  "review_count": 0,
+  "formulas": [
+    {
+      "source_image": "output/qwen_qwen3.7-plus_6/debug/images/w10-1-直线运动平台（下）_slide_11_img_2.png",
+      "source_type": "image_vlm",
+      "extraction_method": "qwen_api_formula",
+      "backend": "api",
+      "provider": "qwen",
+      "model": "qwen3.7-plus",
+      "image_index": 1,
+      "raw_response": "{\n  \"has_formula\": true,\n  \"formulas\": [\n    {\n      \"latex\": \"\\\\ddot{\\\\theta}(t) + 2\\\\omega_n\\\\zeta\\\\dot{\\\\theta}(t) + \\\\omega_n^2\\\\theta(t) = \\\\frac{\\\\ddot{u}_s(t)}{l}\",\n      \"name\": \"运动微分方程\",\n      \"meaning\": \"\",\n      \"symbols\": [\n        {\n          \"symbol\": \"\\\\theta(t)\",\n          \"meaning\": \"\",\n          \"unit\": null\n        },\n        {\n          \"symbol\": \"\\\\omega_n\",\n          \"meaning\": \"固有频率\",\n          \"unit\": null\n        },\n        {\n          \"symbol\": \"\\\\zeta\",\n          \"meaning\": \"阻尼比\",\n          \"unit\": null\n        },\n        {\n          \"symbol\": \"u_s(t)\",\n          \"meaning\": \"\",\n          \"unit\": null\n        },\n        {\n          \"symbol\": \"l\",\n          \"meaning\": \"\",\n          \"unit\": null\n        }\n      ],\n      \"conditions\": [],\n      \"uncertain_symbols\": [],\n      \"confidence\": 1.0\n    },\n    {\n      \"latex\": \"\\\\omega_n = \\\\sqrt{\\\\frac{g}{l}}\",\n      \"name\": \"固有频率公式\",\n      \"meaning\": \"固有频率\",\n      \"symbols\": [\n        {\n          \"symbol\": \"\\\\omega_n\",\n          \"meaning\": \"固有频率\",\n          \"unit\": null\n        },\n        {\n          \"symbol\": \"g\",\n          \"meaning\": \"\",\n          \"unit\": null\n        },\n        {\n          \"symbol\": \"l\",\n          \"meaning\": \"\",\n          \"unit\": null\n        }\n      ],\n      \"conditions\": [],\n      \"uncertain_symbols\": [],\n      \"confidence\": 1.0\n    },\n    {\n      \"latex\": \"\\\\zeta = \\\\frac{c}{2m\\\\sqrt{gl}}\",\n      \"name\": \"阻尼比公式\",\n      \"meaning\": \"阻尼比\",\n      \"symbols\": [\n        {\n          \"symbol\": \"\\\\zeta\",\n          \"meaning\": \"阻尼比\",\n          \"unit\": null\n        },\n        {\n          \"symbol\": \"c\",\n          \"meaning\": \"阻尼\",\n          \"unit\": null\n        },\n        {\n          \"symbol\": \"m\",\n          \"meaning\": \"\",\n          \"unit\": null\n        },\n        {\n          \"symbol\": \"g\",\n          \"meaning\": \"\",\n          \"unit\": null\n        },\n        {\n          \"symbol\": \"l\",\n          \"meaning\": \"\",\n          \"unit\": null\n        }\n      ],\n      \"conditions\": [\n        \"c 为阻尼\"\n      ],\n      \"uncertain_symbols\": [],\n      \"confidence\": 1.0\n    }\n  ]\n}",
+      "parse_error": null,
+      "partial_response": false,
+      "review_reason": null,
+      "latex": "\\ddot{\\theta}(t) + 2\\omega_n\\zeta\\dot{\\theta}(t) + \\omega_n^2\\theta(t) = \\frac{\\ddot{u}_s(t)}{l}",
+      "name": "运动微分方程",
+      "meaning": "",
+      "symbols": [
+        {
+          "symbol": "\\theta(t)",
+          "meaning": "",
+          "unit": null
+        },
+        {
+          "symbol": "\\omega_n",
+          "meaning": "固有频率",
+          "unit": null
+        },
+        {
+          "symbol": "\\zeta",
+          "meaning": "阻尼比",
+          "unit": null
+        },
+        {
+          "symbol": "u_s(t)",
+          "meaning": "",
+          "unit": null
+        },
+        {
+          "symbol": "l",
+          "meaning": "",
+          "unit": null
+        }
+      ],
+      "conditions": [],
+      "uncertain_symbols": [],
+      "confidence": 1.0,
+      "plain_text": "\\ddot{\\theta}(t) + 2\\omega_n\\zeta\\dot{\\theta}(t) + \\omega_n^2\\theta(t) = \\frac{\\ddot{u}_s(t)}{l}",
+      "description": "",
+      "validation_issues": [],
+      "validation_status": "passed",
+      "review_required": false,
+      "review_status": null,
+      "indexable": true,
+      "formula_id": "w10-1-直线运动平台（下）_pptx_page_11_formula_1",
+      "page_num": 11
+    },
+    {
+      "source_image": "output/qwen_qwen3.7-plus_6/debug/images/w10-1-直线运动平台（下）_slide_11_img_2.png",
+      "source_type": "image_vlm",
+      "extraction_method": "qwen_api_formula",
+      "backend": "api",
+      "provider": "qwen",
+      "model": "qwen3.7-plus",
+      "image_index": 1,
+      "raw_response": "{\n  \"has_formula\": true,\n  \"formulas\": [\n    {\n      \"latex\": \"\\\\ddot{\\\\theta}(t) + 2\\\\omega_n\\\\zeta\\\\dot{\\\\theta}(t) + \\\\omega_n^2\\\\theta(t) = \\\\frac{\\\\ddot{u}_s(t)}{l}\",\n      \"name\": \"运动微分方程\",\n      \"meaning\": \"\",\n      \"symbols\": [\n        {\n          \"symbol\": \"\\\\theta(t)\",\n          \"meaning\": \"\",\n          \"unit\": null\n        },\n        {\n          \"symbol\": \"\\\\omega_n\",\n          \"meaning\": \"固有频率\",\n          \"unit\": null\n        },\n        {\n          \"symbol\": \"\\\\zeta\",\n          \"meaning\": \"阻尼比\",\n          \"unit\": null\n        },\n        {\n          \"symbol\": \"u_s(t)\",\n          \"meaning\": \"\",\n          \"unit\": null\n        },\n        {\n          \"symbol\": \"l\",\n          \"meaning\": \"\",\n          \"unit\": null\n        }\n      ],\n      \"conditions\": [],\n      \"uncertain_symbols\": [],\n      \"confidence\": 1.0\n    },\n    {\n      \"latex\": \"\\\\omega_n = \\\\sqrt{\\\\frac{g}{l}}\",\n      \"name\": \"固有频率公式\",\n      \"meaning\": \"固有频率\",\n      \"symbols\": [\n        {\n          \"symbol\": \"\\\\omega_n\",\n          \"meaning\": \"固有频率\",\n          \"unit\": null\n        },\n        {\n          \"symbol\": \"g\",\n          \"meaning\": \"\",\n          \"unit\": null\n        },\n        {\n          \"symbol\": \"l\",\n          \"meaning\": \"\",\n          \"unit\": null\n        }\n      ],\n      \"conditions\": [],\n      \"uncertain_symbols\": [],\n      \"confidence\": 1.0\n    },\n    {\n      \"latex\": \"\\\\zeta = \\\\frac{c}{2m\\\\sqrt{gl}}\",\n      \"name\": \"阻尼比公式\",\n      \"meaning\": \"阻尼比\",\n      \"symbols\": [\n        {\n          \"symbol\": \"\\\\zeta\",\n          \"meaning\": \"阻尼比\",\n          \"unit\": null\n        },\n        {\n          \"symbol\": \"c\",\n          \"meaning\": \"阻尼\",\n          \"unit\": null\n        },\n        {\n          \"symbol\": \"m\",\n          \"meaning\": \"\",\n          \"unit\": null\n        },\n        {\n          \"symbol\": \"g\",\n          \"meaning\": \"\",\n          \"unit\": null\n        },\n        {\n          \"symbol\": \"l\",\n          \"meaning\": \"\",\n          \"unit\": null\n        }\n      ],\n      \"conditions\": [\n        \"c 为阻尼\"\n      ],\n      \"uncertain_symbols\": [],\n      \"confidence\": 1.0\n    }\n  ]\n}",
+      "parse_error": null,
+      "partial_response": false,
+      "review_reason": null,
+      "latex": "\\omega_n = \\sqrt{\\frac{g}{l}}",
+      "name": "固有频率公式",
+      "meaning": "固有频率",
+      "symbols": [
+        {
+          "symbol": "\\omega_n",
+          "meaning": "固有频率",
+          "unit": null
+        },
+        {
+          "symbol": "g",
+          "meaning": "",
+          "unit": null
+        },
+        {
+          "symbol": "l",
+          "meaning": "",
+          "unit": null
+        }
+      ],
+      "conditions": [],
+      "uncertain_symbols": [],
+      "confidence": 1.0,
+      "plain_text": "\\omega_n = \\sqrt{\\frac{g}{l}}",
+      "description": "固有频率",
+      "validation_issues": [],
+      "validation_status": "passed",
+      "review_required": false,
+      "review_status": null,
+      "indexable": true,
+      "formula_id": "w10-1-直线运动平台（下）_pptx_page_11_formula_2",
+      "page_num": 11
+    },
+    {
+      "source_image": "output/qwen_qwen3.7-plus_6/debug/images/w10-1-直线运动平台（下）_slide_11_img_2.png",
+      "source_type": "image_vlm",
+      "extraction_method": "qwen_api_formula",
+      "backend": "api",
+      "provider": "qwen",
+      "model": "qwen3.7-plus",
+      "image_index": 1,
+      "raw_response": "{\n  \"has_formula\": true,\n  \"formulas\": [\n    {\n      \"latex\": \"\\\\ddot{\\\\theta}(t) + 2\\\\omega_n\\\\zeta\\\\dot{\\\\theta}(t) + \\\\omega_n^2\\\\theta(t) = \\\\frac{\\\\ddot{u}_s(t)}{l}\",\n      \"name\": \"运动微分方程\",\n      \"meaning\": \"\",\n      \"symbols\": [\n        {\n          \"symbol\": \"\\\\theta(t)\",\n          \"meaning\": \"\",\n          \"unit\": null\n        },\n        {\n          \"symbol\": \"\\\\omega_n\",\n          \"meaning\": \"固有频率\",\n          \"unit\": null\n        },\n        {\n          \"symbol\": \"\\\\zeta\",\n          \"meaning\": \"阻尼比\",\n          \"unit\": null\n        },\n        {\n          \"symbol\": \"u_s(t)\",\n          \"meaning\": \"\",\n          \"unit\": null\n        },\n        {\n          \"symbol\": \"l\",\n          \"meaning\": \"\",\n          \"unit\": null\n        }\n      ],\n      \"conditions\": [],\n      \"uncertain_symbols\": [],\n      \"confidence\": 1.0\n    },\n    {\n      \"latex\": \"\\\\omega_n = \\\\sqrt{\\\\frac{g}{l}}\",\n      \"name\": \"固有频率公式\",\n      \"meaning\": \"固有频率\",\n      \"symbols\": [\n        {\n          \"symbol\": \"\\\\omega_n\",\n          \"meaning\": \"固有频率\",\n          \"unit\": null\n        },\n        {\n          \"symbol\": \"g\",\n          \"meaning\": \"\",\n          \"unit\": null\n        },\n        {\n          \"symbol\": \"l\",\n          \"meaning\": \"\",\n          \"unit\": null\n        }\n      ],\n      \"conditions\": [],\n      \"uncertain_symbols\": [],\n      \"confidence\": 1.0\n    },\n    {\n      \"latex\": \"\\\\zeta = \\\\frac{c}{2m\\\\sqrt{gl}}\",\n      \"name\": \"阻尼比公式\",\n      \"meaning\": \"阻尼比\",\n      \"symbols\": [\n        {\n          \"symbol\": \"\\\\zeta\",\n          \"meaning\": \"阻尼比\",\n          \"unit\": null\n        },\n        {\n          \"symbol\": \"c\",\n          \"meaning\": \"阻尼\",\n          \"unit\": null\n        },\n        {\n          \"symbol\": \"m\",\n          \"meaning\": \"\",\n          \"unit\": null\n        },\n        {\n          \"symbol\": \"g\",\n          \"meaning\": \"\",\n          \"unit\": null\n        },\n        {\n          \"symbol\": \"l\",\n          \"meaning\": \"\",\n          \"unit\": null\n        }\n      ],\n      \"conditions\": [\n        \"c 为阻尼\"\n      ],\n      \"uncertain_symbols\": [],\n      \"confidence\": 1.0\n    }\n  ]\n}",
+      "parse_error": null,
+      "partial_response": false,
+      "review_reason": null,
+      "latex": "\\zeta = \\frac{c}{2m\\sqrt{gl}}",
+      "name": "阻尼比公式",
+      "meaning": "阻尼比",
+      "symbols": [
+        {
+          "symbol": "\\zeta",
+          "meaning": "阻尼比",
+          "unit": null
+        },
+        {
+          "symbol": "c",
+          "meaning": "阻尼",
+          "unit": null
+        },
+        {
+          "symbol": "m",
+          "meaning": "",
+          "unit": null
+        },
+        {
+          "symbol": "g",
+          "meaning": "",
+          "unit": null
+        },
+        {
+          "symbol": "l",
+          "meaning": "",
+          "unit": null
+        }
+      ],
+      "conditions": [
+        "c 为阻尼"
+      ],
+      "uncertain_symbols": [],
+      "confidence": 1.0,
+      "plain_text": "\\zeta = \\frac{c}{2m\\sqrt{gl}}",
+      "description": "阻尼比",
+      "validation_issues": [],
+      "validation_status": "passed",
+      "review_required": false,
+      "review_status": null,
+      "indexable": true,
+      "formula_id": "w10-1-直线运动平台（下）_pptx_page_11_formula_3",
+      "page_num": 11
+    }
+  ],
+  "timestamp": "2026-08-19T10:40:57.078654"
+}

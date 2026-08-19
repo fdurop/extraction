@@ -1,0 +1,33 @@
+{
+  "original_path": "output/qwen_qwen3.7-plus_5/debug/images/w10-1-直线运动平台（下）_slide_13_img_1.png",
+  "enhanced_path": "output/qwen_qwen3.7-plus_5/debug/images/w10-1-直线运动平台（下）_slide_13_img_1_enhanced.png",
+  "description": "图片展示了红底白字（实际上是红字蓝框）的文本“两个极点”以及下方的数学公式 $s_{1,2} = \\mp i\\omega_n$（符号显示为 $\\mp$ 或 $\\pm$）。\n\n结合页面上下文“§4.1 输入整形”和“传递函数”，这张图片描述了传递函数的一种特定极点分布情况，即一对位于虚轴上的共轭极点（无阻尼情况），这是输入整形技术中需要处理的关键系统特性（用于消除残余振动）。图片承载了具体的课程数学知识。",
+  "metadata": {
+    "generation": {
+      "method": "qwen_api",
+      "backend": "api",
+      "provider": "qwen",
+      "model": "qwen3.7-plus",
+      "status": "success",
+      "api_error": null
+    },
+    "review": {
+      "required": false,
+      "status": null,
+      "reason": null,
+      "course_relevant": true
+    }
+  },
+  "error": null,
+  "method": "qwen_api",
+  "backend": "api",
+  "provider": "qwen",
+  "model": "qwen3.7-plus",
+  "status": "success",
+  "api_error": null,
+  "indexable": true,
+  "review_required": false,
+  "review_reason": null,
+  "review_status": null,
+  "course_relevant": true
+}

@@ -1,0 +1,33 @@
+{
+  "original_path": "output/qwen_qwen3.7-plus_6/debug/images/w10-1-直线运动平台（下）_slide_4_img_1.png",
+  "enhanced_path": "output/qwen_qwen3.7-plus_6/debug/images/w10-1-直线运动平台（下）_slide_4_img_1_enhanced.png",
+  "description": "类型：示意图\n图片展示了一个机械传动部件的三维渲染图，主体为水平放置的圆柱形丝杠。左侧为光滑的圆柱轴段，右侧加工有连续的螺旋状螺纹，呈现出明显的立体光影效果。该图像直观展示了丝杠的几何结构，对应页面上下文中“滑台定位”及“丝杠转速”涉及的硬件对象。",
+  "metadata": {
+    "generation": {
+      "method": "qwen_api",
+      "backend": "api",
+      "provider": "qwen",
+      "model": "qwen3.7-plus",
+      "status": "success",
+      "api_error": null
+    },
+    "review": {
+      "required": false,
+      "status": null,
+      "reason": null,
+      "course_relevant": true
+    }
+  },
+  "error": null,
+  "method": "qwen_api",
+  "backend": "api",
+  "provider": "qwen",
+  "model": "qwen3.7-plus",
+  "status": "success",
+  "api_error": null,
+  "indexable": true,
+  "review_required": false,
+  "review_reason": null,
+  "review_status": null,
+  "course_relevant": true
+}

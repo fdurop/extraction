@@ -1,0 +1,33 @@
+{
+  "original_path": "output/qwen_qwen3.7-plus_5/debug/images/w10-1-直线运动平台（下）_slide_5_img_1.png",
+  "enhanced_path": "output/qwen_qwen3.7-plus_5/debug/images/w10-1-直线运动平台（下）_slide_5_img_1_enhanced.png",
+  "description": "图片展示了关于“低通滤波”的教学幻灯片内容，包含定义、算法公式及实践提示。\n\n**主要内容如下：**\n\n1.  **滤波（filter）定义**：基本上不失真地通过某些频率，而显著地衰减或消除另一些频率成分。\n    *   **基础**：信号可视为不同频率正弦（余弦）波的叠加（Fourier变换）。\n2.  **低通滤波（Low Pass Filter, LPF）**：低于截止频率的信号通过。\n    *   **用途**：常用于平滑信号的测量噪声。一般认为，信号中的噪声属高频信号。\n    *   **常用算法**：移动平均（Moving Average, MA）。\n    *   **公式**：展示了移动平均的原始定义及其迭代形式（用于提高程序效率）：\n        $$y[n] = \\frac{1}{M} \\sum_{k=0}^{M-1} x[n-k] \\Rightarrow y[n] = y[n-1] + \\frac{x[n] - x[n-M]}{M}$$\n3.  **实践**：带低通滤波的滑台绝对位置控制。\n    *   **提示**：用长度 $M$ 的数组记录历史数据，用一个变量记录数组中待插入新数据的位置。",
+  "metadata": {
+    "generation": {
+      "method": "qwen_api",
+      "backend": "api",
+      "provider": "qwen",
+      "model": "qwen3.7-plus",
+      "status": "success",
+      "api_error": null
+    },
+    "review": {
+      "required": false,
+      "status": null,
+      "reason": null,
+      "course_relevant": true
+    }
+  },
+  "error": null,
+  "method": "qwen_api",
+  "backend": "api",
+  "provider": "qwen",
+  "model": "qwen3.7-plus",
+  "status": "success",
+  "api_error": null,
+  "indexable": true,
+  "review_required": false,
+  "review_reason": null,
+  "review_status": null,
+  "course_relevant": true
+}

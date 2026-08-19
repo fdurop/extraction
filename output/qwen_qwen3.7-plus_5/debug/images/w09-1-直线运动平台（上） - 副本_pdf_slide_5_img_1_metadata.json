@@ -1,0 +1,33 @@
+{
+  "original_path": "output/qwen_qwen3.7-plus_5/debug/images/w09-1-直线运动平台（上） - 副本_p5_img3.jpeg",
+  "enhanced_path": "output/qwen_qwen3.7-plus_5/debug/images/w09-1-直线运动平台（上） - 副本_p5_img3_enhanced.jpeg",
+  "description": "图片展示了一个限位开关（微动开关）的实物照片，具体细节如下：\n\n*   **主体外观**：开关主体为黑色长方体塑料外壳，表面印有“HUADE TECH”品牌标识及一串数字编号。\n*   **机械结构**：开关顶部安装有一个金属杠杆臂，杠杆末端连接有一个白色的滚轮。这一结构体现了页面文本中提到的“有触点，机械式接触”的特点，用于在运动机构触碰时触发开关。\n*   **接线端子**：侧面伸出三个金属引脚，旁边分别标记有“COM”、“C4”（或类似字符，通常对应NC）、“NO”。这些标识与页面下方电路图中的“COM”、“NO”、“NC”引脚定义相对应。",
+  "metadata": {
+    "generation": {
+      "method": "qwen_api",
+      "backend": "api",
+      "provider": "qwen",
+      "model": "qwen3.7-plus",
+      "status": "success",
+      "api_error": null
+    },
+    "review": {
+      "required": false,
+      "status": null,
+      "reason": null,
+      "course_relevant": true
+    }
+  },
+  "error": null,
+  "method": "qwen_api",
+  "backend": "api",
+  "provider": "qwen",
+  "model": "qwen3.7-plus",
+  "status": "success",
+  "api_error": null,
+  "indexable": true,
+  "review_required": false,
+  "review_reason": null,
+  "review_status": null,
+  "course_relevant": true
+}

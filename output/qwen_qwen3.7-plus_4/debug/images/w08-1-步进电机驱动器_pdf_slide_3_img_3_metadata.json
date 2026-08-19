@@ -1,0 +1,33 @@
+{
+  "original_path": "output/qwen_qwen3.7-plus_4/debug/images/w08-1-步进电机驱动器_p3_img4.png",
+  "enhanced_path": "output/qwen_qwen3.7-plus_4/debug/images/w08-1-步进电机驱动器_p3_img4_enhanced.png",
+  "description": "这张图片展示了“四路固态继电器组成一个H桥电路”的原理图，与课程主题“用双H桥驱动步进电机”及“H桥电路回顾”紧密相关。\n\n**图片关键内容描述：**\n\n*   **核心结构**：图片展示了一个典型的H桥电路结构，中心是一个标有“M”的蓝色圆圈，代表电机（Motor）。\n*   **电路组件**：电路包含四个开关元件（根据底部文字判断为固态继电器），分布在电机的左右两侧，形成两个半桥。\n    *   **左侧半桥**：由输入端 `ch1` 和 `ch2` 控制。\n        *   上方元件：`ch1` 连接控制端，`A1` 端连接电源正极 `V+`，`B1` 端输出。\n        *   下方元件：`ch2` 连接控制端，`A2` 端连接上方元件的 `B1` 端，`B2` 端连接电源负极 `V-`。\n        *   连接点：`B1` 和 `A2` 的连接点接入电机 `M` 的左侧。\n    *   **右侧半桥**：由输入端 `ch3` 和 `ch4` 控制。\n        *   上方元件：`ch3` 连接控制端，`A3` 端连接电源正极 `V+`，`B3` 端输出。\n        *   下方元件：`ch4` 连接控制端，`A4` 端连接上方元件的 `B3` 端，`B4` 端连接电源负极 `V-`。\n        *   连接点：`B3` 和 `A4` 的连接点接入电机 `M` 的右侧。\n*   **图中文字与标号**：\n    *   控制信号端：`ch1`, `ch2`, `ch3`, `ch4`。\n    *   电源端：`V+` (红色), `V-` (蓝色)。\n    *   节点标号：`A1`, `B1`, `A2`, `B2` (左侧)；`A3`, `B3`, `A4`, `B4` (右侧)。\n    *   底部说明文字：“四路固态继电器组成一个H桥电路”。",
+  "metadata": {
+    "generation": {
+      "method": "qwen_api",
+      "backend": "api",
+      "provider": "qwen",
+      "model": "qwen3.7-plus",
+      "status": "success",
+      "api_error": null
+    },
+    "review": {
+      "required": false,
+      "status": null,
+      "reason": null,
+      "course_relevant": true
+    }
+  },
+  "error": null,
+  "method": "qwen_api",
+  "backend": "api",
+  "provider": "qwen",
+  "model": "qwen3.7-plus",
+  "status": "success",
+  "api_error": null,
+  "indexable": true,
+  "review_required": false,
+  "review_reason": null,
+  "review_status": null,
+  "course_relevant": true
+}

@@ -1,0 +1,33 @@
+{
+  "original_path": "output/qwen_qwen3.7-plus_6/debug/images/w09-1-直线运动平台（上） - 副本_p7_img3.jpeg",
+  "enhanced_path": "output/qwen_qwen3.7-plus_6/debug/images/w09-1-直线运动平台（上） - 副本_p7_img3_enhanced.jpeg",
+  "description": "类型：照片\n图片展示一个急停开关实物。顶部为红色圆形按钮，表面印有白色旋转箭头；中部黄色方形底座印有黑色“EMERGENCY STOP”字样；底部为黑色基座，侧面可见圆形孔洞。结合页面文字与电路图，该对象对应§2.3急停开关，具有一对NO触点和一对NC触点，用于连接5V、ENA+、ENA-及GND以控制驱动器。",
+  "metadata": {
+    "generation": {
+      "method": "qwen_api",
+      "backend": "api",
+      "provider": "qwen",
+      "model": "qwen3.7-plus",
+      "status": "success",
+      "api_error": null
+    },
+    "review": {
+      "required": false,
+      "status": null,
+      "reason": null,
+      "course_relevant": true
+    }
+  },
+  "error": null,
+  "method": "qwen_api",
+  "backend": "api",
+  "provider": "qwen",
+  "model": "qwen3.7-plus",
+  "status": "success",
+  "api_error": null,
+  "indexable": true,
+  "review_required": false,
+  "review_reason": null,
+  "review_status": null,
+  "course_relevant": true
+}

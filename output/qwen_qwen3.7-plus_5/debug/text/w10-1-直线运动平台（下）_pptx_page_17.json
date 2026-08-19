@@ -1,0 +1,27 @@
+{
+  "page_num": 16,
+  "raw_text": "作业\n（以\nw10-s7-sliderSmoothPath.ino\n为例）\n优化启停按钮（目前接\nD10\n）与滑台控制，实现以下功能：\n启停按钮的功能为\npower on/off.\n在滑台移动过程中，\n任何时候\n按下该按钮，滑台都\n立即\n停止。\nPower On\n时，自动复位。\n滑台复位后，处于空闲状态。\n直到向右拨动方向摇杆（目前接\nD5\n），按指定时长，移动指定距离。\n17-\nw10-s7-sliderSmoothPath-ExtTrig\n.ino",
+  "cleaned_text": "作业\n（以\nw10-s7-sliderSmoothPath.ino\n为例）\n优化启停按钮（目前接\nD10\n）与滑台控制，实现以下功能：\n启停按钮的功能为\npower on/off.\n在滑台移动过程中，\n任何时候\n按下该按钮，滑台都\n立即\n停止。\nPower On\n时，自动复位。\n滑台复位后，处于空闲状态。\n直到向右拨动方向摇杆（目前接\nD5\n），按指定时长，移动指定距离。\nw10-s7-sliderSmoothPath-ExtTrig\n.ino",
+  "key_points": [
+    "D10",
+    "）与滑台控制，实现以下功能：",
+    "停止。",
+    "Power On",
+    "时，自动复位。",
+    "滑台复位后，处于空闲状态。",
+    "D5",
+    "），按指定时长，移动指定距离。"
+  ],
+  "technical_terms": [
+    "w10-s7-sliderSmoothPath",
+    "与滑台控制"
+  ],
+  "has_images": false,
+  "image_count": 0,
+  "image_paths": [],
+  "metadata": {
+    "char_count": 228,
+    "word_count": 25,
+    "line_count": 23
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "page_num": 2,
+  "raw_text": "机电系统原理及实践—— 步进电机驱动器与外部中断\n机电智控实验室tangguoan@fudan.edu.cn mmguo@fudan.edu.cn\n§1 用双H桥驱动步进电机\n步进电机驱动原理回顾\n11-3\nH桥电路回顾\n复旦大学 机电智控实验室\n",
+  "cleaned_text": "§1 用双H桥驱动步进电机\n步进电机驱动原理回顾\nH桥电路回顾",
+  "key_points": [
+    "H桥电路回顾"
+  ],
+  "technical_terms": [
+    "桥驱动步进电机",
+    "步进电机"
+  ],
+  "has_images": true,
+  "image_count": 3,
+  "image_paths": [
+    "output/qwen_qwen3.7-plus_6/debug/images/w08-1-步进电机驱动器_p3_img2.png",
+    "output/qwen_qwen3.7-plus_6/debug/images/w08-1-步进电机驱动器_p3_img3.png",
+    "output/qwen_qwen3.7-plus_6/debug/images/w08-1-步进电机驱动器_p3_img4.png"
+  ],
+  "metadata": {
+    "char_count": 126,
+    "word_count": 11,
+    "line_count": 8
+  }
+}

@@ -1,0 +1,3 @@
+﻿序号,LaTeX公式,名称,描述,来源图像,提取方法,置信度,验证状态,是否需审核
+1,v(t) = 6Lt(T - t)/T^3,速度公式,滑台按抛物线型速度曲线移动，启停时刻速度均为零,output/qwen_qwen3.7-plus_5/debug/images/w10-1-直线运动平台（下）_slide_9_img_1.png,qwen_api_formula,0.95,passed,False
+2,x(t) = \int_{0}^{T} v(t)\mathrm{d}t = 6Lt^2\left(\frac{T}{2} - \frac{t}{3}\right)/T^3,位移公式,滑台位移为速度对时间的积分,output/qwen_qwen3.7-plus_5/debug/images/w10-1-直线运动平台（下）_slide_9_img_1.png,qwen_api_formula,0.9,passed,False

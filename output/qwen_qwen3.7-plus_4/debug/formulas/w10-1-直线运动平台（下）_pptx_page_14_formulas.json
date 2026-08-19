@@ -1,0 +1,79 @@
+{
+  "page": 14,
+  "formula_count": 2,
+  "accepted_count": 1,
+  "review_count": 1,
+  "formulas": [
+    {
+      "source_image": "output/qwen_qwen3.7-plus_4/debug/images/w10-1-直线运动平台（下）_slide_14_img_1.png",
+      "source_type": "image_vlm",
+      "extraction_method": "qwen_api_formula",
+      "backend": "api",
+      "provider": "qwen",
+      "model": "qwen3.7-plus",
+      "image_index": 0,
+      "raw_response": "{\"has_formula\":true,\"formulas\":[{\"latex\":\"/tilde{U}_s(s)\",\"name\":\"整形后输入的拉氏变换\",\"meaning\":\"表示整形后输入信号的拉普拉斯变换\",\"symbols\":[{\"symbol\":\"/tilde{U}_s(s)\",\"meaning\":\"整形后输入信号的拉普拉斯变换\",\"unit\":null},{\"symbol\":\"s\",\"meaning\":\"拉普拉斯变换的复频率变量\",\"unit\":null}],\"conditions\":[],\"uncertain_symbols\":[],\"confidence\":0.95}]}",
+      "latex": "../../tilde{U}_s(s)",
+      "name": "整形后输入的拉氏变换",
+      "meaning": "表示整形后输入信号的拉普拉斯变换",
+      "symbols": [
+        {
+          "symbol": "../../tilde{U}_s(s)",
+          "meaning": "整形后输入信号的拉普拉斯变换",
+          "unit": null
+        },
+        {
+          "symbol": "s",
+          "meaning": "拉普拉斯变换的复频率变量",
+          "unit": null
+        }
+      ],
+      "conditions": [],
+      "uncertain_symbols": [],
+      "confidence": 0.95,
+      "plain_text": "../../tilde{U}_s(s)",
+      "description": "表示整形后输入信号的拉普拉斯变换",
+      "validation_issues": [],
+      "validation_status": "passed",
+      "review_required": false,
+      "review_reason": null,
+      "review_status": null,
+      "indexable": true,
+      "formula_id": "w10-1-直线运动平台（下）_pptx_page_14_formula_1",
+      "page_num": 14
+    },
+    {
+      "source_image": "output/qwen_qwen3.7-plus_4/debug/images/w10-1-直线运动平台（下）_slide_14_img_2.png",
+      "source_type": "image_vlm",
+      "extraction_method": "qwen_api_formula",
+      "backend": "api",
+      "provider": "qwen",
+      "model": "qwen3.7-plus",
+      "image_index": 1,
+      "raw_response": "{\n  \"has_formula\": true,\n  \"formulas\": [\n    {\n      \"latex\": \"s_1 = -i/omega_n /text{ 和 } s_2 = i/omega_n\",\n      \"name\": \"零点配置\",\n      \"meaning\": \"配置两个零点以消除残余振动\",\n      \"symbols\": [\n        {\n          \"symbol\": \"s_1\",\n          \"meaning\": \"第一个零点\",\n          \"unit\": null\n        },\n        {\n          \"symbol\": \"s_2\",\n          \"meaning\": \"第二个零点\",\n          \"unit\": null\n        },\n        {\n          \"symbol\": \"i\",\n          \"meaning\": \"虚数单位\",\n          \"unit\": null\n        },\n        {\n          \"symbol\": \"/omega_n\",\n          \"meaning\": \"自然频率\",\n          \"unit\": \"rad/s\"\n        }\n      ],\n      \"conditions\": [],\n      \"uncertain_symbols\": [],\n      \"confidence\": 0.95\n    },\n    {\n      \"latex\": \"/tilde{/theta}(s) = /frac{s^2}{l(s^2 + /omega_n^2)} /tilde{U}_s(s) = /frac{s^2}{l(s^2 + /omega_n^2)} /cdot C(s-s_1)(s-s_2)U_s(s)\",\n      \"name\": \"系统响应方程\",\n      \"meaning\": \"消除残余振动后的系统输出响应拉普拉斯变换\",\n      \"symbols\": [\n        {\n          \"symbol\": \"/tilde{/theta}(s)\",\n          \"meaning\": \"系统输出（角度）的拉普拉斯变换\",\n          \"unit\": null\n        },\n        {\n          \"symbol\": \"s\",\n          \"meaning\": \"拉普拉斯变量\",\n          \"unit\": null\n        },\n        {\n          \"symbol\": \"l\",\n          \"meaning\": \"系统参数（如摆长）\",\n          \"unit\": \"m\"\n        },\n        {\n          \"symbol\": \"/omega_n\",\n          \"meaning\": \"自然频率\",\n          \"unit\": \"rad/s\"\n        },\n        {\n          \"symbol\": \"/tilde{U}_s(s)\",\n          \"meaning\": \"整形后的输入拉普拉斯变换\",\n          \"unit\": null\n        },\n        {\n          \"symbol\": \"C\",\n          \"meaning\": \"常数系数\",\n          \"unit\": null\n        },\n        {\n          \"symbol\": \"U_s(s)\",\n          \"meaning\": \"原始输入拉普拉斯变换\",\n          \"unit\": null\n        }\n      ],\n      \"conditions\": [],\n      \"uncertain_symbols\": [],\n      \"confidence\": 0.95\n    },\n    {\n      \"latex\": \"/tilde{u}_s(t) = /mathcal{L}^{-1}[C(s-s_1)(s-s_2)U_s(s)]\",\n      \"name\": \"输入整形时域表达式\",\n      \"meaning\": \"求整形后输入的拉普拉斯逆变换\",\n      \"symbols\": [\n        {\n          \"symbol\": \"/tilde{u}_s(t)\",\n          \"meaning\": \"整形后的输入时域信号\",\n          \"unit\": null\n        },\n        {\n          \"symbol\": \"/mathcal{L}^{-1}\",\n          \"meaning\": \"拉普拉斯逆变换\",\n          \"unit\": null\n        }\n      ],\n      \"conditions\": [],\n      \"uncertain_symbols\": [],\n      \"confidence\": 0",
+      "latex": "",
+      "confidence": 0.0,
+      "uncertain_symbols": [
+        "json_parse_failed"
+      ],
+      "plain_text": "",
+      "name": "",
+      "meaning": "",
+      "description": "",
+      "symbols": [],
+      "conditions": [],
+      "validation_issues": [
+        "empty_latex",
+        "uncertain_symbols"
+      ],
+      "validation_status": "review",
+      "review_required": true,
+      "review_reason": "empty_latex",
+      "review_status": "pending",
+      "indexable": false,
+      "formula_id": "w10-1-直线运动平台（下）_pptx_page_14_formula_2",
+      "page_num": 14
+    }
+  ],
+  "timestamp": "2026-08-18T00:23:46.623656"
+}

@@ -1,0 +1,33 @@
+{
+  "original_path": "output/qwen_qwen3.7-plus_5/debug/images/w10-1-直线运动平台（下）_slide_11_img_1.png",
+  "enhanced_path": "output/qwen_qwen3.7-plus_5/debug/images/w10-1-直线运动平台（下）_slide_11_img_1_enhanced.png",
+  "description": "这张图片展示了标题为“问题描述”的幻灯片内容，主要包含以下关键信息：\n\n1.  **物理系统模型**：描述了一个长度为 $l$、质量为 $m$ 的单摆安装在滑块S上，且滑块可以在横杆AB上移动。\n2.  **控制/设计目标**：要求设计滑块从横杆左端A点移动到右端B的位移函数 $u_s(t)$，目的是使得滑块到达B点后单摆的振动尽可能小。\n\n图中包含的数学符号和公式有：$l$、$m$ 以及位移函数 $u_s(t)$。这显然是课程中关于输入整形或振动控制的一个具体应用问题描述。",
+  "metadata": {
+    "generation": {
+      "method": "qwen_api",
+      "backend": "api",
+      "provider": "qwen",
+      "model": "qwen3.7-plus",
+      "status": "success",
+      "api_error": null
+    },
+    "review": {
+      "required": false,
+      "status": null,
+      "reason": null,
+      "course_relevant": true
+    }
+  },
+  "error": null,
+  "method": "qwen_api",
+  "backend": "api",
+  "provider": "qwen",
+  "model": "qwen3.7-plus",
+  "status": "success",
+  "api_error": null,
+  "indexable": true,
+  "review_required": false,
+  "review_reason": null,
+  "review_status": null,
+  "course_relevant": true
+}

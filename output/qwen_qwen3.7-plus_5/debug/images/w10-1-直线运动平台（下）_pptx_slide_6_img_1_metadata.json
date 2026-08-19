@@ -1,0 +1,33 @@
+{
+  "original_path": "output/qwen_qwen3.7-plus_5/debug/images/w10-1-直线运动平台（下）_slide_6_img_1.png",
+  "enhanced_path": "output/qwen_qwen3.7-plus_5/debug/images/w10-1-直线运动平台（下）_slide_6_img_1_enhanced.png",
+  "description": "图片展示了步进电机调速原理中利用时间中断计算速度的数学推导与离散化过程，包含以下关键内容：\n\n1.  **连续时间模型**：定义步进电机转角为 $\\theta(t)$，转速为 $\\omega(t)$。给出了从时刻 $t_0$ 到 $t_1$ 的积分关系式：$\\theta(t_1) = \\theta(t_0) + \\int_{t_0}^{t_1} \\omega(t)\\mathrm{d}t$。\n2.  **离散化公式**：记 $\\Delta t$ 为每次loop循环的时间间隔，将上述公式离散化得到：$\\theta[n\\Delta t] = \\theta[(n-1)\\Delta t] + \\omega[n\\Delta t]\\Delta t$。\n3.  **无量纲化**：说明用每脉冲转角 $\\Delta\\theta$ 将 $\\theta$ 和 $\\omega$ 进行无量纲化处理，此时 $\\theta$ 和 $\\omega$ 的单位分别变为“脉冲数”和“脉冲数/微秒”。\n4.  **控制逻辑与误差**：给出了具体的执行条件，当 $|\\theta[n\\Delta t]| \\ge 0.5$ 时，电机转动一格，同时累加值 $\\mp 1$，并指出角位移的误差始终小于 $\\Delta\\theta/2$。",
+  "metadata": {
+    "generation": {
+      "method": "qwen_api",
+      "backend": "api",
+      "provider": "qwen",
+      "model": "qwen3.7-plus",
+      "status": "success",
+      "api_error": null
+    },
+    "review": {
+      "required": false,
+      "status": null,
+      "reason": null,
+      "course_relevant": true
+    }
+  },
+  "error": null,
+  "method": "qwen_api",
+  "backend": "api",
+  "provider": "qwen",
+  "model": "qwen3.7-plus",
+  "status": "success",
+  "api_error": null,
+  "indexable": true,
+  "review_required": false,
+  "review_reason": null,
+  "review_status": null,
+  "course_relevant": true
+}

@@ -1,0 +1,33 @@
+{
+  "original_path": "output/qwen_qwen3.7-plus_5/debug/images/w10-1-直线运动平台（下）_slide_16_img_1.png",
+  "enhanced_path": "output/qwen_qwen3.7-plus_5/debug/images/w10-1-直线运动平台（下）_slide_16_img_1_enhanced.png",
+  "description": "图片展示了“采用输入整形进行摆锤减振”的实践步骤与算法逻辑，具体包含以下四个主要步骤及详细的控制流程：\n\n1.  **步骤说明**：\n    *   ① 滑台初始化复位；\n    *   ② 设置指定时长 $T$ 和距离 $L$（小于行程）；\n    *   ③ 设置时间中断，等待启停按钮；\n    *   ④ 启动后，滑台按设定速度进行移动。\n\n2.  **具体控制逻辑与公式**：\n    *   **原始速度**：给出了速度公式 $v(t) = 6Lt(T-t)/T^3$。\n    *   **输入整形**：给出了整形后的速度公式 $\\tilde{v}(t) = \\frac{1}{2}[v(t) + v(t-2\\tau)]$（文字为红色）。\n    *   **时间中断**：用于设置速度（转换为脉冲数）。\n    *   **loop循环**：根据速度发送脉冲。\n\n这些内容详细解释了代码文件 `17-w10-s8-sliderSmoothPath-FFC.ino` 背后的数学模型和程序执行流程。",
+  "metadata": {
+    "generation": {
+      "method": "qwen_api",
+      "backend": "api",
+      "provider": "qwen",
+      "model": "qwen3.7-plus",
+      "status": "success",
+      "api_error": null
+    },
+    "review": {
+      "required": false,
+      "status": null,
+      "reason": null,
+      "course_relevant": true
+    }
+  },
+  "error": null,
+  "method": "qwen_api",
+  "backend": "api",
+  "provider": "qwen",
+  "model": "qwen3.7-plus",
+  "status": "success",
+  "api_error": null,
+  "indexable": true,
+  "review_required": false,
+  "review_reason": null,
+  "review_status": null,
+  "course_relevant": true
+}

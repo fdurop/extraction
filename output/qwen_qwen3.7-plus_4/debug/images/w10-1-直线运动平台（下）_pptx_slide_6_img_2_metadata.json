@@ -1,0 +1,33 @@
+{
+  "original_path": "output/qwen_qwen3.7-plus_4/debug/images/w10-1-直线运动平台（下）_slide_6_img_2.png",
+  "enhanced_path": "output/qwen_qwen3.7-plus_4/debug/images/w10-1-直线运动平台（下）_slide_6_img_2_enhanced.png",
+  "description": "图片展示了一段用于实现步进电机速度控制的 C/C++ 代码（函数名为 `loop`），结合上下文“§3.1 步进电机 调速原理”及“时间中断计算速度”，该代码详细展示了通过时间差累积脉冲来控制电机步进的逻辑流程。\n\n代码具体内容如下：\n1.  **函数定义与时间获取**：定义 `void loop()` 函数，首先通过 `micros()` 获取当前时间赋值给 `uint32_t currentLoopTime`。\n2.  **移动状态判断**：通过 `if (inMoving)` 判断电机是否处于移动状态。\n3.  **时间间隔计算**：计算当前循环与上次循环的时间差 `uint32_t dt = currentLoopTime - lastLoopTime`（注释为“循环之间的间隔”）。\n4.  **脉冲累加**：执行 `pulse2Send += speedPerPulse * dt;`，注释说明这是“角度累加，以脉冲数为单位”。\n5.  **步进判断与执行**：\n    *   判断累积脉冲值是否达到步进阈值：`if (abs(pulse2Send) >= 0.5)`（注释为“是否需要步进一格”）。\n    *   调用 `step(pulse2Send > 0)` 函数，根据方向步进一格。\n6.  **累加值调整**：步进完成后，根据 `pulse2Send` 的正负进行减 1 或加 1 操作（`pulse2Send -= 1` 或 `pulse2Send += 1`），注释为“已完成步进，调整累加值”。\n7.  **更新时间**：在函数末尾执行 `lastLoopTime = currentLoopTime;` 以记录本次循环时间。",
+  "metadata": {
+    "generation": {
+      "method": "qwen_api",
+      "backend": "api",
+      "provider": "qwen",
+      "model": "qwen3.7-plus",
+      "status": "success",
+      "api_error": null
+    },
+    "review": {
+      "required": false,
+      "status": null,
+      "reason": null,
+      "course_relevant": true
+    }
+  },
+  "error": null,
+  "method": "qwen_api",
+  "backend": "api",
+  "provider": "qwen",
+  "model": "qwen3.7-plus",
+  "status": "success",
+  "api_error": null,
+  "indexable": true,
+  "review_required": false,
+  "review_reason": null,
+  "review_status": null,
+  "course_relevant": true
+}

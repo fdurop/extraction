@@ -1,0 +1,33 @@
+{
+  "original_path": "output/qwen_qwen3.7-plus_6/debug/images/w09-1-直线运动平台（上） - 副本_p4_img3.jpeg",
+  "enhanced_path": "output/qwen_qwen3.7-plus_6/debug/images/w09-1-直线运动平台（上） - 副本_p4_img3_enhanced.jpeg",
+  "description": "类型：照片\n图片展示了一套直交型机械臂（多轴直线运动平台）实物。主体由两根相互垂直安装的银色线性模组构成，分别对应X轴和Y轴直线运动单元。模组侧面印有“HIWIN”品牌标识，上方覆盖有黑色伸缩式防尘罩（拖链）。在横向模组的滑块上垂直安装有第三根线性模组，构成Z轴。Z轴模组前端装有黑色执行末端或传感器组件，侧面可见操作按钮盒。整体结构呈现典型的直角坐标机器人形态，背景为纯黑。",
+  "metadata": {
+    "generation": {
+      "method": "qwen_api",
+      "backend": "api",
+      "provider": "qwen",
+      "model": "qwen3.7-plus",
+      "status": "success",
+      "api_error": null
+    },
+    "review": {
+      "required": false,
+      "status": null,
+      "reason": null,
+      "course_relevant": true
+    }
+  },
+  "error": null,
+  "method": "qwen_api",
+  "backend": "api",
+  "provider": "qwen",
+  "model": "qwen3.7-plus",
+  "status": "success",
+  "api_error": null,
+  "indexable": true,
+  "review_required": false,
+  "review_reason": null,
+  "review_status": null,
+  "course_relevant": true
+}

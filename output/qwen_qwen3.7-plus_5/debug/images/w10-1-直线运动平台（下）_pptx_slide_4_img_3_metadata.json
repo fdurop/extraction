@@ -1,0 +1,33 @@
+{
+  "original_path": "output/qwen_qwen3.7-plus_5/debug/images/w10-1-直线运动平台（下）_slide_4_img_3.png",
+  "enhanced_path": "output/qwen_qwen3.7-plus_5/debug/images/w10-1-直线运动平台（下）_slide_4_img_3_enhanced.png",
+  "description": "图片展示了一个丝杠传动机构的局部3D示意图。右侧为带有螺旋纹路的丝杠（螺杆），螺纹呈现灰色和红色相间的螺旋状，红色部分高亮显示了螺纹的牙型或侧面。左侧为一个灰色的圆柱形部件（看似螺母或滑块主体的一部分），其表面有一个红色的三角形结构，展示了丝杠与配合件的啮合关系。该图直观地表现了丝杠的机械形态，对应上下文中提到的“丝杠转速”和“滑台定位”知识点，用于说明滑台定位的机械基础。",
+  "metadata": {
+    "generation": {
+      "method": "qwen_api",
+      "backend": "api",
+      "provider": "qwen",
+      "model": "qwen3.7-plus",
+      "status": "success",
+      "api_error": null
+    },
+    "review": {
+      "required": false,
+      "status": null,
+      "reason": null,
+      "course_relevant": true
+    }
+  },
+  "error": null,
+  "method": "qwen_api",
+  "backend": "api",
+  "provider": "qwen",
+  "model": "qwen3.7-plus",
+  "status": "success",
+  "api_error": null,
+  "indexable": true,
+  "review_required": false,
+  "review_reason": null,
+  "review_status": null,
+  "course_relevant": true
+}

@@ -1,0 +1,3 @@
+﻿序号,LaTeX公式,名称,描述,来源图像,提取方法,置信度,验证状态,是否需审核
+1,\tilde{U}_s(s),整形后输入的拉氏变换,表示整形后输入信号的拉普拉斯变换,output/qwen_qwen3.7-plus_4/debug/images/w10-1-直线运动平台（下）_slide_14_img_1.png,qwen_api_formula,0.95,passed,False
+2,,,,output/qwen_qwen3.7-plus_4/debug/images/w10-1-直线运动平台（下）_slide_14_img_2.png,qwen_api_formula,0.0,review,True

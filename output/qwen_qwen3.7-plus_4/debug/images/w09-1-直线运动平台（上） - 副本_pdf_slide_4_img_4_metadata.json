@@ -1,0 +1,33 @@
+{
+  "original_path": "output/qwen_qwen3.7-plus_4/debug/images/w09-1-直线运动平台（上） - 副本_p4_img6.jpeg",
+  "enhanced_path": "output/qwen_qwen3.7-plus_4/debug/images/w09-1-直线运动平台（上） - 副本_p4_img6_enhanced.jpeg",
+  "description": "图片展示了一个直交型机械臂（或龙门式多轴运动平台）的三维结构模型。该装置主要由底部的两条平行长导轨、横跨其上的第二条导轨以及竖直安装的两根立柱组成。各轴之间通过滑块连接，形成互相垂直的直角坐标运动结构。立柱顶部有一根横杆连接。左侧可见蓝色的驱动组件。结合上下文文字“Z轴 直交型机械臂”，该图具体演示了多轴直线运动平台中Z轴及其整体直交构型。",
+  "metadata": {
+    "generation": {
+      "method": "qwen_api",
+      "backend": "api",
+      "provider": "qwen",
+      "model": "qwen3.7-plus",
+      "status": "success",
+      "api_error": null
+    },
+    "review": {
+      "required": false,
+      "status": null,
+      "reason": null,
+      "course_relevant": true
+    }
+  },
+  "error": null,
+  "method": "qwen_api",
+  "backend": "api",
+  "provider": "qwen",
+  "model": "qwen3.7-plus",
+  "status": "success",
+  "api_error": null,
+  "indexable": true,
+  "review_required": false,
+  "review_reason": null,
+  "review_status": null,
+  "course_relevant": true
+}

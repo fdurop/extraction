@@ -1,0 +1,185 @@
+{
+  "page": 15,
+  "formula_count": 4,
+  "accepted_count": 3,
+  "review_count": 1,
+  "formulas": [
+    {
+      "source_image": "output/qwen_qwen3.7-plus_4/debug/images/w10-1-直线运动平台（下）_slide_15_img_1.png",
+      "source_type": "image_vlm",
+      "extraction_method": "qwen_api_formula",
+      "backend": "api",
+      "provider": "qwen",
+      "model": "qwen3.7-plus",
+      "image_index": 0,
+      "raw_response": "{\n  \"has_formula\": true,\n  \"formulas\": [\n    {\n      \"latex\": \"/mathcal{L}[f(t-/tau)] = e^{-s/tau}F(s)\",\n      \"name\": \"延时性质\",\n      \"meaning\": \"拉普拉斯变换的时移性质（延时性质），表示函数在时域延迟$/tau$，其拉普拉斯变换乘以指数因子$e^{-s/tau}$。\",\n      \"symbols\": [\n        {\n          \"symbol\": \"/mathcal{L}\",\n          \"meaning\": \"拉普拉斯变换算子\",\n          \"unit\": null\n        },\n        {\n          \"symbol\": \"f(t-/tau)\",\n          \"meaning\": \"延迟$/tau$后的时域函数\",\n          \"unit\": null\n        },\n        {\n          \"symbol\": \"t\",\n          \"meaning\": \"时间变量\",\n          \"unit\": null\n        },\n        {\n          \"symbol\": \"/tau\",\n          \"meaning\": \"延迟时间常数\",\n          \"unit\": null\n        },\n        {\n          \"symbol\": \"s\",\n          \"meaning\": \"复频域变量（拉普拉斯变量）\",\n          \"unit\": null\n        },\n        {\n          \"symbol\": \"F(s)\",\n          \"meaning\": \"f(t)的拉普拉斯变换（象函数）\",\n          \"unit\": null\n        }\n      ],\n      \"conditions\": [],\n      \"uncertain_symbols\": [],\n      \"confidence\": 0.95\n    }\n  ]\n}",
+      "latex": "../../mathcal{L}[f(t-/tau)] = e^{-s/tau}F(s)",
+      "name": "延时性质",
+      "meaning": "拉普拉斯变换的时移性质（延时性质），表示函数在时域延迟$/tau$，其拉普拉斯变换乘以指数因子$e^{-s/tau}$。",
+      "symbols": [
+        {
+          "symbol": "../../mathcal{L}",
+          "meaning": "拉普拉斯变换算子",
+          "unit": null
+        },
+        {
+          "symbol": "f(t-/tau)",
+          "meaning": "延迟$/tau$后的时域函数",
+          "unit": null
+        },
+        {
+          "symbol": "t",
+          "meaning": "时间变量",
+          "unit": null
+        },
+        {
+          "symbol": "../../tau",
+          "meaning": "延迟时间常数",
+          "unit": null
+        },
+        {
+          "symbol": "s",
+          "meaning": "复频域变量（拉普拉斯变量）",
+          "unit": null
+        },
+        {
+          "symbol": "F(s)",
+          "meaning": "f(t)的拉普拉斯变换（象函数）",
+          "unit": null
+        }
+      ],
+      "conditions": [],
+      "uncertain_symbols": [],
+      "confidence": 0.95,
+      "plain_text": "../../mathcal{L}[f(t-/tau)] = e^{-s/tau}F(s)",
+      "description": "拉普拉斯变换的时移性质（延时性质），表示函数在时域延迟$/tau$，其拉普拉斯变换乘以指数因子$e^{-s/tau}$。",
+      "validation_issues": [],
+      "validation_status": "passed",
+      "review_required": false,
+      "review_reason": null,
+      "review_status": null,
+      "indexable": true,
+      "formula_id": "w10-1-直线运动平台（下）_pptx_page_15_formula_1",
+      "page_num": 15
+    },
+    {
+      "source_image": "output/qwen_qwen3.7-plus_4/debug/images/w10-1-直线运动平台（下）_slide_15_img_2.png",
+      "source_type": "image_vlm",
+      "extraction_method": "qwen_api_formula",
+      "backend": "api",
+      "provider": "qwen",
+      "model": "qwen3.7-plus",
+      "image_index": 1,
+      "raw_response": "```json\n{\n  \"has_formula\": true,\n  \"formulas\": [\n    {\n      \"latex\": \"/tilde{U}_s(s) = C(e^{-s/tau} - e^{s_2/tau})(e^{-s/tau} - e^{s_1/tau})U_s(s) = C[1 - 2e^{-s/tau}/cos(/omega_n/tau) + e^{-2s/tau}]U_s(s)\",\n      \"name\": \"输入整形频域表达式\",\n      \"meaning\": \"描述整形后输入信号在拉普拉斯域的表达式，通过零点对消系统极点\",\n      \"symbols\": [\n        {\n          \"symbol\": \"/tilde{U}_s(s)\",\n          \"meaning\": \"整形后的输入信号拉普拉斯变换\",\n          \"unit\": null\n        },\n        {\n          \"symbol\": \"U_s(s)\",\n          \"meaning\": \"原始输入信号拉普拉斯变换\",\n          \"unit\": null\n        },\n        {\n          \"symbol\": \"C\",\n          \"meaning\": \"增益常数\",\n          \"unit\": null\n        },\n        {\n          \"symbol\": \"s\",\n          \"meaning\": \"拉普拉斯复变量\",\n          \"unit\": null\n        },\n        {\n          \"symbol\": \"/tau\",\n          \"meaning\": \"时间延迟\",\n          \"unit\": \"s\"\n        },\n        {\n          \"symbol\": \"s_1, s_2\",\n          \"meaning\": \"系统极点（此处对应共轭虚根）\",\n          \"unit\": null\n        },\n        {\n          \"symbol\": \"/omega_n\",\n          \"meaning\": \"系统自然频率\",\n          \"unit\": \"rad/s\"\n        }\n      ],\n      \"conditions\": [],\n      \"uncertain_symbols\": [],\n      \"confidence\": 0.95\n    },\n    {\n      \"latex\": \"/tilde{u}_s(t) = C[u_s(t) - 2/cos(/omega_n/tau)u_s(t-/tau) + u_s(t-2/tau)]\",\n      \"name\": \"输入整形时域表达式\",\n      \"meaning\": \"频域表达式的拉普拉斯逆变换，表示时域上的脉冲序列叠加\",\n      \"symbols\": [\n        {\n          \"symbol\": \"/tilde{u}_s(t)\",\n          \"meaning\": \"整形后的时域输入信号\",\n          \"unit\": null\n        },\n        {\n          \"symbol\": \"u_s(t)\",\n          \"meaning\": \"原始时域输入信号\",\n          \"unit\": null\n        }\n      ],\n      \"conditions\": [],\n      \"uncertain_symbols\": [],\n      \"confidence\": 0.95\n    },\n    {\n      \"latex\": \"/tilde{u}_s(t) = c_1 u_s(t) - c_2 u_s(t-/tau) + c_1 u_s(t-2/tau)\",\n      \"name\": \"参数化整形公式\",\n      \"meaning\": \"引入系数c1, c2后的简化时域表达式\",\n      \"symbols\": [\n        {\n          \"symbol\": \"c_1\",\n          \"meaning\": \"第一和第三个脉冲的幅值系数\",\n          \"unit\": null\n        },\n        {\n          \"symbol\": \"c_2\",\n          \"meaning\": \"中间脉冲的幅值系数（对应2Ccos项）\",\n          \"unit\": null\n        }\n      ],\n      \"conditions\": [],\n      \"uncertain_symbols\": [],",
+      "latex": "",
+      "confidence": 0.0,
+      "uncertain_symbols": [
+        "json_parse_failed"
+      ],
+      "plain_text": "",
+      "name": "",
+      "meaning": "",
+      "description": "",
+      "symbols": [],
+      "conditions": [],
+      "validation_issues": [
+        "empty_latex",
+        "uncertain_symbols"
+      ],
+      "validation_status": "review",
+      "review_required": true,
+      "review_reason": "empty_latex",
+      "review_status": "pending",
+      "indexable": false,
+      "formula_id": "w10-1-直线运动平台（下）_pptx_page_15_formula_2",
+      "page_num": 15
+    },
+    {
+      "source_image": "output/qwen_qwen3.7-plus_4/debug/images/w10-1-直线运动平台（下）_slide_15_img_3.png",
+      "source_type": "image_vlm",
+      "extraction_method": "qwen_api_formula",
+      "backend": "api",
+      "provider": "qwen",
+      "model": "qwen3.7-plus",
+      "image_index": 2,
+      "raw_response": "```json\n{\n  \"has_formula\": true,\n  \"formulas\": [\n    {\n      \"latex\": \"C = C/tau^2\",\n      \"name\": \"参数更新或归一化公式\",\n      \"meaning\": \"表示变量C被更新为其自身除以tau的平方，常见于算法迭代或归一化过程。\",\n      \"symbols\": [\n        {\n          \"symbol\": \"C\",\n          \"meaning\": \"变量或参数C\",\n          \"unit\": null\n        },\n        {\n          \"symbol\": \"/tau\",\n          \"meaning\": \"时间常数或参数tau\",\n          \"unit\": null\n        }\n      ],\n      \"conditions\": [],\n      \"uncertain_symbols\": [],\n      \"confidence\": 0.9\n    }\n  ]\n}\n```",
+      "latex": "C = C/tau^2",
+      "name": "参数更新或归一化公式",
+      "meaning": "表示变量C被更新为其自身除以tau的平方，常见于算法迭代或归一化过程。",
+      "symbols": [
+        {
+          "symbol": "C",
+          "meaning": "变量或参数C",
+          "unit": null
+        },
+        {
+          "symbol": "../../tau",
+          "meaning": "时间常数或参数tau",
+          "unit": null
+        }
+      ],
+      "conditions": [],
+      "uncertain_symbols": [],
+      "confidence": 0.9,
+      "plain_text": "C = C/tau^2",
+      "description": "表示变量C被更新为其自身除以tau的平方，常见于算法迭代或归一化过程。",
+      "validation_issues": [],
+      "validation_status": "passed",
+      "review_required": false,
+      "review_reason": null,
+      "review_status": null,
+      "indexable": true,
+      "formula_id": "w10-1-直线运动平台（下）_pptx_page_15_formula_3",
+      "page_num": 15
+    },
+    {
+      "source_image": "output/qwen_qwen3.7-plus_4/debug/images/w10-1-直线运动平台（下）_slide_15_img_4.png",
+      "source_type": "image_vlm",
+      "extraction_method": "qwen_api_formula",
+      "backend": "api",
+      "provider": "qwen",
+      "model": "qwen3.7-plus",
+      "image_index": 3,
+      "raw_response": "{\n  \"has_formula\": true,\n  \"formulas\": [\n    {\n      \"latex\": \"/tilde{u}_s(t) = /frac{1}{2} [u_s(t) + u_s(t - 2/tau)]\",\n      \"name\": \"输入整形公式\",\n      \"meaning\": \"表示整形后的输入信号是原始输入信号与延迟了2τ时间的原始输入信号的算术平均值，常用于消除系统振动或平滑输入。\",\n      \"symbols\": [\n        {\n          \"symbol\": \"/tilde{u}_s(t)\",\n          \"meaning\": \"整形后的输入信号\",\n          \"unit\": null\n        },\n        {\n          \"symbol\": \"u_s(t)\",\n          \"meaning\": \"原始输入信号\",\n          \"unit\": null\n        },\n        {\n          \"symbol\": \"t\",\n          \"meaning\": \"时间变量\",\n          \"unit\": \"s\"\n        },\n        {\n          \"symbol\": \"/tau\",\n          \"meaning\": \"时间常数或延迟参数\",\n          \"unit\": \"s\"\n        }\n      ],\n      \"conditions\": [],\n      \"uncertain_symbols\": [],\n      \"confidence\": 0.95\n    }\n  ]\n}",
+      "latex": "../../tilde{u}_s(t) = /frac{1}{2} [u_s(t) + u_s(t - 2/tau)]",
+      "name": "输入整形公式",
+      "meaning": "表示整形后的输入信号是原始输入信号与延迟了2τ时间的原始输入信号的算术平均值，常用于消除系统振动或平滑输入。",
+      "symbols": [
+        {
+          "symbol": "../../tilde{u}_s(t)",
+          "meaning": "整形后的输入信号",
+          "unit": null
+        },
+        {
+          "symbol": "u_s(t)",
+          "meaning": "原始输入信号",
+          "unit": null
+        },
+        {
+          "symbol": "t",
+          "meaning": "时间变量",
+          "unit": "s"
+        },
+        {
+          "symbol": "../../tau",
+          "meaning": "时间常数或延迟参数",
+          "unit": "s"
+        }
+      ],
+      "conditions": [],
+      "uncertain_symbols": [],
+      "confidence": 0.95,
+      "plain_text": "../../tilde{u}_s(t) = /frac{1}{2} [u_s(t) + u_s(t - 2/tau)]",
+      "description": "表示整形后的输入信号是原始输入信号与延迟了2τ时间的原始输入信号的算术平均值，常用于消除系统振动或平滑输入。",
+      "validation_issues": [],
+      "validation_status": "passed",
+      "review_required": false,
+      "review_reason": null,
+      "review_status": null,
+      "indexable": true,
+      "formula_id": "w10-1-直线运动平台（下）_pptx_page_15_formula_4",
+      "page_num": 15
+    }
+  ],
+  "timestamp": "2026-08-18T00:28:12.675771"
+}

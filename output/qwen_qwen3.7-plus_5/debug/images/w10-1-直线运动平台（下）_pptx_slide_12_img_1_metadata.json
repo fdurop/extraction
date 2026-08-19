@@ -1,0 +1,33 @@
+{
+  "original_path": "output/qwen_qwen3.7-plus_5/debug/images/w10-1-直线运动平台（下）_slide_12_img_1.png",
+  "enhanced_path": "output/qwen_qwen3.7-plus_5/debug/images/w10-1-直线运动平台（下）_slide_12_img_1_enhanced.png",
+  "description": "图片展示了一个二阶系统的动力学方程及相关参数定义，具体内容如下：\n\n1.  **顶部公式**：展示了一个二阶常微分方程 $\\ddot{\\theta}(t) + 2\\omega_n\\zeta\\dot{\\theta}(t) + \\omega_n^2\\theta(t) = \\frac{\\ddot{u}_s(t)}{l}$。这描述了系统角度 $\\theta(t)$ 随时间的变化，包含阻尼项和固有频率项，右侧为输入加速度 $\\ddot{u}_s(t)$ 除以长度 $l$。\n2.  **中间部分**：定义了**固有频率** $\\omega_n = \\sqrt{\\frac{g}{l}}$。\n3.  **底部部分**：定义了**阻尼比** $\\zeta = \\frac{c}{2m\\sqrt{gl}}$，并注明 $c$ 为阻尼。\n\n这些公式和参数（固有频率、阻尼比）是分析系统振动特性及进行输入整形（Input Shaping）控制设计的基础数学模型。",
+  "metadata": {
+    "generation": {
+      "method": "qwen_api",
+      "backend": "api",
+      "provider": "qwen",
+      "model": "qwen3.7-plus",
+      "status": "success",
+      "api_error": null
+    },
+    "review": {
+      "required": false,
+      "status": null,
+      "reason": null,
+      "course_relevant": true
+    }
+  },
+  "error": null,
+  "method": "qwen_api",
+  "backend": "api",
+  "provider": "qwen",
+  "model": "qwen3.7-plus",
+  "status": "success",
+  "api_error": null,
+  "indexable": true,
+  "review_required": false,
+  "review_reason": null,
+  "review_status": null,
+  "course_relevant": true
+}

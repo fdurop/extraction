@@ -1,0 +1,143 @@
+{
+  "page": 4,
+  "formula_count": 3,
+  "accepted_count": 3,
+  "review_count": 0,
+  "formulas": [
+    {
+      "source_image": "output/qwen_qwen3.7-plus_6/debug/images/w10-1-直线运动平台（下）_slide_4_img_2.png",
+      "source_type": "image_vlm",
+      "extraction_method": "qwen_api_formula",
+      "backend": "api",
+      "provider": "qwen",
+      "model": "qwen3.7-plus",
+      "image_index": 1,
+      "raw_response": "{\n  \"has_formula\": true,\n  \"formulas\": [\n    {\n      \"latex\": \"\\\\text{导程} = \\\\text{螺距}\",\n      \"name\": \"单线螺纹导程公式\",\n      \"meaning\": \"单线螺纹中，导程等于螺距\",\n      \"symbols\": [\n        {\n          \"symbol\": \"\\\\text{导程}\",\n          \"meaning\": \"转动一圈的线性位移\",\n          \"unit\": \"mm/rev\"\n        },\n        {\n          \"symbol\": \"\\\\text{螺距}\",\n          \"meaning\": \"相邻两牙在中径线上对应两点间的轴向距离\",\n          \"unit\": \"mm\"\n        }\n      ],\n      \"conditions\": [\n        \"单线螺纹\"\n      ],\n      \"uncertain_symbols\": [],\n      \"confidence\": 1.0\n    },\n    {\n      \"latex\": \"\\\\text{导程} = \\\\text{螺距} \\\\times \\\\text{线数}\",\n      \"name\": \"多线螺纹导程公式\",\n      \"meaning\": \"多线螺纹中，导程等于螺距乘以线数\",\n      \"symbols\": [\n        {\n          \"symbol\": \"\\\\text{导程}\",\n          \"meaning\": \"转动一圈的线性位移\",\n          \"unit\": \"mm/rev\"\n        },\n        {\n          \"symbol\": \"\\\\text{螺距}\",\n          \"meaning\": \"相邻两牙在中径线上对应两点间的轴向距离\",\n          \"unit\": \"mm\"\n        },\n        {\n          \"symbol\": \"\\\\text{线数}\",\n          \"meaning\": \"螺纹的线数（头数）\",\n          \"unit\": null\n        }\n      ],\n      \"conditions\": [\n        \"多线螺纹\"\n      ],\n      \"uncertain_symbols\": [],\n      \"confidence\": 1.0\n    },\n    {\n      \"latex\": \"\\\\text{滑台的速度} = \\\\text{导程} \\\\times \\\\text{丝杠转速}\",\n      \"name\": \"滑台速度公式\",\n      \"meaning\": \"滑台的线性速度等于导程乘以丝杠转速\",\n      \"symbols\": [\n        {\n          \"symbol\": \"\\\\text{滑台的速度}\",\n          \"meaning\": \"滑台移动的线性速度\",\n          \"unit\": \"mm/s\"\n        },\n        {\n          \"symbol\": \"\\\\text{导程}\",\n          \"meaning\": \"转动一圈的线性位移\",\n          \"unit\": \"mm/rev\"\n        },\n        {\n          \"symbol\": \"\\\\text{丝杠转速}\",\n          \"meaning\": \"丝杠每分钟的转数\",\n          \"unit\": \"rev/s\"\n        }\n      ],\n      \"conditions\": [],\n      \"uncertain_symbols\": [],\n      \"confidence\": 1.0\n    }\n  ]\n}",
+      "parse_error": null,
+      "partial_response": false,
+      "review_reason": null,
+      "latex": "\\text{导程} = \\text{螺距}",
+      "name": "单线螺纹导程公式",
+      "meaning": "单线螺纹中，导程等于螺距",
+      "symbols": [
+        {
+          "symbol": "\\text{导程}",
+          "meaning": "转动一圈的线性位移",
+          "unit": "mm/rev"
+        },
+        {
+          "symbol": "\\text{螺距}",
+          "meaning": "相邻两牙在中径线上对应两点间的轴向距离",
+          "unit": "mm"
+        }
+      ],
+      "conditions": [
+        "单线螺纹"
+      ],
+      "uncertain_symbols": [],
+      "confidence": 1.0,
+      "plain_text": "\\text{导程} = \\text{螺距}",
+      "description": "单线螺纹中，导程等于螺距",
+      "validation_issues": [],
+      "validation_status": "passed",
+      "review_required": false,
+      "review_status": null,
+      "indexable": true,
+      "formula_id": "w10-1-直线运动平台（下）_pptx_page_4_formula_1",
+      "page_num": 4
+    },
+    {
+      "source_image": "output/qwen_qwen3.7-plus_6/debug/images/w10-1-直线运动平台（下）_slide_4_img_2.png",
+      "source_type": "image_vlm",
+      "extraction_method": "qwen_api_formula",
+      "backend": "api",
+      "provider": "qwen",
+      "model": "qwen3.7-plus",
+      "image_index": 1,
+      "raw_response": "{\n  \"has_formula\": true,\n  \"formulas\": [\n    {\n      \"latex\": \"\\\\text{导程} = \\\\text{螺距}\",\n      \"name\": \"单线螺纹导程公式\",\n      \"meaning\": \"单线螺纹中，导程等于螺距\",\n      \"symbols\": [\n        {\n          \"symbol\": \"\\\\text{导程}\",\n          \"meaning\": \"转动一圈的线性位移\",\n          \"unit\": \"mm/rev\"\n        },\n        {\n          \"symbol\": \"\\\\text{螺距}\",\n          \"meaning\": \"相邻两牙在中径线上对应两点间的轴向距离\",\n          \"unit\": \"mm\"\n        }\n      ],\n      \"conditions\": [\n        \"单线螺纹\"\n      ],\n      \"uncertain_symbols\": [],\n      \"confidence\": 1.0\n    },\n    {\n      \"latex\": \"\\\\text{导程} = \\\\text{螺距} \\\\times \\\\text{线数}\",\n      \"name\": \"多线螺纹导程公式\",\n      \"meaning\": \"多线螺纹中，导程等于螺距乘以线数\",\n      \"symbols\": [\n        {\n          \"symbol\": \"\\\\text{导程}\",\n          \"meaning\": \"转动一圈的线性位移\",\n          \"unit\": \"mm/rev\"\n        },\n        {\n          \"symbol\": \"\\\\text{螺距}\",\n          \"meaning\": \"相邻两牙在中径线上对应两点间的轴向距离\",\n          \"unit\": \"mm\"\n        },\n        {\n          \"symbol\": \"\\\\text{线数}\",\n          \"meaning\": \"螺纹的线数（头数）\",\n          \"unit\": null\n        }\n      ],\n      \"conditions\": [\n        \"多线螺纹\"\n      ],\n      \"uncertain_symbols\": [],\n      \"confidence\": 1.0\n    },\n    {\n      \"latex\": \"\\\\text{滑台的速度} = \\\\text{导程} \\\\times \\\\text{丝杠转速}\",\n      \"name\": \"滑台速度公式\",\n      \"meaning\": \"滑台的线性速度等于导程乘以丝杠转速\",\n      \"symbols\": [\n        {\n          \"symbol\": \"\\\\text{滑台的速度}\",\n          \"meaning\": \"滑台移动的线性速度\",\n          \"unit\": \"mm/s\"\n        },\n        {\n          \"symbol\": \"\\\\text{导程}\",\n          \"meaning\": \"转动一圈的线性位移\",\n          \"unit\": \"mm/rev\"\n        },\n        {\n          \"symbol\": \"\\\\text{丝杠转速}\",\n          \"meaning\": \"丝杠每分钟的转数\",\n          \"unit\": \"rev/s\"\n        }\n      ],\n      \"conditions\": [],\n      \"uncertain_symbols\": [],\n      \"confidence\": 1.0\n    }\n  ]\n}",
+      "parse_error": null,
+      "partial_response": false,
+      "review_reason": null,
+      "latex": "\\text{导程} = \\text{螺距} \\times \\text{线数}",
+      "name": "多线螺纹导程公式",
+      "meaning": "多线螺纹中，导程等于螺距乘以线数",
+      "symbols": [
+        {
+          "symbol": "\\text{导程}",
+          "meaning": "转动一圈的线性位移",
+          "unit": "mm/rev"
+        },
+        {
+          "symbol": "\\text{螺距}",
+          "meaning": "相邻两牙在中径线上对应两点间的轴向距离",
+          "unit": "mm"
+        },
+        {
+          "symbol": "\\text{线数}",
+          "meaning": "螺纹的线数（头数）",
+          "unit": null
+        }
+      ],
+      "conditions": [
+        "多线螺纹"
+      ],
+      "uncertain_symbols": [],
+      "confidence": 1.0,
+      "plain_text": "\\text{导程} = \\text{螺距} \\times \\text{线数}",
+      "description": "多线螺纹中，导程等于螺距乘以线数",
+      "validation_issues": [],
+      "validation_status": "passed",
+      "review_required": false,
+      "review_status": null,
+      "indexable": true,
+      "formula_id": "w10-1-直线运动平台（下）_pptx_page_4_formula_2",
+      "page_num": 4
+    },
+    {
+      "source_image": "output/qwen_qwen3.7-plus_6/debug/images/w10-1-直线运动平台（下）_slide_4_img_2.png",
+      "source_type": "image_vlm",
+      "extraction_method": "qwen_api_formula",
+      "backend": "api",
+      "provider": "qwen",
+      "model": "qwen3.7-plus",
+      "image_index": 1,
+      "raw_response": "{\n  \"has_formula\": true,\n  \"formulas\": [\n    {\n      \"latex\": \"\\\\text{导程} = \\\\text{螺距}\",\n      \"name\": \"单线螺纹导程公式\",\n      \"meaning\": \"单线螺纹中，导程等于螺距\",\n      \"symbols\": [\n        {\n          \"symbol\": \"\\\\text{导程}\",\n          \"meaning\": \"转动一圈的线性位移\",\n          \"unit\": \"mm/rev\"\n        },\n        {\n          \"symbol\": \"\\\\text{螺距}\",\n          \"meaning\": \"相邻两牙在中径线上对应两点间的轴向距离\",\n          \"unit\": \"mm\"\n        }\n      ],\n      \"conditions\": [\n        \"单线螺纹\"\n      ],\n      \"uncertain_symbols\": [],\n      \"confidence\": 1.0\n    },\n    {\n      \"latex\": \"\\\\text{导程} = \\\\text{螺距} \\\\times \\\\text{线数}\",\n      \"name\": \"多线螺纹导程公式\",\n      \"meaning\": \"多线螺纹中，导程等于螺距乘以线数\",\n      \"symbols\": [\n        {\n          \"symbol\": \"\\\\text{导程}\",\n          \"meaning\": \"转动一圈的线性位移\",\n          \"unit\": \"mm/rev\"\n        },\n        {\n          \"symbol\": \"\\\\text{螺距}\",\n          \"meaning\": \"相邻两牙在中径线上对应两点间的轴向距离\",\n          \"unit\": \"mm\"\n        },\n        {\n          \"symbol\": \"\\\\text{线数}\",\n          \"meaning\": \"螺纹的线数（头数）\",\n          \"unit\": null\n        }\n      ],\n      \"conditions\": [\n        \"多线螺纹\"\n      ],\n      \"uncertain_symbols\": [],\n      \"confidence\": 1.0\n    },\n    {\n      \"latex\": \"\\\\text{滑台的速度} = \\\\text{导程} \\\\times \\\\text{丝杠转速}\",\n      \"name\": \"滑台速度公式\",\n      \"meaning\": \"滑台的线性速度等于导程乘以丝杠转速\",\n      \"symbols\": [\n        {\n          \"symbol\": \"\\\\text{滑台的速度}\",\n          \"meaning\": \"滑台移动的线性速度\",\n          \"unit\": \"mm/s\"\n        },\n        {\n          \"symbol\": \"\\\\text{导程}\",\n          \"meaning\": \"转动一圈的线性位移\",\n          \"unit\": \"mm/rev\"\n        },\n        {\n          \"symbol\": \"\\\\text{丝杠转速}\",\n          \"meaning\": \"丝杠每分钟的转数\",\n          \"unit\": \"rev/s\"\n        }\n      ],\n      \"conditions\": [],\n      \"uncertain_symbols\": [],\n      \"confidence\": 1.0\n    }\n  ]\n}",
+      "parse_error": null,
+      "partial_response": false,
+      "review_reason": null,
+      "latex": "\\text{滑台的速度} = \\text{导程} \\times \\text{丝杠转速}",
+      "name": "滑台速度公式",
+      "meaning": "滑台的线性速度等于导程乘以丝杠转速",
+      "symbols": [
+        {
+          "symbol": "\\text{滑台的速度}",
+          "meaning": "滑台移动的线性速度",
+          "unit": "mm/s"
+        },
+        {
+          "symbol": "\\text{导程}",
+          "meaning": "转动一圈的线性位移",
+          "unit": "mm/rev"
+        },
+        {
+          "symbol": "\\text{丝杠转速}",
+          "meaning": "丝杠每分钟的转数",
+          "unit": "rev/s"
+        }
+      ],
+      "conditions": [],
+      "uncertain_symbols": [],
+      "confidence": 1.0,
+      "plain_text": "\\text{滑台的速度} = \\text{导程} \\times \\text{丝杠转速}",
+      "description": "滑台的线性速度等于导程乘以丝杠转速",
+      "validation_issues": [],
+      "validation_status": "passed",
+      "review_required": false,
+      "review_status": null,
+      "indexable": true,
+      "formula_id": "w10-1-直线运动平台（下）_pptx_page_4_formula_3",
+      "page_num": 4
+    }
+  ],
+  "timestamp": "2026-08-19T10:39:23.225920"
+}

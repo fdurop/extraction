@@ -1,0 +1,33 @@
+{
+  "original_path": "output/qwen_qwen3.7-plus_4/debug/images/w08-1-步进电机驱动器_p3_img3.png",
+  "enhanced_path": "output/qwen_qwen3.7-plus_4/debug/images/w08-1-步进电机驱动器_p3_img3_enhanced.png",
+  "description": "图片展示了“§3 步进电机原理”的教学内容，主要包含文字说明、电机结构示意图和时序表格，详细解释了步进电机的驱动方式。\n\n**1. 文字说明（左侧）：**\n*   **标题：** 驱动方式\n*   **内容：**\n    *   依照一定次序，改变A相和B相的电流方向。\n    *   相位相差 90°。\n\n**2. 电机结构示意图（中间）：**\n*   展示了编号为1到8的8个电机状态图，描绘了步进电机转子的旋转过程。\n*   每个图包含一个圆形定子，周围分布四个线圈，分别标记为 $A$、$/bar{A}$（下方）、$B$（右侧）、$/bar{B}$（左侧）。\n*   中心为矩形转子，标有 N 极和 S 极。\n*   随着编号从1到8，转子顺时针旋转，每次转动约45度。线圈上的阴影和N/S标记指示了当前的磁极状态。例如：\n    *   图1：转子竖直，N极朝上（靠近A线圈）。\n    *   图3：转子水平，N极朝右（靠近B线圈）。\n    *   图5：转子竖直，S极朝上（N极朝下，靠近$/bar{A}$线圈）。\n\n**3. 时序表格（右侧）：**\n*   表格列出了8个相位（phase 1-8）下，A相和B相的电流状态（用 +、-、x 表示，x可能代表不通电或零电流）。\n*   **表头：** phase, A相, B相\n*   **具体数据：**\n    *   **1:** A相 +, B相 x\n    *   **2:** A相 +, B相 +\n    *   **3:** A相 x, B相 +\n    *   **4:** A相 -, B相 +\n    *   **5:** A相 -, B相 x\n    *   **6:** A相 -, B相 -\n    *   **7:** A相 x, B相 -\n    *   **8:** A相 +, B相 -\n*   表格背景色交替变化（粉色/白色），辅助区分不同的驱动阶段。\n\n该图片完整展示了步进电机八拍驱动（半步驱动）的原理，即通过A相和B相电流的特定组合（+, +, -, - 以及中间的不通电状态 x），控制转子一步步旋转。",
+  "metadata": {
+    "generation": {
+      "method": "qwen_api",
+      "backend": "api",
+      "provider": "qwen",
+      "model": "qwen3.7-plus",
+      "status": "success",
+      "api_error": null
+    },
+    "review": {
+      "required": false,
+      "status": null,
+      "reason": null,
+      "course_relevant": true
+    }
+  },
+  "error": null,
+  "method": "qwen_api",
+  "backend": "api",
+  "provider": "qwen",
+  "model": "qwen3.7-plus",
+  "status": "success",
+  "api_error": null,
+  "indexable": true,
+  "review_required": false,
+  "review_reason": null,
+  "review_status": null,
+  "course_relevant": true
+}

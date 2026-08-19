@@ -1,0 +1,36 @@
+{
+  "source_image": "output/qwen_qwen3.7-plus_6/debug/images/w10-1-直线运动平台（下）_slide_15_img_2.png",
+  "source_type": "image_vlm",
+  "extraction_method": "qwen_api_formula",
+  "backend": "api",
+  "provider": "qwen",
+  "model": "qwen3.7-plus",
+  "image_index": 1,
+  "raw_response": "{\n  \"has_formula\": true,\n  \"formulas\": [\n    {\n      \"latex\": \"\\\\widetilde{U}_s(s) = C(e^{-s\\\\tau} - e^{s_2\\\\tau})(e^{-s\\\\tau} - e^{s_1\\\\tau})U_s(s)\",\n      \"name\": \"\",\n      \"meaning\": \"\",\n      \"symbols\": [],\n      \"conditions\": [],\n      \"uncertain_symbols\": [\n        \"s_1\",\n        \"s_2\"\n      ],\n      \"confidence\": 0.8\n    },\n    {\n      \"latex\": \"= C[1 - 2e^{-s\\\\tau}\\\\cos(\\\\omega_n\\\\tau) + e^{-2s\\\\tau}]U_s(s)\",\n      \"name\": \"\",\n      \"meaning\": \"\",\n      \"symbols\": [],\n      \"conditions\": [],\n      \"uncertain_symbols\": [],\n      \"confidence\": 1.0\n    },\n    {\n      \"latex\": \"\\\\Rightarrow \\\\widetilde{u}_s(t) = C[u_s(t) - 2\\\\cos(\\\\omega_n\\\\tau)u_s(t-\\\\tau) + u_s(t-2\\\\tau)]\",\n      \"name\": \"\",\n      \"meaning\": \"\",\n      \"symbols\": [],\n      \"conditions\": [],\n      \"uncertain_symbols\": [],\n      \"confidence\": 1.0\n    },\n    {\n      \"latex\": \"\\\\widetilde{u}_s(t) = c_1 u_s(t) - c_2 u_s(t-\\\\tau) + c_1 u_s(t-2\\\\tau)\",\n      \"name\": \"\",\n      \"meaning\": \"\",\n      \"symbols\": [],\n      \"conditions\": [],\n      \"uncertain_symbols\": [],\n      \"confidence\": 1.0\n    },\n    {\n      \"latex\": \"c_2 = 2C\\\\cos(\\\\omega_n\\\\tau) = 0\",\n      \"name\": \"\",\n      \"meaning\": \"\",\n      \"symbols\": [],\n      \"conditions\": [],\n      \"uncertain_symbols\": [],\n      \"confidence\": 1.0\n    },\n    {\n      \"latex\": \"\\\\tau = \\\\frac{\\\\pi}{2\\\\omega_n}\",\n      \"name\": \"\",\n      \"meaning\": \"\",\n      \"symbols\": [],\n      \"conditions\": [],\n      \"uncertain_symbols\": [],\n      \"confidence\": 1.0\n    },\n    {\n      \"latex\": \"c_1 = 1/2\",\n      \"name\": \"\",\n      \"meaning\": \"\",\n      \"symbols\": [],\n      \"conditions\": [],\n      \"uncertain_symbols\": [],\n      \"confidence\": 1.0\n    }\n  ]\n}",
+  "parse_error": null,
+  "partial_response": false,
+  "review_reason": "uncertain_symbols",
+  "latex": "\\widetilde{U}_s(s) = C(e^{-s\\tau} - e^{s_2\\tau})(e^{-s\\tau} - e^{s_1\\tau})U_s(s)",
+  "name": "",
+  "meaning": "",
+  "symbols": [],
+  "conditions": [],
+  "uncertain_symbols": [
+    "s_1",
+    "s_2"
+  ],
+  "confidence": 0.52,
+  "plain_text": "\\widetilde{U}_s(s) = C(e^{-s\\tau} - e^{s_2\\tau})(e^{-s\\tau} - e^{s_1\\tau})U_s(s)",
+  "description": "",
+  "validation_issues": [
+    "uncertain_symbols"
+  ],
+  "validation_status": "review",
+  "review_required": true,
+  "review_status": "pending",
+  "indexable": false,
+  "formula_id": "w10-1-直线运动平台（下）_pptx_page_15_formula_2",
+  "page_num": 15,
+  "review_image_path": "output/qwen_qwen3.7-plus_6/formula_review_items/w10-1-直线运动平台（下）_pptx_page_15_formula_2.png",
+  "source_document": "w10-1-直线运动平台（下）_pptx"
+}

@@ -1,0 +1,3 @@
+﻿序号,LaTeX公式,名称,描述,来源图像,提取方法,置信度,验证状态,是否需审核
+1,v(t) = 6Lt(T-t)/T^3,原始速度,滑台按设定速度进行移动的原始速度公式,output/qwen_qwen3.7-plus_5/debug/images/w10-1-直线运动平台（下）_slide_16_img_1.png,qwen_api_formula,0.95,passed,False
+2,\tilde{v}(t) = \frac{1}{2}[v(t) + v(t-2\tau)],输入整形,采用输入整形进行摆锤减振的速度公式,output/qwen_qwen3.7-plus_5/debug/images/w10-1-直线运动平台（下）_slide_16_img_1.png,qwen_api_formula,0.9,passed,False

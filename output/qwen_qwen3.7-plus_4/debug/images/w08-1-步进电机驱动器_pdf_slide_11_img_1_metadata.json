@@ -1,0 +1,33 @@
+{
+  "original_path": "output/qwen_qwen3.7-plus_4/debug/images/w08-1-步进电机驱动器_p11_img2.jpeg",
+  "enhanced_path": "output/qwen_qwen3.7-plus_4/debug/images/w08-1-步进电机驱动器_p11_img2_enhanced.jpeg",
+  "description": "图片展示了雷赛智能（Leadshine）品牌的 Microstep Driver DM432C 步进电机驱动器的实物面板，详细标注了接口定义和拨码开关设置表。\n\n**关键对象与结构：**\n*   **顶部接口：** 设有绿色的接线端子。\n*   **面板标识区域：** 文字呈倒置或侧向排列，分为三个主要部分：\n    *   **Signal（信号/控制回路）：** 包含 PUL+, PUL-, DIR+, DIR-, ENA+, ENA- 接口。\n    *   **PA Settings（参数设置）：** 对应 SW1 至 SW8 拨码开关。\n    *   **High Voltage（高压/动力回路）：** 包含 GND, +Vdc, A+, A-, B+, B- 接口。\n\n**表格内容：**\n*   **Current Table (Peak=RMS×1.4)：** 电流设置表。列出了 SW1, SW2, SW3 的 on/off 组合对应的 Peak（峰值）和 RMS（有效值）电流。例如 Default 状态下 Peak 为 1.31A。\n*   **Pulse/rev Table：** 细分设置表。列出了 SW5, SW6, SW7, SW8 的 on/off 组合对应的 Pulse/rev（脉冲/圈，即细分数）。数值涵盖 400, 800, 1600, 3200, 6400, 12800, 25600 以及 1000 到 25000 等档位。\n*   **中间说明文字：** \"SW4: off=Half current=Full current; Auto Turning: SW 4 change 2 times in 1 sec.\"\n\n**其他文字：**\n*   底部标注电压范围：+Vdc: +20V~+40V。\n*   左侧有品牌 Logo 和型号 DM432C。",
+  "metadata": {
+    "generation": {
+      "method": "qwen_api",
+      "backend": "api",
+      "provider": "qwen",
+      "model": "qwen3.7-plus",
+      "status": "success",
+      "api_error": null
+    },
+    "review": {
+      "required": false,
+      "status": null,
+      "reason": null,
+      "course_relevant": true
+    }
+  },
+  "error": null,
+  "method": "qwen_api",
+  "backend": "api",
+  "provider": "qwen",
+  "model": "qwen3.7-plus",
+  "status": "success",
+  "api_error": null,
+  "indexable": true,
+  "review_required": false,
+  "review_reason": null,
+  "review_status": null,
+  "course_relevant": true
+}

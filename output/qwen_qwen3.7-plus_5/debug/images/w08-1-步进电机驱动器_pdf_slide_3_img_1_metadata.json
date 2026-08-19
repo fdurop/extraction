@@ -1,0 +1,33 @@
+{
+  "original_path": "output/qwen_qwen3.7-plus_5/debug/images/w08-1-步进电机驱动器_p3_img2.png",
+  "enhanced_path": "output/qwen_qwen3.7-plus_5/debug/images/w08-1-步进电机驱动器_p3_img2_enhanced.png",
+  "description": "图片展示了“§3 步进电机原理”的教学内容，主要包含左侧的电路实践图和右侧的相位时序表。\n\n**左侧电路图：**\n*   **标题与说明**：标题为“实践：用两个双刀双掷开关驱动步进电机”，下方说明“线路图等价于两个直流电机”。\n*   **电路结构**：图中有两个“双刀双掷开关”。\n    *   电源连接：下方有两个接线端子，分别标注“接电源-”（通过绿色导线连接）和“接电源+”（通过红色导线连接）。\n    *   电机连接：开关的输出端连接到右侧标有“电机”的接线排，接线排上有四个端子，分别标记为 A、$\\overline{A}$（A上方有一横）、B、$\\overline{B}$（B上方有一横）。\n    *   连线逻辑：红色导线代表正极连接，绿色导线代表负极连接，通过拨动双刀双掷开关可以改变流向电机线圈的电流方向。\n\n**右侧表格：**\n*   **表头**：phase（相位）、A相、B相。\n*   **内容**：列出了从1到8共8个相位的驱动时序，展示了A相和B相在不同阶段的极性状态（+代表正，-代表负，×代表无电流/悬空）。\n    *   **1**: A相 +，B相 ×\n    *   **2**: A相 +，B相 +\n    *   **3**: A相 ×，B相 +\n    *   **4**: A相 -，B相 +\n    *   **5**: A相 -，B相 ×\n    *   **6**: A相 -，B相 -\n    *   **7**: A相 ×，B相 -\n    *   **8**: A相 +，B相 -\n    这展示了步进电机的八拍驱动模式。",
+  "metadata": {
+    "generation": {
+      "method": "qwen_api",
+      "backend": "api",
+      "provider": "qwen",
+      "model": "qwen3.7-plus",
+      "status": "success",
+      "api_error": null
+    },
+    "review": {
+      "required": false,
+      "status": null,
+      "reason": null,
+      "course_relevant": true
+    }
+  },
+  "error": null,
+  "method": "qwen_api",
+  "backend": "api",
+  "provider": "qwen",
+  "model": "qwen3.7-plus",
+  "status": "success",
+  "api_error": null,
+  "indexable": true,
+  "review_required": false,
+  "review_reason": null,
+  "review_status": null,
+  "course_relevant": true
+}

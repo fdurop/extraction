@@ -1,0 +1,33 @@
+{
+  "original_path": "output/qwen_qwen3.7-plus_4/debug/images/w10-1-直线运动平台（下）_slide_13_img_1.png",
+  "enhanced_path": "output/qwen_qwen3.7-plus_4/debug/images/w10-1-直线运动平台（下）_slide_13_img_1_enhanced.png",
+  "description": "图片展示了一个带有蓝色圆角边框的矩形框，背景为白色。框内包含红色的文字和公式：\n1.  **文字**：上方写着“两个极点”。\n2.  **公式**：下方写着 $s_{1,2} = /mp i/omega_n$（或者 $s_{1,2} = /pm i/omega_n$，表示一对共轭纯虚数极点）。\n\n结合上下文“传递函数”，该图片展示了特定传递函数的极点分布情况，即两个位于虚轴上的极点。",
+  "metadata": {
+    "generation": {
+      "method": "qwen_api",
+      "backend": "api",
+      "provider": "qwen",
+      "model": "qwen3.7-plus",
+      "status": "success",
+      "api_error": null
+    },
+    "review": {
+      "required": false,
+      "status": null,
+      "reason": null,
+      "course_relevant": true
+    }
+  },
+  "error": null,
+  "method": "qwen_api",
+  "backend": "api",
+  "provider": "qwen",
+  "model": "qwen3.7-plus",
+  "status": "success",
+  "api_error": null,
+  "indexable": true,
+  "review_required": false,
+  "review_reason": null,
+  "review_status": null,
+  "course_relevant": true
+}

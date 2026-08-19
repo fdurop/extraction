@@ -164,14 +164,14 @@ class KnowledgeExporter:
 
     def add_text(self, data: Dict[str, Any], filename: str, page_num: int):
         text = data.get("cleaned_text") or data.get("raw_text") or ""
-        if not text.strip():
-            return None
         page_id = self.register_page(
             filename,
             page_num,
-            raw_text=data.get("raw_text", text),
+            raw_text=text,
             images=data.get("image_paths") or [],
         )
+        if not text.strip():
+            return None
         element_id = self.element_id(filename, page_num, "text", 0)
         key_points = data.get("key_points") or []
         terms = data.get("technical_terms") or []
@@ -203,6 +203,16 @@ class KnowledgeExporter:
         return element_id
 
     def add_image(self, data: Dict[str, Any], filename: str, page_num: int, img_index: int):
+        if data.get("review_required"):
+            if self.logger:
+                self.logger.warning(
+                    "Skip review-required image node: %s page=%s image=%s reason=%s",
+                    filename,
+                    page_num + 1,
+                    img_index + 1,
+                    data.get("review_reason"),
+                )
+            return None
         page_id = self.register_page(filename, page_num)
         element_id = self.element_id(filename, page_num, "figure", img_index)
         description = _clean(data.get("description"))
@@ -271,22 +281,33 @@ class KnowledgeExporter:
     def add_formulas(self, formulas: List[Dict[str, Any]], filename: str, page_num: int):
         ids = []
         page_id = self.register_page(filename, page_num)
-        for idx, formula in enumerate(formulas or []):
+        accepted = [formula for formula in (formulas or []) if not formula.get("review_required")]
+        for idx, formula in enumerate(accepted):
             element_id = self.element_id(filename, page_num, "formula", idx)
             latex = _clean(formula.get("latex"))
-            description = _clean(formula.get("description") or formula.get("text"))
+            description = _clean(formula.get("meaning") or formula.get("description") or formula.get("text"))
+            formula_name = _clean(formula.get("name"))
+            symbols = formula.get("symbols") or []
+            conditions = formula.get("conditions") or []
             source_image = _relpath(formula.get("source_image"))
-            embedding_text = " ".join([latex, description, _clean(source_image)]).strip()
+            embedding_text = " ".join(
+                [formula_name, latex, description, _clean(symbols), _clean(conditions)]
+            ).strip()
             item = self._base_item(element_id, "equation", filename, page_num, page_id)
             item.update(
                 {
                     "latex": latex,
+                    "name": formula_name,
                     "text": description,
+                    "symbols": symbols,
+                    "conditions": conditions,
                     "source_image": source_image,
                     "extraction_method": formula.get("extraction_method", ""),
                     "backend": formula.get("backend"),
                     "provider": formula.get("provider"),
                     "model": formula.get("model"),
+                    "confidence": formula.get("confidence"),
+                    "validation_status": formula.get("validation_status"),
                     "embedding_id": self.embedding_id(element_id),
                     "embedding_text": embedding_text,
                 }
@@ -295,7 +316,7 @@ class KnowledgeExporter:
             self._add_node(
                 element_id,
                 "Formula",
-                name=latex[:80] or f"formula page {page_num + 1}-{idx + 1}",
+                name=formula_name or latex[:80] or f"formula page {page_num + 1}-{idx + 1}",
                 summary=self._summary(description or latex, 160),
                 description=description,
                 document_id=self.document_id(filename),
@@ -304,10 +325,14 @@ class KnowledgeExporter:
             embedding_text=embedding_text,
             extra={
                 "latex": latex,
+                "symbols": symbols,
+                "conditions": conditions,
                 "extraction_method": formula.get("extraction_method", ""),
                 "backend": formula.get("backend"),
                 "provider": formula.get("provider"),
                 "model": formula.get("model"),
+                "confidence": formula.get("confidence"),
+                "validation_status": formula.get("validation_status"),
             },
             )
             ids.append(element_id)
@@ -316,24 +341,34 @@ class KnowledgeExporter:
     def add_tables(self, tables: List[Dict[str, Any]], filename: str, page_num: int):
         ids = []
         page_id = self.register_page(filename, page_num)
-        for idx, table in enumerate(tables or []):
+        accepted = [table for table in (tables or []) if not table.get("review_required")]
+        for idx, table in enumerate(accepted):
             element_id = self.element_id(filename, page_num, "table", idx)
             table_body = table.get("csv") or table.get("content") or _clean(table.get("data") or table.get("json"))
             description = _clean(table.get("description"))
             headers = _clean(table.get("headers"))
+            title = _clean(table.get("title"))
             source_image = _relpath(table.get("source_image"))
-            embedding_text = " ".join([headers, description, table_body[:1500]]).strip()
+            embedding_text = " ".join(
+                [title, headers, description, _clean(table.get("units")), table_body[:1500]]
+            ).strip()
             item = self._base_item(element_id, "table", filename, page_num, page_id)
             item.update(
                 {
                     "table_body": table_body,
                     "headers": table.get("headers", ""),
+                    "cells": table.get("cells", []),
+                    "title": title,
+                    "units": table.get("units", {}),
+                    "footnotes": table.get("footnotes", []),
                     "description": description,
                     "source_image": source_image,
                     "extraction_method": table.get("extraction_method") or table.get("type", ""),
                     "backend": table.get("backend"),
                     "provider": table.get("provider"),
                     "model": table.get("model"),
+                    "confidence": table.get("confidence"),
+                    "validation_status": table.get("validation_status"),
                     "embedding_id": self.embedding_id(element_id),
                     "embedding_text": embedding_text,
                 }
@@ -342,7 +377,7 @@ class KnowledgeExporter:
             self._add_node(
                 element_id,
                 "Table",
-                name=f"table page {page_num + 1}-{idx + 1}",
+                name=title or f"table page {page_num + 1}-{idx + 1}",
                 summary=self._summary(description or table_body, 160),
                 description=description or table_body,
                 document_id=self.document_id(filename),
@@ -351,12 +386,17 @@ class KnowledgeExporter:
             embedding_text=embedding_text,
             extra={
                 "headers": table.get("headers", ""),
+                "cells": table.get("cells", []),
+                "units": table.get("units", {}),
+                "footnotes": table.get("footnotes", []),
                 "rows": table.get("rows"),
                 "cols": table.get("cols"),
                 "extraction_method": table.get("extraction_method") or table.get("type", ""),
                 "backend": table.get("backend"),
                 "provider": table.get("provider"),
                 "model": table.get("model"),
+                "confidence": table.get("confidence"),
+                "validation_status": table.get("validation_status"),
             },
             )
             ids.append(element_id)
@@ -628,18 +668,24 @@ class KnowledgeExporter:
         return text[:limit]
 
     @staticmethod
-    def _normalize_paths(value: Any) -> Any:
+    def _normalize_paths(value: Any, key: str = None) -> Any:
         if isinstance(value, dict):
-            return {key: KnowledgeExporter._normalize_paths(item) for key, item in value.items()}
+            return {
+                item_key: KnowledgeExporter._normalize_paths(item, item_key)
+                for item_key, item in value.items()
+            }
         if isinstance(value, list):
-            return [KnowledgeExporter._normalize_paths(item) for item in value]
+            return [KnowledgeExporter._normalize_paths(item, key) for item in value]
+        path_keys = {
+            "path", "paths", "file_path", "source_path", "source_image",
+            "original_path", "enhanced_path", "image_path", "image_paths",
+            "page_image_path", "review_image_path", "metadata_path", "matrix_path",
+        }
         if isinstance(value, str):
-            looks_like_path = (
-                "\\" in value
-                or value.startswith("input/")
-                or value.startswith("output/")
-                or value.startswith("input\\")
-                or value.startswith("output\\")
+            has_drive = bool(os.path.splitdrive(value)[0])
+            explicit_path = has_drive or value.startswith(("\\\\", "/")) or value.startswith(
+                ("input/", "output/", "debug/", "kg_data/", "input\\", "output\\", "debug\\", "kg_data\\")
             )
-            return _relpath(value) if looks_like_path else value
+            if key in path_keys or explicit_path:
+                return _relpath(value)
         return value

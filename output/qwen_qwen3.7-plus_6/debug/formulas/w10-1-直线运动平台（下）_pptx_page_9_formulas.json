@@ -1,0 +1,114 @@
+{
+  "page": 9,
+  "formula_count": 2,
+  "accepted_count": 2,
+  "review_count": 0,
+  "formulas": [
+    {
+      "source_image": "output/qwen_qwen3.7-plus_6/debug/images/w10-1-直线运动平台（下）_slide_9_img_1.png",
+      "source_type": "image_vlm",
+      "extraction_method": "qwen_api_formula",
+      "backend": "api",
+      "provider": "qwen",
+      "model": "qwen3.7-plus",
+      "image_index": 0,
+      "raw_response": "{\n  \"has_formula\": true,\n  \"formulas\": [\n    {\n      \"latex\": \"v(t) = 6Lt(T - t)/T^3\",\n      \"name\": \"速度公式\",\n      \"meaning\": \"滑台移动的抛物线型速度曲线，启停时刻速度均为零\",\n      \"symbols\": [\n        {\n          \"symbol\": \"v(t)\",\n          \"meaning\": \"t时刻的速度\",\n          \"unit\": null\n        },\n        {\n          \"symbol\": \"L\",\n          \"meaning\": \"移动距离\",\n          \"unit\": null\n        },\n        {\n          \"symbol\": \"T\",\n          \"meaning\": \"指定时长\",\n          \"unit\": null\n        },\n        {\n          \"symbol\": \"t\",\n          \"meaning\": \"时间\",\n          \"unit\": null\n        }\n      ],\n      \"conditions\": [],\n      \"uncertain_symbols\": [],\n      \"confidence\": 1.0\n    },\n    {\n      \"latex\": \"x(t) = \\\\int_0^T v(t)\\\\mathrm{d}t = 6Lt^2(\\\\frac{T}{2} - \\\\frac{t}{3})/T^3\",\n      \"name\": \"位移公式\",\n      \"meaning\": \"滑台在时间t内的位移，通过对速度积分得到\",\n      \"symbols\": [\n        {\n          \"symbol\": \"x(t)\",\n          \"meaning\": \"t时刻的位移\",\n          \"unit\": null\n        },\n        {\n          \"symbol\": \"v(t)\",\n          \"meaning\": \"t时刻的速度\",\n          \"unit\": null\n        },\n        {\n          \"symbol\": \"L\",\n          \"meaning\": \"移动距离\",\n          \"unit\": null\n        },\n        {\n          \"symbol\": \"T\",\n          \"meaning\": \"指定时长\",\n          \"unit\": null\n        },\n        {\n          \"symbol\": \"t\",\n          \"meaning\": \"时间\",\n          \"unit\": null\n        }\n      ],\n      \"conditions\": [],\n      \"uncertain_symbols\": [],\n      \"confidence\": 1.0\n    }\n  ]\n}",
+      "parse_error": null,
+      "partial_response": false,
+      "review_reason": null,
+      "latex": "v(t) = 6Lt(T - t)/T^3",
+      "name": "速度公式",
+      "meaning": "滑台移动的抛物线型速度曲线，启停时刻速度均为零",
+      "symbols": [
+        {
+          "symbol": "v(t)",
+          "meaning": "t时刻的速度",
+          "unit": null
+        },
+        {
+          "symbol": "L",
+          "meaning": "移动距离",
+          "unit": null
+        },
+        {
+          "symbol": "T",
+          "meaning": "指定时长",
+          "unit": null
+        },
+        {
+          "symbol": "t",
+          "meaning": "时间",
+          "unit": null
+        }
+      ],
+      "conditions": [],
+      "uncertain_symbols": [],
+      "confidence": 1.0,
+      "plain_text": "v(t) = 6Lt(T - t)/T^3",
+      "description": "滑台移动的抛物线型速度曲线，启停时刻速度均为零",
+      "validation_issues": [],
+      "validation_status": "passed",
+      "review_required": false,
+      "review_status": null,
+      "indexable": true,
+      "formula_id": "w10-1-直线运动平台（下）_pptx_page_9_formula_1",
+      "page_num": 9
+    },
+    {
+      "source_image": "output/qwen_qwen3.7-plus_6/debug/images/w10-1-直线运动平台（下）_slide_9_img_1.png",
+      "source_type": "image_vlm",
+      "extraction_method": "qwen_api_formula",
+      "backend": "api",
+      "provider": "qwen",
+      "model": "qwen3.7-plus",
+      "image_index": 0,
+      "raw_response": "{\n  \"has_formula\": true,\n  \"formulas\": [\n    {\n      \"latex\": \"v(t) = 6Lt(T - t)/T^3\",\n      \"name\": \"速度公式\",\n      \"meaning\": \"滑台移动的抛物线型速度曲线，启停时刻速度均为零\",\n      \"symbols\": [\n        {\n          \"symbol\": \"v(t)\",\n          \"meaning\": \"t时刻的速度\",\n          \"unit\": null\n        },\n        {\n          \"symbol\": \"L\",\n          \"meaning\": \"移动距离\",\n          \"unit\": null\n        },\n        {\n          \"symbol\": \"T\",\n          \"meaning\": \"指定时长\",\n          \"unit\": null\n        },\n        {\n          \"symbol\": \"t\",\n          \"meaning\": \"时间\",\n          \"unit\": null\n        }\n      ],\n      \"conditions\": [],\n      \"uncertain_symbols\": [],\n      \"confidence\": 1.0\n    },\n    {\n      \"latex\": \"x(t) = \\\\int_0^T v(t)\\\\mathrm{d}t = 6Lt^2(\\\\frac{T}{2} - \\\\frac{t}{3})/T^3\",\n      \"name\": \"位移公式\",\n      \"meaning\": \"滑台在时间t内的位移，通过对速度积分得到\",\n      \"symbols\": [\n        {\n          \"symbol\": \"x(t)\",\n          \"meaning\": \"t时刻的位移\",\n          \"unit\": null\n        },\n        {\n          \"symbol\": \"v(t)\",\n          \"meaning\": \"t时刻的速度\",\n          \"unit\": null\n        },\n        {\n          \"symbol\": \"L\",\n          \"meaning\": \"移动距离\",\n          \"unit\": null\n        },\n        {\n          \"symbol\": \"T\",\n          \"meaning\": \"指定时长\",\n          \"unit\": null\n        },\n        {\n          \"symbol\": \"t\",\n          \"meaning\": \"时间\",\n          \"unit\": null\n        }\n      ],\n      \"conditions\": [],\n      \"uncertain_symbols\": [],\n      \"confidence\": 1.0\n    }\n  ]\n}",
+      "parse_error": null,
+      "partial_response": false,
+      "review_reason": null,
+      "latex": "x(t) = \\int_0^T v(t)\\mathrm{d}t = 6Lt^2(\\frac{T}{2} - \\frac{t}{3})/T^3",
+      "name": "位移公式",
+      "meaning": "滑台在时间t内的位移，通过对速度积分得到",
+      "symbols": [
+        {
+          "symbol": "x(t)",
+          "meaning": "t时刻的位移",
+          "unit": null
+        },
+        {
+          "symbol": "v(t)",
+          "meaning": "t时刻的速度",
+          "unit": null
+        },
+        {
+          "symbol": "L",
+          "meaning": "移动距离",
+          "unit": null
+        },
+        {
+          "symbol": "T",
+          "meaning": "指定时长",
+          "unit": null
+        },
+        {
+          "symbol": "t",
+          "meaning": "时间",
+          "unit": null
+        }
+      ],
+      "conditions": [],
+      "uncertain_symbols": [],
+      "confidence": 1.0,
+      "plain_text": "x(t) = \\int_0^T v(t)\\mathrm{d}t = 6Lt^2(\\frac{T}{2} - \\frac{t}{3})/T^3",
+      "description": "滑台在时间t内的位移，通过对速度积分得到",
+      "validation_issues": [],
+      "validation_status": "passed",
+      "review_required": false,
+      "review_status": null,
+      "indexable": true,
+      "formula_id": "w10-1-直线运动平台（下）_pptx_page_9_formula_2",
+      "page_num": 9
+    }
+  ],
+  "timestamp": "2026-08-19T10:40:36.354703"
+}

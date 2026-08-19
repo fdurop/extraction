@@ -1,0 +1,33 @@
+{
+  "original_path": "output/qwen_qwen3.7-plus_5/debug/images/w10-1-直线运动平台（下）_slide_7_img_1.png",
+  "enhanced_path": "output/qwen_qwen3.7-plus_5/debug/images/w10-1-直线运动平台（下）_slide_7_img_1_enhanced.png",
+  "description": "图片展示了一段 Arduino 代码（文件名为 `17-w10-s5-blink.ino`），具体演示了如何使用 `TimerOne` 库来实现时间中断，对应上下文中关于“时间中断”及 Timer1 的教学内容。\n\n代码包含以下关键结构和内容：\n1.  **库引用**：`#include <TimerOne.h>`，引入了定时器库。\n2.  **`void setup()` 函数**：\n    *   通过 `pinMode(LED_BUILTIN, OUTPUT);` 初始化 LED 端口为输出模式。\n    *   通过 `Timer1.initialize(long(1 * 1E6));` 初始化 Timer1，参数 `1 * 1E6` 微秒即 1 秒，注释说明“每 1 s 触发一次时间中断”。\n    *   通过 `Timer1.attachInterrupt(LED);` 设置中断响应函数为 `LED`。\n    *   通过 `Timer1.start();` 启动时间中断。\n3.  **`void LED()` 函数**（中断响应函数）：\n    *   定义静态布尔变量 `static bool light = true;` 用于保持状态。\n    *   通过 `digitalWrite(LED_BUILTIN, light);` 控制内置 LED 的亮灭。\n    *   通过 `light = !light;` 每次调用时翻转 LED 的状态。",
+  "metadata": {
+    "generation": {
+      "method": "qwen_api",
+      "backend": "api",
+      "provider": "qwen",
+      "model": "qwen3.7-plus",
+      "status": "success",
+      "api_error": null
+    },
+    "review": {
+      "required": false,
+      "status": null,
+      "reason": null,
+      "course_relevant": true
+    }
+  },
+  "error": null,
+  "method": "qwen_api",
+  "backend": "api",
+  "provider": "qwen",
+  "model": "qwen3.7-plus",
+  "status": "success",
+  "api_error": null,
+  "indexable": true,
+  "review_required": false,
+  "review_reason": null,
+  "review_status": null,
+  "course_relevant": true
+}

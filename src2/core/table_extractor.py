@@ -4,12 +4,14 @@
 """
 
 import re
+import os
 import pandas as pd
 from typing import List, Dict, Any, Optional
+from .table_validator import TableValidator
 
 
 class TableExtractor:
-    def __init__(self, logger=None):
+    def __init__(self, logger=None, vlm_client=None):
         """
         初始化表格提取器
         
@@ -17,6 +19,8 @@ class TableExtractor:
             logger: 日志记录器
         """
         self.logger = logger
+        self.vlm_client = vlm_client
+        self.validator = TableValidator()
     
     def extract_tables_from_pdf_page(self, page, page_text: str = "", method: str = "auto") -> List[Dict[str, Any]]:
         """
@@ -30,29 +34,20 @@ class TableExtractor:
         Returns:
             表格列表
         """
-        tables = []
-        
-        if method == "auto" or method == "camelot":
-            # 尝试使用camelot
-            camelot_tables = self._extract_with_camelot(page)
-            if camelot_tables:
-                tables.extend(camelot_tables)
-                return tables
-        
-        if method == "auto" or method == "pdfplumber":
-            # 尝试使用pdfplumber
-            pdfplumber_tables = self._extract_with_pdfplumber(page)
-            if pdfplumber_tables:
-                tables.extend(pdfplumber_tables)
-                return tables
-        
-        if method == "auto" or method == "text":
-            # 从文本中检测表格
-            text_tables = self._extract_from_text(page_text)
-            if text_tables:
-                tables.extend(text_tables)
-        
-        return tables
+        candidates = []
+
+        if method == "auto":
+            candidates.extend(self._extract_with_pymupdf(page))
+        if method in {"auto", "camelot"}:
+            candidates.extend(self._extract_with_camelot(page))
+        if method in {"auto", "pdfplumber"}:
+            candidates.extend(self._extract_with_pdfplumber(page))
+        if method in {"auto", "text"} and not candidates:
+            candidates.extend(self._extract_from_text(page_text))
+
+        validated = self.validator.validate_many(candidates)
+        accepted = [table for table in validated if not table.get("review_required")]
+        return accepted or validated
     
     def extract_tables_from_pptx_shape(self, shape) -> Optional[Dict[str, Any]]:
         """
@@ -81,9 +76,9 @@ class TableExtractor:
                     row_data.append(cell_text)
                 data.append(row_data)
             
-            # 转换为DataFrame
+            # Preserve the original cell matrix; use the first row as the
+            # default header while retaining the raw matrix for review.
             if data:
-                # 假设第一行是表头
                 if len(data) > 1:
                     df = pd.DataFrame(data[1:], columns=data[0])
                 else:
@@ -94,6 +89,11 @@ class TableExtractor:
                     "rows": rows,
                     "cols": cols,
                     "data": data,
+                    "headers": [data[0]] if len(data) > 1 else [],
+                    "cells": data[1:] if len(data) > 1 else data,
+                    "raw_cells": data,
+                    "source_type": "pptx_native_table",
+                    "extraction_method": "python_pptx",
                     "dataframe": df,
                     "csv": df.to_csv(index=False),
                     "json": df.to_dict(orient='records')
@@ -102,79 +102,165 @@ class TableExtractor:
             if self.logger:
                 self.logger.error(f"PPTX表格提取失败: {e}")
             return None
+
+    def should_analyze_image(self, description: str) -> bool:
+        description = str(description or "")
+        keywords = ("表格", "数据表", "统计表", "对比表", "参数表", "真值表", "table", "tabular")
+        return any(keyword.lower() in description.lower() for keyword in keywords)
+
+    def extract_tables_from_vlm_image(
+        self,
+        image_path: str,
+        context: str = "",
+        image_index: Optional[int] = None,
+    ) -> List[Dict[str, Any]]:
+        if not self.vlm_client:
+            return []
+        try:
+            response = self.vlm_client.recognize_table(image_path, context=context)
+            if not response.get("has_table", True):
+                return []
+            table = {
+                **response,
+                "source_image": image_path,
+                "source_type": "image_vlm_table",
+                "extraction_method": f"{getattr(self.vlm_client, 'provider', 'vlm')}_api_table",
+                "backend": "api",
+                "provider": getattr(self.vlm_client, "provider", None),
+                "model": getattr(self.vlm_client, "model", None),
+                "image_index": image_index,
+            }
+            return [table]
+        except Exception as exc:
+            if self.logger:
+                self.logger.error(f"表格视觉识别失败: {exc}")
+            return [{
+                "source_image": image_path,
+                "source_type": "image_vlm_table",
+                "extraction_method": "vlm_table",
+                "headers": [],
+                "cells": [],
+                "api_error": str(exc),
+                "review_required": True,
+                "review_reason": "api_failed",
+                "image_index": image_index,
+            }]
+
+    def finalize_page(self, tables: List[Dict[str, Any]]) -> List[Dict[str, Any]]:
+        return self.validator.validate_many(tables)
+
+    def _extract_with_pymupdf(self, page) -> List[Dict[str, Any]]:
+        """Use PyMuPDF's native table finder when available."""
+        try:
+            finder = page.find_tables()
+            result = []
+            for table in getattr(finder, "tables", []):
+                matrix = table.extract() or []
+                if not matrix:
+                    continue
+                result.append({
+                    "type": "pymupdf",
+                    "source_type": "pdf_native_table",
+                    "extraction_method": "pymupdf_find_tables",
+                    "headers": [matrix[0]] if len(matrix) > 1 else [],
+                    "cells": matrix[1:] if len(matrix) > 1 else matrix,
+                    "raw_cells": matrix,
+                    "bbox": list(table.bbox) if getattr(table, "bbox", None) else None,
+                    "accuracy": 0.92,
+                })
+            return result
+        except Exception as exc:
+            if self.logger:
+                self.logger.debug(f"PyMuPDF表格提取失败: {exc}")
+            return []
     
     def _extract_with_camelot(self, page) -> List[Dict[str, Any]]:
         """使用Camelot提取表格"""
+        tmp_name = None
         try:
             import camelot
             import tempfile
             import fitz
-            
-            # Camelot需要文件路径，创建临时文件
-            with tempfile.NamedTemporaryFile(suffix='.pdf', delete=False) as tmp:
-                # 从页面创建临时PDF
-                doc = fitz.open()
-                doc.insert_pdf(page.parent, from_page=page.number, to_page=page.number)
-                doc.save(tmp.name)
-                doc.close()
-                
-                # 使用Camelot提取
-                tables = camelot.read_pdf(tmp.name, pages='1', flavor='lattice')
-                
-                result = []
-                for idx, table in enumerate(tables):
-                    df = table.df
-                    result.append({
-                        "type": "camelot",
-                        "method": "lattice",
-                        "accuracy": table.accuracy,
-                        "dataframe": df,
-                        "csv": df.to_csv(index=False),
-                        "json": df.to_dict(orient='records')
-                    })
-                
-                return result
+
+            fd, tmp_name = tempfile.mkstemp(suffix=".pdf")
+            os.close(fd)
+            doc = fitz.open()
+            doc.insert_pdf(page.parent, from_page=page.number, to_page=page.number)
+            doc.save(tmp_name)
+            doc.close()
+
+            result = []
+            for flavor in ("lattice", "stream"):
+                try:
+                    tables = camelot.read_pdf(tmp_name, pages='1', flavor=flavor)
+                    for table in tables:
+                        matrix = table.df.fillna("").astype(str).values.tolist()
+                        result.append({
+                            "type": "camelot",
+                            "source_type": "pdf_native_table",
+                            "extraction_method": f"camelot_{flavor}",
+                            "method": flavor,
+                            "accuracy": table.accuracy,
+                            "headers": [matrix[0]] if len(matrix) > 1 else [],
+                            "cells": matrix[1:] if len(matrix) > 1 else matrix,
+                            "raw_cells": matrix,
+                            "bbox": list(getattr(table, "_bbox", [])) or None,
+                        })
+                except Exception as exc:
+                    if self.logger:
+                        self.logger.debug(f"Camelot {flavor}提取失败: {exc}")
+            return result
         except Exception as e:
             if self.logger:
                 self.logger.debug(f"Camelot提取失败: {e}")
             return []
+        finally:
+            if tmp_name:
+                try:
+                    os.unlink(tmp_name)
+                except OSError:
+                    pass
     
     def _extract_with_pdfplumber(self, page) -> List[Dict[str, Any]]:
         """使用pdfplumber提取表格"""
+        tmp_name = None
         try:
             import pdfplumber
             import tempfile
-            
-            # 创建临时PDF
-            with tempfile.NamedTemporaryFile(suffix='.pdf', delete=False) as tmp:
-                doc = page.parent
-                # 保存单页
-                single_doc = fitz.open()
-                single_doc.insert_pdf(doc, from_page=page.number, to_page=page.number)
-                single_doc.save(tmp.name)
-                single_doc.close()
-                
-                # 使用pdfplumber
-                with pdfplumber.open(tmp.name) as pdf:
-                    first_page = pdf.pages[0]
-                    tables = first_page.extract_tables()
-                    
-                    result = []
-                    for table in tables:
-                        if table:
-                            df = pd.DataFrame(table[1:], columns=table[0])
-                            result.append({
-                                "type": "pdfplumber",
-                                "dataframe": df,
-                                "csv": df.to_csv(index=False),
-                                "json": df.to_dict(orient='records')
-                            })
-                    
-                    return result
+            import fitz
+
+            fd, tmp_name = tempfile.mkstemp(suffix=".pdf")
+            os.close(fd)
+            single_doc = fitz.open()
+            single_doc.insert_pdf(page.parent, from_page=page.number, to_page=page.number)
+            single_doc.save(tmp_name)
+            single_doc.close()
+
+            with pdfplumber.open(tmp_name) as pdf:
+                tables = pdf.pages[0].extract_tables()
+                result = []
+                for table in tables:
+                    if table:
+                        result.append({
+                            "type": "pdfplumber",
+                            "source_type": "pdf_native_table",
+                            "extraction_method": "pdfplumber",
+                            "headers": [table[0]] if len(table) > 1 else [],
+                            "cells": table[1:] if len(table) > 1 else table,
+                            "raw_cells": table,
+                            "accuracy": 0.86,
+                        })
+            return result
         except Exception as e:
             if self.logger:
                 self.logger.debug(f"pdfplumber提取失败: {e}")
             return []
+        finally:
+            if tmp_name:
+                try:
+                    os.unlink(tmp_name)
+                except OSError:
+                    pass
     
     def _extract_from_text(self, text: str) -> List[Dict[str, Any]]:
         """从文本中检测并提取表格"""
@@ -229,7 +315,11 @@ class TableExtractor:
                     df = pd.DataFrame(rows[1:], columns=rows[0])
                     return {
                         "type": "text_table",
+                        "source_type": "pdf_text_table",
+                        "extraction_method": "text_spacing_rule",
                         "separator": sep,
+                        "headers": [rows[0]],
+                        "cells": rows[1:],
                         "dataframe": df,
                         "csv": df.to_csv(index=False),
                         "json": df.to_dict(orient='records')

@@ -1,0 +1,11 @@
+﻿序号,LaTeX公式,名称,描述,来源图像,提取方法,置信度,验证状态,是否需审核
+1,\mathcal{L}[f(t - \tau)] = e^{-s\tau}F(s),延时性质,拉普拉斯变换的时移性质（延时性质）,output/qwen_qwen3.7-plus_6/debug/images/w10-1-直线运动平台（下）_slide_15_img_1.png,qwen_api_formula,1.0,passed,False
+2,\widetilde{U}_s(s) = C(e^{-s\tau} - e^{s_2\tau})(e^{-s\tau} - e^{s_1\tau})U_s(s),,,output/qwen_qwen3.7-plus_6/debug/images/w10-1-直线运动平台（下）_slide_15_img_2.png,qwen_api_formula,0.52,review,True
+3,= C[1 - 2e^{-s\tau}\cos(\omega_n\tau) + e^{-2s\tau}]U_s(s),,,output/qwen_qwen3.7-plus_6/debug/images/w10-1-直线运动平台（下）_slide_15_img_2.png,qwen_api_formula,1.0,passed,False
+4,\Rightarrow \widetilde{u}_s(t) = C[u_s(t) - 2\cos(\omega_n\tau)u_s(t-\tau) + u_s(t-2\tau)],,,output/qwen_qwen3.7-plus_6/debug/images/w10-1-直线运动平台（下）_slide_15_img_2.png,qwen_api_formula,1.0,passed,False
+5,\widetilde{u}_s(t) = c_1 u_s(t) - c_2 u_s(t-\tau) + c_1 u_s(t-2\tau),,,output/qwen_qwen3.7-plus_6/debug/images/w10-1-直线运动平台（下）_slide_15_img_2.png,qwen_api_formula,1.0,passed,False
+6,c_2 = 2C\cos(\omega_n\tau) = 0,,,output/qwen_qwen3.7-plus_6/debug/images/w10-1-直线运动平台（下）_slide_15_img_2.png,qwen_api_formula,1.0,passed,False
+7,\tau = \frac{\pi}{2\omega_n},,,output/qwen_qwen3.7-plus_6/debug/images/w10-1-直线运动平台（下）_slide_15_img_2.png,qwen_api_formula,1.0,passed,False
+8,c_1 = 1/2,,,output/qwen_qwen3.7-plus_6/debug/images/w10-1-直线运动平台（下）_slide_15_img_2.png,qwen_api_formula,1.0,passed,False
+9,C = C / \tau^2,,,output/qwen_qwen3.7-plus_6/debug/images/w10-1-直线运动平台（下）_slide_15_img_3.png,qwen_api_formula,1.0,passed,False
+10,\tilde{u}_s(t) = \frac{1}{2} [u_s(t) + u_s(t - 2\tau)],输入整形公式,输入整形技术中的基本命令序列公式，用于消除系统振动,output/qwen_qwen3.7-plus_6/debug/images/w10-1-直线运动平台（下）_slide_15_img_4.png,qwen_api_formula,1.0,passed,False

@@ -1,0 +1,7 @@
+﻿序号,LaTeX公式,名称,描述,来源图像,提取方法,置信度,验证状态,是否需审核
+1,\tilde{U}_s(s),,整形后输入的拉氏变换,output/qwen_qwen3.7-plus_5/debug/images/w10-1-直线运动平台（下）_slide_14_img_1.png,qwen_api_formula,0.95,passed,False
+2,s_1 = -i\omega_n \text{ 和 } s_2 = i\omega_n,零点配置,配置两个零点以消除残余振动,output/qwen_qwen3.7-plus_5/debug/images/w10-1-直线运动平台（下）_slide_14_img_2.png,qwen_api_formula,0.95,passed,False
+3,\tilde{\theta}(s) = \frac{s^2}{l(s^2+\omega_n^2)}\tilde{U}_s(s) = \frac{s^2}{l(s^2+\omega_n^2)} \cdot C(s-s_1)(s-s_2)U_s(s),系统响应与整形输入关系,消除残余振动后的系统输出表达式,output/qwen_qwen3.7-plus_5/debug/images/w10-1-直线运动平台（下）_slide_14_img_2.png,qwen_api_formula,0.95,passed,False
+4,\tilde{u}_s(t) = \mathcal{L}^{-1}[C(s-s_1)(s-s_2)U_s(s)],输入整形时域表达式,求整形输入的Laplace逆变换,output/qwen_qwen3.7-plus_5/debug/images/w10-1-直线运动平台（下）_slide_14_img_2.png,qwen_api_formula,0.95,passed,False
+5,"\lim_{s\to s_1} \frac{e^{-s\tau} - e^{-s_1\tau}}{s-s_1} = -\tau e^{-s_1\tau} \neq 0, \quad \lim_{s\to s_2} \frac{e^{-s\tau} - e^{-s_2\tau}}{s-s_2} = -\tau e^{-s_2\tau} \neq 0",利用L'Hôpital法则求极限,验证零点处的极限性质,output/qwen_qwen3.7-plus_5/debug/images/w10-1-直线运动平台（下）_slide_14_img_2.png,qwen_api_formula,0.95,passed,False
+6,\tilde{U}_s(s) = C(s-s_1)(s-s_2)U_s(s) \Leftrightarrow \tilde{U}_s(s) = \frac{C}{\tau^2}(e^{-s\tau} - e^{s_2\tau})(e^{-s\tau} - e^{s_1\tau})U_s(s),整形输入Laplace变换等价形式,将多项式零点形式转换为指数延迟形式,output/qwen_qwen3.7-plus_5/debug/images/w10-1-直线运动平台（下）_slide_14_img_2.png,qwen_api_formula,0.95,passed,False

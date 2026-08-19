@@ -1,0 +1,35 @@
+{
+  "page_num": 6,
+  "raw_text": "机电系统原理及实践—— 直线运动平台（上）\n机电智控实验室tangguoan@fudan.edu.cn mmguo@fudan.edu.cn\n又称紧急开关（emergency switch）\n紧急情况下切断设备电源。\n一般接在控制回路中。\n§2.3 急停开关\n12-7\n一对NO触点\n一对NC触点\nNO：按下后导通\nNC\nNO\n5V\nENA+ 驱动器\n急停开关\nENA-\nGND\n23\n24\n",
+  "cleaned_text": "机电系统原理及实践—— 直线运动平台（上） 机电智控实验室tangguoan@fudan.edu.cn mmguo@fudan.edu.cn 又称紧急开关（emergency switch） 紧急情况下切断设备电源。 一般接在控制回路中。 §2.3 急停开关 12-7 一对NO触点 一对NC触点 NO：按下后导通 NC NO 5V ENA+ 驱动器 急停开关 ENA- GND 23 24",
+  "key_points": [
+    "紧急情况下切断设备电源。",
+    "一般接在控制回路中。",
+    "NO：按下后导通",
+    "NC",
+    "NO",
+    "ENA+ 驱动器",
+    "ENA-",
+    "GND"
+  ],
+  "technical_terms": [
+    "ENA",
+    "GND",
+    "NC",
+    "NO",
+    "一般接在控制",
+    "机电系统"
+  ],
+  "has_images": true,
+  "image_count": 3,
+  "image_paths": [
+    "output/qwen_qwen3.7-plus_4/debug/images/w09-1-直线运动平台（上） - 副本_p7_img3.jpeg",
+    "output/qwen_qwen3.7-plus_4/debug/images/w09-1-直线运动平台（上） - 副本_p7_img4.jpeg",
+    "output/qwen_qwen3.7-plus_4/debug/images/w09-1-直线运动平台（上） - 副本_p7_img5.jpeg"
+  ],
+  "metadata": {
+    "char_count": 199,
+    "word_count": 24,
+    "line_count": 20
+  }
+}

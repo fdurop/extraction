@@ -1,0 +1,44 @@
+{
+  "schema_name": "multimodal_graphrag_extraction_v1",
+  "node_files": {
+    "documents": "documents.json",
+    "pages": "pages.json",
+    "content_items": "content_list.json",
+    "graph_nodes": "multimodal_nodes.json"
+  },
+  "relationship_file": "relationships.json",
+  "vector_files": {
+    "metadata": "vectors/vector_index.json",
+    "matrix": "vectors/vector_matrix.npy"
+  },
+  "node_types": [
+    "Course",
+    "Document",
+    "Page",
+    "TextChunk",
+    "Figure",
+    "Table",
+    "Formula",
+    "CodeBlock",
+    "Entity",
+    "Concept"
+  ],
+  "relationship_types": [
+    "COURSE_CONTAINS_DOCUMENT",
+    "DOCUMENT_CONTAINS_PAGE",
+    "NEXT_PAGE",
+    "PAGE_CONTAINS_CONTENT",
+    "MENTIONS_CONCEPT",
+    "RELATED_TO"
+  ],
+  "required_downstream_files": [
+    "course_manifest.json",
+    "documents.json",
+    "pages.json",
+    "content_list.json",
+    "multimodal_nodes.json",
+    "relationships.json",
+    "vectors/vector_index.json",
+    "vectors/vector_matrix.npy"
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "original_path": "output/qwen_qwen3.7-plus_6/debug/images/w09-1-直线运动平台（上） - 副本_p4_img7.jpeg",
+  "enhanced_path": "output/qwen_qwen3.7-plus_6/debug/images/w09-1-直线运动平台（上） - 副本_p4_img7_enhanced.jpeg",
+  "description": "类型：照片\n图片展示了一个直交型机械臂组件。主体为一根金色的长条形直线导轨，呈对角线放置。导轨左端安装有两个垂直相交的驱动模块，分别为蓝色和红色方块状结构，对应文字标注的Z轴方向。导轨右端末端装有黑色的固定座或限位装置。该实物图直观呈现了直线运动平台中单轴导轨与多轴驱动模块的连接形态。",
+  "metadata": {
+    "generation": {
+      "method": "qwen_api",
+      "backend": "api",
+      "provider": "qwen",
+      "model": "qwen3.7-plus",
+      "status": "success",
+      "api_error": null
+    },
+    "review": {
+      "required": false,
+      "status": null,
+      "reason": null,
+      "course_relevant": true
+    }
+  },
+  "error": null,
+  "method": "qwen_api",
+  "backend": "api",
+  "provider": "qwen",
+  "model": "qwen3.7-plus",
+  "status": "success",
+  "api_error": null,
+  "indexable": true,
+  "review_required": false,
+  "review_reason": null,
+  "review_status": null,
+  "course_relevant": true
+}

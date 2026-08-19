@@ -1,0 +1,33 @@
+{
+  "original_path": "output/qwen_qwen3.7-plus_5/debug/images/w09-1-直线运动平台（上） - 副本_p7_img3.jpeg",
+  "enhanced_path": "output/qwen_qwen3.7-plus_5/debug/images/w09-1-直线运动平台（上） - 副本_p7_img3_enhanced.jpeg",
+  "description": "图片展示了一个急停开关（Emergency Stop Switch）的实物照片，与页面标题“§2.3 急停开关”直接对应。\n\n**关键对象与结构描述：**\n*   **主体**：一个工业用的按钮开关。\n*   **顶部**：红色的蘑菇头按钮，按钮侧面印有白色的旋转箭头，指示复位操作方向（通常旋转后弹出复位）。\n*   **中部**：黄色的方形外壳，表面印有黑色的“EMERGENCY STOP”字样，表明其功能为紧急停止。\n*   **底部**：黑色的基座，侧面可见一个圆形的电缆入口孔。\n\n**结合上下文：**\n该图片直观展示了课程中讲解的“急停开关”的外观形态。页面文本进一步解释了其别名（紧急开关）、功能（紧急情况下切断设备电源）、接线位置（控制回路）以及触点类型（NO/NC）和具体的电路连接示例（连接驱动器的ENA+和ENA-）。",
+  "metadata": {
+    "generation": {
+      "method": "qwen_api",
+      "backend": "api",
+      "provider": "qwen",
+      "model": "qwen3.7-plus",
+      "status": "success",
+      "api_error": null
+    },
+    "review": {
+      "required": false,
+      "status": null,
+      "reason": null,
+      "course_relevant": true
+    }
+  },
+  "error": null,
+  "method": "qwen_api",
+  "backend": "api",
+  "provider": "qwen",
+  "model": "qwen3.7-plus",
+  "status": "success",
+  "api_error": null,
+  "indexable": true,
+  "review_required": false,
+  "review_reason": null,
+  "review_status": null,
+  "course_relevant": true
+}

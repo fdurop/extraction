@@ -1,0 +1,42 @@
+{
+  "page_num": 8,
+  "raw_text": "机电系统原理及实践—— 直线运动平台（上）\n机电智控实验室tangguoan@fudan.edu.cn mmguo@fudan.edu.cn\n§3.1 在面板上搭建并测试控制系统\n步骤2：用电位器控制电机转速——在上、下限范围内调整延时。\nval = analogRead(A0);\nval：整数，0-1023\n12-9\nA\nA\nB\nB\nPUL+\nPUL-\nDIR+\nDIR-\nENA+\nENA-\nGND\nEMG\nD7\nGND\nD6\nGND\nGND\nD5\nCOM\n右移\n左移\nD4\nGND\nA0\n5V\nD8\n5V\n 下拉电阻\nA\nA\nB\nB\n+Vdc GND\nD10\nGND\nLIM-左\nD11\nD12\nZ1\nZ2\nLIM-右\n方向\n操纵杆\nUNO\n步进电机\n驱动器\n步进\n电机\nDI\nDI\nDO\nDO\nDI\n启停\n开关\n强电\n电源\n电位器\n",
+  "cleaned_text": "§3.1 在面板上搭建并测试控制系统\n步骤2：用电位器控制电机转速——在上、下限范围内调整延时。\nval = analogRead(A0);\nval：整数，0-1023\nA\nA\nB\nB\nPUL+\nPUL-\nDIR+\nDIR-\nENA+\nENA-\nEMG\nD7\nD6\nD5\nCOM\n右移\n左移\nD4\nA0\n5V\nD8\n5V\n下拉电阻\nA\nA\nB\nB\n+Vdc GND\nD10\nLIM-左\nD11\nD12\nZ1\nZ2\nLIM-右\n方向\n操纵杆\nUNO\n步进电机\n驱动器\n步进\n电机\nDI\nDI\nDO\nDO\nDI\n启停\n开关\n强电\n电源\n电位器",
+  "key_points": [
+    "步骤2：用电位器控制电机转速——在上、下限范围内调整延时。",
+    "A",
+    "A",
+    "B",
+    "B",
+    "PUL+",
+    "PUL-",
+    "DIR+",
+    "DIR-",
+    "ENA+"
+  ],
+  "technical_terms": [
+    "COM",
+    "DI",
+    "DIR",
+    "DO",
+    "EMG",
+    "ENA",
+    "GND",
+    "LIM-",
+    "PUL",
+    "UNO",
+    "在面板上搭建并测试控制",
+    "步进电机",
+    "用电位器控制",
+    "用电位器控制电机",
+    "面板上搭建并测试控制系统"
+  ],
+  "has_images": false,
+  "image_count": 0,
+  "image_paths": [],
+  "metadata": {
+    "char_count": 372,
+    "word_count": 71,
+    "line_count": 66
+  }
+}

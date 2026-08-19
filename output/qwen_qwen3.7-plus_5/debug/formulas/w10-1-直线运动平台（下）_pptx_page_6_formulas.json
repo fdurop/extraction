@@ -1,0 +1,304 @@
+{
+  "page": 6,
+  "formula_count": 7,
+  "accepted_count": 7,
+  "review_count": 0,
+  "formulas": [
+    {
+      "source_image": "output/qwen_qwen3.7-plus_5/debug/images/w10-1-直线运动平台（下）_slide_6_img_1.png",
+      "source_type": "image_vlm",
+      "extraction_method": "qwen_api_formula",
+      "backend": "api",
+      "provider": "qwen",
+      "model": "qwen3.7-plus",
+      "image_index": 0,
+      "raw_response": "{\"has_formula\":true,\"formulas\":[{\"latex\":\"\\\\theta(t_1) = \\\\theta(t_0) + \\\\int_{t_0}^{t_1} \\\\omega(t) dt\",\"name\":\"步进电机转角积分公式\",\"meaning\":\"从时刻t₀到t₁，步进电机转角等于初始转角加上转速对时间的积分\",\"symbols\":[{\"symbol\":\"\\\\theta(t)\",\"meaning\":\"步进电机转角\",\"unit\":null},{\"symbol\":\"\\\\omega(t)\",\"meaning\":\"转速\",\"unit\":null},{\"symbol\":\"t_0\",\"meaning\":\"起始时刻\",\"unit\":null},{\"symbol\":\"t_1\",\"meaning\":\"终止时刻\",\"unit\":null}],\"conditions\":[],\"uncertain_symbols\":[],\"confidence\":1.0},{\"latex\":\"\\\\theta[n\\\\Delta t] = \\\\theta[(n-1)\\\\Delta t] + \\\\omega[n\\\\Delta t]\\\\Delta t\",\"name\":\"步进电机转角离散化公式\",\"meaning\":\"离散时间下，当前时刻转角等于上一时刻转角加上当前转速乘以时间间隔\",\"symbols\":[{\"symbol\":\"\\\\theta[n\\\\Delta t]\",\"meaning\":\"第n个时间间隔的转角\",\"unit\":\"脉冲数\"},{\"symbol\":\"\\\\omega[n\\\\Delta t]\",\"meaning\":\"第n个时间间隔的转速\",\"unit\":\"脉冲数/微秒\"},{\"symbol\":\"\\\\Delta t\",\"meaning\":\"每次loop循环的时间间隔\",\"unit\":null},{\"symbol\":\"n\",\"meaning\":\"循环次数索引\",\"unit\":null}],\"conditions\":[],\"uncertain_symbols\":[],\"confidence\":1.0},{\"latex\":\"|\\\\theta[n\\\\Delta t]| \\\\ge 0.5\",\"name\":\"电机转动触发条件\",\"meaning\":\"当离散化转角的绝对值大于等于0.5时，电机转动一格\",\"symbols\":[{\"symbol\":\"\\\\theta[n\\\\Delta t]\",\"meaning\":\"第n个时间间隔的转角\",\"unit\":\"脉冲数\"}],\"conditions\":[],\"uncertain_symbols\":[],\"confidence\":1.0},{\"latex\":\"\\\\Delta\\\\theta/2\",\"name\":\"角位移误差上限\",\"meaning\":\"角位移的误差始终小于每脉冲转角的一半\",\"symbols\":[{\"symbol\":\"\\\\Delta\\\\theta\",\"meaning\":\"每脉冲转角\",\"unit\":null}],\"conditions\":[],\"uncertain_symbols\":[],\"confidence\":1.0}]}",
+      "parse_error": null,
+      "partial_response": false,
+      "review_reason": null,
+      "latex": "\\theta(t_1) = \\theta(t_0) + \\int_{t_0}^{t_1} \\omega(t) dt",
+      "name": "步进电机转角积分公式",
+      "meaning": "从时刻t₀到t₁，步进电机转角等于初始转角加上转速对时间的积分",
+      "symbols": [
+        {
+          "symbol": "\\theta(t)",
+          "meaning": "步进电机转角",
+          "unit": null
+        },
+        {
+          "symbol": "\\omega(t)",
+          "meaning": "转速",
+          "unit": null
+        },
+        {
+          "symbol": "t_0",
+          "meaning": "起始时刻",
+          "unit": null
+        },
+        {
+          "symbol": "t_1",
+          "meaning": "终止时刻",
+          "unit": null
+        }
+      ],
+      "conditions": [],
+      "uncertain_symbols": [],
+      "confidence": 1.0,
+      "plain_text": "\\theta(t_1) = \\theta(t_0) + \\int_{t_0}^{t_1} \\omega(t) dt",
+      "description": "从时刻t₀到t₁，步进电机转角等于初始转角加上转速对时间的积分",
+      "validation_issues": [],
+      "validation_status": "passed",
+      "review_required": false,
+      "review_status": null,
+      "indexable": true,
+      "formula_id": "w10-1-直线运动平台（下）_pptx_page_6_formula_1",
+      "page_num": 6
+    },
+    {
+      "source_image": "output/qwen_qwen3.7-plus_5/debug/images/w10-1-直线运动平台（下）_slide_6_img_1.png",
+      "source_type": "image_vlm",
+      "extraction_method": "qwen_api_formula",
+      "backend": "api",
+      "provider": "qwen",
+      "model": "qwen3.7-plus",
+      "image_index": 0,
+      "raw_response": "{\"has_formula\":true,\"formulas\":[{\"latex\":\"\\\\theta(t_1) = \\\\theta(t_0) + \\\\int_{t_0}^{t_1} \\\\omega(t) dt\",\"name\":\"步进电机转角积分公式\",\"meaning\":\"从时刻t₀到t₁，步进电机转角等于初始转角加上转速对时间的积分\",\"symbols\":[{\"symbol\":\"\\\\theta(t)\",\"meaning\":\"步进电机转角\",\"unit\":null},{\"symbol\":\"\\\\omega(t)\",\"meaning\":\"转速\",\"unit\":null},{\"symbol\":\"t_0\",\"meaning\":\"起始时刻\",\"unit\":null},{\"symbol\":\"t_1\",\"meaning\":\"终止时刻\",\"unit\":null}],\"conditions\":[],\"uncertain_symbols\":[],\"confidence\":1.0},{\"latex\":\"\\\\theta[n\\\\Delta t] = \\\\theta[(n-1)\\\\Delta t] + \\\\omega[n\\\\Delta t]\\\\Delta t\",\"name\":\"步进电机转角离散化公式\",\"meaning\":\"离散时间下，当前时刻转角等于上一时刻转角加上当前转速乘以时间间隔\",\"symbols\":[{\"symbol\":\"\\\\theta[n\\\\Delta t]\",\"meaning\":\"第n个时间间隔的转角\",\"unit\":\"脉冲数\"},{\"symbol\":\"\\\\omega[n\\\\Delta t]\",\"meaning\":\"第n个时间间隔的转速\",\"unit\":\"脉冲数/微秒\"},{\"symbol\":\"\\\\Delta t\",\"meaning\":\"每次loop循环的时间间隔\",\"unit\":null},{\"symbol\":\"n\",\"meaning\":\"循环次数索引\",\"unit\":null}],\"conditions\":[],\"uncertain_symbols\":[],\"confidence\":1.0},{\"latex\":\"|\\\\theta[n\\\\Delta t]| \\\\ge 0.5\",\"name\":\"电机转动触发条件\",\"meaning\":\"当离散化转角的绝对值大于等于0.5时，电机转动一格\",\"symbols\":[{\"symbol\":\"\\\\theta[n\\\\Delta t]\",\"meaning\":\"第n个时间间隔的转角\",\"unit\":\"脉冲数\"}],\"conditions\":[],\"uncertain_symbols\":[],\"confidence\":1.0},{\"latex\":\"\\\\Delta\\\\theta/2\",\"name\":\"角位移误差上限\",\"meaning\":\"角位移的误差始终小于每脉冲转角的一半\",\"symbols\":[{\"symbol\":\"\\\\Delta\\\\theta\",\"meaning\":\"每脉冲转角\",\"unit\":null}],\"conditions\":[],\"uncertain_symbols\":[],\"confidence\":1.0}]}",
+      "parse_error": null,
+      "partial_response": false,
+      "review_reason": null,
+      "latex": "\\theta[n\\Delta t] = \\theta[(n-1)\\Delta t] + \\omega[n\\Delta t]\\Delta t",
+      "name": "步进电机转角离散化公式",
+      "meaning": "离散时间下，当前时刻转角等于上一时刻转角加上当前转速乘以时间间隔",
+      "symbols": [
+        {
+          "symbol": "\\theta[n\\Delta t]",
+          "meaning": "第n个时间间隔的转角",
+          "unit": "脉冲数"
+        },
+        {
+          "symbol": "\\omega[n\\Delta t]",
+          "meaning": "第n个时间间隔的转速",
+          "unit": "脉冲数/微秒"
+        },
+        {
+          "symbol": "\\Delta t",
+          "meaning": "每次loop循环的时间间隔",
+          "unit": null
+        },
+        {
+          "symbol": "n",
+          "meaning": "循环次数索引",
+          "unit": null
+        }
+      ],
+      "conditions": [],
+      "uncertain_symbols": [],
+      "confidence": 1.0,
+      "plain_text": "\\theta[n\\Delta t] = \\theta[(n-1)\\Delta t] + \\omega[n\\Delta t]\\Delta t",
+      "description": "离散时间下，当前时刻转角等于上一时刻转角加上当前转速乘以时间间隔",
+      "validation_issues": [],
+      "validation_status": "passed",
+      "review_required": false,
+      "review_status": null,
+      "indexable": true,
+      "formula_id": "w10-1-直线运动平台（下）_pptx_page_6_formula_2",
+      "page_num": 6
+    },
+    {
+      "source_image": "output/qwen_qwen3.7-plus_5/debug/images/w10-1-直线运动平台（下）_slide_6_img_1.png",
+      "source_type": "image_vlm",
+      "extraction_method": "qwen_api_formula",
+      "backend": "api",
+      "provider": "qwen",
+      "model": "qwen3.7-plus",
+      "image_index": 0,
+      "raw_response": "{\"has_formula\":true,\"formulas\":[{\"latex\":\"\\\\theta(t_1) = \\\\theta(t_0) + \\\\int_{t_0}^{t_1} \\\\omega(t) dt\",\"name\":\"步进电机转角积分公式\",\"meaning\":\"从时刻t₀到t₁，步进电机转角等于初始转角加上转速对时间的积分\",\"symbols\":[{\"symbol\":\"\\\\theta(t)\",\"meaning\":\"步进电机转角\",\"unit\":null},{\"symbol\":\"\\\\omega(t)\",\"meaning\":\"转速\",\"unit\":null},{\"symbol\":\"t_0\",\"meaning\":\"起始时刻\",\"unit\":null},{\"symbol\":\"t_1\",\"meaning\":\"终止时刻\",\"unit\":null}],\"conditions\":[],\"uncertain_symbols\":[],\"confidence\":1.0},{\"latex\":\"\\\\theta[n\\\\Delta t] = \\\\theta[(n-1)\\\\Delta t] + \\\\omega[n\\\\Delta t]\\\\Delta t\",\"name\":\"步进电机转角离散化公式\",\"meaning\":\"离散时间下，当前时刻转角等于上一时刻转角加上当前转速乘以时间间隔\",\"symbols\":[{\"symbol\":\"\\\\theta[n\\\\Delta t]\",\"meaning\":\"第n个时间间隔的转角\",\"unit\":\"脉冲数\"},{\"symbol\":\"\\\\omega[n\\\\Delta t]\",\"meaning\":\"第n个时间间隔的转速\",\"unit\":\"脉冲数/微秒\"},{\"symbol\":\"\\\\Delta t\",\"meaning\":\"每次loop循环的时间间隔\",\"unit\":null},{\"symbol\":\"n\",\"meaning\":\"循环次数索引\",\"unit\":null}],\"conditions\":[],\"uncertain_symbols\":[],\"confidence\":1.0},{\"latex\":\"|\\\\theta[n\\\\Delta t]| \\\\ge 0.5\",\"name\":\"电机转动触发条件\",\"meaning\":\"当离散化转角的绝对值大于等于0.5时，电机转动一格\",\"symbols\":[{\"symbol\":\"\\\\theta[n\\\\Delta t]\",\"meaning\":\"第n个时间间隔的转角\",\"unit\":\"脉冲数\"}],\"conditions\":[],\"uncertain_symbols\":[],\"confidence\":1.0},{\"latex\":\"\\\\Delta\\\\theta/2\",\"name\":\"角位移误差上限\",\"meaning\":\"角位移的误差始终小于每脉冲转角的一半\",\"symbols\":[{\"symbol\":\"\\\\Delta\\\\theta\",\"meaning\":\"每脉冲转角\",\"unit\":null}],\"conditions\":[],\"uncertain_symbols\":[],\"confidence\":1.0}]}",
+      "parse_error": null,
+      "partial_response": false,
+      "review_reason": null,
+      "latex": "|\\theta[n\\Delta t]| \\ge 0.5",
+      "name": "电机转动触发条件",
+      "meaning": "当离散化转角的绝对值大于等于0.5时，电机转动一格",
+      "symbols": [
+        {
+          "symbol": "\\theta[n\\Delta t]",
+          "meaning": "第n个时间间隔的转角",
+          "unit": "脉冲数"
+        }
+      ],
+      "conditions": [],
+      "uncertain_symbols": [],
+      "confidence": 1.0,
+      "plain_text": "|\\theta[n\\Delta t]| \\ge 0.5",
+      "description": "当离散化转角的绝对值大于等于0.5时，电机转动一格",
+      "validation_issues": [],
+      "validation_status": "passed",
+      "review_required": false,
+      "review_status": null,
+      "indexable": true,
+      "formula_id": "w10-1-直线运动平台（下）_pptx_page_6_formula_3",
+      "page_num": 6
+    },
+    {
+      "source_image": "output/qwen_qwen3.7-plus_5/debug/images/w10-1-直线运动平台（下）_slide_6_img_1.png",
+      "source_type": "image_vlm",
+      "extraction_method": "qwen_api_formula",
+      "backend": "api",
+      "provider": "qwen",
+      "model": "qwen3.7-plus",
+      "image_index": 0,
+      "raw_response": "{\"has_formula\":true,\"formulas\":[{\"latex\":\"\\\\theta(t_1) = \\\\theta(t_0) + \\\\int_{t_0}^{t_1} \\\\omega(t) dt\",\"name\":\"步进电机转角积分公式\",\"meaning\":\"从时刻t₀到t₁，步进电机转角等于初始转角加上转速对时间的积分\",\"symbols\":[{\"symbol\":\"\\\\theta(t)\",\"meaning\":\"步进电机转角\",\"unit\":null},{\"symbol\":\"\\\\omega(t)\",\"meaning\":\"转速\",\"unit\":null},{\"symbol\":\"t_0\",\"meaning\":\"起始时刻\",\"unit\":null},{\"symbol\":\"t_1\",\"meaning\":\"终止时刻\",\"unit\":null}],\"conditions\":[],\"uncertain_symbols\":[],\"confidence\":1.0},{\"latex\":\"\\\\theta[n\\\\Delta t] = \\\\theta[(n-1)\\\\Delta t] + \\\\omega[n\\\\Delta t]\\\\Delta t\",\"name\":\"步进电机转角离散化公式\",\"meaning\":\"离散时间下，当前时刻转角等于上一时刻转角加上当前转速乘以时间间隔\",\"symbols\":[{\"symbol\":\"\\\\theta[n\\\\Delta t]\",\"meaning\":\"第n个时间间隔的转角\",\"unit\":\"脉冲数\"},{\"symbol\":\"\\\\omega[n\\\\Delta t]\",\"meaning\":\"第n个时间间隔的转速\",\"unit\":\"脉冲数/微秒\"},{\"symbol\":\"\\\\Delta t\",\"meaning\":\"每次loop循环的时间间隔\",\"unit\":null},{\"symbol\":\"n\",\"meaning\":\"循环次数索引\",\"unit\":null}],\"conditions\":[],\"uncertain_symbols\":[],\"confidence\":1.0},{\"latex\":\"|\\\\theta[n\\\\Delta t]| \\\\ge 0.5\",\"name\":\"电机转动触发条件\",\"meaning\":\"当离散化转角的绝对值大于等于0.5时，电机转动一格\",\"symbols\":[{\"symbol\":\"\\\\theta[n\\\\Delta t]\",\"meaning\":\"第n个时间间隔的转角\",\"unit\":\"脉冲数\"}],\"conditions\":[],\"uncertain_symbols\":[],\"confidence\":1.0},{\"latex\":\"\\\\Delta\\\\theta/2\",\"name\":\"角位移误差上限\",\"meaning\":\"角位移的误差始终小于每脉冲转角的一半\",\"symbols\":[{\"symbol\":\"\\\\Delta\\\\theta\",\"meaning\":\"每脉冲转角\",\"unit\":null}],\"conditions\":[],\"uncertain_symbols\":[],\"confidence\":1.0}]}",
+      "parse_error": null,
+      "partial_response": false,
+      "review_reason": null,
+      "latex": "\\Delta\\theta/2",
+      "name": "角位移误差上限",
+      "meaning": "角位移的误差始终小于每脉冲转角的一半",
+      "symbols": [
+        {
+          "symbol": "\\Delta\\theta",
+          "meaning": "每脉冲转角",
+          "unit": null
+        }
+      ],
+      "conditions": [],
+      "uncertain_symbols": [],
+      "confidence": 1.0,
+      "plain_text": "\\Delta\\theta/2",
+      "description": "角位移的误差始终小于每脉冲转角的一半",
+      "validation_issues": [],
+      "validation_status": "passed",
+      "review_required": false,
+      "review_status": null,
+      "indexable": true,
+      "formula_id": "w10-1-直线运动平台（下）_pptx_page_6_formula_4",
+      "page_num": 6
+    },
+    {
+      "source_image": "output/qwen_qwen3.7-plus_5/debug/images/w10-1-直线运动平台（下）_slide_6_img_2.png",
+      "source_type": "image_vlm",
+      "extraction_method": "qwen_api_formula",
+      "backend": "api",
+      "provider": "qwen",
+      "model": "qwen3.7-plus",
+      "image_index": 1,
+      "raw_response": "```json\n{\n  \"has_formula\": true,\n  \"formulas\": [\n    {\n      \"latex\": \"dt = currentLoopTime - lastLoopTime\",\n      \"name\": \"时间间隔计算\",\n      \"meaning\": \"计算两次循环之间的时间差\",\n      \"symbols\": [\n        {\n          \"symbol\": \"dt\",\n          \"meaning\": \"时间间隔\",\n          \"unit\": \"微秒\"\n        },\n        {\n          \"symbol\": \"currentLoopTime\",\n          \"meaning\": \"当前循环时间\",\n          \"unit\": \"微秒\"\n        },\n        {\n          \"symbol\": \"lastLoopTime\",\n          \"meaning\": \"上次循环时间\",\n          \"unit\": \"微秒\"\n        }\n      ],\n      \"conditions\": [],\n      \"uncertain_symbols\": [],\n      \"confidence\": 0.95\n    },\n    {\n      \"latex\": \"pulse2Send += speedPerPulse \\\\times dt\",\n      \"name\": \"脉冲累加公式\",\n      \"meaning\": \"根据速度和时间的乘积累加待发送脉冲数\",\n      \"symbols\": [\n        {\n          \"symbol\": \"pulse2Send\",\n          \"meaning\": \"待发送脉冲数\",\n          \"unit\": \"脉冲\"\n        },\n        {\n          \"symbol\": \"speedPerPulse\",\n          \"meaning\": \"每单位时间的脉冲速度\",\n          \"unit\": \"脉冲/微秒\"\n        },\n        {\n          \"symbol\": \"dt\",\n          \"meaning\": \"时间间隔\",\n          \"unit\": \"微秒\"\n        }\n      ],\n      \"conditions\": [],\n      \"uncertain_symbols\": [],\n      \"confidence\": 0.95\n    },\n    {\n      \"latex\": \"|pulse2Send| \\\\geq 0.5\",\n      \"name\": \"步进条件判断\",\n      \"meaning\": \"判断是否需要步进一格\",\n      \"symbols\": [\n        {\n          \"symbol\": \"pulse2Send\",\n          \"meaning\": \"待发送脉冲数\",\n          \"unit\": \"脉冲\"\n        }\n      ],\n      \"conditions\": [],\n      \"uncertain_symbols\": [],\n      \"confidence\": 0.95\n    }\n  ]\n}\n```",
+      "parse_error": null,
+      "partial_response": false,
+      "review_reason": null,
+      "latex": "dt = currentLoopTime - lastLoopTime",
+      "name": "时间间隔计算",
+      "meaning": "计算两次循环之间的时间差",
+      "symbols": [
+        {
+          "symbol": "dt",
+          "meaning": "时间间隔",
+          "unit": "微秒"
+        },
+        {
+          "symbol": "currentLoopTime",
+          "meaning": "当前循环时间",
+          "unit": "微秒"
+        },
+        {
+          "symbol": "lastLoopTime",
+          "meaning": "上次循环时间",
+          "unit": "微秒"
+        }
+      ],
+      "conditions": [],
+      "uncertain_symbols": [],
+      "confidence": 0.95,
+      "plain_text": "dt = currentLoopTime - lastLoopTime",
+      "description": "计算两次循环之间的时间差",
+      "validation_issues": [],
+      "validation_status": "passed",
+      "review_required": false,
+      "review_status": null,
+      "indexable": true,
+      "formula_id": "w10-1-直线运动平台（下）_pptx_page_6_formula_5",
+      "page_num": 6
+    },
+    {
+      "source_image": "output/qwen_qwen3.7-plus_5/debug/images/w10-1-直线运动平台（下）_slide_6_img_2.png",
+      "source_type": "image_vlm",
+      "extraction_method": "qwen_api_formula",
+      "backend": "api",
+      "provider": "qwen",
+      "model": "qwen3.7-plus",
+      "image_index": 1,
+      "raw_response": "```json\n{\n  \"has_formula\": true,\n  \"formulas\": [\n    {\n      \"latex\": \"dt = currentLoopTime - lastLoopTime\",\n      \"name\": \"时间间隔计算\",\n      \"meaning\": \"计算两次循环之间的时间差\",\n      \"symbols\": [\n        {\n          \"symbol\": \"dt\",\n          \"meaning\": \"时间间隔\",\n          \"unit\": \"微秒\"\n        },\n        {\n          \"symbol\": \"currentLoopTime\",\n          \"meaning\": \"当前循环时间\",\n          \"unit\": \"微秒\"\n        },\n        {\n          \"symbol\": \"lastLoopTime\",\n          \"meaning\": \"上次循环时间\",\n          \"unit\": \"微秒\"\n        }\n      ],\n      \"conditions\": [],\n      \"uncertain_symbols\": [],\n      \"confidence\": 0.95\n    },\n    {\n      \"latex\": \"pulse2Send += speedPerPulse \\\\times dt\",\n      \"name\": \"脉冲累加公式\",\n      \"meaning\": \"根据速度和时间的乘积累加待发送脉冲数\",\n      \"symbols\": [\n        {\n          \"symbol\": \"pulse2Send\",\n          \"meaning\": \"待发送脉冲数\",\n          \"unit\": \"脉冲\"\n        },\n        {\n          \"symbol\": \"speedPerPulse\",\n          \"meaning\": \"每单位时间的脉冲速度\",\n          \"unit\": \"脉冲/微秒\"\n        },\n        {\n          \"symbol\": \"dt\",\n          \"meaning\": \"时间间隔\",\n          \"unit\": \"微秒\"\n        }\n      ],\n      \"conditions\": [],\n      \"uncertain_symbols\": [],\n      \"confidence\": 0.95\n    },\n    {\n      \"latex\": \"|pulse2Send| \\\\geq 0.5\",\n      \"name\": \"步进条件判断\",\n      \"meaning\": \"判断是否需要步进一格\",\n      \"symbols\": [\n        {\n          \"symbol\": \"pulse2Send\",\n          \"meaning\": \"待发送脉冲数\",\n          \"unit\": \"脉冲\"\n        }\n      ],\n      \"conditions\": [],\n      \"uncertain_symbols\": [],\n      \"confidence\": 0.95\n    }\n  ]\n}\n```",
+      "parse_error": null,
+      "partial_response": false,
+      "review_reason": null,
+      "latex": "pulse2Send += speedPerPulse \\times dt",
+      "name": "脉冲累加公式",
+      "meaning": "根据速度和时间的乘积累加待发送脉冲数",
+      "symbols": [
+        {
+          "symbol": "pulse2Send",
+          "meaning": "待发送脉冲数",
+          "unit": "脉冲"
+        },
+        {
+          "symbol": "speedPerPulse",
+          "meaning": "每单位时间的脉冲速度",
+          "unit": "脉冲/微秒"
+        },
+        {
+          "symbol": "dt",
+          "meaning": "时间间隔",
+          "unit": "微秒"
+        }
+      ],
+      "conditions": [],
+      "uncertain_symbols": [],
+      "confidence": 0.95,
+      "plain_text": "pulse2Send += speedPerPulse \\times dt",
+      "description": "根据速度和时间的乘积累加待发送脉冲数",
+      "validation_issues": [],
+      "validation_status": "passed",
+      "review_required": false,
+      "review_status": null,
+      "indexable": true,
+      "formula_id": "w10-1-直线运动平台（下）_pptx_page_6_formula_6",
+      "page_num": 6
+    },
+    {
+      "source_image": "output/qwen_qwen3.7-plus_5/debug/images/w10-1-直线运动平台（下）_slide_6_img_2.png",
+      "source_type": "image_vlm",
+      "extraction_method": "qwen_api_formula",
+      "backend": "api",
+      "provider": "qwen",
+      "model": "qwen3.7-plus",
+      "image_index": 1,
+      "raw_response": "```json\n{\n  \"has_formula\": true,\n  \"formulas\": [\n    {\n      \"latex\": \"dt = currentLoopTime - lastLoopTime\",\n      \"name\": \"时间间隔计算\",\n      \"meaning\": \"计算两次循环之间的时间差\",\n      \"symbols\": [\n        {\n          \"symbol\": \"dt\",\n          \"meaning\": \"时间间隔\",\n          \"unit\": \"微秒\"\n        },\n        {\n          \"symbol\": \"currentLoopTime\",\n          \"meaning\": \"当前循环时间\",\n          \"unit\": \"微秒\"\n        },\n        {\n          \"symbol\": \"lastLoopTime\",\n          \"meaning\": \"上次循环时间\",\n          \"unit\": \"微秒\"\n        }\n      ],\n      \"conditions\": [],\n      \"uncertain_symbols\": [],\n      \"confidence\": 0.95\n    },\n    {\n      \"latex\": \"pulse2Send += speedPerPulse \\\\times dt\",\n      \"name\": \"脉冲累加公式\",\n      \"meaning\": \"根据速度和时间的乘积累加待发送脉冲数\",\n      \"symbols\": [\n        {\n          \"symbol\": \"pulse2Send\",\n          \"meaning\": \"待发送脉冲数\",\n          \"unit\": \"脉冲\"\n        },\n        {\n          \"symbol\": \"speedPerPulse\",\n          \"meaning\": \"每单位时间的脉冲速度\",\n          \"unit\": \"脉冲/微秒\"\n        },\n        {\n          \"symbol\": \"dt\",\n          \"meaning\": \"时间间隔\",\n          \"unit\": \"微秒\"\n        }\n      ],\n      \"conditions\": [],\n      \"uncertain_symbols\": [],\n      \"confidence\": 0.95\n    },\n    {\n      \"latex\": \"|pulse2Send| \\\\geq 0.5\",\n      \"name\": \"步进条件判断\",\n      \"meaning\": \"判断是否需要步进一格\",\n      \"symbols\": [\n        {\n          \"symbol\": \"pulse2Send\",\n          \"meaning\": \"待发送脉冲数\",\n          \"unit\": \"脉冲\"\n        }\n      ],\n      \"conditions\": [],\n      \"uncertain_symbols\": [],\n      \"confidence\": 0.95\n    }\n  ]\n}\n```",
+      "parse_error": null,
+      "partial_response": false,
+      "review_reason": null,
+      "latex": "|pulse2Send| \\geq 0.5",
+      "name": "步进条件判断",
+      "meaning": "判断是否需要步进一格",
+      "symbols": [
+        {
+          "symbol": "pulse2Send",
+          "meaning": "待发送脉冲数",
+          "unit": "脉冲"
+        }
+      ],
+      "conditions": [],
+      "uncertain_symbols": [],
+      "confidence": 0.95,
+      "plain_text": "|pulse2Send| \\geq 0.5",
+      "description": "判断是否需要步进一格",
+      "validation_issues": [],
+      "validation_status": "passed",
+      "review_required": false,
+      "review_status": null,
+      "indexable": true,
+      "formula_id": "w10-1-直线运动平台（下）_pptx_page_6_formula_7",
+      "page_num": 6
+    }
+  ],
+  "timestamp": "2026-08-18T01:58:39.862416"
+}

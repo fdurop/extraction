@@ -1,0 +1,23 @@
+{
+  "page_num": 3,
+  "raw_text": "§2.1 \n滑台定位\n17-\n丝杠转速取决于单位时间脉冲数和驱动器细分设置\nw10-s2-calSliderStroke\n.ino\nw10-s3-sliderAbsLocation\n.ino\n限时 \n20 \n分钟",
+  "cleaned_text": "§2.1 滑台定位 17- 丝杠转速取决于单位时间脉冲数和驱动器细分设置 w10-s2-calSliderStroke .ino w10-s3-sliderAbsLocation .ino 限时 20 分钟",
+  "key_points": [],
+  "technical_terms": [
+    "w10-s2-calSliderStroke",
+    "w10-s3-sliderAbsLocation",
+    "决于单位时间脉冲数和驱动器"
+  ],
+  "has_images": true,
+  "image_count": 3,
+  "image_paths": [
+    "output/qwen_qwen3.7-plus_4/debug/images/w10-1-直线运动平台（下）_slide_4_img_1.png",
+    "output/qwen_qwen3.7-plus_4/debug/images/w10-1-直线运动平台（下）_slide_4_img_2.png",
+    "output/qwen_qwen3.7-plus_4/debug/images/w10-1-直线运动平台（下）_slide_4_img_3.png"
+  ],
+  "metadata": {
+    "char_count": 106,
+    "word_count": 11,
+    "line_count": 11
+  }
+}

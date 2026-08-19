@@ -1,0 +1,3 @@
+﻿序号,LaTeX公式,名称,描述,来源图像,提取方法,置信度,验证状态,是否需审核
+1,"s_{1,2} = \mp i\omega_n",两个极点,表示系统的两个极点位于虚轴上，为共轭纯虚数（通常写作\pm，图中视觉上像\mp）,output/qwen_qwen3.7-plus_4/debug/images/w10-1-直线运动平台（下）_slide_13_img_1.png,qwen_api_formula,0.57,review,True
+2,,,,output/qwen_qwen3.7-plus_4/debug/images/w10-1-直线运动平台（下）_slide_13_img_2.png,qwen_api_formula,0.0,review,True

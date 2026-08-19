@@ -1,0 +1,33 @@
+{
+  "original_path": "output/qwen_qwen3.7-plus_5/debug/images/w09-1-直线运动平台（上） - 副本_p4_img7.jpeg",
+  "enhanced_path": "output/qwen_qwen3.7-plus_5/debug/images/w09-1-直线运动平台（上） - 副本_p4_img7_enhanced.jpeg",
+  "description": "图片展示了一个直交型机械臂的轴组件（结合上下文标注为Z轴）。图中主体为一个长条形的直线运动模组，拥有金黄色的长导轨。导轨左端安装有驱动电机（可见蓝色和绿色的电机部件）以及红色的滑块组件，导轨右端有一个黑色的端部组件（可能是从动轮或固定端）。该图直观地展示了直线运动平台或机械臂单轴的机械结构。",
+  "metadata": {
+    "generation": {
+      "method": "qwen_api",
+      "backend": "api",
+      "provider": "qwen",
+      "model": "qwen3.7-plus",
+      "status": "success",
+      "api_error": null
+    },
+    "review": {
+      "required": false,
+      "status": null,
+      "reason": null,
+      "course_relevant": true
+    }
+  },
+  "error": null,
+  "method": "qwen_api",
+  "backend": "api",
+  "provider": "qwen",
+  "model": "qwen3.7-plus",
+  "status": "success",
+  "api_error": null,
+  "indexable": true,
+  "review_required": false,
+  "review_reason": null,
+  "review_status": null,
+  "course_relevant": true
+}

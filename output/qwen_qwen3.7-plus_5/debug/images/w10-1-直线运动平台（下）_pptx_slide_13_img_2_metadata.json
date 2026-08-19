@@ -1,0 +1,33 @@
+{
+  "original_path": "output/qwen_qwen3.7-plus_5/debug/images/w10-1-直线运动平台（下）_slide_13_img_2.png",
+  "enhanced_path": "output/qwen_qwen3.7-plus_5/debug/images/w10-1-直线运动平台（下）_slide_13_img_2_enhanced.png",
+  "description": "图片展示了关于单摆方程拉普拉斯变换及传递函数分析的教学幻灯片内容，包含以下关键信息：\n\n1.  **单摆方程的Laplace变换**：\n    文字说明“对单摆方程进行Laplace变换，得”，随后给出了公式：\n    $$s^2\\Theta(s) + \\omega_n^2\\Theta(s) = \\frac{s^2 U_s(s)}{l} \\Rightarrow \\Theta(s) = \\frac{s^2}{l(s^2 + \\omega_n^2)} U_s(s)$$\n    其中传递函数部分 $\\frac{s^2}{l(s^2 + \\omega_n^2)}$ 用红色字体标出。\n\n2.  **自由振动位移函数的拉普拉斯变换**：\n    列出了正弦和余弦函数的拉普拉斯变换公式及其复数域分解形式：\n    *   $\\mathcal{L}[\\sin(\\omega_n t)] = \\frac{\\omega_n}{s^2 + \\omega_n^2} = \\frac{\\omega_n}{(s + i\\omega_n)(s - i\\omega_n)}$\n    *   $\\mathcal{L}[\\cos(\\omega_n t)] = \\frac{s}{s^2 + \\omega_n^2} = \\frac{s}{(s + i\\omega_n)(s - i\\omega_n)}$\n    公式中的分母因式分解部分 $(s + i\\omega_n)(s - i\\omega_n)$ 用红色字体标出。\n\n3.  **结论**：\n    文字说明“可知，**残余振动响应含有的极点来自传递函数**，是导致单摆无法立即停止的根源。”其中“残余振动响应含有的极点来自传递函数”为红色加粗字体。",
+  "metadata": {
+    "generation": {
+      "method": "qwen_api",
+      "backend": "api",
+      "provider": "qwen",
+      "model": "qwen3.7-plus",
+      "status": "success",
+      "api_error": null
+    },
+    "review": {
+      "required": false,
+      "status": null,
+      "reason": null,
+      "course_relevant": true
+    }
+  },
+  "error": null,
+  "method": "qwen_api",
+  "backend": "api",
+  "provider": "qwen",
+  "model": "qwen3.7-plus",
+  "status": "success",
+  "api_error": null,
+  "indexable": true,
+  "review_required": false,
+  "review_reason": null,
+  "review_status": null,
+  "course_relevant": true
+}

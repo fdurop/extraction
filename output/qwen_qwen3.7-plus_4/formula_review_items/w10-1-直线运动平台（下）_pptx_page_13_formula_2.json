@@ -1,0 +1,34 @@
+{
+  "source_image": "output/qwen_qwen3.7-plus_4/debug/images/w10-1-直线运动平台（下）_slide_13_img_2.png",
+  "source_type": "image_vlm",
+  "extraction_method": "qwen_api_formula",
+  "backend": "api",
+  "provider": "qwen",
+  "model": "qwen3.7-plus",
+  "image_index": 1,
+  "raw_response": "{\n  \"has_formula\": true,\n  \"formulas\": [\n    {\n      \"latex\": \"s^2/theta(s) + /omega_n^2/theta(s) = /frac{s^2 U_s(s)}{l} /Rightarrow /theta(s) = /frac{s^2}{l(s^2 + /omega_n^2)} U_s(s).\",\n      \"name\": \"单摆方程的Laplace变换及传递函数\",\n      \"meaning\": \"对单摆运动方程进行拉普拉斯变换后得到的频域方程，以及由此推导出的角度输出对输入的传递函数。\",\n      \"symbols\": [\n        {\n          \"symbol\": \"s\",\n          \"meaning\": \"拉普拉斯变换的复频率变量\",\n          \"unit\": null\n        },\n        {\n          \"symbol\": \"/theta(s)\",\n          \"meaning\": \"摆角的拉普拉斯变换\",\n          \"unit\": null\n        },\n        {\n          \"symbol\": \"/omega_n\",\n          \"meaning\": \"系统的固有频率\",\n          \"unit\": null\n        },\n        {\n          \"symbol\": \"U_s(s)\",\n          \"meaning\": \"输入量（如基座位移）的拉普拉斯变换\",\n          \"unit\": null\n        },\n        {\n          \"symbol\": \"l\",\n          \"meaning\": \"摆长\",\n          \"unit\": null\n        }\n      ],\n      \"conditions\": [],\n      \"uncertain_symbols\": [],\n      \"confidence\": 0.95\n    },\n    {\n      \"latex\": \"/mathcal{L}[/sin(/omega_n t)] = /frac{/omega_n}{s^2 + /omega_n^2} = /frac{/omega_n}{(s + i/omega_n)(s - i/omega_n)},\",\n      \"name\": \"正弦函数的拉普拉斯变换\",\n      \"meaning\": \"自由振动位移函数中正弦项的拉普拉斯变换，并分解为极点形式。\",\n      \"symbols\": [\n        {\n          \"symbol\": \"/mathcal{L}\",\n          \"meaning\": \"拉普拉斯变换算子\",\n          \"unit\": null\n        },\n        {\n          \"symbol\": \"t\",\n          \"meaning\": \"时间\",\n          \"unit\": null\n        },\n        {\n          \"symbol\": \"i\",\n          \"meaning\": \"虚数单位\",\n          \"unit\": null\n        }\n      ],\n      \"conditions\": [],\n      \"uncertain_symbols\": [],\n      \"confidence\": 0.95\n    },\n    {\n      \"latex\": \"/mathcal{L}[/cos(/omega_n t)] = /frac{s}{s^2 + /omega_n^2} = /frac{s}{(s + i/omega_n)(s - i/omega_n)}.\",\n      \"name\": \"余弦函数的拉普拉斯变换\",\n      \"meaning\": \"自由振动位移函数中余弦项的拉普拉斯变换，并分解为极点形式。\",\n      \"symbols\": [\n        {\n          \"symbol\": \"/mathcal{L}\",\n          \"meaning\": \"拉普拉斯变换算子\",\n          \"unit\": null\n        },\n        {\n          \"symbol\": \"t\",\n          \"meaning\": \"时间\",\n          \"unit\": null\n        },\n        {\n          \"symbol\": \"i\",\n          \"meaning\": \"虚数单位\",\n          \"unit\": null\n        }\n      ],\n      \"conditions\": [],\n      \"uncertain_symbols\": [],\n      \"confidence\": 0.95\n    }",
+  "latex": "",
+  "confidence": 0.0,
+  "uncertain_symbols": [
+    "json_parse_failed"
+  ],
+  "plain_text": "",
+  "name": "",
+  "meaning": "",
+  "description": "",
+  "symbols": [],
+  "conditions": [],
+  "validation_issues": [
+    "empty_latex",
+    "uncertain_symbols"
+  ],
+  "validation_status": "review",
+  "review_required": true,
+  "review_reason": "empty_latex",
+  "review_status": "pending",
+  "indexable": false,
+  "formula_id": "w10-1-直线运动平台（下）_pptx_page_13_formula_2",
+  "page_num": 13,
+  "review_image_path": "output/qwen_qwen3.7-plus_4/formula_review_items/w10-1-直线运动平台（下）_pptx_page_13_formula_2.png",
+  "source_document": "w10-1-直线运动平台（下）_pptx"
+}

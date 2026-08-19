@@ -1,0 +1,33 @@
+{
+  "original_path": "output/qwen_qwen3.7-plus_4/debug/images/w10-1-直线运动平台（下）_slide_8_img_1.png",
+  "enhanced_path": "output/qwen_qwen3.7-plus_4/debug/images/w10-1-直线运动平台（下）_slide_8_img_1_enhanced.png",
+  "description": "图片展示了滑台简谐运动实践的具体步骤和数学/编程原理，内容如下：\n\n**步骤流程：**\n1.  **① 滑台初始化复位；**\n2.  **② 滑台移至行程中间位置；**\n3.  **③ 设置时间中断，等待启停按钮；**\n4.  **④ 启动后，滑台进行简谐运动。**\n\n**简谐运动参数与实现逻辑：**\n*   **位移公式：** $x(t) = A/cos(2/pi ft)$，其中 $f$ 代表频率（Hz）。\n    *   注：$A$ 为幅度，要求不超过行程的一半。\n*   **速度公式：** $v(t) = x'(t) = 2/pi f A/sin(2/pi ft)$。\n*   **时间中断：** 用于设置速度（需转换为脉冲数）。\n*   **loop循环：** 根据速度发送脉冲。",
+  "metadata": {
+    "generation": {
+      "method": "qwen_api",
+      "backend": "api",
+      "provider": "qwen",
+      "model": "qwen3.7-plus",
+      "status": "success",
+      "api_error": null
+    },
+    "review": {
+      "required": false,
+      "status": null,
+      "reason": null,
+      "course_relevant": true
+    }
+  },
+  "error": null,
+  "method": "qwen_api",
+  "backend": "api",
+  "provider": "qwen",
+  "model": "qwen3.7-plus",
+  "status": "success",
+  "api_error": null,
+  "indexable": true,
+  "review_required": false,
+  "review_reason": null,
+  "review_status": null,
+  "course_relevant": true
+}

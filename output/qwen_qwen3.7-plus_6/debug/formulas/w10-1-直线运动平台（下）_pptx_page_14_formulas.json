@@ -1,0 +1,368 @@
+{
+  "page": 14,
+  "formula_count": 6,
+  "accepted_count": 0,
+  "review_count": 6,
+  "formulas": [
+    {
+      "source_image": "output/qwen_qwen3.7-plus_6/debug/images/w10-1-直线运动平台（下）_slide_14_img_2.png",
+      "source_type": "image_vlm",
+      "extraction_method": "qwen_api_formula",
+      "backend": "api",
+      "provider": "qwen",
+      "model": "qwen3.7-plus",
+      "image_index": 1,
+      "raw_response": "{\n  \"has_formula\": true,\n  \"formulas\": [\n    {\n      \"latex\": \"s_1 = -i\\\\omega_n\",\n      \"name\": \"\",\n      \"meaning\": \"\",\n      \"symbols\": [\n        {\n          \"symbol\": \"s_1\",\n          \"meaning\": \"零点\",\n          \"unit\": null\n        },\n        {\n          \"symbol\": \"i\",\n          \"meaning\": \"虚数单位\",\n          \"unit\": null\n        },\n        {\n          \"symbol\": \"\\\\omega_n\",\n          \"meaning\": \"\",\n          \"unit\": null\n        }\n      ],\n      \"conditions\": [],\n      \"uncertain_symbols\": [],\n      \"confidence\": 1.0\n    },\n    {\n      \"latex\": \"s_2 = i\\\\omega_n\",\n      \"name\": \"\",\n      \"meaning\": \"\",\n      \"symbols\": [\n        {\n          \"symbol\": \"s_2\",\n          \"meaning\": \"零点\",\n          \"unit\": null\n        },\n        {\n          \"symbol\": \"i\",\n          \"meaning\": \"虚数单位\",\n          \"unit\": null\n        },\n        {\n          \"symbol\": \"\\\\omega_n\",\n          \"meaning\": \"\",\n          \"unit\": null\n        }\n      ],\n      \"conditions\": [],\n      \"uncertain_symbols\": [],\n      \"confidence\": 1.0\n    },\n    {\n      \"latex\": \"\\\\widetilde{\\\\theta}(s) = \\\\frac{s^2}{l(s^2 + \\\\omega_n^2)} \\\\widetilde{U}_s(s) = \\\\frac{s^2}{l(s^2 + \\\\omega_n^2)} \\\\cdot C(s - s_1)(s - s_2)U_s(s)\",\n      \"name\": \"\",\n      \"meaning\": \"\",\n      \"symbols\": [\n        {\n          \"symbol\": \"\\\\widetilde{\\\\theta}(s)\",\n          \"meaning\": \"\",\n          \"unit\": null\n        },\n        {\n          \"symbol\": \"s\",\n          \"meaning\": \"拉普拉斯变量\",\n          \"unit\": null\n        },\n        {\n          \"symbol\": \"l\",\n          \"meaning\": \"\",\n          \"unit\": null\n        },\n        {\n          \"symbol\": \"\\\\omega_n\",\n          \"meaning\": \"\",\n          \"unit\": null\n        },\n        {\n          \"symbol\": \"\\\\widetilde{U}_s(s)\",\n          \"meaning\": \"\",\n          \"unit\": null\n        },\n        {\n          \"symbol\": \"C\",\n          \"meaning\": \"\",\n          \"unit\": null\n        },\n        {\n          \"symbol\": \"s_1\",\n          \"meaning\": \"零点\",\n          \"unit\": null\n        },\n        {\n          \"symbol\": \"s_2\",\n          \"meaning\": \"零点\",\n          \"unit\": null\n        },\n        {\n          \"symbol\": \"U_s(s)\",\n          \"meaning\": \"\",\n          \"unit\": null\n        }\n      ],\n      \"conditions\": [],\n      \"uncertain_symbols\": [],\n      \"confidence\": 1.0\n    },\n    {\n      \"latex\": \"\\\\widetilde{u}_s(t) = \\\\mathcal{L}^{-1}[C(s - s_1)(s - s_2)U_s(s)]\",\n      \"name\": \"\",\n      \"meaning\": \"\",\n      \"symbols\": [\n        {\n          \"symbol\": \"\\\\widetilde{u}_s(t)\",\n          \"meaning\": \"\",\n          \"unit\": null\n        },\n        {\n          \"symbol\": \"t\",\n          \"meaning\": \"时间\",\n          \"unit\": null\n        },\n        {\n          \"symbol\": \"\\\\mathcal{L}^{-1}\",\n          \"meaning\": \"拉普拉斯逆变换\",\n          \"unit\": null\n        },\n        {\n          \"symbol\": \"C\",\n          \"meaning\": \"\",\n          \"unit\": null\n        },\n        {\n          \"symbol\": \"s\",\n          \"meaning\": \"拉普拉斯变量\",\n          \"unit\": null\n        },\n        {\n          \"symbol\": \"s_1\",\n          \"meaning\": \"零点\",\n          \"unit\": null\n        },\n        {\n          \"symbol\": \"s_2\",\n          \"meaning\": \"零点\",\n          \"unit\": null\n        },\n        {\n          \"symbol\": \"U_s(s)\",\n          \"meaning\": \"\",\n          \"unit\": null\n        }\n      ],\n      \"conditions\": [],\n      \"uncertain_symbols\": [],\n      \"confidence\": 1.0\n    },\n    {\n      \"latex\": \"\\\\lim_{s \\\\to s_1} \\\\frac{e^{-s\\\\tau} - e^{-s_1\\\\tau}}{s - s_1} = -\\\\tau e^{-s_1\\\\tau} \\\\neq 0\",\n      \"name\": \"\",\n      \"meaning\": \"\",\n      \"symbols\": [\n        {\n          \"symbol\": \"s\",\n          \"meaning\": \"拉普拉斯变量\",\n          \"unit\": null\n        },\n        {\n          \"symbol\": \"s_1\",\n          \"meaning\": \"零点\",\n          \"unit\": null\n        },\n        {\n          \"symbol\": \"\\\\tau\",\n          \"meaning\": \"\",\n          \"unit\": null\n        },\n        {\n          \"symbol\": \"e\",\n          \"meaning\": \"自然对数的底\",\n          \"unit\": null\n        }\n      ],\n      \"conditions\": [],\n      \"uncertain_symbols\": [],\n      \"confidence\": 1.0\n    },\n    {\n      \"latex\": \"\\\\lim_{s \\\\to s_2} \\\\frac{e^{-s\\\\tau} - e^{-s_2\\\\tau}}{s - s_2} = -\\\\tau e^{-s_2\\\\tau} \\\\neq 0\",\n      \"name\": \"\",\n      \"meaning\": \"\",\n      \"symbols\": [\n        {\n          \"symbol\": \"s\",\n          \"meaning\": \"拉普拉斯变量\",\n          \"unit\": null\n        },\n        {\n          \"symbol\": \"s_2\",\n          \"meaning\": \"零点\",\n          \"unit\": null\n        },\n        {\n          \"symbol\": \"\\\\tau\",\n          \"meaning\": \"\",\n          \"unit\": null\n        },\n        {\n          \"symbol\": \"e\",\n          \"meaning\": \"自然对数的底\",\n          \"unit\": null\n        }\n      ],\n      \"conditions\": [],\n      \"uncertain_symbols\": [],\n      \"confidence\": 1.0\n    },\n    {\n      \"latex\": \"\\\\widetilde{U}_s(s) = C(s - s_1)(s - s_2)U_s(s) \\\\Leftrightarrow \\\\widetilde{U}_s(s) = \\\\frac{C}{\\\\tau^2} (e^{-s\\\\tau} - e^{s_2\\\\tau})(e^{-s\\\\tau} - e^{s_1\\\\tau})U_s(s",
+      "parse_error": "truncated_json",
+      "partial_response": true,
+      "review_reason": "uncertain_symbols",
+      "latex": "s_1 = -i\\omega_n",
+      "name": "",
+      "meaning": "",
+      "symbols": [
+        {
+          "symbol": "s_1",
+          "meaning": "零点",
+          "unit": null
+        },
+        {
+          "symbol": "i",
+          "meaning": "虚数单位",
+          "unit": null
+        },
+        {
+          "symbol": "\\omega_n",
+          "meaning": "",
+          "unit": null
+        }
+      ],
+      "conditions": [],
+      "uncertain_symbols": [
+        "partial_json_response"
+      ],
+      "confidence": 0.37,
+      "plain_text": "s_1 = -i\\omega_n",
+      "description": "",
+      "validation_issues": [
+        "uncertain_symbols"
+      ],
+      "validation_status": "review",
+      "review_required": true,
+      "review_status": "pending",
+      "indexable": false,
+      "formula_id": "w10-1-直线运动平台（下）_pptx_page_14_formula_1",
+      "page_num": 14
+    },
+    {
+      "source_image": "output/qwen_qwen3.7-plus_6/debug/images/w10-1-直线运动平台（下）_slide_14_img_2.png",
+      "source_type": "image_vlm",
+      "extraction_method": "qwen_api_formula",
+      "backend": "api",
+      "provider": "qwen",
+      "model": "qwen3.7-plus",
+      "image_index": 1,
+      "raw_response": "{\n  \"has_formula\": true,\n  \"formulas\": [\n    {\n      \"latex\": \"s_1 = -i\\\\omega_n\",\n      \"name\": \"\",\n      \"meaning\": \"\",\n      \"symbols\": [\n        {\n          \"symbol\": \"s_1\",\n          \"meaning\": \"零点\",\n          \"unit\": null\n        },\n        {\n          \"symbol\": \"i\",\n          \"meaning\": \"虚数单位\",\n          \"unit\": null\n        },\n        {\n          \"symbol\": \"\\\\omega_n\",\n          \"meaning\": \"\",\n          \"unit\": null\n        }\n      ],\n      \"conditions\": [],\n      \"uncertain_symbols\": [],\n      \"confidence\": 1.0\n    },\n    {\n      \"latex\": \"s_2 = i\\\\omega_n\",\n      \"name\": \"\",\n      \"meaning\": \"\",\n      \"symbols\": [\n        {\n          \"symbol\": \"s_2\",\n          \"meaning\": \"零点\",\n          \"unit\": null\n        },\n        {\n          \"symbol\": \"i\",\n          \"meaning\": \"虚数单位\",\n          \"unit\": null\n        },\n        {\n          \"symbol\": \"\\\\omega_n\",\n          \"meaning\": \"\",\n          \"unit\": null\n        }\n      ],\n      \"conditions\": [],\n      \"uncertain_symbols\": [],\n      \"confidence\": 1.0\n    },\n    {\n      \"latex\": \"\\\\widetilde{\\\\theta}(s) = \\\\frac{s^2}{l(s^2 + \\\\omega_n^2)} \\\\widetilde{U}_s(s) = \\\\frac{s^2}{l(s^2 + \\\\omega_n^2)} \\\\cdot C(s - s_1)(s - s_2)U_s(s)\",\n      \"name\": \"\",\n      \"meaning\": \"\",\n      \"symbols\": [\n        {\n          \"symbol\": \"\\\\widetilde{\\\\theta}(s)\",\n          \"meaning\": \"\",\n          \"unit\": null\n        },\n        {\n          \"symbol\": \"s\",\n          \"meaning\": \"拉普拉斯变量\",\n          \"unit\": null\n        },\n        {\n          \"symbol\": \"l\",\n          \"meaning\": \"\",\n          \"unit\": null\n        },\n        {\n          \"symbol\": \"\\\\omega_n\",\n          \"meaning\": \"\",\n          \"unit\": null\n        },\n        {\n          \"symbol\": \"\\\\widetilde{U}_s(s)\",\n          \"meaning\": \"\",\n          \"unit\": null\n        },\n        {\n          \"symbol\": \"C\",\n          \"meaning\": \"\",\n          \"unit\": null\n        },\n        {\n          \"symbol\": \"s_1\",\n          \"meaning\": \"零点\",\n          \"unit\": null\n        },\n        {\n          \"symbol\": \"s_2\",\n          \"meaning\": \"零点\",\n          \"unit\": null\n        },\n        {\n          \"symbol\": \"U_s(s)\",\n          \"meaning\": \"\",\n          \"unit\": null\n        }\n      ],\n      \"conditions\": [],\n      \"uncertain_symbols\": [],\n      \"confidence\": 1.0\n    },\n    {\n      \"latex\": \"\\\\widetilde{u}_s(t) = \\\\mathcal{L}^{-1}[C(s - s_1)(s - s_2)U_s(s)]\",\n      \"name\": \"\",\n      \"meaning\": \"\",\n      \"symbols\": [\n        {\n          \"symbol\": \"\\\\widetilde{u}_s(t)\",\n          \"meaning\": \"\",\n          \"unit\": null\n        },\n        {\n          \"symbol\": \"t\",\n          \"meaning\": \"时间\",\n          \"unit\": null\n        },\n        {\n          \"symbol\": \"\\\\mathcal{L}^{-1}\",\n          \"meaning\": \"拉普拉斯逆变换\",\n          \"unit\": null\n        },\n        {\n          \"symbol\": \"C\",\n          \"meaning\": \"\",\n          \"unit\": null\n        },\n        {\n          \"symbol\": \"s\",\n          \"meaning\": \"拉普拉斯变量\",\n          \"unit\": null\n        },\n        {\n          \"symbol\": \"s_1\",\n          \"meaning\": \"零点\",\n          \"unit\": null\n        },\n        {\n          \"symbol\": \"s_2\",\n          \"meaning\": \"零点\",\n          \"unit\": null\n        },\n        {\n          \"symbol\": \"U_s(s)\",\n          \"meaning\": \"\",\n          \"unit\": null\n        }\n      ],\n      \"conditions\": [],\n      \"uncertain_symbols\": [],\n      \"confidence\": 1.0\n    },\n    {\n      \"latex\": \"\\\\lim_{s \\\\to s_1} \\\\frac{e^{-s\\\\tau} - e^{-s_1\\\\tau}}{s - s_1} = -\\\\tau e^{-s_1\\\\tau} \\\\neq 0\",\n      \"name\": \"\",\n      \"meaning\": \"\",\n      \"symbols\": [\n        {\n          \"symbol\": \"s\",\n          \"meaning\": \"拉普拉斯变量\",\n          \"unit\": null\n        },\n        {\n          \"symbol\": \"s_1\",\n          \"meaning\": \"零点\",\n          \"unit\": null\n        },\n        {\n          \"symbol\": \"\\\\tau\",\n          \"meaning\": \"\",\n          \"unit\": null\n        },\n        {\n          \"symbol\": \"e\",\n          \"meaning\": \"自然对数的底\",\n          \"unit\": null\n        }\n      ],\n      \"conditions\": [],\n      \"uncertain_symbols\": [],\n      \"confidence\": 1.0\n    },\n    {\n      \"latex\": \"\\\\lim_{s \\\\to s_2} \\\\frac{e^{-s\\\\tau} - e^{-s_2\\\\tau}}{s - s_2} = -\\\\tau e^{-s_2\\\\tau} \\\\neq 0\",\n      \"name\": \"\",\n      \"meaning\": \"\",\n      \"symbols\": [\n        {\n          \"symbol\": \"s\",\n          \"meaning\": \"拉普拉斯变量\",\n          \"unit\": null\n        },\n        {\n          \"symbol\": \"s_2\",\n          \"meaning\": \"零点\",\n          \"unit\": null\n        },\n        {\n          \"symbol\": \"\\\\tau\",\n          \"meaning\": \"\",\n          \"unit\": null\n        },\n        {\n          \"symbol\": \"e\",\n          \"meaning\": \"自然对数的底\",\n          \"unit\": null\n        }\n      ],\n      \"conditions\": [],\n      \"uncertain_symbols\": [],\n      \"confidence\": 1.0\n    },\n    {\n      \"latex\": \"\\\\widetilde{U}_s(s) = C(s - s_1)(s - s_2)U_s(s) \\\\Leftrightarrow \\\\widetilde{U}_s(s) = \\\\frac{C}{\\\\tau^2} (e^{-s\\\\tau} - e^{s_2\\\\tau})(e^{-s\\\\tau} - e^{s_1\\\\tau})U_s(s",
+      "parse_error": "truncated_json",
+      "partial_response": true,
+      "review_reason": "uncertain_symbols",
+      "latex": "s_2 = i\\omega_n",
+      "name": "",
+      "meaning": "",
+      "symbols": [
+        {
+          "symbol": "s_2",
+          "meaning": "零点",
+          "unit": null
+        },
+        {
+          "symbol": "i",
+          "meaning": "虚数单位",
+          "unit": null
+        },
+        {
+          "symbol": "\\omega_n",
+          "meaning": "",
+          "unit": null
+        }
+      ],
+      "conditions": [],
+      "uncertain_symbols": [
+        "partial_json_response"
+      ],
+      "confidence": 0.37,
+      "plain_text": "s_2 = i\\omega_n",
+      "description": "",
+      "validation_issues": [
+        "uncertain_symbols"
+      ],
+      "validation_status": "review",
+      "review_required": true,
+      "review_status": "pending",
+      "indexable": false,
+      "formula_id": "w10-1-直线运动平台（下）_pptx_page_14_formula_2",
+      "page_num": 14
+    },
+    {
+      "source_image": "output/qwen_qwen3.7-plus_6/debug/images/w10-1-直线运动平台（下）_slide_14_img_2.png",
+      "source_type": "image_vlm",
+      "extraction_method": "qwen_api_formula",
+      "backend": "api",
+      "provider": "qwen",
+      "model": "qwen3.7-plus",
+      "image_index": 1,
+      "raw_response": "{\n  \"has_formula\": true,\n  \"formulas\": [\n    {\n      \"latex\": \"s_1 = -i\\\\omega_n\",\n      \"name\": \"\",\n      \"meaning\": \"\",\n      \"symbols\": [\n        {\n          \"symbol\": \"s_1\",\n          \"meaning\": \"零点\",\n          \"unit\": null\n        },\n        {\n          \"symbol\": \"i\",\n          \"meaning\": \"虚数单位\",\n          \"unit\": null\n        },\n        {\n          \"symbol\": \"\\\\omega_n\",\n          \"meaning\": \"\",\n          \"unit\": null\n        }\n      ],\n      \"conditions\": [],\n      \"uncertain_symbols\": [],\n      \"confidence\": 1.0\n    },\n    {\n      \"latex\": \"s_2 = i\\\\omega_n\",\n      \"name\": \"\",\n      \"meaning\": \"\",\n      \"symbols\": [\n        {\n          \"symbol\": \"s_2\",\n          \"meaning\": \"零点\",\n          \"unit\": null\n        },\n        {\n          \"symbol\": \"i\",\n          \"meaning\": \"虚数单位\",\n          \"unit\": null\n        },\n        {\n          \"symbol\": \"\\\\omega_n\",\n          \"meaning\": \"\",\n          \"unit\": null\n        }\n      ],\n      \"conditions\": [],\n      \"uncertain_symbols\": [],\n      \"confidence\": 1.0\n    },\n    {\n      \"latex\": \"\\\\widetilde{\\\\theta}(s) = \\\\frac{s^2}{l(s^2 + \\\\omega_n^2)} \\\\widetilde{U}_s(s) = \\\\frac{s^2}{l(s^2 + \\\\omega_n^2)} \\\\cdot C(s - s_1)(s - s_2)U_s(s)\",\n      \"name\": \"\",\n      \"meaning\": \"\",\n      \"symbols\": [\n        {\n          \"symbol\": \"\\\\widetilde{\\\\theta}(s)\",\n          \"meaning\": \"\",\n          \"unit\": null\n        },\n        {\n          \"symbol\": \"s\",\n          \"meaning\": \"拉普拉斯变量\",\n          \"unit\": null\n        },\n        {\n          \"symbol\": \"l\",\n          \"meaning\": \"\",\n          \"unit\": null\n        },\n        {\n          \"symbol\": \"\\\\omega_n\",\n          \"meaning\": \"\",\n          \"unit\": null\n        },\n        {\n          \"symbol\": \"\\\\widetilde{U}_s(s)\",\n          \"meaning\": \"\",\n          \"unit\": null\n        },\n        {\n          \"symbol\": \"C\",\n          \"meaning\": \"\",\n          \"unit\": null\n        },\n        {\n          \"symbol\": \"s_1\",\n          \"meaning\": \"零点\",\n          \"unit\": null\n        },\n        {\n          \"symbol\": \"s_2\",\n          \"meaning\": \"零点\",\n          \"unit\": null\n        },\n        {\n          \"symbol\": \"U_s(s)\",\n          \"meaning\": \"\",\n          \"unit\": null\n        }\n      ],\n      \"conditions\": [],\n      \"uncertain_symbols\": [],\n      \"confidence\": 1.0\n    },\n    {\n      \"latex\": \"\\\\widetilde{u}_s(t) = \\\\mathcal{L}^{-1}[C(s - s_1)(s - s_2)U_s(s)]\",\n      \"name\": \"\",\n      \"meaning\": \"\",\n      \"symbols\": [\n        {\n          \"symbol\": \"\\\\widetilde{u}_s(t)\",\n          \"meaning\": \"\",\n          \"unit\": null\n        },\n        {\n          \"symbol\": \"t\",\n          \"meaning\": \"时间\",\n          \"unit\": null\n        },\n        {\n          \"symbol\": \"\\\\mathcal{L}^{-1}\",\n          \"meaning\": \"拉普拉斯逆变换\",\n          \"unit\": null\n        },\n        {\n          \"symbol\": \"C\",\n          \"meaning\": \"\",\n          \"unit\": null\n        },\n        {\n          \"symbol\": \"s\",\n          \"meaning\": \"拉普拉斯变量\",\n          \"unit\": null\n        },\n        {\n          \"symbol\": \"s_1\",\n          \"meaning\": \"零点\",\n          \"unit\": null\n        },\n        {\n          \"symbol\": \"s_2\",\n          \"meaning\": \"零点\",\n          \"unit\": null\n        },\n        {\n          \"symbol\": \"U_s(s)\",\n          \"meaning\": \"\",\n          \"unit\": null\n        }\n      ],\n      \"conditions\": [],\n      \"uncertain_symbols\": [],\n      \"confidence\": 1.0\n    },\n    {\n      \"latex\": \"\\\\lim_{s \\\\to s_1} \\\\frac{e^{-s\\\\tau} - e^{-s_1\\\\tau}}{s - s_1} = -\\\\tau e^{-s_1\\\\tau} \\\\neq 0\",\n      \"name\": \"\",\n      \"meaning\": \"\",\n      \"symbols\": [\n        {\n          \"symbol\": \"s\",\n          \"meaning\": \"拉普拉斯变量\",\n          \"unit\": null\n        },\n        {\n          \"symbol\": \"s_1\",\n          \"meaning\": \"零点\",\n          \"unit\": null\n        },\n        {\n          \"symbol\": \"\\\\tau\",\n          \"meaning\": \"\",\n          \"unit\": null\n        },\n        {\n          \"symbol\": \"e\",\n          \"meaning\": \"自然对数的底\",\n          \"unit\": null\n        }\n      ],\n      \"conditions\": [],\n      \"uncertain_symbols\": [],\n      \"confidence\": 1.0\n    },\n    {\n      \"latex\": \"\\\\lim_{s \\\\to s_2} \\\\frac{e^{-s\\\\tau} - e^{-s_2\\\\tau}}{s - s_2} = -\\\\tau e^{-s_2\\\\tau} \\\\neq 0\",\n      \"name\": \"\",\n      \"meaning\": \"\",\n      \"symbols\": [\n        {\n          \"symbol\": \"s\",\n          \"meaning\": \"拉普拉斯变量\",\n          \"unit\": null\n        },\n        {\n          \"symbol\": \"s_2\",\n          \"meaning\": \"零点\",\n          \"unit\": null\n        },\n        {\n          \"symbol\": \"\\\\tau\",\n          \"meaning\": \"\",\n          \"unit\": null\n        },\n        {\n          \"symbol\": \"e\",\n          \"meaning\": \"自然对数的底\",\n          \"unit\": null\n        }\n      ],\n      \"conditions\": [],\n      \"uncertain_symbols\": [],\n      \"confidence\": 1.0\n    },\n    {\n      \"latex\": \"\\\\widetilde{U}_s(s) = C(s - s_1)(s - s_2)U_s(s) \\\\Leftrightarrow \\\\widetilde{U}_s(s) = \\\\frac{C}{\\\\tau^2} (e^{-s\\\\tau} - e^{s_2\\\\tau})(e^{-s\\\\tau} - e^{s_1\\\\tau})U_s(s",
+      "parse_error": "truncated_json",
+      "partial_response": true,
+      "review_reason": "uncertain_symbols",
+      "latex": "\\widetilde{\\theta}(s) = \\frac{s^2}{l(s^2 + \\omega_n^2)} \\widetilde{U}_s(s) = \\frac{s^2}{l(s^2 + \\omega_n^2)} \\cdot C(s - s_1)(s - s_2)U_s(s)",
+      "name": "",
+      "meaning": "",
+      "symbols": [
+        {
+          "symbol": "\\widetilde{\\theta}(s)",
+          "meaning": "",
+          "unit": null
+        },
+        {
+          "symbol": "s",
+          "meaning": "拉普拉斯变量",
+          "unit": null
+        },
+        {
+          "symbol": "l",
+          "meaning": "",
+          "unit": null
+        },
+        {
+          "symbol": "\\omega_n",
+          "meaning": "",
+          "unit": null
+        },
+        {
+          "symbol": "\\widetilde{U}_s(s)",
+          "meaning": "",
+          "unit": null
+        },
+        {
+          "symbol": "C",
+          "meaning": "",
+          "unit": null
+        },
+        {
+          "symbol": "s_1",
+          "meaning": "零点",
+          "unit": null
+        },
+        {
+          "symbol": "s_2",
+          "meaning": "零点",
+          "unit": null
+        },
+        {
+          "symbol": "U_s(s)",
+          "meaning": "",
+          "unit": null
+        }
+      ],
+      "conditions": [],
+      "uncertain_symbols": [
+        "partial_json_response"
+      ],
+      "confidence": 0.37,
+      "plain_text": "\\widetilde{\\theta}(s) = \\frac{s^2}{l(s^2 + \\omega_n^2)} \\widetilde{U}_s(s) = \\frac{s^2}{l(s^2 + \\omega_n^2)} \\cdot C(s - s_1)(s - s_2)U_s(s)",
+      "description": "",
+      "validation_issues": [
+        "uncertain_symbols"
+      ],
+      "validation_status": "review",
+      "review_required": true,
+      "review_status": "pending",
+      "indexable": false,
+      "formula_id": "w10-1-直线运动平台（下）_pptx_page_14_formula_3",
+      "page_num": 14
+    },
+    {
+      "source_image": "output/qwen_qwen3.7-plus_6/debug/images/w10-1-直线运动平台（下）_slide_14_img_2.png",
+      "source_type": "image_vlm",
+      "extraction_method": "qwen_api_formula",
+      "backend": "api",
+      "provider": "qwen",
+      "model": "qwen3.7-plus",
+      "image_index": 1,
+      "raw_response": "{\n  \"has_formula\": true,\n  \"formulas\": [\n    {\n      \"latex\": \"s_1 = -i\\\\omega_n\",\n      \"name\": \"\",\n      \"meaning\": \"\",\n      \"symbols\": [\n        {\n          \"symbol\": \"s_1\",\n          \"meaning\": \"零点\",\n          \"unit\": null\n        },\n        {\n          \"symbol\": \"i\",\n          \"meaning\": \"虚数单位\",\n          \"unit\": null\n        },\n        {\n          \"symbol\": \"\\\\omega_n\",\n          \"meaning\": \"\",\n          \"unit\": null\n        }\n      ],\n      \"conditions\": [],\n      \"uncertain_symbols\": [],\n      \"confidence\": 1.0\n    },\n    {\n      \"latex\": \"s_2 = i\\\\omega_n\",\n      \"name\": \"\",\n      \"meaning\": \"\",\n      \"symbols\": [\n        {\n          \"symbol\": \"s_2\",\n          \"meaning\": \"零点\",\n          \"unit\": null\n        },\n        {\n          \"symbol\": \"i\",\n          \"meaning\": \"虚数单位\",\n          \"unit\": null\n        },\n        {\n          \"symbol\": \"\\\\omega_n\",\n          \"meaning\": \"\",\n          \"unit\": null\n        }\n      ],\n      \"conditions\": [],\n      \"uncertain_symbols\": [],\n      \"confidence\": 1.0\n    },\n    {\n      \"latex\": \"\\\\widetilde{\\\\theta}(s) = \\\\frac{s^2}{l(s^2 + \\\\omega_n^2)} \\\\widetilde{U}_s(s) = \\\\frac{s^2}{l(s^2 + \\\\omega_n^2)} \\\\cdot C(s - s_1)(s - s_2)U_s(s)\",\n      \"name\": \"\",\n      \"meaning\": \"\",\n      \"symbols\": [\n        {\n          \"symbol\": \"\\\\widetilde{\\\\theta}(s)\",\n          \"meaning\": \"\",\n          \"unit\": null\n        },\n        {\n          \"symbol\": \"s\",\n          \"meaning\": \"拉普拉斯变量\",\n          \"unit\": null\n        },\n        {\n          \"symbol\": \"l\",\n          \"meaning\": \"\",\n          \"unit\": null\n        },\n        {\n          \"symbol\": \"\\\\omega_n\",\n          \"meaning\": \"\",\n          \"unit\": null\n        },\n        {\n          \"symbol\": \"\\\\widetilde{U}_s(s)\",\n          \"meaning\": \"\",\n          \"unit\": null\n        },\n        {\n          \"symbol\": \"C\",\n          \"meaning\": \"\",\n          \"unit\": null\n        },\n        {\n          \"symbol\": \"s_1\",\n          \"meaning\": \"零点\",\n          \"unit\": null\n        },\n        {\n          \"symbol\": \"s_2\",\n          \"meaning\": \"零点\",\n          \"unit\": null\n        },\n        {\n          \"symbol\": \"U_s(s)\",\n          \"meaning\": \"\",\n          \"unit\": null\n        }\n      ],\n      \"conditions\": [],\n      \"uncertain_symbols\": [],\n      \"confidence\": 1.0\n    },\n    {\n      \"latex\": \"\\\\widetilde{u}_s(t) = \\\\mathcal{L}^{-1}[C(s - s_1)(s - s_2)U_s(s)]\",\n      \"name\": \"\",\n      \"meaning\": \"\",\n      \"symbols\": [\n        {\n          \"symbol\": \"\\\\widetilde{u}_s(t)\",\n          \"meaning\": \"\",\n          \"unit\": null\n        },\n        {\n          \"symbol\": \"t\",\n          \"meaning\": \"时间\",\n          \"unit\": null\n        },\n        {\n          \"symbol\": \"\\\\mathcal{L}^{-1}\",\n          \"meaning\": \"拉普拉斯逆变换\",\n          \"unit\": null\n        },\n        {\n          \"symbol\": \"C\",\n          \"meaning\": \"\",\n          \"unit\": null\n        },\n        {\n          \"symbol\": \"s\",\n          \"meaning\": \"拉普拉斯变量\",\n          \"unit\": null\n        },\n        {\n          \"symbol\": \"s_1\",\n          \"meaning\": \"零点\",\n          \"unit\": null\n        },\n        {\n          \"symbol\": \"s_2\",\n          \"meaning\": \"零点\",\n          \"unit\": null\n        },\n        {\n          \"symbol\": \"U_s(s)\",\n          \"meaning\": \"\",\n          \"unit\": null\n        }\n      ],\n      \"conditions\": [],\n      \"uncertain_symbols\": [],\n      \"confidence\": 1.0\n    },\n    {\n      \"latex\": \"\\\\lim_{s \\\\to s_1} \\\\frac{e^{-s\\\\tau} - e^{-s_1\\\\tau}}{s - s_1} = -\\\\tau e^{-s_1\\\\tau} \\\\neq 0\",\n      \"name\": \"\",\n      \"meaning\": \"\",\n      \"symbols\": [\n        {\n          \"symbol\": \"s\",\n          \"meaning\": \"拉普拉斯变量\",\n          \"unit\": null\n        },\n        {\n          \"symbol\": \"s_1\",\n          \"meaning\": \"零点\",\n          \"unit\": null\n        },\n        {\n          \"symbol\": \"\\\\tau\",\n          \"meaning\": \"\",\n          \"unit\": null\n        },\n        {\n          \"symbol\": \"e\",\n          \"meaning\": \"自然对数的底\",\n          \"unit\": null\n        }\n      ],\n      \"conditions\": [],\n      \"uncertain_symbols\": [],\n      \"confidence\": 1.0\n    },\n    {\n      \"latex\": \"\\\\lim_{s \\\\to s_2} \\\\frac{e^{-s\\\\tau} - e^{-s_2\\\\tau}}{s - s_2} = -\\\\tau e^{-s_2\\\\tau} \\\\neq 0\",\n      \"name\": \"\",\n      \"meaning\": \"\",\n      \"symbols\": [\n        {\n          \"symbol\": \"s\",\n          \"meaning\": \"拉普拉斯变量\",\n          \"unit\": null\n        },\n        {\n          \"symbol\": \"s_2\",\n          \"meaning\": \"零点\",\n          \"unit\": null\n        },\n        {\n          \"symbol\": \"\\\\tau\",\n          \"meaning\": \"\",\n          \"unit\": null\n        },\n        {\n          \"symbol\": \"e\",\n          \"meaning\": \"自然对数的底\",\n          \"unit\": null\n        }\n      ],\n      \"conditions\": [],\n      \"uncertain_symbols\": [],\n      \"confidence\": 1.0\n    },\n    {\n      \"latex\": \"\\\\widetilde{U}_s(s) = C(s - s_1)(s - s_2)U_s(s) \\\\Leftrightarrow \\\\widetilde{U}_s(s) = \\\\frac{C}{\\\\tau^2} (e^{-s\\\\tau} - e^{s_2\\\\tau})(e^{-s\\\\tau} - e^{s_1\\\\tau})U_s(s",
+      "parse_error": "truncated_json",
+      "partial_response": true,
+      "review_reason": "uncertain_symbols",
+      "latex": "\\widetilde{u}_s(t) = \\mathcal{L}^{-1}[C(s - s_1)(s - s_2)U_s(s)]",
+      "name": "",
+      "meaning": "",
+      "symbols": [
+        {
+          "symbol": "\\widetilde{u}_s(t)",
+          "meaning": "",
+          "unit": null
+        },
+        {
+          "symbol": "t",
+          "meaning": "时间",
+          "unit": null
+        },
+        {
+          "symbol": "\\mathcal{L}^{-1}",
+          "meaning": "拉普拉斯逆变换",
+          "unit": null
+        },
+        {
+          "symbol": "C",
+          "meaning": "",
+          "unit": null
+        },
+        {
+          "symbol": "s",
+          "meaning": "拉普拉斯变量",
+          "unit": null
+        },
+        {
+          "symbol": "s_1",
+          "meaning": "零点",
+          "unit": null
+        },
+        {
+          "symbol": "s_2",
+          "meaning": "零点",
+          "unit": null
+        },
+        {
+          "symbol": "U_s(s)",
+          "meaning": "",
+          "unit": null
+        }
+      ],
+      "conditions": [],
+      "uncertain_symbols": [
+        "partial_json_response"
+      ],
+      "confidence": 0.37,
+      "plain_text": "\\widetilde{u}_s(t) = \\mathcal{L}^{-1}[C(s - s_1)(s - s_2)U_s(s)]",
+      "description": "",
+      "validation_issues": [
+        "uncertain_symbols"
+      ],
+      "validation_status": "review",
+      "review_required": true,
+      "review_status": "pending",
+      "indexable": false,
+      "formula_id": "w10-1-直线运动平台（下）_pptx_page_14_formula_4",
+      "page_num": 14
+    },
+    {
+      "source_image": "output/qwen_qwen3.7-plus_6/debug/images/w10-1-直线运动平台（下）_slide_14_img_2.png",
+      "source_type": "image_vlm",
+      "extraction_method": "qwen_api_formula",
+      "backend": "api",
+      "provider": "qwen",
+      "model": "qwen3.7-plus",
+      "image_index": 1,
+      "raw_response": "{\n  \"has_formula\": true,\n  \"formulas\": [\n    {\n      \"latex\": \"s_1 = -i\\\\omega_n\",\n      \"name\": \"\",\n      \"meaning\": \"\",\n      \"symbols\": [\n        {\n          \"symbol\": \"s_1\",\n          \"meaning\": \"零点\",\n          \"unit\": null\n        },\n        {\n          \"symbol\": \"i\",\n          \"meaning\": \"虚数单位\",\n          \"unit\": null\n        },\n        {\n          \"symbol\": \"\\\\omega_n\",\n          \"meaning\": \"\",\n          \"unit\": null\n        }\n      ],\n      \"conditions\": [],\n      \"uncertain_symbols\": [],\n      \"confidence\": 1.0\n    },\n    {\n      \"latex\": \"s_2 = i\\\\omega_n\",\n      \"name\": \"\",\n      \"meaning\": \"\",\n      \"symbols\": [\n        {\n          \"symbol\": \"s_2\",\n          \"meaning\": \"零点\",\n          \"unit\": null\n        },\n        {\n          \"symbol\": \"i\",\n          \"meaning\": \"虚数单位\",\n          \"unit\": null\n        },\n        {\n          \"symbol\": \"\\\\omega_n\",\n          \"meaning\": \"\",\n          \"unit\": null\n        }\n      ],\n      \"conditions\": [],\n      \"uncertain_symbols\": [],\n      \"confidence\": 1.0\n    },\n    {\n      \"latex\": \"\\\\widetilde{\\\\theta}(s) = \\\\frac{s^2}{l(s^2 + \\\\omega_n^2)} \\\\widetilde{U}_s(s) = \\\\frac{s^2}{l(s^2 + \\\\omega_n^2)} \\\\cdot C(s - s_1)(s - s_2)U_s(s)\",\n      \"name\": \"\",\n      \"meaning\": \"\",\n      \"symbols\": [\n        {\n          \"symbol\": \"\\\\widetilde{\\\\theta}(s)\",\n          \"meaning\": \"\",\n          \"unit\": null\n        },\n        {\n          \"symbol\": \"s\",\n          \"meaning\": \"拉普拉斯变量\",\n          \"unit\": null\n        },\n        {\n          \"symbol\": \"l\",\n          \"meaning\": \"\",\n          \"unit\": null\n        },\n        {\n          \"symbol\": \"\\\\omega_n\",\n          \"meaning\": \"\",\n          \"unit\": null\n        },\n        {\n          \"symbol\": \"\\\\widetilde{U}_s(s)\",\n          \"meaning\": \"\",\n          \"unit\": null\n        },\n        {\n          \"symbol\": \"C\",\n          \"meaning\": \"\",\n          \"unit\": null\n        },\n        {\n          \"symbol\": \"s_1\",\n          \"meaning\": \"零点\",\n          \"unit\": null\n        },\n        {\n          \"symbol\": \"s_2\",\n          \"meaning\": \"零点\",\n          \"unit\": null\n        },\n        {\n          \"symbol\": \"U_s(s)\",\n          \"meaning\": \"\",\n          \"unit\": null\n        }\n      ],\n      \"conditions\": [],\n      \"uncertain_symbols\": [],\n      \"confidence\": 1.0\n    },\n    {\n      \"latex\": \"\\\\widetilde{u}_s(t) = \\\\mathcal{L}^{-1}[C(s - s_1)(s - s_2)U_s(s)]\",\n      \"name\": \"\",\n      \"meaning\": \"\",\n      \"symbols\": [\n        {\n          \"symbol\": \"\\\\widetilde{u}_s(t)\",\n          \"meaning\": \"\",\n          \"unit\": null\n        },\n        {\n          \"symbol\": \"t\",\n          \"meaning\": \"时间\",\n          \"unit\": null\n        },\n        {\n          \"symbol\": \"\\\\mathcal{L}^{-1}\",\n          \"meaning\": \"拉普拉斯逆变换\",\n          \"unit\": null\n        },\n        {\n          \"symbol\": \"C\",\n          \"meaning\": \"\",\n          \"unit\": null\n        },\n        {\n          \"symbol\": \"s\",\n          \"meaning\": \"拉普拉斯变量\",\n          \"unit\": null\n        },\n        {\n          \"symbol\": \"s_1\",\n          \"meaning\": \"零点\",\n          \"unit\": null\n        },\n        {\n          \"symbol\": \"s_2\",\n          \"meaning\": \"零点\",\n          \"unit\": null\n        },\n        {\n          \"symbol\": \"U_s(s)\",\n          \"meaning\": \"\",\n          \"unit\": null\n        }\n      ],\n      \"conditions\": [],\n      \"uncertain_symbols\": [],\n      \"confidence\": 1.0\n    },\n    {\n      \"latex\": \"\\\\lim_{s \\\\to s_1} \\\\frac{e^{-s\\\\tau} - e^{-s_1\\\\tau}}{s - s_1} = -\\\\tau e^{-s_1\\\\tau} \\\\neq 0\",\n      \"name\": \"\",\n      \"meaning\": \"\",\n      \"symbols\": [\n        {\n          \"symbol\": \"s\",\n          \"meaning\": \"拉普拉斯变量\",\n          \"unit\": null\n        },\n        {\n          \"symbol\": \"s_1\",\n          \"meaning\": \"零点\",\n          \"unit\": null\n        },\n        {\n          \"symbol\": \"\\\\tau\",\n          \"meaning\": \"\",\n          \"unit\": null\n        },\n        {\n          \"symbol\": \"e\",\n          \"meaning\": \"自然对数的底\",\n          \"unit\": null\n        }\n      ],\n      \"conditions\": [],\n      \"uncertain_symbols\": [],\n      \"confidence\": 1.0\n    },\n    {\n      \"latex\": \"\\\\lim_{s \\\\to s_2} \\\\frac{e^{-s\\\\tau} - e^{-s_2\\\\tau}}{s - s_2} = -\\\\tau e^{-s_2\\\\tau} \\\\neq 0\",\n      \"name\": \"\",\n      \"meaning\": \"\",\n      \"symbols\": [\n        {\n          \"symbol\": \"s\",\n          \"meaning\": \"拉普拉斯变量\",\n          \"unit\": null\n        },\n        {\n          \"symbol\": \"s_2\",\n          \"meaning\": \"零点\",\n          \"unit\": null\n        },\n        {\n          \"symbol\": \"\\\\tau\",\n          \"meaning\": \"\",\n          \"unit\": null\n        },\n        {\n          \"symbol\": \"e\",\n          \"meaning\": \"自然对数的底\",\n          \"unit\": null\n        }\n      ],\n      \"conditions\": [],\n      \"uncertain_symbols\": [],\n      \"confidence\": 1.0\n    },\n    {\n      \"latex\": \"\\\\widetilde{U}_s(s) = C(s - s_1)(s - s_2)U_s(s) \\\\Leftrightarrow \\\\widetilde{U}_s(s) = \\\\frac{C}{\\\\tau^2} (e^{-s\\\\tau} - e^{s_2\\\\tau})(e^{-s\\\\tau} - e^{s_1\\\\tau})U_s(s",
+      "parse_error": "truncated_json",
+      "partial_response": true,
+      "review_reason": "uncertain_symbols",
+      "latex": "\\lim_{s \\to s_1} \\frac{e^{-s\\tau} - e^{-s_1\\tau}}{s - s_1} = -\\tau e^{-s_1\\tau} \\neq 0",
+      "name": "",
+      "meaning": "",
+      "symbols": [
+        {
+          "symbol": "s",
+          "meaning": "拉普拉斯变量",
+          "unit": null
+        },
+        {
+          "symbol": "s_1",
+          "meaning": "零点",
+          "unit": null
+        },
+        {
+          "symbol": "\\tau",
+          "meaning": "",
+          "unit": null
+        },
+        {
+          "symbol": "e",
+          "meaning": "自然对数的底",
+          "unit": null
+        }
+      ],
+      "conditions": [],
+      "uncertain_symbols": [
+        "partial_json_response"
+      ],
+      "confidence": 0.37,
+      "plain_text": "\\lim_{s \\to s_1} \\frac{e^{-s\\tau} - e^{-s_1\\tau}}{s - s_1} = -\\tau e^{-s_1\\tau} \\neq 0",
+      "description": "",
+      "validation_issues": [
+        "uncertain_symbols"
+      ],
+      "validation_status": "review",
+      "review_required": true,
+      "review_status": "pending",
+      "indexable": false,
+      "formula_id": "w10-1-直线运动平台（下）_pptx_page_14_formula_5",
+      "page_num": 14
+    },
+    {
+      "source_image": "output/qwen_qwen3.7-plus_6/debug/images/w10-1-直线运动平台（下）_slide_14_img_2.png",
+      "source_type": "image_vlm",
+      "extraction_method": "qwen_api_formula",
+      "backend": "api",
+      "provider": "qwen",
+      "model": "qwen3.7-plus",
+      "image_index": 1,
+      "raw_response": "{\n  \"has_formula\": true,\n  \"formulas\": [\n    {\n      \"latex\": \"s_1 = -i\\\\omega_n\",\n      \"name\": \"\",\n      \"meaning\": \"\",\n      \"symbols\": [\n        {\n          \"symbol\": \"s_1\",\n          \"meaning\": \"零点\",\n          \"unit\": null\n        },\n        {\n          \"symbol\": \"i\",\n          \"meaning\": \"虚数单位\",\n          \"unit\": null\n        },\n        {\n          \"symbol\": \"\\\\omega_n\",\n          \"meaning\": \"\",\n          \"unit\": null\n        }\n      ],\n      \"conditions\": [],\n      \"uncertain_symbols\": [],\n      \"confidence\": 1.0\n    },\n    {\n      \"latex\": \"s_2 = i\\\\omega_n\",\n      \"name\": \"\",\n      \"meaning\": \"\",\n      \"symbols\": [\n        {\n          \"symbol\": \"s_2\",\n          \"meaning\": \"零点\",\n          \"unit\": null\n        },\n        {\n          \"symbol\": \"i\",\n          \"meaning\": \"虚数单位\",\n          \"unit\": null\n        },\n        {\n          \"symbol\": \"\\\\omega_n\",\n          \"meaning\": \"\",\n          \"unit\": null\n        }\n      ],\n      \"conditions\": [],\n      \"uncertain_symbols\": [],\n      \"confidence\": 1.0\n    },\n    {\n      \"latex\": \"\\\\widetilde{\\\\theta}(s) = \\\\frac{s^2}{l(s^2 + \\\\omega_n^2)} \\\\widetilde{U}_s(s) = \\\\frac{s^2}{l(s^2 + \\\\omega_n^2)} \\\\cdot C(s - s_1)(s - s_2)U_s(s)\",\n      \"name\": \"\",\n      \"meaning\": \"\",\n      \"symbols\": [\n        {\n          \"symbol\": \"\\\\widetilde{\\\\theta}(s)\",\n          \"meaning\": \"\",\n          \"unit\": null\n        },\n        {\n          \"symbol\": \"s\",\n          \"meaning\": \"拉普拉斯变量\",\n          \"unit\": null\n        },\n        {\n          \"symbol\": \"l\",\n          \"meaning\": \"\",\n          \"unit\": null\n        },\n        {\n          \"symbol\": \"\\\\omega_n\",\n          \"meaning\": \"\",\n          \"unit\": null\n        },\n        {\n          \"symbol\": \"\\\\widetilde{U}_s(s)\",\n          \"meaning\": \"\",\n          \"unit\": null\n        },\n        {\n          \"symbol\": \"C\",\n          \"meaning\": \"\",\n          \"unit\": null\n        },\n        {\n          \"symbol\": \"s_1\",\n          \"meaning\": \"零点\",\n          \"unit\": null\n        },\n        {\n          \"symbol\": \"s_2\",\n          \"meaning\": \"零点\",\n          \"unit\": null\n        },\n        {\n          \"symbol\": \"U_s(s)\",\n          \"meaning\": \"\",\n          \"unit\": null\n        }\n      ],\n      \"conditions\": [],\n      \"uncertain_symbols\": [],\n      \"confidence\": 1.0\n    },\n    {\n      \"latex\": \"\\\\widetilde{u}_s(t) = \\\\mathcal{L}^{-1}[C(s - s_1)(s - s_2)U_s(s)]\",\n      \"name\": \"\",\n      \"meaning\": \"\",\n      \"symbols\": [\n        {\n          \"symbol\": \"\\\\widetilde{u}_s(t)\",\n          \"meaning\": \"\",\n          \"unit\": null\n        },\n        {\n          \"symbol\": \"t\",\n          \"meaning\": \"时间\",\n          \"unit\": null\n        },\n        {\n          \"symbol\": \"\\\\mathcal{L}^{-1}\",\n          \"meaning\": \"拉普拉斯逆变换\",\n          \"unit\": null\n        },\n        {\n          \"symbol\": \"C\",\n          \"meaning\": \"\",\n          \"unit\": null\n        },\n        {\n          \"symbol\": \"s\",\n          \"meaning\": \"拉普拉斯变量\",\n          \"unit\": null\n        },\n        {\n          \"symbol\": \"s_1\",\n          \"meaning\": \"零点\",\n          \"unit\": null\n        },\n        {\n          \"symbol\": \"s_2\",\n          \"meaning\": \"零点\",\n          \"unit\": null\n        },\n        {\n          \"symbol\": \"U_s(s)\",\n          \"meaning\": \"\",\n          \"unit\": null\n        }\n      ],\n      \"conditions\": [],\n      \"uncertain_symbols\": [],\n      \"confidence\": 1.0\n    },\n    {\n      \"latex\": \"\\\\lim_{s \\\\to s_1} \\\\frac{e^{-s\\\\tau} - e^{-s_1\\\\tau}}{s - s_1} = -\\\\tau e^{-s_1\\\\tau} \\\\neq 0\",\n      \"name\": \"\",\n      \"meaning\": \"\",\n      \"symbols\": [\n        {\n          \"symbol\": \"s\",\n          \"meaning\": \"拉普拉斯变量\",\n          \"unit\": null\n        },\n        {\n          \"symbol\": \"s_1\",\n          \"meaning\": \"零点\",\n          \"unit\": null\n        },\n        {\n          \"symbol\": \"\\\\tau\",\n          \"meaning\": \"\",\n          \"unit\": null\n        },\n        {\n          \"symbol\": \"e\",\n          \"meaning\": \"自然对数的底\",\n          \"unit\": null\n        }\n      ],\n      \"conditions\": [],\n      \"uncertain_symbols\": [],\n      \"confidence\": 1.0\n    },\n    {\n      \"latex\": \"\\\\lim_{s \\\\to s_2} \\\\frac{e^{-s\\\\tau} - e^{-s_2\\\\tau}}{s - s_2} = -\\\\tau e^{-s_2\\\\tau} \\\\neq 0\",\n      \"name\": \"\",\n      \"meaning\": \"\",\n      \"symbols\": [\n        {\n          \"symbol\": \"s\",\n          \"meaning\": \"拉普拉斯变量\",\n          \"unit\": null\n        },\n        {\n          \"symbol\": \"s_2\",\n          \"meaning\": \"零点\",\n          \"unit\": null\n        },\n        {\n          \"symbol\": \"\\\\tau\",\n          \"meaning\": \"\",\n          \"unit\": null\n        },\n        {\n          \"symbol\": \"e\",\n          \"meaning\": \"自然对数的底\",\n          \"unit\": null\n        }\n      ],\n      \"conditions\": [],\n      \"uncertain_symbols\": [],\n      \"confidence\": 1.0\n    },\n    {\n      \"latex\": \"\\\\widetilde{U}_s(s) = C(s - s_1)(s - s_2)U_s(s) \\\\Leftrightarrow \\\\widetilde{U}_s(s) = \\\\frac{C}{\\\\tau^2} (e^{-s\\\\tau} - e^{s_2\\\\tau})(e^{-s\\\\tau} - e^{s_1\\\\tau})U_s(s",
+      "parse_error": "truncated_json",
+      "partial_response": true,
+      "review_reason": "uncertain_symbols",
+      "latex": "\\lim_{s \\to s_2} \\frac{e^{-s\\tau} - e^{-s_2\\tau}}{s - s_2} = -\\tau e^{-s_2\\tau} \\neq 0",
+      "name": "",
+      "meaning": "",
+      "symbols": [
+        {
+          "symbol": "s",
+          "meaning": "拉普拉斯变量",
+          "unit": null
+        },
+        {
+          "symbol": "s_2",
+          "meaning": "零点",
+          "unit": null
+        },
+        {
+          "symbol": "\\tau",
+          "meaning": "",
+          "unit": null
+        },
+        {
+          "symbol": "e",
+          "meaning": "自然对数的底",
+          "unit": null
+        }
+      ],
+      "conditions": [],
+      "uncertain_symbols": [
+        "partial_json_response"
+      ],
+      "confidence": 0.37,
+      "plain_text": "\\lim_{s \\to s_2} \\frac{e^{-s\\tau} - e^{-s_2\\tau}}{s - s_2} = -\\tau e^{-s_2\\tau} \\neq 0",
+      "description": "",
+      "validation_issues": [
+        "uncertain_symbols"
+      ],
+      "validation_status": "review",
+      "review_required": true,
+      "review_status": "pending",
+      "indexable": false,
+      "formula_id": "w10-1-直线运动平台（下）_pptx_page_14_formula_6",
+      "page_num": 14
+    }
+  ],
+  "timestamp": "2026-08-19T10:42:40.775726"
+}

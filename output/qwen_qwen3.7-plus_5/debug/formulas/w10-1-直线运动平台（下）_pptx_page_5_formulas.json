@@ -1,0 +1,69 @@
+{
+  "page": 5,
+  "formula_count": 1,
+  "accepted_count": 1,
+  "review_count": 0,
+  "formulas": [
+    {
+      "source_image": "output/qwen_qwen3.7-plus_5/debug/images/w10-1-直线运动平台（下）_slide_5_img_1.png",
+      "source_type": "image_vlm",
+      "extraction_method": "qwen_api_formula",
+      "backend": "api",
+      "provider": "qwen",
+      "model": "qwen3.7-plus",
+      "image_index": 0,
+      "raw_response": "{\n  \"has_formula\": true,\n  \"formulas\": [\n    {\n      \"latex\": \"y[n] = \\\\frac{1}{M} \\\\sum_{k=0}^{M-1} x[n-k] \\\\Rightarrow y[n] = y[n-1] + \\\\frac{x[n] - x[n-M]}{M}\",\n      \"name\": \"移动平均滤波递推公式\",\n      \"meaning\": \"移动平均（Moving Average, MA）滤波器的定义式及其递推计算形式，用于平滑信号中的高频噪声。\",\n      \"symbols\": [\n        {\n          \"symbol\": \"y[n]\",\n          \"meaning\": \"第n时刻的滤波输出值\",\n          \"unit\": null\n        },\n        {\n          \"symbol\": \"M\",\n          \"meaning\": \"移动平均的窗口长度（样本数/数组长度）\",\n          \"unit\": null\n        },\n        {\n          \"symbol\": \"x[n-k]\",\n          \"meaning\": \"历史输入信号值\",\n          \"unit\": null\n        },\n        {\n          \"symbol\": \"k\",\n          \"meaning\": \"求和索引变量\",\n          \"unit\": null\n        },\n        {\n          \"symbol\": \"x[n]\",\n          \"meaning\": \"当前时刻的输入信号值（新数据）\",\n          \"unit\": null\n        },\n        {\n          \"symbol\": \"x[n-M]\",\n          \"meaning\": \"M个时刻前的输入信号值（待删除的旧数据）\",\n          \"unit\": null\n        }\n      ],\n      \"conditions\": [],\n      \"uncertain_symbols\": [],\n      \"confidence\": 0.95\n    }\n  ]\n}",
+      "parse_error": null,
+      "partial_response": false,
+      "review_reason": null,
+      "latex": "y[n] = \\frac{1}{M} \\sum_{k=0}^{M-1} x[n-k] \\Rightarrow y[n] = y[n-1] + \\frac{x[n] - x[n-M]}{M}",
+      "name": "移动平均滤波递推公式",
+      "meaning": "移动平均（Moving Average, MA）滤波器的定义式及其递推计算形式，用于平滑信号中的高频噪声。",
+      "symbols": [
+        {
+          "symbol": "y[n]",
+          "meaning": "第n时刻的滤波输出值",
+          "unit": null
+        },
+        {
+          "symbol": "M",
+          "meaning": "移动平均的窗口长度（样本数/数组长度）",
+          "unit": null
+        },
+        {
+          "symbol": "x[n-k]",
+          "meaning": "历史输入信号值",
+          "unit": null
+        },
+        {
+          "symbol": "k",
+          "meaning": "求和索引变量",
+          "unit": null
+        },
+        {
+          "symbol": "x[n]",
+          "meaning": "当前时刻的输入信号值（新数据）",
+          "unit": null
+        },
+        {
+          "symbol": "x[n-M]",
+          "meaning": "M个时刻前的输入信号值（待删除的旧数据）",
+          "unit": null
+        }
+      ],
+      "conditions": [],
+      "uncertain_symbols": [],
+      "confidence": 0.95,
+      "plain_text": "y[n] = \\frac{1}{M} \\sum_{k=0}^{M-1} x[n-k] \\Rightarrow y[n] = y[n-1] + \\frac{x[n] - x[n-M]}{M}",
+      "description": "移动平均（Moving Average, MA）滤波器的定义式及其递推计算形式，用于平滑信号中的高频噪声。",
+      "validation_issues": [],
+      "validation_status": "passed",
+      "review_required": false,
+      "review_status": null,
+      "indexable": true,
+      "formula_id": "w10-1-直线运动平台（下）_pptx_page_5_formula_1",
+      "page_num": 5
+    }
+  ],
+  "timestamp": "2026-08-18T01:57:09.525854"
+}

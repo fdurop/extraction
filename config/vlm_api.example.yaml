@@ -11,8 +11,13 @@ vlm:
   timeout_seconds: 120
   retry_count: 2
   max_tokens: 700
+  formula_max_tokens: 2000
+  table_max_tokens: 1500
+  table_timeout_seconds: 150
+  table_retry_count: 1
   temperature: 0.1
   image_detail: auto
+  enable_thinking: false
 
 # Dedicated semantic-vector API verified with 1024-dimensional output.
 # If api_key is empty, vlm.api_key is reused.

@@ -1,0 +1,33 @@
+{
+  "original_path": "output/qwen_qwen3.7-plus_6/debug/images/w10-1-直线运动平台（下）_slide_10_img_1.png",
+  "enhanced_path": "output/qwen_qwen3.7-plus_6/debug/images/w10-1-直线运动平台（下）_slide_10_img_1_enhanced.png",
+  "description": "类型：照片\n图片分为上下两部分对比展示实验现象。上方画面右上角标注“输入整形”，显示悬挂于水平移动导轨下的金色圆锥摆锤处于静止垂直状态。下方画面右上角标注“无整形”，显示相同装置中该摆锤呈现明显的倾斜与摆动姿态。背景均为白色金属框架实验台及实验室环境。",
+  "metadata": {
+    "generation": {
+      "method": "qwen_api",
+      "backend": "api",
+      "provider": "qwen",
+      "model": "qwen3.7-plus",
+      "status": "success",
+      "api_error": null
+    },
+    "review": {
+      "required": false,
+      "status": null,
+      "reason": null,
+      "course_relevant": true
+    }
+  },
+  "error": null,
+  "method": "qwen_api",
+  "backend": "api",
+  "provider": "qwen",
+  "model": "qwen3.7-plus",
+  "status": "success",
+  "api_error": null,
+  "indexable": true,
+  "review_required": false,
+  "review_reason": null,
+  "review_status": null,
+  "course_relevant": true
+}

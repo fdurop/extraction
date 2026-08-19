@@ -1,0 +1,2 @@
+﻿序号,LaTeX公式,名称,描述,来源图像,提取方法,置信度,验证状态,是否需审核
+1,Peak=RMS\times 1.4,Current Table Formula,Relationship between peak current and RMS current,output/qwen_qwen3.7-plus_4/debug/images/w08-1-步进电机驱动器_p11_img2.jpeg,qwen_api_formula,0.95,passed,False

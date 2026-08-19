@@ -1,0 +1,14 @@
+{
+  "source_image": "output/qwen_qwen3.7-plus_5/debug/images/w10-1-直线运动平台（下）_slide_7_img_1.png",
+  "extraction_method": "qwen_api_智能识别",
+  "language": "cpp",
+  "description": "该代码基于 Arduino 平台，使用 `TimerOne` 库设置了一个周期为 1 秒（1,000,000 微秒）的定时器中断。在 `setup()` 函数中初始化内置 LED 引脚并启动定时器。每当定时器中断触发时，调用 `LED()` 函数，该函数通过静态变量 `light` 交替改变内置 LED（`LED_BUILTIN`）的高低电平状态，从而实现 LED 灯每秒闪烁一次（亮灭交替）的效果。",
+  "code_file": "w10-1-直线运动平台（下）_pptx_page_7_code_1.cpp",
+  "page": 7,
+  "index": 1,
+  "timestamp": "2026-08-18T01:59:35.778883",
+  "raw_response": "语言: C++ (Arduino)\n\n```cpp\n#include <TimerOne.h>\n\nvoid setup() {\n  //初始化LED端口\n  pinMode(LED_BUILTIN, OUTPUT);\n\n  // 每 1 s 触发一次时间中断\n  Timer1.initialize(long(1 * 1E6));\n\n  // 设置中断响应函数\n  Timer1.attachInterrupt(LED);\n\n  // 启动时间中断\n  Timer1.start();\n}\n\nvoid LED() {\n  static bool light = true;\n\n  digitalWrite(LED_BUILTIN, light);\n  light = !light;\n}\n```\n\n功能: 该代码基于 Arduino 平台，使用 `TimerOne` 库设置了一个周期为 1 秒（1,000,000 微秒）的定时器中断。在 `setup()` 函数中初始化内置 LED 引脚并启动定时器。每当定时器中断触发时，调用 `LED()` 函数，该函数通过静态变量 `light` 交替改变内置 LED（`LED_BUILTIN`）的高低电平状态，从而实现 LED 灯每秒闪烁一次（亮灭交替）的效果。",
+  "backend": "api",
+  "provider": "qwen",
+  "model": "qwen3.7-plus"
+}

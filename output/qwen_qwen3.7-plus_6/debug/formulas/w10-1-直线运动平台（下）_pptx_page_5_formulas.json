@@ -1,0 +1,64 @@
+{
+  "page": 5,
+  "formula_count": 1,
+  "accepted_count": 1,
+  "review_count": 0,
+  "formulas": [
+    {
+      "source_image": "output/qwen_qwen3.7-plus_6/debug/images/w10-1-直线运动平台（下）_slide_5_img_1.png",
+      "source_type": "image_vlm",
+      "extraction_method": "qwen_api_formula",
+      "backend": "api",
+      "provider": "qwen",
+      "model": "qwen3.7-plus",
+      "image_index": 0,
+      "raw_response": "{\n  \"has_formula\": true,\n  \"formulas\": [\n    {\n      \"latex\": \"y[n] = \\\\frac{1}{M} \\\\sum_{k=0}^{M-1} x[n-k] \\\\Rightarrow y[n] = y[n-1] + \\\\frac{x[n] - x[n-M]}{M}\",\n      \"name\": \"移动平均低通滤波递推公式\",\n      \"meaning\": \"滑动窗口长度为M的移动平均滤波器，将直接求和形式转化为利用前一刻输出值的递推形式以提高计算效率\",\n      \"symbols\": [\n        {\n          \"symbol\": \"y[n]\",\n          \"meaning\": \"第n时刻的滤波输出值\",\n          \"unit\": null\n        },\n        {\n          \"symbol\": \"x[n]\",\n          \"meaning\": \"第n时刻的输入信号采样值\",\n          \"unit\": null\n        },\n        {\n          \"symbol\": \"M\",\n          \"meaning\": \"移动平均的窗口长度（采样点数）\",\n          \"unit\": null\n        },\n        {\n          \"symbol\": \"k\",\n          \"meaning\": \"求和索引变量\",\n          \"unit\": null\n        },\n        {\n          \"symbol\": \"n\",\n          \"meaning\": \"离散时间索引\",\n          \"unit\": null\n        }\n      ],\n      \"conditions\": [],\n      \"uncertain_symbols\": [],\n      \"confidence\": 1.0\n    }\n  ]\n}",
+      "parse_error": null,
+      "partial_response": false,
+      "review_reason": null,
+      "latex": "y[n] = \\frac{1}{M} \\sum_{k=0}^{M-1} x[n-k] \\Rightarrow y[n] = y[n-1] + \\frac{x[n] - x[n-M]}{M}",
+      "name": "移动平均低通滤波递推公式",
+      "meaning": "滑动窗口长度为M的移动平均滤波器，将直接求和形式转化为利用前一刻输出值的递推形式以提高计算效率",
+      "symbols": [
+        {
+          "symbol": "y[n]",
+          "meaning": "第n时刻的滤波输出值",
+          "unit": null
+        },
+        {
+          "symbol": "x[n]",
+          "meaning": "第n时刻的输入信号采样值",
+          "unit": null
+        },
+        {
+          "symbol": "M",
+          "meaning": "移动平均的窗口长度（采样点数）",
+          "unit": null
+        },
+        {
+          "symbol": "k",
+          "meaning": "求和索引变量",
+          "unit": null
+        },
+        {
+          "symbol": "n",
+          "meaning": "离散时间索引",
+          "unit": null
+        }
+      ],
+      "conditions": [],
+      "uncertain_symbols": [],
+      "confidence": 1.0,
+      "plain_text": "y[n] = \\frac{1}{M} \\sum_{k=0}^{M-1} x[n-k] \\Rightarrow y[n] = y[n-1] + \\frac{x[n] - x[n-M]}{M}",
+      "description": "滑动窗口长度为M的移动平均滤波器，将直接求和形式转化为利用前一刻输出值的递推形式以提高计算效率",
+      "validation_issues": [],
+      "validation_status": "passed",
+      "review_required": false,
+      "review_status": null,
+      "indexable": true,
+      "formula_id": "w10-1-直线运动平台（下）_pptx_page_5_formula_1",
+      "page_num": 5
+    }
+  ],
+  "timestamp": "2026-08-19T10:39:33.990618"
+}

@@ -1,0 +1,136 @@
+[
+  {
+    "document_id": "doc_734b0dcb18f2",
+    "user_id": "default_user",
+    "course_id": "default_course",
+    "file_name": "w08-1-步进电机驱动器",
+    "file_type": "pdf",
+    "file_path": "input/w08-1-步进电机驱动器.pdf",
+    "page_count": 12,
+    "chapter_title": "w08-1-步进电机驱动器_pdf",
+    "document_order": null,
+    "metadata": {
+      "filename": "input/w08-1-步进电机驱动器.pdf",
+      "format": "pdf",
+      "total_pages": 12,
+      "pdf_metadata": {
+        "format": "PDF 1.7",
+        "title": "机电系统原理及实践",
+        "author": "郭 明旻",
+        "subject": "",
+        "keywords": "",
+        "creator": "Acrobat PDFMaker 25 PowerPoint 版",
+        "producer": "Adobe PDF Library 25.1.211",
+        "creationDate": "20250407111214+08'00'",
+        "modDate": "20250407111727+08'00'",
+        "trapped": "",
+        "encryption": "Standard V5 R6 256-bit AES"
+      },
+      "file_name": "w08-1-步进电机驱动器",
+      "file_type": "pdf",
+      "file_path": "input/w08-1-步进电机驱动器.pdf"
+    }
+  },
+  {
+    "document_id": "doc_e3f9d5ecb045",
+    "user_id": "default_user",
+    "course_id": "default_course",
+    "file_name": "w09-1-直线运动平台（上） - 副本",
+    "file_type": "pdf",
+    "file_path": "input/w09-1-直线运动平台（上） - 副本.pdf",
+    "page_count": 13,
+    "chapter_title": "w09-1-直线运动平台（上） - 副本_pdf",
+    "document_order": null,
+    "metadata": {
+      "filename": "input/w09-1-直线运动平台（上） - 副本.pdf",
+      "format": "pdf",
+      "total_pages": 13,
+      "pdf_metadata": {
+        "format": "PDF 1.7",
+        "title": "",
+        "author": "",
+        "subject": "",
+        "keywords": "",
+        "creator": "Microsoft® PowerPoint® LTSC",
+        "producer": "pdf-lib (https://github.com/Hopding/pdf-lib)",
+        "creationDate": "20250513082607+08'00'",
+        "modDate": "20250513082927+08'00'",
+        "trapped": "",
+        "encryption": "Standard V5 R6 256-bit AES"
+      },
+      "file_name": "w09-1-直线运动平台（上） - 副本",
+      "file_type": "pdf",
+      "file_path": "input/w09-1-直线运动平台（上） - 副本.pdf"
+    }
+  },
+  {
+    "document_id": "doc_af60fdc9c262",
+    "user_id": "default_user",
+    "course_id": "default_course",
+    "file_name": "w10-1-直线运动平台（下）",
+    "file_type": "pptx",
+    "file_path": "input/w10-1-直线运动平台（下）.pptx",
+    "page_count": 18,
+    "chapter_title": "w10-1-直线运动平台（下）_pptx",
+    "document_order": null,
+    "metadata": {
+      "filename": "input/w10-1-直线运动平台（下）.pptx",
+      "format": "pptx",
+      "total_slides": 18,
+      "image_mapping": {
+        "10": [
+          "output/qwen_qwen3.7-plus_6/debug/images/w10-1-直线运动平台（下）_slide_10_img_1.png"
+        ],
+        "11": [
+          "output/qwen_qwen3.7-plus_6/debug/images/w10-1-直线运动平台（下）_slide_11_img_1.png",
+          "output/qwen_qwen3.7-plus_6/debug/images/w10-1-直线运动平台（下）_slide_11_img_2.png"
+        ],
+        "12": [
+          "output/qwen_qwen3.7-plus_6/debug/images/w10-1-直线运动平台（下）_slide_12_img_1.png",
+          "output/qwen_qwen3.7-plus_6/debug/images/w10-1-直线运动平台（下）_slide_12_img_2.png"
+        ],
+        "13": [
+          "output/qwen_qwen3.7-plus_6/debug/images/w10-1-直线运动平台（下）_slide_13_img_1.png",
+          "output/qwen_qwen3.7-plus_6/debug/images/w10-1-直线运动平台（下）_slide_13_img_2.png"
+        ],
+        "14": [
+          "output/qwen_qwen3.7-plus_6/debug/images/w10-1-直线运动平台（下）_slide_14_img_1.png",
+          "output/qwen_qwen3.7-plus_6/debug/images/w10-1-直线运动平台（下）_slide_14_img_2.png"
+        ],
+        "15": [
+          "output/qwen_qwen3.7-plus_6/debug/images/w10-1-直线运动平台（下）_slide_15_img_1.png",
+          "output/qwen_qwen3.7-plus_6/debug/images/w10-1-直线运动平台（下）_slide_15_img_2.png",
+          "output/qwen_qwen3.7-plus_6/debug/images/w10-1-直线运动平台（下）_slide_15_img_3.png",
+          "output/qwen_qwen3.7-plus_6/debug/images/w10-1-直线运动平台（下）_slide_15_img_4.png"
+        ],
+        "16": [
+          "output/qwen_qwen3.7-plus_6/debug/images/w10-1-直线运动平台（下）_slide_16_img_1.png"
+        ],
+        "4": [
+          "output/qwen_qwen3.7-plus_6/debug/images/w10-1-直线运动平台（下）_slide_4_img_1.png",
+          "output/qwen_qwen3.7-plus_6/debug/images/w10-1-直线运动平台（下）_slide_4_img_2.png",
+          "output/qwen_qwen3.7-plus_6/debug/images/w10-1-直线运动平台（下）_slide_4_img_3.png"
+        ],
+        "5": [
+          "output/qwen_qwen3.7-plus_6/debug/images/w10-1-直线运动平台（下）_slide_5_img_1.png"
+        ],
+        "6": [
+          "output/qwen_qwen3.7-plus_6/debug/images/w10-1-直线运动平台（下）_slide_6_img_1.png",
+          "output/qwen_qwen3.7-plus_6/debug/images/w10-1-直线运动平台（下）_slide_6_img_2.png"
+        ],
+        "7": [
+          "output/qwen_qwen3.7-plus_6/debug/images/w10-1-直线运动平台（下）_slide_7_img_1.png"
+        ],
+        "8": [
+          "output/qwen_qwen3.7-plus_6/debug/images/w10-1-直线运动平台（下）_slide_8_img_1.png"
+        ],
+        "9": [
+          "output/qwen_qwen3.7-plus_6/debug/images/w10-1-直线运动平台（下）_slide_9_img_1.png"
+        ]
+      },
+      "file_name": "w10-1-直线运动平台（下）",
+      "file_type": "pptx",
+      "file_path": "input/w10-1-直线运动平台（下）.pptx"
+    }
+  }
+]

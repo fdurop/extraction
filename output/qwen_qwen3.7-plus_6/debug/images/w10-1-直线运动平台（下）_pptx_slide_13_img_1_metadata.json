@@ -1,0 +1,33 @@
+{
+  "original_path": "output/qwen_qwen3.7-plus_6/debug/images/w10-1-直线运动平台（下）_slide_13_img_1.png",
+  "enhanced_path": "output/qwen_qwen3.7-plus_6/debug/images/w10-1-直线运动平台（下）_slide_13_img_1_enhanced.png",
+  "description": "类型：公式\n图片为白底蓝框矩形，内部包含红色文字。上方标题为“两个极点”，下方为数学公式“s_{1,2} = \\mp i\\omega_n”。该公式描述了极点在复平面虚轴上的位置，与页面上下文中的传递函数及输入整形主题直接相关。",
+  "metadata": {
+    "generation": {
+      "method": "qwen_api",
+      "backend": "api",
+      "provider": "qwen",
+      "model": "qwen3.7-plus",
+      "status": "success",
+      "api_error": null
+    },
+    "review": {
+      "required": false,
+      "status": null,
+      "reason": null,
+      "course_relevant": true
+    }
+  },
+  "error": null,
+  "method": "qwen_api",
+  "backend": "api",
+  "provider": "qwen",
+  "model": "qwen3.7-plus",
+  "status": "success",
+  "api_error": null,
+  "indexable": true,
+  "review_required": false,
+  "review_reason": null,
+  "review_status": null,
+  "course_relevant": true
+}

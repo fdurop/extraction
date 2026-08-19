@@ -1,0 +1,248 @@
+{
+  "page": 14,
+  "formula_count": 6,
+  "accepted_count": 6,
+  "review_count": 0,
+  "formulas": [
+    {
+      "source_image": "output/qwen_qwen3.7-plus_5/debug/images/w10-1-直线运动平台（下）_slide_14_img_1.png",
+      "source_type": "image_vlm",
+      "extraction_method": "qwen_api_formula",
+      "backend": "api",
+      "provider": "qwen",
+      "model": "qwen3.7-plus",
+      "image_index": 0,
+      "raw_response": "{\"has_formula\":true,\"formulas\":[{\"latex\":\"\\\\tilde{U}_s(s)\",\"name\":\"\",\"meaning\":\"整形后输入的拉氏变换\",\"symbols\":[{\"symbol\":\"\\\\tilde{U}_s(s)\",\"meaning\":\"整形后输入的拉氏变换\",\"unit\":null}],\"conditions\":[],\"uncertain_symbols\":[],\"confidence\":0.95}]}",
+      "parse_error": null,
+      "partial_response": false,
+      "review_reason": null,
+      "latex": "\\tilde{U}_s(s)",
+      "name": "",
+      "meaning": "整形后输入的拉氏变换",
+      "symbols": [
+        {
+          "symbol": "\\tilde{U}_s(s)",
+          "meaning": "整形后输入的拉氏变换",
+          "unit": null
+        }
+      ],
+      "conditions": [],
+      "uncertain_symbols": [],
+      "confidence": 0.95,
+      "plain_text": "\\tilde{U}_s(s)",
+      "description": "整形后输入的拉氏变换",
+      "validation_issues": [],
+      "validation_status": "passed",
+      "review_required": false,
+      "review_status": null,
+      "indexable": true,
+      "formula_id": "w10-1-直线运动平台（下）_pptx_page_14_formula_1",
+      "page_num": 14
+    },
+    {
+      "source_image": "output/qwen_qwen3.7-plus_5/debug/images/w10-1-直线运动平台（下）_slide_14_img_2.png",
+      "source_type": "image_vlm",
+      "extraction_method": "qwen_api_formula",
+      "backend": "api",
+      "provider": "qwen",
+      "model": "qwen3.7-plus",
+      "image_index": 1,
+      "raw_response": "```json\n{\n  \"has_formula\": true,\n  \"formulas\": [\n    {\n      \"latex\": \"s_1 = -i\\\\omega_n \\\\text{ 和 } s_2 = i\\\\omega_n\",\n      \"name\": \"零点配置\",\n      \"meaning\": \"配置两个零点以消除残余振动\",\n      \"symbols\": [\n        {\n          \"symbol\": \"s_1, s_2\",\n          \"meaning\": \"系统零点\",\n          \"unit\": null\n        },\n        {\n          \"symbol\": \"\\\\omega_n\",\n          \"meaning\": \"自然频率\",\n          \"unit\": \"rad/s\"\n        }\n      ],\n      \"conditions\": [],\n      \"uncertain_symbols\": [],\n      \"confidence\": 0.95\n    },\n    {\n      \"latex\": \"\\\\tilde{\\\\theta}(s) = \\\\frac{s^2}{l(s^2+\\\\omega_n^2)}\\\\tilde{U}_s(s) = \\\\frac{s^2}{l(s^2+\\\\omega_n^2)} \\\\cdot C(s-s_1)(s-s_2)U_s(s)\",\n      \"name\": \"系统响应与整形输入关系\",\n      \"meaning\": \"消除残余振动后的系统输出表达式\",\n      \"symbols\": [\n        {\n          \"symbol\": \"\\\\tilde{\\\\theta}(s)\",\n          \"meaning\": \"输出（如摆角）的Laplace变换\",\n          \"unit\": null\n        },\n        {\n          \"symbol\": \"l\",\n          \"meaning\": \"系统参数（如摆长）\",\n          \"unit\": \"m\"\n        },\n        {\n          \"symbol\": \"\\\\tilde{U}_s(s)\",\n          \"meaning\": \"整形后的输入Laplace变换\",\n          \"unit\": null\n        },\n        {\n          \"symbol\": \"C\",\n          \"meaning\": \"常数增益\",\n          \"unit\": null\n        },\n        {\n          \"symbol\": \"U_s(s)\",\n          \"meaning\": \"原始输入Laplace变换\",\n          \"unit\": null\n        }\n      ],\n      \"conditions\": [],\n      \"uncertain_symbols\": [],\n      \"confidence\": 0.95\n    },\n    {\n      \"latex\": \"\\\\tilde{u}_s(t) = \\\\mathcal{L}^{-1}[C(s-s_1)(s-s_2)U_s(s)]\",\n      \"name\": \"输入整形时域表达式\",\n      \"meaning\": \"求整形输入的Laplace逆变换\",\n      \"symbols\": [\n        {\n          \"symbol\": \"\\\\tilde{u}_s(t)\",\n          \"meaning\": \"时域整形输入信号\",\n          \"unit\": null\n        },\n        {\n          \"symbol\": \"\\\\mathcal{L}^{-1}\",\n          \"meaning\": \"Laplace逆变换\",\n          \"unit\": null\n        }\n      ],\n      \"conditions\": [],\n      \"uncertain_symbols\": [],\n      \"confidence\": 0.95\n    },\n    {\n      \"latex\": \"\\\\lim_{s\\\\to s_1} \\\\frac{e^{-s\\\\tau} - e^{-s_1\\\\tau}}{s-s_1} = -\\\\tau e^{-s_1\\\\tau} \\\\neq 0, \\\\quad \\\\lim_{s\\\\to s_2} \\\\frac{e^{-s\\\\tau} - e^{-s_2\\\\tau}}{s-s_2} = -\\\\tau e^{-s_2\\\\tau} \\\\neq 0\",\n      \"name\": \"利用L'Hôpital法则求极限\",\n      \"meaning\": \"验证零点处的极限性质\",\n      \"symbols\": [\n        {\n          \"symbol\": \"\\\\tau\",\n          \"meaning\": \"时间延迟或间隔\",\n          \"unit\": \"s\"\n        },\n        {\n          \"symbol\": \"s\",\n          \"meaning\": \"Laplace复变量\",\n          \"unit\": null\n        }\n      ],\n      \"conditions\": [],\n      \"uncertain_symbols\": [],\n      \"confidence\": 0.95\n    },\n    {\n      \"latex\": \"\\\\tilde{U}_s(s) = C(s-s_1)(s-s_2)U_s(s) \\\\Leftrightarrow \\\\tilde{U}_s(s) = \\\\frac{C}{\\\\tau^2}(e^{-s\\\\tau} - e^{s_2\\\\tau})(e^{-s\\\\tau} - e^{s_1\\\\tau})U_s(s)\",\n      \"name\": \"整形输入Laplace变换等价形式\",\n      \"meaning\": \"将多项式零点形式转换为指数延迟形式\",\n      \"symbols\": [],\n      \"conditions\": [],\n      \"uncertain_symbols\": [],\n      \"confidence\": 0.95\n    }\n  ]\n}\n```",
+      "parse_error": null,
+      "partial_response": false,
+      "review_reason": null,
+      "latex": "s_1 = -i\\omega_n \\text{ 和 } s_2 = i\\omega_n",
+      "name": "零点配置",
+      "meaning": "配置两个零点以消除残余振动",
+      "symbols": [
+        {
+          "symbol": "s_1, s_2",
+          "meaning": "系统零点",
+          "unit": null
+        },
+        {
+          "symbol": "\\omega_n",
+          "meaning": "自然频率",
+          "unit": "rad/s"
+        }
+      ],
+      "conditions": [],
+      "uncertain_symbols": [],
+      "confidence": 0.95,
+      "plain_text": "s_1 = -i\\omega_n \\text{ 和 } s_2 = i\\omega_n",
+      "description": "配置两个零点以消除残余振动",
+      "validation_issues": [],
+      "validation_status": "passed",
+      "review_required": false,
+      "review_status": null,
+      "indexable": true,
+      "formula_id": "w10-1-直线运动平台（下）_pptx_page_14_formula_2",
+      "page_num": 14
+    },
+    {
+      "source_image": "output/qwen_qwen3.7-plus_5/debug/images/w10-1-直线运动平台（下）_slide_14_img_2.png",
+      "source_type": "image_vlm",
+      "extraction_method": "qwen_api_formula",
+      "backend": "api",
+      "provider": "qwen",
+      "model": "qwen3.7-plus",
+      "image_index": 1,
+      "raw_response": "```json\n{\n  \"has_formula\": true,\n  \"formulas\": [\n    {\n      \"latex\": \"s_1 = -i\\\\omega_n \\\\text{ 和 } s_2 = i\\\\omega_n\",\n      \"name\": \"零点配置\",\n      \"meaning\": \"配置两个零点以消除残余振动\",\n      \"symbols\": [\n        {\n          \"symbol\": \"s_1, s_2\",\n          \"meaning\": \"系统零点\",\n          \"unit\": null\n        },\n        {\n          \"symbol\": \"\\\\omega_n\",\n          \"meaning\": \"自然频率\",\n          \"unit\": \"rad/s\"\n        }\n      ],\n      \"conditions\": [],\n      \"uncertain_symbols\": [],\n      \"confidence\": 0.95\n    },\n    {\n      \"latex\": \"\\\\tilde{\\\\theta}(s) = \\\\frac{s^2}{l(s^2+\\\\omega_n^2)}\\\\tilde{U}_s(s) = \\\\frac{s^2}{l(s^2+\\\\omega_n^2)} \\\\cdot C(s-s_1)(s-s_2)U_s(s)\",\n      \"name\": \"系统响应与整形输入关系\",\n      \"meaning\": \"消除残余振动后的系统输出表达式\",\n      \"symbols\": [\n        {\n          \"symbol\": \"\\\\tilde{\\\\theta}(s)\",\n          \"meaning\": \"输出（如摆角）的Laplace变换\",\n          \"unit\": null\n        },\n        {\n          \"symbol\": \"l\",\n          \"meaning\": \"系统参数（如摆长）\",\n          \"unit\": \"m\"\n        },\n        {\n          \"symbol\": \"\\\\tilde{U}_s(s)\",\n          \"meaning\": \"整形后的输入Laplace变换\",\n          \"unit\": null\n        },\n        {\n          \"symbol\": \"C\",\n          \"meaning\": \"常数增益\",\n          \"unit\": null\n        },\n        {\n          \"symbol\": \"U_s(s)\",\n          \"meaning\": \"原始输入Laplace变换\",\n          \"unit\": null\n        }\n      ],\n      \"conditions\": [],\n      \"uncertain_symbols\": [],\n      \"confidence\": 0.95\n    },\n    {\n      \"latex\": \"\\\\tilde{u}_s(t) = \\\\mathcal{L}^{-1}[C(s-s_1)(s-s_2)U_s(s)]\",\n      \"name\": \"输入整形时域表达式\",\n      \"meaning\": \"求整形输入的Laplace逆变换\",\n      \"symbols\": [\n        {\n          \"symbol\": \"\\\\tilde{u}_s(t)\",\n          \"meaning\": \"时域整形输入信号\",\n          \"unit\": null\n        },\n        {\n          \"symbol\": \"\\\\mathcal{L}^{-1}\",\n          \"meaning\": \"Laplace逆变换\",\n          \"unit\": null\n        }\n      ],\n      \"conditions\": [],\n      \"uncertain_symbols\": [],\n      \"confidence\": 0.95\n    },\n    {\n      \"latex\": \"\\\\lim_{s\\\\to s_1} \\\\frac{e^{-s\\\\tau} - e^{-s_1\\\\tau}}{s-s_1} = -\\\\tau e^{-s_1\\\\tau} \\\\neq 0, \\\\quad \\\\lim_{s\\\\to s_2} \\\\frac{e^{-s\\\\tau} - e^{-s_2\\\\tau}}{s-s_2} = -\\\\tau e^{-s_2\\\\tau} \\\\neq 0\",\n      \"name\": \"利用L'Hôpital法则求极限\",\n      \"meaning\": \"验证零点处的极限性质\",\n      \"symbols\": [\n        {\n          \"symbol\": \"\\\\tau\",\n          \"meaning\": \"时间延迟或间隔\",\n          \"unit\": \"s\"\n        },\n        {\n          \"symbol\": \"s\",\n          \"meaning\": \"Laplace复变量\",\n          \"unit\": null\n        }\n      ],\n      \"conditions\": [],\n      \"uncertain_symbols\": [],\n      \"confidence\": 0.95\n    },\n    {\n      \"latex\": \"\\\\tilde{U}_s(s) = C(s-s_1)(s-s_2)U_s(s) \\\\Leftrightarrow \\\\tilde{U}_s(s) = \\\\frac{C}{\\\\tau^2}(e^{-s\\\\tau} - e^{s_2\\\\tau})(e^{-s\\\\tau} - e^{s_1\\\\tau})U_s(s)\",\n      \"name\": \"整形输入Laplace变换等价形式\",\n      \"meaning\": \"将多项式零点形式转换为指数延迟形式\",\n      \"symbols\": [],\n      \"conditions\": [],\n      \"uncertain_symbols\": [],\n      \"confidence\": 0.95\n    }\n  ]\n}\n```",
+      "parse_error": null,
+      "partial_response": false,
+      "review_reason": null,
+      "latex": "\\tilde{\\theta}(s) = \\frac{s^2}{l(s^2+\\omega_n^2)}\\tilde{U}_s(s) = \\frac{s^2}{l(s^2+\\omega_n^2)} \\cdot C(s-s_1)(s-s_2)U_s(s)",
+      "name": "系统响应与整形输入关系",
+      "meaning": "消除残余振动后的系统输出表达式",
+      "symbols": [
+        {
+          "symbol": "\\tilde{\\theta}(s)",
+          "meaning": "输出（如摆角）的Laplace变换",
+          "unit": null
+        },
+        {
+          "symbol": "l",
+          "meaning": "系统参数（如摆长）",
+          "unit": "m"
+        },
+        {
+          "symbol": "\\tilde{U}_s(s)",
+          "meaning": "整形后的输入Laplace变换",
+          "unit": null
+        },
+        {
+          "symbol": "C",
+          "meaning": "常数增益",
+          "unit": null
+        },
+        {
+          "symbol": "U_s(s)",
+          "meaning": "原始输入Laplace变换",
+          "unit": null
+        }
+      ],
+      "conditions": [],
+      "uncertain_symbols": [],
+      "confidence": 0.95,
+      "plain_text": "\\tilde{\\theta}(s) = \\frac{s^2}{l(s^2+\\omega_n^2)}\\tilde{U}_s(s) = \\frac{s^2}{l(s^2+\\omega_n^2)} \\cdot C(s-s_1)(s-s_2)U_s(s)",
+      "description": "消除残余振动后的系统输出表达式",
+      "validation_issues": [],
+      "validation_status": "passed",
+      "review_required": false,
+      "review_status": null,
+      "indexable": true,
+      "formula_id": "w10-1-直线运动平台（下）_pptx_page_14_formula_3",
+      "page_num": 14
+    },
+    {
+      "source_image": "output/qwen_qwen3.7-plus_5/debug/images/w10-1-直线运动平台（下）_slide_14_img_2.png",
+      "source_type": "image_vlm",
+      "extraction_method": "qwen_api_formula",
+      "backend": "api",
+      "provider": "qwen",
+      "model": "qwen3.7-plus",
+      "image_index": 1,
+      "raw_response": "```json\n{\n  \"has_formula\": true,\n  \"formulas\": [\n    {\n      \"latex\": \"s_1 = -i\\\\omega_n \\\\text{ 和 } s_2 = i\\\\omega_n\",\n      \"name\": \"零点配置\",\n      \"meaning\": \"配置两个零点以消除残余振动\",\n      \"symbols\": [\n        {\n          \"symbol\": \"s_1, s_2\",\n          \"meaning\": \"系统零点\",\n          \"unit\": null\n        },\n        {\n          \"symbol\": \"\\\\omega_n\",\n          \"meaning\": \"自然频率\",\n          \"unit\": \"rad/s\"\n        }\n      ],\n      \"conditions\": [],\n      \"uncertain_symbols\": [],\n      \"confidence\": 0.95\n    },\n    {\n      \"latex\": \"\\\\tilde{\\\\theta}(s) = \\\\frac{s^2}{l(s^2+\\\\omega_n^2)}\\\\tilde{U}_s(s) = \\\\frac{s^2}{l(s^2+\\\\omega_n^2)} \\\\cdot C(s-s_1)(s-s_2)U_s(s)\",\n      \"name\": \"系统响应与整形输入关系\",\n      \"meaning\": \"消除残余振动后的系统输出表达式\",\n      \"symbols\": [\n        {\n          \"symbol\": \"\\\\tilde{\\\\theta}(s)\",\n          \"meaning\": \"输出（如摆角）的Laplace变换\",\n          \"unit\": null\n        },\n        {\n          \"symbol\": \"l\",\n          \"meaning\": \"系统参数（如摆长）\",\n          \"unit\": \"m\"\n        },\n        {\n          \"symbol\": \"\\\\tilde{U}_s(s)\",\n          \"meaning\": \"整形后的输入Laplace变换\",\n          \"unit\": null\n        },\n        {\n          \"symbol\": \"C\",\n          \"meaning\": \"常数增益\",\n          \"unit\": null\n        },\n        {\n          \"symbol\": \"U_s(s)\",\n          \"meaning\": \"原始输入Laplace变换\",\n          \"unit\": null\n        }\n      ],\n      \"conditions\": [],\n      \"uncertain_symbols\": [],\n      \"confidence\": 0.95\n    },\n    {\n      \"latex\": \"\\\\tilde{u}_s(t) = \\\\mathcal{L}^{-1}[C(s-s_1)(s-s_2)U_s(s)]\",\n      \"name\": \"输入整形时域表达式\",\n      \"meaning\": \"求整形输入的Laplace逆变换\",\n      \"symbols\": [\n        {\n          \"symbol\": \"\\\\tilde{u}_s(t)\",\n          \"meaning\": \"时域整形输入信号\",\n          \"unit\": null\n        },\n        {\n          \"symbol\": \"\\\\mathcal{L}^{-1}\",\n          \"meaning\": \"Laplace逆变换\",\n          \"unit\": null\n        }\n      ],\n      \"conditions\": [],\n      \"uncertain_symbols\": [],\n      \"confidence\": 0.95\n    },\n    {\n      \"latex\": \"\\\\lim_{s\\\\to s_1} \\\\frac{e^{-s\\\\tau} - e^{-s_1\\\\tau}}{s-s_1} = -\\\\tau e^{-s_1\\\\tau} \\\\neq 0, \\\\quad \\\\lim_{s\\\\to s_2} \\\\frac{e^{-s\\\\tau} - e^{-s_2\\\\tau}}{s-s_2} = -\\\\tau e^{-s_2\\\\tau} \\\\neq 0\",\n      \"name\": \"利用L'Hôpital法则求极限\",\n      \"meaning\": \"验证零点处的极限性质\",\n      \"symbols\": [\n        {\n          \"symbol\": \"\\\\tau\",\n          \"meaning\": \"时间延迟或间隔\",\n          \"unit\": \"s\"\n        },\n        {\n          \"symbol\": \"s\",\n          \"meaning\": \"Laplace复变量\",\n          \"unit\": null\n        }\n      ],\n      \"conditions\": [],\n      \"uncertain_symbols\": [],\n      \"confidence\": 0.95\n    },\n    {\n      \"latex\": \"\\\\tilde{U}_s(s) = C(s-s_1)(s-s_2)U_s(s) \\\\Leftrightarrow \\\\tilde{U}_s(s) = \\\\frac{C}{\\\\tau^2}(e^{-s\\\\tau} - e^{s_2\\\\tau})(e^{-s\\\\tau} - e^{s_1\\\\tau})U_s(s)\",\n      \"name\": \"整形输入Laplace变换等价形式\",\n      \"meaning\": \"将多项式零点形式转换为指数延迟形式\",\n      \"symbols\": [],\n      \"conditions\": [],\n      \"uncertain_symbols\": [],\n      \"confidence\": 0.95\n    }\n  ]\n}\n```",
+      "parse_error": null,
+      "partial_response": false,
+      "review_reason": null,
+      "latex": "\\tilde{u}_s(t) = \\mathcal{L}^{-1}[C(s-s_1)(s-s_2)U_s(s)]",
+      "name": "输入整形时域表达式",
+      "meaning": "求整形输入的Laplace逆变换",
+      "symbols": [
+        {
+          "symbol": "\\tilde{u}_s(t)",
+          "meaning": "时域整形输入信号",
+          "unit": null
+        },
+        {
+          "symbol": "\\mathcal{L}^{-1}",
+          "meaning": "Laplace逆变换",
+          "unit": null
+        }
+      ],
+      "conditions": [],
+      "uncertain_symbols": [],
+      "confidence": 0.95,
+      "plain_text": "\\tilde{u}_s(t) = \\mathcal{L}^{-1}[C(s-s_1)(s-s_2)U_s(s)]",
+      "description": "求整形输入的Laplace逆变换",
+      "validation_issues": [],
+      "validation_status": "passed",
+      "review_required": false,
+      "review_status": null,
+      "indexable": true,
+      "formula_id": "w10-1-直线运动平台（下）_pptx_page_14_formula_4",
+      "page_num": 14
+    },
+    {
+      "source_image": "output/qwen_qwen3.7-plus_5/debug/images/w10-1-直线运动平台（下）_slide_14_img_2.png",
+      "source_type": "image_vlm",
+      "extraction_method": "qwen_api_formula",
+      "backend": "api",
+      "provider": "qwen",
+      "model": "qwen3.7-plus",
+      "image_index": 1,
+      "raw_response": "```json\n{\n  \"has_formula\": true,\n  \"formulas\": [\n    {\n      \"latex\": \"s_1 = -i\\\\omega_n \\\\text{ 和 } s_2 = i\\\\omega_n\",\n      \"name\": \"零点配置\",\n      \"meaning\": \"配置两个零点以消除残余振动\",\n      \"symbols\": [\n        {\n          \"symbol\": \"s_1, s_2\",\n          \"meaning\": \"系统零点\",\n          \"unit\": null\n        },\n        {\n          \"symbol\": \"\\\\omega_n\",\n          \"meaning\": \"自然频率\",\n          \"unit\": \"rad/s\"\n        }\n      ],\n      \"conditions\": [],\n      \"uncertain_symbols\": [],\n      \"confidence\": 0.95\n    },\n    {\n      \"latex\": \"\\\\tilde{\\\\theta}(s) = \\\\frac{s^2}{l(s^2+\\\\omega_n^2)}\\\\tilde{U}_s(s) = \\\\frac{s^2}{l(s^2+\\\\omega_n^2)} \\\\cdot C(s-s_1)(s-s_2)U_s(s)\",\n      \"name\": \"系统响应与整形输入关系\",\n      \"meaning\": \"消除残余振动后的系统输出表达式\",\n      \"symbols\": [\n        {\n          \"symbol\": \"\\\\tilde{\\\\theta}(s)\",\n          \"meaning\": \"输出（如摆角）的Laplace变换\",\n          \"unit\": null\n        },\n        {\n          \"symbol\": \"l\",\n          \"meaning\": \"系统参数（如摆长）\",\n          \"unit\": \"m\"\n        },\n        {\n          \"symbol\": \"\\\\tilde{U}_s(s)\",\n          \"meaning\": \"整形后的输入Laplace变换\",\n          \"unit\": null\n        },\n        {\n          \"symbol\": \"C\",\n          \"meaning\": \"常数增益\",\n          \"unit\": null\n        },\n        {\n          \"symbol\": \"U_s(s)\",\n          \"meaning\": \"原始输入Laplace变换\",\n          \"unit\": null\n        }\n      ],\n      \"conditions\": [],\n      \"uncertain_symbols\": [],\n      \"confidence\": 0.95\n    },\n    {\n      \"latex\": \"\\\\tilde{u}_s(t) = \\\\mathcal{L}^{-1}[C(s-s_1)(s-s_2)U_s(s)]\",\n      \"name\": \"输入整形时域表达式\",\n      \"meaning\": \"求整形输入的Laplace逆变换\",\n      \"symbols\": [\n        {\n          \"symbol\": \"\\\\tilde{u}_s(t)\",\n          \"meaning\": \"时域整形输入信号\",\n          \"unit\": null\n        },\n        {\n          \"symbol\": \"\\\\mathcal{L}^{-1}\",\n          \"meaning\": \"Laplace逆变换\",\n          \"unit\": null\n        }\n      ],\n      \"conditions\": [],\n      \"uncertain_symbols\": [],\n      \"confidence\": 0.95\n    },\n    {\n      \"latex\": \"\\\\lim_{s\\\\to s_1} \\\\frac{e^{-s\\\\tau} - e^{-s_1\\\\tau}}{s-s_1} = -\\\\tau e^{-s_1\\\\tau} \\\\neq 0, \\\\quad \\\\lim_{s\\\\to s_2} \\\\frac{e^{-s\\\\tau} - e^{-s_2\\\\tau}}{s-s_2} = -\\\\tau e^{-s_2\\\\tau} \\\\neq 0\",\n      \"name\": \"利用L'Hôpital法则求极限\",\n      \"meaning\": \"验证零点处的极限性质\",\n      \"symbols\": [\n        {\n          \"symbol\": \"\\\\tau\",\n          \"meaning\": \"时间延迟或间隔\",\n          \"unit\": \"s\"\n        },\n        {\n          \"symbol\": \"s\",\n          \"meaning\": \"Laplace复变量\",\n          \"unit\": null\n        }\n      ],\n      \"conditions\": [],\n      \"uncertain_symbols\": [],\n      \"confidence\": 0.95\n    },\n    {\n      \"latex\": \"\\\\tilde{U}_s(s) = C(s-s_1)(s-s_2)U_s(s) \\\\Leftrightarrow \\\\tilde{U}_s(s) = \\\\frac{C}{\\\\tau^2}(e^{-s\\\\tau} - e^{s_2\\\\tau})(e^{-s\\\\tau} - e^{s_1\\\\tau})U_s(s)\",\n      \"name\": \"整形输入Laplace变换等价形式\",\n      \"meaning\": \"将多项式零点形式转换为指数延迟形式\",\n      \"symbols\": [],\n      \"conditions\": [],\n      \"uncertain_symbols\": [],\n      \"confidence\": 0.95\n    }\n  ]\n}\n```",
+      "parse_error": null,
+      "partial_response": false,
+      "review_reason": null,
+      "latex": "\\lim_{s\\to s_1} \\frac{e^{-s\\tau} - e^{-s_1\\tau}}{s-s_1} = -\\tau e^{-s_1\\tau} \\neq 0, \\quad \\lim_{s\\to s_2} \\frac{e^{-s\\tau} - e^{-s_2\\tau}}{s-s_2} = -\\tau e^{-s_2\\tau} \\neq 0",
+      "name": "利用L'Hôpital法则求极限",
+      "meaning": "验证零点处的极限性质",
+      "symbols": [
+        {
+          "symbol": "\\tau",
+          "meaning": "时间延迟或间隔",
+          "unit": "s"
+        },
+        {
+          "symbol": "s",
+          "meaning": "Laplace复变量",
+          "unit": null
+        }
+      ],
+      "conditions": [],
+      "uncertain_symbols": [],
+      "confidence": 0.95,
+      "plain_text": "\\lim_{s\\to s_1} \\frac{e^{-s\\tau} - e^{-s_1\\tau}}{s-s_1} = -\\tau e^{-s_1\\tau} \\neq 0, \\quad \\lim_{s\\to s_2} \\frac{e^{-s\\tau} - e^{-s_2\\tau}}{s-s_2} = -\\tau e^{-s_2\\tau} \\neq 0",
+      "description": "验证零点处的极限性质",
+      "validation_issues": [],
+      "validation_status": "passed",
+      "review_required": false,
+      "review_status": null,
+      "indexable": true,
+      "formula_id": "w10-1-直线运动平台（下）_pptx_page_14_formula_5",
+      "page_num": 14
+    },
+    {
+      "source_image": "output/qwen_qwen3.7-plus_5/debug/images/w10-1-直线运动平台（下）_slide_14_img_2.png",
+      "source_type": "image_vlm",
+      "extraction_method": "qwen_api_formula",
+      "backend": "api",
+      "provider": "qwen",
+      "model": "qwen3.7-plus",
+      "image_index": 1,
+      "raw_response": "```json\n{\n  \"has_formula\": true,\n  \"formulas\": [\n    {\n      \"latex\": \"s_1 = -i\\\\omega_n \\\\text{ 和 } s_2 = i\\\\omega_n\",\n      \"name\": \"零点配置\",\n      \"meaning\": \"配置两个零点以消除残余振动\",\n      \"symbols\": [\n        {\n          \"symbol\": \"s_1, s_2\",\n          \"meaning\": \"系统零点\",\n          \"unit\": null\n        },\n        {\n          \"symbol\": \"\\\\omega_n\",\n          \"meaning\": \"自然频率\",\n          \"unit\": \"rad/s\"\n        }\n      ],\n      \"conditions\": [],\n      \"uncertain_symbols\": [],\n      \"confidence\": 0.95\n    },\n    {\n      \"latex\": \"\\\\tilde{\\\\theta}(s) = \\\\frac{s^2}{l(s^2+\\\\omega_n^2)}\\\\tilde{U}_s(s) = \\\\frac{s^2}{l(s^2+\\\\omega_n^2)} \\\\cdot C(s-s_1)(s-s_2)U_s(s)\",\n      \"name\": \"系统响应与整形输入关系\",\n      \"meaning\": \"消除残余振动后的系统输出表达式\",\n      \"symbols\": [\n        {\n          \"symbol\": \"\\\\tilde{\\\\theta}(s)\",\n          \"meaning\": \"输出（如摆角）的Laplace变换\",\n          \"unit\": null\n        },\n        {\n          \"symbol\": \"l\",\n          \"meaning\": \"系统参数（如摆长）\",\n          \"unit\": \"m\"\n        },\n        {\n          \"symbol\": \"\\\\tilde{U}_s(s)\",\n          \"meaning\": \"整形后的输入Laplace变换\",\n          \"unit\": null\n        },\n        {\n          \"symbol\": \"C\",\n          \"meaning\": \"常数增益\",\n          \"unit\": null\n        },\n        {\n          \"symbol\": \"U_s(s)\",\n          \"meaning\": \"原始输入Laplace变换\",\n          \"unit\": null\n        }\n      ],\n      \"conditions\": [],\n      \"uncertain_symbols\": [],\n      \"confidence\": 0.95\n    },\n    {\n      \"latex\": \"\\\\tilde{u}_s(t) = \\\\mathcal{L}^{-1}[C(s-s_1)(s-s_2)U_s(s)]\",\n      \"name\": \"输入整形时域表达式\",\n      \"meaning\": \"求整形输入的Laplace逆变换\",\n      \"symbols\": [\n        {\n          \"symbol\": \"\\\\tilde{u}_s(t)\",\n          \"meaning\": \"时域整形输入信号\",\n          \"unit\": null\n        },\n        {\n          \"symbol\": \"\\\\mathcal{L}^{-1}\",\n          \"meaning\": \"Laplace逆变换\",\n          \"unit\": null\n        }\n      ],\n      \"conditions\": [],\n      \"uncertain_symbols\": [],\n      \"confidence\": 0.95\n    },\n    {\n      \"latex\": \"\\\\lim_{s\\\\to s_1} \\\\frac{e^{-s\\\\tau} - e^{-s_1\\\\tau}}{s-s_1} = -\\\\tau e^{-s_1\\\\tau} \\\\neq 0, \\\\quad \\\\lim_{s\\\\to s_2} \\\\frac{e^{-s\\\\tau} - e^{-s_2\\\\tau}}{s-s_2} = -\\\\tau e^{-s_2\\\\tau} \\\\neq 0\",\n      \"name\": \"利用L'Hôpital法则求极限\",\n      \"meaning\": \"验证零点处的极限性质\",\n      \"symbols\": [\n        {\n          \"symbol\": \"\\\\tau\",\n          \"meaning\": \"时间延迟或间隔\",\n          \"unit\": \"s\"\n        },\n        {\n          \"symbol\": \"s\",\n          \"meaning\": \"Laplace复变量\",\n          \"unit\": null\n        }\n      ],\n      \"conditions\": [],\n      \"uncertain_symbols\": [],\n      \"confidence\": 0.95\n    },\n    {\n      \"latex\": \"\\\\tilde{U}_s(s) = C(s-s_1)(s-s_2)U_s(s) \\\\Leftrightarrow \\\\tilde{U}_s(s) = \\\\frac{C}{\\\\tau^2}(e^{-s\\\\tau} - e^{s_2\\\\tau})(e^{-s\\\\tau} - e^{s_1\\\\tau})U_s(s)\",\n      \"name\": \"整形输入Laplace变换等价形式\",\n      \"meaning\": \"将多项式零点形式转换为指数延迟形式\",\n      \"symbols\": [],\n      \"conditions\": [],\n      \"uncertain_symbols\": [],\n      \"confidence\": 0.95\n    }\n  ]\n}\n```",
+      "parse_error": null,
+      "partial_response": false,
+      "review_reason": null,
+      "latex": "\\tilde{U}_s(s) = C(s-s_1)(s-s_2)U_s(s) \\Leftrightarrow \\tilde{U}_s(s) = \\frac{C}{\\tau^2}(e^{-s\\tau} - e^{s_2\\tau})(e^{-s\\tau} - e^{s_1\\tau})U_s(s)",
+      "name": "整形输入Laplace变换等价形式",
+      "meaning": "将多项式零点形式转换为指数延迟形式",
+      "symbols": [],
+      "conditions": [],
+      "uncertain_symbols": [],
+      "confidence": 0.95,
+      "plain_text": "\\tilde{U}_s(s) = C(s-s_1)(s-s_2)U_s(s) \\Leftrightarrow \\tilde{U}_s(s) = \\frac{C}{\\tau^2}(e^{-s\\tau} - e^{s_2\\tau})(e^{-s\\tau} - e^{s_1\\tau})U_s(s)",
+      "description": "将多项式零点形式转换为指数延迟形式",
+      "validation_issues": [],
+      "validation_status": "passed",
+      "review_required": false,
+      "review_status": null,
+      "indexable": true,
+      "formula_id": "w10-1-直线运动平台（下）_pptx_page_14_formula_6",
+      "page_num": 14
+    }
+  ],
+  "timestamp": "2026-08-18T02:14:46.366790"
+}

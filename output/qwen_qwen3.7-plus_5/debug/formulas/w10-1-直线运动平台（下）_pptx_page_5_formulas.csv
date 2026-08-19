@@ -1,0 +1,2 @@
+﻿序号,LaTeX公式,名称,描述,来源图像,提取方法,置信度,验证状态,是否需审核
+1,y[n] = \frac{1}{M} \sum_{k=0}^{M-1} x[n-k] \Rightarrow y[n] = y[n-1] + \frac{x[n] - x[n-M]}{M},移动平均滤波递推公式,"移动平均（Moving Average, MA）滤波器的定义式及其递推计算形式，用于平滑信号中的高频噪声。",output/qwen_qwen3.7-plus_5/debug/images/w10-1-直线运动平台（下）_slide_5_img_1.png,qwen_api_formula,0.95,passed,False

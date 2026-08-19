@@ -1,0 +1,33 @@
+{
+  "original_path": "output/qwen_qwen3.7-plus_6/debug/images/w10-1-直线运动平台（下）_slide_15_img_2.png",
+  "enhanced_path": "output/qwen_qwen3.7-plus_6/debug/images/w10-1-直线运动平台（下）_slide_15_img_2_enhanced.png",
+  "description": "类型：公式\n图片包含标题“求L⁻¹(Ũs(s))”及推导过程：Ũs(s)=C(e⁻ˢᵗ-eˢ²ᵗ)(e⁻ˢᵗ-eˢ¹ᵗ)Us(s)=C[1-2e⁻ˢcos(ωnτ)+e⁻²ˢᵗ]Us(s)，推导出时域表达式ũs(t)=C[us(t)-2cos(ωnτ)us(t-τ)+us(t-2τ)]，即ũs(t)=c₁us(t)-c₂us(t-τ)+c₁us(t-2τ)。下方列出“确定参数的原则”：凸函数经过整形后仍为凸函数（c₁和c₂都非负⇒c₂=2Ccos(ωnτ)=0）；延时尽可能短（τ尽可能小⇒τ=π/2ωn）；总位移保持不变⇒c₁=1/2。",
+  "metadata": {
+    "generation": {
+      "method": "qwen_api",
+      "backend": "api",
+      "provider": "qwen",
+      "model": "qwen3.7-plus",
+      "status": "success",
+      "api_error": null
+    },
+    "review": {
+      "required": false,
+      "status": null,
+      "reason": null,
+      "course_relevant": true
+    }
+  },
+  "error": null,
+  "method": "qwen_api",
+  "backend": "api",
+  "provider": "qwen",
+  "model": "qwen3.7-plus",
+  "status": "success",
+  "api_error": null,
+  "indexable": true,
+  "review_required": false,
+  "review_reason": null,
+  "review_status": null,
+  "course_relevant": true
+}

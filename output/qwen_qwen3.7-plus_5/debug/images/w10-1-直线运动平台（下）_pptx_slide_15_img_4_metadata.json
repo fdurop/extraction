@@ -1,0 +1,33 @@
+{
+  "original_path": "output/qwen_qwen3.7-plus_5/debug/images/w10-1-直线运动平台（下）_slide_15_img_4.png",
+  "enhanced_path": "output/qwen_qwen3.7-plus_5/debug/images/w10-1-直线运动平台（下）_slide_15_img_4_enhanced.png",
+  "description": "图片展示了一个红底白字的数学公式：\n\n$$ \\tilde{u}_s(t) = \\frac{1}{2}[u_s(t) + u_s(t - 2\\tau)] $$\n\n**详细描述：**\n*   **公式结构**：等式左侧为 $\\tilde{u}_s(t)$（$u$ 上方有波浪号，$s$ 为下标，$t$ 为变量）；等式右侧为系数 $\\frac{1}{2}$ 乘以括号内的项 $[u_s(t) + u_s(t - 2\\tau)]$。\n*   **含义分析**：该公式表示信号 $\\tilde{u}_s(t)$ 是由原始信号 $u_s(t)$ 与延迟了 $2\\tau$ 时间的信号 $u_s(t - 2\\tau)$ 相加后取平均值（乘以 $1/2$）得到的。\n*   **结合上下文**：结合页面标题“§4.1 输入整形”，该公式具体展示了输入整形（Input Shaping）技术中的一种信号处理模型，即通过将输入信号与其延迟版本进行加权叠加（此处权重均为0.5，延迟为 $2\\tau$）来生成整形后的输入信号 $\\tilde{u}_s(t)$，通常用于抑制系统振动或改善动态响应。",
+  "metadata": {
+    "generation": {
+      "method": "qwen_api",
+      "backend": "api",
+      "provider": "qwen",
+      "model": "qwen3.7-plus",
+      "status": "success",
+      "api_error": null
+    },
+    "review": {
+      "required": false,
+      "status": null,
+      "reason": null,
+      "course_relevant": true
+    }
+  },
+  "error": null,
+  "method": "qwen_api",
+  "backend": "api",
+  "provider": "qwen",
+  "model": "qwen3.7-plus",
+  "status": "success",
+  "api_error": null,
+  "indexable": true,
+  "review_required": false,
+  "review_reason": null,
+  "review_status": null,
+  "course_relevant": true
+}

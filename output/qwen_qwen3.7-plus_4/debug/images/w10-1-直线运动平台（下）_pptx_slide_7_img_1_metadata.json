@@ -1,0 +1,33 @@
+{
+  "original_path": "output/qwen_qwen3.7-plus_4/debug/images/w10-1-直线运动平台（下）_slide_7_img_1.png",
+  "enhanced_path": "output/qwen_qwen3.7-plus_4/debug/images/w10-1-直线运动平台（下）_slide_7_img_1_enhanced.png",
+  "description": "图片展示了一段 Arduino C++ 代码，用于演示如何使用时间中断（Timer Interrupt）来控制 LED 闪烁，与页面上下文中关于“时间中断”及“Arduino Uno R3 定时器”的教学内容紧密相关。\n\n图片中的代码结构如下：\n1.  **头文件引入**：`#include <TimerOne.h>`，引入了 TimerOne 库，对应上下文中提到的 Timer1（16位定时器）。\n2.  **`setup()` 函数（初始化设置）**：\n    *   `pinMode(LED_BUILTIN, OUTPUT);`：注释为“//初始化LED端口”，将内置 LED 引脚设为输出模式。\n    *   `Timer1.initialize(long(1 * 1E6));`：注释为“// 每 1 s 触发一次时间中断”，初始化定时器，参数 $1 * 10^6$ 微秒即 1 秒。\n    *   `Timer1.attachInterrupt(LED);`：注释为“// 设置中断响应函数”，将 `LED` 函数绑定为中断发生时的回调函数。\n    *   `Timer1.start();`：注释为“// 启动时间中断”，开始计时。\n3.  **`LED()` 函数（中断服务程序）**：\n    *   `static bool light = true;`：定义一个静态布尔变量 `light` 用于记录状态。\n    *   `digitalWrite(LED_BUILTIN, light);`：根据 `light` 的值控制 LED 引脚的高低电平。\n    *   `light = !light;`：每次中断触发时翻转 `light` 的值，从而实现 LED 的交替闪烁（Blink）。",
+  "metadata": {
+    "generation": {
+      "method": "qwen_api",
+      "backend": "api",
+      "provider": "qwen",
+      "model": "qwen3.7-plus",
+      "status": "success",
+      "api_error": null
+    },
+    "review": {
+      "required": false,
+      "status": null,
+      "reason": null,
+      "course_relevant": true
+    }
+  },
+  "error": null,
+  "method": "qwen_api",
+  "backend": "api",
+  "provider": "qwen",
+  "model": "qwen3.7-plus",
+  "status": "success",
+  "api_error": null,
+  "indexable": true,
+  "review_required": false,
+  "review_reason": null,
+  "review_status": null,
+  "course_relevant": true
+}

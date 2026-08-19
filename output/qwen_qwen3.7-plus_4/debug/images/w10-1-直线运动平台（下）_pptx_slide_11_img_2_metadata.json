@@ -1,0 +1,33 @@
+{
+  "original_path": "output/qwen_qwen3.7-plus_4/debug/images/w10-1-直线运动平台（下）_slide_11_img_2.png",
+  "enhanced_path": "output/qwen_qwen3.7-plus_4/debug/images/w10-1-直线运动平台（下）_slide_11_img_2_enhanced.png",
+  "description": "图片展示了一组描述振动系统动力学特性的数学公式和定义，具体内容如下：\n\n1.  **系统微分方程**：顶部展示了一个二阶常微分方程：\n    $$ /ddot{/theta}(t) + 2/omega_n/zeta/dot{/theta}(t) + /omega_n^2/theta(t) = /frac{/ddot{u}_s(t)}{l} $$\n    该方程描述了系统角度 $/theta(t)$ 随时间的变化，包含惯性项、阻尼项和刚度项，右侧为输入项（与加速度 $/ddot{u}_s(t)$ 有关）。\n\n2.  **固有频率定义**：中间部分给出了固有频率的计算公式：\n    $$ /text{固有频率 } /omega_n = /sqrt{/frac{g}{l}} $$\n\n3.  **阻尼比定义**：底部部分给出了阻尼比的计算公式：\n    $$ /text{阻尼比 } /zeta = /frac{c}{2m/sqrt{gl}}, /quad c /text{ 为阻尼。} $$\n\n这些公式共同定义了一个二阶振荡系统（如单摆系统）的数学模型，是理解后续“输入整形”控制策略的基础。",
+  "metadata": {
+    "generation": {
+      "method": "qwen_api",
+      "backend": "api",
+      "provider": "qwen",
+      "model": "qwen3.7-plus",
+      "status": "success",
+      "api_error": null
+    },
+    "review": {
+      "required": false,
+      "status": null,
+      "reason": null,
+      "course_relevant": true
+    }
+  },
+  "error": null,
+  "method": "qwen_api",
+  "backend": "api",
+  "provider": "qwen",
+  "model": "qwen3.7-plus",
+  "status": "success",
+  "api_error": null,
+  "indexable": true,
+  "review_required": false,
+  "review_reason": null,
+  "review_status": null,
+  "course_relevant": true
+}

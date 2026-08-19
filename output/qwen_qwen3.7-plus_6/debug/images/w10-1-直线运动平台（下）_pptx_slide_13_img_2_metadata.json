@@ -1,0 +1,33 @@
+{
+  "original_path": "output/qwen_qwen3.7-plus_6/debug/images/w10-1-直线运动平台（下）_slide_13_img_2.png",
+  "enhanced_path": "output/qwen_qwen3.7-plus_6/debug/images/w10-1-直线运动平台（下）_slide_13_img_2_enhanced.png",
+  "description": "类型：公式\n图片包含三组数学推导与结论文字。\n第一部分标题为“对单摆方程进行Laplace变换，得”，下列方程：s²θ(s) + ω²θ(s) = s²Uₛ(s)/l，推导出 θ(s) = [s² / l(s² + ωₙ²)] Uₛ(s)。\n第二部分标题为“自由振动位移函数的拉普拉斯变换”，列出两个变换式：L[sin(ωₙt)] = ωₙ/(s² + ωₙ²) = ωₙ/[(s + iωₙ)(s - iωₙ)]，以及 L[cos(ωt)] = s/(s² + ωₙ²) = s/[(s + iωₙ)(s - iωₙ)]。\n底部文字总结：“可知，残余振动响应含有的极点来自传递函数，是导致单摆无法立即停止的根源。”其中“极点来自传递函数”标红并加下划线。",
+  "metadata": {
+    "generation": {
+      "method": "qwen_api",
+      "backend": "api",
+      "provider": "qwen",
+      "model": "qwen3.7-plus",
+      "status": "success",
+      "api_error": null
+    },
+    "review": {
+      "required": false,
+      "status": null,
+      "reason": null,
+      "course_relevant": true
+    }
+  },
+  "error": null,
+  "method": "qwen_api",
+  "backend": "api",
+  "provider": "qwen",
+  "model": "qwen3.7-plus",
+  "status": "success",
+  "api_error": null,
+  "indexable": true,
+  "review_required": false,
+  "review_reason": null,
+  "review_status": null,
+  "course_relevant": true
+}

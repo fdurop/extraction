@@ -1,0 +1,110 @@
+{
+  "page": 9,
+  "formula_count": 2,
+  "accepted_count": 2,
+  "review_count": 0,
+  "formulas": [
+    {
+      "source_image": "output/qwen_qwen3.7-plus_4/debug/images/w10-1-直线运动平台（下）_slide_9_img_1.png",
+      "source_type": "image_vlm",
+      "extraction_method": "qwen_api_formula",
+      "backend": "api",
+      "provider": "qwen",
+      "model": "qwen3.7-plus",
+      "image_index": 0,
+      "raw_response": "{\"has_formula\":true,\"formulas\":[{\"latex\":\"v(t) = 6Lt(T - t)/T^3\",\"name\":\"速度公式\",\"meaning\":\"抛物线型速度曲线，启停时刻速度均为零\",\"symbols\":[{\"symbol\":\"v(t)\",\"meaning\":\"速度\",\"unit\":null},{\"symbol\":\"L\",\"meaning\":\"距离（小于行程）\",\"unit\":null},{\"symbol\":\"T\",\"meaning\":\"指定时长\",\"unit\":null},{\"symbol\":\"t\",\"meaning\":\"时间\",\"unit\":null}],\"conditions\":[],\"uncertain_symbols\":[],\"confidence\":0.95},{\"latex\":\"x(t) = /int_0^T v(t)/mathrm{d}t = 6Lt^2/left(/frac{T}{2} - /frac{t}{3}/right)/T^3\",\"name\":\"位移公式\",\"meaning\":\"滑台位移随时间变化的关系，由速度积分得到\",\"symbols\":[{\"symbol\":\"x(t)\",\"meaning\":\"位移\",\"unit\":null},{\"symbol\":\"v(t)\",\"meaning\":\"速度\",\"unit\":null},{\"symbol\":\"L\",\"meaning\":\"距离（小于行程）\",\"unit\":null},{\"symbol\":\"T\",\"meaning\":\"指定时长\",\"unit\":null},{\"symbol\":\"t\",\"meaning\":\"时间\",\"unit\":null}],\"conditions\":[],\"uncertain_symbols\":[],\"confidence\":0.95}]}",
+      "latex": "v(t) = 6Lt(T - t)/T^3",
+      "name": "速度公式",
+      "meaning": "抛物线型速度曲线，启停时刻速度均为零",
+      "symbols": [
+        {
+          "symbol": "v(t)",
+          "meaning": "速度",
+          "unit": null
+        },
+        {
+          "symbol": "L",
+          "meaning": "距离（小于行程）",
+          "unit": null
+        },
+        {
+          "symbol": "T",
+          "meaning": "指定时长",
+          "unit": null
+        },
+        {
+          "symbol": "t",
+          "meaning": "时间",
+          "unit": null
+        }
+      ],
+      "conditions": [],
+      "uncertain_symbols": [],
+      "confidence": 0.95,
+      "plain_text": "v(t) = 6Lt(T - t)/T^3",
+      "description": "抛物线型速度曲线，启停时刻速度均为零",
+      "validation_issues": [],
+      "validation_status": "passed",
+      "review_required": false,
+      "review_reason": null,
+      "review_status": null,
+      "indexable": true,
+      "formula_id": "w10-1-直线运动平台（下）_pptx_page_9_formula_1",
+      "page_num": 9
+    },
+    {
+      "source_image": "output/qwen_qwen3.7-plus_4/debug/images/w10-1-直线运动平台（下）_slide_9_img_1.png",
+      "source_type": "image_vlm",
+      "extraction_method": "qwen_api_formula",
+      "backend": "api",
+      "provider": "qwen",
+      "model": "qwen3.7-plus",
+      "image_index": 0,
+      "raw_response": "{\"has_formula\":true,\"formulas\":[{\"latex\":\"v(t) = 6Lt(T - t)/T^3\",\"name\":\"速度公式\",\"meaning\":\"抛物线型速度曲线，启停时刻速度均为零\",\"symbols\":[{\"symbol\":\"v(t)\",\"meaning\":\"速度\",\"unit\":null},{\"symbol\":\"L\",\"meaning\":\"距离（小于行程）\",\"unit\":null},{\"symbol\":\"T\",\"meaning\":\"指定时长\",\"unit\":null},{\"symbol\":\"t\",\"meaning\":\"时间\",\"unit\":null}],\"conditions\":[],\"uncertain_symbols\":[],\"confidence\":0.95},{\"latex\":\"x(t) = /int_0^T v(t)/mathrm{d}t = 6Lt^2/left(/frac{T}{2} - /frac{t}{3}/right)/T^3\",\"name\":\"位移公式\",\"meaning\":\"滑台位移随时间变化的关系，由速度积分得到\",\"symbols\":[{\"symbol\":\"x(t)\",\"meaning\":\"位移\",\"unit\":null},{\"symbol\":\"v(t)\",\"meaning\":\"速度\",\"unit\":null},{\"symbol\":\"L\",\"meaning\":\"距离（小于行程）\",\"unit\":null},{\"symbol\":\"T\",\"meaning\":\"指定时长\",\"unit\":null},{\"symbol\":\"t\",\"meaning\":\"时间\",\"unit\":null}],\"conditions\":[],\"uncertain_symbols\":[],\"confidence\":0.95}]}",
+      "latex": "x(t) = /int_0^T v(t)/mathrm{d}t = 6Lt^2/left(/frac{T}{2} - /frac{t}{3}/right)/T^3",
+      "name": "位移公式",
+      "meaning": "滑台位移随时间变化的关系，由速度积分得到",
+      "symbols": [
+        {
+          "symbol": "x(t)",
+          "meaning": "位移",
+          "unit": null
+        },
+        {
+          "symbol": "v(t)",
+          "meaning": "速度",
+          "unit": null
+        },
+        {
+          "symbol": "L",
+          "meaning": "距离（小于行程）",
+          "unit": null
+        },
+        {
+          "symbol": "T",
+          "meaning": "指定时长",
+          "unit": null
+        },
+        {
+          "symbol": "t",
+          "meaning": "时间",
+          "unit": null
+        }
+      ],
+      "conditions": [],
+      "uncertain_symbols": [],
+      "confidence": 0.95,
+      "plain_text": "x(t) = /int_0^T v(t)/mathrm{d}t = 6Lt^2/left(/frac{T}{2} - /frac{t}{3}/right)/T^3",
+      "description": "滑台位移随时间变化的关系，由速度积分得到",
+      "validation_issues": [],
+      "validation_status": "passed",
+      "review_required": false,
+      "review_reason": null,
+      "review_status": null,
+      "indexable": true,
+      "formula_id": "w10-1-直线运动平台（下）_pptx_page_9_formula_2",
+      "page_num": 9
+    }
+  ],
+  "timestamp": "2026-08-18T00:09:38.618346"
+}

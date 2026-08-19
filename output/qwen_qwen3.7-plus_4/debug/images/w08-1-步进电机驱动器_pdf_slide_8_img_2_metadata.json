@@ -1,0 +1,33 @@
+{
+  "original_path": "output/qwen_qwen3.7-plus_4/debug/images/w08-1-步进电机驱动器_p8_img3.png",
+  "enhanced_path": "output/qwen_qwen3.7-plus_4/debug/images/w08-1-步进电机驱动器_p8_img3_enhanced.png",
+  "description": "图片展示了一个数字信号的电平变化示意图（方波脉冲），用于解释中断触发方式中的边沿概念。\n\n*   **结构与文字**：\n    *   顶部标注文字 \"HIGH\"，代表高电平。\n    *   底部左右两侧标注文字 \"LOW\"，代表低电平。\n    *   图中蓝色线条描绘了一个从低电平跳变到高电平，再跳变回低电平的过程。\n    *   左侧从 LOW 到 HIGH 的垂直上升边旁边，标注有竖排文字 \"RISING\"，表示上升沿。\n    *   右侧从 HIGH 到 LOW 的垂直下降边旁边，标注有竖排文字 \"FALLING\"，表示下降沿。\n\n该图直观地对应了页面上下文中提到的中断触发方式：RISING (上升沿) 和 FALLING (下降沿)。",
+  "metadata": {
+    "generation": {
+      "method": "qwen_api",
+      "backend": "api",
+      "provider": "qwen",
+      "model": "qwen3.7-plus",
+      "status": "success",
+      "api_error": null
+    },
+    "review": {
+      "required": false,
+      "status": null,
+      "reason": null,
+      "course_relevant": true
+    }
+  },
+  "error": null,
+  "method": "qwen_api",
+  "backend": "api",
+  "provider": "qwen",
+  "model": "qwen3.7-plus",
+  "status": "success",
+  "api_error": null,
+  "indexable": true,
+  "review_required": false,
+  "review_reason": null,
+  "review_status": null,
+  "course_relevant": true
+}

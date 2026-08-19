@@ -1,0 +1,72 @@
+{
+  "page": 5,
+  "formula_count": 1,
+  "accepted_count": 1,
+  "review_count": 0,
+  "formulas": [
+    {
+      "source_image": "output/qwen_qwen3.7-plus_4/debug/images/w10-1-直线运动平台（下）_slide_5_img_1.png",
+      "source_type": "image_vlm",
+      "extraction_method": "qwen_api_formula",
+      "backend": "api",
+      "provider": "qwen",
+      "model": "qwen3.7-plus",
+      "image_index": 0,
+      "raw_response": "{\"has_formula\":true,\"formulas\":[{\"latex\":\"y[n] = /frac{1}{M} /sum_{k=0}^{M-1} x[n-k] /Rightarrow y[n] = y[n-1] + /frac{x[n] - x[n-M]}{M}\",\"name\":\"移动平均递推公式\",\"meaning\":\"低通滤波中的移动平均（MA）算法公式。左侧为定义式，表示当前输出为过去M个输入的平均值；右侧为递推式，利用上一时刻的输出值快速计算当前输出，提高程序效率。\",\"symbols\":[{\"symbol\":\"y[n]\",\"meaning\":\"当前时刻n的滤波输出值\",\"unit\":null},{\"symbol\":\"M\",\"meaning\":\"移动平均的窗口长度（样本数）\",\"unit\":null},{\"symbol\":\"k\",\"meaning\":\"求和索引变量\",\"unit\":null},{\"symbol\":\"x[n-k]\",\"meaning\":\"历史时刻的输入信号值\",\"unit\":null},{\"symbol\":\"x[n]\",\"meaning\":\"当前时刻的输入信号值（新数据）\",\"unit\":null},{\"symbol\":\"x[n-M]\",\"meaning\":\"M个时刻前的输入信号值（待删除旧数据）\",\"unit\":null},{\"symbol\":\"y[n-1]\",\"meaning\":\"上一时刻的滤波输出值\",\"unit\":null}],\"conditions\":[],\"uncertain_symbols\":[],\"confidence\":0.95}]}",
+      "latex": "y[n] = /frac{1}{M} /sum_{k=0}^{M-1} x[n-k] /Rightarrow y[n] = y[n-1] + /frac{x[n] - x[n-M]}{M}",
+      "name": "移动平均递推公式",
+      "meaning": "低通滤波中的移动平均（MA）算法公式。左侧为定义式，表示当前输出为过去M个输入的平均值；右侧为递推式，利用上一时刻的输出值快速计算当前输出，提高程序效率。",
+      "symbols": [
+        {
+          "symbol": "y[n]",
+          "meaning": "当前时刻n的滤波输出值",
+          "unit": null
+        },
+        {
+          "symbol": "M",
+          "meaning": "移动平均的窗口长度（样本数）",
+          "unit": null
+        },
+        {
+          "symbol": "k",
+          "meaning": "求和索引变量",
+          "unit": null
+        },
+        {
+          "symbol": "x[n-k]",
+          "meaning": "历史时刻的输入信号值",
+          "unit": null
+        },
+        {
+          "symbol": "x[n]",
+          "meaning": "当前时刻的输入信号值（新数据）",
+          "unit": null
+        },
+        {
+          "symbol": "x[n-M]",
+          "meaning": "M个时刻前的输入信号值（待删除旧数据）",
+          "unit": null
+        },
+        {
+          "symbol": "y[n-1]",
+          "meaning": "上一时刻的滤波输出值",
+          "unit": null
+        }
+      ],
+      "conditions": [],
+      "uncertain_symbols": [],
+      "confidence": 0.95,
+      "plain_text": "y[n] = /frac{1}{M} /sum_{k=0}^{M-1} x[n-k] /Rightarrow y[n] = y[n-1] + /frac{x[n] - x[n-M]}{M}",
+      "description": "低通滤波中的移动平均（MA）算法公式。左侧为定义式，表示当前输出为过去M个输入的平均值；右侧为递推式，利用上一时刻的输出值快速计算当前输出，提高程序效率。",
+      "validation_issues": [],
+      "validation_status": "passed",
+      "review_required": false,
+      "review_reason": null,
+      "review_status": null,
+      "indexable": true,
+      "formula_id": "w10-1-直线运动平台（下）_pptx_page_5_formula_1",
+      "page_num": 5
+    }
+  ],
+  "timestamp": "2026-08-18T00:05:12.661873"
+}

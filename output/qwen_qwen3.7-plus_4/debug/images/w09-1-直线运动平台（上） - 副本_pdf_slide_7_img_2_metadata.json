@@ -1,0 +1,33 @@
+{
+  "original_path": "output/qwen_qwen3.7-plus_4/debug/images/w09-1-直线运动平台（上） - 副本_p7_img4.jpeg",
+  "enhanced_path": "output/qwen_qwen3.7-plus_4/debug/images/w09-1-直线运动平台（上） - 副本_p7_img4_enhanced.jpeg",
+  "description": "图片展示了一个急停开关（Emergency Switch）的实物特写。该开关顶部为红色的蘑菇头按钮，边缘带有纹理；按钮下方连接着黄色的圆柱形颈部；中部是黑色的基座组件，侧面带有黑色的机械结构；底部为透明外壳，清晰展示了内部黄色的机械传动结构和触点组件（对应文中提到的NO/NC触点部分）。",
+  "metadata": {
+    "generation": {
+      "method": "qwen_api",
+      "backend": "api",
+      "provider": "qwen",
+      "model": "qwen3.7-plus",
+      "status": "success",
+      "api_error": null
+    },
+    "review": {
+      "required": false,
+      "status": null,
+      "reason": null,
+      "course_relevant": true
+    }
+  },
+  "error": null,
+  "method": "qwen_api",
+  "backend": "api",
+  "provider": "qwen",
+  "model": "qwen3.7-plus",
+  "status": "success",
+  "api_error": null,
+  "indexable": true,
+  "review_required": false,
+  "review_reason": null,
+  "review_status": null,
+  "course_relevant": true
+}

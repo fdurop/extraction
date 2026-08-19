@@ -1,0 +1,419 @@
+{
+  "page": 12,
+  "formula_count": 9,
+  "accepted_count": 9,
+  "review_count": 0,
+  "formulas": [
+    {
+      "source_image": "output/qwen_qwen3.7-plus_5/debug/images/w10-1-直线运动平台（下）_slide_12_img_1.png",
+      "source_type": "image_vlm",
+      "extraction_method": "qwen_api_formula",
+      "backend": "api",
+      "provider": "qwen",
+      "model": "qwen3.7-plus",
+      "image_index": 0,
+      "raw_response": "```json\n{\n  \"has_formula\": true,\n  \"formulas\": [\n    {\n      \"latex\": \"\\\\ddot{\\\\theta}(t) + 2\\\\omega_n\\\\zeta\\\\dot{\\\\theta}(t) + \\\\omega_n^2\\\\theta(t) = \\\\frac{\\\\ddot{u}_s(t)}{l}\",\n      \"name\": \"系统运动微分方程\",\n      \"meaning\": \"描述系统的动态响应，包含惯性、阻尼和刚度项以及外部激励\",\n      \"symbols\": [\n        {\n          \"symbol\": \"\\\\theta(t)\",\n          \"meaning\": \"角度或位移响应\",\n          \"unit\": null\n        },\n        {\n          \"symbol\": \"\\\\omega_n\",\n          \"meaning\": \"固有频率\",\n          \"unit\": null\n        },\n        {\n          \"symbol\": \"\\\\zeta\",\n          \"meaning\": \"阻尼比\",\n          \"unit\": null\n        },\n        {\n          \"symbol\": \"u_s(t)\",\n          \"meaning\": \"输入位移\",\n          \"unit\": null\n        },\n        {\n          \"symbol\": \"l\",\n          \"meaning\": \"\",\n          \"unit\": null\n        }\n      ],\n      \"conditions\": [],\n      \"uncertain_symbols\": [],\n      \"confidence\": 0.95\n    },\n    {\n      \"latex\": \"\\\\omega_n = \\\\sqrt{\\\\frac{g}{l}}\",\n      \"name\": \"固有频率公式\",\n      \"meaning\": \"计算系统的固有频率\",\n      \"symbols\": [\n        {\n          \"symbol\": \"\\\\omega_n\",\n          \"meaning\": \"固有频率\",\n          \"unit\": null\n        },\n        {\n          \"symbol\": \"g\",\n          \"meaning\": \"\",\n          \"unit\": null\n        },\n        {\n          \"symbol\": \"l\",\n          \"meaning\": \"\",\n          \"unit\": null\n        }\n      ],\n      \"conditions\": [],\n      \"uncertain_symbols\": [],\n      \"confidence\": 0.95\n    },\n    {\n      \"latex\": \"\\\\zeta = \\\\frac{c}{2m\\\\sqrt{gl}}\",\n      \"name\": \"阻尼比公式\",\n      \"meaning\": \"计算系统的阻尼比\",\n      \"symbols\": [\n        {\n          \"symbol\": \"\\\\zeta\",\n          \"meaning\": \"阻尼比\",\n          \"unit\": null\n        },\n        {\n          \"symbol\": \"c\",\n          \"meaning\": \"阻尼\",\n          \"unit\": null\n        },\n        {\n          \"symbol\": \"m\",\n          \"meaning\": \"\",\n          \"unit\": null\n        },\n        {\n          \"symbol\": \"g\",\n          \"meaning\": \"\",\n          \"unit\": null\n        },\n        {\n          \"symbol\": \"l\",\n          \"meaning\": \"\",\n          \"unit\": null\n        }\n      ],\n      \"conditions\": [],\n      \"uncertain_symbols\": [],\n      \"confidence\": 0.95\n    }\n  ]\n}\n```",
+      "parse_error": null,
+      "partial_response": false,
+      "review_reason": null,
+      "latex": "\\ddot{\\theta}(t) + 2\\omega_n\\zeta\\dot{\\theta}(t) + \\omega_n^2\\theta(t) = \\frac{\\ddot{u}_s(t)}{l}",
+      "name": "系统运动微分方程",
+      "meaning": "描述系统的动态响应，包含惯性、阻尼和刚度项以及外部激励",
+      "symbols": [
+        {
+          "symbol": "\\theta(t)",
+          "meaning": "角度或位移响应",
+          "unit": null
+        },
+        {
+          "symbol": "\\omega_n",
+          "meaning": "固有频率",
+          "unit": null
+        },
+        {
+          "symbol": "\\zeta",
+          "meaning": "阻尼比",
+          "unit": null
+        },
+        {
+          "symbol": "u_s(t)",
+          "meaning": "输入位移",
+          "unit": null
+        },
+        {
+          "symbol": "l",
+          "meaning": "",
+          "unit": null
+        }
+      ],
+      "conditions": [],
+      "uncertain_symbols": [],
+      "confidence": 0.95,
+      "plain_text": "\\ddot{\\theta}(t) + 2\\omega_n\\zeta\\dot{\\theta}(t) + \\omega_n^2\\theta(t) = \\frac{\\ddot{u}_s(t)}{l}",
+      "description": "描述系统的动态响应，包含惯性、阻尼和刚度项以及外部激励",
+      "validation_issues": [],
+      "validation_status": "passed",
+      "review_required": false,
+      "review_status": null,
+      "indexable": true,
+      "formula_id": "w10-1-直线运动平台（下）_pptx_page_12_formula_1",
+      "page_num": 12
+    },
+    {
+      "source_image": "output/qwen_qwen3.7-plus_5/debug/images/w10-1-直线运动平台（下）_slide_12_img_1.png",
+      "source_type": "image_vlm",
+      "extraction_method": "qwen_api_formula",
+      "backend": "api",
+      "provider": "qwen",
+      "model": "qwen3.7-plus",
+      "image_index": 0,
+      "raw_response": "```json\n{\n  \"has_formula\": true,\n  \"formulas\": [\n    {\n      \"latex\": \"\\\\ddot{\\\\theta}(t) + 2\\\\omega_n\\\\zeta\\\\dot{\\\\theta}(t) + \\\\omega_n^2\\\\theta(t) = \\\\frac{\\\\ddot{u}_s(t)}{l}\",\n      \"name\": \"系统运动微分方程\",\n      \"meaning\": \"描述系统的动态响应，包含惯性、阻尼和刚度项以及外部激励\",\n      \"symbols\": [\n        {\n          \"symbol\": \"\\\\theta(t)\",\n          \"meaning\": \"角度或位移响应\",\n          \"unit\": null\n        },\n        {\n          \"symbol\": \"\\\\omega_n\",\n          \"meaning\": \"固有频率\",\n          \"unit\": null\n        },\n        {\n          \"symbol\": \"\\\\zeta\",\n          \"meaning\": \"阻尼比\",\n          \"unit\": null\n        },\n        {\n          \"symbol\": \"u_s(t)\",\n          \"meaning\": \"输入位移\",\n          \"unit\": null\n        },\n        {\n          \"symbol\": \"l\",\n          \"meaning\": \"\",\n          \"unit\": null\n        }\n      ],\n      \"conditions\": [],\n      \"uncertain_symbols\": [],\n      \"confidence\": 0.95\n    },\n    {\n      \"latex\": \"\\\\omega_n = \\\\sqrt{\\\\frac{g}{l}}\",\n      \"name\": \"固有频率公式\",\n      \"meaning\": \"计算系统的固有频率\",\n      \"symbols\": [\n        {\n          \"symbol\": \"\\\\omega_n\",\n          \"meaning\": \"固有频率\",\n          \"unit\": null\n        },\n        {\n          \"symbol\": \"g\",\n          \"meaning\": \"\",\n          \"unit\": null\n        },\n        {\n          \"symbol\": \"l\",\n          \"meaning\": \"\",\n          \"unit\": null\n        }\n      ],\n      \"conditions\": [],\n      \"uncertain_symbols\": [],\n      \"confidence\": 0.95\n    },\n    {\n      \"latex\": \"\\\\zeta = \\\\frac{c}{2m\\\\sqrt{gl}}\",\n      \"name\": \"阻尼比公式\",\n      \"meaning\": \"计算系统的阻尼比\",\n      \"symbols\": [\n        {\n          \"symbol\": \"\\\\zeta\",\n          \"meaning\": \"阻尼比\",\n          \"unit\": null\n        },\n        {\n          \"symbol\": \"c\",\n          \"meaning\": \"阻尼\",\n          \"unit\": null\n        },\n        {\n          \"symbol\": \"m\",\n          \"meaning\": \"\",\n          \"unit\": null\n        },\n        {\n          \"symbol\": \"g\",\n          \"meaning\": \"\",\n          \"unit\": null\n        },\n        {\n          \"symbol\": \"l\",\n          \"meaning\": \"\",\n          \"unit\": null\n        }\n      ],\n      \"conditions\": [],\n      \"uncertain_symbols\": [],\n      \"confidence\": 0.95\n    }\n  ]\n}\n```",
+      "parse_error": null,
+      "partial_response": false,
+      "review_reason": null,
+      "latex": "\\omega_n = \\sqrt{\\frac{g}{l}}",
+      "name": "固有频率公式",
+      "meaning": "计算系统的固有频率",
+      "symbols": [
+        {
+          "symbol": "\\omega_n",
+          "meaning": "固有频率",
+          "unit": null
+        },
+        {
+          "symbol": "g",
+          "meaning": "",
+          "unit": null
+        },
+        {
+          "symbol": "l",
+          "meaning": "",
+          "unit": null
+        }
+      ],
+      "conditions": [],
+      "uncertain_symbols": [],
+      "confidence": 0.95,
+      "plain_text": "\\omega_n = \\sqrt{\\frac{g}{l}}",
+      "description": "计算系统的固有频率",
+      "validation_issues": [],
+      "validation_status": "passed",
+      "review_required": false,
+      "review_status": null,
+      "indexable": true,
+      "formula_id": "w10-1-直线运动平台（下）_pptx_page_12_formula_2",
+      "page_num": 12
+    },
+    {
+      "source_image": "output/qwen_qwen3.7-plus_5/debug/images/w10-1-直线运动平台（下）_slide_12_img_1.png",
+      "source_type": "image_vlm",
+      "extraction_method": "qwen_api_formula",
+      "backend": "api",
+      "provider": "qwen",
+      "model": "qwen3.7-plus",
+      "image_index": 0,
+      "raw_response": "```json\n{\n  \"has_formula\": true,\n  \"formulas\": [\n    {\n      \"latex\": \"\\\\ddot{\\\\theta}(t) + 2\\\\omega_n\\\\zeta\\\\dot{\\\\theta}(t) + \\\\omega_n^2\\\\theta(t) = \\\\frac{\\\\ddot{u}_s(t)}{l}\",\n      \"name\": \"系统运动微分方程\",\n      \"meaning\": \"描述系统的动态响应，包含惯性、阻尼和刚度项以及外部激励\",\n      \"symbols\": [\n        {\n          \"symbol\": \"\\\\theta(t)\",\n          \"meaning\": \"角度或位移响应\",\n          \"unit\": null\n        },\n        {\n          \"symbol\": \"\\\\omega_n\",\n          \"meaning\": \"固有频率\",\n          \"unit\": null\n        },\n        {\n          \"symbol\": \"\\\\zeta\",\n          \"meaning\": \"阻尼比\",\n          \"unit\": null\n        },\n        {\n          \"symbol\": \"u_s(t)\",\n          \"meaning\": \"输入位移\",\n          \"unit\": null\n        },\n        {\n          \"symbol\": \"l\",\n          \"meaning\": \"\",\n          \"unit\": null\n        }\n      ],\n      \"conditions\": [],\n      \"uncertain_symbols\": [],\n      \"confidence\": 0.95\n    },\n    {\n      \"latex\": \"\\\\omega_n = \\\\sqrt{\\\\frac{g}{l}}\",\n      \"name\": \"固有频率公式\",\n      \"meaning\": \"计算系统的固有频率\",\n      \"symbols\": [\n        {\n          \"symbol\": \"\\\\omega_n\",\n          \"meaning\": \"固有频率\",\n          \"unit\": null\n        },\n        {\n          \"symbol\": \"g\",\n          \"meaning\": \"\",\n          \"unit\": null\n        },\n        {\n          \"symbol\": \"l\",\n          \"meaning\": \"\",\n          \"unit\": null\n        }\n      ],\n      \"conditions\": [],\n      \"uncertain_symbols\": [],\n      \"confidence\": 0.95\n    },\n    {\n      \"latex\": \"\\\\zeta = \\\\frac{c}{2m\\\\sqrt{gl}}\",\n      \"name\": \"阻尼比公式\",\n      \"meaning\": \"计算系统的阻尼比\",\n      \"symbols\": [\n        {\n          \"symbol\": \"\\\\zeta\",\n          \"meaning\": \"阻尼比\",\n          \"unit\": null\n        },\n        {\n          \"symbol\": \"c\",\n          \"meaning\": \"阻尼\",\n          \"unit\": null\n        },\n        {\n          \"symbol\": \"m\",\n          \"meaning\": \"\",\n          \"unit\": null\n        },\n        {\n          \"symbol\": \"g\",\n          \"meaning\": \"\",\n          \"unit\": null\n        },\n        {\n          \"symbol\": \"l\",\n          \"meaning\": \"\",\n          \"unit\": null\n        }\n      ],\n      \"conditions\": [],\n      \"uncertain_symbols\": [],\n      \"confidence\": 0.95\n    }\n  ]\n}\n```",
+      "parse_error": null,
+      "partial_response": false,
+      "review_reason": null,
+      "latex": "\\zeta = \\frac{c}{2m\\sqrt{gl}}",
+      "name": "阻尼比公式",
+      "meaning": "计算系统的阻尼比",
+      "symbols": [
+        {
+          "symbol": "\\zeta",
+          "meaning": "阻尼比",
+          "unit": null
+        },
+        {
+          "symbol": "c",
+          "meaning": "阻尼",
+          "unit": null
+        },
+        {
+          "symbol": "m",
+          "meaning": "",
+          "unit": null
+        },
+        {
+          "symbol": "g",
+          "meaning": "",
+          "unit": null
+        },
+        {
+          "symbol": "l",
+          "meaning": "",
+          "unit": null
+        }
+      ],
+      "conditions": [],
+      "uncertain_symbols": [],
+      "confidence": 0.95,
+      "plain_text": "\\zeta = \\frac{c}{2m\\sqrt{gl}}",
+      "description": "计算系统的阻尼比",
+      "validation_issues": [],
+      "validation_status": "passed",
+      "review_required": false,
+      "review_status": null,
+      "indexable": true,
+      "formula_id": "w10-1-直线运动平台（下）_pptx_page_12_formula_3",
+      "page_num": 12
+    },
+    {
+      "source_image": "output/qwen_qwen3.7-plus_5/debug/images/w10-1-直线运动平台（下）_slide_12_img_2.png",
+      "source_type": "image_vlm",
+      "extraction_method": "qwen_api_formula",
+      "backend": "api",
+      "provider": "qwen",
+      "model": "qwen3.7-plus",
+      "image_index": 1,
+      "raw_response": "{\"has_formula\":true,\"formulas\":[{\"latex\":\"e^{-\\\\zeta\\\\omega_n t}\\\\sin(\\\\omega_d t)\",\"name\":\"\",\"meaning\":\"自由振动位移函数的正弦分量\",\"symbols\":[{\"symbol\":\"\\\\zeta\",\"meaning\":\"阻尼比\",\"unit\":null},{\"symbol\":\"\\\\omega_n\",\"meaning\":\"固有频率\",\"unit\":null},{\"symbol\":\"t\",\"meaning\":\"时间\",\"unit\":null},{\"symbol\":\"\\\\omega_d\",\"meaning\":\"振荡频率\",\"unit\":null}],\"conditions\":[],\"uncertain_symbols\":[],\"confidence\":0.95},{\"latex\":\"e^{-\\\\zeta\\\\omega_n t}\\\\cos(\\\\omega_d t)\",\"name\":\"\",\"meaning\":\"自由振动位移函数的余弦分量\",\"symbols\":[{\"symbol\":\"\\\\zeta\",\"meaning\":\"阻尼比\",\"unit\":null},{\"symbol\":\"\\\\omega_n\",\"meaning\":\"固有频率\",\"unit\":null},{\"symbol\":\"t\",\"meaning\":\"时间\",\"unit\":null},{\"symbol\":\"\\\\omega_d\",\"meaning\":\"振荡频率\",\"unit\":null}],\"conditions\":[],\"uncertain_symbols\":[],\"confidence\":0.95},{\"latex\":\"\\\\omega_d = \\\\omega_n\\\\sqrt{1-\\\\zeta^2}\",\"name\":\"振荡频率公式\",\"meaning\":\"阻尼系统的振荡频率与固有频率和阻尼比的关系\",\"symbols\":[{\"symbol\":\"\\\\omega_d\",\"meaning\":\"振荡频率\",\"unit\":null},{\"symbol\":\"\\\\omega_n\",\"meaning\":\"固有频率\",\"unit\":null},{\"symbol\":\"\\\\zeta\",\"meaning\":\"阻尼比\",\"unit\":null}],\"conditions\":[],\"uncertain_symbols\":[],\"confidence\":0.95},{\"latex\":\"c = 0\",\"name\":\"\",\"meaning\":\"忽略阻尼条件\",\"symbols\":[{\"symbol\":\"c\",\"meaning\":\"阻尼系数\",\"unit\":null}],\"conditions\":[],\"uncertain_symbols\":[],\"confidence\":0.95},{\"latex\":\"\\\\zeta = 0\",\"name\":\"\",\"meaning\":\"无阻尼条件\",\"symbols\":[{\"symbol\":\"\\\\zeta\",\"meaning\":\"阻尼比\",\"unit\":null}],\"conditions\":[],\"uncertain_symbols\":[],\"confidence\":0.95},{\"latex\":\"\\\\omega_d = \\\\omega_n\",\"name\":\"\",\"meaning\":\"无阻尼时振荡频率等于固有频率\",\"symbols\":[{\"symbol\":\"\\\\omega_d\",\"meaning\":\"振荡频率\",\"unit\":null},{\"symbol\":\"\\\\omega_n\",\"meaning\":\"固有频率\",\"unit\":null}],\"conditions\":[],\"uncertain_symbols\":[],\"confidence\":0.95}]}",
+      "parse_error": null,
+      "partial_response": false,
+      "review_reason": null,
+      "latex": "e^{-\\zeta\\omega_n t}\\sin(\\omega_d t)",
+      "name": "",
+      "meaning": "自由振动位移函数的正弦分量",
+      "symbols": [
+        {
+          "symbol": "\\zeta",
+          "meaning": "阻尼比",
+          "unit": null
+        },
+        {
+          "symbol": "\\omega_n",
+          "meaning": "固有频率",
+          "unit": null
+        },
+        {
+          "symbol": "t",
+          "meaning": "时间",
+          "unit": null
+        },
+        {
+          "symbol": "\\omega_d",
+          "meaning": "振荡频率",
+          "unit": null
+        }
+      ],
+      "conditions": [],
+      "uncertain_symbols": [],
+      "confidence": 0.95,
+      "plain_text": "e^{-\\zeta\\omega_n t}\\sin(\\omega_d t)",
+      "description": "自由振动位移函数的正弦分量",
+      "validation_issues": [],
+      "validation_status": "passed",
+      "review_required": false,
+      "review_status": null,
+      "indexable": true,
+      "formula_id": "w10-1-直线运动平台（下）_pptx_page_12_formula_4",
+      "page_num": 12
+    },
+    {
+      "source_image": "output/qwen_qwen3.7-plus_5/debug/images/w10-1-直线运动平台（下）_slide_12_img_2.png",
+      "source_type": "image_vlm",
+      "extraction_method": "qwen_api_formula",
+      "backend": "api",
+      "provider": "qwen",
+      "model": "qwen3.7-plus",
+      "image_index": 1,
+      "raw_response": "{\"has_formula\":true,\"formulas\":[{\"latex\":\"e^{-\\\\zeta\\\\omega_n t}\\\\sin(\\\\omega_d t)\",\"name\":\"\",\"meaning\":\"自由振动位移函数的正弦分量\",\"symbols\":[{\"symbol\":\"\\\\zeta\",\"meaning\":\"阻尼比\",\"unit\":null},{\"symbol\":\"\\\\omega_n\",\"meaning\":\"固有频率\",\"unit\":null},{\"symbol\":\"t\",\"meaning\":\"时间\",\"unit\":null},{\"symbol\":\"\\\\omega_d\",\"meaning\":\"振荡频率\",\"unit\":null}],\"conditions\":[],\"uncertain_symbols\":[],\"confidence\":0.95},{\"latex\":\"e^{-\\\\zeta\\\\omega_n t}\\\\cos(\\\\omega_d t)\",\"name\":\"\",\"meaning\":\"自由振动位移函数的余弦分量\",\"symbols\":[{\"symbol\":\"\\\\zeta\",\"meaning\":\"阻尼比\",\"unit\":null},{\"symbol\":\"\\\\omega_n\",\"meaning\":\"固有频率\",\"unit\":null},{\"symbol\":\"t\",\"meaning\":\"时间\",\"unit\":null},{\"symbol\":\"\\\\omega_d\",\"meaning\":\"振荡频率\",\"unit\":null}],\"conditions\":[],\"uncertain_symbols\":[],\"confidence\":0.95},{\"latex\":\"\\\\omega_d = \\\\omega_n\\\\sqrt{1-\\\\zeta^2}\",\"name\":\"振荡频率公式\",\"meaning\":\"阻尼系统的振荡频率与固有频率和阻尼比的关系\",\"symbols\":[{\"symbol\":\"\\\\omega_d\",\"meaning\":\"振荡频率\",\"unit\":null},{\"symbol\":\"\\\\omega_n\",\"meaning\":\"固有频率\",\"unit\":null},{\"symbol\":\"\\\\zeta\",\"meaning\":\"阻尼比\",\"unit\":null}],\"conditions\":[],\"uncertain_symbols\":[],\"confidence\":0.95},{\"latex\":\"c = 0\",\"name\":\"\",\"meaning\":\"忽略阻尼条件\",\"symbols\":[{\"symbol\":\"c\",\"meaning\":\"阻尼系数\",\"unit\":null}],\"conditions\":[],\"uncertain_symbols\":[],\"confidence\":0.95},{\"latex\":\"\\\\zeta = 0\",\"name\":\"\",\"meaning\":\"无阻尼条件\",\"symbols\":[{\"symbol\":\"\\\\zeta\",\"meaning\":\"阻尼比\",\"unit\":null}],\"conditions\":[],\"uncertain_symbols\":[],\"confidence\":0.95},{\"latex\":\"\\\\omega_d = \\\\omega_n\",\"name\":\"\",\"meaning\":\"无阻尼时振荡频率等于固有频率\",\"symbols\":[{\"symbol\":\"\\\\omega_d\",\"meaning\":\"振荡频率\",\"unit\":null},{\"symbol\":\"\\\\omega_n\",\"meaning\":\"固有频率\",\"unit\":null}],\"conditions\":[],\"uncertain_symbols\":[],\"confidence\":0.95}]}",
+      "parse_error": null,
+      "partial_response": false,
+      "review_reason": null,
+      "latex": "e^{-\\zeta\\omega_n t}\\cos(\\omega_d t)",
+      "name": "",
+      "meaning": "自由振动位移函数的余弦分量",
+      "symbols": [
+        {
+          "symbol": "\\zeta",
+          "meaning": "阻尼比",
+          "unit": null
+        },
+        {
+          "symbol": "\\omega_n",
+          "meaning": "固有频率",
+          "unit": null
+        },
+        {
+          "symbol": "t",
+          "meaning": "时间",
+          "unit": null
+        },
+        {
+          "symbol": "\\omega_d",
+          "meaning": "振荡频率",
+          "unit": null
+        }
+      ],
+      "conditions": [],
+      "uncertain_symbols": [],
+      "confidence": 0.95,
+      "plain_text": "e^{-\\zeta\\omega_n t}\\cos(\\omega_d t)",
+      "description": "自由振动位移函数的余弦分量",
+      "validation_issues": [],
+      "validation_status": "passed",
+      "review_required": false,
+      "review_status": null,
+      "indexable": true,
+      "formula_id": "w10-1-直线运动平台（下）_pptx_page_12_formula_5",
+      "page_num": 12
+    },
+    {
+      "source_image": "output/qwen_qwen3.7-plus_5/debug/images/w10-1-直线运动平台（下）_slide_12_img_2.png",
+      "source_type": "image_vlm",
+      "extraction_method": "qwen_api_formula",
+      "backend": "api",
+      "provider": "qwen",
+      "model": "qwen3.7-plus",
+      "image_index": 1,
+      "raw_response": "{\"has_formula\":true,\"formulas\":[{\"latex\":\"e^{-\\\\zeta\\\\omega_n t}\\\\sin(\\\\omega_d t)\",\"name\":\"\",\"meaning\":\"自由振动位移函数的正弦分量\",\"symbols\":[{\"symbol\":\"\\\\zeta\",\"meaning\":\"阻尼比\",\"unit\":null},{\"symbol\":\"\\\\omega_n\",\"meaning\":\"固有频率\",\"unit\":null},{\"symbol\":\"t\",\"meaning\":\"时间\",\"unit\":null},{\"symbol\":\"\\\\omega_d\",\"meaning\":\"振荡频率\",\"unit\":null}],\"conditions\":[],\"uncertain_symbols\":[],\"confidence\":0.95},{\"latex\":\"e^{-\\\\zeta\\\\omega_n t}\\\\cos(\\\\omega_d t)\",\"name\":\"\",\"meaning\":\"自由振动位移函数的余弦分量\",\"symbols\":[{\"symbol\":\"\\\\zeta\",\"meaning\":\"阻尼比\",\"unit\":null},{\"symbol\":\"\\\\omega_n\",\"meaning\":\"固有频率\",\"unit\":null},{\"symbol\":\"t\",\"meaning\":\"时间\",\"unit\":null},{\"symbol\":\"\\\\omega_d\",\"meaning\":\"振荡频率\",\"unit\":null}],\"conditions\":[],\"uncertain_symbols\":[],\"confidence\":0.95},{\"latex\":\"\\\\omega_d = \\\\omega_n\\\\sqrt{1-\\\\zeta^2}\",\"name\":\"振荡频率公式\",\"meaning\":\"阻尼系统的振荡频率与固有频率和阻尼比的关系\",\"symbols\":[{\"symbol\":\"\\\\omega_d\",\"meaning\":\"振荡频率\",\"unit\":null},{\"symbol\":\"\\\\omega_n\",\"meaning\":\"固有频率\",\"unit\":null},{\"symbol\":\"\\\\zeta\",\"meaning\":\"阻尼比\",\"unit\":null}],\"conditions\":[],\"uncertain_symbols\":[],\"confidence\":0.95},{\"latex\":\"c = 0\",\"name\":\"\",\"meaning\":\"忽略阻尼条件\",\"symbols\":[{\"symbol\":\"c\",\"meaning\":\"阻尼系数\",\"unit\":null}],\"conditions\":[],\"uncertain_symbols\":[],\"confidence\":0.95},{\"latex\":\"\\\\zeta = 0\",\"name\":\"\",\"meaning\":\"无阻尼条件\",\"symbols\":[{\"symbol\":\"\\\\zeta\",\"meaning\":\"阻尼比\",\"unit\":null}],\"conditions\":[],\"uncertain_symbols\":[],\"confidence\":0.95},{\"latex\":\"\\\\omega_d = \\\\omega_n\",\"name\":\"\",\"meaning\":\"无阻尼时振荡频率等于固有频率\",\"symbols\":[{\"symbol\":\"\\\\omega_d\",\"meaning\":\"振荡频率\",\"unit\":null},{\"symbol\":\"\\\\omega_n\",\"meaning\":\"固有频率\",\"unit\":null}],\"conditions\":[],\"uncertain_symbols\":[],\"confidence\":0.95}]}",
+      "parse_error": null,
+      "partial_response": false,
+      "review_reason": null,
+      "latex": "\\omega_d = \\omega_n\\sqrt{1-\\zeta^2}",
+      "name": "振荡频率公式",
+      "meaning": "阻尼系统的振荡频率与固有频率和阻尼比的关系",
+      "symbols": [
+        {
+          "symbol": "\\omega_d",
+          "meaning": "振荡频率",
+          "unit": null
+        },
+        {
+          "symbol": "\\omega_n",
+          "meaning": "固有频率",
+          "unit": null
+        },
+        {
+          "symbol": "\\zeta",
+          "meaning": "阻尼比",
+          "unit": null
+        }
+      ],
+      "conditions": [],
+      "uncertain_symbols": [],
+      "confidence": 0.95,
+      "plain_text": "\\omega_d = \\omega_n\\sqrt{1-\\zeta^2}",
+      "description": "阻尼系统的振荡频率与固有频率和阻尼比的关系",
+      "validation_issues": [],
+      "validation_status": "passed",
+      "review_required": false,
+      "review_status": null,
+      "indexable": true,
+      "formula_id": "w10-1-直线运动平台（下）_pptx_page_12_formula_6",
+      "page_num": 12
+    },
+    {
+      "source_image": "output/qwen_qwen3.7-plus_5/debug/images/w10-1-直线运动平台（下）_slide_12_img_2.png",
+      "source_type": "image_vlm",
+      "extraction_method": "qwen_api_formula",
+      "backend": "api",
+      "provider": "qwen",
+      "model": "qwen3.7-plus",
+      "image_index": 1,
+      "raw_response": "{\"has_formula\":true,\"formulas\":[{\"latex\":\"e^{-\\\\zeta\\\\omega_n t}\\\\sin(\\\\omega_d t)\",\"name\":\"\",\"meaning\":\"自由振动位移函数的正弦分量\",\"symbols\":[{\"symbol\":\"\\\\zeta\",\"meaning\":\"阻尼比\",\"unit\":null},{\"symbol\":\"\\\\omega_n\",\"meaning\":\"固有频率\",\"unit\":null},{\"symbol\":\"t\",\"meaning\":\"时间\",\"unit\":null},{\"symbol\":\"\\\\omega_d\",\"meaning\":\"振荡频率\",\"unit\":null}],\"conditions\":[],\"uncertain_symbols\":[],\"confidence\":0.95},{\"latex\":\"e^{-\\\\zeta\\\\omega_n t}\\\\cos(\\\\omega_d t)\",\"name\":\"\",\"meaning\":\"自由振动位移函数的余弦分量\",\"symbols\":[{\"symbol\":\"\\\\zeta\",\"meaning\":\"阻尼比\",\"unit\":null},{\"symbol\":\"\\\\omega_n\",\"meaning\":\"固有频率\",\"unit\":null},{\"symbol\":\"t\",\"meaning\":\"时间\",\"unit\":null},{\"symbol\":\"\\\\omega_d\",\"meaning\":\"振荡频率\",\"unit\":null}],\"conditions\":[],\"uncertain_symbols\":[],\"confidence\":0.95},{\"latex\":\"\\\\omega_d = \\\\omega_n\\\\sqrt{1-\\\\zeta^2}\",\"name\":\"振荡频率公式\",\"meaning\":\"阻尼系统的振荡频率与固有频率和阻尼比的关系\",\"symbols\":[{\"symbol\":\"\\\\omega_d\",\"meaning\":\"振荡频率\",\"unit\":null},{\"symbol\":\"\\\\omega_n\",\"meaning\":\"固有频率\",\"unit\":null},{\"symbol\":\"\\\\zeta\",\"meaning\":\"阻尼比\",\"unit\":null}],\"conditions\":[],\"uncertain_symbols\":[],\"confidence\":0.95},{\"latex\":\"c = 0\",\"name\":\"\",\"meaning\":\"忽略阻尼条件\",\"symbols\":[{\"symbol\":\"c\",\"meaning\":\"阻尼系数\",\"unit\":null}],\"conditions\":[],\"uncertain_symbols\":[],\"confidence\":0.95},{\"latex\":\"\\\\zeta = 0\",\"name\":\"\",\"meaning\":\"无阻尼条件\",\"symbols\":[{\"symbol\":\"\\\\zeta\",\"meaning\":\"阻尼比\",\"unit\":null}],\"conditions\":[],\"uncertain_symbols\":[],\"confidence\":0.95},{\"latex\":\"\\\\omega_d = \\\\omega_n\",\"name\":\"\",\"meaning\":\"无阻尼时振荡频率等于固有频率\",\"symbols\":[{\"symbol\":\"\\\\omega_d\",\"meaning\":\"振荡频率\",\"unit\":null},{\"symbol\":\"\\\\omega_n\",\"meaning\":\"固有频率\",\"unit\":null}],\"conditions\":[],\"uncertain_symbols\":[],\"confidence\":0.95}]}",
+      "parse_error": null,
+      "partial_response": false,
+      "review_reason": null,
+      "latex": "c = 0",
+      "name": "",
+      "meaning": "忽略阻尼条件",
+      "symbols": [
+        {
+          "symbol": "c",
+          "meaning": "阻尼系数",
+          "unit": null
+        }
+      ],
+      "conditions": [],
+      "uncertain_symbols": [],
+      "confidence": 0.95,
+      "plain_text": "c = 0",
+      "description": "忽略阻尼条件",
+      "validation_issues": [],
+      "validation_status": "passed",
+      "review_required": false,
+      "review_status": null,
+      "indexable": true,
+      "formula_id": "w10-1-直线运动平台（下）_pptx_page_12_formula_7",
+      "page_num": 12
+    },
+    {
+      "source_image": "output/qwen_qwen3.7-plus_5/debug/images/w10-1-直线运动平台（下）_slide_12_img_2.png",
+      "source_type": "image_vlm",
+      "extraction_method": "qwen_api_formula",
+      "backend": "api",
+      "provider": "qwen",
+      "model": "qwen3.7-plus",
+      "image_index": 1,
+      "raw_response": "{\"has_formula\":true,\"formulas\":[{\"latex\":\"e^{-\\\\zeta\\\\omega_n t}\\\\sin(\\\\omega_d t)\",\"name\":\"\",\"meaning\":\"自由振动位移函数的正弦分量\",\"symbols\":[{\"symbol\":\"\\\\zeta\",\"meaning\":\"阻尼比\",\"unit\":null},{\"symbol\":\"\\\\omega_n\",\"meaning\":\"固有频率\",\"unit\":null},{\"symbol\":\"t\",\"meaning\":\"时间\",\"unit\":null},{\"symbol\":\"\\\\omega_d\",\"meaning\":\"振荡频率\",\"unit\":null}],\"conditions\":[],\"uncertain_symbols\":[],\"confidence\":0.95},{\"latex\":\"e^{-\\\\zeta\\\\omega_n t}\\\\cos(\\\\omega_d t)\",\"name\":\"\",\"meaning\":\"自由振动位移函数的余弦分量\",\"symbols\":[{\"symbol\":\"\\\\zeta\",\"meaning\":\"阻尼比\",\"unit\":null},{\"symbol\":\"\\\\omega_n\",\"meaning\":\"固有频率\",\"unit\":null},{\"symbol\":\"t\",\"meaning\":\"时间\",\"unit\":null},{\"symbol\":\"\\\\omega_d\",\"meaning\":\"振荡频率\",\"unit\":null}],\"conditions\":[],\"uncertain_symbols\":[],\"confidence\":0.95},{\"latex\":\"\\\\omega_d = \\\\omega_n\\\\sqrt{1-\\\\zeta^2}\",\"name\":\"振荡频率公式\",\"meaning\":\"阻尼系统的振荡频率与固有频率和阻尼比的关系\",\"symbols\":[{\"symbol\":\"\\\\omega_d\",\"meaning\":\"振荡频率\",\"unit\":null},{\"symbol\":\"\\\\omega_n\",\"meaning\":\"固有频率\",\"unit\":null},{\"symbol\":\"\\\\zeta\",\"meaning\":\"阻尼比\",\"unit\":null}],\"conditions\":[],\"uncertain_symbols\":[],\"confidence\":0.95},{\"latex\":\"c = 0\",\"name\":\"\",\"meaning\":\"忽略阻尼条件\",\"symbols\":[{\"symbol\":\"c\",\"meaning\":\"阻尼系数\",\"unit\":null}],\"conditions\":[],\"uncertain_symbols\":[],\"confidence\":0.95},{\"latex\":\"\\\\zeta = 0\",\"name\":\"\",\"meaning\":\"无阻尼条件\",\"symbols\":[{\"symbol\":\"\\\\zeta\",\"meaning\":\"阻尼比\",\"unit\":null}],\"conditions\":[],\"uncertain_symbols\":[],\"confidence\":0.95},{\"latex\":\"\\\\omega_d = \\\\omega_n\",\"name\":\"\",\"meaning\":\"无阻尼时振荡频率等于固有频率\",\"symbols\":[{\"symbol\":\"\\\\omega_d\",\"meaning\":\"振荡频率\",\"unit\":null},{\"symbol\":\"\\\\omega_n\",\"meaning\":\"固有频率\",\"unit\":null}],\"conditions\":[],\"uncertain_symbols\":[],\"confidence\":0.95}]}",
+      "parse_error": null,
+      "partial_response": false,
+      "review_reason": null,
+      "latex": "\\zeta = 0",
+      "name": "",
+      "meaning": "无阻尼条件",
+      "symbols": [
+        {
+          "symbol": "\\zeta",
+          "meaning": "阻尼比",
+          "unit": null
+        }
+      ],
+      "conditions": [],
+      "uncertain_symbols": [],
+      "confidence": 0.95,
+      "plain_text": "\\zeta = 0",
+      "description": "无阻尼条件",
+      "validation_issues": [],
+      "validation_status": "passed",
+      "review_required": false,
+      "review_status": null,
+      "indexable": true,
+      "formula_id": "w10-1-直线运动平台（下）_pptx_page_12_formula_8",
+      "page_num": 12
+    },
+    {
+      "source_image": "output/qwen_qwen3.7-plus_5/debug/images/w10-1-直线运动平台（下）_slide_12_img_2.png",
+      "source_type": "image_vlm",
+      "extraction_method": "qwen_api_formula",
+      "backend": "api",
+      "provider": "qwen",
+      "model": "qwen3.7-plus",
+      "image_index": 1,
+      "raw_response": "{\"has_formula\":true,\"formulas\":[{\"latex\":\"e^{-\\\\zeta\\\\omega_n t}\\\\sin(\\\\omega_d t)\",\"name\":\"\",\"meaning\":\"自由振动位移函数的正弦分量\",\"symbols\":[{\"symbol\":\"\\\\zeta\",\"meaning\":\"阻尼比\",\"unit\":null},{\"symbol\":\"\\\\omega_n\",\"meaning\":\"固有频率\",\"unit\":null},{\"symbol\":\"t\",\"meaning\":\"时间\",\"unit\":null},{\"symbol\":\"\\\\omega_d\",\"meaning\":\"振荡频率\",\"unit\":null}],\"conditions\":[],\"uncertain_symbols\":[],\"confidence\":0.95},{\"latex\":\"e^{-\\\\zeta\\\\omega_n t}\\\\cos(\\\\omega_d t)\",\"name\":\"\",\"meaning\":\"自由振动位移函数的余弦分量\",\"symbols\":[{\"symbol\":\"\\\\zeta\",\"meaning\":\"阻尼比\",\"unit\":null},{\"symbol\":\"\\\\omega_n\",\"meaning\":\"固有频率\",\"unit\":null},{\"symbol\":\"t\",\"meaning\":\"时间\",\"unit\":null},{\"symbol\":\"\\\\omega_d\",\"meaning\":\"振荡频率\",\"unit\":null}],\"conditions\":[],\"uncertain_symbols\":[],\"confidence\":0.95},{\"latex\":\"\\\\omega_d = \\\\omega_n\\\\sqrt{1-\\\\zeta^2}\",\"name\":\"振荡频率公式\",\"meaning\":\"阻尼系统的振荡频率与固有频率和阻尼比的关系\",\"symbols\":[{\"symbol\":\"\\\\omega_d\",\"meaning\":\"振荡频率\",\"unit\":null},{\"symbol\":\"\\\\omega_n\",\"meaning\":\"固有频率\",\"unit\":null},{\"symbol\":\"\\\\zeta\",\"meaning\":\"阻尼比\",\"unit\":null}],\"conditions\":[],\"uncertain_symbols\":[],\"confidence\":0.95},{\"latex\":\"c = 0\",\"name\":\"\",\"meaning\":\"忽略阻尼条件\",\"symbols\":[{\"symbol\":\"c\",\"meaning\":\"阻尼系数\",\"unit\":null}],\"conditions\":[],\"uncertain_symbols\":[],\"confidence\":0.95},{\"latex\":\"\\\\zeta = 0\",\"name\":\"\",\"meaning\":\"无阻尼条件\",\"symbols\":[{\"symbol\":\"\\\\zeta\",\"meaning\":\"阻尼比\",\"unit\":null}],\"conditions\":[],\"uncertain_symbols\":[],\"confidence\":0.95},{\"latex\":\"\\\\omega_d = \\\\omega_n\",\"name\":\"\",\"meaning\":\"无阻尼时振荡频率等于固有频率\",\"symbols\":[{\"symbol\":\"\\\\omega_d\",\"meaning\":\"振荡频率\",\"unit\":null},{\"symbol\":\"\\\\omega_n\",\"meaning\":\"固有频率\",\"unit\":null}],\"conditions\":[],\"uncertain_symbols\":[],\"confidence\":0.95}]}",
+      "parse_error": null,
+      "partial_response": false,
+      "review_reason": null,
+      "latex": "\\omega_d = \\omega_n",
+      "name": "",
+      "meaning": "无阻尼时振荡频率等于固有频率",
+      "symbols": [
+        {
+          "symbol": "\\omega_d",
+          "meaning": "振荡频率",
+          "unit": null
+        },
+        {
+          "symbol": "\\omega_n",
+          "meaning": "固有频率",
+          "unit": null
+        }
+      ],
+      "conditions": [],
+      "uncertain_symbols": [],
+      "confidence": 0.95,
+      "plain_text": "\\omega_d = \\omega_n",
+      "description": "无阻尼时振荡频率等于固有频率",
+      "validation_issues": [],
+      "validation_status": "passed",
+      "review_required": false,
+      "review_status": null,
+      "indexable": true,
+      "formula_id": "w10-1-直线运动平台（下）_pptx_page_12_formula_9",
+      "page_num": 12
+    }
+  ],
+  "timestamp": "2026-08-18T02:06:24.169535"
+}

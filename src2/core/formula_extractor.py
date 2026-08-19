@@ -7,6 +7,7 @@ import re
 import os
 from typing import List, Dict, Any, Optional
 from PIL import Image
+from .formula_validator import FormulaValidator
 
 
 class FormulaExtractor:
@@ -22,6 +23,7 @@ class FormulaExtractor:
         self.ocr_engine = ocr_engine
         self.deepseek_wrapper = deepseek_wrapper
         self.logger = logger
+        self.validator = FormulaValidator()
     
     def extract_formulas_from_text(self, text: str, context: str = "") -> List[Dict[str, Any]]:
         """
@@ -36,7 +38,8 @@ class FormulaExtractor:
         """
         formulas = []
         
-        # 1. 提取LaTeX格式公式
+        # Extract explicit LaTeX first, then simple equations. Validation and
+        # deduplication happen once after all page sources are collected.
         latex_formulas = self._extract_latex_formulas(text)
         formulas.extend(latex_formulas)
         
@@ -49,25 +52,33 @@ class FormulaExtractor:
     def _extract_latex_formulas(self, text: str) -> List[Dict[str, Any]]:
         """提取LaTeX格式的公式"""
         formulas = []
-        
-        # 行内公式 $...$
-        inline_pattern = r'\$([^\$]+)\$'
-        for match in re.finditer(inline_pattern, text):
-            formulas.append({
-                "type": "latex_inline",
-                "content": match.group(1),
-                "latex": match.group(1),
-                "position": match.span()
-            })
-        
-        # 块公式 $$...$$
-        block_pattern = r'\$\$([^\$]+)\$\$'
-        for match in re.finditer(block_pattern, text):
+        occupied = []
+
+        # Parse block formulas first so their inner $...$ is not emitted again.
+        block_pattern = r'\$\$(.+?)\$\$'
+        for match in re.finditer(block_pattern, text, re.DOTALL):
+            occupied.append(match.span())
             formulas.append({
                 "type": "latex_block",
                 "content": match.group(1),
                 "latex": match.group(1),
-                "position": match.span()
+                "position": match.span(),
+                "source_type": "text_latex_block",
+                "extraction_method": "text_latex",
+            })
+
+        # 行内公式 $...$
+        inline_pattern = r'(?<!\$)\$([^\n$]+)\$(?!\$)'
+        for match in re.finditer(inline_pattern, text):
+            if any(start <= match.start() < end for start, end in occupied):
+                continue
+            formulas.append({
+                "type": "latex_inline",
+                "content": match.group(1),
+                "latex": match.group(1),
+                "position": match.span(),
+                "source_type": "text_latex_inline",
+                "extraction_method": "text_latex",
             })
         
         # LaTeX环境
@@ -77,7 +88,9 @@ class FormulaExtractor:
                 "type": f"latex_{match.group(1)}",
                 "content": match.group(2),
                 "latex": match.group(0),
-                "position": match.span()
+                "position": match.span(),
+                "source_type": "text_latex_environment",
+                "extraction_method": "text_latex",
             })
         
         return formulas
@@ -85,10 +98,20 @@ class FormulaExtractor:
     def _extract_simple_formulas(self, text: str) -> List[Dict[str, Any]]:
         """提取简单数学表达式"""
         formulas = []
-        
+        protected_spans = []
+        protected_patterns = (
+            r'\$\$.+?\$\$',
+            r'(?<!\$)\$[^\n$]+\$(?!\$)',
+            r'\\begin\{(?:equation|align|gather)\}.*?\\end\{(?:equation|align|gather)\}',
+        )
+        for pattern in protected_patterns:
+            protected_spans.extend(match.span() for match in re.finditer(pattern, text, re.DOTALL))
+
         # 匹配简单方程式：a = b + c
-        equation_pattern = r'\b([a-zA-Z_]\w*)\s*=\s*([^\n\r;]{1,160})'
+        equation_pattern = r'\b([a-zA-Z_]\w*)\s*=\s*([^\n\r;；，。$]{1,160})'
         for match in re.finditer(equation_pattern, text):
+            if any(match.start() < end and match.end() > start for start, end in protected_spans):
+                continue
             right_side = match.group(2).strip()
             is_function_call = re.search(r'[A-Za-z_]\w*\s*\(', right_side) is not None
             has_arithmetic = re.search(r'[A-Za-z0-9_)\]]\s*[+\-*/^]\s*[A-Za-z0-9_(\[]', right_side) is not None
@@ -97,12 +120,72 @@ class FormulaExtractor:
                 formulas.append({
                     "type": "equation",
                     "content": match.group(0),
+                    "latex": match.group(0),
                     "variable": match.group(1),
                     "expression": right_side.strip(),
-                    "position": match.span()
+                    "position": match.span(),
+                    "source_type": "text_simple_equation",
+                    "extraction_method": "text_rule",
                 })
         
         return formulas
+
+    def should_analyze_image(self, description: str) -> bool:
+        """Conservatively route likely formula images to the specialist API."""
+        description = str(description or "")
+        keywords = (
+            "公式", "方程", "数学表达式", "计算式", "积分", "微分", "导数",
+            "矩阵", "分式", "根号", "formula", "equation", "latex",
+        )
+        if any(keyword.lower() in description.lower() for keyword in keywords):
+            return True
+        return bool(re.search(r"[A-Za-zα-ωΑ-Ω]\s*[=≈<>]\s*[^，。；\n]{2,80}", description))
+
+    def extract_formulas_from_vlm_image(
+        self,
+        image_path: str,
+        context: str = "",
+        image_index: Optional[int] = None,
+    ) -> List[Dict[str, Any]]:
+        """Use the configured VLM and retain all formulas returned for one image."""
+        if not self.deepseek_wrapper:
+            return []
+        try:
+            response = self.deepseek_wrapper.recognize_formula(image_path, context=context)
+            raw_formulas = response.get("formulas") if isinstance(response, dict) else []
+            if not raw_formulas and isinstance(response, dict) and response.get("latex"):
+                raw_formulas = [response]
+            source_metadata = {
+                "source_image": image_path,
+                "source_type": "image_vlm",
+                "extraction_method": f"{getattr(self.deepseek_wrapper, 'provider', 'vlm')}_api_formula",
+                "backend": "api",
+                "provider": getattr(self.deepseek_wrapper, "provider", None),
+                "model": getattr(self.deepseek_wrapper, "model", None),
+                "image_index": image_index,
+                "raw_response": response.get("raw_response", "") if isinstance(response, dict) else "",
+                "parse_error": response.get("parse_error") if isinstance(response, dict) else None,
+                "partial_response": response.get("partial_response", False) if isinstance(response, dict) else False,
+                "review_reason": response.get("review_reason") if isinstance(response, dict) else None,
+            }
+            return [{**source_metadata, **formula} for formula in raw_formulas if isinstance(formula, dict)]
+        except Exception as exc:
+            if self.logger:
+                self.logger.error(f"公式视觉识别失败: {exc}")
+            return [{
+                "source_image": image_path,
+                "source_type": "image_vlm",
+                "extraction_method": "vlm_formula",
+                "latex": "",
+                "api_error": str(exc),
+                "review_required": True,
+                "review_reason": "api_failed",
+                "image_index": image_index,
+            }]
+
+    def finalize_page(self, formulas: List[Dict[str, Any]]) -> List[Dict[str, Any]]:
+        """Normalize, validate, and deduplicate all formulas collected for a page."""
+        return self.validator.validate_many(formulas)
     
     def extract_formulas_from_image(self, image_path: str, context: str = "") -> Optional[Dict[str, Any]]:
         """

@@ -1,0 +1,149 @@
+{
+  "page": 6,
+  "formula_count": 3,
+  "accepted_count": 3,
+  "review_count": 0,
+  "formulas": [
+    {
+      "source_image": "output/qwen_qwen3.7-plus_6/debug/images/w10-1-直线运动平台（下）_slide_6_img_1.png",
+      "source_type": "image_vlm",
+      "extraction_method": "qwen_api_formula",
+      "backend": "api",
+      "provider": "qwen",
+      "model": "qwen3.7-plus",
+      "image_index": 0,
+      "raw_response": "{\n  \"has_formula\": true,\n  \"formulas\": [\n    {\n      \"latex\": \"\\\\theta(t_1) = \\\\theta(t_0) + \\\\int_{t_0}^{t_1} \\\\omega(t) \\\\mathrm{d}t\",\n      \"name\": \"步进电机转角积分公式\",\n      \"meaning\": \"从时刻 t₀ 到 t₁，电机转角等于初始转角加上角速度对时间的积分\",\n      \"symbols\": [\n        {\n          \"symbol\": \"\\\\theta(t)\",\n          \"meaning\": \"步进电机转角\",\n          \"unit\": null\n        },\n        {\n          \"symbol\": \"\\\\omega(t)\",\n          \"meaning\": \"转速（角速度）\",\n          \"unit\": null\n        },\n        {\n          \"symbol\": \"t_0\",\n          \"meaning\": \"起始时刻\",\n          \"unit\": null\n        },\n        {\n          \"symbol\": \"t_1\",\n          \"meaning\": \"终止时刻\",\n          \"unit\": null\n        }\n      ],\n      \"conditions\": [],\n      \"uncertain_symbols\": [],\n      \"confidence\": 1.0\n    },\n    {\n      \"latex\": \"\\\\theta[n\\\\Delta t] = \\\\theta[(n-1)\\\\Delta t] + \\\\omega[n\\\\Delta t]\\\\Delta t\",\n      \"name\": \"转角离散化递推公式\",\n      \"meaning\": \"利用时间间隔 Δt 将连续转角公式离散化，用于循环计算\",\n      \"symbols\": [\n        {\n          \"symbol\": \"\\\\theta[n\\\\Delta t]\",\n          \"meaning\": \"第 n 个时间步的转角\",\n          \"unit\": \"脉冲数\"\n        },\n        {\n          \"symbol\": \"\\\\omega[n\\\\Delta t]\",\n          \"meaning\": \"第 n 个时间步的转速\",\n          \"unit\": \"脉冲数/微秒\"\n        },\n        {\n          \"symbol\": \"\\\\Delta t\",\n          \"meaning\": \"每次loop循环的时间间隔\",\n          \"unit\": null\n        },\n        {\n          \"symbol\": \"n\",\n          \"meaning\": \"循环计数索引\",\n          \"unit\": null\n        }\n      ],\n      \"conditions\": [],\n      \"uncertain_symbols\": [],\n      \"confidence\": 1.0\n    },\n    {\n      \"latex\": \"|\\\\theta[n\\\\Delta t]| \\\\ge 0.5\",\n      \"name\": \"电机转动触发条件\",\n      \"meaning\": \"当离散转角的绝对值大于等于0.5时，电机转动一格\",\n      \"symbols\": [\n        {\n          \"symbol\": \"\\\\theta[n\\\\Delta t]\",\n          \"meaning\": \"无纲化后的转角（脉冲数）\",\n          \"unit\": \"脉冲数\"\n        },\n        {\n          \"symbol\": \"0.5\",\n          \"meaning\": \"转动阈值（半格脉冲）\",\n          \"unit\": null\n        }\n      ],\n      \"conditions\": [],\n      \"uncertain_symbols\": [],\n      \"confidence\": 1.0\n    }\n  ]\n}",
+      "parse_error": null,
+      "partial_response": false,
+      "review_reason": null,
+      "latex": "\\theta(t_1) = \\theta(t_0) + \\int_{t_0}^{t_1} \\omega(t) \\mathrm{d}t",
+      "name": "步进电机转角积分公式",
+      "meaning": "从时刻 t₀ 到 t₁，电机转角等于初始转角加上角速度对时间的积分",
+      "symbols": [
+        {
+          "symbol": "\\theta(t)",
+          "meaning": "步进电机转角",
+          "unit": null
+        },
+        {
+          "symbol": "\\omega(t)",
+          "meaning": "转速（角速度）",
+          "unit": null
+        },
+        {
+          "symbol": "t_0",
+          "meaning": "起始时刻",
+          "unit": null
+        },
+        {
+          "symbol": "t_1",
+          "meaning": "终止时刻",
+          "unit": null
+        }
+      ],
+      "conditions": [],
+      "uncertain_symbols": [],
+      "confidence": 1.0,
+      "plain_text": "\\theta(t_1) = \\theta(t_0) + \\int_{t_0}^{t_1} \\omega(t) \\mathrm{d}t",
+      "description": "从时刻 t₀ 到 t₁，电机转角等于初始转角加上角速度对时间的积分",
+      "validation_issues": [],
+      "validation_status": "passed",
+      "review_required": false,
+      "review_status": null,
+      "indexable": true,
+      "formula_id": "w10-1-直线运动平台（下）_pptx_page_6_formula_1",
+      "page_num": 6
+    },
+    {
+      "source_image": "output/qwen_qwen3.7-plus_6/debug/images/w10-1-直线运动平台（下）_slide_6_img_1.png",
+      "source_type": "image_vlm",
+      "extraction_method": "qwen_api_formula",
+      "backend": "api",
+      "provider": "qwen",
+      "model": "qwen3.7-plus",
+      "image_index": 0,
+      "raw_response": "{\n  \"has_formula\": true,\n  \"formulas\": [\n    {\n      \"latex\": \"\\\\theta(t_1) = \\\\theta(t_0) + \\\\int_{t_0}^{t_1} \\\\omega(t) \\\\mathrm{d}t\",\n      \"name\": \"步进电机转角积分公式\",\n      \"meaning\": \"从时刻 t₀ 到 t₁，电机转角等于初始转角加上角速度对时间的积分\",\n      \"symbols\": [\n        {\n          \"symbol\": \"\\\\theta(t)\",\n          \"meaning\": \"步进电机转角\",\n          \"unit\": null\n        },\n        {\n          \"symbol\": \"\\\\omega(t)\",\n          \"meaning\": \"转速（角速度）\",\n          \"unit\": null\n        },\n        {\n          \"symbol\": \"t_0\",\n          \"meaning\": \"起始时刻\",\n          \"unit\": null\n        },\n        {\n          \"symbol\": \"t_1\",\n          \"meaning\": \"终止时刻\",\n          \"unit\": null\n        }\n      ],\n      \"conditions\": [],\n      \"uncertain_symbols\": [],\n      \"confidence\": 1.0\n    },\n    {\n      \"latex\": \"\\\\theta[n\\\\Delta t] = \\\\theta[(n-1)\\\\Delta t] + \\\\omega[n\\\\Delta t]\\\\Delta t\",\n      \"name\": \"转角离散化递推公式\",\n      \"meaning\": \"利用时间间隔 Δt 将连续转角公式离散化，用于循环计算\",\n      \"symbols\": [\n        {\n          \"symbol\": \"\\\\theta[n\\\\Delta t]\",\n          \"meaning\": \"第 n 个时间步的转角\",\n          \"unit\": \"脉冲数\"\n        },\n        {\n          \"symbol\": \"\\\\omega[n\\\\Delta t]\",\n          \"meaning\": \"第 n 个时间步的转速\",\n          \"unit\": \"脉冲数/微秒\"\n        },\n        {\n          \"symbol\": \"\\\\Delta t\",\n          \"meaning\": \"每次loop循环的时间间隔\",\n          \"unit\": null\n        },\n        {\n          \"symbol\": \"n\",\n          \"meaning\": \"循环计数索引\",\n          \"unit\": null\n        }\n      ],\n      \"conditions\": [],\n      \"uncertain_symbols\": [],\n      \"confidence\": 1.0\n    },\n    {\n      \"latex\": \"|\\\\theta[n\\\\Delta t]| \\\\ge 0.5\",\n      \"name\": \"电机转动触发条件\",\n      \"meaning\": \"当离散转角的绝对值大于等于0.5时，电机转动一格\",\n      \"symbols\": [\n        {\n          \"symbol\": \"\\\\theta[n\\\\Delta t]\",\n          \"meaning\": \"无纲化后的转角（脉冲数）\",\n          \"unit\": \"脉冲数\"\n        },\n        {\n          \"symbol\": \"0.5\",\n          \"meaning\": \"转动阈值（半格脉冲）\",\n          \"unit\": null\n        }\n      ],\n      \"conditions\": [],\n      \"uncertain_symbols\": [],\n      \"confidence\": 1.0\n    }\n  ]\n}",
+      "parse_error": null,
+      "partial_response": false,
+      "review_reason": null,
+      "latex": "\\theta[n\\Delta t] = \\theta[(n-1)\\Delta t] + \\omega[n\\Delta t]\\Delta t",
+      "name": "转角离散化递推公式",
+      "meaning": "利用时间间隔 Δt 将连续转角公式离散化，用于循环计算",
+      "symbols": [
+        {
+          "symbol": "\\theta[n\\Delta t]",
+          "meaning": "第 n 个时间步的转角",
+          "unit": "脉冲数"
+        },
+        {
+          "symbol": "\\omega[n\\Delta t]",
+          "meaning": "第 n 个时间步的转速",
+          "unit": "脉冲数/微秒"
+        },
+        {
+          "symbol": "\\Delta t",
+          "meaning": "每次loop循环的时间间隔",
+          "unit": null
+        },
+        {
+          "symbol": "n",
+          "meaning": "循环计数索引",
+          "unit": null
+        }
+      ],
+      "conditions": [],
+      "uncertain_symbols": [],
+      "confidence": 1.0,
+      "plain_text": "\\theta[n\\Delta t] = \\theta[(n-1)\\Delta t] + \\omega[n\\Delta t]\\Delta t",
+      "description": "利用时间间隔 Δt 将连续转角公式离散化，用于循环计算",
+      "validation_issues": [],
+      "validation_status": "passed",
+      "review_required": false,
+      "review_status": null,
+      "indexable": true,
+      "formula_id": "w10-1-直线运动平台（下）_pptx_page_6_formula_2",
+      "page_num": 6
+    },
+    {
+      "source_image": "output/qwen_qwen3.7-plus_6/debug/images/w10-1-直线运动平台（下）_slide_6_img_1.png",
+      "source_type": "image_vlm",
+      "extraction_method": "qwen_api_formula",
+      "backend": "api",
+      "provider": "qwen",
+      "model": "qwen3.7-plus",
+      "image_index": 0,
+      "raw_response": "{\n  \"has_formula\": true,\n  \"formulas\": [\n    {\n      \"latex\": \"\\\\theta(t_1) = \\\\theta(t_0) + \\\\int_{t_0}^{t_1} \\\\omega(t) \\\\mathrm{d}t\",\n      \"name\": \"步进电机转角积分公式\",\n      \"meaning\": \"从时刻 t₀ 到 t₁，电机转角等于初始转角加上角速度对时间的积分\",\n      \"symbols\": [\n        {\n          \"symbol\": \"\\\\theta(t)\",\n          \"meaning\": \"步进电机转角\",\n          \"unit\": null\n        },\n        {\n          \"symbol\": \"\\\\omega(t)\",\n          \"meaning\": \"转速（角速度）\",\n          \"unit\": null\n        },\n        {\n          \"symbol\": \"t_0\",\n          \"meaning\": \"起始时刻\",\n          \"unit\": null\n        },\n        {\n          \"symbol\": \"t_1\",\n          \"meaning\": \"终止时刻\",\n          \"unit\": null\n        }\n      ],\n      \"conditions\": [],\n      \"uncertain_symbols\": [],\n      \"confidence\": 1.0\n    },\n    {\n      \"latex\": \"\\\\theta[n\\\\Delta t] = \\\\theta[(n-1)\\\\Delta t] + \\\\omega[n\\\\Delta t]\\\\Delta t\",\n      \"name\": \"转角离散化递推公式\",\n      \"meaning\": \"利用时间间隔 Δt 将连续转角公式离散化，用于循环计算\",\n      \"symbols\": [\n        {\n          \"symbol\": \"\\\\theta[n\\\\Delta t]\",\n          \"meaning\": \"第 n 个时间步的转角\",\n          \"unit\": \"脉冲数\"\n        },\n        {\n          \"symbol\": \"\\\\omega[n\\\\Delta t]\",\n          \"meaning\": \"第 n 个时间步的转速\",\n          \"unit\": \"脉冲数/微秒\"\n        },\n        {\n          \"symbol\": \"\\\\Delta t\",\n          \"meaning\": \"每次loop循环的时间间隔\",\n          \"unit\": null\n        },\n        {\n          \"symbol\": \"n\",\n          \"meaning\": \"循环计数索引\",\n          \"unit\": null\n        }\n      ],\n      \"conditions\": [],\n      \"uncertain_symbols\": [],\n      \"confidence\": 1.0\n    },\n    {\n      \"latex\": \"|\\\\theta[n\\\\Delta t]| \\\\ge 0.5\",\n      \"name\": \"电机转动触发条件\",\n      \"meaning\": \"当离散转角的绝对值大于等于0.5时，电机转动一格\",\n      \"symbols\": [\n        {\n          \"symbol\": \"\\\\theta[n\\\\Delta t]\",\n          \"meaning\": \"无纲化后的转角（脉冲数）\",\n          \"unit\": \"脉冲数\"\n        },\n        {\n          \"symbol\": \"0.5\",\n          \"meaning\": \"转动阈值（半格脉冲）\",\n          \"unit\": null\n        }\n      ],\n      \"conditions\": [],\n      \"uncertain_symbols\": [],\n      \"confidence\": 1.0\n    }\n  ]\n}",
+      "parse_error": null,
+      "partial_response": false,
+      "review_reason": null,
+      "latex": "|\\theta[n\\Delta t]| \\ge 0.5",
+      "name": "电机转动触发条件",
+      "meaning": "当离散转角的绝对值大于等于0.5时，电机转动一格",
+      "symbols": [
+        {
+          "symbol": "\\theta[n\\Delta t]",
+          "meaning": "无纲化后的转角（脉冲数）",
+          "unit": "脉冲数"
+        },
+        {
+          "symbol": "0.5",
+          "meaning": "转动阈值（半格脉冲）",
+          "unit": null
+        }
+      ],
+      "conditions": [],
+      "uncertain_symbols": [],
+      "confidence": 1.0,
+      "plain_text": "|\\theta[n\\Delta t]| \\ge 0.5",
+      "description": "当离散转角的绝对值大于等于0.5时，电机转动一格",
+      "validation_issues": [],
+      "validation_status": "passed",
+      "review_required": false,
+      "review_status": null,
+      "indexable": true,
+      "formula_id": "w10-1-直线运动平台（下）_pptx_page_6_formula_3",
+      "page_num": 6
+    }
+  ],
+  "timestamp": "2026-08-19T10:40:01.569471"
+}

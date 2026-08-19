@@ -1,0 +1,21 @@
+{
+  "page_num": 15,
+  "raw_text": "§4.2 \n实践：\n采用输入整形进行摆锤减振\n17-\nw10-s8-sliderSmoothPath-FFC\n.ino",
+  "cleaned_text": "§4.2\n实践：\n采用输入整形进行摆锤减振\nw10-s8-sliderSmoothPath-FFC\n.ino",
+  "key_points": [
+    "实践："
+  ],
+  "technical_terms": [
+    "w10-s8-sliderSmoothPath-FFC"
+  ],
+  "has_images": true,
+  "image_count": 1,
+  "image_paths": [
+    "output/qwen_qwen3.7-plus_5/debug/images/w10-1-直线运动平台（下）_slide_16_img_1.png"
+  ],
+  "metadata": {
+    "char_count": 59,
+    "word_count": 6,
+    "line_count": 6
+  }
+}

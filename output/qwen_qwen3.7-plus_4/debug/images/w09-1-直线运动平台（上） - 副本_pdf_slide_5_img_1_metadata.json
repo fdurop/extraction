@@ -1,0 +1,33 @@
+{
+  "original_path": "output/qwen_qwen3.7-plus_4/debug/images/w09-1-直线运动平台（上） - 副本_p5_img3.jpeg",
+  "enhanced_path": "output/qwen_qwen3.7-plus_4/debug/images/w09-1-直线运动平台（上） - 副本_p5_img3_enhanced.jpeg",
+  "description": "图片展示了一个限位开关（微动开关）的实物照片，与课程主题“§2.1 限位开关”直接相关。\n\n**关键对象与结构描述：**\n*   **主体外观**：图片中心是一个黑色的长方体电子元件，表面印有“HUADE TECH”品牌字样及型号（看似LXW5-11G2）。\n*   **引脚标识**：元件左侧有三个金属引脚，旁边分别印有文字标识。从上到下依次为“COM”（公共端）、中间标识较模糊（结合上下文电路图应为NC常闭端）、“NO”（常开端）。这与页面下方电路接线图中的COM、NO、NC引脚定义完全对应。\n*   **机械触发部分**：元件右侧连接着一个细长的金属杠杆臂，末端装有一个白色的滚轮。这体现了文本中提到的“有触点，机械式接触”特征，滚轮用于在直线运动平台中通过物理碰撞来触发开关动作。",
+  "metadata": {
+    "generation": {
+      "method": "qwen_api",
+      "backend": "api",
+      "provider": "qwen",
+      "model": "qwen3.7-plus",
+      "status": "success",
+      "api_error": null
+    },
+    "review": {
+      "required": false,
+      "status": null,
+      "reason": null,
+      "course_relevant": true
+    }
+  },
+  "error": null,
+  "method": "qwen_api",
+  "backend": "api",
+  "provider": "qwen",
+  "model": "qwen3.7-plus",
+  "status": "success",
+  "api_error": null,
+  "indexable": true,
+  "review_required": false,
+  "review_reason": null,
+  "review_status": null,
+  "course_relevant": true
+}

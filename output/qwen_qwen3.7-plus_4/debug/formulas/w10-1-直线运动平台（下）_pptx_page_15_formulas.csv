@@ -1,0 +1,5 @@
+﻿序号,LaTeX公式,名称,描述,来源图像,提取方法,置信度,验证状态,是否需审核
+1,\mathcal{L}[f(t-\tau)] = e^{-s\tau}F(s),延时性质,拉普拉斯变换的时移性质（延时性质），表示函数在时域延迟$\tau$，其拉普拉斯变换乘以指数因子$e^{-s\tau}$。,output/qwen_qwen3.7-plus_4/debug/images/w10-1-直线运动平台（下）_slide_15_img_1.png,qwen_api_formula,0.95,passed,False
+2,,,,output/qwen_qwen3.7-plus_4/debug/images/w10-1-直线运动平台（下）_slide_15_img_2.png,qwen_api_formula,0.0,review,True
+3,C = C/\tau^2,参数更新或归一化公式,表示变量C被更新为其自身除以tau的平方，常见于算法迭代或归一化过程。,output/qwen_qwen3.7-plus_4/debug/images/w10-1-直线运动平台（下）_slide_15_img_3.png,qwen_api_formula,0.9,passed,False
+4,\tilde{u}_s(t) = \frac{1}{2} [u_s(t) + u_s(t - 2\tau)],输入整形公式,表示整形后的输入信号是原始输入信号与延迟了2τ时间的原始输入信号的算术平均值，常用于消除系统振动或平滑输入。,output/qwen_qwen3.7-plus_4/debug/images/w10-1-直线运动平台（下）_slide_15_img_4.png,qwen_api_formula,0.95,passed,False

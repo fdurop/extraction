@@ -1,0 +1,100 @@
+{
+  "page": 16,
+  "formula_count": 2,
+  "accepted_count": 2,
+  "review_count": 0,
+  "formulas": [
+    {
+      "source_image": "output/qwen_qwen3.7-plus_4/debug/images/w10-1-直线运动平台（下）_slide_16_img_1.png",
+      "source_type": "image_vlm",
+      "extraction_method": "qwen_api_formula",
+      "backend": "api",
+      "provider": "qwen",
+      "model": "qwen3.7-plus",
+      "image_index": 0,
+      "raw_response": "{\n  \"has_formula\": true,\n  \"formulas\": [\n    {\n      \"latex\": \"v(t) = 6Lt(T-t)/T^3\",\n      \"name\": \"原始速度\",\n      \"meaning\": \"滑台按设定速度进行移动的原始速度函数，满足总位移为L\",\n      \"symbols\": [\n        {\n          \"symbol\": \"v(t)\",\n          \"meaning\": \"原始速度\",\n          \"unit\": null\n        },\n        {\n          \"symbol\": \"L\",\n          \"meaning\": \"距离（小于行程）\",\n          \"unit\": null\n        },\n        {\n          \"symbol\": \"T\",\n          \"meaning\": \"指定时长\",\n          \"unit\": null\n        },\n        {\n          \"symbol\": \"t\",\n          \"meaning\": \"时间\",\n          \"unit\": null\n        }\n      ],\n      \"conditions\": [],\n      \"uncertain_symbols\": [],\n      \"confidence\": 0.95\n    },\n    {\n      \"latex\": \"/tilde{v}(t) = /frac{1}{2}[v(t) + v(t-2/tau)]\",\n      \"name\": \"输入整形\",\n      \"meaning\": \"采用输入整形进行摆锤减振后的速度函数，通过延迟叠加消除振动\",\n      \"symbols\": [\n        {\n          \"symbol\": \"/tilde{v}(t)\",\n          \"meaning\": \"整形后的速度\",\n          \"unit\": null\n        },\n        {\n          \"symbol\": \"v(t)\",\n          \"meaning\": \"原始速度\",\n          \"unit\": null\n        },\n        {\n          \"symbol\": \"/tau\",\n          \"meaning\": \"延迟时间参数（通常与系统固有周期相关）\",\n          \"unit\": null\n        }\n      ],\n      \"conditions\": [],\n      \"uncertain_symbols\": [],\n      \"confidence\": 0.9\n    }\n  ]\n}",
+      "latex": "v(t) = 6Lt(T-t)/T^3",
+      "name": "原始速度",
+      "meaning": "滑台按设定速度进行移动的原始速度函数，满足总位移为L",
+      "symbols": [
+        {
+          "symbol": "v(t)",
+          "meaning": "原始速度",
+          "unit": null
+        },
+        {
+          "symbol": "L",
+          "meaning": "距离（小于行程）",
+          "unit": null
+        },
+        {
+          "symbol": "T",
+          "meaning": "指定时长",
+          "unit": null
+        },
+        {
+          "symbol": "t",
+          "meaning": "时间",
+          "unit": null
+        }
+      ],
+      "conditions": [],
+      "uncertain_symbols": [],
+      "confidence": 0.95,
+      "plain_text": "v(t) = 6Lt(T-t)/T^3",
+      "description": "滑台按设定速度进行移动的原始速度函数，满足总位移为L",
+      "validation_issues": [],
+      "validation_status": "passed",
+      "review_required": false,
+      "review_reason": null,
+      "review_status": null,
+      "indexable": true,
+      "formula_id": "w10-1-直线运动平台（下）_pptx_page_16_formula_1",
+      "page_num": 16
+    },
+    {
+      "source_image": "output/qwen_qwen3.7-plus_4/debug/images/w10-1-直线运动平台（下）_slide_16_img_1.png",
+      "source_type": "image_vlm",
+      "extraction_method": "qwen_api_formula",
+      "backend": "api",
+      "provider": "qwen",
+      "model": "qwen3.7-plus",
+      "image_index": 0,
+      "raw_response": "{\n  \"has_formula\": true,\n  \"formulas\": [\n    {\n      \"latex\": \"v(t) = 6Lt(T-t)/T^3\",\n      \"name\": \"原始速度\",\n      \"meaning\": \"滑台按设定速度进行移动的原始速度函数，满足总位移为L\",\n      \"symbols\": [\n        {\n          \"symbol\": \"v(t)\",\n          \"meaning\": \"原始速度\",\n          \"unit\": null\n        },\n        {\n          \"symbol\": \"L\",\n          \"meaning\": \"距离（小于行程）\",\n          \"unit\": null\n        },\n        {\n          \"symbol\": \"T\",\n          \"meaning\": \"指定时长\",\n          \"unit\": null\n        },\n        {\n          \"symbol\": \"t\",\n          \"meaning\": \"时间\",\n          \"unit\": null\n        }\n      ],\n      \"conditions\": [],\n      \"uncertain_symbols\": [],\n      \"confidence\": 0.95\n    },\n    {\n      \"latex\": \"/tilde{v}(t) = /frac{1}{2}[v(t) + v(t-2/tau)]\",\n      \"name\": \"输入整形\",\n      \"meaning\": \"采用输入整形进行摆锤减振后的速度函数，通过延迟叠加消除振动\",\n      \"symbols\": [\n        {\n          \"symbol\": \"/tilde{v}(t)\",\n          \"meaning\": \"整形后的速度\",\n          \"unit\": null\n        },\n        {\n          \"symbol\": \"v(t)\",\n          \"meaning\": \"原始速度\",\n          \"unit\": null\n        },\n        {\n          \"symbol\": \"/tau\",\n          \"meaning\": \"延迟时间参数（通常与系统固有周期相关）\",\n          \"unit\": null\n        }\n      ],\n      \"conditions\": [],\n      \"uncertain_symbols\": [],\n      \"confidence\": 0.9\n    }\n  ]\n}",
+      "latex": "../../tilde{v}(t) = /frac{1}{2}[v(t) + v(t-2/tau)]",
+      "name": "输入整形",
+      "meaning": "采用输入整形进行摆锤减振后的速度函数，通过延迟叠加消除振动",
+      "symbols": [
+        {
+          "symbol": "../../tilde{v}(t)",
+          "meaning": "整形后的速度",
+          "unit": null
+        },
+        {
+          "symbol": "v(t)",
+          "meaning": "原始速度",
+          "unit": null
+        },
+        {
+          "symbol": "../../tau",
+          "meaning": "延迟时间参数（通常与系统固有周期相关）",
+          "unit": null
+        }
+      ],
+      "conditions": [],
+      "uncertain_symbols": [],
+      "confidence": 0.9,
+      "plain_text": "../../tilde{v}(t) = /frac{1}{2}[v(t) + v(t-2/tau)]",
+      "description": "采用输入整形进行摆锤减振后的速度函数，通过延迟叠加消除振动",
+      "validation_issues": [],
+      "validation_status": "passed",
+      "review_required": false,
+      "review_reason": null,
+      "review_status": null,
+      "indexable": true,
+      "formula_id": "w10-1-直线运动平台（下）_pptx_page_16_formula_2",
+      "page_num": 16
+    }
+  ],
+  "timestamp": "2026-08-18T00:29:40.617888"
+}

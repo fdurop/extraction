@@ -1,0 +1,33 @@
+{
+  "original_path": "output/qwen_qwen3.7-plus_4/debug/images/w10-1-直线运动平台（下）_slide_11_img_1.png",
+  "enhanced_path": "output/qwen_qwen3.7-plus_4/debug/images/w10-1-直线运动平台（下）_slide_11_img_1_enhanced.png",
+  "description": "图片展示了标题为“问题描述”的幻灯片内容，主要包含以下文字和公式信息：\n\n1.  **系统物理模型描述**：指出系统由长度为 $l$、质量为 $m$ 的**单摆**安装在**滑块**S上组成，且滑块可以在横杆AB上移动。\n2.  **控制目标与任务**：要求设计滑块从横杆左端A点移动到右端B的**位移函数** $u_s(t)$（公式以红色字体显示），其目的是使得滑块到达B点后单摆的振动尽可能小。\n\n该图片通过文字定义了一个典型的机械系统控制问题（防摇控制），为后续讲解“输入整形”技术提供了具体的应用场景和数学目标。",
+  "metadata": {
+    "generation": {
+      "method": "qwen_api",
+      "backend": "api",
+      "provider": "qwen",
+      "model": "qwen3.7-plus",
+      "status": "success",
+      "api_error": null
+    },
+    "review": {
+      "required": false,
+      "status": null,
+      "reason": null,
+      "course_relevant": true
+    }
+  },
+  "error": null,
+  "method": "qwen_api",
+  "backend": "api",
+  "provider": "qwen",
+  "model": "qwen3.7-plus",
+  "status": "success",
+  "api_error": null,
+  "indexable": true,
+  "review_required": false,
+  "review_reason": null,
+  "review_status": null,
+  "course_relevant": true
+}

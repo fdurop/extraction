@@ -1,0 +1,33 @@
+{
+  "original_path": "output/qwen_qwen3.7-plus_5/debug/images/w10-1-直线运动平台（下）_slide_10_img_1.png",
+  "enhanced_path": "output/qwen_qwen3.7-plus_5/debug/images/w10-1-直线运动平台（下）_slide_10_img_1_enhanced.png",
+  "description": "图片展示了直线导轨模组悬挂圆锥摆的实验装置对比图，分为上下两部分，直观演示了“输入整形”控制的效果。\n\n*   **关键对象与结构**：图片主体为一个放置在白色实验桌上的直线运动平台（线性模组/导轨），平台下方通过细线悬挂一个金色的圆锥形物体（摆锤/负载）。\n*   **图中文字**：上半部分图片的右上角有蓝色标签“输入整形”；下半部分图片的右上角有蓝色标签“无整形”。\n*   **内容分析**：\n    *   **上图（输入整形）**：展示了应用输入整形控制时的状态，摆锤垂直悬挂，处于相对静止状态。\n    *   **下图（无整形）**：展示了未应用该控制时的状态，摆锤虽然也在悬挂，但结合上下文可知，这是为了对比展示在无整形情况下，系统运动后摆锤会产生摆动或振动（残余振动）。\n*   **结合上下文**：该图配合文本“输入整形即为一种前馈控制方式”，通过实验装置的对比，说明了输入整形技术能够提前补偿干扰，抑制系统（如悬挂摆锤）的振动，实现平稳控制。",
+  "metadata": {
+    "generation": {
+      "method": "qwen_api",
+      "backend": "api",
+      "provider": "qwen",
+      "model": "qwen3.7-plus",
+      "status": "success",
+      "api_error": null
+    },
+    "review": {
+      "required": false,
+      "status": null,
+      "reason": null,
+      "course_relevant": true
+    }
+  },
+  "error": null,
+  "method": "qwen_api",
+  "backend": "api",
+  "provider": "qwen",
+  "model": "qwen3.7-plus",
+  "status": "success",
+  "api_error": null,
+  "indexable": true,
+  "review_required": false,
+  "review_reason": null,
+  "review_status": null,
+  "course_relevant": true
+}

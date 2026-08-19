@@ -1,0 +1,33 @@
+{
+  "original_path": "output/qwen_qwen3.7-plus_4/debug/images/w09-1-直线运动平台（上） - 副本_p3_img5.jpeg",
+  "enhanced_path": "output/qwen_qwen3.7-plus_4/debug/images/w09-1-直线运动平台（上） - 副本_p3_img5_enhanced.jpeg",
+  "description": "图片展示了两个联轴器（Coupling）的实物。这两个物体呈圆柱形，主体为银色金属材质，中间部分可见红色的弹性连接元件（或膜片结构），两端有黑色的轴孔。这与页面文本中提到的传动装置组成部分“联轴器”以及“联轴器类型：刚性、弹性、柔性”相对应，展示了用于连接电机轴与传动机构（如丝杆）的机械部件。",
+  "metadata": {
+    "generation": {
+      "method": "qwen_api",
+      "backend": "api",
+      "provider": "qwen",
+      "model": "qwen3.7-plus",
+      "status": "success",
+      "api_error": null
+    },
+    "review": {
+      "required": false,
+      "status": null,
+      "reason": null,
+      "course_relevant": true
+    }
+  },
+  "error": null,
+  "method": "qwen_api",
+  "backend": "api",
+  "provider": "qwen",
+  "model": "qwen3.7-plus",
+  "status": "success",
+  "api_error": null,
+  "indexable": true,
+  "review_required": false,
+  "review_reason": null,
+  "review_status": null,
+  "course_relevant": true
+}

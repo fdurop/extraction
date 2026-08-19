@@ -177,6 +177,15 @@ output/
       vectors/
         vector_index.json           # embedding_id、node_id、模型、维度和原料文本
         vector_matrix.npy           # 与 vector_index.json 顺序对应的向量矩阵
+    ex_items/                       # 图片理解失败或课程无关的人工审核队列
+      *_metadata.json               # 审核原因、模型状态、原描述和来源信息
+      *_enhanced.png                # 供前端展示及人工修正的图片预览
+    formula_review_items/           # LaTeX残缺、不确定字符或低置信度公式
+      *.json                        # 公式、验证问题、置信度和来源信息
+      *.png                         # 可用时保存对应公式来源图
+    table_review_items/             # 结构不完整或低置信度表格
+      *.json                        # 表头、单元格、验证问题和来源信息
+      *.png                         # 可用时保存对应表格来源图
     debug/                          # 人工复核和问题定位材料
       text/                         # 每页文本抽取结果
       images/                       # 图片、增强图和图片理解 metadata
@@ -188,7 +197,7 @@ output/
       professional_terms_library.json # 专业术语汇总
 ```
 
-下游构建知识图谱时应优先读取 `kg_data/`；`debug/` 用于人工抽查识别精度、定位错误和调整提示词，不应作为主要图谱输入。
+下游构建知识图谱时应优先读取 `kg_data/`；`debug/` 用于人工抽查识别精度、定位错误和调整提示词，不应作为主要图谱输入。`ex_items/` 沿用原前端修正模块的目录和文件命名规则，收集 API 调用失败、空描述及模型明确判断为课程无关的图片；这些内容在人工确认前不会写入正式图谱节点或向量索引。
 
 ## 检查运行结果
 

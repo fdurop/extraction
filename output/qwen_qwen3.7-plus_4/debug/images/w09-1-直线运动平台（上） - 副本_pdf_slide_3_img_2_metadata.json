@@ -1,0 +1,33 @@
+{
+  "original_path": "output/qwen_qwen3.7-plus_4/debug/images/w09-1-直线运动平台（上） - 副本_p3_img4.jpeg",
+  "enhanced_path": "output/qwen_qwen3.7-plus_4/debug/images/w09-1-直线运动平台（上） - 副本_p3_img4_enhanced.jpeg",
+  "description": "图片展示了一个丝杆传动的单轴直线运动平台实物，直观呈现了页面文本中描述的结构组成。\n\n**关键对象与结构描述：**\n*   **步进电机**：位于装置左端，为黑色方形电机，带有标签贴纸。\n*   **联轴器**：连接电机轴与丝杆的白色圆柱形部件（对应文本中的“联轴器”）。\n*   **滑块**：位于装置中部的黑色块状结构，跨坐在导轨和丝杆上（对应文本中的“滑块”）。\n*   **丝杆**：位于右侧的长螺纹杆，用于将电机的转动转换为直线运动（对应文本中的“丝杆”）。\n*   **导轨/底座**：底部的银色铝型材底座，上方配有平行的光轴导轨，用于支撑和引导滑块运动（对应文本中的“导轨”）。\n\n该图具体展示了文本中“丝杆传动”部分的物理形态，包括步进电机、联轴器、丝杆、滑块和导轨的配合关系。",
+  "metadata": {
+    "generation": {
+      "method": "qwen_api",
+      "backend": "api",
+      "provider": "qwen",
+      "model": "qwen3.7-plus",
+      "status": "success",
+      "api_error": null
+    },
+    "review": {
+      "required": false,
+      "status": null,
+      "reason": null,
+      "course_relevant": true
+    }
+  },
+  "error": null,
+  "method": "qwen_api",
+  "backend": "api",
+  "provider": "qwen",
+  "model": "qwen3.7-plus",
+  "status": "success",
+  "api_error": null,
+  "indexable": true,
+  "review_required": false,
+  "review_reason": null,
+  "review_status": null,
+  "course_relevant": true
+}

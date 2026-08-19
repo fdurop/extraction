@@ -1,0 +1,120 @@
+{
+  "page": 8,
+  "formula_count": 2,
+  "accepted_count": 2,
+  "review_count": 0,
+  "formulas": [
+    {
+      "source_image": "output/qwen_qwen3.7-plus_4/debug/images/w10-1-直线运动平台（下）_slide_8_img_1.png",
+      "source_type": "image_vlm",
+      "extraction_method": "qwen_api_formula",
+      "backend": "api",
+      "provider": "qwen",
+      "model": "qwen3.7-plus",
+      "image_index": 0,
+      "raw_response": "{\"has_formula\":true,\"formulas\":[{\"latex\":\"x(t) = A/cos(2/pi ft)\",\"name\":\"位移公式\",\"meaning\":\"简谐运动的位移随时间变化的关系\",\"symbols\":[{\"symbol\":\"x(t)\",\"meaning\":\"位移\",\"unit\":null},{\"symbol\":\"A\",\"meaning\":\"幅度，不超过行程的一半\",\"unit\":null},{\"symbol\":\"f\",\"meaning\":\"频率\",\"unit\":\"Hz\"},{\"symbol\":\"t\",\"meaning\":\"时间\",\"unit\":null},{\"symbol\":\"/pi\",\"meaning\":\"圆周率\",\"unit\":null}],\"conditions\":[],\"uncertain_symbols\":[],\"confidence\":0.95},{\"latex\":\"v(t) = x'(t) = 2/pi f A/sin(2/pi ft)\",\"name\":\"速度公式\",\"meaning\":\"简谐运动的速度随时间变化的关系，为位移对时间的导数\",\"symbols\":[{\"symbol\":\"v(t)\",\"meaning\":\"速度\",\"unit\":null},{\"symbol\":\"x'(t)\",\"meaning\":\"位移对时间的导数\",\"unit\":null},{\"symbol\":\"A\",\"meaning\":\"幅度\",\"unit\":null},{\"symbol\":\"f\",\"meaning\":\"频率\",\"unit\":\"Hz\"},{\"symbol\":\"t\",\"meaning\":\"时间\",\"unit\":null},{\"symbol\":\"/pi\",\"meaning\":\"圆周率\",\"unit\":null}],\"conditions\":[],\"uncertain_symbols\":[],\"confidence\":0.95}]}",
+      "latex": "x(t) = A/cos(2/pi ft)",
+      "name": "位移公式",
+      "meaning": "简谐运动的位移随时间变化的关系",
+      "symbols": [
+        {
+          "symbol": "x(t)",
+          "meaning": "位移",
+          "unit": null
+        },
+        {
+          "symbol": "A",
+          "meaning": "幅度，不超过行程的一半",
+          "unit": null
+        },
+        {
+          "symbol": "f",
+          "meaning": "频率",
+          "unit": "Hz"
+        },
+        {
+          "symbol": "t",
+          "meaning": "时间",
+          "unit": null
+        },
+        {
+          "symbol": "../../pi",
+          "meaning": "圆周率",
+          "unit": null
+        }
+      ],
+      "conditions": [],
+      "uncertain_symbols": [],
+      "confidence": 0.95,
+      "plain_text": "x(t) = A/cos(2/pi ft)",
+      "description": "简谐运动的位移随时间变化的关系",
+      "validation_issues": [],
+      "validation_status": "passed",
+      "review_required": false,
+      "review_reason": null,
+      "review_status": null,
+      "indexable": true,
+      "formula_id": "w10-1-直线运动平台（下）_pptx_page_8_formula_1",
+      "page_num": 8
+    },
+    {
+      "source_image": "output/qwen_qwen3.7-plus_4/debug/images/w10-1-直线运动平台（下）_slide_8_img_1.png",
+      "source_type": "image_vlm",
+      "extraction_method": "qwen_api_formula",
+      "backend": "api",
+      "provider": "qwen",
+      "model": "qwen3.7-plus",
+      "image_index": 0,
+      "raw_response": "{\"has_formula\":true,\"formulas\":[{\"latex\":\"x(t) = A/cos(2/pi ft)\",\"name\":\"位移公式\",\"meaning\":\"简谐运动的位移随时间变化的关系\",\"symbols\":[{\"symbol\":\"x(t)\",\"meaning\":\"位移\",\"unit\":null},{\"symbol\":\"A\",\"meaning\":\"幅度，不超过行程的一半\",\"unit\":null},{\"symbol\":\"f\",\"meaning\":\"频率\",\"unit\":\"Hz\"},{\"symbol\":\"t\",\"meaning\":\"时间\",\"unit\":null},{\"symbol\":\"/pi\",\"meaning\":\"圆周率\",\"unit\":null}],\"conditions\":[],\"uncertain_symbols\":[],\"confidence\":0.95},{\"latex\":\"v(t) = x'(t) = 2/pi f A/sin(2/pi ft)\",\"name\":\"速度公式\",\"meaning\":\"简谐运动的速度随时间变化的关系，为位移对时间的导数\",\"symbols\":[{\"symbol\":\"v(t)\",\"meaning\":\"速度\",\"unit\":null},{\"symbol\":\"x'(t)\",\"meaning\":\"位移对时间的导数\",\"unit\":null},{\"symbol\":\"A\",\"meaning\":\"幅度\",\"unit\":null},{\"symbol\":\"f\",\"meaning\":\"频率\",\"unit\":\"Hz\"},{\"symbol\":\"t\",\"meaning\":\"时间\",\"unit\":null},{\"symbol\":\"/pi\",\"meaning\":\"圆周率\",\"unit\":null}],\"conditions\":[],\"uncertain_symbols\":[],\"confidence\":0.95}]}",
+      "latex": "v(t) = x'(t) = 2/pi f A/sin(2/pi ft)",
+      "name": "速度公式",
+      "meaning": "简谐运动的速度随时间变化的关系，为位移对时间的导数",
+      "symbols": [
+        {
+          "symbol": "v(t)",
+          "meaning": "速度",
+          "unit": null
+        },
+        {
+          "symbol": "x'(t)",
+          "meaning": "位移对时间的导数",
+          "unit": null
+        },
+        {
+          "symbol": "A",
+          "meaning": "幅度",
+          "unit": null
+        },
+        {
+          "symbol": "f",
+          "meaning": "频率",
+          "unit": "Hz"
+        },
+        {
+          "symbol": "t",
+          "meaning": "时间",
+          "unit": null
+        },
+        {
+          "symbol": "../../pi",
+          "meaning": "圆周率",
+          "unit": null
+        }
+      ],
+      "conditions": [],
+      "uncertain_symbols": [],
+      "confidence": 0.95,
+      "plain_text": "v(t) = x'(t) = 2/pi f A/sin(2/pi ft)",
+      "description": "简谐运动的速度随时间变化的关系，为位移对时间的导数",
+      "validation_issues": [],
+      "validation_status": "passed",
+      "review_required": false,
+      "review_reason": null,
+      "review_status": null,
+      "indexable": true,
+      "formula_id": "w10-1-直线运动平台（下）_pptx_page_8_formula_2",
+      "page_num": 8
+    }
+  ],
+  "timestamp": "2026-08-18T00:08:25.768605"
+}

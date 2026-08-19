@@ -1,0 +1,31 @@
+{
+  "source_image": "output/qwen_qwen3.7-plus_5/debug/images/w08-1-步进电机驱动器_p11_img2.jpeg",
+  "source_type": "image_vlm_table",
+  "extraction_method": "vlm_table",
+  "headers": [],
+  "cells": [],
+  "api_error": "VLM API request failed: HTTPSConnectionPool(host='dashscope.aliyuncs.com', port=443): Read timed out. (read timeout=150)",
+  "review_required": true,
+  "review_reason": "api_failed",
+  "image_index": 0,
+  "rows": 0,
+  "cols": 0,
+  "title": "",
+  "description": "",
+  "units": {},
+  "footnotes": [],
+  "uncertain_cells": [],
+  "json": [],
+  "csv": "",
+  "confidence": 0.111,
+  "validation_issues": [
+    "api_failed",
+    "table_too_small",
+    "too_many_empty_cells"
+  ],
+  "validation_status": "review",
+  "review_status": "pending",
+  "indexable": false,
+  "table_id": "w08-1-步进电机驱动器_pdf_page_11_table_1",
+  "page_num": 11
+}

@@ -170,7 +170,7 @@ class MultimodalPreprocessor:
             deepseek_wrapper=self.vlm_client,
             logger=self.logger
         )
-        self.table_extractor = TableExtractor(logger=self.logger)
+        self.table_extractor = TableExtractor(logger=self.logger, vlm_client=self.vlm_client)
         self.code_extractor = CodeExtractor(logger=self.logger)
         print("   [OK] 核心处理模块初始化完成")
         
@@ -203,6 +203,35 @@ class MultimodalPreprocessor:
             "backend": "none",
             "provider": None,
             "model": None,
+        }
+
+    @staticmethod
+    def _description_has_code(description):
+        text = str(description or "")
+        strong_markers = (
+            "类型：代码", "类型:代码", "代码片段", "源代码", "程序代码", "arduino代码", "c++代码",
+            "code snippet", "source code",
+            "void setup", "void loop", "int main", "def ", "class ",
+            "#include", "pinmode", "digitalwrite", "attachinterrupt",
+        )
+        lowered = text.lower()
+        return any(marker.lower() in lowered for marker in strong_markers)
+
+    def _recognize_code_image(self, image_path, page_num, image_index):
+        if self.vlm_client is None:
+            return None
+        code_result = self.vlm_client.recognize_code(image_path)
+        if not code_result or not code_result.get("has_code") or not code_result.get("code"):
+            return None
+        return {
+            "source_image": image_path,
+            **self._vlm_source_metadata(),
+            "code": code_result.get("code", ""),
+            "language": code_result.get("language", "txt"),
+            "description": code_result.get("description", ""),
+            "raw_response": code_result.get("raw_response", ""),
+            "page_num": page_num,
+            "image_index": image_index,
         }
     
     def process_file(self, file_path: str):
@@ -258,6 +287,10 @@ class MultimodalPreprocessor:
         })
         
         print(f"   总页数: {len(pages)}")
+        repeated_lines = self.text_processor.find_repeated_lines(
+            [page.get("text", "") for page in pages]
+        )
+        self.logger.info("PDF跨页重复文本过滤: %s 行", len(repeated_lines))
         
         # 处理每一页
         for page_data in pages:
@@ -268,34 +301,67 @@ class MultimodalPreprocessor:
             text_result = self.text_processor.process_text(
                 page_data["text"],
                 page_num,
-                page_data["images"]
+                page_data["images"],
+                repeated_lines=repeated_lines,
             )
             self.output_manager.save_text(text_result, filename, page_num)
             
             # 更新术语库
             self.professional_terms.update(text_result.get("technical_terms", []))
-            
+
+            # Collect each modality for the whole page, then save once. This
+            # avoids overwriting files and reusing graph node indices.
+            page_formulas = self.formula_extractor.extract_formulas_from_text(
+                page_data["text"], context=page_data["text"][:500]
+            )
+            page_tables = []
+            if page_data.get("raw_page"):
+                page_tables.extend(self.table_extractor.extract_tables_from_pdf_page(
+                    page_data["raw_page"], page_data["text"]
+                ))
+
             # 2. 图像处理
             for img_idx, img_path in enumerate(page_data["images"]):
                 img_result = self.image_processor.process_image(img_path, page_data["text"])
                 self.output_manager.save_image_metadata(img_result, filename, page_num, img_idx)
-            
-            # 3. 公式提取
-            formulas = self.formula_extractor.extract_formulas_from_text(
-                page_data["text"],
-                context=page_data["text"][:500]
-            )
-            if formulas:
-                self.output_manager.save_formulas(formulas, filename, page_num)
-            
-            # 4. 表格提取
-            if page_data.get("raw_page"):
-                tables = self.table_extractor.extract_tables_from_pdf_page(
-                    page_data["raw_page"],
-                    page_data["text"]
-                )
-                if tables:
-                    self.output_manager.save_tables(tables, filename, page_num)
+                description = img_result.get("description", "")
+                has_code = self._description_has_code(description)
+                has_table = self.table_extractor.should_analyze_image(description)
+                has_formula = self.formula_extractor.should_analyze_image(description)
+                if self.vlm_client is not None and not img_result.get("review_required") and has_code:
+                    try:
+                        code_data = self._recognize_code_image(img_path, page_num, img_idx)
+                        if code_data:
+                            self.output_manager.save_code([code_data], filename, page_num)
+                    except Exception as exc:
+                        self.logger.error(f"代码视觉识别失败: {exc}")
+                if (
+                    self.vlm_client is not None
+                    and not img_result.get("review_required")
+                    and has_formula
+                    and not has_code
+                    and not has_table
+                ):
+                    page_formulas.extend(self.formula_extractor.extract_formulas_from_vlm_image(
+                        img_path, context=page_data["text"], image_index=img_idx
+                    ))
+                if (
+                    self.vlm_client is not None
+                    and not img_result.get("review_required")
+                    and has_table
+                    and not has_code
+                ):
+                    page_tables.extend(self.table_extractor.extract_tables_from_vlm_image(
+                        img_path, context=page_data["text"], image_index=img_idx
+                    ))
+
+            # 3-4. 公式和表格分别校验，并且每页只保存一次。
+            page_formulas = self.formula_extractor.finalize_page(page_formulas)
+            if page_formulas:
+                self.output_manager.save_formulas(page_formulas, filename, page_num)
+            page_tables = self.table_extractor.finalize_page(page_tables)
+            if page_tables:
+                self.output_manager.save_tables(page_tables, filename, page_num)
             
             # 5. 代码提取
             code_blocks = self.code_extractor.extract_code_from_text(page_data["text"])
@@ -340,6 +406,10 @@ class MultimodalPreprocessor:
         image_mapping = result["metadata"].get("image_mapping", {})
         
         print(f"   总幻灯片数: {len(pages)}")
+        repeated_lines = self.text_processor.find_repeated_lines(
+            [page.get("text", "") for page in pages]
+        )
+        self.logger.info("PPTX跨页重复文本过滤: %s 行", len(repeated_lines))
         
         # 处理每一张幻灯片
         for page_data in pages:
@@ -351,12 +421,22 @@ class MultimodalPreprocessor:
             text_result = self.text_processor.process_text(
                 page_data["text"],
                 page_num,
-                images
+                images,
+                repeated_lines=repeated_lines,
             )
             self.output_manager.save_text(text_result, filename, page_num)
             
             # 更新术语库
             self.professional_terms.update(text_result.get("technical_terms", []))
+
+            page_formulas = self.formula_extractor.extract_formulas_from_text(
+                page_data["text"], context=page_data["text"][:500]
+            )
+            page_tables = []
+            for table_info in page_data.get("tables", []):
+                table_data = self.table_extractor.extract_tables_from_pptx_shape(table_info["shape"])
+                if table_data:
+                    page_tables.append(table_data)
             
             # 2. 图像处理（使用ZIP方法提取的图像）
             for img_idx, img_path in enumerate(images):
@@ -383,75 +463,29 @@ class MultimodalPreprocessor:
                 general_description = img_result.get("description", "")
                 
                 if general_description and self.vlm_client is not None:
-                    # 检测公式关键词（更严格）
-                    formula_keywords = ['公式', '方程', '数学表达式', '计算式', 'formula', 'equation', 
-                                       'LaTeX', '积分', '微分', '导数', '求导', '函数式', '数学式']
-                    has_formula = any(keyword in general_description for keyword in formula_keywords)
-                    
-                    # 检测代码关键词（更严格，排除误判）
-                    # 必须包含明确的代码相关词汇
-                    code_keywords_strong = ['代码', '程序', 'code snippet', 'program', '编程', '源代码', 
-                                           'void setup', 'void loop', 'int main', 'def ', 'class ', 
-                                           'function ', '#include', 'import ', 'pinMode', 'digitalWrite']
-                    has_code = any(keyword in general_description for keyword in code_keywords_strong)
-                    
-                    # 排除假阳性：如果只是提到"Arduino"但没有明确的代码词汇，不算
-                    weak_indicators = ['Arduino', '单片机', 'microcontroller']
-                    if not has_code and any(weak in general_description for weak in weak_indicators):
-                        # 二次检查：是否真的提到了代码
-                        secondary_check = ['代码', 'code', '程序', 'program', '语句', 'statement']
-                        has_code = any(check in general_description for check in secondary_check)
-                    
-                    # 检测表格关键词
-                    table_keywords = ['表格', 'table', '数据表', '统计表', '对比表']
-                    has_table = any(keyword in general_description for keyword in table_keywords)
+                    has_code = self._description_has_code(general_description)
+                    has_table = self.table_extractor.should_analyze_image(general_description)
+                    has_formula = (
+                        self.formula_extractor.should_analyze_image(general_description)
+                        and not has_code
+                        and not has_table
+                    )
                     
                     # 如果检测到公式，进行专门的公式识别
                     if has_formula:
-                        try:
-                            print(f"      ↳ [智能检测] 发现公式关键词，启动专门公式识别...")
-                            formula_result = self.vlm_client.recognize_formula(img_path)
-                            
-                            if formula_result and formula_result.get("latex"):
-                                # 保存公式结果
-                                source_metadata = self._vlm_source_metadata()
-                                formula_data = {
-                                    "source_image": img_path,
-                                    **source_metadata,
-                                    "latex": formula_result.get("latex", ""),
-                                    "description": formula_result.get("description", ""),
-                                    "raw_response": formula_result.get("raw_response", ""),
-                                    "page_num": page_num,
-                                    "image_index": img_idx
-                                }
-                                self.output_manager.save_formulas([formula_data], filename, page_num)
-                                print(f"      [OK] 公式识别并保存完成")
-                            else:
-                                print(f"      ✗ 公式识别未返回有效结果")
-                        except Exception as e:
-                            self.logger.error(f"公式识别失败: {e}")
-                            print(f"      ✗ 公式识别失败: {e}")
+                        print(f"      ↳ [智能检测] 发现公式候选，启动专门公式识别...")
+                        detected = self.formula_extractor.extract_formulas_from_vlm_image(
+                            img_path, context=page_data["text"], image_index=img_idx
+                        )
+                        page_formulas.extend(detected)
+                        print(f"      [OK] 公式候选已加入页面汇总: {len(detected)}")
                     
                     # 如果检测到代码，进行专门的代码识别
                     if has_code:
                         try:
                             print(f"      ↳ [智能检测] 发现代码关键词，启动专门代码识别...")
-                            code_result = self.vlm_client.recognize_code(img_path)
-                            
-                            # 三重检测：has_code=True 且 code非空
-                            if code_result and code_result.get("has_code") and code_result.get("code"):
-                                # 保存代码结果
-                                source_metadata = self._vlm_source_metadata()
-                                code_data = {
-                                    "source_image": img_path,
-                                    **source_metadata,
-                                    "code": code_result.get("code", ""),
-                                    "language": code_result.get("language", "txt"),
-                                    "description": code_result.get("description", ""),
-                                    "raw_response": code_result.get("raw_response", ""),
-                                    "page_num": page_num,
-                                    "image_index": img_idx
-                                }
+                            code_data = self._recognize_code_image(img_path, page_num, img_idx)
+                            if code_data:
                                 self.output_manager.save_code([code_data], filename, page_num)
                                 print(f"      [OK] 代码识别并保存完成")
                             else:
@@ -462,47 +496,20 @@ class MultimodalPreprocessor:
                     
                     # 如果检测到表格，进行专门的表格识别
                     if has_table:
-                        try:
-                            print(f"      ↳ [智能检测] 发现表格关键词，启动专门表格识别...")
-                            table_result = self.vlm_client.recognize_table(img_path)
-                            
-                            if table_result and table_result.get("table_data"):
-                                # 保存表格结果（简化格式）
-                                source_metadata = self._vlm_source_metadata()
-                                table_data = {
-                                    "source_image": img_path,
-                                    **source_metadata,
-                                    "headers": table_result.get("headers", ""),
-                                    "content": table_result.get("table_data", ""),
-                                    "description": table_result.get("description", ""),
-                                    "raw_response": table_result.get("raw_response", ""),
-                                    "json": [],  # 可以扩展为结构化数据
-                                    "page_num": page_num,
-                                    "image_index": img_idx
-                                }
-                                self.output_manager.save_tables([table_data], filename, page_num)
-                                print(f"      [OK] 表格识别并保存完成")
-                            else:
-                                print(f"      ✗ 表格识别未返回有效结果")
-                        except Exception as e:
-                            self.logger.error(f"表格识别失败: {e}")
-                            print(f"      ✗ 表格识别失败: {e}")
+                        print(f"      ↳ [智能检测] 发现表格候选，启动专门表格识别...")
+                        detected = self.table_extractor.extract_tables_from_vlm_image(
+                            img_path, context=page_data["text"], image_index=img_idx
+                        )
+                        page_tables.extend(detected)
+                        print(f"      [OK] 表格候选已加入页面汇总: {len(detected)}")
             
-            # 3. 公式提取
-            formulas = self.formula_extractor.extract_formulas_from_text(
-                page_data["text"],
-                context=page_data["text"][:500]
-            )
-            if formulas:
-                self.output_manager.save_formulas(formulas, filename, page_num)
-            
-            # 4. 表格提取
-            for table_info in page_data.get("tables", []):
-                table_data = self.table_extractor.extract_tables_from_pptx_shape(
-                    table_info["shape"]
-                )
-                if table_data:
-                    self.output_manager.save_tables([table_data], filename, page_num)
+            # 3-4. 按页统一校验、去重和保存，避免同页结果互相覆盖。
+            page_formulas = self.formula_extractor.finalize_page(page_formulas)
+            if page_formulas:
+                self.output_manager.save_formulas(page_formulas, filename, page_num)
+            page_tables = self.table_extractor.finalize_page(page_tables)
+            if page_tables:
+                self.output_manager.save_tables(page_tables, filename, page_num)
             
             # 5. 代码提取
             code_blocks = self.code_extractor.extract_code_from_text(page_data["text"])

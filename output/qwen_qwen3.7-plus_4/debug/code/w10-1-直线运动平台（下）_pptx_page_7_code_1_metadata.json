@@ -1,0 +1,11 @@
+{
+  "source_image": "output/qwen_qwen3.7-plus_4/debug/images/w10-1-直线运动平台（下）_slide_7_img_1.png",
+  "extraction_method": "qwen_api_智能识别",
+  "language": "cpp",
+  "description": "使用 TimerOne 库设置定时器中断，每隔 1 秒触发一次中断服务函数 `LED()`，在该函数中切换内置 LED（LED_BUILTIN）的亮灭状态，从而实现 LED 每秒闪烁一次的效果。",
+  "code_file": "w10-1-直线运动平台（下）_pptx_page_7_code_1.cpp",
+  "page": 7,
+  "index": 1,
+  "timestamp": "2026-08-18T00:07:54.554868",
+  "raw_response": "语言: C++ (Arduino)\n```cpp\n#include <TimerOne.h>\n\nvoid setup() {\n  //初始化LED端口\n  pinMode(LED_BUILTIN, OUTPUT);\n\n  // 每 1 s 触发一次时间中断\n  Timer1.initialize(long(1 * 1E6));\n\n  // 设置中断响应函数\n  Timer1.attachInterrupt(LED);\n\n  // 启动时间中断\n  Timer1.start();\n}\n\nvoid LED() {\n  static bool light = true;\n\n  digitalWrite(LED_BUILTIN, light);\n  light = !light;\n}\n```\n功能: 使用 TimerOne 库设置定时器中断，每隔 1 秒触发一次中断服务函数 `LED()`，在该函数中切换内置 LED（LED_BUILTIN）的亮灭状态，从而实现 LED 每秒闪烁一次的效果。"
+}

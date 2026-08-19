@@ -1,0 +1,39 @@
+{
+  "page_num": 3,
+  "raw_text": "机电系统原理及实践—— 步进电机驱动器与外部中断\n机电智控实验室tangguoan@fudan.edu.cn mmguo@fudan.edu.cn\n§1 用双H桥驱动步进电机\n八个固态继电器组成双H桥，可以驱动一台步进电机。\n驱动一台步进电机，相当于驱动两台有刷直流电机。\n11-4\nM\nV–\nV+\nch3\nch4\nch1\nch2\nA1\nB1\nA2\nB2\nA3\nB3\nA4\nB4\nA\nഥA\nV–\nM\nV+\nch7\nch8\nch5\nch6\nA5\nB5\nA6\nB6\nA7\nB7\nA8\nB8\nB\nഥB\nphase ch\n1\nch\n2\nch\n3\nch\n4\nch\n5\nch\n6\nch\n7\nch\n8\n1\nH\nL\nL\nH\nL\nL\nL\nL\n2\nH\nL\nL\nH\nH\nL\nL\nH\n3\nL\nL\nL\nL\nH\nL\nL\nH\n4\nL\nH\nH\nL\nH\nL\nL\nH\n5\nL\nH\nH\nL\nL\nL\nL\nL\n6\nL\nH\nH\nL\nL\nH\nH\nL\n7\nL\nL\nL\nL\nL\nH\nH\nL\n8\nH\nL\nL\nH\nL\nH\nH\nL\nphase\nA相\nB相\n1\n+\n×\n2\n+\n+\n3\n×\n+\n4\n–\n+\n5\n–\n×\n6\n–\n–\n7\n×\n–\n8\n+\n–\nA相\nB相\n复旦大学 机电智控实验室\n",
+  "cleaned_text": "§1 用双H桥驱动步进电机\n八个固态继电器组成双H桥，可以驱动一台步进电机。\n驱动一台步进电机，相当于驱动两台有刷直流电机。\nM\nV–\nV+\nch3\nch4\nch1\nch2\nA1\nB1\nA2\nB2\nA3\nB3\nA4\nB4\nA\nഥA\nV–\nM\nV+\nch7\nch8\nch5\nch6\nA5\nB5\nA6\nB6\nA7\nB7\nA8\nB8\nB\nഥB\nphase ch\n1\nch\n2\nch\n3\nch\n4\nch\n5\nch\n6\nch\n7\nch\n8\n1\nH\nL\nL\nH\nL\nL\nL\nL\n2\nH\nL\nL\nH\nH\nL\nL\nH\n3\nL\nL\nL\nL\nH\nL\nL\nH\n4\nL\nH\nH\nL\nH\nL\nL\nH\n5\nL\nH\nH\nL\nL\nL\nL\nL\n6\nL\nH\nH\nL\nL\nH\nH\nL\n7\nL\nL\nL\nL\nL\nH\nH\nL\n8\nH\nL\nL\nH\nL\nH\nH\nL\nphase\nA相\nB相\n1\n+\n×\n2\n+\n+\n3\n×\n+\n4\n–\n+\n5\n–\n×\n6\n–\n–\n7\n×\n–\n8\n+\n–\nA相\nB相",
+  "key_points": [
+    "八个固态继电器组成双H桥，可以驱动一台步进电机。",
+    "驱动一台步进电机，相当于驱动两台有刷直流电机。",
+    "M",
+    "V–",
+    "V+",
+    "A1",
+    "B1",
+    "A2",
+    "B2",
+    "A3"
+  ],
+  "technical_terms": [
+    "ch1",
+    "ch2",
+    "ch3",
+    "ch4",
+    "ch5",
+    "ch6",
+    "ch7",
+    "ch8",
+    "可以驱动一台步进电机",
+    "当于驱动两台有刷直流电机",
+    "桥驱动步进电机",
+    "驱动一台步进电机"
+  ],
+  "has_images": false,
+  "image_count": 0,
+  "image_paths": [],
+  "metadata": {
+    "char_count": 519,
+    "word_count": 163,
+    "line_count": 159
+  }
+}

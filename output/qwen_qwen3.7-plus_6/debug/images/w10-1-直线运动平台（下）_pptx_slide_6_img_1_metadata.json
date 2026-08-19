@@ -1,0 +1,33 @@
+{
+  "original_path": "output/qwen_qwen3.7-plus_6/debug/images/w10-1-直线运动平台（下）_slide_6_img_1.png",
+  "enhanced_path": "output/qwen_qwen3.7-plus_6/debug/images/w10-1-直线运动平台（下）_slide_6_img_1_enhanced.png",
+  "description": "类型：其他\n图片包含四段关于步进电机调速原理的文字与公式推导。\n1. 定义转角$\\theta(t)$与转速$\\omega(t)$，给出积分关系式：$\\theta(t_1) = \\theta(t_0) + \\int_{t_0}^{t_1} \\omega(t)dt$。\n2. 记$\\Delta t$为loop循环时间间隔，列出离散化公式：$\\theta[n\\Delta t] = \\theta[(n-1)\\Delta t] + \\omega[n\\Delta t]\\Delta t$。\n3. 说明用每脉冲转角$\\Delta\\theta$将$\\theta$和$\\omega$无量纲化，单位分别为脉冲数和脉冲数/微秒。\n4. 红色文字强调控制逻辑：当$|\\theta[n\\Delta t]| \\ge 0.5$时电机转动一格，同时累加值$\\mp 1$，角位移误差始终小于$\\Delta\\theta/2$。",
+  "metadata": {
+    "generation": {
+      "method": "qwen_api",
+      "backend": "api",
+      "provider": "qwen",
+      "model": "qwen3.7-plus",
+      "status": "success",
+      "api_error": null
+    },
+    "review": {
+      "required": false,
+      "status": null,
+      "reason": null,
+      "course_relevant": true
+    }
+  },
+  "error": null,
+  "method": "qwen_api",
+  "backend": "api",
+  "provider": "qwen",
+  "model": "qwen3.7-plus",
+  "status": "success",
+  "api_error": null,
+  "indexable": true,
+  "review_required": false,
+  "review_reason": null,
+  "review_status": null,
+  "course_relevant": true
+}

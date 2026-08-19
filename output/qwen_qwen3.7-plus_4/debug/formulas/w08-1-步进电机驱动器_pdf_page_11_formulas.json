@@ -1,0 +1,47 @@
+{
+  "page": 11,
+  "formula_count": 1,
+  "accepted_count": 1,
+  "review_count": 0,
+  "formulas": [
+    {
+      "source_image": "output/qwen_qwen3.7-plus_4/debug/images/w08-1-步进电机驱动器_p11_img2.jpeg",
+      "source_type": "image_vlm",
+      "extraction_method": "qwen_api_formula",
+      "backend": "api",
+      "provider": "qwen",
+      "model": "qwen3.7-plus",
+      "image_index": 0,
+      "raw_response": "{\"has_formula\":true,\"formulas\":[{\"latex\":\"Peak=RMS/times 1.4\",\"name\":\"Current Table Formula\",\"meaning\":\"Relationship between peak current and RMS current\",\"symbols\":[{\"symbol\":\"Peak\",\"meaning\":\"Peak current\",\"unit\":\"A\"},{\"symbol\":\"RMS\",\"meaning\":\"Root Mean Square current\",\"unit\":\"A\"}],\"conditions\":[],\"uncertain_symbols\":[],\"confidence\":0.95}]}",
+      "latex": "Peak=RMS/times 1.4",
+      "name": "Current Table Formula",
+      "meaning": "Relationship between peak current and RMS current",
+      "symbols": [
+        {
+          "symbol": "Peak",
+          "meaning": "Peak current",
+          "unit": "A"
+        },
+        {
+          "symbol": "RMS",
+          "meaning": "Root Mean Square current",
+          "unit": "A"
+        }
+      ],
+      "conditions": [],
+      "uncertain_symbols": [],
+      "confidence": 0.95,
+      "plain_text": "Peak=RMS/times 1.4",
+      "description": "Relationship between peak current and RMS current",
+      "validation_issues": [],
+      "validation_status": "passed",
+      "review_required": false,
+      "review_reason": null,
+      "review_status": null,
+      "indexable": true,
+      "formula_id": "w08-1-步进电机驱动器_pdf_page_11_formula_1",
+      "page_num": 11
+    }
+  ],
+  "timestamp": "2026-08-17T23:56:02.230437"
+}

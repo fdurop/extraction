@@ -1,0 +1,114 @@
+{
+  "page": 8,
+  "formula_count": 2,
+  "accepted_count": 2,
+  "review_count": 0,
+  "formulas": [
+    {
+      "source_image": "output/qwen_qwen3.7-plus_5/debug/images/w10-1-直线运动平台（下）_slide_8_img_1.png",
+      "source_type": "image_vlm",
+      "extraction_method": "qwen_api_formula",
+      "backend": "api",
+      "provider": "qwen",
+      "model": "qwen3.7-plus",
+      "image_index": 0,
+      "raw_response": "{\n  \"has_formula\": true,\n  \"formulas\": [\n    {\n      \"latex\": \"x(t) = A\\\\cos(2\\\\pi ft)\",\n      \"name\": \"位移公式\",\n      \"meaning\": \"滑台简谐运动的位移随时间变化关系\",\n      \"symbols\": [\n        {\n          \"symbol\": \"x(t)\",\n          \"meaning\": \"位移\",\n          \"unit\": null\n        },\n        {\n          \"symbol\": \"A\",\n          \"meaning\": \"幅度，不超过行程的一半\",\n          \"unit\": null\n        },\n        {\n          \"symbol\": \"f\",\n          \"meaning\": \"频率\",\n          \"unit\": \"Hz\"\n        },\n        {\n          \"symbol\": \"t\",\n          \"meaning\": \"时间\",\n          \"unit\": null\n        }\n      ],\n      \"conditions\": [],\n      \"uncertain_symbols\": [],\n      \"confidence\": 0.95\n    },\n    {\n      \"latex\": \"v(t) = x'(t) = 2\\\\pi f A\\\\sin(2\\\\pi ft)\",\n      \"name\": \"速度公式\",\n      \"meaning\": \"滑台简谐运动的速度随时间变化关系（注：图片中公式似漏写负号，此处忠实记录图片内容）\",\n      \"symbols\": [\n        {\n          \"symbol\": \"v(t)\",\n          \"meaning\": \"速度\",\n          \"unit\": null\n        },\n        {\n          \"symbol\": \"x'(t)\",\n          \"meaning\": \"位移对时间的导数\",\n          \"unit\": null\n        },\n        {\n          \"symbol\": \"A\",\n          \"meaning\": \"幅度\",\n          \"unit\": null\n        },\n        {\n          \"symbol\": \"f\",\n          \"meaning\": \"频率\",\n          \"unit\": \"Hz\"\n        },\n        {\n          \"symbol\": \"t\",\n          \"meaning\": \"时间\",\n          \"unit\": null\n        }\n      ],\n      \"conditions\": [],\n      \"uncertain_symbols\": [],\n      \"confidence\": 0.9\n    }\n  ]\n}",
+      "parse_error": null,
+      "partial_response": false,
+      "review_reason": null,
+      "latex": "x(t) = A\\cos(2\\pi ft)",
+      "name": "位移公式",
+      "meaning": "滑台简谐运动的位移随时间变化关系",
+      "symbols": [
+        {
+          "symbol": "x(t)",
+          "meaning": "位移",
+          "unit": null
+        },
+        {
+          "symbol": "A",
+          "meaning": "幅度，不超过行程的一半",
+          "unit": null
+        },
+        {
+          "symbol": "f",
+          "meaning": "频率",
+          "unit": "Hz"
+        },
+        {
+          "symbol": "t",
+          "meaning": "时间",
+          "unit": null
+        }
+      ],
+      "conditions": [],
+      "uncertain_symbols": [],
+      "confidence": 0.95,
+      "plain_text": "x(t) = A\\cos(2\\pi ft)",
+      "description": "滑台简谐运动的位移随时间变化关系",
+      "validation_issues": [],
+      "validation_status": "passed",
+      "review_required": false,
+      "review_status": null,
+      "indexable": true,
+      "formula_id": "w10-1-直线运动平台（下）_pptx_page_8_formula_1",
+      "page_num": 8
+    },
+    {
+      "source_image": "output/qwen_qwen3.7-plus_5/debug/images/w10-1-直线运动平台（下）_slide_8_img_1.png",
+      "source_type": "image_vlm",
+      "extraction_method": "qwen_api_formula",
+      "backend": "api",
+      "provider": "qwen",
+      "model": "qwen3.7-plus",
+      "image_index": 0,
+      "raw_response": "{\n  \"has_formula\": true,\n  \"formulas\": [\n    {\n      \"latex\": \"x(t) = A\\\\cos(2\\\\pi ft)\",\n      \"name\": \"位移公式\",\n      \"meaning\": \"滑台简谐运动的位移随时间变化关系\",\n      \"symbols\": [\n        {\n          \"symbol\": \"x(t)\",\n          \"meaning\": \"位移\",\n          \"unit\": null\n        },\n        {\n          \"symbol\": \"A\",\n          \"meaning\": \"幅度，不超过行程的一半\",\n          \"unit\": null\n        },\n        {\n          \"symbol\": \"f\",\n          \"meaning\": \"频率\",\n          \"unit\": \"Hz\"\n        },\n        {\n          \"symbol\": \"t\",\n          \"meaning\": \"时间\",\n          \"unit\": null\n        }\n      ],\n      \"conditions\": [],\n      \"uncertain_symbols\": [],\n      \"confidence\": 0.95\n    },\n    {\n      \"latex\": \"v(t) = x'(t) = 2\\\\pi f A\\\\sin(2\\\\pi ft)\",\n      \"name\": \"速度公式\",\n      \"meaning\": \"滑台简谐运动的速度随时间变化关系（注：图片中公式似漏写负号，此处忠实记录图片内容）\",\n      \"symbols\": [\n        {\n          \"symbol\": \"v(t)\",\n          \"meaning\": \"速度\",\n          \"unit\": null\n        },\n        {\n          \"symbol\": \"x'(t)\",\n          \"meaning\": \"位移对时间的导数\",\n          \"unit\": null\n        },\n        {\n          \"symbol\": \"A\",\n          \"meaning\": \"幅度\",\n          \"unit\": null\n        },\n        {\n          \"symbol\": \"f\",\n          \"meaning\": \"频率\",\n          \"unit\": \"Hz\"\n        },\n        {\n          \"symbol\": \"t\",\n          \"meaning\": \"时间\",\n          \"unit\": null\n        }\n      ],\n      \"conditions\": [],\n      \"uncertain_symbols\": [],\n      \"confidence\": 0.9\n    }\n  ]\n}",
+      "parse_error": null,
+      "partial_response": false,
+      "review_reason": null,
+      "latex": "v(t) = x'(t) = 2\\pi f A\\sin(2\\pi ft)",
+      "name": "速度公式",
+      "meaning": "滑台简谐运动的速度随时间变化关系（注：图片中公式似漏写负号，此处忠实记录图片内容）",
+      "symbols": [
+        {
+          "symbol": "v(t)",
+          "meaning": "速度",
+          "unit": null
+        },
+        {
+          "symbol": "x'(t)",
+          "meaning": "位移对时间的导数",
+          "unit": null
+        },
+        {
+          "symbol": "A",
+          "meaning": "幅度",
+          "unit": null
+        },
+        {
+          "symbol": "f",
+          "meaning": "频率",
+          "unit": "Hz"
+        },
+        {
+          "symbol": "t",
+          "meaning": "时间",
+          "unit": null
+        }
+      ],
+      "conditions": [],
+      "uncertain_symbols": [],
+      "confidence": 0.9,
+      "plain_text": "v(t) = x'(t) = 2\\pi f A\\sin(2\\pi ft)",
+      "description": "滑台简谐运动的速度随时间变化关系（注：图片中公式似漏写负号，此处忠实记录图片内容）",
+      "validation_issues": [],
+      "validation_status": "passed",
+      "review_required": false,
+      "review_status": null,
+      "indexable": true,
+      "formula_id": "w10-1-直线运动平台（下）_pptx_page_8_formula_2",
+      "page_num": 8
+    }
+  ],
+  "timestamp": "2026-08-18T02:00:37.615261"
+}

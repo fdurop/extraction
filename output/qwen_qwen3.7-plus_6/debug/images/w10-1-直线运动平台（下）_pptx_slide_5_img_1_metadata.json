@@ -1,0 +1,33 @@
+{
+  "original_path": "output/qwen_qwen3.7-plus_6/debug/images/w10-1-直线运动平台（下）_slide_5_img_1.png",
+  "enhanced_path": "output/qwen_qwen3.7-plus_6/debug/images/w10-1-直线运动平台（下）_slide_5_img_1_enhanced.png",
+  "description": "类型：示意图\n图片包含关于低通滤波（LPF）的教学文本与公式。\n1. 定义滤波为不失真通过某些频率并衰减其他频率，基础是信号视为正弦波叠加（Fourier变换）。\n2. 定义低通滤波为低于截止频率的信号通过，常用于平滑测量噪声（噪声属高频）。\n3. 列出常用算法移动平均（MA）及其迭代公式：y[n] = y[n-1] + (x[n] - x[n-M]) / M。\n4. 实践项目为带低通滤波的滑台绝对位置控制。\n5. 提示使用长度M的数组记录历史数据，并用变量记录待插入新数据的位置。",
+  "metadata": {
+    "generation": {
+      "method": "qwen_api",
+      "backend": "api",
+      "provider": "qwen",
+      "model": "qwen3.7-plus",
+      "status": "success",
+      "api_error": null
+    },
+    "review": {
+      "required": false,
+      "status": null,
+      "reason": null,
+      "course_relevant": true
+    }
+  },
+  "error": null,
+  "method": "qwen_api",
+  "backend": "api",
+  "provider": "qwen",
+  "model": "qwen3.7-plus",
+  "status": "success",
+  "api_error": null,
+  "indexable": true,
+  "review_required": false,
+  "review_reason": null,
+  "review_status": null,
+  "course_relevant": true
+}

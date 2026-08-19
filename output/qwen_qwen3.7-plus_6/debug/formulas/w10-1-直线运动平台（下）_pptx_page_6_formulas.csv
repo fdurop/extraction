@@ -1,0 +1,4 @@
+﻿序号,LaTeX公式,名称,描述,来源图像,提取方法,置信度,验证状态,是否需审核
+1,\theta(t_1) = \theta(t_0) + \int_{t_0}^{t_1} \omega(t) \mathrm{d}t,步进电机转角积分公式,从时刻 t₀ 到 t₁，电机转角等于初始转角加上角速度对时间的积分,output/qwen_qwen3.7-plus_6/debug/images/w10-1-直线运动平台（下）_slide_6_img_1.png,qwen_api_formula,1.0,passed,False
+2,\theta[n\Delta t] = \theta[(n-1)\Delta t] + \omega[n\Delta t]\Delta t,转角离散化递推公式,利用时间间隔 Δt 将连续转角公式离散化，用于循环计算,output/qwen_qwen3.7-plus_6/debug/images/w10-1-直线运动平台（下）_slide_6_img_1.png,qwen_api_formula,1.0,passed,False
+3,|\theta[n\Delta t]| \ge 0.5,电机转动触发条件,当离散转角的绝对值大于等于0.5时，电机转动一格,output/qwen_qwen3.7-plus_6/debug/images/w10-1-直线运动平台（下）_slide_6_img_1.png,qwen_api_formula,1.0,passed,False
