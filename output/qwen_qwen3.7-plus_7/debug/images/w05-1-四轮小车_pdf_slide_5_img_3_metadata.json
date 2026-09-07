@@ -1,0 +1,33 @@
+{
+  "original_path": "output/qwen_qwen3.7-plus_7/debug/images/w05-1-四轮小车_p5_img4.jpeg",
+  "enhanced_path": "output/qwen_qwen3.7-plus_7/debug/images/w05-1-四轮小车_p5_img4_enhanced.jpeg",
+  "description": "类型：照片\n图片展示了四轮小车驱动系统的三个关键硬件组件。左侧为银色圆柱形直流电机，机身贴有包含“JGA25-370”字样的白色标签，前端伸出金属转轴；中间为一个小型金属联轴器，顶部可见用于紧固的螺丝；右侧为黑色橡胶轮胎，胎面具有几何防滑纹理，安装在黑色多辐条轮毂上。三者并列放置于黑色背景中，直观呈现了电机、传动连接件与车轮的物理形态。",
+  "metadata": {
+    "generation": {
+      "method": "qwen_api",
+      "backend": "api",
+      "provider": "qwen",
+      "model": "qwen3.7-plus",
+      "status": "success",
+      "api_error": null
+    },
+    "review": {
+      "required": false,
+      "status": null,
+      "reason": null,
+      "course_relevant": true
+    }
+  },
+  "error": null,
+  "method": "qwen_api",
+  "backend": "api",
+  "provider": "qwen",
+  "model": "qwen3.7-plus",
+  "status": "success",
+  "api_error": null,
+  "indexable": true,
+  "review_required": false,
+  "review_reason": null,
+  "review_status": null,
+  "course_relevant": true
+}

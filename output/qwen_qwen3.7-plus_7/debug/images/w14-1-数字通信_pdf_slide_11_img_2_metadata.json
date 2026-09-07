@@ -1,0 +1,33 @@
+{
+  "original_path": "output/qwen_qwen3.7-plus_7/debug/images/w14-1-数字通信_p11_img4.jpeg",
+  "enhanced_path": "output/qwen_qwen3.7-plus_7/debug/images/w14-1-数字通信_p11_img4_enhanced.jpeg",
+  "description": "类型：代码\n图片展示了MATLAB脚本代码，行号12至46。内容涉及串口通信操作：第12-14行使用`serialport`建立连接并暂停；第16-21行演示两种接收信息的回调函数配置（`configureCallback`），分别对应直接执行语句和调用自定义函数`receiveResponse`；第23-26行将变量T和L以`single`精度写入串口；第28-39行为注释掉的查询等待接收方式（方式3），包含超时判断逻辑；第41行执行串口删除与清除；第43-46行定义了回调函数`receiveResponse`的具体实现，用于读取并打印返回信息。代码中包含大量中文注释说明各步骤功能。",
+  "metadata": {
+    "generation": {
+      "method": "qwen_api",
+      "backend": "api",
+      "provider": "qwen",
+      "model": "qwen3.7-plus",
+      "status": "success",
+      "api_error": null
+    },
+    "review": {
+      "required": false,
+      "status": null,
+      "reason": null,
+      "course_relevant": true
+    }
+  },
+  "error": null,
+  "method": "qwen_api",
+  "backend": "api",
+  "provider": "qwen",
+  "model": "qwen3.7-plus",
+  "status": "success",
+  "api_error": null,
+  "indexable": true,
+  "review_required": false,
+  "review_reason": null,
+  "review_status": null,
+  "course_relevant": true
+}

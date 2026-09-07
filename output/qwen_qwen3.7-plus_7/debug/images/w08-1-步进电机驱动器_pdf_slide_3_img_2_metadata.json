@@ -1,0 +1,33 @@
+{
+  "original_path": "output/qwen_qwen3.7-plus_7/debug/images/w08-1-步进电机驱动器_p3_img3.png",
+  "enhanced_path": "output/qwen_qwen3.7-plus_7/debug/images/w08-1-步进电机驱动器_p3_img3_enhanced.png",
+  "description": "类型：示意图/表格\n标题“§3 步进电机原理”。左侧文字描述驱动方式：依照一定次序改变A相和B相电流方向，相位相差90°。中部为8幅步进电机截面示意图（编号1-8），展示定子线圈（标有A、A_bar、B、B_bar）与转子磁极（N/S）在不同通电状态下的相对位置及旋转角度。右侧表格列出phase 1至8对应的A相与B相电流状态，符号包含+、-、×，呈现两相励磁时序关系。",
+  "metadata": {
+    "generation": {
+      "method": "qwen_api",
+      "backend": "api",
+      "provider": "qwen",
+      "model": "qwen3.7-plus",
+      "status": "success",
+      "api_error": null
+    },
+    "review": {
+      "required": false,
+      "status": null,
+      "reason": null,
+      "course_relevant": true
+    }
+  },
+  "error": null,
+  "method": "qwen_api",
+  "backend": "api",
+  "provider": "qwen",
+  "model": "qwen3.7-plus",
+  "status": "success",
+  "api_error": null,
+  "indexable": true,
+  "review_required": false,
+  "review_reason": null,
+  "review_status": null,
+  "course_relevant": true
+}

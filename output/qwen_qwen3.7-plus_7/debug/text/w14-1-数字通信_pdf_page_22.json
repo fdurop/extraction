@@ -1,0 +1,25 @@
+{
+  "page_num": 21,
+  "raw_text": "机电系统原理及实践—— 数字通信\n机电智控实验室tangguoan@fudan.edu.cn mmguo@fudan.edu.cn\n23-22\nw14-s7-CanMaster.ino\nw14-s7-CanSlave.ino\n例：通过\nCAN发送\n和接收信\n息\n",
+  "cleaned_text": "w14-s7-CanMaster.ino\nw14-s7-CanSlave.ino\n例：通过\nCAN发送\n和接收信\n息",
+  "key_points": [
+    "CAN发送"
+  ],
+  "technical_terms": [
+    "w14-s7-CanMaster",
+    "w14-s7-CanSlave"
+  ],
+  "has_images": true,
+  "image_count": 4,
+  "image_paths": [
+    "output/qwen_qwen3.7-plus_7/debug/images/w14-1-数字通信_p22_img3.jpeg",
+    "output/qwen_qwen3.7-plus_7/debug/images/w14-1-数字通信_p22_img4.jpeg",
+    "output/qwen_qwen3.7-plus_7/debug/images/w14-1-数字通信_p22_img5.jpeg",
+    "output/qwen_qwen3.7-plus_7/debug/images/w14-1-数字通信_p22_img6.jpeg"
+  ],
+  "metadata": {
+    "char_count": 132,
+    "word_count": 11,
+    "line_count": 10
+  }
+}

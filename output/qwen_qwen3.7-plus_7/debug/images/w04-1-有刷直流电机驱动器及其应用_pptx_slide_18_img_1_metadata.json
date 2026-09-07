@@ -1,0 +1,33 @@
+{
+  "original_path": "output/qwen_qwen3.7-plus_7/debug/images/w04-1-有刷直流电机驱动器及其应用_slide_18_img_1.png",
+  "enhanced_path": "output/qwen_qwen3.7-plus_7/debug/images/w04-1-有刷直流电机驱动器及其应用_slide_18_img_1_enhanced.png",
+  "description": "类型：照片\n图片展示了一个带有四个黑色轮子的银色金属底盘机器人。底盘顶部安装有绿色框架结构的电子模块，包含一排白色长方体继电器（可见“Relay”字样）和多个绿色接线端子。红、蓝、黑、黄等多色导线将端子与电路板连接。右上方有一块带有绿色端口的扩展板。金属 chassis 表面贴有黄色标签，印有黑色文字“前进方向”，旁边有一个圆形金属按钮和一个绿色指示灯。",
+  "metadata": {
+    "generation": {
+      "method": "qwen_api",
+      "backend": "api",
+      "provider": "qwen",
+      "model": "qwen3.7-plus",
+      "status": "success",
+      "api_error": null
+    },
+    "review": {
+      "required": false,
+      "status": null,
+      "reason": null,
+      "course_relevant": true
+    }
+  },
+  "error": null,
+  "method": "qwen_api",
+  "backend": "api",
+  "provider": "qwen",
+  "model": "qwen3.7-plus",
+  "status": "success",
+  "api_error": null,
+  "indexable": true,
+  "review_required": false,
+  "review_reason": null,
+  "review_status": null,
+  "course_relevant": true
+}

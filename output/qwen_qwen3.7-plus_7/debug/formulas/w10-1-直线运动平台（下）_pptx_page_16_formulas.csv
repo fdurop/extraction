@@ -1,0 +1,3 @@
+﻿序号,LaTeX公式,名称,描述,来源图像,提取方法,置信度,验证状态,是否需审核
+1,v(t) = 6Lt(T - t)/T^3,,,output/qwen_qwen3.7-plus_7/debug/images/w10-1-直线运动平台（下）_slide_16_img_1.png,qwen_api_formula,1.0,passed,False
+2,\tilde{v}(t) = \frac{1}{2}[v(t) + v(t - 2\tau)],,,output/qwen_qwen3.7-plus_7/debug/images/w10-1-直线运动平台（下）_slide_16_img_1.png,qwen_api_formula,1.0,passed,False

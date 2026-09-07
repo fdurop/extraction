@@ -1,0 +1,11 @@
+﻿序号,LaTeX公式,名称,描述,来源图像,提取方法,置信度,验证状态,是否需审核
+1,d/4,,,output/qwen_qwen3.7-plus_7/debug/images/w13-1-电机位置检测与闭环控制 - 副本_p6_img3.jpeg,qwen_api_formula,1.0,passed,False
+2,d,,,output/qwen_qwen3.7-plus_7/debug/images/w13-1-电机位置检测与闭环控制 - 副本_p6_img3.jpeg,qwen_api_formula,0.72,review,True
+3,d/2,,,output/qwen_qwen3.7-plus_7/debug/images/w13-1-电机位置检测与闭环控制 - 副本_p6_img3.jpeg,qwen_api_formula,1.0,passed,False
+4,t=0,,,output/qwen_qwen3.7-plus_7/debug/images/w13-1-电机位置检测与闭环控制 - 副本_p6_img3.jpeg,qwen_api_formula,1.0,passed,False
+5,t=0.25*d/v,,,output/qwen_qwen3.7-plus_7/debug/images/w13-1-电机位置检测与闭环控制 - 副本_p6_img3.jpeg,qwen_api_formula,1.0,passed,False
+6,t=0.5*d/v,,,output/qwen_qwen3.7-plus_7/debug/images/w13-1-电机位置检测与闭环控制 - 副本_p6_img3.jpeg,qwen_api_formula,1.0,passed,False
+7,t=0.75*d/v,,,output/qwen_qwen3.7-plus_7/debug/images/w13-1-电机位置检测与闭环控制 - 副本_p6_img3.jpeg,qwen_api_formula,1.0,passed,False
+8,t=d/v,,,output/qwen_qwen3.7-plus_7/debug/images/w13-1-电机位置检测与闭环控制 - 副本_p6_img3.jpeg,qwen_api_formula,1.0,passed,False
+9,d/N/4,,,output/qwen_qwen3.7-plus_7/debug/images/w13-1-电机位置检测与闭环控制 - 副本_p6_img3.jpeg,qwen_api_formula,1.0,passed,False
+10,d/v,,,output/qwen_qwen3.7-plus_7/debug/images/w13-1-电机位置检测与闭环控制 - 副本_p6_img3.jpeg,qwen_api_formula,1.0,passed,False

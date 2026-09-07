@@ -1,0 +1,33 @@
+{
+  "original_path": "output/qwen_qwen3.7-plus_7/debug/images/w03-1-直流电机原理_p7_img4.jpeg",
+  "enhanced_path": "output/qwen_qwen3.7-plus_7/debug/images/w03-1-直流电机原理_p7_img4_enhanced.jpeg",
+  "description": "类型：示意图\n图片展示了型号为IT6720的自动量程直流稳压电源（Auto Range DC Power Supply）前面板结构及功能标注。\n上方显示区包含电压（V）和电流（A）的数字显示屏，以及CV、CC、OVP、OCP、Lock、Prog、OFF、Shift等状态指示灯。\n中部控制区设有Save、Prog、Lock、Setup、Display、On/Off、Shift等功能按键，A/B/C/D快捷键，以及一个旋转编码器和进气口。\n底部接口区包含主电源开关（Power），以及红、黑、绿三个输出端子，分别标注为正输出端子、负输出端子和接地端子。\n图中通过引线详细说明了各按键组合功能（如步进值预设、快捷键调用）及指示灯含义。",
+  "metadata": {
+    "generation": {
+      "method": "qwen_api",
+      "backend": "api",
+      "provider": "qwen",
+      "model": "qwen3.7-plus",
+      "status": "success",
+      "api_error": null
+    },
+    "review": {
+      "required": false,
+      "status": null,
+      "reason": null,
+      "course_relevant": true
+    }
+  },
+  "error": null,
+  "method": "qwen_api",
+  "backend": "api",
+  "provider": "qwen",
+  "model": "qwen3.7-plus",
+  "status": "success",
+  "api_error": null,
+  "indexable": true,
+  "review_required": false,
+  "review_reason": null,
+  "review_status": null,
+  "course_relevant": true
+}

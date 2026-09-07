@@ -1,0 +1,33 @@
+{
+  "original_path": "output/qwen_qwen3.7-plus_7/debug/images/w01-1-课程简介_p18_img2.jpeg",
+  "enhanced_path": "output/qwen_qwen3.7-plus_7/debug/images/w01-1-课程简介_p18_img2_enhanced.jpeg",
+  "description": "类型：照片\n画面展示实验室加工场景。左侧一名穿粉色卫衣人员手持带红色按钮的黑色手柄控制器，面对灰色机柜操作。右侧为数控铣床设备，上方悬挂数字显示屏，显示坐标数值及“A15”标识。右下角局部特写显示铣刀正在对金属工件进行切削加工，产生大量银色金属碎屑。该图片直观展示了课程简介中提及的“高精度数控铣床”及“加工与二次开发”的实际硬件环境与操作状态。",
+  "metadata": {
+    "generation": {
+      "method": "qwen_api",
+      "backend": "api",
+      "provider": "qwen",
+      "model": "qwen3.7-plus",
+      "status": "success",
+      "api_error": null
+    },
+    "review": {
+      "required": false,
+      "status": null,
+      "reason": null,
+      "course_relevant": true
+    }
+  },
+  "error": null,
+  "method": "qwen_api",
+  "backend": "api",
+  "provider": "qwen",
+  "model": "qwen3.7-plus",
+  "status": "success",
+  "api_error": null,
+  "indexable": true,
+  "review_required": false,
+  "review_reason": null,
+  "review_status": null,
+  "course_relevant": true
+}

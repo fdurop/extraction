@@ -1,0 +1,33 @@
+{
+  "original_path": "output/qwen_qwen3.7-plus_7/debug/images/w15-1-无刷直流电机驱动器_p7_img4.jpeg",
+  "enhanced_path": "output/qwen_qwen3.7-plus_7/debug/images/w15-1-无刷直流电机驱动器_p7_img4_enhanced.jpeg",
+  "description": "类型：示意图\n图中展示无刷直流电机定子绕组与磁场矢量关系。圆形轮廓内呈120度分布着标记为U、V、W的三个线圈（以锯齿线表示）。中心为灰色圆形转子。从圆心发出三个彩色箭头矢量：红色箭头垂直向上指向U相方向，另两个绿色箭头分别指向左下和右下。三个矢量合成一个指向左上方的总磁场矢量。图片中央覆盖有“GIF”字样水印。",
+  "metadata": {
+    "generation": {
+      "method": "qwen_api",
+      "backend": "api",
+      "provider": "qwen",
+      "model": "qwen3.7-plus",
+      "status": "success",
+      "api_error": null
+    },
+    "review": {
+      "required": false,
+      "status": null,
+      "reason": null,
+      "course_relevant": true
+    }
+  },
+  "error": null,
+  "method": "qwen_api",
+  "backend": "api",
+  "provider": "qwen",
+  "model": "qwen3.7-plus",
+  "status": "success",
+  "api_error": null,
+  "indexable": true,
+  "review_required": false,
+  "review_reason": null,
+  "review_status": null,
+  "course_relevant": true
+}

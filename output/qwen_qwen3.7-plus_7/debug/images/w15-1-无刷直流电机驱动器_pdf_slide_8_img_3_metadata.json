@@ -1,0 +1,33 @@
+{
+  "original_path": "output/qwen_qwen3.7-plus_7/debug/images/w15-1-无刷直流电机驱动器_p8_img5.jpeg",
+  "enhanced_path": "output/qwen_qwen3.7-plus_7/debug/images/w15-1-无刷直流电机驱动器_p8_img5_enhanced.jpeg",
+  "description": "类型：示意图\n图片展示了电机控制系统的逻辑框图，包含上下两条主要信号处理路径及右侧输出模块。\n上路路径：输入“设定角度”与反馈“当前角度”进入减法节点，误差经增益“Kp”处理后，与输入的“设定力矩”在加法节点汇合。\n下路路径：输入“设定速度”与反馈“当前速度”进入减法节点，误差经增益“Kd”处理。\n汇合与输出：下路输出信号汇入上路加法节点，生成“期望力矩 (t_ref)”。该力矩信号与来自下方常数“0”模块的“期望id (d_ref)”信号，共同输入至标有“f(t_ref)”的功能块，最终输出“期望iq (iq_ref)”。图中通过箭头清晰指示了各变量间的运算流向与叠加关系。",
+  "metadata": {
+    "generation": {
+      "method": "qwen_api",
+      "backend": "api",
+      "provider": "qwen",
+      "model": "qwen3.7-plus",
+      "status": "success",
+      "api_error": null
+    },
+    "review": {
+      "required": false,
+      "status": null,
+      "reason": null,
+      "course_relevant": true
+    }
+  },
+  "error": null,
+  "method": "qwen_api",
+  "backend": "api",
+  "provider": "qwen",
+  "model": "qwen3.7-plus",
+  "status": "success",
+  "api_error": null,
+  "indexable": true,
+  "review_required": false,
+  "review_reason": null,
+  "review_status": null,
+  "course_relevant": true
+}

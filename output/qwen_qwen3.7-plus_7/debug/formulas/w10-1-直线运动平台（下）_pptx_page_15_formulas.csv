@@ -1,0 +1,10 @@
+﻿序号,LaTeX公式,名称,描述,来源图像,提取方法,置信度,验证状态,是否需审核
+1,\mathcal{L}[f(t - \tau)] = e^{-s\tau}F(s),,,output/qwen_qwen3.7-plus_7/debug/images/w10-1-直线运动平台（下）_slide_15_img_1.png,qwen_api_formula,1.0,passed,False
+2,\mathcal{L}^{-1}(\widetilde{U}_s(s)),,,output/qwen_qwen3.7-plus_7/debug/images/w10-1-直线运动平台（下）_slide_15_img_2.png,qwen_api_formula,1.0,passed,False
+3,"\begin{aligned} \widetilde{U}_s(s) &= C(e^{-s\tau} - e^{s_2\tau})(e^{-s\tau} - e^{s_1\tau})U_s(s) \\ &= C[1 - 2e^{-s\tau}\cos(\omega_n\tau) + e^{-2s\tau}]U_s(s) \end{aligned} \Rightarrow \tilde{u}_s(t) = C[u_s(t) - 2\cos(\omega_n\tau)u_s(t-\tau) + u_s(t-2\tau)],",,,output/qwen_qwen3.7-plus_7/debug/images/w10-1-直线运动平台（下）_slide_15_img_2.png,qwen_api_formula,0.62,review,True
+4,\tilde{u}_s(t) = c_1 u_s(t) - c_2 u_s(t-\tau) + c_1 u_s(t-2\tau).,,,output/qwen_qwen3.7-plus_7/debug/images/w10-1-直线运动平台（下）_slide_15_img_2.png,qwen_api_formula,1.0,passed,False
+5,c_2 = 2C \cos(\omega_n \tau) = 0,,,output/qwen_qwen3.7-plus_7/debug/images/w10-1-直线运动平台（下）_slide_15_img_2.png,qwen_api_formula,1.0,passed,False
+6,\tau = \frac{\pi}{2\omega_n},,,output/qwen_qwen3.7-plus_7/debug/images/w10-1-直线运动平台（下）_slide_15_img_2.png,qwen_api_formula,1.0,passed,False
+7,c_1 = 1/2,,,output/qwen_qwen3.7-plus_7/debug/images/w10-1-直线运动平台（下）_slide_15_img_2.png,qwen_api_formula,1.0,passed,False
+8,C = C / \tau^2,,,output/qwen_qwen3.7-plus_7/debug/images/w10-1-直线运动平台（下）_slide_15_img_3.png,qwen_api_formula,1.0,passed,False
+9,\tilde{u}_s(t) = \frac{1}{2} [u_s(t) + u_s(t - 2\tau)],,,output/qwen_qwen3.7-plus_7/debug/images/w10-1-直线运动平台（下）_slide_15_img_4.png,qwen_api_formula,1.0,passed,False

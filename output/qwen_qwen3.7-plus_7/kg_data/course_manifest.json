@@ -1,0 +1,27 @@
+{
+  "user_id": "default_user",
+  "course_id": "default_course",
+  "course_name": "default_course",
+  "created_at": "2026-09-07T19:36:58.037063",
+  "updated_at": "2026-09-07T20:01:31.752979",
+  "documents": [
+    "doc_10cae65d3c30",
+    "doc_18a45c4dcef9",
+    "doc_219e7942c695",
+    "doc_34fa1ae8ab21",
+    "doc_57b9222a9038",
+    "doc_5a3049e64be8",
+    "doc_633f97ed57b8",
+    "doc_734b0dcb18f2",
+    "doc_769636ec3504",
+    "doc_9efe33524aba",
+    "doc_af60fdc9c262",
+    "doc_b3eccd29a210",
+    "doc_b7a62c37d8e7",
+    "doc_ba466e26dcaa",
+    "doc_d1725e8802ec",
+    "doc_e2151041d8d0",
+    "doc_e3f9d5ecb045"
+  ],
+  "output_schema": "multimodal_graphrag_extraction_v1"
+}

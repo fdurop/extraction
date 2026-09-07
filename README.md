@@ -244,3 +244,23 @@ output/       按模型与递增序号保存的历次结果
 src2/         当前抽取程序
 run_src2.py   唯一正式运行入口
 ```
+## API 失败补漏
+
+完整抽取结束后，可以只扫描因超时、断网、代理异常、限流或服务端 5xx
+造成的最终失败项。程序不会重试课程无关、低置信度或结构校验失败的数据，也
+不会覆盖原运行结果：
+
+```powershell
+.\.venv_api\Scripts\python.exe retry_failed_api.py --dry-run
+.\.venv_api\Scripts\python.exe retry_failed_api.py
+```
+
+默认选择最新的完整输出，也可以显式指定：
+
+```powershell
+.\.venv_api\Scripts\python.exe retry_failed_api.py --run-dir output/qwen_qwen3.7-plus_7
+```
+
+结果写入原运行目录下递增编号的
+`api_recovery/retry_N/manifest.json` 和 `api_recovery/retry_N/items/`。这是补漏覆盖层，
+保留原始失败证据；下游合并时应优先采用其中 `retry_status=success` 的记录。

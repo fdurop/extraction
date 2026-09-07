@@ -1,0 +1,18 @@
+{
+  "page_num": 0,
+  "raw_text": "机电系统原理及实践\n直线运动平台上的动力学与控制\n—— 输入整形/ 振动抑制/ 倒立摆\n",
+  "cleaned_text": "机电系统原理及实践\n直线运动平台上的动力学与控制\n—— 输入整形/ 振动抑制/ 倒立摆",
+  "key_points": [],
+  "technical_terms": [
+    "机电系统",
+    "运动平台上的动力学与控制"
+  ],
+  "has_images": false,
+  "image_count": 0,
+  "image_paths": [],
+  "metadata": {
+    "char_count": 44,
+    "word_count": 6,
+    "line_count": 4
+  }
+}

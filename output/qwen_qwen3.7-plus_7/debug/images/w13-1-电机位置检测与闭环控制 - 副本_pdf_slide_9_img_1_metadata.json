@@ -1,0 +1,33 @@
+{
+  "original_path": "output/qwen_qwen3.7-plus_7/debug/images/w13-1-电机位置检测与闭环控制 - 副本_p9_img3.jpeg",
+  "enhanced_path": "output/qwen_qwen3.7-plus_7/debug/images/w13-1-电机位置检测与闭环控制 - 副本_p9_img3_enhanced.jpeg",
+  "description": "类型：示意图\n图片展示了霍尔效应原理。上方为条形磁铁（标有N、S极），周围绘有磁力线（Lines of Force）及方向性磁场（Directional Magnetic Field (H)）。下方为P型半导体霍尔元件（P-type Semiconductor Hall Element），内部显示载流子（正电荷）在磁场作用下的偏转路径。底部连接直流电源（DC Supply）提供恒定电流（Constant Current Flow，标为I）。右侧通过导线连接电压表，测量产生的霍尔电压（Hall Voltage，标为V_H）。",
+  "metadata": {
+    "generation": {
+      "method": "qwen_api",
+      "backend": "api",
+      "provider": "qwen",
+      "model": "qwen3.7-plus",
+      "status": "success",
+      "api_error": null
+    },
+    "review": {
+      "required": false,
+      "status": null,
+      "reason": null,
+      "course_relevant": true
+    }
+  },
+  "error": null,
+  "method": "qwen_api",
+  "backend": "api",
+  "provider": "qwen",
+  "model": "qwen3.7-plus",
+  "status": "success",
+  "api_error": null,
+  "indexable": true,
+  "review_required": false,
+  "review_reason": null,
+  "review_status": null,
+  "course_relevant": true
+}

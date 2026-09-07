@@ -1,0 +1,33 @@
+{
+  "original_path": "output/qwen_qwen3.7-plus_7/debug/images/w15-2-机器人运动学及其应用_p17_img3.jpeg",
+  "enhanced_path": "output/qwen_qwen3.7-plus_7/debug/images/w15-2-机器人运动学及其应用_p17_img3_enhanced.jpeg",
+  "description": "类型：照片\n图片展示了一台放置在白色桌面上的四足机器人实物原型。该机器人具有银灰色金属框架躯干，四条腿通过连杆机构连接，腿部关节处安装有黑色伺服电机，并连接有红黑导线。机器人右侧桌面上放置有一台显示绿色数字的直流稳压电源，通过线缆与机器人相连。背景可见实验室环境，包括黑色仪器箱、凳子及地面。图片对应上下文中的“四条腿的机器狗”及其运动控制实验场景。",
+  "metadata": {
+    "generation": {
+      "method": "qwen_api",
+      "backend": "api",
+      "provider": "qwen",
+      "model": "qwen3.7-plus",
+      "status": "success",
+      "api_error": null
+    },
+    "review": {
+      "required": false,
+      "status": null,
+      "reason": null,
+      "course_relevant": true
+    }
+  },
+  "error": null,
+  "method": "qwen_api",
+  "backend": "api",
+  "provider": "qwen",
+  "model": "qwen3.7-plus",
+  "status": "success",
+  "api_error": null,
+  "indexable": true,
+  "review_required": false,
+  "review_reason": null,
+  "review_status": null,
+  "course_relevant": true
+}

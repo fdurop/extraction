@@ -1,0 +1,33 @@
+{
+  "original_path": "output/qwen_qwen3.7-plus_7/debug/images/w10-1-直线运动平台（下）_slide_9_img_1.png",
+  "enhanced_path": "output/qwen_qwen3.7-plus_7/debug/images/w10-1-直线运动平台（下）_slide_9_img_1_enhanced.png",
+  "description": "类型：示意图\n图片展示了滑台平滑路径控制的四个步骤及数学原理。\n1. 滑台初始化复位；\n2. 设置指定时长T和距离L（小于行程）；\n3. 设置时间中断，等待启停按钮；\n4. 启动后，滑台按设定速度进行移动。\n下方列出具体算法逻辑：\n- 速度公式：v(t) = 6Lt(T - t)/T³，标注为抛物线型，启停时刻速度均为零。\n- 位移公式：x(t) = ∫₀ᵀ v(t)dt = 6Lt²(T/2 - t/3)/T³。\n- 时间中断任务：设置速度（转换为脉冲数）。\n- loop循环任务：根据速度发送脉冲。",
+  "metadata": {
+    "generation": {
+      "method": "qwen_api",
+      "backend": "api",
+      "provider": "qwen",
+      "model": "qwen3.7-plus",
+      "status": "success",
+      "api_error": null
+    },
+    "review": {
+      "required": false,
+      "status": null,
+      "reason": null,
+      "course_relevant": true
+    }
+  },
+  "error": null,
+  "method": "qwen_api",
+  "backend": "api",
+  "provider": "qwen",
+  "model": "qwen3.7-plus",
+  "status": "success",
+  "api_error": null,
+  "indexable": true,
+  "review_required": false,
+  "review_reason": null,
+  "review_status": null,
+  "course_relevant": true
+}

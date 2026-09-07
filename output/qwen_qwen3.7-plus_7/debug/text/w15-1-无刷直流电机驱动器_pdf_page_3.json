@@ -1,0 +1,33 @@
+{
+  "page_num": 2,
+  "raw_text": "机电系统原理及实践—— 无刷直流电机驱动简介\n机电智控实验室tangguoan@fudan.edu.cn mmguo@fudan.edu.cn\n§1 电机驱动器回顾\n9-3\nM\nV–\nV+\nD3 D4\nD5 D6\nD9\nA1\nB1\nA2\nB2\nA3\nB3\nA4\nB4\nD7\n5V\nA0\nGND\nD8\nZ1\nZ2\n↑\n有刷直流电机驱动器\n两路固态继电器\n组成一个\n单刀双掷开关\n手拨开关控制有刷直流电机\nM\n电源\n分配\n端子\n电源\n分配\n端子\n双刀双掷\n开关\n直\n流\n电\n源\n+\n-\n对接\n端子\n对接\n端子\nCOM\nCOM\n",
+  "cleaned_text": "§1 电机驱动器回顾\nM\nV–\nV+\nD3 D4\nD5 D6\nD9\nA1\nB1\nA2\nB2\nA3\nB3\nA4\nB4\nD7\n5V\nA0\nGND\nD8\nZ1\nZ2\n↑\n有刷直流电机驱动器\n两路固态继电器\n组成一个\n单刀双掷开关\n手拨开关控制有刷直流电机\nM\n电源\n分配\n端子\n电源\n分配\n端子\n双刀双掷\n开关\n直\n流\n电\n源\n+\n-\n对接\n端子\n对接\n端子\nCOM\nCOM",
+  "key_points": [
+    "M",
+    "V–",
+    "V+",
+    "D3 D4",
+    "D5 D6",
+    "D9",
+    "A1",
+    "B1",
+    "A2",
+    "B2"
+  ],
+  "technical_terms": [
+    "COM",
+    "GND",
+    "手拨开关控制",
+    "手拨开关控制有刷直流电机",
+    "有刷直流电机驱动器",
+    "电机驱动器"
+  ],
+  "has_images": false,
+  "image_count": 0,
+  "image_paths": [],
+  "metadata": {
+    "char_count": 261,
+    "word_count": 57,
+    "line_count": 53
+  }
+}

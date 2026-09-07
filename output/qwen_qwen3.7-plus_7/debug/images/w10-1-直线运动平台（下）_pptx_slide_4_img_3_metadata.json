@@ -1,0 +1,33 @@
+{
+  "original_path": "output/qwen_qwen3.7-plus_7/debug/images/w10-1-直线运动平台（下）_slide_4_img_3.png",
+  "enhanced_path": "output/qwen_qwen3.7-plus_7/debug/images/w10-1-直线运动平台（下）_slide_4_img_3_enhanced.png",
+  "description": "类型：示意图\n图片展示了丝杠传动机构的局部三维模型。左侧为灰色的圆柱形丝杠轴，表面加工有螺旋状螺纹；右侧套有一个螺母组件，其内部螺旋槽与丝杠螺纹啮合。图中使用红色高亮标记了丝杠螺纹牙侧与螺母内部接触的关键受力面或配合区域，直观呈现了丝杠与螺母的机械配合关系及螺纹结构细节。",
+  "metadata": {
+    "generation": {
+      "method": "qwen_api",
+      "backend": "api",
+      "provider": "qwen",
+      "model": "qwen3.7-plus",
+      "status": "success",
+      "api_error": null
+    },
+    "review": {
+      "required": false,
+      "status": null,
+      "reason": null,
+      "course_relevant": true
+    }
+  },
+  "error": null,
+  "method": "qwen_api",
+  "backend": "api",
+  "provider": "qwen",
+  "model": "qwen3.7-plus",
+  "status": "success",
+  "api_error": null,
+  "indexable": true,
+  "review_required": false,
+  "review_reason": null,
+  "review_status": null,
+  "course_relevant": true
+}

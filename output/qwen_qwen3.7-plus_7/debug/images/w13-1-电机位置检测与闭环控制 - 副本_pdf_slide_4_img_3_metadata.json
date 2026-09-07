@@ -1,0 +1,33 @@
+{
+  "original_path": "output/qwen_qwen3.7-plus_7/debug/images/w13-1-电机位置检测与闭环控制 - 副本_p4_img5.jpeg",
+  "enhanced_path": "output/qwen_qwen3.7-plus_7/debug/images/w13-1-电机位置检测与闭环控制 - 副本_p4_img5_enhanced.jpeg",
+  "description": "类型：照片\n图片展示了一个圆柱形黑色工业元件，顶部伸出金属转轴。侧面标签印有型号“E6B2-CWZ6C”及名称“ROTARY ENCODER (INCREMENTAL)”。可见技术参数包括分辨率“Resolution : 1000 P/R”、电源“Power Supply : 5 to 24 VDC”以及输出信号定义（Brown对应5to24VDC，Black对应White，Orange对应0V(COMMON)，Shield对应GND）。右侧有CE认证标志。该实物图对应文本中提到的“编码器”及其在电机位置检测中的应用。",
+  "metadata": {
+    "generation": {
+      "method": "qwen_api",
+      "backend": "api",
+      "provider": "qwen",
+      "model": "qwen3.7-plus",
+      "status": "success",
+      "api_error": null
+    },
+    "review": {
+      "required": false,
+      "status": null,
+      "reason": null,
+      "course_relevant": true
+    }
+  },
+  "error": null,
+  "method": "qwen_api",
+  "backend": "api",
+  "provider": "qwen",
+  "model": "qwen3.7-plus",
+  "status": "success",
+  "api_error": null,
+  "indexable": true,
+  "review_required": false,
+  "review_reason": null,
+  "review_status": null,
+  "course_relevant": true
+}

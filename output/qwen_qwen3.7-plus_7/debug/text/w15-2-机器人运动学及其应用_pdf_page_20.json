@@ -1,0 +1,25 @@
+{
+  "page_num": 19,
+  "raw_text": "机电系统原理及实践—— 机器人运动学简介\n机电智控实验室tangguoan@fudan.edu.cn mmguo@fudan.edu.cn\n§3.5 软件结构\nFreeRTOS——嵌入式实时操作系统(UNO R4 自带，UNO R3 需另行安装)\n在主程序中模拟多线程并行：一个线程接受指令，一个线程处理指令。\n功能封装——三个类\n21-20\nCorgi 类\n步态协调\n左前腿\n左后腿\n右前腿\n右后腿\n髋关节膝关节\nBiLink类\n逆运动学\nCyberGear类\n电机通信\n髋关节膝关节\n髋关节膝关节\n髋关节膝关节\n",
+  "cleaned_text": "§3.5 软件结构\nFreeRTOS——嵌入式实时操作系统(UNO R4 自带，UNO R3 需另行安装)\n在主程序中模拟多线程并行：一个线程接受指令，一个线程处理指令。\n功能封装——三个类\nCorgi 类\n步态协调\n左前腿\n左后腿\n右前腿\n右后腿\n髋关节膝关节\nBiLink类\n逆运动学\nCyberGear类\n电机通信\n髋关节膝关节\n髋关节膝关节\n髋关节膝关节",
+  "key_points": [
+    "FreeRTOS——嵌入式实时操作系统(UNO R4 自带，UNO R3 需另行安装)",
+    "在主程序中模拟多线程并行：一个线程接受指令，一个线程处理指令。",
+    "Corgi 类",
+    "BiLink类",
+    "CyberGear类"
+  ],
+  "technical_terms": [
+    "UNO",
+    "一个线程处理",
+    "嵌入式实时操作系统"
+  ],
+  "has_images": false,
+  "image_count": 0,
+  "image_paths": [],
+  "metadata": {
+    "char_count": 261,
+    "word_count": 29,
+    "line_count": 22
+  }
+}

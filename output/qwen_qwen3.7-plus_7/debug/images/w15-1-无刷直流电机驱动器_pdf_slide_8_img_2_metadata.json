@@ -1,0 +1,33 @@
+{
+  "original_path": "output/qwen_qwen3.7-plus_7/debug/images/w15-1-无刷直流电机驱动器_p8_img4.jpeg",
+  "enhanced_path": "output/qwen_qwen3.7-plus_7/debug/images/w15-1-无刷直流电机驱动器_p8_img4_enhanced.jpeg",
+  "description": "类型：示意图\n图片展示了小米CyberGear微电机的爆炸分解结构，各组件沿中心轴从左至右依次排列。最左侧为驱动电路板，可见其上的电子元件；紧邻的是定子线圈组件，铜线绕组清晰可见；中间为主体外壳及内部转子结构；右侧连接着行星减速器齿轮组；最右端依次为编码器圆盘和电机端盖。图中通过空间拆解关系直观呈现了电机内部驱动电路板、编码器、线圈、外壳、行星减速器及转子的物理装配顺序与位置关系。",
+  "metadata": {
+    "generation": {
+      "method": "qwen_api",
+      "backend": "api",
+      "provider": "qwen",
+      "model": "qwen3.7-plus",
+      "status": "success",
+      "api_error": null
+    },
+    "review": {
+      "required": false,
+      "status": null,
+      "reason": null,
+      "course_relevant": true
+    }
+  },
+  "error": null,
+  "method": "qwen_api",
+  "backend": "api",
+  "provider": "qwen",
+  "model": "qwen3.7-plus",
+  "status": "success",
+  "api_error": null,
+  "indexable": true,
+  "review_required": false,
+  "review_reason": null,
+  "review_status": null,
+  "course_relevant": true
+}

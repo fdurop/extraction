@@ -1,0 +1,25 @@
+{
+  "page_num": 7,
+  "raw_text": "机电系统原理及实践—— Arduino软硬件基础\n机电智控实验室tangguoan@fudan.edu.cn mmguo@fudan.edu.cn\n§3 实践：熟悉Arduino Uno\n板载LED的\n闪烁控制\n数字端口的\n用法\n固定周期，\n调整明暗的\n时长占比。\n14-8\n端口初始化：说明该数字端口用于输入还是输出。只需运行一次。\n调节LED的亮度，需反复运行\nw01-s2-blink.ino\nLED为什么亮\n一端接port13的高\n电平\n一端接GND\n室 复旦大\n智控实验室 复旦大学 机电\n学 机电智控实验室 复旦大学 机电智控实验\n复旦大学 机电智控实验室 复旦大学 机电智控实验室 复旦\n大学 机电智控实验室 复旦大学 机电智控实验室 复旦大学 机电\n电智控实验室 复旦大学 机电智控实验室 复旦大学 机电智控实\n验室 复旦大学 机电智控实验室 复旦大学 机电智控实验室 \n旦大学 机电智控实验室 复旦大学 机电智控\n电智控实验室 复旦大学 \n验室 复\n",
+  "cleaned_text": "§3 实践：熟悉Arduino Uno\n板载LED的\n闪烁控制\n数字端口的\n用法\n固定周期，\n调整明暗的\n时长占比。\n端口初始化：说明该数字端口用于输入还是输出。只需运行一次。\n调节LED的亮度，需反复运行\nw01-s2-blink.ino\nLED为什么亮\n一端接port13的高\n电平\n一端接GND",
+  "key_points": [
+    "时长占比。",
+    "端口初始化：说明该数字端口用于输入还是输出。只需运行一次。",
+    "LED为什么亮"
+  ],
+  "technical_terms": [
+    "Uno",
+    "w01-s2-blink",
+    "闪烁控制"
+  ],
+  "has_images": true,
+  "image_count": 1,
+  "image_paths": [
+    "output/qwen_qwen3.7-plus_7/debug/images/w01-2-Arduino软硬件基础_p8_img2.png"
+  ],
+  "metadata": {
+    "char_count": 437,
+    "word_count": 60,
+    "line_count": 29
+  }
+}

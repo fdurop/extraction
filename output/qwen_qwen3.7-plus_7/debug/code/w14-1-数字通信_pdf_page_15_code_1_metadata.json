@@ -1,0 +1,14 @@
+{
+  "source_image": "output/qwen_qwen3.7-plus_7/debug/images/w14-1-数字通信_p15_img5.jpeg",
+  "extraction_method": "qwen_api_智能识别",
+  "language": "cpp",
+  "description": "这是一个Arduino I2C从机（下位机）程序。它监听I2C总线，接收来自主机（上位机）的浮点数角度值。如果接收到的角度值约等于π（PI），则将内部状态`res`设为true，否则设为false。当主机请求数据时，从机会将这个布尔状态`res`发送回主机。同时，它也会通过串口打印接收到的角度值用于调试。",
+  "code_file": "w14-1-数字通信_pdf_page_15_code_1.cpp",
+  "page": 15,
+  "index": 1,
+  "timestamp": "2026-09-07T19:58:45.387303",
+  "raw_response": "语言: C++ (Arduino)\n```cpp\n#include <Wire.h>\n\n// 下位机 I2C 地址\nconst byte slaveAdress = 20;\nbool res;\n\nvoid setup() {\n  Serial.begin(9600);\n  while (!Serial) {};\n\n  // 作为下位机启动 I2C 通信\n  Wire.begin(slaveAdress);\n  // 设置接收数据的中断处理函数\n  Wire.onReceive(receiveEvent);\n  // 设置发送数据的中断处理函数\n  Wire.onRequest(requestEvent);\n}\n\n// 接收数据的中断处理函数\nvoid receiveEvent(int howMany) {\n  float ang;\n  // 读取上位机发来的数据\n  Wire.readBytes((byte *)&ang, sizeof(float));\n  Serial.println(ang);\n  if (abs(ang - PI) < 1E-6)\n    res = true;\n  else\n    res = false;\n}\n\n// 发送数据的中断处理函数\nvoid requestEvent() {\n  Wire.write(res);\n}\n```\n功能: 这是一个Arduino I2C从机（下位机）程序。它监听I2C总线，接收来自主机（上位机）的浮点数角度值。如果接收到的角度值约等于π（PI），则将内部状态`res`设为true，否则设为false。当主机请求数据时，从机会将这个布尔状态`res`发送回主机。同时，它也会通过串口打印接收到的角度值用于调试。",
+  "backend": "api",
+  "provider": "qwen",
+  "model": "qwen3.7-plus"
+}

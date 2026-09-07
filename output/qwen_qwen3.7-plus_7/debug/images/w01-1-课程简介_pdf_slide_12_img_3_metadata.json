@@ -1,0 +1,33 @@
+{
+  "original_path": "output/qwen_qwen3.7-plus_7/debug/images/w01-1-课程简介_p12_img4.jpeg",
+  "enhanced_path": "output/qwen_qwen3.7-plus_7/debug/images/w01-1-课程简介_p12_img4_enhanced.jpeg",
+  "description": "类型：照片\n图片展示了一辆银色金属底盘的轮式机器人实物。车身呈扁平长方体结构，四角安装有四个黑色的麦克纳姆轮（全向轮），轮毂为银色金属材质。底盘顶部中央固定有一个白色长方形电池盒或控制盒，侧面可见红黑导线连接。盒子前方竖立着一根黑色天线，通过同轴电缆连接至底盘边缘的接口。底板表面分布有若干螺丝孔和安装位。结合上下文，该图对应“实践平台的迭代进化——轮式机器人”中的某一代原型机展示。",
+  "metadata": {
+    "generation": {
+      "method": "qwen_api",
+      "backend": "api",
+      "provider": "qwen",
+      "model": "qwen3.7-plus",
+      "status": "success",
+      "api_error": null
+    },
+    "review": {
+      "required": false,
+      "status": null,
+      "reason": null,
+      "course_relevant": true
+    }
+  },
+  "error": null,
+  "method": "qwen_api",
+  "backend": "api",
+  "provider": "qwen",
+  "model": "qwen3.7-plus",
+  "status": "success",
+  "api_error": null,
+  "indexable": true,
+  "review_required": false,
+  "review_reason": null,
+  "review_status": null,
+  "course_relevant": true
+}

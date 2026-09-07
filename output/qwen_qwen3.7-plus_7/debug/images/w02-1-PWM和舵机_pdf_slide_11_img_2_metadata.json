@@ -1,0 +1,33 @@
+{
+  "original_path": "output/qwen_qwen3.7-plus_7/debug/images/w02-1-PWM和舵机_p11_img3.jpeg",
+  "enhanced_path": "output/qwen_qwen3.7-plus_7/debug/images/w02-1-PWM和舵机_p11_img3_enhanced.jpeg",
+  "description": "类型：照片\n图片展示了一个黑色方形舵机主体，顶部安装有十字形黑色摇臂。机身侧面贴有紫色标签，可见“CLUBSPORT”、“MG SERVO”等字样。右侧连接着一束卷曲的红、橙、黄三色导线，末端为黑色3孔插头。图片下方散落着三个备用黑色配件，分别为四角星形摇臂、圆形摇臂和单臂摇臂。背景为纯白色。",
+  "metadata": {
+    "generation": {
+      "method": "qwen_api",
+      "backend": "api",
+      "provider": "qwen",
+      "model": "qwen3.7-plus",
+      "status": "success",
+      "api_error": null
+    },
+    "review": {
+      "required": false,
+      "status": null,
+      "reason": null,
+      "course_relevant": true
+    }
+  },
+  "error": null,
+  "method": "qwen_api",
+  "backend": "api",
+  "provider": "qwen",
+  "model": "qwen3.7-plus",
+  "status": "success",
+  "api_error": null,
+  "indexable": true,
+  "review_required": false,
+  "review_reason": null,
+  "review_status": null,
+  "course_relevant": true
+}

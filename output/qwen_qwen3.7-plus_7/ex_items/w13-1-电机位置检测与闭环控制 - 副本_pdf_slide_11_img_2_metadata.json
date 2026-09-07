@@ -1,0 +1,37 @@
+{
+  "original_path": "output/qwen_qwen3.7-plus_7/debug/images/w13-1-电机位置检测与闭环控制 - 副本_p11_img4.jpeg",
+  "enhanced_path": "output/qwen_qwen3.7-plus_7/ex_items/w13-1-电机位置检测与闭环控制 - 副本_pdf_slide_11_img_2_enhanced.png",
+  "description": "[COURSE_IRRELEVANT] 图片内容为三辆迷彩涂装的导弹发射车插画，属于装饰性配图。图中未包含任何与电机位置检测、闭环控制原理相关的示意图、公式或文字信息，无法从中获取本课程知识点。",
+  "metadata": {
+    "generation": {
+      "method": "qwen_api",
+      "backend": "api",
+      "provider": "qwen",
+      "model": "qwen3.7-plus",
+      "status": "success",
+      "api_error": null
+    },
+    "review": {
+      "required": true,
+      "status": "pending",
+      "reason": "course_irrelevant",
+      "course_relevant": false
+    }
+  },
+  "error": null,
+  "method": "qwen_api",
+  "backend": "api",
+  "provider": "qwen",
+  "model": "qwen3.7-plus",
+  "status": "success",
+  "api_error": null,
+  "indexable": false,
+  "review_required": true,
+  "review_reason": "course_irrelevant",
+  "review_status": "pending",
+  "course_relevant": false,
+  "source_document": "w13-1-电机位置检测与闭环控制 - 副本_pdf",
+  "page_num": 11,
+  "image_index": 2,
+  "review_image_path": "output/qwen_qwen3.7-plus_7/ex_items/w13-1-电机位置检测与闭环控制 - 副本_pdf_slide_11_img_2_enhanced.png"
+}

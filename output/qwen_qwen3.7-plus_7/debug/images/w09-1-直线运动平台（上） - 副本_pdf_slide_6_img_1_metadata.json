@@ -1,0 +1,33 @@
+{
+  "original_path": "output/qwen_qwen3.7-plus_7/debug/images/w09-1-直线运动平台（上） - 副本_p6_img3.jpeg",
+  "enhanced_path": "output/qwen_qwen3.7-plus_7/debug/images/w09-1-直线运动平台（上） - 副本_p6_img3_enhanced.jpeg",
+  "description": "类型：照片/示意图\n图片上方展示一个黄色长方体金属电感式接近开关实物，标注检测面及接线颜色定义：棕接DC+，蓝接GND，黑接DI。下方并列两组电路原理图对比PNP与NPN型接线及电流流向。左侧PNP型图中，传感电路连接负载、DC+与GND，文字说明导通时电流从接近开关流向外部；右侧NPN型图中，传感电路同样连接负载、DC+与GND，文字说明导通时电流从外部流向接近开关。底部附注NPN NO特性：检测到金属时DI口读到低电平。",
+  "metadata": {
+    "generation": {
+      "method": "qwen_api",
+      "backend": "api",
+      "provider": "qwen",
+      "model": "qwen3.7-plus",
+      "status": "success",
+      "api_error": null
+    },
+    "review": {
+      "required": false,
+      "status": null,
+      "reason": null,
+      "course_relevant": true
+    }
+  },
+  "error": null,
+  "method": "qwen_api",
+  "backend": "api",
+  "provider": "qwen",
+  "model": "qwen3.7-plus",
+  "status": "success",
+  "api_error": null,
+  "indexable": true,
+  "review_required": false,
+  "review_reason": null,
+  "review_status": null,
+  "course_relevant": true
+}

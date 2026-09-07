@@ -1,0 +1,33 @@
+{
+  "original_path": "output/qwen_qwen3.7-plus_7/debug/images/w03-1-直流电机原理_p4_img2.jpeg",
+  "enhanced_path": "output/qwen_qwen3.7-plus_7/debug/images/w03-1-直流电机原理_p4_img2_enhanced.jpeg",
+  "description": "类型：示意图\n图中展示了一个水平放置的螺线管（线圈）及其产生的磁场分布。线圈左侧引出端标记为黑色圆点及负号“-”，右侧引出端标记为黄色圆点及正号“+”。蓝色曲线代表磁感线，带有箭头指示方向：在线圈外部，磁感线从左侧发出指向右侧；在线圈内部，磁感线由右向左穿过。图像最左端标有红色圆形背景的白色字母“N”，最右端标有绿色圆形背景的白色字母“S”，分别表示磁场的北极和南极。",
+  "metadata": {
+    "generation": {
+      "method": "qwen_api",
+      "backend": "api",
+      "provider": "qwen",
+      "model": "qwen3.7-plus",
+      "status": "success",
+      "api_error": null
+    },
+    "review": {
+      "required": false,
+      "status": null,
+      "reason": null,
+      "course_relevant": true
+    }
+  },
+  "error": null,
+  "method": "qwen_api",
+  "backend": "api",
+  "provider": "qwen",
+  "model": "qwen3.7-plus",
+  "status": "success",
+  "api_error": null,
+  "indexable": true,
+  "review_required": false,
+  "review_reason": null,
+  "review_status": null,
+  "course_relevant": true
+}

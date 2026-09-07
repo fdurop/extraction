@@ -1,0 +1,25 @@
+{
+  "page_num": 22,
+  "raw_text": "机电系统原理及实践—— 数字通信\n机电智控实验室tangguoan@fudan.edu.cn mmguo@fudan.edu.cn\n实践：编写CAN通信下位机程序\n基于w10-s3-sliderAbsLocation.ino进行修改。\n接收上位机发来的位置指令；\n将滑台移至该指定位置。\n提示：不能使用CAN扩展板占用的端口(D2、D9/10、D11-D13)。\n解除方向摇杆的连接(原接D4和D5)。\n将左限位开关接至D4 (原接D11)，右限位开关接至D5 (原接D12)。\n将启停开关接至D3 (原接D10)。\n23-23\n限时：20分钟\nw14-s8-CanMaster_sliderAbsLocation.ino\nw14-s8-CanSlave_sliderAbsLocation.ino\n",
+  "cleaned_text": "实践：编写CAN通信下位机程序\n基于w10-s3-sliderAbsLocation.ino进行修改。\n接收上位机发来的位置指令；\n将滑台移至该指定位置。\n提示：不能使用CAN扩展板占用的端口(D2、D9/10、D11-D13)。\n解除方向摇杆的连接(原接D4和D5)。\n将左限位开关接至D4 (原接D11)，右限位开关接至D5 (原接D12)。\n将启停开关接至D3 (原接D10)。\n限时：20分钟\nw14-s8-CanMaster_sliderAbsLocation.ino\nw14-s8-CanSlave_sliderAbsLocation.ino",
+  "key_points": [
+    "基于w10-s3-sliderAbsLocation.ino进行修改。",
+    "将滑台移至该指定位置。",
+    "提示：不能使用CAN扩展板占用的端口(D2、D9/10、D11-D13)。",
+    "解除方向摇杆的连接(原接D4和D5)。",
+    "将左限位开关接至D4 (原接D11)，右限位开关接至D5 (原接D12)。",
+    "将启停开关接至D3 (原接D10)。"
+  ],
+  "technical_terms": [
+    "D11-D13",
+    "s3-sliderAbsLocation"
+  ],
+  "has_images": false,
+  "image_count": 0,
+  "image_paths": [],
+  "metadata": {
+    "char_count": 357,
+    "word_count": 19,
+    "line_count": 15
+  }
+}

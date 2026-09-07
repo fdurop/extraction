@@ -1,0 +1,33 @@
+{
+  "original_path": "output/qwen_qwen3.7-plus_7/debug/images/w10-1-直线运动平台（下）_slide_4_img_2.png",
+  "enhanced_path": "output/qwen_qwen3.7-plus_7/debug/images/w10-1-直线运动平台（下）_slide_4_img_2_enhanced.png",
+  "description": "类型：示意图\n图片展示了丝杆滑台的基本参数定义及实践任务。\n1. 行程（stroke）：最大移动范围，即起点到终点的距离。\n2. 导程（lead）：转动一圈的线性位移，本次设定为10 mm/rev。包含单线螺纹（导程=螺距）与多线螺纹（导程=螺距×线数）的关系。\n3. 速度公式：滑台的速度 = 导程 × 丝杠转速。指出导程越大，最大速度越大。\n4. 实践任务：用电位器控制滑台的绝对位置。步骤包括测算滑台行程（步进电机驱动器细分数设为400），以及用电位器在行程范围内进行绝对定位（可用脉冲数表示位置）。",
+  "metadata": {
+    "generation": {
+      "method": "qwen_api",
+      "backend": "api",
+      "provider": "qwen",
+      "model": "qwen3.7-plus",
+      "status": "success",
+      "api_error": null
+    },
+    "review": {
+      "required": false,
+      "status": null,
+      "reason": null,
+      "course_relevant": true
+    }
+  },
+  "error": null,
+  "method": "qwen_api",
+  "backend": "api",
+  "provider": "qwen",
+  "model": "qwen3.7-plus",
+  "status": "success",
+  "api_error": null,
+  "indexable": true,
+  "review_required": false,
+  "review_reason": null,
+  "review_status": null,
+  "course_relevant": true
+}

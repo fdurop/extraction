@@ -1,0 +1,33 @@
+{
+  "original_path": "output/qwen_qwen3.7-plus_7/debug/images/w15-2-机器人运动学及其应用_p4_img4.jpeg",
+  "enhanced_path": "output/qwen_qwen3.7-plus_7/debug/images/w15-2-机器人运动学及其应用_p4_img4_enhanced.jpeg",
+  "description": "类型：示意图\n图片横向排列三个机械运动副模型。左侧为圆柱副，由轴与孔配合组成，标注绕轴旋转和沿轴向移动的双向箭头；中间为球面副（球铰），由球头与球窝配合组成，标注绕空间多轴旋转的弯曲箭头；右侧为平面副，长方体滑块置于平板上，标注绕垂直轴旋转及在平面内双向移动的箭头。",
+  "metadata": {
+    "generation": {
+      "method": "qwen_api",
+      "backend": "api",
+      "provider": "qwen",
+      "model": "qwen3.7-plus",
+      "status": "success",
+      "api_error": null
+    },
+    "review": {
+      "required": false,
+      "status": null,
+      "reason": null,
+      "course_relevant": true
+    }
+  },
+  "error": null,
+  "method": "qwen_api",
+  "backend": "api",
+  "provider": "qwen",
+  "model": "qwen3.7-plus",
+  "status": "success",
+  "api_error": null,
+  "indexable": true,
+  "review_required": false,
+  "review_reason": null,
+  "review_status": null,
+  "course_relevant": true
+}

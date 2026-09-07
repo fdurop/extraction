@@ -1,0 +1,17 @@
+{
+  "page_num": 20,
+  "raw_text": "控制电路原理\n23-\n一个电机变成四个轮子\n只能进退不能转弯",
+  "cleaned_text": "控制电路原理\n一个电机变成四个轮子\n只能进退不能转弯",
+  "key_points": [],
+  "technical_terms": [
+    "一个电机"
+  ],
+  "has_images": false,
+  "image_count": 0,
+  "image_paths": [],
+  "metadata": {
+    "char_count": 30,
+    "word_count": 4,
+    "line_count": 4
+  }
+}

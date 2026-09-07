@@ -1,0 +1,18 @@
+{
+  "page_num": 3,
+  "raw_text": "机电系统原理及实践—— 机电系统在动力学与控制中的应用\n机电智控实验室tangguoan@fudan.edu.cn mmguo@fudan.edu.cn\n16-4\n§2.1“多选一”动作开关的控制程序——属性\nint NumButtons;           \n// 执行动作的按钮数量\nint pinBUT[3];            \n// 按钮对应的UNO板端口号\nbool PortVoltLast[3];     \n// 上一次监测到的端口电平\nbool PortVolt[3];         \n// 本次监测到的端口电平\nfloat (*pCBfunc[3])(float); // 按钮被按下(端口电平出现下升沿)时的回调函数\nuint32_t tstart;          \n// 记录按钮被按下(动作开始执行)的时间\n",
+  "cleaned_text": "§2.1“多选一”动作开关的控制程序——属性\nint NumButtons;\n// 执行动作的按钮数量\nint pinBUT[3];\n// 按钮对应的UNO板端口号\nbool PortVoltLast[3];\n// 上一次监测到的端口电平\nbool PortVolt[3];\n// 本次监测到的端口电平\nfloat (*pCBfunc[3])(float); // 按钮被按下(端口电平出现下升沿)时的回调函数\nuint32_t tstart;\n// 记录按钮被按下(动作开始执行)的时间",
+  "key_points": [],
+  "technical_terms": [
+    "uint32_t",
+    "动作开关的控制"
+  ],
+  "has_images": false,
+  "image_count": 0,
+  "image_paths": [],
+  "metadata": {
+    "char_count": 374,
+    "word_count": 30,
+    "line_count": 16
+  }
+}

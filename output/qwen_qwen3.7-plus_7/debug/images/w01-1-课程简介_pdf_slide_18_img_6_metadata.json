@@ -1,0 +1,33 @@
+{
+  "original_path": "output/qwen_qwen3.7-plus_7/debug/images/w01-1-课程简介_p18_img7.jpeg",
+  "enhanced_path": "output/qwen_qwen3.7-plus_7/debug/images/w01-1-课程简介_p18_img7_enhanced.jpeg",
+  "description": "类型：照片\n图片展示了一台四足机器人（机器狗）的实物外观。该机器人拥有灰白色的流线型机身外壳，顶部设有黑色面板区域，侧面可见黑色椭圆形组件。机身下方连接着四条黑色的多关节机械腿，腿部结构包含明显的弯曲关节，末端为圆润的足部设计，整体呈现典型的仿生四足行走机构形态。结合上下文，这是课程介绍中提及的“机器狗”实验平台。",
+  "metadata": {
+    "generation": {
+      "method": "qwen_api",
+      "backend": "api",
+      "provider": "qwen",
+      "model": "qwen3.7-plus",
+      "status": "success",
+      "api_error": null
+    },
+    "review": {
+      "required": false,
+      "status": null,
+      "reason": null,
+      "course_relevant": true
+    }
+  },
+  "error": null,
+  "method": "qwen_api",
+  "backend": "api",
+  "provider": "qwen",
+  "model": "qwen3.7-plus",
+  "status": "success",
+  "api_error": null,
+  "indexable": true,
+  "review_required": false,
+  "review_reason": null,
+  "review_status": null,
+  "course_relevant": true
+}

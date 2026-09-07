@@ -1,0 +1,33 @@
+{
+  "original_path": "output/qwen_qwen3.7-plus_7/debug/images/w04-1-有刷直流电机驱动器及其应用_slide_3_img_3.png",
+  "enhanced_path": "output/qwen_qwen3.7-plus_7/debug/images/w04-1-有刷直流电机驱动器及其应用_slide_3_img_3_enhanced.png",
+  "description": "类型：示意图\n图片背景为白色，中央横向排列一行红色文字“手动控制→自动控制”。文字中间包含一个指向右侧的红色箭头，连接前后两个词组，表示从手动控制到自动控制的演变或转换关系。无其他图形、坐标轴或装饰元素。",
+  "metadata": {
+    "generation": {
+      "method": "qwen_api",
+      "backend": "api",
+      "provider": "qwen",
+      "model": "qwen3.7-plus",
+      "status": "success",
+      "api_error": null
+    },
+    "review": {
+      "required": false,
+      "status": null,
+      "reason": null,
+      "course_relevant": true
+    }
+  },
+  "error": null,
+  "method": "qwen_api",
+  "backend": "api",
+  "provider": "qwen",
+  "model": "qwen3.7-plus",
+  "status": "success",
+  "api_error": null,
+  "indexable": true,
+  "review_required": false,
+  "review_reason": null,
+  "review_status": null,
+  "course_relevant": true
+}

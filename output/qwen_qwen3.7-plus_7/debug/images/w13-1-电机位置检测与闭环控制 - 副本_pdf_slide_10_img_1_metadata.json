@@ -1,0 +1,33 @@
+{
+  "original_path": "output/qwen_qwen3.7-plus_7/debug/images/w13-1-电机位置检测与闭环控制 - 副本_p10_img3.jpeg",
+  "enhanced_path": "output/qwen_qwen3.7-plus_7/debug/images/w13-1-电机位置检测与闭环控制 - 副本_p10_img3_enhanced.jpeg",
+  "description": "类型：照片\n图片展示了一个带霍尔编码器的减速电机实物。左侧为白色圆柱形电机主体，尾部露出绿色的圆形电路板，板上可见黑色的霍尔元件及 wiring；右侧连接着银色的金属减速齿轮箱，箱体侧面有安装孔和突出的黑色橡胶轮。该实物对应文中“带霍尔编码器的减速电机”、“磁环”及“霍尔元件”等教学内容。",
+  "metadata": {
+    "generation": {
+      "method": "qwen_api",
+      "backend": "api",
+      "provider": "qwen",
+      "model": "qwen3.7-plus",
+      "status": "success",
+      "api_error": null
+    },
+    "review": {
+      "required": false,
+      "status": null,
+      "reason": null,
+      "course_relevant": true
+    }
+  },
+  "error": null,
+  "method": "qwen_api",
+  "backend": "api",
+  "provider": "qwen",
+  "model": "qwen3.7-plus",
+  "status": "success",
+  "api_error": null,
+  "indexable": true,
+  "review_required": false,
+  "review_reason": null,
+  "review_status": null,
+  "course_relevant": true
+}

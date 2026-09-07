@@ -1,0 +1,33 @@
+{
+  "original_path": "output/qwen_qwen3.7-plus_7/debug/images/w02-1-PWM和舵机_p3_img4.jpeg",
+  "enhanced_path": "output/qwen_qwen3.7-plus_7/debug/images/w02-1-PWM和舵机_p3_img4_enhanced.jpeg",
+  "description": "类型：照片\n图片展示了Arduino电路板局部特写。核心对象为数字端口13（DIGITAL 13）旁的一颗黄色LED灯，处于点亮发光状态。板上可见ATMEGA16U2芯片、标有“102”的贴片电阻、JP2焊盘以及AREF、GND等接口标识。该图像直观呈现了课程文本中提到的“Uno板载LED”硬件实体及其工作状态。",
+  "metadata": {
+    "generation": {
+      "method": "qwen_api",
+      "backend": "api",
+      "provider": "qwen",
+      "model": "qwen3.7-plus",
+      "status": "success",
+      "api_error": null
+    },
+    "review": {
+      "required": false,
+      "status": null,
+      "reason": null,
+      "course_relevant": true
+    }
+  },
+  "error": null,
+  "method": "qwen_api",
+  "backend": "api",
+  "provider": "qwen",
+  "model": "qwen3.7-plus",
+  "status": "success",
+  "api_error": null,
+  "indexable": true,
+  "review_required": false,
+  "review_reason": null,
+  "review_status": null,
+  "course_relevant": true
+}

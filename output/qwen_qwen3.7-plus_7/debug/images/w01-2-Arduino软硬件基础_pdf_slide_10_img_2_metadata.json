@@ -1,0 +1,33 @@
+{
+  "original_path": "output/qwen_qwen3.7-plus_7/debug/images/w01-2-Arduino软硬件基础_p10_img3.jpeg",
+  "enhanced_path": "output/qwen_qwen3.7-plus_7/debug/images/w01-2-Arduino软硬件基础_p10_img3_enhanced.jpeg",
+  "description": "类型：照片\n图片展示了一把剥线钳的头部特写。主体由银色金属钳头和黑色手柄连接处组成，可见两颗十字固定螺丝。金属部分包含用于切割或剥线的锯齿状刀口及半圆形线槽。钳头侧面印有白色数字刻度，清晰可见“0.5”、“1.2”等数值，对应不同导线线径规格。该图片配合文本中“根据导线线径，选择剥线钳合适的槽口”的教学要求，直观展示了工具细节。",
+  "metadata": {
+    "generation": {
+      "method": "qwen_api",
+      "backend": "api",
+      "provider": "qwen",
+      "model": "qwen3.7-plus",
+      "status": "success",
+      "api_error": null
+    },
+    "review": {
+      "required": false,
+      "status": null,
+      "reason": null,
+      "course_relevant": true
+    }
+  },
+  "error": null,
+  "method": "qwen_api",
+  "backend": "api",
+  "provider": "qwen",
+  "model": "qwen3.7-plus",
+  "status": "success",
+  "api_error": null,
+  "indexable": true,
+  "review_required": false,
+  "review_reason": null,
+  "review_status": null,
+  "course_relevant": true
+}

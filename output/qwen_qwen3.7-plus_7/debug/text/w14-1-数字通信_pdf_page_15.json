@@ -1,0 +1,33 @@
+{
+  "page_num": 14,
+  "raw_text": "机电系统原理及实践—— 数字通信\n机电智控实验室tangguoan@fudan.edu.cn mmguo@fudan.edu.cn\n§5 IIC\n23-15\nWire 库的用法\nhttps://www.arduino.cc/reference/\nen/language/functions/communica\ntion/wire/\n两个Uno间的I2C 通信\nSCL: A5 —— A5\nSDA: A4 —— A4\nGND —— GND\nw14-s5-\nI2CMaster.ino\nw14-s5-\nI2CSlave.ino\n亦可\n",
+  "cleaned_text": "§5 IIC\nWire 库的用法\nhttps://www.arduino.cc/reference/\nen/language/functions/communica\ntion/wire/\n两个Uno间的I2C 通信\nSCL: A5 —— A5\nSDA: A4 —— A4\nGND —— GND\nw14-s5-\nI2CMaster.ino\nw14-s5-\nI2CSlave.ino\n亦可",
+  "key_points": [
+    "Wire 库的用法",
+    "SCL: A5 —— A5",
+    "SDA: A4 —— A4",
+    "GND —— GND",
+    "I2CMaster.ino",
+    "I2CSlave.ino"
+  ],
+  "technical_terms": [
+    "GND",
+    "I2CMaster",
+    "I2CSlave",
+    "IIC",
+    "SCL",
+    "SDA",
+    "w14-s5"
+  ],
+  "has_images": true,
+  "image_count": 2,
+  "image_paths": [
+    "output/qwen_qwen3.7-plus_7/debug/images/w14-1-数字通信_p15_img4.jpeg",
+    "output/qwen_qwen3.7-plus_7/debug/images/w14-1-数字通信_p15_img5.jpeg"
+  ],
+  "metadata": {
+    "char_count": 267,
+    "word_count": 30,
+    "line_count": 18
+  }
+}

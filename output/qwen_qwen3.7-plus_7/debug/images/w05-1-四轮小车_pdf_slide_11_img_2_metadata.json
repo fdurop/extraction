@@ -1,0 +1,33 @@
+{
+  "original_path": "output/qwen_qwen3.7-plus_7/debug/images/w05-1-四轮小车_p11_img3.jpeg",
+  "enhanced_path": "output/qwen_qwen3.7-plus_7/debug/images/w05-1-四轮小车_p11_img3_enhanced.jpeg",
+  "description": "类型：照片\n图片展示了四轮小车底盘内部的硬件布局。金属车架四角安装有带白色滚轮的直流电机，底部贴有“右后”、“左后”黄色标签。 chassis左侧固定有一块电机驱动扩展板，板上可见绿色接线端子排及芯片，通过红黑导线连接至上方端子台；右侧安置一个银色电池盒，表面贴有“Suo”、“3000mAh”标签。各组件间通过黑、红、白导线互联，呈现紧凑的集成化结构。",
+  "metadata": {
+    "generation": {
+      "method": "qwen_api",
+      "backend": "api",
+      "provider": "qwen",
+      "model": "qwen3.7-plus",
+      "status": "success",
+      "api_error": null
+    },
+    "review": {
+      "required": false,
+      "status": null,
+      "reason": null,
+      "course_relevant": true
+    }
+  },
+  "error": null,
+  "method": "qwen_api",
+  "backend": "api",
+  "provider": "qwen",
+  "model": "qwen3.7-plus",
+  "status": "success",
+  "api_error": null,
+  "indexable": true,
+  "review_required": false,
+  "review_reason": null,
+  "review_status": null,
+  "course_relevant": true
+}

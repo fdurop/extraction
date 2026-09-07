@@ -1,0 +1,33 @@
+{
+  "original_path": "output/qwen_qwen3.7-plus_7/debug/images/w01-1-课程简介_p10_img9.jpeg",
+  "enhanced_path": "output/qwen_qwen3.7-plus_7/debug/images/w01-1-课程简介_p10_img9_enhanced.jpeg",
+  "description": "类型：照片\n图片展示了一个黑色的圆柱形机电组件，外观具有明显的散热棱纹结构。物体前端为圆形端盖，中心设有带键槽的输出轴孔，周围分布着六个沉头安装孔。侧面可见长条状散热片及接线端口结构，整体呈现工业电机（如无刷直流电机或伺服电机）的典型机械特征，背景为纯黑色。",
+  "metadata": {
+    "generation": {
+      "method": "qwen_api",
+      "backend": "api",
+      "provider": "qwen",
+      "model": "qwen3.7-plus",
+      "status": "success",
+      "api_error": null
+    },
+    "review": {
+      "required": false,
+      "status": null,
+      "reason": null,
+      "course_relevant": true
+    }
+  },
+  "error": null,
+  "method": "qwen_api",
+  "backend": "api",
+  "provider": "qwen",
+  "model": "qwen3.7-plus",
+  "status": "success",
+  "api_error": null,
+  "indexable": true,
+  "review_required": false,
+  "review_reason": null,
+  "review_status": null,
+  "course_relevant": true
+}

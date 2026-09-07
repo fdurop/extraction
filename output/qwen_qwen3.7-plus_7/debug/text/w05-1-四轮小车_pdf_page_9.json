@@ -1,0 +1,35 @@
+{
+  "page_num": 8,
+  "raw_text": "机电系统原理及实践—— 四轮小车\n机电智控实验室tangguoan@fudan.edu.cn mmguo@fudan.edu.cn\n驱动方案二：电磁继电器4 路+ 固态继电器2 路\n左右两侧分别控制\n可掉头、转向。\n电磁继电器反应速\n度较慢，可能导致\n内部电弧。\n15-9\n有刷直流电机\n驱动器(换向/调速)\nDC+\nDC-\nIN1\nIN2\nIN3\nIN4\nNC1\nCOM1\nNO1\nNC2\nCOM2\nNO2\nNC3\nCOM3\nNO3\nNC4\nCOM4\nNO4\nDC+\nDC-\nIN1\nIN2\nA1\nB1\nA2\nB2\nMCU模块\nD5\nDC12V\nD4\nD10~\nD9~\nGND\n5V\nGND\n5V\nR\nL\nR\nR\nL\nL\n动力接线端子座\n换向信号同步\n电磁继电器\n模块\n固态继电器\n模块\nNC-NO交叉通电\n正极PWM调压\n室 复旦大\n智控实验室 复旦大学 机电\n学 机电智控实验室 复旦大学 机电智控实验\n复旦大学 机电智控实验室 复旦大学 机电智控实验室 复旦\n大学 机电智控实验室 复旦大学 机电智控实验室 复旦大学 机电\n电智控实验室 复旦大学 机电智控实验室 复旦大学 机电智控实\n验室 复旦大学 机电智控实验室 复旦大学 机电智控实验室 \n旦大学 机电智控实验室 复旦大学 机电智控\n电智控实验室 复旦大学 \n验室 复\n",
+  "cleaned_text": "驱动方案二：电磁继电器4 路+ 固态继电器2 路\n左右两侧分别控制\n可掉头、转向。\n电磁继电器反应速\n度较慢，可能导致\n内部电弧。\n有刷直流电机\n驱动器(换向/调速)\nDC+\nDC-\nIN1\nIN2\nIN3\nIN4\nNC1\nCOM1\nNO1\nNC2\nCOM2\nNO2\nNC3\nCOM3\nNO3\nNC4\nCOM4\nNO4\nDC+\nDC-\nIN1\nIN2\nA1\nB1\nA2\nB2\nMCU模块\nD5\nDC12V\nD4\nD10~\nD9~\nGND\n5V\nGND\n5V\nR\nL\nR\nR\nL\nL\n动力接线端子座\n换向信号同步\n电磁继电器\n模块\n固态继电器\n模块\nNC-NO交叉通电\n正极PWM调压",
+  "key_points": [
+    "可掉头、转向。",
+    "内部电弧。",
+    "DC+",
+    "DC-",
+    "IN1",
+    "IN2",
+    "IN3",
+    "IN4",
+    "NC1",
+    "COM1"
+  ],
+  "technical_terms": [
+    "DC",
+    "DC12V",
+    "GND",
+    "NC-",
+    "左右两侧分别控制",
+    "有刷直流电机"
+  ],
+  "has_images": true,
+  "image_count": 1,
+  "image_paths": [
+    "output/qwen_qwen3.7-plus_7/debug/images/w05-1-四轮小车_p9_img2.jpeg"
+  ],
+  "metadata": {
+    "char_count": 570,
+    "word_count": 104,
+    "line_count": 72
+  }
+}

@@ -1,0 +1,106 @@
+{
+  "has_table": true,
+  "title": "",
+  "headers": [
+    [
+      "外壳材质",
+      "金属"
+    ]
+  ],
+  "cells": [
+    [
+      "外壳材质",
+      "金属"
+    ],
+    [
+      "输出轴承型式",
+      "含油轴承"
+    ],
+    [
+      "径向力",
+      "≤ 1 kgf"
+    ],
+    [
+      "轴向力",
+      "≤ 0.7 kgf"
+    ],
+    [
+      "主轴最大承受压入力",
+      "≤ 5 kgf"
+    ],
+    [
+      "径向间隙",
+      "≤ 0.1 mm"
+    ],
+    [
+      "轴向间隙",
+      "≤ 0.5 mm"
+    ]
+  ],
+  "merged_cells": [],
+  "units": {},
+  "footnotes": [],
+  "uncertain_cells": [],
+  "confidence": 1.0,
+  "raw_response": "{\n  \"has_table\": true,\n  \"title\": \"\",\n  \"headers\": [\n    [\n      \"外壳材质\",\n      \"金属\"\n    ]\n  ],\n  \"cells\": [\n    [\n      \"外壳材质\",\n      \"金属\"\n    ],\n    [\n      \"输出轴承型式\",\n      \"含油轴承\"\n    ],\n    [\n      \"径向力\",\n      \"≤ 1 kgf\"\n    ],\n    [\n      \"轴向力\",\n      \"≤ 0.7 kgf\"\n    ],\n    [\n      \"主轴最大承受压入力\",\n      \"≤ 5 kgf\"\n    ],\n    [\n      \"径向间隙\",\n      \"≤ 0.1 mm\"\n    ],\n    [\n      \"轴向间隙\",\n      \"≤ 0.5 mm\"\n    ]\n  ],\n  \"merged_cells\": [],\n  \"units\": {},\n  \"footnotes\": [],\n  \"uncertain_cells\": [],\n  \"confidence\": 1.0\n}",
+  "source_image": "output/qwen_qwen3.7-plus_7/debug/images/w04-1-有刷直流电机驱动器及其应用_slide_20_img_4.jpeg",
+  "source_type": "image_vlm_table",
+  "extraction_method": "qwen_api_table",
+  "backend": "api",
+  "provider": "qwen",
+  "model": "qwen3.7-plus",
+  "image_index": 1,
+  "auto_repairs": [],
+  "rows": 7,
+  "cols": 2,
+  "description": "",
+  "json": [
+    {
+      "外壳材质": "外壳材质",
+      "金属": "金属"
+    },
+    {
+      "外壳材质": "输出轴承型式",
+      "金属": "含油轴承"
+    },
+    {
+      "外壳材质": "径向力",
+      "金属": "≤ 1 kgf"
+    },
+    {
+      "外壳材质": "轴向力",
+      "金属": "≤ 0.7 kgf"
+    },
+    {
+      "外壳材质": "主轴最大承受压入力",
+      "金属": "≤ 5 kgf"
+    },
+    {
+      "外壳材质": "径向间隙",
+      "金属": "≤ 0.1 mm"
+    },
+    {
+      "外壳材质": "轴向间隙",
+      "金属": "≤ 0.5 mm"
+    }
+  ],
+  "csv": "外壳材质,金属\n外壳材质,金属\n输出轴承型式,含油轴承\n径向力,≤ 1 kgf\n轴向力,≤ 0.7 kgf\n主轴最大承受压入力,≤ 5 kgf\n径向间隙,≤ 0.1 mm\n轴向间隙,≤ 0.5 mm\n",
+  "row_lengths": [
+    2,
+    2,
+    2,
+    2,
+    2,
+    2,
+    2,
+    2
+  ],
+  "validation_issues": [],
+  "validation_status": "passed",
+  "review_required": false,
+  "review_reason": null,
+  "review_status": null,
+  "indexable": true,
+  "table_id": "w04-1-有刷直流电机驱动器及其应用_pptx_page_20_table_1",
+  "page_num": 20
+}

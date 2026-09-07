@@ -1,0 +1,33 @@
+{
+  "original_path": "output/qwen_qwen3.7-plus_7/debug/images/w09-1-直线运动平台（上） - 副本_p4_img5.jpeg",
+  "enhanced_path": "output/qwen_qwen3.7-plus_7/debug/images/w09-1-直线运动平台（上） - 副本_p4_img5_enhanced.jpeg",
+  "description": "类型：示意图\n图片展示了一个Z轴直交型机械臂的三维结构模型。该装置由三个相互垂直的直线运动模组组成，呈现直角坐标机器人构型。底部两个模组水平正交布置，构成X-Y平面运动基础；第三个模组垂直安装于水平滑台之上，实现Z轴升降。每个轴端部均配有圆柱形电机，通过滑块与导轨连接。图像左上角标有字母“Z”及汉字“轴”，顶部标题文字为“Z轴直交型机械臂”。背景为白色渐变，底部有模型倒影。",
+  "metadata": {
+    "generation": {
+      "method": "qwen_api",
+      "backend": "api",
+      "provider": "qwen",
+      "model": "qwen3.7-plus",
+      "status": "success",
+      "api_error": null
+    },
+    "review": {
+      "required": false,
+      "status": null,
+      "reason": null,
+      "course_relevant": true
+    }
+  },
+  "error": null,
+  "method": "qwen_api",
+  "backend": "api",
+  "provider": "qwen",
+  "model": "qwen3.7-plus",
+  "status": "success",
+  "api_error": null,
+  "indexable": true,
+  "review_required": false,
+  "review_reason": null,
+  "review_status": null,
+  "course_relevant": true
+}

@@ -1,0 +1,33 @@
+{
+  "original_path": "output/qwen_qwen3.7-plus_7/debug/images/w01-1-课程简介_p12_img3.jpeg",
+  "enhanced_path": "output/qwen_qwen3.7-plus_7/debug/images/w01-1-课程简介_p12_img3_enhanced.jpeg",
+  "description": "类型：照片\n图片展示了一台放置在瓷砖地面上的轮式机器人实物。该机器人采用银色铝型材搭建的长方体框架结构，顶部开放，内部可见电路板、电池及连接线缆等机电组件。车身底部安装有四个黑色的麦克纳姆轮（全向轮），分别位于框架的四角。背景为室内环境，地面有灯光反射，远处可见纸箱等杂物。结合上下文，该图片对应课程中“实践平台的迭代进化”部分，展示了具体的机器人硬件平台形态。",
+  "metadata": {
+    "generation": {
+      "method": "qwen_api",
+      "backend": "api",
+      "provider": "qwen",
+      "model": "qwen3.7-plus",
+      "status": "success",
+      "api_error": null
+    },
+    "review": {
+      "required": false,
+      "status": null,
+      "reason": null,
+      "course_relevant": true
+    }
+  },
+  "error": null,
+  "method": "qwen_api",
+  "backend": "api",
+  "provider": "qwen",
+  "model": "qwen3.7-plus",
+  "status": "success",
+  "api_error": null,
+  "indexable": true,
+  "review_required": false,
+  "review_reason": null,
+  "review_status": null,
+  "course_relevant": true
+}

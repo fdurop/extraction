@@ -1,0 +1,33 @@
+{
+  "original_path": "output/qwen_qwen3.7-plus_7/debug/images/w14-1-数字通信_p16_img4.jpeg",
+  "enhanced_path": "output/qwen_qwen3.7-plus_7/debug/images/w14-1-数字通信_p16_img4_enhanced.jpeg",
+  "description": "类型：照片\n图片展示了一个麦轮车实物底盘。白色矩形底板上安装有四个麦克纳姆轮。底板左侧固定有一块绿色电路板（对应UNO及驱动板），板上有黑色芯片及接线端子，并连接着红黑导线。该硬件实物对应课程中IIC与蓝牙结合实现麦轮车遥控的下位机部分。",
+  "metadata": {
+    "generation": {
+      "method": "qwen_api",
+      "backend": "api",
+      "provider": "qwen",
+      "model": "qwen3.7-plus",
+      "status": "success",
+      "api_error": null
+    },
+    "review": {
+      "required": false,
+      "status": null,
+      "reason": null,
+      "course_relevant": true
+    }
+  },
+  "error": null,
+  "method": "qwen_api",
+  "backend": "api",
+  "provider": "qwen",
+  "model": "qwen3.7-plus",
+  "status": "success",
+  "api_error": null,
+  "indexable": true,
+  "review_required": false,
+  "review_reason": null,
+  "review_status": null,
+  "course_relevant": true
+}

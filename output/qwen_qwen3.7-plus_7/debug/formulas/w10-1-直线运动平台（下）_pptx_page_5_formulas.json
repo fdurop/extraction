@@ -1,0 +1,38 @@
+{
+  "page": 5,
+  "formula_count": 1,
+  "accepted_count": 1,
+  "review_count": 0,
+  "formulas": [
+    {
+      "source_image": "output/qwen_qwen3.7-plus_7/debug/images/w10-1-直线运动平台（下）_slide_5_img_1.png",
+      "source_type": "image_vlm",
+      "extraction_method": "qwen_api_formula",
+      "backend": "api",
+      "provider": "qwen",
+      "model": "qwen3.7-plus",
+      "image_index": 0,
+      "raw_response": "{\n  \"has_formula\": true,\n  \"formulas\": [\n    {\n      \"latex\": \"y[n] = \\\\frac{1}{M} \\\\sum_{k=0}^{M-1} x[n-k] \\\\Rightarrow y[n] = y[n-1] + \\\\frac{x[n] - x[n-M]}{M}\",\n      \"uncertain_symbols\": [],\n      \"confidence\": 1.0\n    }\n  ]\n}",
+      "parse_error": null,
+      "partial_response": false,
+      "review_reason": null,
+      "latex": "y[n] = \\frac{1}{M} \\sum_{k=0}^{M-1} x[n-k] \\Rightarrow y[n] = y[n-1] + \\frac{x[n] - x[n-M]}{M}",
+      "uncertain_symbols": [],
+      "confidence": 1.0,
+      "plain_text": "y[n] = \\frac{1}{M} \\sum_{k=0}^{M-1} x[n-k] \\Rightarrow y[n] = y[n-1] + \\frac{x[n] - x[n-M]}{M}",
+      "name": "",
+      "meaning": "",
+      "description": "",
+      "symbols": [],
+      "conditions": [],
+      "validation_issues": [],
+      "validation_status": "passed",
+      "review_required": false,
+      "review_status": null,
+      "indexable": true,
+      "formula_id": "w10-1-直线运动平台（下）_pptx_page_5_formula_1",
+      "page_num": 5
+    }
+  ],
+  "timestamp": "2026-09-07T19:53:00.511273"
+}

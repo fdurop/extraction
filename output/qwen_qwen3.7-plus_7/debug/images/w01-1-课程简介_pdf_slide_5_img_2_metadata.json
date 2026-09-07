@@ -1,0 +1,33 @@
+{
+  "original_path": "output/qwen_qwen3.7-plus_7/debug/images/w01-1-课程简介_p5_img3.jpeg",
+  "enhanced_path": "output/qwen_qwen3.7-plus_7/debug/images/w01-1-课程简介_p5_img3_enhanced.jpeg",
+  "description": "类型：照片\n图片展示了一个绿色多关节机械臂放置在桌面上，前方散落着红、蓝、绿等颜色的立方体及圆柱体积木。右侧电脑显示器呈现视觉反馈界面，包含彩色积木的实时影像、右侧蓝色的深度图（显示Dist: 274mm）以及被红色框选的目标物体。画面左下角有文字标注“三维空间抓取”，底部中央文字为“根据目标物品的RGB数据”。该场景直观演示了具身智能机器人基于视觉数据进行感知与操作的实验过程。",
+  "metadata": {
+    "generation": {
+      "method": "qwen_api",
+      "backend": "api",
+      "provider": "qwen",
+      "model": "qwen3.7-plus",
+      "status": "success",
+      "api_error": null
+    },
+    "review": {
+      "required": false,
+      "status": null,
+      "reason": null,
+      "course_relevant": true
+    }
+  },
+  "error": null,
+  "method": "qwen_api",
+  "backend": "api",
+  "provider": "qwen",
+  "model": "qwen3.7-plus",
+  "status": "success",
+  "api_error": null,
+  "indexable": true,
+  "review_required": false,
+  "review_reason": null,
+  "review_status": null,
+  "course_relevant": true
+}

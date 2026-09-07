@@ -1,0 +1,33 @@
+{
+  "original_path": "output/qwen_qwen3.7-plus_7/debug/images/w13-2-机电系统在动力学与控制中的应用 - 副本_p9_img5.jpeg",
+  "enhanced_path": "output/qwen_qwen3.7-plus_7/debug/images/w13-2-机电系统在动力学与控制中的应用 - 副本_p9_img5_enhanced.jpeg",
+  "description": "类型：示意图\n图片展示了一个由两块矩形平板组成的展开式结构（类似卫星太阳能帆板），板面呈深蓝色网格状，边缘有绿色连接件。两板通过中心黑色转轴连接。左上角有一个圆形放大插图，通过引线指向中心转轴，特写显示该部件为一个蓝色的圆柱形轮毂或电机组件。整体呈现机械系统的三维模型外观。",
+  "metadata": {
+    "generation": {
+      "method": "qwen_api",
+      "backend": "api",
+      "provider": "qwen",
+      "model": "qwen3.7-plus",
+      "status": "success",
+      "api_error": null
+    },
+    "review": {
+      "required": false,
+      "status": null,
+      "reason": null,
+      "course_relevant": true
+    }
+  },
+  "error": null,
+  "method": "qwen_api",
+  "backend": "api",
+  "provider": "qwen",
+  "model": "qwen3.7-plus",
+  "status": "success",
+  "api_error": null,
+  "indexable": true,
+  "review_required": false,
+  "review_reason": null,
+  "review_status": null,
+  "course_relevant": true
+}

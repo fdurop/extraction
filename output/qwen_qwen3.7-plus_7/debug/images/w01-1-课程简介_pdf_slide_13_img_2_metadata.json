@@ -1,0 +1,33 @@
+{
+  "original_path": "output/qwen_qwen3.7-plus_7/debug/images/w01-1-课程简介_p13_img3.jpeg",
+  "enhanced_path": "output/qwen_qwen3.7-plus_7/debug/images/w01-1-课程简介_p13_img3_enhanced.jpeg",
+  "description": "类型：照片\n图片展示了一个放置在白色平面上的机电装置实物。左侧是一个包含电机、皮带轮和同步带的驱动组件，外壳为银色金属与黑色部件；右侧是一个黑色的方形模块（疑似气泵或压缩机），连接有一根蓝色气管。两部分通过两根平行的金属光轴连接，轴的两端装有灰色轮子。中间位置固定有一个贴有标签的白色长方体电子元件，红黑导线及线束将各部件相互连接。结合上下文，该装置属于课程介绍的足式机器人实践平台迭代进化中的某一代原型机。",
+  "metadata": {
+    "generation": {
+      "method": "qwen_api",
+      "backend": "api",
+      "provider": "qwen",
+      "model": "qwen3.7-plus",
+      "status": "success",
+      "api_error": null
+    },
+    "review": {
+      "required": false,
+      "status": null,
+      "reason": null,
+      "course_relevant": true
+    }
+  },
+  "error": null,
+  "method": "qwen_api",
+  "backend": "api",
+  "provider": "qwen",
+  "model": "qwen3.7-plus",
+  "status": "success",
+  "api_error": null,
+  "indexable": true,
+  "review_required": false,
+  "review_reason": null,
+  "review_status": null,
+  "course_relevant": true
+}

@@ -1,0 +1,33 @@
+{
+  "original_path": "output/qwen_qwen3.7-plus_7/debug/images/w01-1-课程简介_p4_img2.jpeg",
+  "enhanced_path": "output/qwen_qwen3.7-plus_7/debug/images/w01-1-课程简介_p4_img2_enhanced.jpeg",
+  "description": "类型：示意图\n图片中央显示黑色标题文字“什么是机电一体化”。画面左侧为一个银色卡通人形机器人，右侧为一个银色方形身体机器人，均为装饰性插图。右上角印有复旦大学校徽。底部横线下方标注编写单位及人员“复旦大学航空航天系 唐国安 郭明旻 编写”，以及电子邮件地址“tangguoan@fudan.edu.cn, mmguo@fudan.edu.cn”。",
+  "metadata": {
+    "generation": {
+      "method": "qwen_api",
+      "backend": "api",
+      "provider": "qwen",
+      "model": "qwen3.7-plus",
+      "status": "success",
+      "api_error": null
+    },
+    "review": {
+      "required": false,
+      "status": null,
+      "reason": null,
+      "course_relevant": true
+    }
+  },
+  "error": null,
+  "method": "qwen_api",
+  "backend": "api",
+  "provider": "qwen",
+  "model": "qwen3.7-plus",
+  "status": "success",
+  "api_error": null,
+  "indexable": true,
+  "review_required": false,
+  "review_reason": null,
+  "review_status": null,
+  "course_relevant": true
+}

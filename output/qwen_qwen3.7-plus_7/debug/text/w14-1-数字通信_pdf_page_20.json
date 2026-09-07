@@ -1,0 +1,29 @@
+{
+  "page_num": 19,
+  "raw_text": "机电系统原理及实践—— 数字通信\n机电智控实验室tangguoan@fudan.edu.cn mmguo@fudan.edu.cn\n§6 CAN\nArduino 的CAN 扩展板\n\nhttps://wiki.seeedstudio.com/CAN-\nBUS_Shield_V2.0/\n采用MCP2515 CAN 总线控制器。；\n通过SPI 接口与Uno 通信。\n23-20\nFREE 表示剩余可用端口\n",
+  "cleaned_text": "§6 CAN\nArduino 的CAN 扩展板\nhttps://wiki.seeedstudio.com/CAN-\nBUS_Shield_V2.0/\n采用MCP2515 CAN 总线控制器。；\n通过SPI 接口与Uno 通信。\nFREE 表示剩余可用端口",
+  "key_points": [
+    "Arduino 的CAN 扩展板",
+    "BUS_Shield_V2.0/",
+    "通过SPI 接口与Uno 通信。",
+    "FREE 表示剩余可用端口"
+  ],
+  "technical_terms": [
+    "Arduino",
+    "BUS_Shield_V2",
+    "CAN",
+    "FREE",
+    "总线控制"
+  ],
+  "has_images": true,
+  "image_count": 2,
+  "image_paths": [
+    "output/qwen_qwen3.7-plus_7/debug/images/w14-1-数字通信_p20_img3.jpeg",
+    "output/qwen_qwen3.7-plus_7/debug/images/w14-1-数字通信_p20_img4.jpeg"
+  ],
+  "metadata": {
+    "char_count": 205,
+    "word_count": 21,
+    "line_count": 12
+  }
+}

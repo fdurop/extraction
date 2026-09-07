@@ -1,0 +1,33 @@
+{
+  "original_path": "output/qwen_qwen3.7-plus_7/debug/images/w02-1-PWM和舵机_p13_img2.jpeg",
+  "enhanced_path": "output/qwen_qwen3.7-plus_7/debug/images/w02-1-PWM和舵机_p13_img2_enhanced.jpeg",
+  "description": "类型：照片\n图片展示了一个黑色微型舵机实物及其配件。舵机主体呈长方体，顶部轴上安装有一个黑色的四角十字形舵盘。机身侧面贴有紫色标签，可见“FUTABA S3003”字样。右侧连接着一根卷曲的三芯导线，颜色依次为橙色、红色和棕色，末端带有黑色3孔插头。图片下方散落着三个备用黑色塑料舵盘附件，形状分别为四角星形、圆形和单臂形。结合上下文，该图对应课程中Arduino控制舵机实践环节所需的硬件对象。",
+  "metadata": {
+    "generation": {
+      "method": "qwen_api",
+      "backend": "api",
+      "provider": "qwen",
+      "model": "qwen3.7-plus",
+      "status": "success",
+      "api_error": null
+    },
+    "review": {
+      "required": false,
+      "status": null,
+      "reason": null,
+      "course_relevant": true
+    }
+  },
+  "error": null,
+  "method": "qwen_api",
+  "backend": "api",
+  "provider": "qwen",
+  "model": "qwen3.7-plus",
+  "status": "success",
+  "api_error": null,
+  "indexable": true,
+  "review_required": false,
+  "review_reason": null,
+  "review_status": null,
+  "course_relevant": true
+}

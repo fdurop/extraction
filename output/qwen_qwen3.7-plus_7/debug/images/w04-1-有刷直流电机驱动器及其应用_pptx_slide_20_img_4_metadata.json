@@ -1,0 +1,33 @@
+{
+  "original_path": "output/qwen_qwen3.7-plus_7/debug/images/w04-1-有刷直流电机驱动器及其应用_slide_20_img_6.png",
+  "enhanced_path": "output/qwen_qwen3.7-plus_7/debug/images/w04-1-有刷直流电机驱动器及其应用_slide_20_img_6_enhanced.png",
+  "description": "类型：示意图\n图片展示了一个钣金件的平面展开图。外轮廓为黑色实线矩形，内部绘有十字中心线及黑色点划线作为折弯参考线。图中包含多个黑色实心圆孔，四角分布有带定位孔的圆形组件符号。五个蓝色虚线矩形框标示了特定的开窗或加强区域位置，中部还有两个长条形开孔。底部文字注明材料为“铝板”，厚度“2mm”，工艺要求为“四边沿虚线向下弯折90度”。",
+  "metadata": {
+    "generation": {
+      "method": "qwen_api",
+      "backend": "api",
+      "provider": "qwen",
+      "model": "qwen3.7-plus",
+      "status": "success",
+      "api_error": null
+    },
+    "review": {
+      "required": false,
+      "status": null,
+      "reason": null,
+      "course_relevant": true
+    }
+  },
+  "error": null,
+  "method": "qwen_api",
+  "backend": "api",
+  "provider": "qwen",
+  "model": "qwen3.7-plus",
+  "status": "success",
+  "api_error": null,
+  "indexable": true,
+  "review_required": false,
+  "review_reason": null,
+  "review_status": null,
+  "course_relevant": true
+}

@@ -1,0 +1,33 @@
+{
+  "page_num": 2,
+  "raw_text": "机电系统原理及实践—— 四轮小车（续）\n机电智控实验室tangguoan@fudan.edu.cn mmguo@fudan.edu.cn\nSW8\nSW7\nSW5\nSW6\nSW4\nSW3\nSW2\nB1 A1\nSW1\nD5 D6\nD10\nDC12V\n固\n态\n继\n电\n器\n模\n块\nMCU\n有刷直流电机\n驱动器\n动力接线端子头\n左轮交叉\nGND D3 D4\n5V\nDC+\nDC-\nIN1\nIN2\nIN3\nIN4\nIN5\nIN6\nIN7\nIN8\nB2 A2\nB3 A3\nB4 A4\nB5 A5\nB6 A6\nB7 A7\nB8 A8\nD9\nD11 D12\n驱动器端子座\n右前\n减速\n电机\n组件\nM\n左前\nM\n后轮马达接线\n端子头\n底盘端子座\n同侧马达并联\n12V\n锂电池\n小车底盘\n右后\nM\n左后\nM\n前轮马达接线\n端子头\n右前左前右后左后电池\n减速\n电机\n组件\n§1 线路连接\n6-3\n模块化设计思想\n电池模块\n电机模块\n\n前轮\n\n后轮\n驱动器模块（电控模块）\n\n控制环：由MCU供电\n\n控制继电器开合\n\n动力环：由动力电池供电\n\n控制电机运转\n弱电\n控制环\n强电\n动力环\n对接端子作用\n电气隔离\n机械隔离\n信号隔离\n固定牢靠\n便于维护\n室 复旦大\n智控实验室 复旦大学 机电\n \n \n学 机电智控实验室 复旦大学 机电智控实验\n \n \n复旦大学 机电智控实验室 复旦大学 机电智控实验室 复旦\n \n \n大学 机电智控实验室 复旦大学 机电智控实验室 复旦大学 机电\n \n \n电智控实验室 复旦大学 机电智控实验室 复旦大学 机电智控实\n \n \n验室 复旦大学 机电智控实验室 复旦大学 机电智控实验室 \n \n \n旦大学 机电智控实验室 复旦大学 机电智控\n \n \n电智控实验室 复旦大学 \n验室 复\n",
+  "cleaned_text": "SW8\nSW7\nSW5\nSW6\nSW4\nSW3\nSW2\nB1 A1\nSW1\nD5 D6\nD10\nDC12V\n固\n态\n继\n电\n器\n模\n块\nMCU\n有刷直流电机\n驱动器\n动力接线端子头\n左轮交叉\nGND D3 D4\n5V\nDC+\nDC-\nIN1\nIN2\nIN3\nIN4\nIN5\nIN6\nIN7\nIN8\nB2 A2\nB3 A3\nB4 A4\nB5 A5\nB6 A6\nB7 A7\nB8 A8\nD9\nD11 D12\n驱动器端子座\n右前\n减速\n电机\n组件\nM\n左前\nM\n后轮马达接线\n端子头\n底盘端子座\n同侧马达并联\n12V\n锂电池\n小车底盘\n右后\nM\n左后\nM\n前轮马达接线\n端子头\n右前左前右后左后电池\n减速\n电机\n组件\n§1 线路连接\n模块化设计思想\n电池模块\n电机模块\n前轮\n后轮\n驱动器模块（电控模块）\n控制环：由MCU供电\n控制继电器开合\n动力环：由动力电池供电\n控制电机运转\n弱电\n控制环\n强电\n动力环\n对接端子作用\n电气隔离\n机械隔离\n信号隔离\n固定牢靠\n便于维护",
+  "key_points": [
+    "SW8",
+    "SW7",
+    "SW5",
+    "SW6",
+    "SW4",
+    "SW3",
+    "SW2",
+    "B1 A1",
+    "SW1",
+    "D5 D6"
+  ],
+  "technical_terms": [
+    "DC",
+    "DC12V",
+    "GND",
+    "MCU",
+    "控制电机",
+    "有刷直流电机"
+  ],
+  "has_images": false,
+  "image_count": 0,
+  "image_paths": [],
+  "metadata": {
+    "char_count": 755,
+    "word_count": 153,
+    "line_count": 125
+  }
+}

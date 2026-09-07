@@ -1,0 +1,33 @@
+{
+  "original_path": "output/qwen_qwen3.7-plus_7/debug/images/w02-1-PWM和舵机_p10_img4.jpeg",
+  "enhanced_path": "output/qwen_qwen3.7-plus_7/debug/images/w02-1-PWM和舵机_p10_img4_enhanced.jpeg",
+  "description": "类型：照片\n图片展示了一个黑色的长方体舵机实物。顶部中央有一个金色的齿轮状输出轴（转轴）。机身侧面印有白色文字“ROBOT SERVO”、“DIGITAL SERVO”以及型号“LDX-227”，下方有“Hitec”标识。机身底部前端可见一个白色的三孔接口（用于连接信号线）。该图片直观展示了课程文本中提到的舵机外观、转轴结构及接口形态，属于课程相关知识。",
+  "metadata": {
+    "generation": {
+      "method": "qwen_api",
+      "backend": "api",
+      "provider": "qwen",
+      "model": "qwen3.7-plus",
+      "status": "success",
+      "api_error": null
+    },
+    "review": {
+      "required": false,
+      "status": null,
+      "reason": null,
+      "course_relevant": true
+    }
+  },
+  "error": null,
+  "method": "qwen_api",
+  "backend": "api",
+  "provider": "qwen",
+  "model": "qwen3.7-plus",
+  "status": "success",
+  "api_error": null,
+  "indexable": true,
+  "review_required": false,
+  "review_reason": null,
+  "review_status": null,
+  "course_relevant": true
+}

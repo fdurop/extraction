@@ -1,0 +1,26 @@
+{
+  "page_num": 3,
+  "raw_text": "§1 \n继电器\n23-\n电磁继电器（\ne\nlectro\nm\nechanical \nr\nelay\n，\nEMR\n）\n使用\n机械部件\n连接继电器输出元器件内的触点。\n反应速度较慢。\n可能导致内部电弧。",
+  "cleaned_text": "§1\n继电器\n电磁继电器（\ne\nlectro\nm\nechanical\nr\nelay\n，\nEMR\n）\n使用\n机械部件\n连接继电器输出元器件内的触点。\n反应速度较慢。\n可能导致内部电弧。",
+  "key_points": [
+    "EMR",
+    "连接继电器输出元器件内的触点。",
+    "反应速度较慢。",
+    "可能导致内部电弧。"
+  ],
+  "technical_terms": [
+    "EMR"
+  ],
+  "has_images": true,
+  "image_count": 3,
+  "image_paths": [
+    "output/qwen_qwen3.7-plus_7/debug/images/w04-1-有刷直流电机驱动器及其应用_slide_4_img_1.png",
+    "output/qwen_qwen3.7-plus_7/debug/images/w04-1-有刷直流电机驱动器及其应用_slide_4_img_2.jpg",
+    "output/qwen_qwen3.7-plus_7/debug/images/w04-1-有刷直流电机驱动器及其应用_slide_4_img_3.png"
+  ],
+  "metadata": {
+    "char_count": 97,
+    "word_count": 18,
+    "line_count": 18
+  }
+}

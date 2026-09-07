@@ -1,0 +1,33 @@
+{
+  "original_path": "output/qwen_qwen3.7-plus_7/debug/images/w13-2-机电系统在动力学与控制中的应用 - 副本_p3_img6.jpeg",
+  "enhanced_path": "output/qwen_qwen3.7-plus_7/debug/images/w13-2-机电系统在动力学与控制中的应用 - 副本_p3_img6_enhanced.jpeg",
+  "description": "类型：照片\n图片展示了一套水平安装的机电实验装置。主体为一条长金属导轨（同步带滑台），上方覆盖黑色拖链。导轨左端固定有黑色的驱动盒及电机组件，连接着多根线缆。导轨下方由两个黄色的操纵/控制盒作为支架支撑。左侧背景可见部分黑色仪器设备及红色急停按钮。该实物图对应页面文本中的“同步带滑台”、“驱动盒”及“操纵/控制盒”等系统组成部件。",
+  "metadata": {
+    "generation": {
+      "method": "qwen_api",
+      "backend": "api",
+      "provider": "qwen",
+      "model": "qwen3.7-plus",
+      "status": "success",
+      "api_error": null
+    },
+    "review": {
+      "required": false,
+      "status": null,
+      "reason": null,
+      "course_relevant": true
+    }
+  },
+  "error": null,
+  "method": "qwen_api",
+  "backend": "api",
+  "provider": "qwen",
+  "model": "qwen3.7-plus",
+  "status": "success",
+  "api_error": null,
+  "indexable": true,
+  "review_required": false,
+  "review_reason": null,
+  "review_status": null,
+  "course_relevant": true
+}

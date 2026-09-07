@@ -1,0 +1,33 @@
+{
+  "original_path": "output/qwen_qwen3.7-plus_7/debug/images/w01-1-课程简介_p13_img4.jpeg",
+  "enhanced_path": "output/qwen_qwen3.7-plus_7/debug/images/w01-1-课程简介_p13_img4_enhanced.jpeg",
+  "description": "类型：照片\n图片分为左右两部分。左侧上方标注文字“蓝牙控制”，下方展示一台四轮足式机器人静止于地面，可见其透明亚克力机身、电机及内部电路结构。右侧上方标注文字“爬楼梯”，下方展示同款机器人置于白色桌面上，面对一个黑白相间的三级台阶模型，右下角标有“2.4x”字样。背景可见白色储物柜。",
+  "metadata": {
+    "generation": {
+      "method": "qwen_api",
+      "backend": "api",
+      "provider": "qwen",
+      "model": "qwen3.7-plus",
+      "status": "success",
+      "api_error": null
+    },
+    "review": {
+      "required": false,
+      "status": null,
+      "reason": null,
+      "course_relevant": true
+    }
+  },
+  "error": null,
+  "method": "qwen_api",
+  "backend": "api",
+  "provider": "qwen",
+  "model": "qwen3.7-plus",
+  "status": "success",
+  "api_error": null,
+  "indexable": true,
+  "review_required": false,
+  "review_reason": null,
+  "review_status": null,
+  "course_relevant": true
+}

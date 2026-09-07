@@ -1,0 +1,33 @@
+{
+  "original_path": "output/qwen_qwen3.7-plus_7/debug/images/w07-3-麦克纳姆轮小车_p6_img2.png",
+  "enhanced_path": "output/qwen_qwen3.7-plus_7/debug/images/w07-3-麦克纳姆轮小车_p6_img2_enhanced.png",
+  "description": "类型：示意图\n图片展示了麦克纳姆轮小车的地面投影视图及前进运动模式。矩形车体四角分别安装有A轮（左上、右下）和B轮（右上、左下）。每个车轮处绘有红色箭头表示分速度矢量：左侧两轮（A、B）的矢量指向右前方，右侧两轮（B、A）的矢量指向左前方。所有轮子的横向分量相互抵消，纵向分量叠加。车体几何中心有一个指向上方的红色长箭头，标注为“V合”，代表合成速度方向。图片顶部有黄色标签注明“前进”。",
+  "metadata": {
+    "generation": {
+      "method": "qwen_api",
+      "backend": "api",
+      "provider": "qwen",
+      "model": "qwen3.7-plus",
+      "status": "success",
+      "api_error": null
+    },
+    "review": {
+      "required": false,
+      "status": null,
+      "reason": null,
+      "course_relevant": true
+    }
+  },
+  "error": null,
+  "method": "qwen_api",
+  "backend": "api",
+  "provider": "qwen",
+  "model": "qwen3.7-plus",
+  "status": "success",
+  "api_error": null,
+  "indexable": true,
+  "review_required": false,
+  "review_reason": null,
+  "review_status": null,
+  "course_relevant": true
+}

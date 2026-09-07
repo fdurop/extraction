@@ -1,0 +1,33 @@
+{
+  "original_path": "output/qwen_qwen3.7-plus_7/debug/images/w01-2-Arduino软硬件基础_p13_img4.png",
+  "enhanced_path": "output/qwen_qwen3.7-plus_7/debug/images/w01-2-Arduino软硬件基础_p13_img4_enhanced.png",
+  "description": "类型：其他\n图片展示了四个粉色粗体汉字“数据类型”，背景为黑色。结合页面上下文，该图片作为标题或标签，指示当前教学内容涉及Arduino编程中的变量分类（如整型、浮点型等），属于课程基础知识范畴。",
+  "metadata": {
+    "generation": {
+      "method": "qwen_api",
+      "backend": "api",
+      "provider": "qwen",
+      "model": "qwen3.7-plus",
+      "status": "success",
+      "api_error": null
+    },
+    "review": {
+      "required": false,
+      "status": null,
+      "reason": null,
+      "course_relevant": true
+    }
+  },
+  "error": null,
+  "method": "qwen_api",
+  "backend": "api",
+  "provider": "qwen",
+  "model": "qwen3.7-plus",
+  "status": "success",
+  "api_error": null,
+  "indexable": true,
+  "review_required": false,
+  "review_reason": null,
+  "review_status": null,
+  "course_relevant": true
+}

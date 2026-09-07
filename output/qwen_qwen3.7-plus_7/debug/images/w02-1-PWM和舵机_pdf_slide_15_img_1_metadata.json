@@ -1,0 +1,33 @@
+{
+  "original_path": "output/qwen_qwen3.7-plus_7/debug/images/w02-1-PWM和舵机_p15_img2.jpeg",
+  "enhanced_path": "output/qwen_qwen3.7-plus_7/debug/images/w02-1-PWM和舵机_p15_img2_enhanced.jpeg",
+  "description": "类型：示意图\n图中展示了Arduino UNO开发板、面包板、电位器及舵机的硬件连接电路。\n1. 电位器：安装在面包板上，中间引脚通过黄色导线连接至Arduino的A0模拟输入口；两侧引脚分别通过红色和黑色导线连接至面包板的电源轨。\n2. 舵机：位于左上方，其信号线（黄色）连接至Arduino的数字9号引脚（D9）；电源线（红色）和地线（黑色/棕色）分别接入面包板的正负极电源轨。\n3. 公共连接：Arduino的5V引脚（红线）和GND引脚（黑线）分别引出，连接到面包板的红色（+）和蓝色（-）电源总线，为整个电路供电。",
+  "metadata": {
+    "generation": {
+      "method": "qwen_api",
+      "backend": "api",
+      "provider": "qwen",
+      "model": "qwen3.7-plus",
+      "status": "success",
+      "api_error": null
+    },
+    "review": {
+      "required": false,
+      "status": null,
+      "reason": null,
+      "course_relevant": true
+    }
+  },
+  "error": null,
+  "method": "qwen_api",
+  "backend": "api",
+  "provider": "qwen",
+  "model": "qwen3.7-plus",
+  "status": "success",
+  "api_error": null,
+  "indexable": true,
+  "review_required": false,
+  "review_reason": null,
+  "review_status": null,
+  "course_relevant": true
+}

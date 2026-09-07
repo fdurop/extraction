@@ -1,0 +1,33 @@
+{
+  "original_path": "output/qwen_qwen3.7-plus_7/debug/images/w14-1-数字通信_p16_img5.jpeg",
+  "enhanced_path": "output/qwen_qwen3.7-plus_7/debug/images/w14-1-数字通信_p16_img5_enhanced.jpeg",
+  "description": "类型：照片\n图片左侧为一只手持智能手机，屏幕显示带有蓝色方向控制按钮（上、下、左、右及中心键）的应用程序界面。图片右上方放置一辆麦轮车实物，车身可见木质底板、黑色车轮、电路板及顶部安装的蓝色蓝牙模块。该场景直观展示了通过手机APP经蓝牙通信控制麦轮车的硬件连接与操作状态，对应课程中IIC与蓝牙结合实现遥控的教学内容。",
+  "metadata": {
+    "generation": {
+      "method": "qwen_api",
+      "backend": "api",
+      "provider": "qwen",
+      "model": "qwen3.7-plus",
+      "status": "success",
+      "api_error": null
+    },
+    "review": {
+      "required": false,
+      "status": null,
+      "reason": null,
+      "course_relevant": true
+    }
+  },
+  "error": null,
+  "method": "qwen_api",
+  "backend": "api",
+  "provider": "qwen",
+  "model": "qwen3.7-plus",
+  "status": "success",
+  "api_error": null,
+  "indexable": true,
+  "review_required": false,
+  "review_reason": null,
+  "review_status": null,
+  "course_relevant": true
+}

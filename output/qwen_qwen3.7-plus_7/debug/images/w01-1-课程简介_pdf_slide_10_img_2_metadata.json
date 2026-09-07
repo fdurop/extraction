@@ -1,0 +1,33 @@
+{
+  "original_path": "output/qwen_qwen3.7-plus_7/debug/images/w01-1-课程简介_p10_img3.jpeg",
+  "enhanced_path": "output/qwen_qwen3.7-plus_7/debug/images/w01-1-课程简介_p10_img3_enhanced.jpeg",
+  "description": "类型：照片\n图片展示了一台轮式机器人实物。该机器人采用银色金属框架底盘，配备四个带有复杂镂空花纹的白色麦克纳姆轮。车身中部安装有一块白色电路板，板上可见蓝色接线端子及多根红黑导线。顶部横向固定有两个黑色圆柱形电机或传感器组件，正中央立有一个红色圆柱形按钮。背景为实验室环境，可见白色桌面及后方柜体。结合上下文，该图片对应课程中“轮式机器人”及“主要硬件”的教学内容展示。",
+  "metadata": {
+    "generation": {
+      "method": "qwen_api",
+      "backend": "api",
+      "provider": "qwen",
+      "model": "qwen3.7-plus",
+      "status": "success",
+      "api_error": null
+    },
+    "review": {
+      "required": false,
+      "status": null,
+      "reason": null,
+      "course_relevant": true
+    }
+  },
+  "error": null,
+  "method": "qwen_api",
+  "backend": "api",
+  "provider": "qwen",
+  "model": "qwen3.7-plus",
+  "status": "success",
+  "api_error": null,
+  "indexable": true,
+  "review_required": false,
+  "review_reason": null,
+  "review_status": null,
+  "course_relevant": true
+}

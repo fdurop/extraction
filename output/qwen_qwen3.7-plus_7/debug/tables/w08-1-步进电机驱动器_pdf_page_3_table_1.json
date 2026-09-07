@@ -1,0 +1,132 @@
+{
+  "has_table": true,
+  "title": "",
+  "headers": [
+    [
+      "phase",
+      "A相",
+      "B相"
+    ]
+  ],
+  "cells": [
+    [
+      "1",
+      "+",
+      "×"
+    ],
+    [
+      "2",
+      "+",
+      "+"
+    ],
+    [
+      "3",
+      "×",
+      "+"
+    ],
+    [
+      "4",
+      "−",
+      "+"
+    ],
+    [
+      "5",
+      "−",
+      "×"
+    ],
+    [
+      "6",
+      "−",
+      "−"
+    ],
+    [
+      "7",
+      "×",
+      "−"
+    ],
+    [
+      "8",
+      "+",
+      "−"
+    ]
+  ],
+  "merged_cells": [],
+  "units": {},
+  "footnotes": [],
+  "uncertain_cells": [],
+  "confidence": 1.0,
+  "raw_response": "{\n  \"has_table\": true,\n  \"title\": \"\",\n  \"headers\": [\n    [\n      \"phase\",\n      \"A相\",\n      \"B相\"\n    ]\n  ],\n  \"cells\": [\n    [\n      \"1\",\n      \"+\",\n      \"×\"\n    ],\n    [\n      \"2\",\n      \"+\",\n      \"+\"\n    ],\n    [\n      \"3\",\n      \"×\",\n      \"+\"\n    ],\n    [\n      \"4\",\n      \"−\",\n      \"+\"\n    ],\n    [\n      \"5\",\n      \"−\",\n      \"×\"\n    ],\n    [\n      \"6\",\n      \"−\",\n      \"−\"\n    ],\n    [\n      \"7\",\n      \"×\",\n      \"−\"\n    ],\n    [\n      \"8\",\n      \"+\",\n      \"−\"\n    ]\n  ],\n  \"merged_cells\": [],\n  \"units\": {},\n  \"footnotes\": [],\n  \"uncertain_cells\": [],\n  \"confidence\": 1.0\n}",
+  "source_image": "output/qwen_qwen3.7-plus_7/debug/images/w08-1-步进电机驱动器_p3_img2.png",
+  "source_type": "image_vlm_table",
+  "extraction_method": "qwen_api_table",
+  "backend": "api",
+  "provider": "qwen",
+  "model": "qwen3.7-plus",
+  "image_index": 0,
+  "auto_repairs": [],
+  "rows": 8,
+  "cols": 3,
+  "description": "",
+  "json": [
+    {
+      "phase": "1",
+      "A相": "+",
+      "B相": "×"
+    },
+    {
+      "phase": "2",
+      "A相": "+",
+      "B相": "+"
+    },
+    {
+      "phase": "3",
+      "A相": "×",
+      "B相": "+"
+    },
+    {
+      "phase": "4",
+      "A相": "−",
+      "B相": "+"
+    },
+    {
+      "phase": "5",
+      "A相": "−",
+      "B相": "×"
+    },
+    {
+      "phase": "6",
+      "A相": "−",
+      "B相": "−"
+    },
+    {
+      "phase": "7",
+      "A相": "×",
+      "B相": "−"
+    },
+    {
+      "phase": "8",
+      "A相": "+",
+      "B相": "−"
+    }
+  ],
+  "csv": "phase,A相,B相\n1,+,×\n2,+,+\n3,×,+\n4,−,+\n5,−,×\n6,−,−\n7,×,−\n8,+,−\n",
+  "row_lengths": [
+    3,
+    3,
+    3,
+    3,
+    3,
+    3,
+    3,
+    3,
+    3
+  ],
+  "validation_issues": [],
+  "validation_status": "passed",
+  "review_required": false,
+  "review_reason": null,
+  "review_status": null,
+  "indexable": true,
+  "table_id": "w08-1-步进电机驱动器_pdf_page_3_table_1",
+  "page_num": 3
+}

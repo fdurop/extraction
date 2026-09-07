@@ -1,0 +1,33 @@
+{
+  "original_path": "output/qwen_qwen3.7-plus_7/debug/images/w07-3-麦克纳姆轮小车_p7_img3.png",
+  "enhanced_path": "output/qwen_qwen3.7-plus_7/debug/images/w07-3-麦克纳姆轮小车_p7_img3_enhanced.png",
+  "description": "类型：示意图\n图片展示了麦克纳姆轮小车的运动学分析模型，包含俯视图及速度矢量分解。中心标记为CENTER，建立有直角坐标系，标出质心平动速度vc（橙色箭头）和角速度ωc（蓝色旋转箭头）。车身四角分布四个麦轮M1至M4，对应位置点A、B、C、D。图中通过虚线标示了轮子到中心的距离rx和ry。每个轮子处绘制了速度矢量合成图：橙色箭头表示质心速度vc，蓝色箭头表示由角速度引起的切向速度ωc×r，红色箭头表示轮子的合速度v1至v4。背景含有“复旦大学机电智控实验室”的水印文字。",
+  "metadata": {
+    "generation": {
+      "method": "qwen_api",
+      "backend": "api",
+      "provider": "qwen",
+      "model": "qwen3.7-plus",
+      "status": "success",
+      "api_error": null
+    },
+    "review": {
+      "required": false,
+      "status": null,
+      "reason": null,
+      "course_relevant": true
+    }
+  },
+  "error": null,
+  "method": "qwen_api",
+  "backend": "api",
+  "provider": "qwen",
+  "model": "qwen3.7-plus",
+  "status": "success",
+  "api_error": null,
+  "indexable": true,
+  "review_required": false,
+  "review_reason": null,
+  "review_status": null,
+  "course_relevant": true
+}

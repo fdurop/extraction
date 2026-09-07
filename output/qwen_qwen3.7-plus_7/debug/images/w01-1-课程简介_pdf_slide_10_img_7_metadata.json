@@ -1,0 +1,33 @@
+{
+  "original_path": "output/qwen_qwen3.7-plus_7/debug/images/w01-1-课程简介_p10_img8.jpeg",
+  "enhanced_path": "output/qwen_qwen3.7-plus_7/debug/images/w01-1-课程简介_p10_img8_enhanced.jpeg",
+  "description": "类型：照片\n图片左侧展示一个黑色方形金属外壳的电机，顶部伸出银色金属轴，侧面贴有白色标签。右侧为一个黑色的长方形电子驱动模块，面板上方印有“H”形标志及“R57”型号标识，中间区域排列着密集的黑色拨码开关阵列，右侧边缘分布着三组绿色接线端子排和一组蓝色接线端子，顶部设有红绿指示灯。背景为重复排列的“复旦大学 机电智控实验室”浅灰色水印文字。",
+  "metadata": {
+    "generation": {
+      "method": "qwen_api",
+      "backend": "api",
+      "provider": "qwen",
+      "model": "qwen3.7-plus",
+      "status": "success",
+      "api_error": null
+    },
+    "review": {
+      "required": false,
+      "status": null,
+      "reason": null,
+      "course_relevant": true
+    }
+  },
+  "error": null,
+  "method": "qwen_api",
+  "backend": "api",
+  "provider": "qwen",
+  "model": "qwen3.7-plus",
+  "status": "success",
+  "api_error": null,
+  "indexable": true,
+  "review_required": false,
+  "review_reason": null,
+  "review_status": null,
+  "course_relevant": true
+}

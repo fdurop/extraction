@@ -1,0 +1,33 @@
+{
+  "original_path": "output/qwen_qwen3.7-plus_7/debug/images/w04-1-有刷直流电机驱动器及其应用_slide_18_img_6.png",
+  "enhanced_path": "output/qwen_qwen3.7-plus_7/debug/images/w04-1-有刷直流电机驱动器及其应用_slide_18_img_6_enhanced.png",
+  "description": "类型：照片\n图片展示一个浅绿色长方体盒子，四角有螺丝固定。侧面有两个灰色防水接头，引出两根黑色线缆，末端带有黑色圆柱形探头。盒盖贴有蓝黄绿配色标签，可见文字“QISUO 祺索”、“3000mAh”、“12V”及执行标准“GB31241-2014”。结合上下文“结构部件”，该图展示了具体硬件组件的外观形态、接口连接方式及铭牌参数信息。",
+  "metadata": {
+    "generation": {
+      "method": "qwen_api",
+      "backend": "api",
+      "provider": "qwen",
+      "model": "qwen3.7-plus",
+      "status": "success",
+      "api_error": null
+    },
+    "review": {
+      "required": false,
+      "status": null,
+      "reason": null,
+      "course_relevant": true
+    }
+  },
+  "error": null,
+  "method": "qwen_api",
+  "backend": "api",
+  "provider": "qwen",
+  "model": "qwen3.7-plus",
+  "status": "success",
+  "api_error": null,
+  "indexable": true,
+  "review_required": false,
+  "review_reason": null,
+  "review_status": null,
+  "course_relevant": true
+}

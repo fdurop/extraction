@@ -1,0 +1,33 @@
+{
+  "original_path": "output/qwen_qwen3.7-plus_7/debug/images/w10-1-直线运动平台（下）_slide_8_img_1.png",
+  "enhanced_path": "output/qwen_qwen3.7-plus_7/debug/images/w10-1-直线运动平台（下）_slide_8_img_1_enhanced.png",
+  "description": "类型：示意图\n图片列出了滑台简谐运动的四个步骤及控制逻辑：\n1. 滑台初始化复位；\n2. 滑台移至行程中间位置；\n3. 设置时间中断，等待启停按钮；\n4. 启动后，滑台进行简谐运动。\n下方列出相关公式与程序逻辑：\n位移公式：x(t) = Acos(2πft)，f为频率(Hz)，A为幅度（不超过行程的一半）。\n速度公式：v(t) = x'(t) = 2πfAsin(2πft)。\n红色文字标注：时间中断用于设置速度（转换为脉冲数）；loop循环根据速度发送脉冲。",
+  "metadata": {
+    "generation": {
+      "method": "qwen_api",
+      "backend": "api",
+      "provider": "qwen",
+      "model": "qwen3.7-plus",
+      "status": "success",
+      "api_error": null
+    },
+    "review": {
+      "required": false,
+      "status": null,
+      "reason": null,
+      "course_relevant": true
+    }
+  },
+  "error": null,
+  "method": "qwen_api",
+  "backend": "api",
+  "provider": "qwen",
+  "model": "qwen3.7-plus",
+  "status": "success",
+  "api_error": null,
+  "indexable": true,
+  "review_required": false,
+  "review_reason": null,
+  "review_status": null,
+  "course_relevant": true
+}

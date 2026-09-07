@@ -1,0 +1,33 @@
+{
+  "original_path": "output/qwen_qwen3.7-plus_7/debug/images/w02-1-PWM和舵机_p9_img6.jpeg",
+  "enhanced_path": "output/qwen_qwen3.7-plus_7/debug/images/w02-1-PWM和舵机_p9_img6_enhanced.jpeg",
+  "description": "类型：照片\n图片展示了一个基于舵机的小提琴演奏机器人系统。主体位于白色实验台上，左侧为固定小提琴的机械夹具及按弦机构，由多个黄色舵机和黑色支架构成；右侧为一个长连杆机械臂，末端夹持琴弓搭在琴弦上，基座同样包含黄色舵机。左上角嵌入了该装置的特写视图，清晰显示了舵机、电池盒、连杆与琴身的连接细节。背景可见投影幕布。结合页面文字“舵机的应用”及列表中的“小提琴演奏”，该图直观呈现了舵机在复杂机电系统中的实际应用形态。",
+  "metadata": {
+    "generation": {
+      "method": "qwen_api",
+      "backend": "api",
+      "provider": "qwen",
+      "model": "qwen3.7-plus",
+      "status": "success",
+      "api_error": null
+    },
+    "review": {
+      "required": false,
+      "status": null,
+      "reason": null,
+      "course_relevant": true
+    }
+  },
+  "error": null,
+  "method": "qwen_api",
+  "backend": "api",
+  "provider": "qwen",
+  "model": "qwen3.7-plus",
+  "status": "success",
+  "api_error": null,
+  "indexable": true,
+  "review_required": false,
+  "review_reason": null,
+  "review_status": null,
+  "course_relevant": true
+}

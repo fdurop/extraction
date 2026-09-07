@@ -1,0 +1,33 @@
+{
+  "original_path": "output/qwen_qwen3.7-plus_7/debug/images/w01-2-Arduino软硬件基础_p10_img8.jpeg",
+  "enhanced_path": "output/qwen_qwen3.7-plus_7/debug/images/w01-2-Arduino软硬件基础_p10_img8_enhanced.jpeg",
+  "description": "类型：照片\n图片展示了一个Arduino Uno开发板，板上安装了绿色的螺丝接线端子扩展 shield。扩展板侧面印有数字引脚编号（3至13）、GND、AREF、SDA、SCL等标识。一根红色导线和一根黑色导线分别从扩展板的端子中引出，连接到一个银色金属外壳的圆形按钮开关上。开关底部有黄色绝缘环。背景为白色。",
+  "metadata": {
+    "generation": {
+      "method": "qwen_api",
+      "backend": "api",
+      "provider": "qwen",
+      "model": "qwen3.7-plus",
+      "status": "success",
+      "api_error": null
+    },
+    "review": {
+      "required": false,
+      "status": null,
+      "reason": null,
+      "course_relevant": true
+    }
+  },
+  "error": null,
+  "method": "qwen_api",
+  "backend": "api",
+  "provider": "qwen",
+  "model": "qwen3.7-plus",
+  "status": "success",
+  "api_error": null,
+  "indexable": true,
+  "review_required": false,
+  "review_reason": null,
+  "review_status": null,
+  "course_relevant": true
+}

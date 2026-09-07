@@ -1,0 +1,33 @@
+{
+  "original_path": "output/qwen_qwen3.7-plus_7/debug/images/w10-1-直线运动平台（下）_slide_15_img_1.png",
+  "enhanced_path": "output/qwen_qwen3.7-plus_7/debug/images/w10-1-直线运动平台（下）_slide_15_img_1_enhanced.png",
+  "description": "类型：公式\n蓝色圆角矩形背景，顶部白色文字“延时性质”。下方为拉普拉斯变换公式：L[f(t - τ)] = e^(-sτ)F(s)。其中L为花体字母，f(t - τ)表示函数延时，等号右侧为指数项e的-sτ次方乘以F(s)。",
+  "metadata": {
+    "generation": {
+      "method": "qwen_api",
+      "backend": "api",
+      "provider": "qwen",
+      "model": "qwen3.7-plus",
+      "status": "success",
+      "api_error": null
+    },
+    "review": {
+      "required": false,
+      "status": null,
+      "reason": null,
+      "course_relevant": true
+    }
+  },
+  "error": null,
+  "method": "qwen_api",
+  "backend": "api",
+  "provider": "qwen",
+  "model": "qwen3.7-plus",
+  "status": "success",
+  "api_error": null,
+  "indexable": true,
+  "review_required": false,
+  "review_reason": null,
+  "review_status": null,
+  "course_relevant": true
+}

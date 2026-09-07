@@ -1,0 +1,29 @@
+{
+  "page_num": 13,
+  "raw_text": "机电系统原理及实践—— 四轮小车\n机电智控实验室tangguoan@fudan.edu.cn mmguo@fudan.edu.cn\n§3 软件方案\n15-14\nDCMotorDriver类\n底层：\n接收转速参数\n调节电机转向和转速\n4WheelCar类\n应用层：\n计算小车姿态\n将参数发送至底层\nMotorDriver0\nMotorDriver1\n控制左侧电机\n控制右侧电机\n在面向对象的程序设计中，程序模块\n由类构成。\n集成度更高，更适合大型复杂程序的开发。\n室 复旦大\n智控实验室 复旦大学 机电\n学 机电智控实验室 复旦大学 机电智控实验\n复旦大学 机电智控实验室 复旦大学 机电智控实验室 复旦\n大学 机电智控实验室 复旦大学 机电智控实验室 复旦大学 机电\n电智控实验室 复旦大学 机电智控实验室 复旦大学 机电智控实\n验室 复旦大学 机电智控实验室 复旦大学 机电智控实验室 \n旦大学 机电智控实验室 复旦大学 机电智控\n电智控实验室 复旦大学 \n验室 复\n",
+  "cleaned_text": "§3 软件方案\nDCMotorDriver类\n底层：\n接收转速参数\n调节电机转向和转速\n4WheelCar类\n应用层：\n计算小车姿态\n将参数发送至底层\nMotorDriver0\nMotorDriver1\n控制左侧电机\n控制右侧电机\n在面向对象的程序设计中，程序模块\n由类构成。\n集成度更高，更适合大型复杂程序的开发。",
+  "key_points": [
+    "DCMotorDriver类",
+    "底层：",
+    "应用层：",
+    "MotorDriver0",
+    "MotorDriver1",
+    "由类构成。",
+    "集成度更高，更适合大型复杂程序的开发。"
+  ],
+  "technical_terms": [
+    "MotorDriver0",
+    "MotorDriver1",
+    "控制右侧电机",
+    "控制左侧电机",
+    "调节电机"
+  ],
+  "has_images": false,
+  "image_count": 0,
+  "image_paths": [],
+  "metadata": {
+    "char_count": 437,
+    "word_count": 60,
+    "line_count": 30
+  }
+}

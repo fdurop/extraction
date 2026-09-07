@@ -1,0 +1,33 @@
+{
+  "original_path": "output/qwen_qwen3.7-plus_7/debug/images/w15-2-机器人运动学及其应用_p11_img3.jpeg",
+  "enhanced_path": "output/qwen_qwen3.7-plus_7/debug/images/w15-2-机器人运动学及其应用_p11_img3_enhanced.jpeg",
+  "description": "类型：照片\n图片展示了一个黄色的四足机器人侧面实物图。机器人拥有黄色的躯干外壳和黑色的多关节腿部结构，腿部呈现弯曲站立姿态。机身顶部安装有一个黑色的圆柱形传感器设备（类似激光雷达）。背景为纯黑色。结合页面上下文“二连杆机械臂的逆运动学”，该图片展示了课程中涉及的机器人硬件实体对象。",
+  "metadata": {
+    "generation": {
+      "method": "qwen_api",
+      "backend": "api",
+      "provider": "qwen",
+      "model": "qwen3.7-plus",
+      "status": "success",
+      "api_error": null
+    },
+    "review": {
+      "required": false,
+      "status": null,
+      "reason": null,
+      "course_relevant": true
+    }
+  },
+  "error": null,
+  "method": "qwen_api",
+  "backend": "api",
+  "provider": "qwen",
+  "model": "qwen3.7-plus",
+  "status": "success",
+  "api_error": null,
+  "indexable": true,
+  "review_required": false,
+  "review_reason": null,
+  "review_status": null,
+  "course_relevant": true
+}

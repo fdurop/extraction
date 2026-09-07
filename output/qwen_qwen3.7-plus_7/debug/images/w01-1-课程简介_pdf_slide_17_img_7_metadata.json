@@ -1,0 +1,33 @@
+{
+  "original_path": "output/qwen_qwen3.7-plus_7/debug/images/w01-1-课程简介_p17_img8.jpeg",
+  "enhanced_path": "output/qwen_qwen3.7-plus_7/debug/images/w01-1-课程简介_p17_img8_enhanced.jpeg",
+  "description": "类型：照片\n图片展示了一个放置在木质桌面上的机电系统实验装置。核心对象包括一块双拼太阳能电池板，安装在一个米色的小型机械旋转底座（云台）上。该底座通过红黑导线连接至左侧的一块黑色电路开发板，板上亮着红色和绿色指示灯。背景右上方是一台笔记本电脑，前景桌面上放有一把黄柄螺丝刀和一个黑色方形盒子。左侧边缘可见一只手正在对装置进行操作或调试。结合上下文，该图对应课程简介中提到的“追光太阳能板”往届案例。",
+  "metadata": {
+    "generation": {
+      "method": "qwen_api",
+      "backend": "api",
+      "provider": "qwen",
+      "model": "qwen3.7-plus",
+      "status": "success",
+      "api_error": null
+    },
+    "review": {
+      "required": false,
+      "status": null,
+      "reason": null,
+      "course_relevant": true
+    }
+  },
+  "error": null,
+  "method": "qwen_api",
+  "backend": "api",
+  "provider": "qwen",
+  "model": "qwen3.7-plus",
+  "status": "success",
+  "api_error": null,
+  "indexable": true,
+  "review_required": false,
+  "review_reason": null,
+  "review_status": null,
+  "course_relevant": true
+}

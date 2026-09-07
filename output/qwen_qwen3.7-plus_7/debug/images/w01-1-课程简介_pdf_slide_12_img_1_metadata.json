@@ -1,0 +1,33 @@
+{
+  "original_path": "output/qwen_qwen3.7-plus_7/debug/images/w01-1-课程简介_p12_img2.jpeg",
+  "enhanced_path": "output/qwen_qwen3.7-plus_7/debug/images/w01-1-课程简介_p12_img2_enhanced.jpeg",
+  "description": "类型：照片\n图片展示室内实验室场景，地面停放一辆四轮移动机器人平台。该机器人采用金属框架底盘，配备四个麦克纳姆轮，顶部安装有白色半球形传感器（类似摄像头或雷达）及黑色电路板、电池等电子元件，可见明显连线。画面左侧站立一名身穿深色短袖的男子，双手持握黑色有线控制器，视线向下注视设备。背景可见投影幕布、实验桌、圆形升降凳及带有观察窗的白色房门。",
+  "metadata": {
+    "generation": {
+      "method": "qwen_api",
+      "backend": "api",
+      "provider": "qwen",
+      "model": "qwen3.7-plus",
+      "status": "success",
+      "api_error": null
+    },
+    "review": {
+      "required": false,
+      "status": null,
+      "reason": null,
+      "course_relevant": true
+    }
+  },
+  "error": null,
+  "method": "qwen_api",
+  "backend": "api",
+  "provider": "qwen",
+  "model": "qwen3.7-plus",
+  "status": "success",
+  "api_error": null,
+  "indexable": true,
+  "review_required": false,
+  "review_reason": null,
+  "review_status": null,
+  "course_relevant": true
+}

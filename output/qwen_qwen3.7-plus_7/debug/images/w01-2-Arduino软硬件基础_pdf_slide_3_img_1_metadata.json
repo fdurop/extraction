@@ -1,0 +1,33 @@
+{
+  "original_path": "output/qwen_qwen3.7-plus_7/debug/images/w01-2-Arduino软硬件基础_p3_img2.jpeg",
+  "enhanced_path": "output/qwen_qwen3.7-plus_7/debug/images/w01-2-Arduino软硬件基础_p3_img2_enhanced.jpeg",
+  "description": "类型：照片\n图片展示了一块青色的Arduino Uno开发板实物。板载核心元件包括中央黑色的DIP封装微控制器芯片（ATmega328P）、左侧银色的USB Type-B接口、左下角黑色的圆形直流电源插座以及顶部的黑色排针插座。板上印有白色的“ARDUINO”品牌标志及“MADE IN ITALY”字样。右侧边缘排列着标有“ANALOG IN”的模拟输入引脚，顶部和底部边缘分布着标有“DIGITAL”及“PWM”字样的数字引脚排母。此外，板上还可见晶振、电容、复位按钮等电子元器件。",
+  "metadata": {
+    "generation": {
+      "method": "qwen_api",
+      "backend": "api",
+      "provider": "qwen",
+      "model": "qwen3.7-plus",
+      "status": "success",
+      "api_error": null
+    },
+    "review": {
+      "required": false,
+      "status": null,
+      "reason": null,
+      "course_relevant": true
+    }
+  },
+  "error": null,
+  "method": "qwen_api",
+  "backend": "api",
+  "provider": "qwen",
+  "model": "qwen3.7-plus",
+  "status": "success",
+  "api_error": null,
+  "indexable": true,
+  "review_required": false,
+  "review_reason": null,
+  "review_status": null,
+  "course_relevant": true
+}

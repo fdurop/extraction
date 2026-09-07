@@ -1,0 +1,33 @@
+{
+  "original_path": "output/qwen_qwen3.7-plus_7/debug/images/w13-2-机电系统在动力学与控制中的应用 - 副本_p3_img9.jpeg",
+  "enhanced_path": "output/qwen_qwen3.7-plus_7/debug/images/w13-2-机电系统在动力学与控制中的应用 - 副本_p3_img9_enhanced.jpeg",
+  "description": "类型：照片\n图片展示了一套放置在实验桌上的机电系统实物装置。主体为水平安装的同步带滑台，包含金属导轨、黑色同步带及两个橙色滑块组件，滑块上装有传感器或执行器并连接有线缆。滑台左侧桌面上放置有黑色的驱动盒及操纵/控制盒等电子设备，通过多根线缆与滑台相连。背景为投影幕布，显示课程标题“机电系统原理及实践”及副标题“机电系统在动力学与控制中的应用”，下方列有“系统复位”、“输入整形”、“振动抑制”、“倒立摆”等教学章节文字，右下角可见复旦大学校徽水印。",
+  "metadata": {
+    "generation": {
+      "method": "qwen_api",
+      "backend": "api",
+      "provider": "qwen",
+      "model": "qwen3.7-plus",
+      "status": "success",
+      "api_error": null
+    },
+    "review": {
+      "required": false,
+      "status": null,
+      "reason": null,
+      "course_relevant": true
+    }
+  },
+  "error": null,
+  "method": "qwen_api",
+  "backend": "api",
+  "provider": "qwen",
+  "model": "qwen3.7-plus",
+  "status": "success",
+  "api_error": null,
+  "indexable": true,
+  "review_required": false,
+  "review_reason": null,
+  "review_status": null,
+  "course_relevant": true
+}

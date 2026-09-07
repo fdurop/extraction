@@ -1,0 +1,33 @@
+{
+  "original_path": "output/qwen_qwen3.7-plus_7/debug/images/w07-3-麦克纳姆轮小车_p9_img2.jpeg",
+  "enhanced_path": "output/qwen_qwen3.7-plus_7/debug/images/w07-3-麦克纳姆轮小车_p9_img2_enhanced.jpeg",
+  "description": "类型：照片\n图片展示了麦轮小车底盘内部硬件布局。金属 chassis 四角安装有带白色全向轮的直流电机，底部贴有“右后”、“左后”黄色标签。 chassis 中部左侧固定有插在 UNO 板上的四路直流电机驱动扩展板，可见绿色接线端子及红黑 wiring；右侧为银色长方体电池盒，标签显示“Suo 祺索 3000mAh”。电机线缆连接至驱动板，整体呈现课程所述的电机替换与驱动器扩展实物形态。",
+  "metadata": {
+    "generation": {
+      "method": "qwen_api",
+      "backend": "api",
+      "provider": "qwen",
+      "model": "qwen3.7-plus",
+      "status": "success",
+      "api_error": null
+    },
+    "review": {
+      "required": false,
+      "status": null,
+      "reason": null,
+      "course_relevant": true
+    }
+  },
+  "error": null,
+  "method": "qwen_api",
+  "backend": "api",
+  "provider": "qwen",
+  "model": "qwen3.7-plus",
+  "status": "success",
+  "api_error": null,
+  "indexable": true,
+  "review_required": false,
+  "review_reason": null,
+  "review_status": null,
+  "course_relevant": true
+}

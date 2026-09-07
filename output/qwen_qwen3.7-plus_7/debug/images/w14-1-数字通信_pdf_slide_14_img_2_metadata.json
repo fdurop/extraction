@@ -1,0 +1,33 @@
+{
+  "original_path": "output/qwen_qwen3.7-plus_7/debug/images/w14-1-数字通信_p14_img6.jpeg",
+  "enhanced_path": "output/qwen_qwen3.7-plus_7/debug/images/w14-1-数字通信_p14_img6_enhanced.jpeg",
+  "description": "类型：示意图\n图片展示了计算机总线结构。左侧为橙色矩形块CPU，右侧排列RAM、ROM、INPUT、OUTPUT及Others模块。中间通过三组平行总线连接：顶部红色单向箭头线（Address Bus）由CPU指向外设；中间粉色双向箭头线（Data Bus）连接CPU与外设；底部黄色双向箭头线（Control Bus）连接CPU与外设。左下角图例标示了三种总线的颜色与名称对应关系。虚线从Others模块引出指向总线系统。",
+  "metadata": {
+    "generation": {
+      "method": "qwen_api",
+      "backend": "api",
+      "provider": "qwen",
+      "model": "qwen3.7-plus",
+      "status": "success",
+      "api_error": null
+    },
+    "review": {
+      "required": false,
+      "status": null,
+      "reason": null,
+      "course_relevant": true
+    }
+  },
+  "error": null,
+  "method": "qwen_api",
+  "backend": "api",
+  "provider": "qwen",
+  "model": "qwen3.7-plus",
+  "status": "success",
+  "api_error": null,
+  "indexable": true,
+  "review_required": false,
+  "review_reason": null,
+  "review_status": null,
+  "course_relevant": true
+}

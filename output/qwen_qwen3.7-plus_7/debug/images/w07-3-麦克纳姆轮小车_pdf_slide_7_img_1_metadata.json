@@ -1,0 +1,33 @@
+{
+  "original_path": "output/qwen_qwen3.7-plus_7/debug/images/w07-3-麦克纳姆轮小车_p7_img2.png",
+  "enhanced_path": "output/qwen_qwen3.7-plus_7/debug/images/w07-3-麦克纳姆轮小车_p7_img2_enhanced.png",
+  "description": "类型：示意图\n图片展示了麦克纳姆轮小车运动学分析的地面投影视图。图中包含一个黑色矩形车体（标记M4）和右前侧的灰色麦轮。坐标系原点位于车体质心CENTER，标有质心平动速度矢量vc（橙色箭头）和质心角速度wc（蓝色旋转箭头）。针对4号轮，绘制了轮子角速度w4、线速度v4（红色竖直向上）、平行于滚轮轴线的分速度v∥4（橙色）及垂直分速度v⊥4。虚线r表示质心到轮心的位置矢量。图片周围环绕着正逆运动学公式，描述了轮速与质心速度（vcx, vcy, ωc）及几何参数（rx, ry, R）之间的数学关系。",
+  "metadata": {
+    "generation": {
+      "method": "qwen_api",
+      "backend": "api",
+      "provider": "qwen",
+      "model": "qwen3.7-plus",
+      "status": "success",
+      "api_error": null
+    },
+    "review": {
+      "required": false,
+      "status": null,
+      "reason": null,
+      "course_relevant": true
+    }
+  },
+  "error": null,
+  "method": "qwen_api",
+  "backend": "api",
+  "provider": "qwen",
+  "model": "qwen3.7-plus",
+  "status": "success",
+  "api_error": null,
+  "indexable": true,
+  "review_required": false,
+  "review_reason": null,
+  "review_status": null,
+  "course_relevant": true
+}

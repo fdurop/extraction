@@ -1,0 +1,33 @@
+{
+  "original_path": "output/qwen_qwen3.7-plus_7/debug/images/w01-1-课程简介_p10_img5.png",
+  "enhanced_path": "output/qwen_qwen3.7-plus_7/debug/images/w01-1-课程简介_p10_img5_enhanced.png",
+  "description": "类型：照片\n图片展示了一个蓝色的多轴机械臂装置。该机械臂安装在一个圆形的蓝色底座上，底座侧面连接着一块黑色的电路板。机械臂主体由蓝色支架构成，包含多个关节和舵机结构，末端执行器为银灰色的金属夹爪。结合页面上下文，该实物图对应课程教学内容中列出的“多轴机械臂”这一主要硬件对象。",
+  "metadata": {
+    "generation": {
+      "method": "qwen_api",
+      "backend": "api",
+      "provider": "qwen",
+      "model": "qwen3.7-plus",
+      "status": "success",
+      "api_error": null
+    },
+    "review": {
+      "required": false,
+      "status": null,
+      "reason": null,
+      "course_relevant": true
+    }
+  },
+  "error": null,
+  "method": "qwen_api",
+  "backend": "api",
+  "provider": "qwen",
+  "model": "qwen3.7-plus",
+  "status": "success",
+  "api_error": null,
+  "indexable": true,
+  "review_required": false,
+  "review_reason": null,
+  "review_status": null,
+  "course_relevant": true
+}

@@ -1,0 +1,33 @@
+{
+  "original_path": "output/qwen_qwen3.7-plus_7/debug/images/w14-1-数字通信_p20_img3.jpeg",
+  "enhanced_path": "output/qwen_qwen3.7-plus_7/debug/images/w14-1-数字通信_p20_img3_enhanced.jpeg",
+  "description": "类型：照片\n图片展示了一块黑色的Arduino CAN总线扩展板实物。板载核心芯片为MCP2515 CAN总线控制器，位于电路板中央。左侧边缘设有一个金属外壳的DB9接口（CAN端口）和一个Micro USB接口。板上分布有蓝色的接线端子排和橙色的螺旋接线柱。右上方可见一个SD卡插槽。电路板两侧设有蓝色的排母插座，用于与Arduino Uno等主板连接。结合上下文，该图展示了通过SPI接口与Uno通信的CAN扩展板硬件形态。",
+  "metadata": {
+    "generation": {
+      "method": "qwen_api",
+      "backend": "api",
+      "provider": "qwen",
+      "model": "qwen3.7-plus",
+      "status": "success",
+      "api_error": null
+    },
+    "review": {
+      "required": false,
+      "status": null,
+      "reason": null,
+      "course_relevant": true
+    }
+  },
+  "error": null,
+  "method": "qwen_api",
+  "backend": "api",
+  "provider": "qwen",
+  "model": "qwen3.7-plus",
+  "status": "success",
+  "api_error": null,
+  "indexable": true,
+  "review_required": false,
+  "review_reason": null,
+  "review_status": null,
+  "course_relevant": true
+}

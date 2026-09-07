@@ -1,0 +1,30 @@
+{
+  "page_num": 4,
+  "raw_text": "机电系统原理及实践—— 机电系统在动力学与控制中的应用\n机电智控实验室tangguoan@fudan.edu.cn mmguo@fudan.edu.cn\n16-5\n§2.2“多选一”动作开关的控制程序——实现A\n// 初始化\nButtons.NumButtons = 3;\nButtonMaping(0, pinSHP, SliderSpeed_SHP);\nButtonMaping(1, pinVBR, SliderSpeed_VBR);\nButtonMaping(2, pinIPL, SliderSpeed_IPL);\nfor ( int i = 0; i < Buttons.NumButtons; i++ ) {\npinMode(Buttons.pinBUT[i], INPUT_PULLUP);\nButtons.PortVoltLast[i] = HIGH;\n}\nButtons.RUNING_MODE = Buttons.NONE;\n// 按钮号、端口号、响应函数的映射关系\nvoid ButtonMaping(int sn, int pin, float (*cbf)(float)) {\nButtons.pinBUT[sn] = pin;\nButtons.pCBfunc[sn] = cbf;\n}\n",
+  "cleaned_text": "§2.2“多选一”动作开关的控制程序——实现A\n// 初始化\nButtons.NumButtons = 3;\nButtonMaping(0, pinSHP, SliderSpeed_SHP);\nButtonMaping(1, pinVBR, SliderSpeed_VBR);\nButtonMaping(2, pinIPL, SliderSpeed_IPL);\nfor ( int i = 0; i < Buttons.NumButtons; i++ ) {\npinMode(Buttons.pinBUT[i], INPUT_PULLUP);\nButtons.PortVoltLast[i] = HIGH;\n}\nButtons.RUNING_MODE = Buttons.NONE;\n// 按钮号、端口号、响应函数的映射关系\nvoid ButtonMaping(int sn, int pin, float (*cbf)(float)) {\nButtons.pinBUT[sn] = pin;\nButtons.pCBfunc[sn] = cbf;\n}",
+  "key_points": [
+    "Buttons.NumButtons = 3;",
+    "ButtonMaping(0, pinSHP, SliderSpeed_SHP);",
+    "ButtonMaping(1, pinVBR, SliderSpeed_VBR);",
+    "ButtonMaping(2, pinIPL, SliderSpeed_IPL);",
+    "Buttons.PortVoltLast[i] = HIGH;",
+    "Buttons.RUNING_MODE = Buttons.NONE;",
+    "Buttons.pinBUT[sn] = pin;",
+    "Buttons.pCBfunc[sn] = cbf;"
+  ],
+  "technical_terms": [
+    "HIGH",
+    "INPUT_PULLUP",
+    "NONE",
+    "RUNING_MODE",
+    "动作开关的控制"
+  ],
+  "has_images": false,
+  "image_count": 0,
+  "image_paths": [],
+  "metadata": {
+    "char_count": 558,
+    "word_count": 58,
+    "line_count": 20
+  }
+}

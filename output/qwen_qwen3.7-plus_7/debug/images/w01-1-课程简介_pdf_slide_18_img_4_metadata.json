@@ -1,0 +1,33 @@
+{
+  "original_path": "output/qwen_qwen3.7-plus_7/debug/images/w01-1-课程简介_p18_img5.jpeg",
+  "enhanced_path": "output/qwen_qwen3.7-plus_7/debug/images/w01-1-课程简介_p18_img5_enhanced.jpeg",
+  "description": "类型：照片\n图片展示了一台带有橙色透明盖的白色桌面加工设备，左上角标注“20W升级版”。右侧以网格形式列出了该设备的六种配件及其名称：第一排依次为“20W激光模组”、“刀切模组”、“彩印模组”；第二排依次为“喷墨盒”、“4款刀头”（下方小字注明细切刀/裁切刀，赠圆盘刀/压印头）、“8色画笔”（展示了紫黑绿黄蓝红青橙八种颜色的笔）。",
+  "metadata": {
+    "generation": {
+      "method": "qwen_api",
+      "backend": "api",
+      "provider": "qwen",
+      "model": "qwen3.7-plus",
+      "status": "success",
+      "api_error": null
+    },
+    "review": {
+      "required": false,
+      "status": null,
+      "reason": null,
+      "course_relevant": true
+    }
+  },
+  "error": null,
+  "method": "qwen_api",
+  "backend": "api",
+  "provider": "qwen",
+  "model": "qwen3.7-plus",
+  "status": "success",
+  "api_error": null,
+  "indexable": true,
+  "review_required": false,
+  "review_reason": null,
+  "review_status": null,
+  "course_relevant": true
+}

@@ -1,0 +1,33 @@
+{
+  "original_path": "output/qwen_qwen3.7-plus_7/debug/images/w03-1-直流电机原理_p12_img3.png",
+  "enhanced_path": "output/qwen_qwen3.7-plus_7/debug/images/w03-1-直流电机原理_p12_img3_enhanced.png",
+  "description": "类型：表格\n该表对比了三种无刷直流电机控制方式（方波控制、正弦波控制、FOC磁场定向控制）的优缺点。\n1. 方波控制：优点为实现简单、成本低、算法易实现，适用于低速和中速；缺点为转矩波动大、噪音高、效率较低，不适合高速和高精度应用。\n2. 正弦波控制：优点为转矩波动小、噪音低、效率较高，适用于中速和高速；缺点为实现复杂、成本较高、算法较复杂、对电机参数敏感。\n3. FOC（磁场定向控制）：优点为转矩控制精确、动态响应快、效率最高，适用于高速和高精度；缺点为实现复杂、成本最高、算法复杂、对电机参数和传感器精度要求高。",
+  "metadata": {
+    "generation": {
+      "method": "qwen_api",
+      "backend": "api",
+      "provider": "qwen",
+      "model": "qwen3.7-plus",
+      "status": "success",
+      "api_error": null
+    },
+    "review": {
+      "required": false,
+      "status": null,
+      "reason": null,
+      "course_relevant": true
+    }
+  },
+  "error": null,
+  "method": "qwen_api",
+  "backend": "api",
+  "provider": "qwen",
+  "model": "qwen3.7-plus",
+  "status": "success",
+  "api_error": null,
+  "indexable": true,
+  "review_required": false,
+  "review_reason": null,
+  "review_status": null,
+  "course_relevant": true
+}

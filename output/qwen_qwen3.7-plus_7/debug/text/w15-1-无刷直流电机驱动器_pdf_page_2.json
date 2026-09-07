@@ -1,0 +1,18 @@
+{
+  "page_num": 1,
+  "raw_text": "机电系统原理及实践—— 无刷直流电机驱动简介\n机电智控实验室tangguoan@fudan.edu.cn mmguo@fudan.edu.cn\n内容提要\n9-2\n电机驱动器回顾\n无刷直流电机原理回顾\n0\n无刷直流电机的驱动原理\n0\n实践：操纵CyberGear无刷直流电机\n",
+  "cleaned_text": "内容提要\n电机驱动器回顾\n无刷直流电机原理回顾\n0\n无刷直流电机的驱动原理\n0\n实践：操纵CyberGear无刷直流电机",
+  "key_points": [],
+  "technical_terms": [
+    "无刷直流电机",
+    "电机驱动器"
+  ],
+  "has_images": false,
+  "image_count": 0,
+  "image_paths": [],
+  "metadata": {
+    "char_count": 137,
+    "word_count": 12,
+    "line_count": 11
+  }
+}

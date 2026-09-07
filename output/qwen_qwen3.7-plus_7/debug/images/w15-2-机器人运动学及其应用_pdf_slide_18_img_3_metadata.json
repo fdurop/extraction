@@ -1,0 +1,33 @@
+{
+  "original_path": "output/qwen_qwen3.7-plus_7/debug/images/w15-2-机器人运动学及其应用_p18_img5.jpeg",
+  "enhanced_path": "output/qwen_qwen3.7-plus_7/debug/images/w15-2-机器人运动学及其应用_p18_img5_enhanced.jpeg",
+  "description": "类型：照片\n画面展示一台轮足式机器人实物模型置于白色桌面上，右侧放置一组黑白相间的阶梯状障碍物。机器人具备四条腿，腿部末端安装有麦克纳姆轮，机身顶部搭载黑色圆柱形传感器（类似激光雷达），躯干部分裸露绿色电路板及红黑连接导线。背景可见白色储物柜。图片右下角标有“2.4x”字样。该图像直观呈现了课程所述的轮足式机器狗硬件构型及其面对的楼梯场景。",
+  "metadata": {
+    "generation": {
+      "method": "qwen_api",
+      "backend": "api",
+      "provider": "qwen",
+      "model": "qwen3.7-plus",
+      "status": "success",
+      "api_error": null
+    },
+    "review": {
+      "required": false,
+      "status": null,
+      "reason": null,
+      "course_relevant": true
+    }
+  },
+  "error": null,
+  "method": "qwen_api",
+  "backend": "api",
+  "provider": "qwen",
+  "model": "qwen3.7-plus",
+  "status": "success",
+  "api_error": null,
+  "indexable": true,
+  "review_required": false,
+  "review_reason": null,
+  "review_status": null,
+  "course_relevant": true
+}

@@ -1,0 +1,33 @@
+{
+  "original_path": "output/qwen_qwen3.7-plus_7/debug/images/w01-2-Arduino软硬件基础_p8_img2.png",
+  "enhanced_path": "output/qwen_qwen3.7-plus_7/debug/images/w01-2-Arduino软硬件基础_p8_img2_enhanced.png",
+  "description": "类型：代码\n图片展示了Arduino C语言代码片段，包含setup和loop两个函数。setup函数中调用pinMode(LED_BUILTIN, OUTPUT)初始化数字端口，注释说明Uno板载LED对应port 13。loop函数定义整型变量cycle为20（单位ms）和浮点型变量duty为1（占空比）。随后通过digitalWrite(LED_BUILTIN, HIGH)输出高电平点亮LED，配合delay(duty * cycle)延时；接着digitalWrite(LED_BUILTIN, LOW)输出低电平熄灭LED，配合delay(cycle * (1 - duty))延时。代码旁注解释了各语句功能及LED亮灭原理（一端接port 13高电平，一端接GND）。",
+  "metadata": {
+    "generation": {
+      "method": "qwen_api",
+      "backend": "api",
+      "provider": "qwen",
+      "model": "qwen3.7-plus",
+      "status": "success",
+      "api_error": null
+    },
+    "review": {
+      "required": false,
+      "status": null,
+      "reason": null,
+      "course_relevant": true
+    }
+  },
+  "error": null,
+  "method": "qwen_api",
+  "backend": "api",
+  "provider": "qwen",
+  "model": "qwen3.7-plus",
+  "status": "success",
+  "api_error": null,
+  "indexable": true,
+  "review_required": false,
+  "review_reason": null,
+  "review_status": null,
+  "course_relevant": true
+}

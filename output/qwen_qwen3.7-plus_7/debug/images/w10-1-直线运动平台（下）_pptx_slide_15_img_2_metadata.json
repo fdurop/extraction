@@ -1,0 +1,33 @@
+{
+  "original_path": "output/qwen_qwen3.7-plus_7/debug/images/w10-1-直线运动平台（下）_slide_15_img_2.png",
+  "enhanced_path": "output/qwen_qwen3.7-plus_7/debug/images/w10-1-直线运动平台（下）_slide_15_img_2_enhanced.png",
+  "description": "类型：公式\n图片包含标题“求 $\\mathcal{L}^{-1}(\\tilde{U}_s(s))$”及推导过程。首先给出 $\\tilde{U}_s(s)$ 的表达式，包含指数项与 $U_s(s)$ 的乘积；随后化简为含 $\\cos(\\omega_n\\tau)$ 的形式。接着通过拉普拉斯逆变换得到时域表达式 $\\tilde{u}_s(t)$，涉及 $u_s(t)$ 及其延时项 $u_s(t-\\tau)$、$u_s(t-2\\tau)$。最后简化为系数形式 $\\tilde{u}_s(t) = c_1 u_s(t) - c_2 u_s(t-\\tau) + c_1 u_s(t-2\\tau)$。\n\n下方列出“确定参数的原则”：\n1. 凸函数经过整形后仍为凸函数：$c_1$ 和 $c_2$ 都非负，推导出 $c_2 = 2C \\cos(\\omega_n\\tau) = 0$；\n2. 延时尽可能短：$\\tau$ 尽可能小，推导出 $\\tau = \\frac{\\pi}{2\\omega_n}$；\n3. 总位移保持不变，推导出 $c_1 = 1/2$。",
+  "metadata": {
+    "generation": {
+      "method": "qwen_api",
+      "backend": "api",
+      "provider": "qwen",
+      "model": "qwen3.7-plus",
+      "status": "success",
+      "api_error": null
+    },
+    "review": {
+      "required": false,
+      "status": null,
+      "reason": null,
+      "course_relevant": true
+    }
+  },
+  "error": null,
+  "method": "qwen_api",
+  "backend": "api",
+  "provider": "qwen",
+  "model": "qwen3.7-plus",
+  "status": "success",
+  "api_error": null,
+  "indexable": true,
+  "review_required": false,
+  "review_reason": null,
+  "review_status": null,
+  "course_relevant": true
+}

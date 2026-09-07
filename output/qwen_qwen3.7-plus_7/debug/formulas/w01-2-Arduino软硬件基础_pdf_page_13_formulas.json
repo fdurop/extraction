@@ -1,0 +1,38 @@
+{
+  "page": 13,
+  "formula_count": 1,
+  "accepted_count": 1,
+  "review_count": 0,
+  "formulas": [
+    {
+      "type": "equation",
+      "content": "c = a ^ b",
+      "latex": "c = a ^ b",
+      "variable": "c",
+      "expression": "a ^ b",
+      "position": [
+        280,
+        289
+      ],
+      "source_type": "text_simple_equation",
+      "extraction_method": "text_rule",
+      "plain_text": "c = a ^ b",
+      "name": "",
+      "meaning": "",
+      "description": "",
+      "symbols": [],
+      "conditions": [],
+      "uncertain_symbols": [],
+      "confidence": 0.78,
+      "validation_issues": [],
+      "validation_status": "passed",
+      "review_required": false,
+      "review_reason": null,
+      "review_status": null,
+      "indexable": true,
+      "formula_id": "w01-2-Arduino软硬件基础_pdf_page_13_formula_1",
+      "page_num": 13
+    }
+  ],
+  "timestamp": "2026-09-07T19:40:31.575811"
+}

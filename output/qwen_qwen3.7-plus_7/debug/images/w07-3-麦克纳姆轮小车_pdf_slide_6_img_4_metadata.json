@@ -1,0 +1,33 @@
+{
+  "original_path": "output/qwen_qwen3.7-plus_7/debug/images/w07-3-麦克纳姆轮小车_p6_img5.png",
+  "enhanced_path": "output/qwen_qwen3.7-plus_7/debug/images/w07-3-麦克纳姆轮小车_p6_img5_enhanced.png",
+  "description": "类型：示意图\n图片展示了麦克纳姆轮小车的俯视受力分析图。中心为矩形车体，四个角分别安装有轮子，左上和右下标记为“A轮”，右上和左下标记为“B轮”。每个轮子处绘有红色箭头矢量，表示分速度或受力方向：A轮矢量指向右上方和正左方，B轮矢量指向右下方和正右方（或根据具体轮子位置呈对称分布）。车体几何中心有一个指向正右方的红色箭头，标记为“V合”，表示合成速度方向。背景中有大量重复的“复旦大学 机电智控实验室”文字水印。",
+  "metadata": {
+    "generation": {
+      "method": "qwen_api",
+      "backend": "api",
+      "provider": "qwen",
+      "model": "qwen3.7-plus",
+      "status": "success",
+      "api_error": null
+    },
+    "review": {
+      "required": false,
+      "status": null,
+      "reason": null,
+      "course_relevant": true
+    }
+  },
+  "error": null,
+  "method": "qwen_api",
+  "backend": "api",
+  "provider": "qwen",
+  "model": "qwen3.7-plus",
+  "status": "success",
+  "api_error": null,
+  "indexable": true,
+  "review_required": false,
+  "review_reason": null,
+  "review_status": null,
+  "course_relevant": true
+}

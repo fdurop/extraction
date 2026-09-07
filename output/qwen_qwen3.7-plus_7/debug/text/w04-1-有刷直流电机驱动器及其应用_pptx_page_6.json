@@ -1,0 +1,29 @@
+{
+  "page_num": 5,
+  "raw_text": "§1 \n继电器\n23-\n固态继电器（\ns\nolid \ns\ntate \nr\nelay\n，\nSSR\n）\n使用\n固态半导体元件\n，无触点。\n直流：晶体三极管\n/\n功率场效应管。\n交流：可控硅。\n反应速度快。\n输出回路\n电流方向只能 \nA \n→ \nB\n输入回路\n接单片机\nAB\n的次序与 \nch\n \n编号方向一致",
+  "cleaned_text": "§1\n继电器\n固态继电器（\ns\nolid\ns\ntate\nr\nelay\n，\nSSR\n）\n使用\n固态半导体元件\n，无触点。\n直流：晶体三极管\n/\n功率场效应管。\n交流：可控硅。\n反应速度快。\n输出回路\n电流方向只能\nA\n→\nB\n输入回路\n接单片机\nAB\n的次序与\nch\n编号方向一致",
+  "key_points": [
+    "SSR",
+    "，无触点。",
+    "功率场效应管。",
+    "交流：可控硅。",
+    "反应速度快。",
+    "A",
+    "B",
+    "AB"
+  ],
+  "technical_terms": [
+    "AB",
+    "SSR"
+  ],
+  "has_images": true,
+  "image_count": 1,
+  "image_paths": [
+    "output/qwen_qwen3.7-plus_7/debug/images/w04-1-有刷直流电机驱动器及其应用_slide_6_img_1.png"
+  ],
+  "metadata": {
+    "char_count": 152,
+    "word_count": 32,
+    "line_count": 33
+  }
+}

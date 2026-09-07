@@ -1,0 +1,5 @@
+﻿序号,LaTeX公式,名称,描述,来源图像,提取方法,置信度,验证状态,是否需审核
+1,"s_{1,2} = \mp i\omega_n",,,output/qwen_qwen3.7-plus_7/debug/images/w10-1-直线运动平台（下）_slide_13_img_1.png,qwen_api_formula,0.95,passed,False
+2,s^2\theta(s) + \omega_n^2\theta(s) = \frac{s^2 U_s(s)}{l} \Rightarrow \theta(s) = \frac{s^2}{l(s^2 + \omega_n^2)} U_s(s).,,,output/qwen_qwen3.7-plus_7/debug/images/w10-1-直线运动平台（下）_slide_13_img_2.png,qwen_api_formula,1.0,passed,False
+3,"\mathcal{L}[\sin(\omega_n t)] = \frac{\omega_n}{s^2 + \omega_n^2} = \frac{\omega_n}{(s + i\omega_n)(s - i\omega_n)},",,,output/qwen_qwen3.7-plus_7/debug/images/w10-1-直线运动平台（下）_slide_13_img_2.png,qwen_api_formula,1.0,passed,False
+4,\mathcal{L}[\cos(\omega_n t)] = \frac{s}{s^2 + \omega_n^2} = \frac{s}{(s + i\omega_n)(s - i\omega_n)}.,,,output/qwen_qwen3.7-plus_7/debug/images/w10-1-直线运动平台（下）_slide_13_img_2.png,qwen_api_formula,1.0,passed,False

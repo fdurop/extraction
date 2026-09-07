@@ -1,0 +1,33 @@
+{
+  "original_path": "output/qwen_qwen3.7-plus_7/debug/images/w09-1-直线运动平台（上） - 副本_p5_img3.jpeg",
+  "enhanced_path": "output/qwen_qwen3.7-plus_7/debug/images/w09-1-直线运动平台（上） - 副本_p5_img3_enhanced.jpeg",
+  "description": "类型：照片\n图片展示了一个黑色长方体微动开关（限位开关）实物。开关侧面印有白色文字“V-15G3-1C25”及电气参数，并设有三个金属接线端子，旁边分别标注有“COM”、“NC”和“NO”。开关右侧连接有一个金属杠杆执行机构，末端带有一个白色滚轮。",
+  "metadata": {
+    "generation": {
+      "method": "qwen_api",
+      "backend": "api",
+      "provider": "qwen",
+      "model": "qwen3.7-plus",
+      "status": "success",
+      "api_error": null
+    },
+    "review": {
+      "required": false,
+      "status": null,
+      "reason": null,
+      "course_relevant": true
+    }
+  },
+  "error": null,
+  "method": "qwen_api",
+  "backend": "api",
+  "provider": "qwen",
+  "model": "qwen3.7-plus",
+  "status": "success",
+  "api_error": null,
+  "indexable": true,
+  "review_required": false,
+  "review_reason": null,
+  "review_status": null,
+  "course_relevant": true
+}

@@ -1,0 +1,14 @@
+{
+  "source_image": "output/qwen_qwen3.7-plus_7/debug/images/w01-2-Arduino软硬件基础_p7_img2.jpeg",
+  "extraction_method": "qwen_api_智能识别",
+  "language": "cpp",
+  "description": "这是一个Arduino基础程序，在setup()中初始化串口通信（波特率9600），等待串口准备就绪后，通过串口发送\"Hello Arduino!\"消息。loop()函数为空，程序只执行一次输出操作。",
+  "code_file": "w01-2-Arduino软硬件基础_pdf_page_7_code_1.cpp",
+  "page": 7,
+  "index": 1,
+  "timestamp": "2026-09-07T19:40:00.729019",
+  "raw_response": "语言: Arduino (C/C++)\n```cpp\n// the setup function runs once when you press reset or power the board\nvoid setup() {\n  Serial.begin(9600);   // 初始化串口，默认波特率为 9600\n  while (!Serial) {};   // 等待串口初始化完成\n\n  Serial.println(\"Hello Arduino!\"); // Serial.print(\"Hello Arduino!\\n\")\n}\n\nvoid loop() {\n  // put your main code here, to run repeatedly:\n}\n```\n功能: 这是一个Arduino基础程序，在setup()中初始化串口通信（波特率9600），等待串口准备就绪后，通过串口发送\"Hello Arduino!\"消息。loop()函数为空，程序只执行一次输出操作。",
+  "backend": "api",
+  "provider": "qwen",
+  "model": "qwen3.7-plus"
+}

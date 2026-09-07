@@ -1,0 +1,33 @@
+{
+  "original_path": "output/qwen_qwen3.7-plus_7/debug/images/w15-1-无刷直流电机驱动器_p8_img8.jpeg",
+  "enhanced_path": "output/qwen_qwen3.7-plus_7/debug/images/w15-1-无刷直流电机驱动器_p8_img8_enhanced.jpeg",
+  "description": "类型：示意图\n图片展示了FOC电流环控制系统的信号流框图。流程从左至右依次为：设定角度与当前角度比较进入位置环Kp，输出经速度限制后与当前速度比较进入速度环（包含Kp及由S速度解算和Ki构成的反馈），结果经力限保护（限制iq）输入FOC电流环模块，最终输出。图中明确标注了位置环Kp、速度环Kp/Ki、速度限制、力限保护、FOC电流环等模块，以及设定角度、当前角度、当前速度等信号节点，右下角注有“S为速度解算”。",
+  "metadata": {
+    "generation": {
+      "method": "qwen_api",
+      "backend": "api",
+      "provider": "qwen",
+      "model": "qwen3.7-plus",
+      "status": "success",
+      "api_error": null
+    },
+    "review": {
+      "required": false,
+      "status": null,
+      "reason": null,
+      "course_relevant": true
+    }
+  },
+  "error": null,
+  "method": "qwen_api",
+  "backend": "api",
+  "provider": "qwen",
+  "model": "qwen3.7-plus",
+  "status": "success",
+  "api_error": null,
+  "indexable": true,
+  "review_required": false,
+  "review_reason": null,
+  "review_status": null,
+  "course_relevant": true
+}

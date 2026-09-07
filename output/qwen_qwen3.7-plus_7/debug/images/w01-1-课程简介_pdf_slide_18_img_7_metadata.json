@@ -1,0 +1,33 @@
+{
+  "original_path": "output/qwen_qwen3.7-plus_7/debug/images/w01-1-课程简介_p18_img8.jpeg",
+  "enhanced_path": "output/qwen_qwen3.7-plus_7/debug/images/w01-1-课程简介_p18_img8_enhanced.jpeg",
+  "description": "类型：照片\n图片展示一台四足轮式机器人实物。主体由银色金属框架搭建，四条腿末端安装有白色全向轮（麦克纳姆轮）。腿部关节处可见黑色直流电机及减速箱，通过红黑导线连接至机身中部的白色控制盒及绿色电路板。机身顶部设有红色急停按钮、黑色电池组及散热风扇。背景右侧地面可见部分文字“第4”。该图片对应上下文中的“轮足式机器人”或“BabyAlpha DevQ”教学设备展示。",
+  "metadata": {
+    "generation": {
+      "method": "qwen_api",
+      "backend": "api",
+      "provider": "qwen",
+      "model": "qwen3.7-plus",
+      "status": "success",
+      "api_error": null
+    },
+    "review": {
+      "required": false,
+      "status": null,
+      "reason": null,
+      "course_relevant": true
+    }
+  },
+  "error": null,
+  "method": "qwen_api",
+  "backend": "api",
+  "provider": "qwen",
+  "model": "qwen3.7-plus",
+  "status": "success",
+  "api_error": null,
+  "indexable": true,
+  "review_required": false,
+  "review_reason": null,
+  "review_status": null,
+  "course_relevant": true
+}

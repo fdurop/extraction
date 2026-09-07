@@ -1,0 +1,33 @@
+{
+  "original_path": "output/qwen_qwen3.7-plus_7/debug/images/w02-1-PWM和舵机_p8_img2.jpeg",
+  "enhanced_path": "output/qwen_qwen3.7-plus_7/debug/images/w02-1-PWM和舵机_p8_img2_enhanced.jpeg",
+  "description": "类型：示意图\n图片展示了舵机（型号SM-S3317M）的内部结构剖视图。图中通过引线标注了四个核心组件：右侧圆柱形的直流电机（DC MOTOR），顶部连接输出轴的齿轮组（GEAR BOX），位于电机轴旁的蓝色电位器（POTENTIOMETER），以及底部的黄色控制电路板（CONTROL CIRCUIT）。红、白、黑三色导线从控制电路板延伸出外壳，末端连接一个三孔插头。该图直观呈现了舵机作为位置伺服系统的机械与电子构成。",
+  "metadata": {
+    "generation": {
+      "method": "qwen_api",
+      "backend": "api",
+      "provider": "qwen",
+      "model": "qwen3.7-plus",
+      "status": "success",
+      "api_error": null
+    },
+    "review": {
+      "required": false,
+      "status": null,
+      "reason": null,
+      "course_relevant": true
+    }
+  },
+  "error": null,
+  "method": "qwen_api",
+  "backend": "api",
+  "provider": "qwen",
+  "model": "qwen3.7-plus",
+  "status": "success",
+  "api_error": null,
+  "indexable": true,
+  "review_required": false,
+  "review_reason": null,
+  "review_status": null,
+  "course_relevant": true
+}

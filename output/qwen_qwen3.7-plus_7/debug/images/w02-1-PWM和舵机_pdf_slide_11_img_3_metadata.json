@@ -1,0 +1,33 @@
+{
+  "original_path": "output/qwen_qwen3.7-plus_7/debug/images/w02-1-PWM和舵机_p11_img4.jpeg",
+  "enhanced_path": "output/qwen_qwen3.7-plus_7/debug/images/w02-1-PWM和舵机_p11_img4_enhanced.jpeg",
+  "description": "类型：照片\n图片横向展示了三个通过黑色连杆机械连接的舵机实物。从左至右依次为：黑色外壳舵机，标签显示型号ZP15S及ZL ROBOT SERVO；红色外壳舵机，标签显示型号ZX20S、SMART DIGITAL SERVO及参数20kg.cm；蓝色外壳舵机，标签显示型号PM30S、ZL ROBOT SERVO及参数30KG.CM。三个舵机顶部均可见金属输出轴齿轮，侧面贴有包含“众乐科技”字样的品牌标识。",
+  "metadata": {
+    "generation": {
+      "method": "qwen_api",
+      "backend": "api",
+      "provider": "qwen",
+      "model": "qwen3.7-plus",
+      "status": "success",
+      "api_error": null
+    },
+    "review": {
+      "required": false,
+      "status": null,
+      "reason": null,
+      "course_relevant": true
+    }
+  },
+  "error": null,
+  "method": "qwen_api",
+  "backend": "api",
+  "provider": "qwen",
+  "model": "qwen3.7-plus",
+  "status": "success",
+  "api_error": null,
+  "indexable": true,
+  "review_required": false,
+  "review_reason": null,
+  "review_status": null,
+  "course_relevant": true
+}

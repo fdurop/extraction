@@ -1,0 +1,33 @@
+{
+  "original_path": "output/qwen_qwen3.7-plus_7/debug/images/w02-1-PWM和舵机_p7_img3.jpeg",
+  "enhanced_path": "output/qwen_qwen3.7-plus_7/debug/images/w02-1-PWM和舵机_p7_img3_enhanced.jpeg",
+  "description": "类型：照片\n图片展示了一个圆柱形灰色电子元件（电位器）的局部特写。元件侧面设有接线窗口，内部可见蓝色绝缘体及金属螺丝端子。外壳表面印有黑色字符“Z1”、“Z2”，中间有一个指向上方的箭头符号，下方印有数字“4”。该图片配合文中“10k 电位器用法”及“电位器”标题，直观展示了课程实践中所需硬件的外观特征及引脚标识。",
+  "metadata": {
+    "generation": {
+      "method": "qwen_api",
+      "backend": "api",
+      "provider": "qwen",
+      "model": "qwen3.7-plus",
+      "status": "success",
+      "api_error": null
+    },
+    "review": {
+      "required": false,
+      "status": null,
+      "reason": null,
+      "course_relevant": true
+    }
+  },
+  "error": null,
+  "method": "qwen_api",
+  "backend": "api",
+  "provider": "qwen",
+  "model": "qwen3.7-plus",
+  "status": "success",
+  "api_error": null,
+  "indexable": true,
+  "review_required": false,
+  "review_reason": null,
+  "review_status": null,
+  "course_relevant": true
+}

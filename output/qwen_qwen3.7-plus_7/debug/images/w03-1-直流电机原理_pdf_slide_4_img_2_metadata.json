@@ -1,0 +1,33 @@
+{
+  "original_path": "output/qwen_qwen3.7-plus_7/debug/images/w03-1-直流电机原理_p4_img3.jpeg",
+  "enhanced_path": "output/qwen_qwen3.7-plus_7/debug/images/w03-1-直流电机原理_p4_img3_enhanced.jpeg",
+  "description": "类型：示意图\n图片展示了有刷直流电机的内部三维结构模型。主体包含一个灰色U型定子磁极，内部放置标有“S”（蓝色面）和“N”（红色面）的矩形永磁体。转子部分由铜色线圈绕组和分裂式圆柱形换向器组成，位于磁极之间。换向器两侧各有一个黄色矩形电刷与其表面接触，电刷后端连接蓝色外部导线。底部字幕显示文字：“现在我们让电磁铁和电枢再次旋转起来”。右下角有“JaredOwen”水印。",
+  "metadata": {
+    "generation": {
+      "method": "qwen_api",
+      "backend": "api",
+      "provider": "qwen",
+      "model": "qwen3.7-plus",
+      "status": "success",
+      "api_error": null
+    },
+    "review": {
+      "required": false,
+      "status": null,
+      "reason": null,
+      "course_relevant": true
+    }
+  },
+  "error": null,
+  "method": "qwen_api",
+  "backend": "api",
+  "provider": "qwen",
+  "model": "qwen3.7-plus",
+  "status": "success",
+  "api_error": null,
+  "indexable": true,
+  "review_required": false,
+  "review_reason": null,
+  "review_status": null,
+  "course_relevant": true
+}

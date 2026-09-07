@@ -1,0 +1,33 @@
+{
+  "original_path": "output/qwen_qwen3.7-plus_7/debug/images/w01-1-课程简介_p5_img4.jpeg",
+  "enhanced_path": "output/qwen_qwen3.7-plus_7/debug/images/w01-1-课程简介_p5_img4_enhanced.jpeg",
+  "description": "类型：照片\n图片展示了一辆绿色的四轮全向移动机器人（配备麦克纳姆轮），位于模拟道路环境中。机器人顶部搭载有多传感器组件，包括类似激光雷达的旋转装置、深度相机及天线。背景设有黑色龙门架结构，上方亮有红色信号灯，右侧立有蓝色直行交通指示牌，两侧布置有微缩树木模型。地面绘有黄色车道线，机器人所在区域有绿色灯光投射。该实物图直观展示了课程涉及的具身智能机器人硬件平台及其感知交互环境。",
+  "metadata": {
+    "generation": {
+      "method": "qwen_api",
+      "backend": "api",
+      "provider": "qwen",
+      "model": "qwen3.7-plus",
+      "status": "success",
+      "api_error": null
+    },
+    "review": {
+      "required": false,
+      "status": null,
+      "reason": null,
+      "course_relevant": true
+    }
+  },
+  "error": null,
+  "method": "qwen_api",
+  "backend": "api",
+  "provider": "qwen",
+  "model": "qwen3.7-plus",
+  "status": "success",
+  "api_error": null,
+  "indexable": true,
+  "review_required": false,
+  "review_reason": null,
+  "review_status": null,
+  "course_relevant": true
+}

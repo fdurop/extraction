@@ -1,0 +1,33 @@
+{
+  "original_path": "output/qwen_qwen3.7-plus_7/debug/images/w04-1-有刷直流电机驱动器及其应用_slide_20_img_4.jpeg",
+  "enhanced_path": "output/qwen_qwen3.7-plus_7/debug/images/w04-1-有刷直流电机驱动器及其应用_slide_20_img_4_enhanced.jpeg",
+  "description": "类型：示意图/表格\n图片展示了ZGA37RG(A6207)齿轮箱电机的产品参数。包含外壳材质、输出轴承型式、径向力（≤1 kgf）、轴向力（≤0.7 kgf）及间隙等指标表格。中部为齿轮箱外形工程图，标注了轴径φ12.0、机身直径φ37.0、总长L及安装孔P.C.Dφ31等尺寸。下方列有“齿轮箱电机（额定力矩/转速一览表）”和“齿轮箱规格”表，详细记录了不同减速比（如1/9至1/627）对应的空载/负载转速、负载力矩、段数及额定力矩数据。底部文字说明了使用容差、搬运、接线（有刷/无刷区别）、过负载限制及储存温度（0℃~40℃）等技术规范。",
+  "metadata": {
+    "generation": {
+      "method": "qwen_api",
+      "backend": "api",
+      "provider": "qwen",
+      "model": "qwen3.7-plus",
+      "status": "success",
+      "api_error": null
+    },
+    "review": {
+      "required": false,
+      "status": null,
+      "reason": null,
+      "course_relevant": true
+    }
+  },
+  "error": null,
+  "method": "qwen_api",
+  "backend": "api",
+  "provider": "qwen",
+  "model": "qwen3.7-plus",
+  "status": "success",
+  "api_error": null,
+  "indexable": true,
+  "review_required": false,
+  "review_reason": null,
+  "review_status": null,
+  "course_relevant": true
+}

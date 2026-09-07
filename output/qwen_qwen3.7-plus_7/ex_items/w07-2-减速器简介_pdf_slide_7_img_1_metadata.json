@@ -1,0 +1,37 @@
+{
+  "original_path": "output/qwen_qwen3.7-plus_7/debug/images/w07-2-减速器简介_p7_img2.jpeg",
+  "enhanced_path": "output/qwen_qwen3.7-plus_7/ex_items/w07-2-减速器简介_pdf_slide_7_img_1_enhanced.png",
+  "description": "[COURSE_IRRELEVANT] 图片为视频截图，显示布满陨石坑的月球表面及字幕“格林威治时间1971年7月30日22:16”，带有Bilibili水印。内容与本页课程主题“谐波减速器”的结构、原理及优缺点完全无关。",
+  "metadata": {
+    "generation": {
+      "method": "qwen_api",
+      "backend": "api",
+      "provider": "qwen",
+      "model": "qwen3.7-plus",
+      "status": "success",
+      "api_error": null
+    },
+    "review": {
+      "required": true,
+      "status": "pending",
+      "reason": "course_irrelevant",
+      "course_relevant": false
+    }
+  },
+  "error": null,
+  "method": "qwen_api",
+  "backend": "api",
+  "provider": "qwen",
+  "model": "qwen3.7-plus",
+  "status": "success",
+  "api_error": null,
+  "indexable": false,
+  "review_required": true,
+  "review_reason": "course_irrelevant",
+  "review_status": "pending",
+  "course_relevant": false,
+  "source_document": "w07-2-减速器简介_pdf",
+  "page_num": 7,
+  "image_index": 1,
+  "review_image_path": "output/qwen_qwen3.7-plus_7/ex_items/w07-2-减速器简介_pdf_slide_7_img_1_enhanced.png"
+}

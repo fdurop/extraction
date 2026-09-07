@@ -1,0 +1,33 @@
+{
+  "original_path": "output/qwen_qwen3.7-plus_7/debug/images/w03-1-直流电机原理_p10_img2.png",
+  "enhanced_path": "output/qwen_qwen3.7-plus_7/debug/images/w03-1-直流电机原理_p10_img2_enhanced.png",
+  "description": "类型：示意图\n图片展示了无刷直流电机定子绕组的三种通电状态。包含三个圆形示意图，每个圆内均有呈星形（Y型）连接的三相绕组，端点分别标记为U、V、W。\n左图：U相和V相绕组线圈显示为红色，W相为黑色；红色箭头从圆心指向U相与W相之间；下方标注文字“V-U”。\n中图：V相和W相绕组线圈显示为红色，U相为黑色；红色箭头从圆心水平指向右侧（W相方向）；下方标注文字“V-W”。\n右图：U相和W相绕组线圈显示为红色，V相为黑色；红色箭头从圆心指向右下方（W相与V相之间）；下方标注文字“U-W”。",
+  "metadata": {
+    "generation": {
+      "method": "qwen_api",
+      "backend": "api",
+      "provider": "qwen",
+      "model": "qwen3.7-plus",
+      "status": "success",
+      "api_error": null
+    },
+    "review": {
+      "required": false,
+      "status": null,
+      "reason": null,
+      "course_relevant": true
+    }
+  },
+  "error": null,
+  "method": "qwen_api",
+  "backend": "api",
+  "provider": "qwen",
+  "model": "qwen3.7-plus",
+  "status": "success",
+  "api_error": null,
+  "indexable": true,
+  "review_required": false,
+  "review_reason": null,
+  "review_status": null,
+  "course_relevant": true
+}

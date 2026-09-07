@@ -1,0 +1,33 @@
+{
+  "original_path": "output/qwen_qwen3.7-plus_7/debug/images/w14-1-数字通信_p15_img4.jpeg",
+  "enhanced_path": "output/qwen_qwen3.7-plus_7/debug/images/w14-1-数字通信_p15_img4_enhanced.jpeg",
+  "description": "类型：代码\n图片展示了Arduino C++代码片段，用于实现I2C主机通信。\n顶部包含头文件 `#include <Wire.h>` 及常量定义 `const byte slaveAdress = 20;`。\n`setup()` 函数中初始化串口 `Serial.begin(9600)` 并启动I2C主机模式 `Wire.begin()`。\n定义了浮点变量 `float ang = PI`。\n随后执行发送流程：调用 `Wire.beginTransmission(slaveAdress)`，使用 `Wire.write((byte*)&ang, sizeof(ang))` 写入数据，最后 `Wire.endTransmission()` 结束发送。\n接着执行接收流程：调用 `Wire.requestFrom(slaveAdress, 1)` 请求1字节数据，通过 `while (!Wire.available())` 循环等待，读取数据 `bool res = Wire.read()`，并通过 `Serial.println(res)` 打印结果。",
+  "metadata": {
+    "generation": {
+      "method": "qwen_api",
+      "backend": "api",
+      "provider": "qwen",
+      "model": "qwen3.7-plus",
+      "status": "success",
+      "api_error": null
+    },
+    "review": {
+      "required": false,
+      "status": null,
+      "reason": null,
+      "course_relevant": true
+    }
+  },
+  "error": null,
+  "method": "qwen_api",
+  "backend": "api",
+  "provider": "qwen",
+  "model": "qwen3.7-plus",
+  "status": "success",
+  "api_error": null,
+  "indexable": true,
+  "review_required": false,
+  "review_reason": null,
+  "review_status": null,
+  "course_relevant": true
+}

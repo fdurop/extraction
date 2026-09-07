@@ -1,0 +1,33 @@
+{
+  "original_path": "output/qwen_qwen3.7-plus_7/debug/images/w15-2-机器人运动学及其应用_p5_img3.jpeg",
+  "enhanced_path": "output/qwen_qwen3.7-plus_7/debug/images/w15-2-机器人运动学及其应用_p5_img3_enhanced.jpeg",
+  "description": "类型：照片\n图片展示了一台橙色的多关节串联机器人实物模型，安装于方形木质底座上。机器人主体由基座、大臂、小臂及末端执行器（黑白配色夹爪）通过多个转动关节串联而成，呈现典型的六轴机器人结构特征。该图像直观对应页面文本中“常见串联机器人”分类下的“六轴机器人”条目，展示了其连杆串联及关节连接的空间形态。",
+  "metadata": {
+    "generation": {
+      "method": "qwen_api",
+      "backend": "api",
+      "provider": "qwen",
+      "model": "qwen3.7-plus",
+      "status": "success",
+      "api_error": null
+    },
+    "review": {
+      "required": false,
+      "status": null,
+      "reason": null,
+      "course_relevant": true
+    }
+  },
+  "error": null,
+  "method": "qwen_api",
+  "backend": "api",
+  "provider": "qwen",
+  "model": "qwen3.7-plus",
+  "status": "success",
+  "api_error": null,
+  "indexable": true,
+  "review_required": false,
+  "review_reason": null,
+  "review_status": null,
+  "course_relevant": true
+}

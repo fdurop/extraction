@@ -1,0 +1,33 @@
+{
+  "original_path": "output/qwen_qwen3.7-plus_7/debug/images/w04-1-有刷直流电机驱动器及其应用_slide_6_img_1.png",
+  "enhanced_path": "output/qwen_qwen3.7-plus_7/debug/images/w04-1-有刷直流电机驱动器及其应用_slide_6_img_1_enhanced.png",
+  "description": "类型：照片\n红色PCB板上集成两个白色Weiba品牌GTD-W-5A固态继电器（S.S.R）。继电器表面标注参数“5A 5-220VDC”、“DC to DC”、“3-32VDC”及端口定义“+1 LOAD 2 -”和“+3 IN 4 -”。板边缘设有绿色接线端子，右侧黄色端子旁印有“DC+ DC- CH1 CH2”，左侧对应负载端。底部印有白色文字“High Level Trigger”。图片展示了双路直流固态继电器模组的实物外观、型号规格及输入输出接口布局。",
+  "metadata": {
+    "generation": {
+      "method": "qwen_api",
+      "backend": "api",
+      "provider": "qwen",
+      "model": "qwen3.7-plus",
+      "status": "success",
+      "api_error": null
+    },
+    "review": {
+      "required": false,
+      "status": null,
+      "reason": null,
+      "course_relevant": true
+    }
+  },
+  "error": null,
+  "method": "qwen_api",
+  "backend": "api",
+  "provider": "qwen",
+  "model": "qwen3.7-plus",
+  "status": "success",
+  "api_error": null,
+  "indexable": true,
+  "review_required": false,
+  "review_reason": null,
+  "review_status": null,
+  "course_relevant": true
+}

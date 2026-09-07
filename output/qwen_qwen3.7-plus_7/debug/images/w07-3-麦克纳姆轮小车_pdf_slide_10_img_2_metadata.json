@@ -1,0 +1,33 @@
+{
+  "original_path": "output/qwen_qwen3.7-plus_7/debug/images/w07-3-麦克纳姆轮小车_p10_img3.png",
+  "enhanced_path": "output/qwen_qwen3.7-plus_7/debug/images/w07-3-麦克纳姆轮小车_p10_img3_enhanced.png",
+  "description": "类型：表格\n表格包含六列，表头分别为电机、方向控制脚、正转、反转、速度控制脚、速度范围。数据行共四行，对应电机M1至M4。\nM1行：方向控制脚4，正转LOW，反转HIGH，速度控制脚3，速度范围0-255。\nM2行：方向控制脚12，正转HIGH，反转LOW，速度控制脚11，速度范围0-255。\nM3行：方向控制脚8，正转LOW，反转HIGH，速度控制脚5，速度范围0-255。\nM4行：方向控制脚7，正转HIGH，反转LOW，速度控制脚6，速度范围0-255。",
+  "metadata": {
+    "generation": {
+      "method": "qwen_api",
+      "backend": "api",
+      "provider": "qwen",
+      "model": "qwen3.7-plus",
+      "status": "success",
+      "api_error": null
+    },
+    "review": {
+      "required": false,
+      "status": null,
+      "reason": null,
+      "course_relevant": true
+    }
+  },
+  "error": null,
+  "method": "qwen_api",
+  "backend": "api",
+  "provider": "qwen",
+  "model": "qwen3.7-plus",
+  "status": "success",
+  "api_error": null,
+  "indexable": true,
+  "review_required": false,
+  "review_reason": null,
+  "review_status": null,
+  "course_relevant": true
+}

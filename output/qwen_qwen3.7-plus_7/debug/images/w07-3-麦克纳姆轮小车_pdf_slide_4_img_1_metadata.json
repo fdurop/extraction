@@ -1,0 +1,33 @@
+{
+  "original_path": "output/qwen_qwen3.7-plus_7/debug/images/w07-3-麦克纳姆轮小车_p4_img2.jpeg",
+  "enhanced_path": "output/qwen_qwen3.7-plus_7/debug/images/w07-3-麦克纳姆轮小车_p4_img2_enhanced.jpeg",
+  "description": "类型：照片\n图片展示了一个麦克纳姆轮的实物结构。主体由蓝色星形轮毂和黑色圆柱形辊子组成。蓝色轮毂呈放射状支架结构，中心有银色圆形安装盘及轴孔，通过螺丝固定。多个黑色辊子均匀分布在轮毂外圆周上，辊子轴线与轮毂旋转平面呈一定角度倾斜排列，辊子两端通过轴承组件连接在蓝色支架上。背景为纯黑色。",
+  "metadata": {
+    "generation": {
+      "method": "qwen_api",
+      "backend": "api",
+      "provider": "qwen",
+      "model": "qwen3.7-plus",
+      "status": "success",
+      "api_error": null
+    },
+    "review": {
+      "required": false,
+      "status": null,
+      "reason": null,
+      "course_relevant": true
+    }
+  },
+  "error": null,
+  "method": "qwen_api",
+  "backend": "api",
+  "provider": "qwen",
+  "model": "qwen3.7-plus",
+  "status": "success",
+  "api_error": null,
+  "indexable": true,
+  "review_required": false,
+  "review_reason": null,
+  "review_status": null,
+  "course_relevant": true
+}

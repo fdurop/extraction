@@ -1,0 +1,33 @@
+{
+  "original_path": "output/qwen_qwen3.7-plus_7/debug/images/w07-3-麦克纳姆轮小车_p5_img3.png",
+  "enhanced_path": "output/qwen_qwen3.7-plus_7/debug/images/w07-3-麦克纳姆轮小车_p5_img3_enhanced.png",
+  "description": "类型：示意图\n图片展示了麦克纳姆轮（麦轮）的受力分析模型。图中包含灰色矩形轮毂、四个黑色椭圆辊子及中心接触点。红色实线表示轮毂轴线，绿色虚线表示辊子轴线。蓝色向下箭头标记为v，代表速度方向；黄色向上箭头标记为Ff，代表摩擦力方向。橙色箭头将Ff分解为垂直于辊子轴线的分量F⊥和平行于辊子轴线的分量F∥。左上角有红色弯曲箭头指示运动趋势，右侧有蓝色弯曲箭头指示轮毂旋转方向。图注明确区分了虚线代表辊子坐标系，实线代表轮毂坐标系。",
+  "metadata": {
+    "generation": {
+      "method": "qwen_api",
+      "backend": "api",
+      "provider": "qwen",
+      "model": "qwen3.7-plus",
+      "status": "success",
+      "api_error": null
+    },
+    "review": {
+      "required": false,
+      "status": null,
+      "reason": null,
+      "course_relevant": true
+    }
+  },
+  "error": null,
+  "method": "qwen_api",
+  "backend": "api",
+  "provider": "qwen",
+  "model": "qwen3.7-plus",
+  "status": "success",
+  "api_error": null,
+  "indexable": true,
+  "review_required": false,
+  "review_reason": null,
+  "review_status": null,
+  "course_relevant": true
+}

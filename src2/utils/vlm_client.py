@@ -287,10 +287,11 @@ class ApiVLMClient:
                 details = usage.get("completion_tokens_details") or usage.get("output_tokens_details") or {}
                 if self.logger:
                     self.logger.info(
-                        "VLM API success: operation=%s model=%s prompt_tokens=%s "
+                        "VLM API success: operation=%s model=%s image=%s prompt_tokens=%s "
                         "completion_tokens=%s reasoning_tokens=%s total_tokens=%s",
                         operation,
                         self.model,
+                        image_path,
                         usage.get("prompt_tokens"),
                         usage.get("completion_tokens"),
                         details.get("reasoning_tokens"),
@@ -303,9 +304,11 @@ class ApiVLMClient:
                 last_error = exc
                 if self.logger:
                     self.logger.warning(
-                        "VLM API attempt failed: operation=%s model=%s attempt=%s/%s error=%s",
+                        "VLM API attempt failed: operation=%s model=%s image=%s "
+                        "attempt=%s/%s error=%s",
                         operation,
                         self.model,
+                        image_path,
                         attempt + 1,
                         request_retries + 1,
                         exc,

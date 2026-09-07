@@ -1,0 +1,33 @@
+{
+  "original_path": "output/qwen_qwen3.7-plus_7/debug/images/w04-1-有刷直流电机驱动器及其应用_slide_23_img_2.png",
+  "enhanced_path": "output/qwen_qwen3.7-plus_7/debug/images/w04-1-有刷直流电机驱动器及其应用_slide_23_img_2_enhanced.png",
+  "description": "类型：照片\n图片展示了一辆智能小车实物，主体为银色金属矩形 chassis，四角安装有黑色麦克纳姆轮。车头前方通过蓝色支架固定有传感器模块，包含两个银色圆柱形超声波探头及下方一排黑色红外或循迹传感器。车身顶部可见多色导线连接至绿色接线端子，并用黑色胶带固定排线。车体表面贴有黄色标签，印有“前进方”字样（部分被遮挡）。该图片直观展示了课程提及的传感器（如超声波）在小车上的实际安装布局与硬件形态。",
+  "metadata": {
+    "generation": {
+      "method": "qwen_api",
+      "backend": "api",
+      "provider": "qwen",
+      "model": "qwen3.7-plus",
+      "status": "success",
+      "api_error": null
+    },
+    "review": {
+      "required": false,
+      "status": null,
+      "reason": null,
+      "course_relevant": true
+    }
+  },
+  "error": null,
+  "method": "qwen_api",
+  "backend": "api",
+  "provider": "qwen",
+  "model": "qwen3.7-plus",
+  "status": "success",
+  "api_error": null,
+  "indexable": true,
+  "review_required": false,
+  "review_reason": null,
+  "review_status": null,
+  "course_relevant": true
+}

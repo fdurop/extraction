@@ -1,0 +1,38 @@
+{
+  "page": 6,
+  "formula_count": 1,
+  "accepted_count": 1,
+  "review_count": 0,
+  "formulas": [
+    {
+      "type": "equation",
+      "content": "t = (last_loop_time - Buttons.tstart) * 1.0e-6",
+      "latex": "t = (last_loop_time - Buttons.tstart) * 1.0e-6",
+      "variable": "t",
+      "expression": "(last_loop_time - Buttons.tstart) * 1.0e-6",
+      "position": [
+        690,
+        736
+      ],
+      "source_type": "text_simple_equation",
+      "extraction_method": "text_rule",
+      "plain_text": "t = (last_loop_time - Buttons.tstart) * 1.0e-6",
+      "name": "",
+      "meaning": "",
+      "description": "",
+      "symbols": [],
+      "conditions": [],
+      "uncertain_symbols": [],
+      "confidence": 0.78,
+      "validation_issues": [],
+      "validation_status": "passed",
+      "review_required": false,
+      "review_reason": null,
+      "review_status": null,
+      "indexable": true,
+      "formula_id": "w13-2-机电系统在动力学与控制中的应用 - 副本_pdf_page_6_formula_1",
+      "page_num": 6
+    }
+  ],
+  "timestamp": "2026-09-07T19:56:47.147118"
+}

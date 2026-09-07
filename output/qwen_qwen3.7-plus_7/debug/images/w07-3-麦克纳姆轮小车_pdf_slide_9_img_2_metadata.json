@@ -1,0 +1,33 @@
+{
+  "original_path": "output/qwen_qwen3.7-plus_7/debug/images/w07-3-麦克纳姆轮小车_p9_img3.jpeg",
+  "enhanced_path": "output/qwen_qwen3.7-plus_7/debug/images/w07-3-麦克纳姆轮小车_p9_img3_enhanced.jpeg",
+  "description": "类型：照片\n图片展示了一块DFROBOT品牌的四路直流电机驱动扩展板（Quad Motor Driver Shield for Arduino）。板载黑色PCB，上方排列四个绿色接线端子用于连接电机，左侧有红色排针接口及蓝色电源接线端子（标有PWR+、-），右侧为绿色长排针。板上可见两颗主控芯片及丝印标识。结合页面文字，该模块插在UNO上使用，通过D3-D12引脚输出PWM和DIR信号控制四个麦轮小车电机，其中D3/D9/D10/D11采用490Hz PWM，D5/D6采用980Hz PWM。",
+  "metadata": {
+    "generation": {
+      "method": "qwen_api",
+      "backend": "api",
+      "provider": "qwen",
+      "model": "qwen3.7-plus",
+      "status": "success",
+      "api_error": null
+    },
+    "review": {
+      "required": false,
+      "status": null,
+      "reason": null,
+      "course_relevant": true
+    }
+  },
+  "error": null,
+  "method": "qwen_api",
+  "backend": "api",
+  "provider": "qwen",
+  "model": "qwen3.7-plus",
+  "status": "success",
+  "api_error": null,
+  "indexable": true,
+  "review_required": false,
+  "review_reason": null,
+  "review_status": null,
+  "course_relevant": true
+}

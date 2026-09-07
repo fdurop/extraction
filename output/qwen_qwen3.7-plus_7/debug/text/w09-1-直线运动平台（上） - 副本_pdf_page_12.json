@@ -1,0 +1,42 @@
+{
+  "page_num": 11,
+  "raw_text": "机电系统原理及实践—— 直线运动平台（上）\n机电智控实验室tangguoan@fudan.edu.cn mmguo@fudan.edu.cn\n§4 作业：实现滑台初始化复位\n上电后\n①触碰滑台边界：滑台缓\n缓移至一侧边缘，触发\n接近开关（灯亮）；\n②到达起始位置：反向移\n动，一旦接近开关复位\n(灯灭)，立即停止；\n③处于初始就绪状态，等\n待后续控制指令。\n12-12\nA\nA\nB\nB\nPUL+\nPUL-\nDIR+\nDIR-\nENA+\nENA-\nGND\nEMG\nD7\nGND\nD6\nGND\nGND\nD5\nCOM\nD4\nGND\nA0\n5V\n5V\nA\nA\nB\nB\n+Vdc GND\nD10\nGND\nD11\nD12\n右移\n左移\nLIM-左\nZ1\nZ2\nLIM-右\nAI\nUNO\n步进电机\n驱动器\n方向\n操纵杆\n步进\n电机\n强电\n电源\n启停开关\nDI\nDI\nDO\nDO\nDI\n接近\n开关\n急停\n开关\n电位器\nDI\nDI\n",
+  "cleaned_text": "§4 作业：实现滑台初始化复位\n上电后\n①触碰滑台边界：滑台缓\n缓移至一侧边缘，触发\n接近开关（灯亮）；\n②到达起始位置：反向移\n动，一旦接近开关复位\n(灯灭)，立即停止；\n③处于初始就绪状态，等\n待后续控制指令。\nA\nA\nB\nB\nPUL+\nPUL-\nDIR+\nDIR-\nENA+\nENA-\nEMG\nD7\nD6\nD5\nCOM\nD4\nA0\n5V\n5V\nA\nA\nB\nB\n+Vdc GND\nD10\nD11\nD12\n右移\n左移\nLIM-左\nZ1\nZ2\nLIM-右\nAI\nUNO\n步进电机\n驱动器\n方向\n操纵杆\n步进\n电机\n强电\n电源\n启停开关\nDI\nDI\nDO\nDO\nDI\n接近\n开关\n急停\n开关\n电位器\nDI\nDI",
+  "key_points": [
+    "待后续控制指令。",
+    "A",
+    "A",
+    "B",
+    "B",
+    "PUL+",
+    "PUL-",
+    "DIR+",
+    "DIR-",
+    "ENA+"
+  ],
+  "technical_terms": [
+    "AI",
+    "COM",
+    "DI",
+    "DIR",
+    "DO",
+    "EMG",
+    "ENA",
+    "GND",
+    "LIM-",
+    "PUL",
+    "UNO",
+    "实现滑台",
+    "待后续控制",
+    "步进电机",
+    "触碰滑台"
+  ],
+  "has_images": false,
+  "image_count": 0,
+  "image_paths": [],
+  "metadata": {
+    "char_count": 407,
+    "word_count": 79,
+    "line_count": 76
+  }
+}

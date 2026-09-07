@@ -1,0 +1,33 @@
+{
+  "original_path": "output/qwen_qwen3.7-plus_7/debug/images/w14-1-数字通信_p13_img13.jpeg",
+  "enhanced_path": "output/qwen_qwen3.7-plus_7/debug/images/w14-1-数字通信_p13_img13_enhanced.jpeg",
+  "description": "类型：示意图\n图片展示了HC06蓝牙模块与Arduino开发板的硬件连接示意。左侧为插在白色面包板上的蓝色HC06模块，右侧为蓝色Arduino Uno板。两者之间通过四根彩色导线连接：红线连接模块VCC与板子5V引脚，黑线连接模块GND与板子GND，绿线连接模块TXD与板子数字引脚0（RX），黄线连接模块RXD与板子数字引脚1（TX）。",
+  "metadata": {
+    "generation": {
+      "method": "qwen_api",
+      "backend": "api",
+      "provider": "qwen",
+      "model": "qwen3.7-plus",
+      "status": "success",
+      "api_error": null
+    },
+    "review": {
+      "required": false,
+      "status": null,
+      "reason": null,
+      "course_relevant": true
+    }
+  },
+  "error": null,
+  "method": "qwen_api",
+  "backend": "api",
+  "provider": "qwen",
+  "model": "qwen3.7-plus",
+  "status": "success",
+  "api_error": null,
+  "indexable": true,
+  "review_required": false,
+  "review_reason": null,
+  "review_status": null,
+  "course_relevant": true
+}

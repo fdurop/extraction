@@ -1,0 +1,33 @@
+{
+  "original_path": "output/qwen_qwen3.7-plus_7/debug/images/w08-1-步进电机驱动器_p11_img3.jpeg",
+  "enhanced_path": "output/qwen_qwen3.7-plus_7/debug/images/w08-1-步进电机驱动器_p11_img3_enhanced.jpeg",
+  "description": "类型：照片\n图片展示了步进电机驱动器的局部特写。主体为黑色电路板，中间嵌有一个蓝色的8位拨码开关（DIP switch），开关下方标有数字1至8及“ON”字样，上方印有“Setting”及功能说明表格。电路板左右两侧各安装有一个绿色的接线端子。结合页面文字可知，该拨码开关用于设置驱动器的“细分选择”（脉冲/圈）和“电流选择”，绿色端子分别对应“控制回路”（PUL/DIR/ENA）与“动力回路”。",
+  "metadata": {
+    "generation": {
+      "method": "qwen_api",
+      "backend": "api",
+      "provider": "qwen",
+      "model": "qwen3.7-plus",
+      "status": "success",
+      "api_error": null
+    },
+    "review": {
+      "required": false,
+      "status": null,
+      "reason": null,
+      "course_relevant": true
+    }
+  },
+  "error": null,
+  "method": "qwen_api",
+  "backend": "api",
+  "provider": "qwen",
+  "model": "qwen3.7-plus",
+  "status": "success",
+  "api_error": null,
+  "indexable": true,
+  "review_required": false,
+  "review_reason": null,
+  "review_status": null,
+  "course_relevant": true
+}

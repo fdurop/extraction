@@ -1,0 +1,33 @@
+{
+  "original_path": "output/qwen_qwen3.7-plus_7/debug/images/w01-1-课程简介_p10_img11.jpeg",
+  "enhanced_path": "output/qwen_qwen3.7-plus_7/debug/images/w01-1-课程简介_p10_img11_enhanced.jpeg",
+  "description": "类型：照片\n图片展示了一套放置在金属框架桌上的机电实验装置。主体为Alctron品牌的黑色机架式电子设备，面板包含旋钮、接口及内部电路模块。设备下方连接一套直线运动平台，由两条平行金属导轨、黑色滑块组件及同步带传动结构组成。一根黑色线缆从滑块处垂直悬挂至地面，末端系有一个橙黄色小型重物。背景可见灰色地毯及白色桌腿支架。",
+  "metadata": {
+    "generation": {
+      "method": "qwen_api",
+      "backend": "api",
+      "provider": "qwen",
+      "model": "qwen3.7-plus",
+      "status": "success",
+      "api_error": null
+    },
+    "review": {
+      "required": false,
+      "status": null,
+      "reason": null,
+      "course_relevant": true
+    }
+  },
+  "error": null,
+  "method": "qwen_api",
+  "backend": "api",
+  "provider": "qwen",
+  "model": "qwen3.7-plus",
+  "status": "success",
+  "api_error": null,
+  "indexable": true,
+  "review_required": false,
+  "review_reason": null,
+  "review_status": null,
+  "course_relevant": true
+}

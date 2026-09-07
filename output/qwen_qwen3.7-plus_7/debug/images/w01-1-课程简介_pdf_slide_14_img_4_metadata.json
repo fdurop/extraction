@@ -1,0 +1,33 @@
+{
+  "original_path": "output/qwen_qwen3.7-plus_7/debug/images/w01-1-课程简介_p14_img5.jpeg",
+  "enhanced_path": "output/qwen_qwen3.7-plus_7/debug/images/w01-1-课程简介_p14_img5_enhanced.jpeg",
+  "description": "类型：照片\n画面展示机电智控实验室场景。前景桌面上放置蓝色收纳筐，内装大量连接复杂的电子线路与模块，旁有黑色笔记本电脑及机械装置。三名学生正在操作，其中一人比出“V”字手势指向屏幕。背景投影幕显示Python代码（可见import time, cap_device等参数）及实时手势识别界面，界面上叠加了手部骨骼关键点连线，演示了计算机视觉与硬件交互的实践过程。",
+  "metadata": {
+    "generation": {
+      "method": "qwen_api",
+      "backend": "api",
+      "provider": "qwen",
+      "model": "qwen3.7-plus",
+      "status": "success",
+      "api_error": null
+    },
+    "review": {
+      "required": false,
+      "status": null,
+      "reason": null,
+      "course_relevant": true
+    }
+  },
+  "error": null,
+  "method": "qwen_api",
+  "backend": "api",
+  "provider": "qwen",
+  "model": "qwen3.7-plus",
+  "status": "success",
+  "api_error": null,
+  "indexable": true,
+  "review_required": false,
+  "review_reason": null,
+  "review_status": null,
+  "course_relevant": true
+}

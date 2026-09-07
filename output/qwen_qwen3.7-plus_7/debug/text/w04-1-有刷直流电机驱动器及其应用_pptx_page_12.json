@@ -1,0 +1,22 @@
+{
+  "page_num": 11,
+  "raw_text": "§3 \n实践：\n有刷直流电机驱动与控制\n有刷直流电机驱动板\n23-",
+  "cleaned_text": "§3\n实践：\n有刷直流电机驱动与控制\n有刷直流电机驱动板",
+  "key_points": [
+    "实践："
+  ],
+  "technical_terms": [
+    "有刷直流电机",
+    "有刷直流电机驱动与控制"
+  ],
+  "has_images": true,
+  "image_count": 1,
+  "image_paths": [
+    "output/qwen_qwen3.7-plus_7/debug/images/w04-1-有刷直流电机驱动器及其应用_slide_12_img_1.png"
+  ],
+  "metadata": {
+    "char_count": 33,
+    "word_count": 5,
+    "line_count": 5
+  }
+}

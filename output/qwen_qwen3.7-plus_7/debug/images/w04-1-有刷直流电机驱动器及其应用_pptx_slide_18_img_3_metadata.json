@@ -1,0 +1,33 @@
+{
+  "original_path": "output/qwen_qwen3.7-plus_7/debug/images/w04-1-有刷直流电机驱动器及其应用_slide_18_img_3.png",
+  "enhanced_path": "output/qwen_qwen3.7-plus_7/debug/images/w04-1-有刷直流电机驱动器及其应用_slide_18_img_3_enhanced.png",
+  "description": "类型：照片\n图片展示了一个敞开的金属矩形机箱内部结构。箱内四角各安装有一个银色圆柱形直流电机，电机轴穿过侧板伸出外部。右下角和左下角的电机旁分别贴有黄色标签，文字为“右前”和“左前”。机箱中部固定着一个浅灰色长方形接线盒，侧面带有三个灰色防水接头。上方边缘排列着绿色接线端子排，红、黑、黄、绿、白等多色导线将电机、端子排与接线盒相互连接。",
+  "metadata": {
+    "generation": {
+      "method": "qwen_api",
+      "backend": "api",
+      "provider": "qwen",
+      "model": "qwen3.7-plus",
+      "status": "success",
+      "api_error": null
+    },
+    "review": {
+      "required": false,
+      "status": null,
+      "reason": null,
+      "course_relevant": true
+    }
+  },
+  "error": null,
+  "method": "qwen_api",
+  "backend": "api",
+  "provider": "qwen",
+  "model": "qwen3.7-plus",
+  "status": "success",
+  "api_error": null,
+  "indexable": true,
+  "review_required": false,
+  "review_reason": null,
+  "review_status": null,
+  "course_relevant": true
+}

@@ -1,0 +1,33 @@
+{
+  "original_path": "output/qwen_qwen3.7-plus_7/debug/images/w15-2-机器人运动学及其应用_p18_img4.jpeg",
+  "enhanced_path": "output/qwen_qwen3.7-plus_7/debug/images/w15-2-机器人运动学及其应用_p18_img4_enhanced.jpeg",
+  "description": "类型：照片\n图片展示了一台轮足式机器狗实物，位于浅色水泥地面上。机器人主体呈白色盒状，顶部安装有红色圆柱形部件（疑似传感器），腹部可见蓝色电池或组件。机身两侧对称伸出四条黑色机械腿，腿部关节处有银色电机，末端执行器为黑色轮子。机器人处于四足站立状态，整体结构紧凑，对应课件中关于轮足式机器狗及VMC控制的演示内容。",
+  "metadata": {
+    "generation": {
+      "method": "qwen_api",
+      "backend": "api",
+      "provider": "qwen",
+      "model": "qwen3.7-plus",
+      "status": "success",
+      "api_error": null
+    },
+    "review": {
+      "required": false,
+      "status": null,
+      "reason": null,
+      "course_relevant": true
+    }
+  },
+  "error": null,
+  "method": "qwen_api",
+  "backend": "api",
+  "provider": "qwen",
+  "model": "qwen3.7-plus",
+  "status": "success",
+  "api_error": null,
+  "indexable": true,
+  "review_required": false,
+  "review_reason": null,
+  "review_status": null,
+  "course_relevant": true
+}

@@ -1,0 +1,33 @@
+{
+  "original_path": "output/qwen_qwen3.7-plus_7/debug/images/w07-3-麦克纳姆轮小车_p5_img2.png",
+  "enhanced_path": "output/qwen_qwen3.7-plus_7/debug/images/w07-3-麦克纳姆轮小车_p5_img2_enhanced.png",
+  "description": "类型：示意图\n图中展示了麦克纳姆轮B轮的地面投影视图。红色实线表示轮毂轴线，向右延伸并标有旋转箭头；绿色虚线表示辊子轴线，与轮毂轴线夹角标注为γ=45°。图中包含三个深灰色椭圆代表辊子。橙色箭头表示摩擦力分量：F∥x沿轮毂轴线向左，F∥y垂直轮毂轴线向上，二者合成红色的总摩擦力矢量F∥（指向左上方）。此外还有绿色箭头沿辊子轴线方向分布，以及左上角的红色虚线旋转箭头。背景重复排列着“复旦大学 机电智控实验室”的水印文字。",
+  "metadata": {
+    "generation": {
+      "method": "qwen_api",
+      "backend": "api",
+      "provider": "qwen",
+      "model": "qwen3.7-plus",
+      "status": "success",
+      "api_error": null
+    },
+    "review": {
+      "required": false,
+      "status": null,
+      "reason": null,
+      "course_relevant": true
+    }
+  },
+  "error": null,
+  "method": "qwen_api",
+  "backend": "api",
+  "provider": "qwen",
+  "model": "qwen3.7-plus",
+  "status": "success",
+  "api_error": null,
+  "indexable": true,
+  "review_required": false,
+  "review_reason": null,
+  "review_status": null,
+  "course_relevant": true
+}

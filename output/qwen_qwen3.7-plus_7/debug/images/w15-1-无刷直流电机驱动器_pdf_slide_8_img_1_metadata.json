@@ -1,0 +1,33 @@
+{
+  "original_path": "output/qwen_qwen3.7-plus_7/debug/images/w15-1-无刷直流电机驱动器_p8_img3.jpeg",
+  "enhanced_path": "output/qwen_qwen3.7-plus_7/debug/images/w15-1-无刷直流电机驱动器_p8_img3_enhanced.jpeg",
+  "description": "类型：照片\n图片展示了小米CyberGear微电机的实物外观。主体为银灰色圆柱形金属外壳，表面带有散热棱纹。前端面中心为突出的转子轴，轴端可见键槽结构；轴周围分布有六个沉头安装孔。电机侧面延伸出黑色的驱动电路板模块及连接接口。结合页面文字标注，该实物对应包含驱动电路板、编码器、线圈、外壳、行星减速器及转子等组件，用于演示集成驱动和通信的BLDC电机结构。",
+  "metadata": {
+    "generation": {
+      "method": "qwen_api",
+      "backend": "api",
+      "provider": "qwen",
+      "model": "qwen3.7-plus",
+      "status": "success",
+      "api_error": null
+    },
+    "review": {
+      "required": false,
+      "status": null,
+      "reason": null,
+      "course_relevant": true
+    }
+  },
+  "error": null,
+  "method": "qwen_api",
+  "backend": "api",
+  "provider": "qwen",
+  "model": "qwen3.7-plus",
+  "status": "success",
+  "api_error": null,
+  "indexable": true,
+  "review_required": false,
+  "review_reason": null,
+  "review_status": null,
+  "course_relevant": true
+}

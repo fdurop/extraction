@@ -1,0 +1,33 @@
+{
+  "original_path": "output/qwen_qwen3.7-plus_7/debug/images/w15-2-机器人运动学及其应用_p15_img3.jpeg",
+  "enhanced_path": "output/qwen_qwen3.7-plus_7/debug/images/w15-2-机器人运动学及其应用_p15_img3_enhanced.jpeg",
+  "description": "类型：照片\n图片展示了一个银灰色金属外壳的圆柱形机电组件（小米CyberGear微电机）。物体侧面具有明显的散热鳍片结构，前端面为圆形盖板，中心设有带键槽的输出轴孔，周围环绕分布着六个安装螺孔。顶部可见黑色的电气接口或线缆引出装置，边缘带有安装耳。图片直观呈现了该电机的外部机械构造、接口布局及整体形态。",
+  "metadata": {
+    "generation": {
+      "method": "qwen_api",
+      "backend": "api",
+      "provider": "qwen",
+      "model": "qwen3.7-plus",
+      "status": "success",
+      "api_error": null
+    },
+    "review": {
+      "required": false,
+      "status": null,
+      "reason": null,
+      "course_relevant": true
+    }
+  },
+  "error": null,
+  "method": "qwen_api",
+  "backend": "api",
+  "provider": "qwen",
+  "model": "qwen3.7-plus",
+  "status": "success",
+  "api_error": null,
+  "indexable": true,
+  "review_required": false,
+  "review_reason": null,
+  "review_status": null,
+  "course_relevant": true
+}

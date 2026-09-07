@@ -1,0 +1,33 @@
+{
+  "original_path": "output/qwen_qwen3.7-plus_7/debug/images/w03-1-直流电机原理_p7_img3.jpeg",
+  "enhanced_path": "output/qwen_qwen3.7-plus_7/debug/images/w03-1-直流电机原理_p7_img3_enhanced.jpeg",
+  "description": "类型：照片\n图片展示了一个红色基座的金属拨动开关实物。开关顶部有金属拨杆和固定螺母，底部有四个银色接线端子。侧面黄色标签印有品牌“XURUI”、型号“XT-22B”、参数“15A 250VAC”及认证标志。标签上方印有电路逻辑示意图，显示中间公共端（COM）可分别连通左侧或右侧触点，两端均标注“ON”及指示方向的箭头。该元件对应课程实践中用于控制直流电机转动方向的双刀双掷开关。",
+  "metadata": {
+    "generation": {
+      "method": "qwen_api",
+      "backend": "api",
+      "provider": "qwen",
+      "model": "qwen3.7-plus",
+      "status": "success",
+      "api_error": null
+    },
+    "review": {
+      "required": false,
+      "status": null,
+      "reason": null,
+      "course_relevant": true
+    }
+  },
+  "error": null,
+  "method": "qwen_api",
+  "backend": "api",
+  "provider": "qwen",
+  "model": "qwen3.7-plus",
+  "status": "success",
+  "api_error": null,
+  "indexable": true,
+  "review_required": false,
+  "review_reason": null,
+  "review_status": null,
+  "course_relevant": true
+}

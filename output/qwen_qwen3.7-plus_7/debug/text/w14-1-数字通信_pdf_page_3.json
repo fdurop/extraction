@@ -1,0 +1,18 @@
+{
+  "page_num": 2,
+  "raw_text": "机电系统原理及实践—— 数字通信\n机电智控实验室tangguoan@fudan.edu.cn mmguo@fudan.edu.cn\n§1 数字通信概述\n数字通信(digital telecommunications): 用数字信号作为载体来传输消息。\n适应各种通信业务（电话、电报、图像、数据等）需求；\n抗干扰能力强；\n通信距离远；\n保密性好；\n体积小，维护简便；\n便于计算机管理。\n数字通信方式\n23-3\n用户\n设备\n传输/交换\n设备\n编码/调制/加密\n解密/解调/解码\n解密/解调/解码\n编码/调制/加密\n用户\n设备\n单工/半双工/全双工\n串行/并行\n同步/异步\n",
+  "cleaned_text": "§1 数字通信概述\n数字通信(digital telecommunications): 用数字信号作为载体来传输消息。\n适应各种通信业务（电话、电报、图像、数据等）需求；\n抗干扰能力强；\n通信距离远；\n保密性好；\n体积小，维护简便；\n便于计算机管理。\n数字通信方式\n用户\n设备\n传输/交换\n设备\n编码/调制/加密\n解密/解调/解码\n解密/解调/解码\n编码/调制/加密\n用户\n设备\n单工/半双工/全双工\n串行/并行\n同步/异步",
+  "key_points": [
+    "数字通信(digital telecommunications): 用数字信号作为载体来传输消息。",
+    "便于计算机管理。"
+  ],
+  "technical_terms": [],
+  "has_images": false,
+  "image_count": 0,
+  "image_paths": [],
+  "metadata": {
+    "char_count": 292,
+    "word_count": 30,
+    "line_count": 26
+  }
+}

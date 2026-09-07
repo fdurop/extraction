@@ -1,0 +1,22 @@
+{
+  "page_num": 1,
+  "raw_text": "机电系统原理及实践—— Arduino软硬件基础\n机电智控实验室tangguoan@fudan.edu.cn mmguo@fudan.edu.cn\n内容提要\n14-2\nArduino Uno\nArduino IDE\n实践：熟悉Arduino Uno\n二进制与位运算\n作业：用LED灯发送摩斯电码\n室 复旦大\n智控实验室 复旦大学 机电\n学 机电智控实验室 复旦大学 机电智控实验\n复旦大学 机电智控实验室 复旦大学 机电智控实验室 复旦\n大学 机电智控实验室 复旦大学 机电智控实验室 复旦大学 机电\n电智控实验室 复旦大学 机电智控实验室 复旦大学 机电智控实\n验室 复旦大学 机电智控实验室 复旦大学 机电智控实验室 \n旦大学 机电智控实验室 复旦大学 机电智控\n电智控实验室 复旦大学 \n验室 复\n",
+  "cleaned_text": "内容提要\nArduino Uno\nArduino IDE\n实践：熟悉Arduino Uno\n二进制与位运算\n作业：用LED灯发送摩斯电码",
+  "key_points": [
+    "Arduino Uno",
+    "Arduino IDE"
+  ],
+  "technical_terms": [
+    "Arduino",
+    "IDE",
+    "Uno"
+  ],
+  "has_images": false,
+  "image_count": 0,
+  "image_paths": [],
+  "metadata": {
+    "char_count": 352,
+    "word_count": 52,
+    "line_count": 20
+  }
+}

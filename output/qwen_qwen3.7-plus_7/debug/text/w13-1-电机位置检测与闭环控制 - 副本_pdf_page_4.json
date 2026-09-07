@@ -1,0 +1,22 @@
+{
+  "page_num": 3,
+  "raw_text": "机电系统原理及实践—— 电机位置检测与闭环控制\n机电智控实验室tangguoan@fudan.edu.cn mmguo@fudan.edu.cn\n编码器的应用\n16-4\n编码器\n测量角位移\n光栅尺\n测量线位移\n步进电机+编码器\n电驱-数显铣床\n登辉项目中使用数控铣床\n光栅尺\n闭环\n步进\n电机\n操控盒\n",
+  "cleaned_text": "编码器的应用\n编码器\n测量角位移\n光栅尺\n测量线位移\n步进电机+编码器\n电驱-数显铣床\n登辉项目中使用数控铣床\n光栅尺\n闭环\n步进\n电机\n操控盒",
+  "key_points": [],
+  "technical_terms": [
+    "步进电机"
+  ],
+  "has_images": true,
+  "image_count": 4,
+  "image_paths": [
+    "output/qwen_qwen3.7-plus_7/debug/images/w13-1-电机位置检测与闭环控制 - 副本_p4_img3.jpeg",
+    "output/qwen_qwen3.7-plus_7/debug/images/w13-1-电机位置检测与闭环控制 - 副本_p4_img4.jpeg",
+    "output/qwen_qwen3.7-plus_7/debug/images/w13-1-电机位置检测与闭环控制 - 副本_p4_img5.jpeg",
+    "output/qwen_qwen3.7-plus_7/debug/images/w13-1-电机位置检测与闭环控制 - 副本_p4_img6.jpeg"
+  ],
+  "metadata": {
+    "char_count": 151,
+    "word_count": 18,
+    "line_count": 17
+  }
+}

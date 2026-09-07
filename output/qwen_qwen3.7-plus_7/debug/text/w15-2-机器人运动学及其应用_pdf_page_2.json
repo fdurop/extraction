@@ -1,0 +1,17 @@
+{
+  "page_num": 1,
+  "raw_text": "机电系统原理及实践—— 机器人运动学简介\n机电智控实验室tangguoan@fudan.edu.cn mmguo@fudan.edu.cn\n内容提要\n21-2\n机器人简介\n二连杆机械臂的运动学与逆运动学\n应用：机器狗\n实践：二连杆机械臂的运动学控制\n",
+  "cleaned_text": "内容提要\n机器人简介\n二连杆机械臂的运动学与逆运动学\n应用：机器狗\n实践：二连杆机械臂的运动学控制",
+  "key_points": [],
+  "technical_terms": [
+    "二连杆机械臂的运动学控制"
+  ],
+  "has_images": false,
+  "image_count": 0,
+  "image_paths": [],
+  "metadata": {
+    "char_count": 125,
+    "word_count": 10,
+    "line_count": 9
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "page_num": 11,
+  "raw_text": "END\n复旦大学 机电智控实验室\n",
+  "cleaned_text": "END",
+  "key_points": [
+    "END"
+  ],
+  "technical_terms": [
+    "END"
+  ],
+  "has_images": false,
+  "image_count": 0,
+  "image_paths": [],
+  "metadata": {
+    "char_count": 17,
+    "word_count": 3,
+    "line_count": 3
+  }
+}

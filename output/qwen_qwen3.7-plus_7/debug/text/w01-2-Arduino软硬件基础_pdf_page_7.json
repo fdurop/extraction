@@ -1,0 +1,24 @@
+{
+  "page_num": 6,
+  "raw_text": "机电系统原理及实践—— Arduino软硬件基础\n机电智控实验室tangguoan@fudan.edu.cn mmguo@fudan.edu.cn\n§3 实践：熟悉Arduino Uno\nHello World !\n14-7\n串口：一种数字通信接口。\nUSB就是一种串口。\nw01-s1-helloArduino.ino\n室 复旦大\n智控实验室 复旦大学 机电\n学 机电智控实验室 复旦大学 机电智控实验\n复旦大学 机电智控实验室 复旦大学 机电智控实验室 复旦\n大学 机电智控实验室 复旦大学 机电智控实验室 复旦大学 机电\n电智控实验室 复旦大学 机电智控实验室 复旦大学 机电智控实\n验室 复旦大学 机电智控实验室 复旦大学 机电智控实验室 \n旦大学 机电智控实验室 复旦大学 机电智控\n电智控实验室 复旦大学 \n验室 复\n",
+  "cleaned_text": "§3 实践：熟悉Arduino Uno\nHello World !\n串口：一种数字通信接口。\nUSB就是一种串口。\nw01-s1-helloArduino.ino",
+  "key_points": [
+    "Hello World !",
+    "串口：一种数字通信接口。",
+    "USB就是一种串口。"
+  ],
+  "technical_terms": [
+    "Uno",
+    "w01-s1-helloArduino"
+  ],
+  "has_images": true,
+  "image_count": 1,
+  "image_paths": [
+    "output/qwen_qwen3.7-plus_7/debug/images/w01-2-Arduino软硬件基础_p7_img2.jpeg"
+  ],
+  "metadata": {
+    "char_count": 366,
+    "word_count": 52,
+    "line_count": 19
+  }
+}

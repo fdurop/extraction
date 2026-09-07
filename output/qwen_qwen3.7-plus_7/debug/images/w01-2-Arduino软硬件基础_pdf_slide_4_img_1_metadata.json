@@ -1,0 +1,33 @@
+{
+  "original_path": "output/qwen_qwen3.7-plus_7/debug/images/w01-2-Arduino软硬件基础_p4_img2.jpeg",
+  "enhanced_path": "output/qwen_qwen3.7-plus_7/debug/images/w01-2-Arduino软硬件基础_p4_img2_enhanced.jpeg",
+  "description": "类型：照片\n图片展示了一块Arduino UNO R3开发板的实物俯视图。板上清晰可见USB接口、黑色圆柱形电源接口、复位（RESET）按钮及晶振等电子元件。顶部边缘排列着标有DIGITAL及PWM符号（~）的数字引脚0至13；底部边缘排列着标有ANALOG IN的模拟输入引脚A0至A5，以及POWER区域（包含3.3V、5V、GND、Vin）。板中央印有白色的Arduino标志和UNO字样，右侧有ICSP接口，整体呈现了该硬件的端口布局与物理形态。",
+  "metadata": {
+    "generation": {
+      "method": "qwen_api",
+      "backend": "api",
+      "provider": "qwen",
+      "model": "qwen3.7-plus",
+      "status": "success",
+      "api_error": null
+    },
+    "review": {
+      "required": false,
+      "status": null,
+      "reason": null,
+      "course_relevant": true
+    }
+  },
+  "error": null,
+  "method": "qwen_api",
+  "backend": "api",
+  "provider": "qwen",
+  "model": "qwen3.7-plus",
+  "status": "success",
+  "api_error": null,
+  "indexable": true,
+  "review_required": false,
+  "review_reason": null,
+  "review_status": null,
+  "course_relevant": true
+}

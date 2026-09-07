@@ -1,0 +1,33 @@
+{
+  "original_path": "output/qwen_qwen3.7-plus_7/debug/images/w03-1-直流电机原理_p7_img5.jpeg",
+  "enhanced_path": "output/qwen_qwen3.7-plus_7/debug/images/w03-1-直流电机原理_p7_img5_enhanced.jpeg",
+  "description": "类型：照片\n图片展示了一个橙白配色的双刀双掷开关实物。开关顶部设有两组红色接线端子及十字槽螺丝，中间有一个红色圆形拨动按钮。侧面可见卡扣结构。结合页面文字，该对象用于“实践：用一个双刀双掷开关控制有刷直流电机的转动方向”，对应电路图中的COM、红刀、黑刀及对接端子等连接节点，是课程实验的关键硬件组件。",
+  "metadata": {
+    "generation": {
+      "method": "qwen_api",
+      "backend": "api",
+      "provider": "qwen",
+      "model": "qwen3.7-plus",
+      "status": "success",
+      "api_error": null
+    },
+    "review": {
+      "required": false,
+      "status": null,
+      "reason": null,
+      "course_relevant": true
+    }
+  },
+  "error": null,
+  "method": "qwen_api",
+  "backend": "api",
+  "provider": "qwen",
+  "model": "qwen3.7-plus",
+  "status": "success",
+  "api_error": null,
+  "indexable": true,
+  "review_required": false,
+  "review_reason": null,
+  "review_status": null,
+  "course_relevant": true
+}

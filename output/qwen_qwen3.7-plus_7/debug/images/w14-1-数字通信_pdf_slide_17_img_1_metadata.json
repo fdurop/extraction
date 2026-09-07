@@ -1,0 +1,33 @@
+{
+  "original_path": "output/qwen_qwen3.7-plus_7/debug/images/w14-1-数字通信_p17_img4.jpeg",
+  "enhanced_path": "output/qwen_qwen3.7-plus_7/debug/images/w14-1-数字通信_p17_img4_enhanced.jpeg",
+  "description": "类型：示意图\n图片展示了一个6孔（2行3列）连接器的引脚定义图。左侧黄色框标注RESET2，黑色框标注GND；右侧上方浅蓝框标注SCK2和MISO2，下方红色框标注5V，浅蓝框标注MOSI2。各标签通过黑色导线分别连接至中间连接器图示的具体焊盘位置：RESET2连左上孔，GND连左下孔，SCK2连右上孔，MISO2连中上孔，5V连右下孔，MOSI2连右中孔。",
+  "metadata": {
+    "generation": {
+      "method": "qwen_api",
+      "backend": "api",
+      "provider": "qwen",
+      "model": "qwen3.7-plus",
+      "status": "success",
+      "api_error": null
+    },
+    "review": {
+      "required": false,
+      "status": null,
+      "reason": null,
+      "course_relevant": true
+    }
+  },
+  "error": null,
+  "method": "qwen_api",
+  "backend": "api",
+  "provider": "qwen",
+  "model": "qwen3.7-plus",
+  "status": "success",
+  "api_error": null,
+  "indexable": true,
+  "review_required": false,
+  "review_reason": null,
+  "review_status": null,
+  "course_relevant": true
+}

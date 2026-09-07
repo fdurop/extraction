@@ -1,0 +1,21 @@
+{
+  "page_num": 5,
+  "raw_text": "§3.1 \n步进电机\n调速原理\n17-\n时间中断计算速度",
+  "cleaned_text": "§3.1\n步进电机\n调速原理\n时间中断计算速度",
+  "key_points": [],
+  "technical_terms": [
+    "时间中断",
+    "步进电机"
+  ],
+  "has_images": true,
+  "image_count": 2,
+  "image_paths": [
+    "output/qwen_qwen3.7-plus_7/debug/images/w10-1-直线运动平台（下）_slide_6_img_1.png",
+    "output/qwen_qwen3.7-plus_7/debug/images/w10-1-直线运动平台（下）_slide_6_img_2.png"
+  ],
+  "metadata": {
+    "char_count": 28,
+    "word_count": 5,
+    "line_count": 5
+  }
+}

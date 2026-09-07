@@ -1,0 +1,33 @@
+{
+  "original_path": "output/qwen_qwen3.7-plus_7/debug/images/w09-1-直线运动平台（上） - 副本_p4_img3.jpeg",
+  "enhanced_path": "output/qwen_qwen3.7-plus_7/debug/images/w09-1-直线运动平台（上） - 副本_p4_img3_enhanced.jpeg",
+  "description": "类型：照片\n图片展示了一套直交型机械臂（多轴直线运动平台）实物。主体由两个相互垂直布置的银白色线性模组构成，分别代表不同的运动轴，其中竖向标注有“Z轴”。模组侧面印有红色“HIGUNE”品牌标识及型号文字。各轴末端均安装有黑色步进或伺服电机，模组上方覆盖有黑色的拖链（电缆保护链）。垂直轴滑块上装有黑色安装板，作为执行端接口。整体结构呈现典型的直角坐标机器人构型。",
+  "metadata": {
+    "generation": {
+      "method": "qwen_api",
+      "backend": "api",
+      "provider": "qwen",
+      "model": "qwen3.7-plus",
+      "status": "success",
+      "api_error": null
+    },
+    "review": {
+      "required": false,
+      "status": null,
+      "reason": null,
+      "course_relevant": true
+    }
+  },
+  "error": null,
+  "method": "qwen_api",
+  "backend": "api",
+  "provider": "qwen",
+  "model": "qwen3.7-plus",
+  "status": "success",
+  "api_error": null,
+  "indexable": true,
+  "review_required": false,
+  "review_reason": null,
+  "review_status": null,
+  "course_relevant": true
+}

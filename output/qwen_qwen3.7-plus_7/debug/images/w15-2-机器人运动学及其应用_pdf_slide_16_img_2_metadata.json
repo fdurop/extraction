@@ -1,0 +1,33 @@
+{
+  "original_path": "output/qwen_qwen3.7-plus_7/debug/images/w15-2-机器人运动学及其应用_p16_img4.jpeg",
+  "enhanced_path": "output/qwen_qwen3.7-plus_7/debug/images/w15-2-机器人运动学及其应用_p16_img4_enhanced.jpeg",
+  "description": "类型：照片\n图片展示了一个双足机器人腿部机械结构实物。左侧为银色金属框架组件，包含黑色圆形电机、白色齿轮盘及红黑导线；右侧为黑色方形电机模块，连接蓝色气管与多色线缆。左右两部分通过两根平行金属杆刚性连接。右侧组件下方垂直延伸出一根金属杆，末端装有灰色轮状足端。整体置于白色背景上，呈现侧视视角的机电组装形态。",
+  "metadata": {
+    "generation": {
+      "method": "qwen_api",
+      "backend": "api",
+      "provider": "qwen",
+      "model": "qwen3.7-plus",
+      "status": "success",
+      "api_error": null
+    },
+    "review": {
+      "required": false,
+      "status": null,
+      "reason": null,
+      "course_relevant": true
+    }
+  },
+  "error": null,
+  "method": "qwen_api",
+  "backend": "api",
+  "provider": "qwen",
+  "model": "qwen3.7-plus",
+  "status": "success",
+  "api_error": null,
+  "indexable": true,
+  "review_required": false,
+  "review_reason": null,
+  "review_status": null,
+  "course_relevant": true
+}

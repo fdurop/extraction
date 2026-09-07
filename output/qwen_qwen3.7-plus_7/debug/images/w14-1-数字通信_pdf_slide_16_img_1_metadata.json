@@ -1,0 +1,33 @@
+{
+  "original_path": "output/qwen_qwen3.7-plus_7/debug/images/w14-1-数字通信_p16_img3.jpeg",
+  "enhanced_path": "output/qwen_qwen3.7-plus_7/debug/images/w14-1-数字通信_p16_img3_enhanced.jpeg",
+  "description": "类型：照片\n图片展示了一个名为“AT01-2 已连接”的手机应用程序界面。顶部显示蓝牙连接状态及电量信息。界面中部设有“HEX模式”和“键盘模式”的切换开关。主体区域为蓝色控制按钮矩阵，包含三排功能键（如“按键1”至“按键6”）、方向控制键（“UP”、“LEFT”、“OK”、“RIGHT”）以及底部的“发送指令”按钮。底部导航栏包含“设备”、“终端”等图标。该界面作为上位机，对应课程中通过手机发送控制指令以驱动麦轮车的环节。",
+  "metadata": {
+    "generation": {
+      "method": "qwen_api",
+      "backend": "api",
+      "provider": "qwen",
+      "model": "qwen3.7-plus",
+      "status": "success",
+      "api_error": null
+    },
+    "review": {
+      "required": false,
+      "status": null,
+      "reason": null,
+      "course_relevant": true
+    }
+  },
+  "error": null,
+  "method": "qwen_api",
+  "backend": "api",
+  "provider": "qwen",
+  "model": "qwen3.7-plus",
+  "status": "success",
+  "api_error": null,
+  "indexable": true,
+  "review_required": false,
+  "review_reason": null,
+  "review_status": null,
+  "course_relevant": true
+}

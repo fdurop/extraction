@@ -1,0 +1,33 @@
+{
+  "original_path": "output/qwen_qwen3.7-plus_7/debug/images/w01-1-课程简介_p11_img3.jpeg",
+  "enhanced_path": "output/qwen_qwen3.7-plus_7/debug/images/w01-1-课程简介_p11_img3_enhanced.jpeg",
+  "description": "类型：照片\n标题为“机械臂闭环减振”。图片展示了一个双连杆机械臂实验装置，包含金属臂杆、关节电机及末端执行器，背景可见圆形转台与地面标记。下方并列两个坐标图，纵轴范围-2至2，横轴范围0至18。左侧图表标注“自由衰减”，右侧图表标注“闭环减振”，用于对比不同控制策略下的系统响应波形。",
+  "metadata": {
+    "generation": {
+      "method": "qwen_api",
+      "backend": "api",
+      "provider": "qwen",
+      "model": "qwen3.7-plus",
+      "status": "success",
+      "api_error": null
+    },
+    "review": {
+      "required": false,
+      "status": null,
+      "reason": null,
+      "course_relevant": true
+    }
+  },
+  "error": null,
+  "method": "qwen_api",
+  "backend": "api",
+  "provider": "qwen",
+  "model": "qwen3.7-plus",
+  "status": "success",
+  "api_error": null,
+  "indexable": true,
+  "review_required": false,
+  "review_reason": null,
+  "review_status": null,
+  "course_relevant": true
+}

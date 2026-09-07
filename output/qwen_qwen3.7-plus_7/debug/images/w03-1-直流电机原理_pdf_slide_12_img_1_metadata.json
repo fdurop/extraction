@@ -1,0 +1,33 @@
+{
+  "original_path": "output/qwen_qwen3.7-plus_7/debug/images/w03-1-直流电机原理_p12_img2.png",
+  "enhanced_path": "output/qwen_qwen3.7-plus_7/debug/images/w03-1-直流电机原理_p12_img2_enhanced.png",
+  "description": "类型：示意图\n图片展示了无刷直流电机磁场定向控制（FOC）系统的原理框图。信号流从左侧参考转速NREF开始，经PI调节器输出电流参考值IQREF，与反馈电流比较后再次经PI调节生成电压指令Vq；另一路IDREF经PI调节生成Vd。Vd、Vq经Park逆变换（d,q至α,β）及Clarke逆变换（α,β至a,b,c）后输入SVM模块，驱动3相电桥连接电机。反馈回路中，电机电流ia、ib经Clarke变换（a,b,c至α,β）和Park变换（α,β至d,q）得到Id、Iq用于闭环控制。底部包含位置和速度估算器，利用Va、Vb估算位置θ和角速度ω，分别用于坐标变换和转速反馈。",
+  "metadata": {
+    "generation": {
+      "method": "qwen_api",
+      "backend": "api",
+      "provider": "qwen",
+      "model": "qwen3.7-plus",
+      "status": "success",
+      "api_error": null
+    },
+    "review": {
+      "required": false,
+      "status": null,
+      "reason": null,
+      "course_relevant": true
+    }
+  },
+  "error": null,
+  "method": "qwen_api",
+  "backend": "api",
+  "provider": "qwen",
+  "model": "qwen3.7-plus",
+  "status": "success",
+  "api_error": null,
+  "indexable": true,
+  "review_required": false,
+  "review_reason": null,
+  "review_status": null,
+  "course_relevant": true
+}

@@ -1,0 +1,33 @@
+{
+  "original_path": "output/qwen_qwen3.7-plus_7/debug/images/w15-2-机器人运动学及其应用_p15_img4.jpeg",
+  "enhanced_path": "output/qwen_qwen3.7-plus_7/debug/images/w15-2-机器人运动学及其应用_p15_img4_enhanced.jpeg",
+  "description": "类型：示意图\n图片展示了小米CyberGear微电机的爆炸分解结构，各组件沿中心轴从左至右依次排列。可见的关键对象包括：左侧的驱动电路板、带有铜线绕组的定子线圈、圆柱形外壳、内部的转子、行星减速器齿轮组以及右侧端盖处的编码器。该图直观呈现了电机内部机械部件的空间装配关系与层级顺序。",
+  "metadata": {
+    "generation": {
+      "method": "qwen_api",
+      "backend": "api",
+      "provider": "qwen",
+      "model": "qwen3.7-plus",
+      "status": "success",
+      "api_error": null
+    },
+    "review": {
+      "required": false,
+      "status": null,
+      "reason": null,
+      "course_relevant": true
+    }
+  },
+  "error": null,
+  "method": "qwen_api",
+  "backend": "api",
+  "provider": "qwen",
+  "model": "qwen3.7-plus",
+  "status": "success",
+  "api_error": null,
+  "indexable": true,
+  "review_required": false,
+  "review_reason": null,
+  "review_status": null,
+  "course_relevant": true
+}

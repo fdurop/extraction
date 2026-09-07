@@ -1,0 +1,27 @@
+{
+  "page_num": 4,
+  "raw_text": "机电系统原理及实践—— 电机位置检测与闭环控制\n机电智控实验室tangguoan@fudan.edu.cn mmguo@fudan.edu.cn\n§2.1 结构（增量式）\n发光元件：LED\n码盘：刻有规则的透光线条的圆盘。\n光敏元件：光电传感器\n安装在电机转轴上的码盘旋转，\nLED发出的光经过码盘，产生透光\n和不透光的光脉冲。\n光敏元件检测光脉冲，转换成数字\n信号输出。\n16-5\n绝对值式编码器\n有更复杂的码盘\n",
+  "cleaned_text": "§2.1 结构（增量式）\n发光元件：LED\n码盘：刻有规则的透光线条的圆盘。\n光敏元件：光电传感器\n安装在电机转轴上的码盘旋转，\nLED发出的光经过码盘，产生透光\n和不透光的光脉冲。\n光敏元件检测光脉冲，转换成数字\n信号输出。\n绝对值式编码器\n有更复杂的码盘",
+  "key_points": [
+    "码盘：刻有规则的透光线条的圆盘。",
+    "LED发出的光经过码盘，产生透光",
+    "和不透光的光脉冲。",
+    "信号输出。"
+  ],
+  "technical_terms": [
+    "LED",
+    "光敏元件检测",
+    "光电传感器",
+    "安装在电机"
+  ],
+  "has_images": true,
+  "image_count": 1,
+  "image_paths": [
+    "output/qwen_qwen3.7-plus_7/debug/images/w13-1-电机位置检测与闭环控制 - 副本_p5_img3.jpeg"
+  ],
+  "metadata": {
+    "char_count": 213,
+    "word_count": 17,
+    "line_count": 15
+  }
+}

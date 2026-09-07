@@ -1,0 +1,27 @@
+{
+  "page_num": 11,
+  "raw_text": "机电系统原理及实践—— 数字通信\n机电智控实验室tangguoan@fudan.edu.cn mmguo@fudan.edu.cn\n实践：Matlab APP与Uno R3的串口通信\nMatlab App为上位机\n在界面上设置滑台移动的距离和时长；\n点击指令发送按钮，通过串口，将数据发送Uno R3。\nUno R3为下位机\n接受上位机数据，让滑台按指定时长和距离移动。\n23-12\n限时：30分钟\nw14_s4_sliderControlApp.mlapp\nw14-s4-sliderSmoothPathSlave.ino\n参考例程：matlab控制LED亮度\nw14_s4_appDemo.mlapp\nw14-s4-LedSlave.ino\n",
+  "cleaned_text": "实践：Matlab APP与Uno R3的串口通信\nMatlab App为上位机\n在界面上设置滑台移动的距离和时长；\n点击指令发送按钮，通过串口，将数据发送Uno R3。\nUno R3为下位机\n接受上位机数据，让滑台按指定时长和距离移动。\n限时：30分钟\nw14_s4_sliderControlApp.mlapp\nw14-s4-sliderSmoothPathSlave.ino\n参考例程：matlab控制LED亮度\nw14_s4_appDemo.mlapp\nw14-s4-LedSlave.ino",
+  "key_points": [
+    "Matlab App为上位机",
+    "点击指令发送按钮，通过串口，将数据发送Uno R3。",
+    "Uno R3为下位机",
+    "接受上位机数据，让滑台按指定时长和距离移动。"
+  ],
+  "technical_terms": [
+    "Uno",
+    "w14-s4-LedSlave",
+    "w14-s4-sliderSmoothPathSlave",
+    "w14_s4_appDemo",
+    "w14_s4_sliderControlApp",
+    "在界面上设置滑台"
+  ],
+  "has_images": false,
+  "image_count": 0,
+  "image_paths": [],
+  "metadata": {
+    "char_count": 328,
+    "word_count": 22,
+    "line_count": 16
+  }
+}

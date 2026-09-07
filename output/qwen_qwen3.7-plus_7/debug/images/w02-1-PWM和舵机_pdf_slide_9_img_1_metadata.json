@@ -1,0 +1,33 @@
+{
+  "original_path": "output/qwen_qwen3.7-plus_7/debug/images/w02-1-PWM和舵机_p9_img2.jpeg",
+  "enhanced_path": "output/qwen_qwen3.7-plus_7/debug/images/w02-1-PWM和舵机_p9_img2_enhanced.jpeg",
+  "description": "类型：照片\n图片展示了一个室内实验场景。右侧桌面上放置一台笔记本电脑，屏幕显示带有蓝色矩形区域的软件界面；电脑旁竖立着一个安装在三脚架上的黑色云台装置（疑似摄像头或激光发射器），墙面上投射有一个绿色光点。左侧可见一台白色打印机，上方放置有带线路的电路板组件。中间区域有一个固定在支架上的银色机械装置（类似激光振镜或传感器），下方连接黄色底座，旁边叠放着黑色电子仪器盒。背景为白色墙壁及棕色沙发。",
+  "metadata": {
+    "generation": {
+      "method": "qwen_api",
+      "backend": "api",
+      "provider": "qwen",
+      "model": "qwen3.7-plus",
+      "status": "success",
+      "api_error": null
+    },
+    "review": {
+      "required": false,
+      "status": null,
+      "reason": null,
+      "course_relevant": true
+    }
+  },
+  "error": null,
+  "method": "qwen_api",
+  "backend": "api",
+  "provider": "qwen",
+  "model": "qwen3.7-plus",
+  "status": "success",
+  "api_error": null,
+  "indexable": true,
+  "review_required": false,
+  "review_reason": null,
+  "review_status": null,
+  "course_relevant": true
+}

@@ -1,0 +1,33 @@
+{
+  "original_path": "output/qwen_qwen3.7-plus_7/debug/images/w04-1-有刷直流电机驱动器及其应用_slide_5_img_2.png",
+  "enhanced_path": "output/qwen_qwen3.7-plus_7/debug/images/w04-1-有刷直流电机驱动器及其应用_slide_5_img_2_enhanced.png",
+  "description": "类型：示意图\n图中展示了一个Arduino UNO开发板与继电器模块及LED的接线连接。\n1. Arduino板的5V引脚（红线）连接至继电器模块的VCC引脚。\n2. Arduino板的GND引脚（黑线）连接至继电器模块的GND引脚。\n3. Arduino板的数字引脚3（白线）连接至继电器模块的IN引脚。\n4. 继电器模块的NO（常开）端（绿线）连接至红色LED的长脚（阳极）。\n5. Arduino板的GND引脚（另一根绿线）连接至红色LED的短脚（阴极）。\n可见文字包括板载的“ARDUINO UNO”、“DIGITAL (PWM~)”、“POWER”、“ANALOG IN”，以及继电器模块上的“Relay Module”、“PWR”、“VCC”、“GND”、“IN”、“LED1”和接口标识“NO COM NC”。",
+  "metadata": {
+    "generation": {
+      "method": "qwen_api",
+      "backend": "api",
+      "provider": "qwen",
+      "model": "qwen3.7-plus",
+      "status": "success",
+      "api_error": null
+    },
+    "review": {
+      "required": false,
+      "status": null,
+      "reason": null,
+      "course_relevant": true
+    }
+  },
+  "error": null,
+  "method": "qwen_api",
+  "backend": "api",
+  "provider": "qwen",
+  "model": "qwen3.7-plus",
+  "status": "success",
+  "api_error": null,
+  "indexable": true,
+  "review_required": false,
+  "review_reason": null,
+  "review_status": null,
+  "course_relevant": true
+}

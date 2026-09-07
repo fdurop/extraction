@@ -1,0 +1,21 @@
+{
+  "page_num": 10,
+  "raw_text": "机电系统原理及实践—— 数字通信\n机电智控实验室tangguoan@fudan.edu.cn mmguo@fudan.edu.cn\n例：Uno和Matlab通过串口发送数据\n23-11\nw14-s3-SP2Matlab.ino\nw14_s3_SP2Uno.m\n注意和Serial.parseFloat的区别\n",
+  "cleaned_text": "例：Uno和Matlab通过串口发送数据\nw14-s3-SP2Matlab.ino\nw14_s3_SP2Uno.m\n注意和Serial.parseFloat的区别",
+  "key_points": [],
+  "technical_terms": [
+    "w14-s3-SP2Matlab",
+    "w14_s3_SP2Uno"
+  ],
+  "has_images": true,
+  "image_count": 2,
+  "image_paths": [
+    "output/qwen_qwen3.7-plus_7/debug/images/w14-1-数字通信_p11_img3.jpeg",
+    "output/qwen_qwen3.7-plus_7/debug/images/w14-1-数字通信_p11_img4.jpeg"
+  ],
+  "metadata": {
+    "char_count": 154,
+    "word_count": 9,
+    "line_count": 8
+  }
+}

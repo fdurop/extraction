@@ -1,0 +1,30 @@
+{
+  "page_num": 3,
+  "raw_text": "机电系统原理及实践—— Arduino软硬件基础\n机电智控实验室tangguoan@fudan.edu.cn mmguo@fudan.edu.cn\nArduino UNO R3\n14-4\n数字输入输出端口（I/O port）\n只有高/低两种电平，即HIGH(1)或LOW(0)。\n\n对应两个状态，如接通或断开。\n端口0 和1 主要用于串口通信。\n端口3/5/6/9/10/11 可用于脉冲宽度调制\n（PWM），等价于模拟输出。\n模拟输入端口\n读取外界模拟电压（0～5 V），转换\n为0～1023 的整数（精度为10 bits）。\nUSB接口\n供电\n与PC通信\n电源接口\n9V\nin\nout\n均以GND(地)为参考（勿忘接地）。\nreset按钮\n室 复旦大\n智控实验室 复旦大学 机电\n学 机电智控实验室 复旦大学 机电智控实验\n复旦大学 机电智控实验室 复旦大学 机电智控实验室 复旦\n大学 机电智控实验室 复旦大学 机电智控实验室 复旦大学 机电\n电智控实验室 复旦大学 机电智控实验室 复旦大学 机电智控实\n验室 复旦大学 机电智控实验室 复旦大学 机电智控实验室 \n旦大学 机电智控实验室 复旦大学 机电智控\n电智控实验室 复旦大学 \n验室 复\n",
+  "cleaned_text": "Arduino UNO R3\n数字输入输出端口（I/O port）\n只有高/低两种电平，即HIGH(1)或LOW(0)。\n对应两个状态，如接通或断开。\n端口0 和1 主要用于串口通信。\n端口3/5/6/9/10/11 可用于脉冲宽度调制\n（PWM），等价于模拟输出。\n模拟输入端口\n读取外界模拟电压（0～5 V），转换\n为0～1023 的整数（精度为10 bits）。\nUSB接口\n供电\n与PC通信\n电源接口\n9V\nin\nout\n均以GND(地)为参考（勿忘接地）。\nreset按钮",
+  "key_points": [
+    "Arduino UNO R3",
+    "只有高/低两种电平，即HIGH(1)或LOW(0)。",
+    "对应两个状态，如接通或断开。",
+    "端口0 和1 主要用于串口通信。",
+    "（PWM），等价于模拟输出。",
+    "为0～1023 的整数（精度为10 bits）。",
+    "USB接口",
+    "均以GND(地)为参考（勿忘接地）。"
+  ],
+  "technical_terms": [
+    "Arduino",
+    "PWM",
+    "UNO"
+  ],
+  "has_images": true,
+  "image_count": 1,
+  "image_paths": [
+    "output/qwen_qwen3.7-plus_7/debug/images/w01-2-Arduino软硬件基础_p4_img2.jpeg"
+  ],
+  "metadata": {
+    "char_count": 534,
+    "word_count": 72,
+    "line_count": 34
+  }
+}

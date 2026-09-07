@@ -1,0 +1,33 @@
+{
+  "original_path": "output/qwen_qwen3.7-plus_7/debug/images/w13-1-电机位置检测与闭环控制 - 副本_p7_img3.jpeg",
+  "enhanced_path": "output/qwen_qwen3.7-plus_7/debug/images/w13-1-电机位置检测与闭环控制 - 副本_p7_img3_enhanced.jpeg",
+  "description": "类型：示意图\n图片包含上下两组时序波形图，纵轴分别标记为“A电平”和“B电平”，横轴代表时间进程。\n上方一组波形中，A相方波的上升沿对应B相处于高电平，A相下降沿对应B相处于低电平，左侧标注有向左箭头及文字“← 向左移动”。\n下方一组波形中，A相方波的上升沿对应B相处于低电平，A相下降沿对应B相处于高电平，右侧标注有向右箭头及文字“向右移动→”。\n两组图中A、B相信号均呈现周期性的矩形脉冲变化，且两组波形中A与B的相位关系相反。",
+  "metadata": {
+    "generation": {
+      "method": "qwen_api",
+      "backend": "api",
+      "provider": "qwen",
+      "model": "qwen3.7-plus",
+      "status": "success",
+      "api_error": null
+    },
+    "review": {
+      "required": false,
+      "status": null,
+      "reason": null,
+      "course_relevant": true
+    }
+  },
+  "error": null,
+  "method": "qwen_api",
+  "backend": "api",
+  "provider": "qwen",
+  "model": "qwen3.7-plus",
+  "status": "success",
+  "api_error": null,
+  "indexable": true,
+  "review_required": false,
+  "review_reason": null,
+  "review_status": null,
+  "course_relevant": true
+}

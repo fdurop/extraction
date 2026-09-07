@@ -1,0 +1,33 @@
+{
+  "original_path": "output/qwen_qwen3.7-plus_7/debug/images/w01-2-Arduino软硬件基础_p9_img2.jpeg",
+  "enhanced_path": "output/qwen_qwen3.7-plus_7/debug/images/w01-2-Arduino软硬件基础_p9_img2_enhanced.jpeg",
+  "description": "类型：照片\n图片展示了Arduino Uno接线扩展板的实物特写。板载多个绿色弹簧式接线端子，内部可见黄色卡簧结构。端子旁印有白色丝印标签，标识出不同功能区域及引脚名称，包括左上角的“Vin”、“GND”，上方的“+5V”，右上角的“RST”，左侧中部的“I2C接口（SCL, SDA, RST）”，左下角的模拟接口区“ANALOG”（标有0-5编号），中间的“GND”，以及右侧长条形的数字接口区“DIGITAL”（标有0-13编号）。左侧边缘排列有一排金属固定孔。",
+  "metadata": {
+    "generation": {
+      "method": "qwen_api",
+      "backend": "api",
+      "provider": "qwen",
+      "model": "qwen3.7-plus",
+      "status": "success",
+      "api_error": null
+    },
+    "review": {
+      "required": false,
+      "status": null,
+      "reason": null,
+      "course_relevant": true
+    }
+  },
+  "error": null,
+  "method": "qwen_api",
+  "backend": "api",
+  "provider": "qwen",
+  "model": "qwen3.7-plus",
+  "status": "success",
+  "api_error": null,
+  "indexable": true,
+  "review_required": false,
+  "review_reason": null,
+  "review_status": null,
+  "course_relevant": true
+}

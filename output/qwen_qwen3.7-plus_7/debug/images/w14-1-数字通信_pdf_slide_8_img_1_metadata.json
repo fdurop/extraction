@@ -1,0 +1,33 @@
+{
+  "original_path": "output/qwen_qwen3.7-plus_7/debug/images/w14-1-数字通信_p8_img3.jpeg",
+  "enhanced_path": "output/qwen_qwen3.7-plus_7/debug/images/w14-1-数字通信_p8_img3_enhanced.jpeg",
+  "description": "类型：代码\n图片展示了Arduino C++代码片段。定义了常量`ledPin`为13，变量`incomingByte`。`setup()`函数中调用`Serial.begin(9600)`初始化串口，设置引脚为`OUTPUT`。`loop()`函数通过`if (Serial.available() > 0)`判断是否有数据，使用`Serial.read()`读取字节存入`incomingByte`。若数据等于'H'，执行`digitalWrite(ledPin, HIGH)`；若等于'L'，执行`digitalWrite(ledPin, LOW)`。代码包含英文注释说明ASCII码及LED控制逻辑。",
+  "metadata": {
+    "generation": {
+      "method": "qwen_api",
+      "backend": "api",
+      "provider": "qwen",
+      "model": "qwen3.7-plus",
+      "status": "success",
+      "api_error": null
+    },
+    "review": {
+      "required": false,
+      "status": null,
+      "reason": null,
+      "course_relevant": true
+    }
+  },
+  "error": null,
+  "method": "qwen_api",
+  "backend": "api",
+  "provider": "qwen",
+  "model": "qwen3.7-plus",
+  "status": "success",
+  "api_error": null,
+  "indexable": true,
+  "review_required": false,
+  "review_reason": null,
+  "review_status": null,
+  "course_relevant": true
+}

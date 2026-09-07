@@ -1,0 +1,33 @@
+{
+  "original_path": "output/qwen_qwen3.7-plus_7/debug/images/w01-1-课程简介_p17_img6.jpeg",
+  "enhanced_path": "output/qwen_qwen3.7-plus_7/debug/images/w01-1-课程简介_p17_img6_enhanced.jpeg",
+  "description": "类型：照片\n图片展示了一个白色鱼形机器人装置漂浮在深色水面上，水面散布着枯枝落叶。该装置具有流线型白色外壳，背部设有类似背鳍和尾鳍的白色片状结构，尾部可见螺旋桨推进器组件。画面左上方有一只手通过红色导线连接并提拉该装置。结合上下文“机器鱼”字样，此为机电系统课程往届实践案例的实物演示场景。",
+  "metadata": {
+    "generation": {
+      "method": "qwen_api",
+      "backend": "api",
+      "provider": "qwen",
+      "model": "qwen3.7-plus",
+      "status": "success",
+      "api_error": null
+    },
+    "review": {
+      "required": false,
+      "status": null,
+      "reason": null,
+      "course_relevant": true
+    }
+  },
+  "error": null,
+  "method": "qwen_api",
+  "backend": "api",
+  "provider": "qwen",
+  "model": "qwen3.7-plus",
+  "status": "success",
+  "api_error": null,
+  "indexable": true,
+  "review_required": false,
+  "review_reason": null,
+  "review_status": null,
+  "course_relevant": true
+}

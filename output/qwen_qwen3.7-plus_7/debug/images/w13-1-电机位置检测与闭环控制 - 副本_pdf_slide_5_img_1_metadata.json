@@ -1,0 +1,33 @@
+{
+  "original_path": "output/qwen_qwen3.7-plus_7/debug/images/w13-1-电机位置检测与闭环控制 - 副本_p5_img3.jpeg",
+  "enhanced_path": "output/qwen_qwen3.7-plus_7/debug/images/w13-1-电机位置检测与闭环控制 - 副本_p5_img3_enhanced.jpeg",
+  "description": "类型：示意图\n图中展示了编码器结构及信号输出。顶部为LED，发出黄色光束经Lens（透镜）照射至Code wheel（码盘）。码盘呈圆盘状，边缘刻有规则透光缝隙，中心有轴。光束穿过码盘后经过Fixed Slit（固定光栅），最终到达底部的Photo sensor（光电传感器）。传感器分为A、B两路，分别连接三角形放大器符号。右侧对应显示两路方波脉冲信号波形，且A、B两相信号存在相位差。",
+  "metadata": {
+    "generation": {
+      "method": "qwen_api",
+      "backend": "api",
+      "provider": "qwen",
+      "model": "qwen3.7-plus",
+      "status": "success",
+      "api_error": null
+    },
+    "review": {
+      "required": false,
+      "status": null,
+      "reason": null,
+      "course_relevant": true
+    }
+  },
+  "error": null,
+  "method": "qwen_api",
+  "backend": "api",
+  "provider": "qwen",
+  "model": "qwen3.7-plus",
+  "status": "success",
+  "api_error": null,
+  "indexable": true,
+  "review_required": false,
+  "review_reason": null,
+  "review_status": null,
+  "course_relevant": true
+}

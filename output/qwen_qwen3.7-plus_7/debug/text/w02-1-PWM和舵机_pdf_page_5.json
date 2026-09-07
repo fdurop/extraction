@@ -1,0 +1,36 @@
+{
+  "page_num": 4,
+  "raw_text": "机电系统原理及实践—— 脉宽调制& 舵机\n机电智控实验室tangguoan@fudan.edu.cn mmguo@fudan.edu.cn\n数字IO与模拟IO\nPWM 作为模拟输出，可视为D/A 转换，常用于控制外接设备。\n模拟信号（Analog signal）：模拟信息（如电压、声音、图像等等）的变化而变化。\n\n严格定义：时间与数值均连续。\n数字信号（Digital signal）：将模拟信号经过采样、量化、编码后，形成数字信号。\n\n严格定义：时间与数值均离散。\n15-5\n数字端口：DI、DO、AO\n模拟端口：AI（接传感器）\nDI/DO：0 or 1\nAI：0-1023\nAO：0-255\n\nDI：Digital Input\n\n读取HIGH 或LOW。\n\nDO：Digital Output\n\n输出HIGH 或LOW。\n\nAI：Analog Input (A/D 转换)\n\n读取连续电压，编码为整数。\n\nAO：Analog Output (D/A 转换)\n\n输出整数，通过PWM转换为连续电压。\n注意信号处理和硬件IO\n中“数字”的区别\n室 复旦大\n智控实验室 复旦大学 机电\n学 机电智控实验室 复旦大学 机电智控实验\n复旦大学 机电智控实验室 复旦大学 机电智控实验室 复旦\n大学 机电智控实验室 复旦大学 机电智控实验室 复旦大学 机电\n电智控实验室 复旦大学 机电智控实验室 复旦大学 机电智控实\n验室 复旦大学 机电智控实验室 复旦大学 机电智控实验室 \n旦大学 机电智控实验室 复旦大学 机电智控\n电智控实验室 复旦大学 \n验室 复\n",
+  "cleaned_text": "数字IO与模拟IO\nPWM 作为模拟输出，可视为D/A 转换，常用于控制外接设备。\n模拟信号（Analog signal）：模拟信息（如电压、声音、图像等等）的变化而变化。\n严格定义：时间与数值均连续。\n数字信号（Digital signal）：将模拟信号经过采样、量化、编码后，形成数字信号。\n严格定义：时间与数值均离散。\n数字端口：DI、DO、AO\n模拟端口：AI（接传感器）\nDI/DO：0 or 1\nAI：0-1023\nAO：0-255\nDI：Digital Input\n读取HIGH 或LOW。\nDO：Digital Output\n输出HIGH 或LOW。\nAI：Analog Input (A/D 转换)\n读取连续电压，编码为整数。\nAO：Analog Output (D/A 转换)\n输出整数，通过PWM转换为连续电压。\n注意信号处理和硬件IO\n中“数字”的区别",
+  "key_points": [
+    "PWM 作为模拟输出，可视为D/A 转换，常用于控制外接设备。",
+    "模拟信号（Analog signal）：模拟信息（如电压、声音、图像等等）的变化而变化。",
+    "严格定义：时间与数值均连续。",
+    "数字信号（Digital signal）：将模拟信号经过采样、量化、编码后，形成数字信号。",
+    "严格定义：时间与数值均离散。",
+    "DI/DO：0 or 1",
+    "AI：0-1023",
+    "AO：0-255",
+    "DI：Digital Input",
+    "读取HIGH 或LOW。"
+  ],
+  "technical_terms": [
+    "AI",
+    "AO",
+    "DI",
+    "DO",
+    "PWM",
+    "常用于控制",
+    "注意信号处理"
+  ],
+  "has_images": true,
+  "image_count": 1,
+  "image_paths": [
+    "output/qwen_qwen3.7-plus_7/debug/images/w02-1-PWM和舵机_p5_img2.jpeg"
+  ],
+  "metadata": {
+    "char_count": 691,
+    "word_count": 91,
+    "line_count": 45
+  }
+}

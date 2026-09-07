@@ -1,0 +1,33 @@
+{
+  "original_path": "output/qwen_qwen3.7-plus_7/debug/images/w13-2-机电系统在动力学与控制中的应用 - 副本_p3_img7.jpeg",
+  "enhanced_path": "output/qwen_qwen3.7-plus_7/debug/images/w13-2-机电系统在动力学与控制中的应用 - 副本_p3_img7_enhanced.jpeg",
+  "description": "类型：照片\n图片展示教室实验台场景。背景投影幕布显示标题“机电系统原理及实践”及副标题“机电系统在动力学与控制中的应用”，右下角有复旦大学校徽。前景桌面上放置一套机电实验装置，核心部件为水平安装的同步带滑台，滑台上装有两个黄色组件（疑似驱动盒或操纵/控制盒），并通过黑色线缆连接至左侧桌面的黑色仪器箱。该装置对应页面文本中的“同步带滑台”、“驱动盒”等系统组成元件。",
+  "metadata": {
+    "generation": {
+      "method": "qwen_api",
+      "backend": "api",
+      "provider": "qwen",
+      "model": "qwen3.7-plus",
+      "status": "success",
+      "api_error": null
+    },
+    "review": {
+      "required": false,
+      "status": null,
+      "reason": null,
+      "course_relevant": true
+    }
+  },
+  "error": null,
+  "method": "qwen_api",
+  "backend": "api",
+  "provider": "qwen",
+  "model": "qwen3.7-plus",
+  "status": "success",
+  "api_error": null,
+  "indexable": true,
+  "review_required": false,
+  "review_reason": null,
+  "review_status": null,
+  "course_relevant": true
+}

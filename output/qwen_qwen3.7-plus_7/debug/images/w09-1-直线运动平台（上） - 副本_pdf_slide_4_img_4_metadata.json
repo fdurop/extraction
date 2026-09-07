@@ -1,0 +1,33 @@
+{
+  "original_path": "output/qwen_qwen3.7-plus_7/debug/images/w09-1-直线运动平台（上） - 副本_p4_img6.jpeg",
+  "enhanced_path": "output/qwen_qwen3.7-plus_7/debug/images/w09-1-直线运动平台（上） - 副本_p4_img6_enhanced.jpeg",
+  "description": "类型：示意图\n图片展示了一个直交型机械臂（Cartesian robot）的三维结构模型。该装置由黑色铝型材搭建框架，包含三个相互垂直的运动轴。底部设有两条平行的水平导轨，承载一个可沿横向移动的滑台组件；滑台上方安装有两根竖直立柱，支撑一根水平横梁；横梁上装有可沿轴向移动的滑块及末端执行器接口。各运动节点处均配有蓝黑相间的电机或驱动部件，连接件呈现紫红色。整体结构体现了X、Y、Z三轴直线运动的机械布局。",
+  "metadata": {
+    "generation": {
+      "method": "qwen_api",
+      "backend": "api",
+      "provider": "qwen",
+      "model": "qwen3.7-plus",
+      "status": "success",
+      "api_error": null
+    },
+    "review": {
+      "required": false,
+      "status": null,
+      "reason": null,
+      "course_relevant": true
+    }
+  },
+  "error": null,
+  "method": "qwen_api",
+  "backend": "api",
+  "provider": "qwen",
+  "model": "qwen3.7-plus",
+  "status": "success",
+  "api_error": null,
+  "indexable": true,
+  "review_required": false,
+  "review_reason": null,
+  "review_status": null,
+  "course_relevant": true
+}

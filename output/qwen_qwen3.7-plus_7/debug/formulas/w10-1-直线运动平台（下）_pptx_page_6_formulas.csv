@@ -1,0 +1,6 @@
+﻿序号,LaTeX公式,名称,描述,来源图像,提取方法,置信度,验证状态,是否需审核
+1,\theta(t_1) = \theta(t_0) + \int_{t_0}^{t_1} \omega(t) \mathrm{d}t,,,output/qwen_qwen3.7-plus_7/debug/images/w10-1-直线运动平台（下）_slide_6_img_1.png,qwen_api_formula,1.0,passed,False
+2,\theta[n\Delta t] = \theta[(n-1)\Delta t] + \omega[n\Delta t]\Delta t,,,output/qwen_qwen3.7-plus_7/debug/images/w10-1-直线运动平台（下）_slide_6_img_1.png,qwen_api_formula,1.0,passed,False
+3,|\theta[n\Delta t]| \ge 0.5,,,output/qwen_qwen3.7-plus_7/debug/images/w10-1-直线运动平台（下）_slide_6_img_1.png,qwen_api_formula,1.0,passed,False
+4,\mp 1,,,output/qwen_qwen3.7-plus_7/debug/images/w10-1-直线运动平台（下）_slide_6_img_1.png,qwen_api_formula,1.0,passed,False
+5,\Delta\theta/2,,,output/qwen_qwen3.7-plus_7/debug/images/w10-1-直线运动平台（下）_slide_6_img_1.png,qwen_api_formula,1.0,passed,False

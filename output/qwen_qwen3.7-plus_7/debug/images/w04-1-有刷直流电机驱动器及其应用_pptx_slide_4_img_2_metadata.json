@@ -1,0 +1,33 @@
+{
+  "original_path": "output/qwen_qwen3.7-plus_7/debug/images/w04-1-有刷直流电机驱动器及其应用_slide_4_img_2.jpg",
+  "enhanced_path": "output/qwen_qwen3.7-plus_7/debug/images/w04-1-有刷直流电机驱动器及其应用_slide_4_img_2_enhanced.jpg",
+  "description": "类型：示意图\n图片展示了电磁继电器的内部机械结构。主要包含底部的U型铁芯及缠绕其上的线圈、位于上方的可转动衔铁（杠杆状）、左侧连接衔铁的弹簧，以及右侧的触点组件。图中通过引线标注了三个关键部位：衔铁末端的“动触点”、位于动触点上方的“静触点1”和位于下方的“静触点2”。图示呈现了动触点在当前状态下与静触点1接触，而与静触点2分离的空间位置关系。",
+  "metadata": {
+    "generation": {
+      "method": "qwen_api",
+      "backend": "api",
+      "provider": "qwen",
+      "model": "qwen3.7-plus",
+      "status": "success",
+      "api_error": null
+    },
+    "review": {
+      "required": false,
+      "status": null,
+      "reason": null,
+      "course_relevant": true
+    }
+  },
+  "error": null,
+  "method": "qwen_api",
+  "backend": "api",
+  "provider": "qwen",
+  "model": "qwen3.7-plus",
+  "status": "success",
+  "api_error": null,
+  "indexable": true,
+  "review_required": false,
+  "review_reason": null,
+  "review_status": null,
+  "course_relevant": true
+}

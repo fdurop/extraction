@@ -1,0 +1,39 @@
+{
+  "page_num": 13,
+  "raw_text": "§3 \n实践：\n有刷直流电机驱动与控制\nStep 4\n：接收外界控制，相应调整转向或转速\n转向控制：\n单刀双掷开关\n；\npinMode\n(\npinDir\n[i], \nINPUT_PULLUP\n)\ndigitalRead\n(\npinDir\n[i]); // \n返回值：\nHIGH \n或 \nLOW\n转速控制：电位器。\n23-\nINPUT_PULLUP\n：初始化输入端口为高电平，避免端口悬空造成的不确定性。因此对\nUNO\n而言，通常低电平（与\nGND\n导通）表示开关导通。",
+  "cleaned_text": "§3\n实践：\n有刷直流电机驱动与控制\nStep 4\n：接收外界控制，相应调整转向或转速\n转向控制：\n单刀双掷开关\n；\npinMode\n(\npinDir\n[i],\nINPUT_PULLUP\n)\ndigitalRead\n(\npinDir\n[i]); //\n返回值：\nHIGH\n或\nLOW\n转速控制：电位器。\nINPUT_PULLUP\n：初始化输入端口为高电平，避免端口悬空造成的不确定性。因此对\nUNO\n而言，通常低电平（与\nGND\n导通）表示开关导通。",
+  "key_points": [
+    "实践：",
+    "Step 4",
+    "转向控制：",
+    "INPUT_PULLUP",
+    "返回值：",
+    "HIGH",
+    "LOW",
+    "转速控制：电位器。",
+    "INPUT_PULLUP",
+    "UNO"
+  ],
+  "technical_terms": [
+    "GND",
+    "HIGH",
+    "INPUT_PULLUP",
+    "LOW",
+    "UNO",
+    "接收外界控制",
+    "有刷直流电机",
+    "有刷直流电机驱动与控制",
+    "转向控制",
+    "转速控制"
+  ],
+  "has_images": true,
+  "image_count": 1,
+  "image_paths": [
+    "output/qwen_qwen3.7-plus_7/debug/images/w04-1-有刷直流电机驱动器及其应用_slide_14_img_1.png"
+  ],
+  "metadata": {
+    "char_count": 234,
+    "word_count": 32,
+    "line_count": 30
+  }
+}

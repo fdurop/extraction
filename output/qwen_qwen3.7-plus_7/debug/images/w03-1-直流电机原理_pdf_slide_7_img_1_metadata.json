@@ -1,0 +1,33 @@
+{
+  "original_path": "output/qwen_qwen3.7-plus_7/debug/images/w03-1-直流电机原理_p7_img2.jpeg",
+  "enhanced_path": "output/qwen_qwen3.7-plus_7/debug/images/w03-1-直流电机原理_p7_img2_enhanced.jpeg",
+  "description": "类型：照片\n图片展示了一个双刀双掷开关的实物特写。该开关安装在黑色底座上，包含一个黑色拨动旋钮和两片联动的金属导电闸刀。底座上设有接线端子，其中上方一排为红色绝缘护套的接线柱，下方一排为黑色绝缘护套的接线柱。金属闸刀目前处于倾斜状态，将中间的公共端与一侧的红色接线柱连通。结合上下文，这是用于实践环节控制有刷直流电机转动方向的实验器材。",
+  "metadata": {
+    "generation": {
+      "method": "qwen_api",
+      "backend": "api",
+      "provider": "qwen",
+      "model": "qwen3.7-plus",
+      "status": "success",
+      "api_error": null
+    },
+    "review": {
+      "required": false,
+      "status": null,
+      "reason": null,
+      "course_relevant": true
+    }
+  },
+  "error": null,
+  "method": "qwen_api",
+  "backend": "api",
+  "provider": "qwen",
+  "model": "qwen3.7-plus",
+  "status": "success",
+  "api_error": null,
+  "indexable": true,
+  "review_required": false,
+  "review_reason": null,
+  "review_status": null,
+  "course_relevant": true
+}

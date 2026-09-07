@@ -1,0 +1,33 @@
+{
+  "original_path": "output/qwen_qwen3.7-plus_7/debug/images/w04-1-有刷直流电机驱动器及其应用_slide_18_img_5.png",
+  "enhanced_path": "output/qwen_qwen3.7-plus_7/debug/images/w04-1-有刷直流电机驱动器及其应用_slide_18_img_5_enhanced.png",
+  "description": "类型：照片\n图片展示了三个机械结构部件。左侧为一个银色圆柱形直流减速电机，机身贴有白色标签，可见文字“ZHENG”、“GEAR-BOX MOTOR”、“DC 12V”、“rpm:205”及型号“ZYTD520”，前端伸出金属输出轴。中间下方是一个银色金属联轴器（轴连接器），呈六角螺母状，两端各有一颗紧固螺丝。右侧是一个黑色橡胶轮胎，表面有防滑纹理，安装在黑色多辐条轮毂上。这些物体并列放置在白色背景上。",
+  "metadata": {
+    "generation": {
+      "method": "qwen_api",
+      "backend": "api",
+      "provider": "qwen",
+      "model": "qwen3.7-plus",
+      "status": "success",
+      "api_error": null
+    },
+    "review": {
+      "required": false,
+      "status": null,
+      "reason": null,
+      "course_relevant": true
+    }
+  },
+  "error": null,
+  "method": "qwen_api",
+  "backend": "api",
+  "provider": "qwen",
+  "model": "qwen3.7-plus",
+  "status": "success",
+  "api_error": null,
+  "indexable": true,
+  "review_required": false,
+  "review_reason": null,
+  "review_status": null,
+  "course_relevant": true
+}

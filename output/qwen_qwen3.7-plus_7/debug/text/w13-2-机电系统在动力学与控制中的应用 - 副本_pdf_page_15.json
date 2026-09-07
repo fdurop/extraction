@@ -1,0 +1,25 @@
+{
+  "page_num": 14,
+  "raw_text": "机电系统原理及实践—— 机电系统在动力学与控制中的应用\n机电智控实验室tangguoan@fudan.edu.cn mmguo@fudan.edu.cn\n16-15\n§5.2 倒立摆演示——闭环起摆\n(1)\n(1)\ns\ns\n(\n)\n +\n( )\n(|\n| 0.1\n(\n)\n0\nothers\nsa t\nt\nt\nu\nt\nu\nt\nt\n\n\n+ \n\n+ \n= \n\n触发启动)\n2\n2\n2\n(1)\na\nn\nb\nn\nc\ns\nmax\na\nb\nc\nmax\n( )= \n[ 0.5\n( )+\ncos ( )+\n] ( )cos ( )\n( )\n(\n)\nsign ( )min(|\n( ) |,\n)\n100,  \n1.004,  \n4  \n1.83\ns\nt\nK\nt\nt\nK\nt\nt\nK u\nt\na t\nt\nt\nt\na\nK\nK\nK\na\n\n\n\n\n\n\n\n\n\n−\n−\n−\n+ \n=\n=\n=\n=\n=\n，\n其中：\n",
+  "cleaned_text": "§5.2 倒立摆演示——闭环起摆\n(1)\n(1)\ns\ns\n(\n)\n+\n( )\n(|\n| 0.1\n(\n)\n0\nothers\nsa t\nt\nt\nu\nt\nu\nt\nt\n+\n+\n=\n触发启动)\n2\n2\n2\n(1)\na\nn\nb\nn\nc\ns\nmax\na\nb\nc\nmax\n( )=\n[ 0.5\n( )+\ncos ( )+\n] ( )cos ( )\n( )\n(\n)\nsign ( )min(|\n( ) |,\n)\n100,\n1.004,\n4\n1.83\ns\nt\nK\nt\nt\nK\nt\nt\nK u\nt\na t\nt\nt\nt\na\nK\nK\nK\na\n−\n−\n−\n+\n=\n=\n=\n=\n=\n，\n其中：",
+  "key_points": [
+    "1.004,",
+    "1.83",
+    "K",
+    "K",
+    "K u",
+    "K",
+    "K",
+    "K",
+    "其中："
+  ],
+  "technical_terms": [],
+  "has_images": false,
+  "image_count": 0,
+  "image_paths": [],
+  "metadata": {
+    "char_count": 408,
+    "word_count": 129,
+    "line_count": 104
+  }
+}

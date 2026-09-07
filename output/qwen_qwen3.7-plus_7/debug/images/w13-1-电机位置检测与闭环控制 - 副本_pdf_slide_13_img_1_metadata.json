@@ -1,0 +1,33 @@
+{
+  "original_path": "output/qwen_qwen3.7-plus_7/debug/images/w13-1-电机位置检测与闭环控制 - 副本_p13_img3.jpeg",
+  "enhanced_path": "output/qwen_qwen3.7-plus_7/debug/images/w13-1-电机位置检测与闭环控制 - 副本_p13_img3_enhanced.jpeg",
+  "description": "类型：照片\n图片展示了一个白色的ABB品牌双极微型断路器（型号可见S201 C10）。设备顶部和底部设有接线端子，中间有两个黑色的拨动开关手柄处于闭合位置。面板上印有红色的ABB标志、额定电流C10标识以及相关的电气参数表格。该实物图对应课程文本中提到的“Bang-Bang控制”或“开关控制”概念，作为执行开关动作的物理器件示例。",
+  "metadata": {
+    "generation": {
+      "method": "qwen_api",
+      "backend": "api",
+      "provider": "qwen",
+      "model": "qwen3.7-plus",
+      "status": "success",
+      "api_error": null
+    },
+    "review": {
+      "required": false,
+      "status": null,
+      "reason": null,
+      "course_relevant": true
+    }
+  },
+  "error": null,
+  "method": "qwen_api",
+  "backend": "api",
+  "provider": "qwen",
+  "model": "qwen3.7-plus",
+  "status": "success",
+  "api_error": null,
+  "indexable": true,
+  "review_required": false,
+  "review_reason": null,
+  "review_status": null,
+  "course_relevant": true
+}

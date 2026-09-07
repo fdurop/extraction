@@ -1,0 +1,33 @@
+{
+  "original_path": "output/qwen_qwen3.7-plus_7/debug/images/w03-1-直流电机原理_p3_img3.jpeg",
+  "enhanced_path": "output/qwen_qwen3.7-plus_7/debug/images/w03-1-直流电机原理_p3_img3_enhanced.jpeg",
+  "description": "类型：照片\n图片展示了一个白色的四足机器人实物，具有矩形躯干和四条黑色的关节腿，置于灰色地面上。结合页面文字“§1 舵机的局限”，该图片作为应用实例，展示了使用舵机驱动的机器人形态，对应文中提到的舵机在转角（0到180/270度）、转速及力矩方面的功能限制，无法实现无限制旋转等特性。",
+  "metadata": {
+    "generation": {
+      "method": "qwen_api",
+      "backend": "api",
+      "provider": "qwen",
+      "model": "qwen3.7-plus",
+      "status": "success",
+      "api_error": null
+    },
+    "review": {
+      "required": false,
+      "status": null,
+      "reason": null,
+      "course_relevant": true
+    }
+  },
+  "error": null,
+  "method": "qwen_api",
+  "backend": "api",
+  "provider": "qwen",
+  "model": "qwen3.7-plus",
+  "status": "success",
+  "api_error": null,
+  "indexable": true,
+  "review_required": false,
+  "review_reason": null,
+  "review_status": null,
+  "course_relevant": true
+}

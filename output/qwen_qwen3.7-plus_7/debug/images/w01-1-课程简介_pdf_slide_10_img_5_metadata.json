@@ -1,0 +1,33 @@
+{
+  "original_path": "output/qwen_qwen3.7-plus_7/debug/images/w01-1-课程简介_p10_img6.jpeg",
+  "enhanced_path": "output/qwen_qwen3.7-plus_7/debug/images/w01-1-课程简介_p10_img6_enhanced.jpeg",
+  "description": "类型：示意图\n图片展示了一个分层控制系统架构。顶部中央放置一块Arduino主板，通过四条标有“数字通信”的红色连线，分别连接下方的四块相同的Arduino从板。每块从板下方均标注“底层控制”，并通过红色箭头指向底部的硬件组件。底部并列排列四组相同的执行单元，每组包含两节电池和一个灰色方块状设备，统一标注为“执行器/制动器/actuator”。整体呈现出一主多从的拓扑结构及信号流向。",
+  "metadata": {
+    "generation": {
+      "method": "qwen_api",
+      "backend": "api",
+      "provider": "qwen",
+      "model": "qwen3.7-plus",
+      "status": "success",
+      "api_error": null
+    },
+    "review": {
+      "required": false,
+      "status": null,
+      "reason": null,
+      "course_relevant": true
+    }
+  },
+  "error": null,
+  "method": "qwen_api",
+  "backend": "api",
+  "provider": "qwen",
+  "model": "qwen3.7-plus",
+  "status": "success",
+  "api_error": null,
+  "indexable": true,
+  "review_required": false,
+  "review_reason": null,
+  "review_status": null,
+  "course_relevant": true
+}

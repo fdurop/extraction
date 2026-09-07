@@ -1,0 +1,33 @@
+{
+  "original_path": "output/qwen_qwen3.7-plus_7/debug/images/w01-1-课程简介_p15_img2.jpeg",
+  "enhanced_path": "output/qwen_qwen3.7-plus_7/debug/images/w01-1-课程简介_p15_img2_enhanced.jpeg",
+  "description": "类型：示意图\n图片展示了一个具有立体效果的饼状图，背景为黑色。圆饼被分割为五个扇区：左半部分包含一个深蓝色扇区（约占总面积30%）和一个浅蓝色扇区（约占20%）；右半部分整体呈红色调，被进一步细分为三个大小不一的红色系扇区（分别对应约35%、15%和10%的比例）。结合页面上下文，该图表直观展示了课程成绩评定的构成比例，其中蓝色区域代表平时成绩（分组实践、作业、考勤），红色区域代表期末设计（阶段汇报、书面报告）。",
+  "metadata": {
+    "generation": {
+      "method": "qwen_api",
+      "backend": "api",
+      "provider": "qwen",
+      "model": "qwen3.7-plus",
+      "status": "success",
+      "api_error": null
+    },
+    "review": {
+      "required": false,
+      "status": null,
+      "reason": null,
+      "course_relevant": true
+    }
+  },
+  "error": null,
+  "method": "qwen_api",
+  "backend": "api",
+  "provider": "qwen",
+  "model": "qwen3.7-plus",
+  "status": "success",
+  "api_error": null,
+  "indexable": true,
+  "review_required": false,
+  "review_reason": null,
+  "review_status": null,
+  "course_relevant": true
+}

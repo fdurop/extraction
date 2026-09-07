@@ -1,0 +1,20 @@
+{
+  "page_num": 14,
+  "raw_text": "机电系统原理及实践—— 脉宽调制& 舵机\n机电智控实验室tangguoan@fudan.edu.cn mmguo@fudan.edu.cn\n§4 实践：用电位器控制舵机\n15-15\nw02-s4-servoKnob.ino\n室 复旦大\n智控实验室 复旦大学 机电\n学 机电智控实验室 复旦大学 机电智控实验\n复旦大学 机电智控实验室 复旦大学 机电智控实验室 复旦\n大学 机电智控实验室 复旦大学 机电智控实验室 复旦大学 机电\n电智控实验室 复旦大学 机电智控实验室 复旦大学 机电智控实\n验室 复旦大学 机电智控实验室 复旦大学 机电智控实验室 \n旦大学 机电智控实验室 复旦大学 机电智控\n电智控实验室 复旦大学 \n验室 复\n",
+  "cleaned_text": "§4 实践：用电位器控制舵机\nw02-s4-servoKnob.ino",
+  "key_points": [],
+  "technical_terms": [
+    "w02-s4-servoKnob",
+    "用电位器控制"
+  ],
+  "has_images": true,
+  "image_count": 1,
+  "image_paths": [
+    "output/qwen_qwen3.7-plus_7/debug/images/w02-1-PWM和舵机_p15_img2.jpeg"
+  ],
+  "metadata": {
+    "char_count": 316,
+    "word_count": 47,
+    "line_count": 16
+  }
+}

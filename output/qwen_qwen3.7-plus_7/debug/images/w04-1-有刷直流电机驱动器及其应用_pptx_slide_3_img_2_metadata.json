@@ -1,0 +1,33 @@
+{
+  "original_path": "output/qwen_qwen3.7-plus_7/debug/images/w04-1-有刷直流电机驱动器及其应用_slide_3_img_2.png",
+  "enhanced_path": "output/qwen_qwen3.7-plus_7/debug/images/w04-1-有刷直流电机驱动器及其应用_slide_3_img_2_enhanced.png",
+  "description": "类型：示意图\n图片展示电机横截面结构。外部为定子（Stator），包含左侧蓝色S极和右侧红色N极磁体。内部中心为转子（Rotor），其上绕有线圈（Coil），红色线条表示绕组，黑色箭头标示电流方向。转子轴端连接换向器（Commutator）。底部设有电刷（Brush），通过黄色导线与换向器接触，导线上有黑色箭头指示电流流入与流出路径。",
+  "metadata": {
+    "generation": {
+      "method": "qwen_api",
+      "backend": "api",
+      "provider": "qwen",
+      "model": "qwen3.7-plus",
+      "status": "success",
+      "api_error": null
+    },
+    "review": {
+      "required": false,
+      "status": null,
+      "reason": null,
+      "course_relevant": true
+    }
+  },
+  "error": null,
+  "method": "qwen_api",
+  "backend": "api",
+  "provider": "qwen",
+  "model": "qwen3.7-plus",
+  "status": "success",
+  "api_error": null,
+  "indexable": true,
+  "review_required": false,
+  "review_reason": null,
+  "review_status": null,
+  "course_relevant": true
+}

@@ -1,0 +1,33 @@
+{
+  "original_path": "output/qwen_qwen3.7-plus_7/debug/images/w14-1-数字通信_p14_img5.jpeg",
+  "enhanced_path": "output/qwen_qwen3.7-plus_7/debug/images/w14-1-数字通信_p14_img5_enhanced.jpeg",
+  "description": "类型：示意图\n图片展示了I2C总线通信的时序波形，包含上下两条信号线：上方为数据线SDA，下方为时钟线SCL。图中通过箭头标注了五个关键时序节点：Start（开始信号）、数据位1、数据位0、数据位1、Stop（结束信号）。波形显示Start条件为SCL高电平时SDA由高变低；Stop条件为SCL高电平时SDA由低变高。数据传输阶段，SDA在SCL低电平时发生电平跳变（分别代表逻辑1的高脉冲和逻辑0的低电平），并在SCL高电平期间保持稳定。",
+  "metadata": {
+    "generation": {
+      "method": "qwen_api",
+      "backend": "api",
+      "provider": "qwen",
+      "model": "qwen3.7-plus",
+      "status": "success",
+      "api_error": null
+    },
+    "review": {
+      "required": false,
+      "status": null,
+      "reason": null,
+      "course_relevant": true
+    }
+  },
+  "error": null,
+  "method": "qwen_api",
+  "backend": "api",
+  "provider": "qwen",
+  "model": "qwen3.7-plus",
+  "status": "success",
+  "api_error": null,
+  "indexable": true,
+  "review_required": false,
+  "review_reason": null,
+  "review_status": null,
+  "course_relevant": true
+}

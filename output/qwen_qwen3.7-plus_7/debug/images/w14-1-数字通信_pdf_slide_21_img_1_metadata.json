@@ -1,0 +1,33 @@
+{
+  "original_path": "output/qwen_qwen3.7-plus_7/debug/images/w14-1-数字通信_p21_img3.jpeg",
+  "enhanced_path": "output/qwen_qwen3.7-plus_7/debug/images/w14-1-数字通信_p21_img3_enhanced.jpeg",
+  "description": "类型：示意图\n图片展示两个Arduino Uno开发板及扩展的CAN Bus Shield模块进行通信的硬件连接。左侧板与右侧板通过导线相连，具体连线标注为：绿色线连接两板的CAN_L接口，橙色线连接两板的CAN_H接口。板上可见DB9接口、绿色接线端子及排针，印有“CAN-Bus Shield”、“Seeed Studio”字样及引脚标识（如SCL、SDA、AREF、GND等）。顶部设有“CAN_L”和“CAN_H”文本标签指示线路功能。",
+  "metadata": {
+    "generation": {
+      "method": "qwen_api",
+      "backend": "api",
+      "provider": "qwen",
+      "model": "qwen3.7-plus",
+      "status": "success",
+      "api_error": null
+    },
+    "review": {
+      "required": false,
+      "status": null,
+      "reason": null,
+      "course_relevant": true
+    }
+  },
+  "error": null,
+  "method": "qwen_api",
+  "backend": "api",
+  "provider": "qwen",
+  "model": "qwen3.7-plus",
+  "status": "success",
+  "api_error": null,
+  "indexable": true,
+  "review_required": false,
+  "review_reason": null,
+  "review_status": null,
+  "course_relevant": true
+}

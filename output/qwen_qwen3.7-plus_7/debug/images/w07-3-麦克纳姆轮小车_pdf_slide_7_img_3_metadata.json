@@ -1,0 +1,33 @@
+{
+  "original_path": "output/qwen_qwen3.7-plus_7/debug/images/w07-3-麦克纳姆轮小车_p7_img4.png",
+  "enhanced_path": "output/qwen_qwen3.7-plus_7/debug/images/w07-3-麦克纳姆轮小车_p7_img4_enhanced.png",
+  "description": "类型：示意图\n图片展示了麦克纳姆轮小车的运动学分析模型。左下角标记为CENTER的坐标系包含绿色水平矢量$w_c$、橙色斜向矢量$v_c$及红色垂直矢量。车身中心有黑色矩形模块M4，右侧连接4号轮组件。图中标注了蓝色旋转角速度$\\omega_4$、指向右上方的红色线速度矢量$v_{w4}$以及沿辊子轴向的橙色分量$v_{\\parallel 4}$。虚线连接质心与轮子接地点，示意几何位置关系。配合文字描述了正逆运动学定义，列出了第$i$个轮子速度公式$\\boldsymbol{v}_i = \\boldsymbol{v}_c + \\boldsymbol{\\omega}_c \\times \\boldsymbol{r}_i$，以及4号轮线速度与角速度的换算关系和包含$r_x, r_y$参数的具体计算式。",
+  "metadata": {
+    "generation": {
+      "method": "qwen_api",
+      "backend": "api",
+      "provider": "qwen",
+      "model": "qwen3.7-plus",
+      "status": "success",
+      "api_error": null
+    },
+    "review": {
+      "required": false,
+      "status": null,
+      "reason": null,
+      "course_relevant": true
+    }
+  },
+  "error": null,
+  "method": "qwen_api",
+  "backend": "api",
+  "provider": "qwen",
+  "model": "qwen3.7-plus",
+  "status": "success",
+  "api_error": null,
+  "indexable": true,
+  "review_required": false,
+  "review_reason": null,
+  "review_status": null,
+  "course_relevant": true
+}

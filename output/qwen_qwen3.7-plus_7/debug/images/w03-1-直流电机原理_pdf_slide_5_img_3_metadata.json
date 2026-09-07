@@ -1,0 +1,33 @@
+{
+  "original_path": "output/qwen_qwen3.7-plus_7/debug/images/w03-1-直流电机原理_p5_img4.png",
+  "enhanced_path": "output/qwen_qwen3.7-plus_7/debug/images/w03-1-直流电机原理_p5_img4_enhanced.png",
+  "description": "类型：示意图\n图片展示了一个电机横截面结构。外部为带斜线阴影的圆环形定子外壳。内部中心有一个圆柱形转子，转子上呈放射状分布着三个绕有线圈的磁极，其中下方磁极标注了N极和S极。定子内壁左右两侧分别放置了蓝色斜纹矩形块和红色斜纹矩形块。转子下方的线圈通过电刷结构引出两根导线：左侧为蓝色导线连接至标有“-”的端子，右侧为红色导线连接至标有“+”的端子。转子顶部绘有一个黑色弯曲箭头，指示逆时针旋转方向。",
+  "metadata": {
+    "generation": {
+      "method": "qwen_api",
+      "backend": "api",
+      "provider": "qwen",
+      "model": "qwen3.7-plus",
+      "status": "success",
+      "api_error": null
+    },
+    "review": {
+      "required": false,
+      "status": null,
+      "reason": null,
+      "course_relevant": true
+    }
+  },
+  "error": null,
+  "method": "qwen_api",
+  "backend": "api",
+  "provider": "qwen",
+  "model": "qwen3.7-plus",
+  "status": "success",
+  "api_error": null,
+  "indexable": true,
+  "review_required": false,
+  "review_reason": null,
+  "review_status": null,
+  "course_relevant": true
+}

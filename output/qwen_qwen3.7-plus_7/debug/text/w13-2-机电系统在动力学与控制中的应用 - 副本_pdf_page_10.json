@@ -1,0 +1,17 @@
+{
+  "page_num": 9,
+  "raw_text": "机电系统原理及实践—— 机电系统在动力学与控制中的应用\n机电智控实验室tangguoan@fudan.edu.cn mmguo@fudan.edu.cn\n16-10\n§4.1 单摆残余振动的抑制——滑台上的单摆模型\nmg\ns( )\nu t\n( )t\n\n2\ns\nsin\ncos\nml\ngl\nmu l\n\n\n\n+\n= −\nsu\ng\nl\nl\n\n\n+\n= −\n(\n)\ns\n?\nu =\n",
+  "cleaned_text": "§4.1 单摆残余振动的抑制——滑台上的单摆模型\nmg\ns( )\nu t\n( )t\n2\ns\nsin\ncos\nml\ngl\nmu l\n+\n= −\nsu\ng\nl\nl\n+\n= −\n(\n)\ns\n?\nu =",
+  "key_points": [],
+  "technical_terms": [
+    "滑台上的单摆模型"
+  ],
+  "has_images": false,
+  "image_count": 0,
+  "image_paths": [],
+  "metadata": {
+    "char_count": 193,
+    "word_count": 44,
+    "line_count": 35
+  }
+}

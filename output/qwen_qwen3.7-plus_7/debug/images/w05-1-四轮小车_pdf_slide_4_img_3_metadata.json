@@ -1,0 +1,33 @@
+{
+  "original_path": "output/qwen_qwen3.7-plus_7/debug/images/w05-1-四轮小车_p4_img4.png",
+  "enhanced_path": "output/qwen_qwen3.7-plus_7/debug/images/w05-1-四轮小车_p4_img4_enhanced.png",
+  "description": "类型：示意图\n图片包含上下两个H桥电机驱动电路原理图。每个电路由四个开关管（标记为A1、B1、A2、B2、A3、B3、A4、B4）和中心的一个直流电机（符号为圆圈内带M）组成。\n上方电路中，红色导线连接电源正极至A1、A3及电机左侧，绿色导线连接电源负极至B2、B4及电机右侧，电机上方有逆时针旋转箭头。\n下方电路中，绿色导线连接电源正极至A2、A4及电机右侧，红色导线连接电源负极至B1、B3及电机左侧，电机上方有顺时针旋转箭头。\n图中通过红绿颜色区分电流路径，展示了改变开关状态以改变电机转向的两种接线构型。",
+  "metadata": {
+    "generation": {
+      "method": "qwen_api",
+      "backend": "api",
+      "provider": "qwen",
+      "model": "qwen3.7-plus",
+      "status": "success",
+      "api_error": null
+    },
+    "review": {
+      "required": false,
+      "status": null,
+      "reason": null,
+      "course_relevant": true
+    }
+  },
+  "error": null,
+  "method": "qwen_api",
+  "backend": "api",
+  "provider": "qwen",
+  "model": "qwen3.7-plus",
+  "status": "success",
+  "api_error": null,
+  "indexable": true,
+  "review_required": false,
+  "review_reason": null,
+  "review_status": null,
+  "course_relevant": true
+}

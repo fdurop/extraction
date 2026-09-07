@@ -1,0 +1,33 @@
+{
+  "original_path": "output/qwen_qwen3.7-plus_7/debug/images/w05-1-四轮小车_p12_img2.jpeg",
+  "enhanced_path": "output/qwen_qwen3.7-plus_7/debug/images/w05-1-四轮小车_p12_img2_enhanced.jpeg",
+  "description": "类型：照片\n图片展示了一块绿色的Arduino Uno开发板实物。板载主要组件包括左侧的银色USB接口和黑色圆柱形DC电源插座，中间的主控芯片（ATmega328P）及晶振，以及上下边缘的黑色排母接口。板上丝印清晰标注了接口定义：顶部为数字引脚（DIGITAL 0-13, PWM, GND, AREF），底部右侧为模拟输入引脚（ANALOG IN A0-A5），底部中间为电源引脚（POWER: 3.3V, 5V, GND, Vin）。此外可见RESET复位按钮、TX/RX指示灯、ICSP接口及板载LED灯。",
+  "metadata": {
+    "generation": {
+      "method": "qwen_api",
+      "backend": "api",
+      "provider": "qwen",
+      "model": "qwen3.7-plus",
+      "status": "success",
+      "api_error": null
+    },
+    "review": {
+      "required": false,
+      "status": null,
+      "reason": null,
+      "course_relevant": true
+    }
+  },
+  "error": null,
+  "method": "qwen_api",
+  "backend": "api",
+  "provider": "qwen",
+  "model": "qwen3.7-plus",
+  "status": "success",
+  "api_error": null,
+  "indexable": true,
+  "review_required": false,
+  "review_reason": null,
+  "review_status": null,
+  "course_relevant": true
+}

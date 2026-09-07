@@ -1,0 +1,33 @@
+{
+  "original_path": "output/qwen_qwen3.7-plus_7/debug/images/w03-1-直流电机原理_p20_img2.png",
+  "enhanced_path": "output/qwen_qwen3.7-plus_7/debug/images/w03-1-直流电机原理_p20_img2_enhanced.png",
+  "description": "类型：示意图\n图中展示了使用两个双刀双掷开关驱动步进电机的接线电路。右侧为电机接线端子，包含A、A非、B、B非四个接口。左侧和中间各有一个双刀双掷开关符号。底部有两个矩形框代表电源输入，分别标注“接电源-”（绿色线）和“接电源+”（红色线）。绿色导线将电源负极连接至两个开关的特定触点；红色导线将电源正极连接至开关的另一组触点。开关的输出端通过黑线分别连接至电机的A相和B相端子，展示了通过开关切换改变电机绕组电流方向的物理连接关系。",
+  "metadata": {
+    "generation": {
+      "method": "qwen_api",
+      "backend": "api",
+      "provider": "qwen",
+      "model": "qwen3.7-plus",
+      "status": "success",
+      "api_error": null
+    },
+    "review": {
+      "required": false,
+      "status": null,
+      "reason": null,
+      "course_relevant": true
+    }
+  },
+  "error": null,
+  "method": "qwen_api",
+  "backend": "api",
+  "provider": "qwen",
+  "model": "qwen3.7-plus",
+  "status": "success",
+  "api_error": null,
+  "indexable": true,
+  "review_required": false,
+  "review_reason": null,
+  "review_status": null,
+  "course_relevant": true
+}

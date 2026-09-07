@@ -1,0 +1,33 @@
+{
+  "original_path": "output/qwen_qwen3.7-plus_7/debug/images/w01-1-课程简介_p17_img5.jpeg",
+  "enhanced_path": "output/qwen_qwen3.7-plus_7/debug/images/w01-1-课程简介_p17_img5_enhanced.jpeg",
+  "description": "类型：照片\n图片展示了一个机电系统实验装置。白色桌面上放置着一把红棕色小提琴，琴身被固定在黑色的3D打印夹具与黄色舵机组成的底座上。一把琴弓夹持在长条形黑色机械臂末端，机械臂通过多关节连接延伸至桌面右侧的垂直支架基座。左上角插图展示了该装置的局部特写，清晰可见乐高积木结构、红色与黑色导线、伺服电机以及夹持琴弓的白色手指状部件。背景为实验室环境，可见白色柜体与投影幕布。",
+  "metadata": {
+    "generation": {
+      "method": "qwen_api",
+      "backend": "api",
+      "provider": "qwen",
+      "model": "qwen3.7-plus",
+      "status": "success",
+      "api_error": null
+    },
+    "review": {
+      "required": false,
+      "status": null,
+      "reason": null,
+      "course_relevant": true
+    }
+  },
+  "error": null,
+  "method": "qwen_api",
+  "backend": "api",
+  "provider": "qwen",
+  "model": "qwen3.7-plus",
+  "status": "success",
+  "api_error": null,
+  "indexable": true,
+  "review_required": false,
+  "review_reason": null,
+  "review_status": null,
+  "course_relevant": true
+}
