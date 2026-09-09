@@ -1,0 +1,33 @@
+{
+  "original_path": "extraction/output/qwen_qwen3.7-plus_8/debug/images/w01-1-课程简介_p14_img2.jpeg",
+  "enhanced_path": "extraction/output/qwen_qwen3.7-plus_8/debug/images/w01-1-课程简介_p14_img2_enhanced.jpeg",
+  "description": "类型：照片\n图片展示了一个机电系统实验台场景。左侧桌面上放置一台白色打印机，其上方安装有包含电路板和传感器的黑色机械装置。中间棕色沙发前设有银色金属滑台模组，连接黄色手持控制器及黑色仪器盒。右侧立有黑色三脚架，顶部架设深度相机（类似Kinect），正对前方墙面投射绿色光点。右下角笔记本电脑屏幕显示蓝色背景的视觉采集软件界面。背景墙角挂有两幅装饰画。整体呈现了包含执行机构、传感器、控制器及上位机的硬件在环实验环境。",
+  "metadata": {
+    "generation": {
+      "method": "qwen_api",
+      "backend": "api",
+      "provider": "qwen",
+      "model": "qwen3.7-plus",
+      "status": "success",
+      "api_error": null
+    },
+    "review": {
+      "required": false,
+      "status": null,
+      "reason": null,
+      "course_relevant": true
+    }
+  },
+  "error": null,
+  "method": "qwen_api",
+  "backend": "api",
+  "provider": "qwen",
+  "model": "qwen3.7-plus",
+  "status": "success",
+  "api_error": null,
+  "indexable": true,
+  "review_required": false,
+  "review_reason": null,
+  "review_status": null,
+  "course_relevant": true
+}

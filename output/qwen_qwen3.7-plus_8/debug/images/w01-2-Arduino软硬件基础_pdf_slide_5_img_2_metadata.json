@@ -1,0 +1,33 @@
+{
+  "original_path": "extraction/output/qwen_qwen3.7-plus_8/debug/images/w01-2-Arduino软硬件基础_p5_img3.jpeg",
+  "enhanced_path": "extraction/output/qwen_qwen3.7-plus_8/debug/images/w01-2-Arduino软硬件基础_p5_img3_enhanced.jpeg",
+  "description": "类型：示意图\n图片展示了Arduino UNO R4 WIFI开发板的硬件布局及接口标注。板载核心芯片标识为RA4M1，无线模块型号为ESP32-S3-MINI-1-N8。图中通过红线指示了各组件位置，包括：板载LED（内部与D13相连）、复位键、IIC接口、14位数字I/O口（含6个PWM接口）、USB-C接口、TXD/RXD LED、电源接口（DC5.5*2.1）、VRTC、复位接口、电压输出接口、电源接口、6个模拟输入接口（A0-A5）、电源指示灯、ICSP接口、QWIIC连接器以及12*8 LED矩阵。",
+  "metadata": {
+    "generation": {
+      "method": "qwen_api",
+      "backend": "api",
+      "provider": "qwen",
+      "model": "qwen3.7-plus",
+      "status": "success",
+      "api_error": null
+    },
+    "review": {
+      "required": false,
+      "status": null,
+      "reason": null,
+      "course_relevant": true
+    }
+  },
+  "error": null,
+  "method": "qwen_api",
+  "backend": "api",
+  "provider": "qwen",
+  "model": "qwen3.7-plus",
+  "status": "success",
+  "api_error": null,
+  "indexable": true,
+  "review_required": false,
+  "review_reason": null,
+  "review_status": null,
+  "course_relevant": true
+}

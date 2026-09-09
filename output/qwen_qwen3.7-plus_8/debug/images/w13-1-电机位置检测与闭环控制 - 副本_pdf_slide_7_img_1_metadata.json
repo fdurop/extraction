@@ -1,0 +1,33 @@
+{
+  "original_path": "extraction/output/qwen_qwen3.7-plus_8/debug/images/w13-1-电机位置检测与闭环控制 - 副本_p7_img3.jpeg",
+  "enhanced_path": "extraction/output/qwen_qwen3.7-plus_8/debug/images/w13-1-电机位置检测与闭环控制 - 副本_p7_img3_enhanced.jpeg",
+  "description": "类型：示意图\n图片包含上下两组波形时序图，分别对应向左移动（逆时针）和向右移动（顺时针）两种状态。每组含A电平和B电平两条信号线，横轴为时间，纵轴为电平高低。上方图中，A相上升沿时刻B相处于高电平，A相下降沿时刻B相处于低电平；下方图中，A相上升沿时刻B相处于低电平，A相下降沿时刻B相处于高电平。波形呈方波状，两相信号存在相位差，通过黑点标记了采样或触发时刻。",
+  "metadata": {
+    "generation": {
+      "method": "qwen_api",
+      "backend": "api",
+      "provider": "qwen",
+      "model": "qwen3.7-plus",
+      "status": "success",
+      "api_error": null
+    },
+    "review": {
+      "required": false,
+      "status": null,
+      "reason": null,
+      "course_relevant": true
+    }
+  },
+  "error": null,
+  "method": "qwen_api",
+  "backend": "api",
+  "provider": "qwen",
+  "model": "qwen3.7-plus",
+  "status": "success",
+  "api_error": null,
+  "indexable": true,
+  "review_required": false,
+  "review_reason": null,
+  "review_status": null,
+  "course_relevant": true
+}

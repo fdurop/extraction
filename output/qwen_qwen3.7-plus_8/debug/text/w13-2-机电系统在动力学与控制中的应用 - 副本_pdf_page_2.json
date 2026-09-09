@@ -1,0 +1,17 @@
+{
+  "page_num": 1,
+  "raw_text": "机电系统原理及实践—— 机电系统在动力学与控制中的应用\n机电智控实验室tangguoan@fudan.edu.cn mmguo@fudan.edu.cn\n内容提要\n16-2\n系统组成及动作展示\n“多选一”动作开关的控制程序\n滑台启动的输入整形\n单摆残余振动的抑制\n倒立摆演示\n",
+  "cleaned_text": "内容提要\n系统组成及动作展示\n“多选一”动作开关的控制程序\n滑台启动的输入整形\n单摆残余振动的抑制\n倒立摆演示",
+  "key_points": [],
+  "technical_terms": [
+    "动作开关的控制"
+  ],
+  "has_images": false,
+  "image_count": 0,
+  "image_paths": [],
+  "metadata": {
+    "char_count": 138,
+    "word_count": 11,
+    "line_count": 10
+  }
+}

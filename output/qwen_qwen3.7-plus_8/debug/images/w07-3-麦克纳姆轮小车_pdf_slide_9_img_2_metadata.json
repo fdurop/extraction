@@ -1,0 +1,33 @@
+{
+  "original_path": "extraction/output/qwen_qwen3.7-plus_8/debug/images/w07-3-麦克纳姆轮小车_p9_img3.jpeg",
+  "enhanced_path": "extraction/output/qwen_qwen3.7-plus_8/debug/images/w07-3-麦克纳姆轮小车_p9_img3_enhanced.jpeg",
+  "description": "类型：照片\n图片展示了一块黑色的DFROBOT Quad Motor Driver Shield电路板。板载可见红色排针（标注VIN, GND, 5V, 3.3V等）、蓝色排针（标注A0-A5）、左侧绿色接线端子（标注PWR+/-）以及右侧四个绿色电机接线端子。电路板表面印有“DFROBOT”标志及“Quad Motor Driver Shield for Arduino V1.0”字样，中央分布有两颗主要芯片。结合页面文字，该模块用于替换自制驱动器，通过PWM和DIR信号控制四路直流电机（对应小车左前、右前、左后、右后轮），并标注了D3/D5/D6/D9/D10/D11等引脚的PWM频率参数。",
+  "metadata": {
+    "generation": {
+      "method": "qwen_api",
+      "backend": "api",
+      "provider": "qwen",
+      "model": "qwen3.7-plus",
+      "status": "success",
+      "api_error": null
+    },
+    "review": {
+      "required": false,
+      "status": null,
+      "reason": null,
+      "course_relevant": true
+    }
+  },
+  "error": null,
+  "method": "qwen_api",
+  "backend": "api",
+  "provider": "qwen",
+  "model": "qwen3.7-plus",
+  "status": "success",
+  "api_error": null,
+  "indexable": true,
+  "review_required": false,
+  "review_reason": null,
+  "review_status": null,
+  "course_relevant": true
+}

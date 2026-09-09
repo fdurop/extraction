@@ -1,0 +1,33 @@
+{
+  "original_path": "extraction/output/qwen_qwen3.7-plus_8/debug/images/w15-2-机器人运动学及其应用_p4_img5.jpeg",
+  "enhanced_path": "extraction/output/qwen_qwen3.7-plus_8/debug/images/w15-2-机器人运动学及其应用_p4_img5_enhanced.jpeg",
+  "description": "类型：示意图\n图片展示了一个虎克铰（万向节）的三维结构模型。主体由两个灰色的半圆形叉状构件正交嵌套组成，形成环形外部框架。中心位置有一个紫红色的十字形连接块，通过黄色的圆柱形销轴将两个灰色构件连接在一起。两根黄色的长杆分别沿对角线方向从左右两侧延伸出画面，代表被连接的传动轴。该图直观呈现了虎克铰允许两轴在一定角度内传递旋转运动的机械构造。",
+  "metadata": {
+    "generation": {
+      "method": "qwen_api",
+      "backend": "api",
+      "provider": "qwen",
+      "model": "qwen3.7-plus",
+      "status": "success",
+      "api_error": null
+    },
+    "review": {
+      "required": false,
+      "status": null,
+      "reason": null,
+      "course_relevant": true
+    }
+  },
+  "error": null,
+  "method": "qwen_api",
+  "backend": "api",
+  "provider": "qwen",
+  "model": "qwen3.7-plus",
+  "status": "success",
+  "api_error": null,
+  "indexable": true,
+  "review_required": false,
+  "review_reason": null,
+  "review_status": null,
+  "course_relevant": true
+}

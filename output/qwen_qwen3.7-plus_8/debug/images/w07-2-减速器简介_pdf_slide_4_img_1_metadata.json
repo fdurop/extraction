@@ -1,0 +1,33 @@
+{
+  "original_path": "extraction/output/qwen_qwen3.7-plus_8/debug/images/w07-2-减速器简介_p4_img2.jpeg",
+  "enhanced_path": "extraction/output/qwen_qwen3.7-plus_8/debug/images/w07-2-减速器简介_p4_img2_enhanced.jpeg",
+  "description": "类型：示意图\n图片展示了一个齿轮减速器的三维剖视结构模型。主体为蓝色箱体，内部包含多级齿轮传动组件。可见一根输入轴连接小直径斜齿轮，与中间轴上的大直径斜齿轮啮合；中间轴另一端的小齿轮再与输出轴上的大齿轮啮合。各转轴由滚珠轴承支撑固定在箱体内壁，齿轮轮毂部分呈现橙黄色。该图直观展示了多级齿轮减速器的内部空间布局、齿轮啮合关系及轴承安装方式。",
+  "metadata": {
+    "generation": {
+      "method": "qwen_api",
+      "backend": "api",
+      "provider": "qwen",
+      "model": "qwen3.7-plus",
+      "status": "success",
+      "api_error": null
+    },
+    "review": {
+      "required": false,
+      "status": null,
+      "reason": null,
+      "course_relevant": true
+    }
+  },
+  "error": null,
+  "method": "qwen_api",
+  "backend": "api",
+  "provider": "qwen",
+  "model": "qwen3.7-plus",
+  "status": "success",
+  "api_error": null,
+  "indexable": true,
+  "review_required": false,
+  "review_reason": null,
+  "review_status": null,
+  "course_relevant": true
+}

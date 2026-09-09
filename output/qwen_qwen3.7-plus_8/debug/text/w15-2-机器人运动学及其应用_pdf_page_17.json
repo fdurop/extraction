@@ -1,0 +1,20 @@
+{
+  "page_num": 16,
+  "raw_text": "机电系统原理及实践—— 机器人运动学简介\n机电智控实验室tangguoan@fudan.edu.cn mmguo@fudan.edu.cn\n§3.3 四条腿的机器狗(运动学控制)\n21-17\n四条腿依次迈步\n对角同时迈步\n",
+  "cleaned_text": "§3.3 四条腿的机器狗(运动学控制)\n四条腿依次迈步\n对角同时迈步",
+  "key_points": [],
+  "technical_terms": [
+    "运动学控制"
+  ],
+  "has_images": true,
+  "image_count": 2,
+  "image_paths": [
+    "extraction/output/qwen_qwen3.7-plus_8/debug/images/w15-2-机器人运动学及其应用_p17_img3.jpeg",
+    "extraction/output/qwen_qwen3.7-plus_8/debug/images/w15-2-机器人运动学及其应用_p17_img6.jpeg"
+  ],
+  "metadata": {
+    "char_count": 111,
+    "word_count": 9,
+    "line_count": 7
+  }
+}

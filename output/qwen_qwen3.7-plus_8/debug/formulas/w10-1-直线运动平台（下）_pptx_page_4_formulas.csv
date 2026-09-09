@@ -1,0 +1,4 @@
+﻿序号,LaTeX公式,名称,描述,来源图像,提取方法,置信度,验证状态,是否需审核
+1,\text{导程} = \text{螺距 (pitch)},,,extraction/output/qwen_qwen3.7-plus_8/debug/images/w10-1-直线运动平台（下）_slide_4_img_2.png,qwen_api_formula,1.0,passed,False
+2,\text{导程} = \text{螺距} \times \text{线数},,,extraction/output/qwen_qwen3.7-plus_8/debug/images/w10-1-直线运动平台（下）_slide_4_img_2.png,qwen_api_formula,1.0,passed,False
+3,\text{滑台的速度} = \text{导程} \times \text{丝杠转速},,,extraction/output/qwen_qwen3.7-plus_8/debug/images/w10-1-直线运动平台（下）_slide_4_img_2.png,qwen_api_formula,1.0,passed,False

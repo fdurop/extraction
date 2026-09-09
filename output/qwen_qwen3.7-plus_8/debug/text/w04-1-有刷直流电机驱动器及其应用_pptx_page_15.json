@@ -1,0 +1,36 @@
+{
+  "page_num": 14,
+  "raw_text": "§3 \n实践：\n有刷直流电机驱动与控制\nStep 4\n：接收外界控制，相应调整转向或转速\n转向控制：\n单刀双掷开关\n；\npinMode\n(\npinDir\n[i], \nINPUT_PULLUP\n)\ndigitalRead\n(\npinDir\n[i]); // \n返回值：\nHIGH \n或 \nLOW\n转速控制：电位器。\n23-\nw04-s4-DCMotorController.ino",
+  "cleaned_text": "§3\n实践：\n有刷直流电机驱动与控制\nStep 4\n：接收外界控制，相应调整转向或转速\n转向控制：\n单刀双掷开关\n；\npinMode\n(\npinDir\n[i],\nINPUT_PULLUP\n)\ndigitalRead\n(\npinDir\n[i]); //\n返回值：\nHIGH\n或\nLOW\n转速控制：电位器。\nw04-s4-DCMotorController.ino",
+  "key_points": [
+    "实践：",
+    "Step 4",
+    "转向控制：",
+    "INPUT_PULLUP",
+    "返回值：",
+    "HIGH",
+    "LOW",
+    "转速控制：电位器。"
+  ],
+  "technical_terms": [
+    "HIGH",
+    "INPUT_PULLUP",
+    "LOW",
+    "w04-s4-DCMotorController",
+    "接收外界控制",
+    "有刷直流电机",
+    "有刷直流电机驱动与控制",
+    "转向控制",
+    "转速控制"
+  ],
+  "has_images": true,
+  "image_count": 1,
+  "image_paths": [
+    "extraction/output/qwen_qwen3.7-plus_8/debug/images/w04-1-有刷直流电机驱动器及其应用_slide_15_img_1.png"
+  ],
+  "metadata": {
+    "char_count": 189,
+    "word_count": 27,
+    "line_count": 25
+  }
+}

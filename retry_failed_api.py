@@ -17,14 +17,15 @@ from pathlib import Path
 from typing import Any, Dict, Iterable, List, Optional
 
 
-PROJECT_ROOT = Path(__file__).resolve().parent
-SRC2_DIR = PROJECT_ROOT / "src2"
+EXTRACTION_ROOT = Path(__file__).resolve().parent
+WORKSPACE_ROOT = EXTRACTION_ROOT.parent
+SRC2_DIR = EXTRACTION_ROOT / "src2"
 if hasattr(sys.stdout, "reconfigure"):
     sys.stdout.reconfigure(encoding="utf-8", errors="replace")
 if hasattr(sys.stderr, "reconfigure"):
     sys.stderr.reconfigure(encoding="utf-8", errors="replace")
 sys.path.insert(0, str(SRC2_DIR))
-sys.path.insert(0, str(PROJECT_ROOT))
+sys.path.insert(0, str(EXTRACTION_ROOT))
 
 from core import FormulaValidator, ImageProcessor, TableValidator  # noqa: E402
 from utils import create_vlm_client  # noqa: E402
@@ -63,7 +64,11 @@ def project_path(value: Any) -> Optional[Path]:
         return None
     path = Path(str(value).replace("/", os.sep))
     if not path.is_absolute():
-        path = PROJECT_ROOT / path
+        first = path.parts[0].lower() if path.parts else ""
+        if first in {"input", "output", "config", "logs", "models", "src2"}:
+            path = EXTRACTION_ROOT / path
+        else:
+            path = WORKSPACE_ROOT / path
     return path.resolve()
 
 
@@ -86,7 +91,7 @@ def next_retry_dir(run_dir: Path) -> Path:
 
 
 def latest_completed_run() -> Path:
-    output_root = PROJECT_ROOT / "output"
+    output_root = EXTRACTION_ROOT / "output"
     candidates = [
         path for path in output_root.iterdir()
         if path.is_dir() and (path / "kg_data" / "knowledge_export_summary.json").exists()
@@ -132,8 +137,8 @@ def candidate(
         return None
     return {
         "operation": operation,
-        "metadata_path": str(metadata_path.relative_to(PROJECT_ROOT)).replace(os.sep, "/"),
-        "source_image": str(image_path.relative_to(PROJECT_ROOT)).replace(os.sep, "/"),
+        "metadata_path": str(metadata_path.relative_to(WORKSPACE_ROOT)).replace(os.sep, "/"),
+        "source_image": str(image_path.relative_to(WORKSPACE_ROOT)).replace(os.sep, "/"),
         "api_error": str(error),
         "source_document": document,
         "page_num": page_num,
@@ -375,7 +380,10 @@ def count_log_events(run_dir: Path) -> Dict[str, int]:
 
 def parse_args() -> argparse.Namespace:
     parser = argparse.ArgumentParser(description="重试已完成抽取结果中的临时 API 失败项")
-    parser.add_argument("--run-dir", help="指定 output 下的运行目录；默认选择最新完整运行")
+    parser.add_argument(
+        "--run-dir",
+        help="指定 extraction/output 下的运行目录；默认选择最新完整运行",
+    )
     parser.add_argument("--dry-run", action="store_true", help="只扫描，不调用 API")
     return parser.parse_args()
 
@@ -427,7 +435,7 @@ def main() -> int:
         results.append(result)
 
     manifest = {
-        "source_run": str(run_dir.relative_to(PROJECT_ROOT)).replace(os.sep, "/"),
+        "source_run": str(run_dir.relative_to(WORKSPACE_ROOT)).replace(os.sep, "/"),
         "created_at": datetime.now().isoformat(),
         "provider": client.provider,
         "model": client.model,

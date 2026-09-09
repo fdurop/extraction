@@ -1,0 +1,33 @@
+{
+  "original_path": "extraction/output/qwen_qwen3.7-plus_9/debug/images/w02-1-PWM和舵机_p9_img2.jpeg",
+  "enhanced_path": "extraction/output/qwen_qwen3.7-plus_9/debug/images/w02-1-PWM和舵机_p9_img2_enhanced.jpeg",
+  "description": "类型：照片\n图片展示了一个室内实验场景。左侧白色设备上放置有带电路板的小型机械装置；中间棕色沙发前摆放着银色金属机械结构、黄色底座组件及黑色仪器盒；右侧立有一台安装在三脚架上的黑色摄像设备，前方笔记本电脑屏幕显示蓝色图像采集界面。背景白墙上方投射有绿色光点。结合上下文，该场景展示了舵机在二维云台或视觉跟踪系统中的应用实例。",
+  "metadata": {
+    "generation": {
+      "method": "qwen_api",
+      "backend": "api",
+      "provider": "qwen",
+      "model": "qwen3.7-plus",
+      "status": "success",
+      "api_error": null
+    },
+    "review": {
+      "required": false,
+      "status": null,
+      "reason": null,
+      "course_relevant": true
+    }
+  },
+  "error": null,
+  "method": "qwen_api",
+  "backend": "api",
+  "provider": "qwen",
+  "model": "qwen3.7-plus",
+  "status": "success",
+  "api_error": null,
+  "indexable": true,
+  "review_required": false,
+  "review_reason": null,
+  "review_status": null,
+  "course_relevant": true
+}

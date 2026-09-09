@@ -1,0 +1,33 @@
+{
+  "original_path": "extraction/output/qwen_qwen3.7-plus_9/debug/images/w15-2-机器人运动学及其应用_p18_img4.jpeg",
+  "enhanced_path": "extraction/output/qwen_qwen3.7-plus_9/debug/images/w15-2-机器人运动学及其应用_p18_img4_enhanced.jpeg",
+  "description": "类型：照片\n图片展示了一台四足轮式机器人（机器狗）的实物样机。机器人主体呈白色，背部搭载有蓝色电池组及红色开关等电子元件，四条腿部关节处可见黑色电机，末端执行器为黑色轮子。该机器人正静止或行进在浅灰色水泥地面上。结合页面文字，此图对应“3D模型”、“迈步和滚动”及“上下楼梯”等教学内容，直观展示了采用虚拟模型控制（VMC）的轮足式机器人硬件形态。",
+  "metadata": {
+    "generation": {
+      "method": "qwen_api",
+      "backend": "api",
+      "provider": "qwen",
+      "model": "qwen3.7-plus",
+      "status": "success",
+      "api_error": null
+    },
+    "review": {
+      "required": false,
+      "status": null,
+      "reason": null,
+      "course_relevant": true
+    }
+  },
+  "error": null,
+  "method": "qwen_api",
+  "backend": "api",
+  "provider": "qwen",
+  "model": "qwen3.7-plus",
+  "status": "success",
+  "api_error": null,
+  "indexable": true,
+  "review_required": false,
+  "review_reason": null,
+  "review_status": null,
+  "course_relevant": true
+}

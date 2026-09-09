@@ -1,0 +1,33 @@
+{
+  "original_path": "extraction/output/qwen_qwen3.7-plus_9/debug/images/w14-1-数字通信_p11_img4.jpeg",
+  "enhanced_path": "extraction/output/qwen_qwen3.7-plus_9/debug/images/w14-1-数字通信_p11_img4_enhanced.jpeg",
+  "description": "类型：代码\n图片展示了MATLAB脚本代码，行号12至46。内容涉及串口通信操作：第13行建立串口对象`serialport(\"COM4\", 9600)`；第18、21行使用`configureCallback`设置两种接收回调方式（匿名函数与自定义函数`receiveResponse`）；第25行通过`write(s, [T L], \"single\")`发送单精度浮点数据；第28至39行为注释掉的查询等待接收逻辑（包含`NumBytesAvailable`判断）；第41行执行`delete(s); clear s`释放资源；第44至46行定义了回调函数`receiveResponse`，内部调用`readline(s)`读取并打印返回信息。代码中包含关于GUI应用、超时设置及数据类型的中文注释。",
+  "metadata": {
+    "generation": {
+      "method": "qwen_api",
+      "backend": "api",
+      "provider": "qwen",
+      "model": "qwen3.7-plus",
+      "status": "success",
+      "api_error": null
+    },
+    "review": {
+      "required": false,
+      "status": null,
+      "reason": null,
+      "course_relevant": true
+    }
+  },
+  "error": null,
+  "method": "qwen_api",
+  "backend": "api",
+  "provider": "qwen",
+  "model": "qwen3.7-plus",
+  "status": "success",
+  "api_error": null,
+  "indexable": true,
+  "review_required": false,
+  "review_reason": null,
+  "review_status": null,
+  "course_relevant": true
+}

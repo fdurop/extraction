@@ -1,0 +1,33 @@
+{
+  "original_path": "extraction/output/qwen_qwen3.7-plus_8/debug/images/w15-2-机器人运动学及其应用_p6_img5.jpeg",
+  "enhanced_path": "extraction/output/qwen_qwen3.7-plus_8/debug/images/w15-2-机器人运动学及其应用_p6_img5_enhanced.jpeg",
+  "description": "类型：示意图\n图片展示了一个机器狗腿部的机械结构示意图。主体由上下两根连杆组成，通过右侧的销轴连接形成关节。上方连杆的左端设有一个大齿轮（或带轮），其中心安装有电机及减速器组件。一根细线（代表同步带或线缆）从电机轴处延伸并环绕在大齿轮上。整体呈现为典型的串联机器人腿部驱动与传动机构模型。",
+  "metadata": {
+    "generation": {
+      "method": "qwen_api",
+      "backend": "api",
+      "provider": "qwen",
+      "model": "qwen3.7-plus",
+      "status": "success",
+      "api_error": null
+    },
+    "review": {
+      "required": false,
+      "status": null,
+      "reason": null,
+      "course_relevant": true
+    }
+  },
+  "error": null,
+  "method": "qwen_api",
+  "backend": "api",
+  "provider": "qwen",
+  "model": "qwen3.7-plus",
+  "status": "success",
+  "api_error": null,
+  "indexable": true,
+  "review_required": false,
+  "review_reason": null,
+  "review_status": null,
+  "course_relevant": true
+}

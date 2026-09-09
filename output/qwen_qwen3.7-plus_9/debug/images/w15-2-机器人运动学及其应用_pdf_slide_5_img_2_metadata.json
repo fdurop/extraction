@@ -1,0 +1,33 @@
+{
+  "original_path": "extraction/output/qwen_qwen3.7-plus_9/debug/images/w15-2-机器人运动学及其应用_p5_img4.jpeg",
+  "enhanced_path": "extraction/output/qwen_qwen3.7-plus_9/debug/images/w15-2-机器人运动学及其应用_p5_img4_enhanced.jpeg",
+  "description": "类型：照片\n图片展示了一台白色的SCARA机器人实物。机身主体印有“THE”标志及“TOSHIBA MACHINE”字样。顶部连接有一根黑色波纹软管。结构上包含垂直安装的基座、水平延伸的白色机械臂以及末端的垂直执行组件，体现了平面关节型机器人的外观特征。",
+  "metadata": {
+    "generation": {
+      "method": "qwen_api",
+      "backend": "api",
+      "provider": "qwen",
+      "model": "qwen3.7-plus",
+      "status": "success",
+      "api_error": null
+    },
+    "review": {
+      "required": false,
+      "status": null,
+      "reason": null,
+      "course_relevant": true
+    }
+  },
+  "error": null,
+  "method": "qwen_api",
+  "backend": "api",
+  "provider": "qwen",
+  "model": "qwen3.7-plus",
+  "status": "success",
+  "api_error": null,
+  "indexable": true,
+  "review_required": false,
+  "review_reason": null,
+  "review_status": null,
+  "course_relevant": true
+}

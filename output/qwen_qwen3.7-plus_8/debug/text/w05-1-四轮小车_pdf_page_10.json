@@ -1,0 +1,39 @@
+{
+  "page_num": 9,
+  "raw_text": "机电系统原理及实践—— 四轮小车\n机电智控实验室tangguoan@fudan.edu.cn mmguo@fudan.edu.cn\n驱动方案三：固态继电器8 路\n左右两侧分别控制\n通道1-4 控制一侧两轮，通\n道5-8 控制另一侧两轮。\n通道1/3/5/7 分别接PWM\n端口。\n\n在控制环输入PWM信号，\n通过固态继电器的周期开闭，\n实现对动力环电压的调节。\n可掉头、转向。\n程序略复杂。\n15-10\nB\nA\nSW8\nB\nA\nSW7\nB\nA\nSW5\nB\nA\nSW6\nB\nA\nSW4\nB\nA\nSW3\nB\nA\nSW2\nB\nA\nSW1\nch8\nch7\nch6\nch5\nch4\nch3\nch2\nch1\nD5\nD6\nD7\nD8\nDC12V\n固\n态\n继\n电\n器\n模\n块\nMCU模块\n接插件\n接线器\nD9\nD10\nD11\nD12\nDC+\nDC-\n5V\nGND\n室 复旦大\n智控实验室 复旦大学 机电\n学 机电智控实验室 复旦大学 机电智控实验\n复旦大学 机电智控实验室 复旦大学 机电智控实验室 复旦\n大学 机电智控实验室 复旦大学 机电智控实验室 复旦大学 机电\n电智控实验室 复旦大学 机电智控实验室 复旦大学 机电智控实\n验室 复旦大学 机电智控实验室 复旦大学 机电智控实验室 \n旦大学 机电智控实验室 复旦大学 机电智控\n电智控实验室 复旦大学 \n验室 复\n",
+  "cleaned_text": "驱动方案三：固态继电器8 路\n左右两侧分别控制\n通道1-4 控制一侧两轮，通\n道5-8 控制另一侧两轮。\n通道1/3/5/7 分别接PWM\n端口。\n在控制环输入PWM信号，\n通过固态继电器的周期开闭，\n实现对动力环电压的调节。\n可掉头、转向。\n程序略复杂。\nB\nA\nSW8\nB\nA\nSW7\nB\nA\nSW5\nB\nA\nSW6\nB\nA\nSW4\nB\nA\nSW3\nB\nA\nSW2\nB\nA\nSW1\nch8\nch7\nch6\nch5\nch4\nch3\nch2\nch1\nD5\nD6\nD7\nD8\nDC12V\n固\n态\n继\n电\n器\n模\n块\nMCU模块\n接插件\n接线器\nD9\nD10\nD11\nD12\nDC+\nDC-\n5V\nGND",
+  "key_points": [
+    "道5-8 控制另一侧两轮。",
+    "端口。",
+    "实现对动力环电压的调节。",
+    "可掉头、转向。",
+    "程序略复杂。",
+    "B",
+    "A",
+    "SW8",
+    "B",
+    "A"
+  ],
+  "technical_terms": [
+    "DC",
+    "DC12V",
+    "GND",
+    "ch1",
+    "ch2",
+    "ch3",
+    "ch4",
+    "ch5",
+    "ch6",
+    "ch7",
+    "ch8",
+    "左右两侧分别控制"
+  ],
+  "has_images": false,
+  "image_count": 0,
+  "image_paths": [],
+  "metadata": {
+    "char_count": 584,
+    "word_count": 114,
+    "line_count": 81
+  }
+}

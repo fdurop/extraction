@@ -1,0 +1,33 @@
+{
+  "original_path": "extraction/output/qwen_qwen3.7-plus_9/debug/images/w02-1-PWM和舵机_p6_img2.jpeg",
+  "enhanced_path": "extraction/output/qwen_qwen3.7-plus_9/debug/images/w02-1-PWM和舵机_p6_img2_enhanced.jpeg",
+  "description": "类型：照片\n图片展示了一块Arduino Uno开发板的俯视图。板载主要组件包括左上角的USB接口、左下角的直流电源插孔、中央的黑色主芯片（ATmega328P）及晶振。板上清晰印有白色丝印文字“ARDUINO”、“UNO”以及 infinity 标志。顶部数字引脚排针旁标注有“DIGITAL - PWM~”，并在引脚3、5、6、9、10、11旁标有波浪号“~”，指示这些端口支持脉宽调制功能。底部可见“POWER”电源区（含3.3V, 5V, GND, Vin）和“ANALOG IN”模拟输入区（A0-A5）。右侧边缘印有“ARDUINO.CC”。",
+  "metadata": {
+    "generation": {
+      "method": "qwen_api",
+      "backend": "api",
+      "provider": "qwen",
+      "model": "qwen3.7-plus",
+      "status": "success",
+      "api_error": null
+    },
+    "review": {
+      "required": false,
+      "status": null,
+      "reason": null,
+      "course_relevant": true
+    }
+  },
+  "error": null,
+  "method": "qwen_api",
+  "backend": "api",
+  "provider": "qwen",
+  "model": "qwen3.7-plus",
+  "status": "success",
+  "api_error": null,
+  "indexable": true,
+  "review_required": false,
+  "review_reason": null,
+  "review_status": null,
+  "course_relevant": true
+}

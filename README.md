@@ -28,17 +28,17 @@ PDF/PPTX
 
 ## 环境安装
 
-在 PowerShell 中进入项目目录：
+在 PowerShell 中进入外层工作区根目录：
 
 ```powershell
-cd D:\extraction-main\extraction
+cd extraction-main
 ```
 
 首次使用时创建项目隔离环境并安装依赖：
 
 ```powershell
-python -m venv .venv_api
-.\.venv_api\Scripts\python.exe -m pip install -r requirements.txt
+python -m venv extraction\.venv_api
+.\extraction\.venv_api\Scripts\python.exe -m pip install -r extraction\requirements.txt
 ```
 
 当前运行应始终使用 `.venv_api` 中的 Python，避免使用系统 Python 导致依赖版本混乱。
@@ -50,10 +50,10 @@ PaddleOCR 是可选增强依赖。未安装时程序会记录警告并继续运�
 复制配置模板：
 
 ```powershell
-Copy-Item config\vlm_api.example.yaml config\vlm_api.yaml
+Copy-Item extraction\config\vlm_api.example.yaml extraction\config\vlm_api.yaml
 ```
 
-编辑 `config/vlm_api.yaml`：
+编辑 `extraction/config/vlm_api.yaml`：
 
 ```yaml
 vlm:
@@ -82,21 +82,21 @@ embedding:
   query_instruction: "Retrieve relevant evidence from Chinese educational course materials."
 ```
 
-真实配置文件 `config/vlm_api.yaml` 已被 Git 忽略，不要把 API Key 写入示例配置、代码、日志或提交记录。也可以通过 `VLM_API_KEY`、`EMBEDDING_API_KEY` 或 `DASHSCOPE_API_KEY` 环境变量提供密钥。
+真实配置文件 `extraction/config/vlm_api.yaml` 已被 Git 忽略，不要把 API Key 写入示例配置、代码、日志或提交记录。也可以通过 `VLM_API_KEY`、`EMBEDDING_API_KEY` 或 `DASHSCOPE_API_KEY` 环境变量提供密钥。
 
 ## 使用方法
 
 1. 将待处理的 `.pdf` 和 `.pptx` 文件放入：
 
    ```text
-   D:\extraction-main\extraction\input\
+   extraction/input/
    ```
 
-2. 从项目根目录启动：
+2. 从 `extraction-main` 根目录启动：
 
    ```powershell
-   cd D:\extraction-main\extraction
-   .\.venv_api\Scripts\python.exe run_src2.py
+   cd extraction-main
+   .\extraction\.venv_api\Scripts\python.exe .\extraction\run_src2.py
    ```
 
    `run_src2.py` 是当前唯一正式入口，不建议直接执行 `run_extraction.py` 或使用系统 Python。
@@ -104,12 +104,25 @@ embedding:
 3. 只测试一个输入文件时：
 
    ```powershell
-   $env:EXTRACTION_MAX_FILES = "1"
-   .\.venv_api\Scripts\python.exe run_src2.py
-   Remove-Item Env:\EXTRACTION_MAX_FILES
+   .\extraction\.venv_api\Scripts\python.exe .\extraction\run_src2.py `
+     --input-file ".\extraction\input\example.pdf" `
+     --user-id "user-001" `
+     --username "teacher-zhang" `
+     --course-id "course-001" `
+     --course-name "机器人基础" `
+     --job-id "job-001"
    ```
 
-每次启动都会创建 `output/{provider}_{model}_{递增序号}/`。新序号等于已有最大序号加一，因此不会覆盖、删除或混入旧结果。
+4. 与前端或任务调度层集成时，约定由调用方在任务输入目录生成 `job_manifest.json`。服务器任务进程可直接启动：
+
+   ```powershell
+   .\extraction\.venv_api\Scripts\python.exe .\extraction\run_src2.py `
+     --job-manifest ".\frontend-backend\input\user-001\course-001\job-001\job_manifest.json"
+   ```
+
+   命令行显式参数的优先级高于 manifest。任务身份包含 `user_id`、`username`、`course_id`、`course_name` 和 `job_id`，并写入课程清单、文档、页面、内容节点、图谱节点、导出摘要及向量 metadata。当前改动只在 extraction 中提供该接口，尚未修改前端上传代码；旧的无参数启动方式仍然可用于本地批量测试。
+
+每次启动都会创建 `extraction/output/{provider}_{model}_{递增序号}/`。新序号等于已有最大序号加一，因此不会覆盖、删除或混入旧结果。交付 JSON 中的文件路径也以 `extraction-main` 为基准，例如 `extraction/input/...` 和 `extraction/output/...`。
 
 ## 完整处理流程
 
@@ -125,6 +138,8 @@ embedding:
 - 过滤尺寸过小、纯色、近似空白和明显无意义的图片。
 - 根据重复位置、重复内容和版式特征过滤校徽、水印及装饰元素。
 - 对保留图片进行必要的增强，原图和增强图保留在 `debug/images/` 供人工复核。
+- PPTX 中的 EMF、WMF、SVG 素材依次尝试 ImageMagick、Inkscape 和 Wand 转换；单个素材仍失败时保留原矢量文件，并将对应幻灯片整页高分辨率渲染为兜底图片，避免流程图、控制框图和代码截图丢失。
+- 疑似表格图片先放大短边至 1600 像素并做轻量对比度、锐度增强；首次结构校验未通过时才尝试旋转 90/270 度，已经通过的表格不会产生额外 API 调用。
 
 ### 3. 多模态内容理解
 
@@ -149,12 +164,12 @@ API 生成结果会保存 `provider`、`model`、`backend`、`status` 和错误�
 
 | 节点 | 当前向量原料 |
 | --- | --- |
-| `Page` | 页面标题、页面摘要和正文前 500 字 |
+| `Page` | 页面标题和清洗后的正文前 800 字 |
 | `TextChunk` | 清洗文本、关键点和专业术语 |
-| `Figure` | 多模态模型生成的图片内容描述 |
-| `Formula` | LaTeX 与公式含义 |
-| `Table` | 表头、说明和表格正文前 1500 字 |
-| `CodeBlock` | 编程语言、功能说明和代码前 1500 字 |
+| `Figure` | 图片标题和清洗后的模型描述；原始描述仍完整保留，但校徽、水印、邮箱、网址和相关性套话不进入向量 |
+| `Formula` | 清洗后的公式名、LaTeX、公式含义、符号和适用条件 |
+| `Table` | 清洗后的标题、表头、说明、单位和表格正文前 1500 字 |
+| `CodeBlock` | 清洗后的编程语言、功能说明和代码前 1500 字 |
 
 所有输入文档处理完成后，程序才会将节点批量提交给 `qwen3.7-text-embedding`，避免每处理一个文档就重复生成前面节点的向量并重复计费。
 
@@ -163,7 +178,7 @@ API 生成结果会保存 `provider`、`model`、`backend`、`status` 和错误�
 ## 输出目录
 
 ```text
-output/
+extraction/output/
   images/                           # 早期版本遗留的公共图片目录，新流程不再写入
   qwen_qwen3.7-plus/                # 该模型的首次/旧版运行结果，保留用于历史对照
   qwen_qwen3.7-plus_N/              # 第 N 次独立运行；N 按已有最大序号加 1
@@ -190,7 +205,7 @@ output/
       *.png                         # 可用时保存对应表格来源图
     debug/                          # 人工复核和问题定位材料
       text/                         # 每页文本抽取结果
-      images/                       # 图片、增强图和图片理解 metadata
+      images/                       # 图片、增强图、表格识别候选、整页渲染兜底图和理解 metadata
       formulas/                     # 公式识别结果
       tables/                       # 表格识别结果
       code/                         # 代码与 metadata
@@ -203,15 +218,15 @@ output/
 
 | 目录 | 作用与生成方式 | 是否作为下游正式输入 |
 | --- | --- | --- |
-| `output/` | 所有模型、所有历史运行结果的总目录。程序只在这里新建本次运行目录，不清理旧结果。 | 否，下游应选择其中一次完整运行。 |
-| `output/images/` | 早期版本曾使用的公共图片目录。当前流程已将图片放入各次运行的 `debug/images/`，该目录仅为历史兼容保留。 | 否。 |
-| `output/{provider}_{model}/` | 某模型早期或首次运行的结果，例如 `qwen_qwen3.7-plus/`。目录名由 API 提供方和视觉模型名称组成。 | 可以，但应先确认是否为需要使用的历史版本。 |
-| `output/{provider}_{model}_{N}/` | 当前标准运行目录，例如 `qwen_qwen3.7-plus_6/`。启动时扫描同模型现有目录，使用最大序号加 1 创建新目录，因此不会覆盖或混入上一次结果。 | 是，选定一次运行后读取其 `kg_data/`。 |
+| `extraction/output/` | 所有模型、所有历史运行结果的总目录。程序只在这里新建本次运行目录，不清理旧结果。 | 否，下游应选择其中一次完整运行。 |
+| `extraction/output/images/` | 早期版本曾使用的公共图片目录。当前流程已将图片放入各次运行的 `debug/images/`，该目录仅为历史兼容保留。 | 否。 |
+| `extraction/output/{provider}_{model}/` | 某模型早期或首次运行的结果，例如 `qwen_qwen3.7-plus/`。目录名由 API 提供方和视觉模型名称组成。 | 可以，但应先确认是否为需要使用的历史版本。 |
+| `extraction/output/{provider}_{model}_{N}/` | 当前标准运行目录，例如 `qwen_qwen3.7-plus_6/`。启动时扫描同模型现有目录，使用最大序号加 1 创建新目录，因此不会覆盖或混入上一次结果。 | 是，选定一次运行后读取其 `kg_data/`。 |
 | `kg_data/` | 本轮通过校验、允许进入后续流程的正式结构化数据。包含文档、页面、多模态内容节点、结构关系、schema、统计摘要和向量索引。 | 是，知识图谱构建与检索程序的主要输入。 |
 | `kg_data/vectors/` | 正式节点的向量数据。`vector_index.json` 保存节点、模型、维度、原料文本和向量行号；`vector_matrix.npy` 保存按相同顺序排列的 1024 维向量。 | 是，向量检索直接读取。 |
 | `debug/` | 本轮完整的可读中间结果，用于人工抽查、错误定位、提示词调整和与原课件对照。内容可能包含尚未进入正式数据的过程信息。 | 否，不应整体导入知识图谱。 |
 | `debug/text/` | PDF/PPTX 每一页的文本抽取与清洗结果，包括正文、关键点、专业术语和文本质量信息。由解析器和文本处理器生成。 | 默认否；正式文本节点已经汇总到 `kg_data/`。 |
-| `debug/images/` | 从文档中拆出的原始图片、增强图片以及每张图片的理解 metadata。由 PDF/PPTX 解析器、图片过滤器和视觉 API 生成。 | 默认否；正式图片描述已汇总到 `kg_data/`，原图路径可供追溯。 |
+| `debug/images/` | 从文档中拆出的原始图片、增强图片、表格放大/旋转候选、PPTX 矢量素材和整页渲染兜底图，以及每张图片的理解 metadata。由解析器、图片过滤器、表格预处理器和视觉 API 生成。 | 默认否；正式图片描述已汇总到 `kg_data/`，原图路径可供追溯。 |
 | `debug/formulas/` | 按页保存全部公式候选及校验结果，通常同时提供 JSON 和 CSV，便于检查 LaTeX、置信度和来源。 | 默认否；只有通过校验的公式进入 `kg_data/`。 |
 | `debug/tables/` | 按表保存原生解析或视觉识别得到的 JSON、CSV、表头、单元格和校验信息。 | 默认否；只有通过校验的表格进入 `kg_data/`。 |
 | `debug/code/` | 保存识别出的源代码文件及对应 metadata，包括语言、来源图片、模型、描述和原始响应。 | 默认否；正式代码节点已经汇总到 `kg_data/`。 |
@@ -221,7 +236,7 @@ output/
 | `formula_review_items/` | 公式人工审核队列。LaTeX 为空或残缺、括号不平衡、字符不确定、JSON 部分恢复、置信度不足等候选保存在这里。 | 否，审核通过并重新写回前不进入正式数据。 |
 | `table_review_items/` | 表格人工审核队列。API 失败、行列不一致、合并表头无法可靠恢复、存在不确定单元格或置信度不足的表格保存在这里。 | 否，审核通过并重新写回前不进入正式数据。 |
 
-下游构建知识图谱时，应先选定一个完整的 `output/{provider}_{model}_{N}/`，然后只把其中的 `kg_data/` 作为正式输入。`debug/` 和三个审核目录用于质量控制与人工修正；它们保留了更多过程信息，但不能未经筛选直接入图。部分目录在本轮没有对应内容时可能为空，这表示没有生成该模态或没有发现需要审核的项目，并不一定是运行失败。
+下游构建知识图谱时，应先选定一个完整的 `extraction/output/{provider}_{model}_{N}/`，然后只把其中的 `kg_data/` 作为正式输入。`debug/` 和三个审核目录用于质量控制与人工修正；它们保留了更多过程信息，但不能未经筛选直接入图。部分目录在本轮没有对应内容时可能为空，这表示没有生成该模态或没有发现需要审核的项目，并不一定是运行失败。
 
 ## 检查运行结果
 
@@ -236,13 +251,13 @@ output/
 ## 项目目录
 
 ```text
-config/       API 配置模板和本地私密配置
-input/        待处理的 PDF/PPTX
-logs/         运行日志
-models/       保留的本地模型文件；当前 API 主流程不加载
-output/       按模型与递增序号保存的历次结果
-src2/         当前抽取程序
-run_src2.py   唯一正式运行入口
+extraction/config/       API 配置模板和本地私密配置
+extraction/input/        待处理的 PDF/PPTX
+extraction/logs/         运行日志
+extraction/models/       保留的本地模型文件；当前 API 主流程不加载
+extraction/output/       按模型与递增序号保存的历次结果
+extraction/src2/         当前抽取程序
+extraction/run_src2.py   唯一正式运行入口
 ```
 ## API 失败补漏
 
@@ -251,16 +266,38 @@ run_src2.py   唯一正式运行入口
 不会覆盖原运行结果：
 
 ```powershell
-.\.venv_api\Scripts\python.exe retry_failed_api.py --dry-run
-.\.venv_api\Scripts\python.exe retry_failed_api.py
+.\extraction\.venv_api\Scripts\python.exe .\extraction\retry_failed_api.py --dry-run
+.\extraction\.venv_api\Scripts\python.exe .\extraction\retry_failed_api.py
 ```
 
 默认选择最新的完整输出，也可以显式指定：
 
 ```powershell
-.\.venv_api\Scripts\python.exe retry_failed_api.py --run-dir output/qwen_qwen3.7-plus_7
+.\extraction\.venv_api\Scripts\python.exe .\extraction\retry_failed_api.py --run-dir extraction/output/qwen_qwen3.7-plus_7
 ```
 
 结果写入原运行目录下递增编号的
 `api_recovery/retry_N/manifest.json` 和 `api_recovery/retry_N/items/`。这是补漏覆盖层，
 保留原始失败证据；下游合并时应优先采用其中 `retry_status=success` 的记录。
+
+## 断点续跑
+
+程序在每个文档完整处理后更新一次 `kg_data/` 检查点。运行意外停止时，下面的
+入口会选择最近修改且向量状态不是 `success` 的运行目录，恢复已经完成的文档，
+跳过它们并从下一个文档继续；中断时尚未完成的文档会从头重新处理。旧结果目录
+不会被删除，也不会创建一个混入历史结果的新编号目录。
+
+```powershell
+cd D:\extraction-main
+.\extraction\.venv_api\Scripts\python.exe .\extraction\resume_extraction.py
+```
+
+显式指定目录更稳妥，尤其是同时存在多个未完成任务时：
+
+```powershell
+.\extraction\.venv_api\Scripts\python.exe .\extraction\resume_extraction.py --run-dir extraction/output/qwen_qwen3.7-plus_8
+```
+
+续跑依据当前输入文件的“文件名 + 扩展名”与 `documents.json` 对照。请勿在中断后
+用同名文件替换原输入；面向网页的并发部署应改用任务 ID 和文件哈希进行恢复，
+不能依赖“最新目录”。

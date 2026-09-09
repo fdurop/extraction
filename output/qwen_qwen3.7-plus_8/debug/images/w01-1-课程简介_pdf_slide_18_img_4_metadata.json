@@ -1,0 +1,33 @@
+{
+  "original_path": "extraction/output/qwen_qwen3.7-plus_8/debug/images/w01-1-课程简介_p18_img5.jpeg",
+  "enhanced_path": "extraction/output/qwen_qwen3.7-plus_8/debug/images/w01-1-课程简介_p18_img5_enhanced.jpeg",
+  "description": "类型：示意图\n图片左侧展示一台带有橙色透明盖的白色桌面设备，左上角标注“20W升级版”。右侧以网格形式列出六种配件及其名称：第一排依次为“20W激光模组”（银色盒状）、“刀切模组”（双头灰色模块）、“彩印模组”（带彩色条纹接口）；第二排依次为“喷墨盒”（黑色方块）、“4款刀头”（含细切刀、裁切刀、赠圆盘刀、压印头）、“8色画笔”（一排彩色马克笔）。结合上下文，该图对应课程简介中提到的“激光雕刻机”及其加工与二次开发条件。",
+  "metadata": {
+    "generation": {
+      "method": "qwen_api",
+      "backend": "api",
+      "provider": "qwen",
+      "model": "qwen3.7-plus",
+      "status": "success",
+      "api_error": null
+    },
+    "review": {
+      "required": false,
+      "status": null,
+      "reason": null,
+      "course_relevant": true
+    }
+  },
+  "error": null,
+  "method": "qwen_api",
+  "backend": "api",
+  "provider": "qwen",
+  "model": "qwen3.7-plus",
+  "status": "success",
+  "api_error": null,
+  "indexable": true,
+  "review_required": false,
+  "review_reason": null,
+  "review_status": null,
+  "course_relevant": true
+}

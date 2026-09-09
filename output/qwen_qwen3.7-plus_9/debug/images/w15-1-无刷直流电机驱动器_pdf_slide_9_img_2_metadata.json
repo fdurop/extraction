@@ -1,0 +1,33 @@
+{
+  "original_path": "extraction/output/qwen_qwen3.7-plus_9/debug/images/w15-1-无刷直流电机驱动器_p9_img6.jpeg",
+  "enhanced_path": "extraction/output/qwen_qwen3.7-plus_9/debug/images/w15-1-无刷直流电机驱动器_p9_img6_enhanced.jpeg",
+  "description": "类型：照片\n图片展示了一个灰色的双位接线端子特写。端子包含上下两个金属螺丝压接点，用于固定导线。结合页面上下文，该对象对应CyberGear无刷直流电机的电源及通信接口物理连接部件，涉及24V电源正负极（GND）及CAN总线（CAN_L、CAN_H）的硬件接线操作。",
+  "metadata": {
+    "generation": {
+      "method": "qwen_api",
+      "backend": "api",
+      "provider": "qwen",
+      "model": "qwen3.7-plus",
+      "status": "success",
+      "api_error": null
+    },
+    "review": {
+      "required": false,
+      "status": null,
+      "reason": null,
+      "course_relevant": true
+    }
+  },
+  "error": null,
+  "method": "qwen_api",
+  "backend": "api",
+  "provider": "qwen",
+  "model": "qwen3.7-plus",
+  "status": "success",
+  "api_error": null,
+  "indexable": true,
+  "review_required": false,
+  "review_reason": null,
+  "review_status": null,
+  "course_relevant": true
+}

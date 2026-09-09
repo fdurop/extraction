@@ -1,0 +1,33 @@
+{
+  "original_path": "extraction/output/qwen_qwen3.7-plus_8/debug/images/w04-1-有刷直流电机驱动器及其应用_slide_20_img_5.png",
+  "enhanced_path": "extraction/output/qwen_qwen3.7-plus_8/debug/images/w04-1-有刷直流电机驱动器及其应用_slide_20_img_5_enhanced.png",
+  "description": "类型：示意图\n图片展示了一个L形钣金件的截面轮廓。图中标注了四个关键尺寸参数：左侧垂直边的总高度标注为A，底部水平边的总长度标注为B，板材的厚度标注为T，折弯处的圆角半径标注为R，并附有文字说明“(内半径)”。尺寸界线清晰地界定了各参数的测量范围，其中A和B均包含折弯区域延伸至外表面的距离。",
+  "metadata": {
+    "generation": {
+      "method": "qwen_api",
+      "backend": "api",
+      "provider": "qwen",
+      "model": "qwen3.7-plus",
+      "status": "success",
+      "api_error": null
+    },
+    "review": {
+      "required": false,
+      "status": null,
+      "reason": null,
+      "course_relevant": true
+    }
+  },
+  "error": null,
+  "method": "qwen_api",
+  "backend": "api",
+  "provider": "qwen",
+  "model": "qwen3.7-plus",
+  "status": "success",
+  "api_error": null,
+  "indexable": true,
+  "review_required": false,
+  "review_reason": null,
+  "review_status": null,
+  "course_relevant": true
+}

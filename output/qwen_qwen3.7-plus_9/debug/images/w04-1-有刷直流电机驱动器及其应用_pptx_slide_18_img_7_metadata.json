@@ -1,0 +1,33 @@
+{
+  "original_path": "extraction/output/qwen_qwen3.7-plus_9/debug/images/w04-1-有刷直流电机驱动器及其应用_slide_18_img_7.png",
+  "enhanced_path": "extraction/output/qwen_qwen3.7-plus_9/debug/images/w04-1-有刷直流电机驱动器及其应用_slide_18_img_7_enhanced.png",
+  "description": "类型：照片\n图片展示了一个机械结构部件（全向轮/麦克纳姆轮）。主体中心为灰色轮毂，内部具有放射状辐条支撑结构及中心轴孔。轮毂外缘呈齿轮状凸起，并在凹槽处安装有黑色圆柱形辊子。辊子通过银色金属销轴固定，其轴线与轮毂主轴线呈一定角度排列。黑色辊子环绕轮毂一周，构成该部件的外接触面。背景为纯白色。",
+  "metadata": {
+    "generation": {
+      "method": "qwen_api",
+      "backend": "api",
+      "provider": "qwen",
+      "model": "qwen3.7-plus",
+      "status": "success",
+      "api_error": null
+    },
+    "review": {
+      "required": false,
+      "status": null,
+      "reason": null,
+      "course_relevant": true
+    }
+  },
+  "error": null,
+  "method": "qwen_api",
+  "backend": "api",
+  "provider": "qwen",
+  "model": "qwen3.7-plus",
+  "status": "success",
+  "api_error": null,
+  "indexable": true,
+  "review_required": false,
+  "review_reason": null,
+  "review_status": null,
+  "course_relevant": true
+}

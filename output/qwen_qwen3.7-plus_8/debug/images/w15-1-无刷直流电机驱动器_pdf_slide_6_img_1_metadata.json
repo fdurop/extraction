@@ -1,0 +1,33 @@
+{
+  "original_path": "extraction/output/qwen_qwen3.7-plus_8/debug/images/w15-1-无刷直流电机驱动器_p6_img3.jpeg",
+  "enhanced_path": "extraction/output/qwen_qwen3.7-plus_8/debug/images/w15-1-无刷直流电机驱动器_p6_img3_enhanced.jpeg",
+  "description": "类型：示意图\n图片顶部标注文字“无刷直流电机”。主体展示电机横截面结构：外部为灰色环状定子，具有六个向内延伸的磁极（齿）；内部中心为圆形转子，圆周上交替排列着红色和蓝色的扇形磁体。红色磁体上标有白色字母“N”，蓝色磁体上标有白色字母“S”，呈现N极与S极间隔分布的状态。左下角包含“How To MECHATRONICS”标志及网址水印。",
+  "metadata": {
+    "generation": {
+      "method": "qwen_api",
+      "backend": "api",
+      "provider": "qwen",
+      "model": "qwen3.7-plus",
+      "status": "success",
+      "api_error": null
+    },
+    "review": {
+      "required": false,
+      "status": null,
+      "reason": null,
+      "course_relevant": true
+    }
+  },
+  "error": null,
+  "method": "qwen_api",
+  "backend": "api",
+  "provider": "qwen",
+  "model": "qwen3.7-plus",
+  "status": "success",
+  "api_error": null,
+  "indexable": true,
+  "review_required": false,
+  "review_reason": null,
+  "review_status": null,
+  "course_relevant": true
+}

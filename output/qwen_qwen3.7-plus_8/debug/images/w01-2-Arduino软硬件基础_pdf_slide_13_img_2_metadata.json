@@ -1,0 +1,33 @@
+{
+  "original_path": "extraction/output/qwen_qwen3.7-plus_8/debug/images/w01-2-Arduino软硬件基础_p13_img5.png",
+  "enhanced_path": "extraction/output/qwen_qwen3.7-plus_8/debug/images/w01-2-Arduino软硬件基础_p13_img5_enhanced.png",
+  "description": "[COURSE_IRRELEVANT] 图片内容为三个粉色感叹号图形，属于装饰性图标或强调符号，不包含位运算、Arduino代码或任何具体的课程知识点，无法从中获取与本页教学内容有关的信息。",
+  "metadata": {
+    "generation": {
+      "method": "qwen_api",
+      "backend": "api",
+      "provider": "qwen",
+      "model": "qwen3.7-plus",
+      "status": "success",
+      "api_error": null
+    },
+    "review": {
+      "required": true,
+      "status": "pending",
+      "reason": "course_irrelevant",
+      "course_relevant": false
+    }
+  },
+  "error": null,
+  "method": "qwen_api",
+  "backend": "api",
+  "provider": "qwen",
+  "model": "qwen3.7-plus",
+  "status": "success",
+  "api_error": null,
+  "indexable": false,
+  "review_required": true,
+  "review_reason": "course_irrelevant",
+  "review_status": "pending",
+  "course_relevant": false
+}

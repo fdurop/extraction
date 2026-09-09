@@ -1,0 +1,14 @@
+{
+  "source_image": "extraction/output/qwen_qwen3.7-plus_9/debug/images/w14-1-数字通信_p22_img5.jpeg",
+  "extraction_method": "qwen_api_智能识别",
+  "language": "cpp",
+  "description": "这是一个Arduino程序的loop函数，用于处理CAN总线接收到的消息。当接收到标志位(flagRecv)被设置时，它会检查CAN缓冲区是否有可用消息，读取消息数据，将二进制数据转换为浮点数并通过串口打印，最后发送一个\"OK\"响应消息回CAN总线。",
+  "code_file": "w14-1-数字通信_pdf_page_22_code_3.cpp",
+  "page": 22,
+  "index": 3,
+  "timestamp": "2026-09-09T21:26:19.047125",
+  "raw_response": "语言: C++\n```cpp\nvoid loop() {\n  if (flagRecv) {\n    flagRecv = 0;  // clear flag\n    while (CAN_MSGAVAIL == CAN.checkReceive()) {\n      // 读取数据到缓冲区\n      CAN.readMsgBuf(&len, recvBuf);\n      // 把缓冲区二进制数据转换为浮点数\n      float pos;\n      memcpy(&pos, &recvBuf[0], len);\n      Serial.println(pos);\n      // 返回处理成功的信息\n      CAN.MCP_CAN::sendMsgBuf(slaveID, 0, 2, \"OK\");\n    }\n  }\n}\n```\n功能: 这是一个Arduino程序的loop函数，用于处理CAN总线接收到的消息。当接收到标志位(flagRecv)被设置时，它会检查CAN缓冲区是否有可用消息，读取消息数据，将二进制数据转换为浮点数并通过串口打印，最后发送一个\"OK\"响应消息回CAN总线。",
+  "backend": "api",
+  "provider": "qwen",
+  "model": "qwen3.7-plus"
+}

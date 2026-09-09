@@ -1,0 +1,33 @@
+{
+  "original_path": "extraction/output/qwen_qwen3.7-plus_9/debug/images/w04-1-有刷直流电机驱动器及其应用_slide_4_img_3.png",
+  "enhanced_path": "extraction/output/qwen_qwen3.7-plus_9/debug/images/w04-1-有刷直流电机驱动器及其应用_slide_4_img_3_enhanced.png",
+  "description": "类型：照片\n红色PCB板上集成的1路继电器模块实物。核心元件为蓝色SONGLE品牌电磁继电器，型号SRD-05VDC-SL-C，标称参数包含10A 250VAC、10A 30VDC等。板载左侧3位接线端子（标识NC、COM、NO）和右侧3位接线端子（标识DC+、DC-、IN）。电路包含光耦隔离芯片、驱动三极管、电阻电容及LED指示灯。底部印有“1 Relay Module high/low level trigger”，顶部倒置文字注明“1路光耦隔离继电器模块 支持高/低电平触发”。",
+  "metadata": {
+    "generation": {
+      "method": "qwen_api",
+      "backend": "api",
+      "provider": "qwen",
+      "model": "qwen3.7-plus",
+      "status": "success",
+      "api_error": null
+    },
+    "review": {
+      "required": false,
+      "status": null,
+      "reason": null,
+      "course_relevant": true
+    }
+  },
+  "error": null,
+  "method": "qwen_api",
+  "backend": "api",
+  "provider": "qwen",
+  "model": "qwen3.7-plus",
+  "status": "success",
+  "api_error": null,
+  "indexable": true,
+  "review_required": false,
+  "review_reason": null,
+  "review_status": null,
+  "course_relevant": true
+}

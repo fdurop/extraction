@@ -1,0 +1,33 @@
+{
+  "original_path": "extraction/output/qwen_qwen3.7-plus_8/debug/images/w13-1-电机位置检测与闭环控制 - 副本_p8_img10.jpeg",
+  "enhanced_path": "extraction/output/qwen_qwen3.7-plus_8/debug/images/w13-1-电机位置检测与闭环控制 - 副本_p8_img10_enhanced.jpeg",
+  "description": "类型：照片\n图片展示了一个黑色圆柱形旋转编码器，顶部伸出金属转轴。机身侧面印有白色文字标签，包含“INCREMENTAL”、“CE”标志、型号“26918M”及“MADE IN CHINA”。下方列出了线色定义：Black对应OUT A，White对应OUT B，Orange对应OUT Z。结合页面上下文，该图用于展示实践环节中需读取信息的编码器硬件实物及其信号输出线序。",
+  "metadata": {
+    "generation": {
+      "method": "qwen_api",
+      "backend": "api",
+      "provider": "qwen",
+      "model": "qwen3.7-plus",
+      "status": "success",
+      "api_error": null
+    },
+    "review": {
+      "required": false,
+      "status": null,
+      "reason": null,
+      "course_relevant": true
+    }
+  },
+  "error": null,
+  "method": "qwen_api",
+  "backend": "api",
+  "provider": "qwen",
+  "model": "qwen3.7-plus",
+  "status": "success",
+  "api_error": null,
+  "indexable": true,
+  "review_required": false,
+  "review_reason": null,
+  "review_status": null,
+  "course_relevant": true
+}

@@ -1,0 +1,33 @@
+{
+  "original_path": "extraction/output/qwen_qwen3.7-plus_8/debug/images/w10-1-直线运动平台（下）_slide_7_img_1.png",
+  "enhanced_path": "extraction/output/qwen_qwen3.7-plus_8/debug/images/w10-1-直线运动平台（下）_slide_7_img_1_enhanced.png",
+  "description": "类型：代码\n图片展示了Arduino C++代码片段。顶部引用头文件`#include <TimerOne.h>`。`setup()`函数内包含四行主要指令：初始化内置LED端口为输出模式`pinMode(LED_BUILTIN, OUTPUT)`；调用`Timer1.initialize(long(1 * 1E6))`设置每1秒触发一次时间中断；通过`Timer1.attachInterrupt(LED)`绑定中断响应函数；最后调用`Timer1.start()`启动中断。下方定义了`void LED()`函数，内部声明静态布尔变量`light`，执行`digitalWrite`写入电平状态，并通过`light = !light`实现状态翻转。",
+  "metadata": {
+    "generation": {
+      "method": "qwen_api",
+      "backend": "api",
+      "provider": "qwen",
+      "model": "qwen3.7-plus",
+      "status": "success",
+      "api_error": null
+    },
+    "review": {
+      "required": false,
+      "status": null,
+      "reason": null,
+      "course_relevant": true
+    }
+  },
+  "error": null,
+  "method": "qwen_api",
+  "backend": "api",
+  "provider": "qwen",
+  "model": "qwen3.7-plus",
+  "status": "success",
+  "api_error": null,
+  "indexable": true,
+  "review_required": false,
+  "review_reason": null,
+  "review_status": null,
+  "course_relevant": true
+}

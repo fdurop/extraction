@@ -1,0 +1,22 @@
+{
+  "page_num": 8,
+  "raw_text": "机电系统原理及实践—— 机器人运动学简介\n机电智控实验室tangguoan@fudan.edu.cn mmguo@fudan.edu.cn\n§2.1 二连杆机械臂\n平面2R 机械臂。\n如果竖起来，可视为机器狗\n的一条腿。\n基础坐标系：𝑂𝑥𝑦\n固定在原点的坐标系\n关节坐标系：𝑂𝑥2𝑦2\n随上级连杆一起旋转\n21-9\n𝜃1\n𝜃2\n𝑦\n𝑥\n𝑃(𝑥, 𝑦)\nmotor 1\nmotor 2\n𝑂\n𝐿1\n𝐿2\n𝑦2\n𝑥2\n",
+  "cleaned_text": "§2.1 二连杆机械臂\n平面2R 机械臂。\n如果竖起来，可视为机器狗\n的一条腿。\n基础坐标系：𝑂𝑥𝑦\n固定在原点的坐标系\n关节坐标系：𝑂𝑥2𝑦2\n随上级连杆一起旋转\n𝜃1\n𝜃2\n𝑦\n𝑥\n𝑃(𝑥, 𝑦)\nmotor 1\nmotor 2\n𝑂\n𝐿1\n𝐿2\n𝑦2\n𝑥2",
+  "key_points": [
+    "平面2R 机械臂。",
+    "的一条腿。",
+    "𝑃(𝑥, 𝑦)",
+    "𝑂",
+    "𝐿1",
+    "𝐿2"
+  ],
+  "technical_terms": [],
+  "has_images": false,
+  "image_count": 0,
+  "image_paths": [],
+  "metadata": {
+    "char_count": 212,
+    "word_count": 30,
+    "line_count": 24
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "original_path": "extraction/output/qwen_qwen3.7-plus_8/debug/images/w01-1-课程简介_p10_img8.jpeg",
+  "enhanced_path": "extraction/output/qwen_qwen3.7-plus_8/debug/images/w01-1-课程简介_p10_img8_enhanced.jpeg",
+  "description": "类型：照片\n图片左侧展示一个黑色方形金属外壳的电机，顶部伸出银色金属轴，侧面贴有白色标签。右侧为一个黑色的长方形电子驱动模块，面板上方印有“H”形标志及“R57”型号标识，中间区域分布着密集的银白色散热孔阵列，右侧边缘垂直排列着三组绿色接线端子排，每组端子上方均有白色文字标注接口定义。",
+  "metadata": {
+    "generation": {
+      "method": "qwen_api",
+      "backend": "api",
+      "provider": "qwen",
+      "model": "qwen3.7-plus",
+      "status": "success",
+      "api_error": null
+    },
+    "review": {
+      "required": false,
+      "status": null,
+      "reason": null,
+      "course_relevant": true
+    }
+  },
+  "error": null,
+  "method": "qwen_api",
+  "backend": "api",
+  "provider": "qwen",
+  "model": "qwen3.7-plus",
+  "status": "success",
+  "api_error": null,
+  "indexable": true,
+  "review_required": false,
+  "review_reason": null,
+  "review_status": null,
+  "course_relevant": true
+}

@@ -1,0 +1,16 @@
+{
+  "documents": 17,
+  "pages": 271,
+  "content_items": 688,
+  "nodes": 959,
+  "vectors": {
+    "status": "success",
+    "backend": "qwen_api/qwen3.7-text-embedding",
+    "model": "qwen3.7-text-embedding",
+    "dim": 1024,
+    "count": 959,
+    "matrix_path": "extraction/output/qwen_qwen3.7-plus_8/kg_data/vectors/vector_matrix.npy",
+    "metadata_path": "extraction/output/qwen_qwen3.7-plus_8/kg_data/vectors/vector_index.json"
+  },
+  "updated_at": "2026-09-09T11:09:25.273551"
+}

@@ -1,0 +1,28 @@
+{
+  "page_num": 1,
+  "raw_text": "机电系统原理及实践—— 数字通信\n机电智控实验室tangguoan@fudan.edu.cn mmguo@fudan.edu.cn\n内容提要\n23-2\nCAN（控制器局域网总线）\nUART（通用异步收发器/串口）\nMCU和Matlab APP进行串口通信\nBluetooth（蓝牙）\nIIC（I2C，集成电路间总线）\nSPI（串行外设接口）\n数字通信概述\n",
+  "cleaned_text": "内容提要\nCAN（控制器局域网总线）\nUART（通用异步收发器/串口）\nMCU和Matlab APP进行串口通信\nBluetooth（蓝牙）\nIIC（I2C，集成电路间总线）\nSPI（串行外设接口）\n数字通信概述",
+  "key_points": [
+    "CAN（控制器局域网总线）",
+    "UART（通用异步收发器/串口）",
+    "MCU和Matlab APP进行串口通信",
+    "Bluetooth（蓝牙）",
+    "IIC（I2C，集成电路间总线）",
+    "SPI（串行外设接口）"
+  ],
+  "technical_terms": [
+    "CAN",
+    "I2C",
+    "IIC",
+    "SPI",
+    "UART"
+  ],
+  "has_images": false,
+  "image_count": 0,
+  "image_paths": [],
+  "metadata": {
+    "char_count": 178,
+    "word_count": 14,
+    "line_count": 12
+  }
+}

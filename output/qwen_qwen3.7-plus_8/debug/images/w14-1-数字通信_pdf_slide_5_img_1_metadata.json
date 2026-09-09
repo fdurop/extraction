@@ -1,0 +1,33 @@
+{
+  "original_path": "extraction/output/qwen_qwen3.7-plus_8/debug/images/w14-1-数字通信_p5_img3.jpeg",
+  "enhanced_path": "extraction/output/qwen_qwen3.7-plus_8/debug/images/w14-1-数字通信_p5_img3_enhanced.jpeg",
+  "description": "类型：照片\n图片展示了一台麦轮四足机器人的实物样机。机器人采用金属框架结构，底部四角各安装有一个麦克纳姆轮，轮毂处可见黑色的电机及连接的红色与黑色导线。机身中部固定有一块白色的多孔洞电路板（对应下位机），上方通过支架安装有黑色的长方体电子模块（对应姿态传感器或控制器）以及一个顶部的红色圆柱形按钮。各部件之间通过红黑电源线及信号线连接，整体呈现机电系统的硬件组装状态。",
+  "metadata": {
+    "generation": {
+      "method": "qwen_api",
+      "backend": "api",
+      "provider": "qwen",
+      "model": "qwen3.7-plus",
+      "status": "success",
+      "api_error": null
+    },
+    "review": {
+      "required": false,
+      "status": null,
+      "reason": null,
+      "course_relevant": true
+    }
+  },
+  "error": null,
+  "method": "qwen_api",
+  "backend": "api",
+  "provider": "qwen",
+  "model": "qwen3.7-plus",
+  "status": "success",
+  "api_error": null,
+  "indexable": true,
+  "review_required": false,
+  "review_reason": null,
+  "review_status": null,
+  "course_relevant": true
+}

@@ -1,0 +1,33 @@
+{
+  "original_path": "extraction/output/qwen_qwen3.7-plus_9/debug/images/w13-1-电机位置检测与闭环控制 - 副本_p6_img4.png",
+  "enhanced_path": "extraction/output/qwen_qwen3.7-plus_9/debug/images/w13-1-电机位置检测与闭环控制 - 副本_p6_img4_enhanced.png",
+  "description": "类型：示意图\n图片展示了光栅位移检测原理。上部为五个时间序列（t=0至t=d/v），描绘了黑白相间条纹以速度v向右移动的过程，右侧对应A、B两个传感器方块在不同时刻的明暗状态（深色代表遮挡或低电平，浅色代表透光或高电平）。下部为两个坐标图，纵轴分别为“A电平”和“B电平”，横轴为时间。图中绘制了A、B两路输出的方波信号波形，两路信号相位相差90度（正交），波形上标有采样点，直观反映了传感器随条纹移动产生的脉冲信号变化规律。",
+  "metadata": {
+    "generation": {
+      "method": "qwen_api",
+      "backend": "api",
+      "provider": "qwen",
+      "model": "qwen3.7-plus",
+      "status": "success",
+      "api_error": null
+    },
+    "review": {
+      "required": false,
+      "status": null,
+      "reason": null,
+      "course_relevant": true
+    }
+  },
+  "error": null,
+  "method": "qwen_api",
+  "backend": "api",
+  "provider": "qwen",
+  "model": "qwen3.7-plus",
+  "status": "success",
+  "api_error": null,
+  "indexable": true,
+  "review_required": false,
+  "review_reason": null,
+  "review_status": null,
+  "course_relevant": true
+}

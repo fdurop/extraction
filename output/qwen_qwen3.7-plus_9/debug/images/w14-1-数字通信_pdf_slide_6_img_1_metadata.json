@@ -1,0 +1,33 @@
+{
+  "original_path": "extraction/output/qwen_qwen3.7-plus_9/debug/images/w14-1-数字通信_p6_img3.jpeg",
+  "enhanced_path": "extraction/output/qwen_qwen3.7-plus_9/debug/images/w14-1-数字通信_p6_img3_enhanced.jpeg",
+  "description": "类型：示意图\n图片展示了TTL电平UART通信协议的时序波形图。纵坐标标示电压状态，上方为5V（对应绿色高电平波形），下方为0V（对应红色低电平波形）。横轴表示时间序列，波形从左至右依次标记为：Idle（空闲）、Start Bit（起始位，低电平）、LSB（最低有效位）、中间数据位序列（图示二进制值为10101010）、MSB（最高有效位）、Stop Bit（停止位，高电平）以及后续的Idle状态。垂直虚线用于分隔各个比特位的时间周期。",
+  "metadata": {
+    "generation": {
+      "method": "qwen_api",
+      "backend": "api",
+      "provider": "qwen",
+      "model": "qwen3.7-plus",
+      "status": "success",
+      "api_error": null
+    },
+    "review": {
+      "required": false,
+      "status": null,
+      "reason": null,
+      "course_relevant": true
+    }
+  },
+  "error": null,
+  "method": "qwen_api",
+  "backend": "api",
+  "provider": "qwen",
+  "model": "qwen3.7-plus",
+  "status": "success",
+  "api_error": null,
+  "indexable": true,
+  "review_required": false,
+  "review_reason": null,
+  "review_status": null,
+  "course_relevant": true
+}

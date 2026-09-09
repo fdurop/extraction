@@ -1,0 +1,33 @@
+{
+  "original_path": "extraction/output/qwen_qwen3.7-plus_9/debug/images/w15-2-机器人运动学及其应用_p15_img3.jpeg",
+  "enhanced_path": "extraction/output/qwen_qwen3.7-plus_9/debug/images/w15-2-机器人运动学及其应用_p15_img3_enhanced.jpeg",
+  "description": "类型：照片\n图片展示了小米CyberGear微电机的实物外观。对象为一个银灰色圆柱形机电装置，左侧端面为带有散热鳍片的金属外壳，中心设有带多个安装孔的圆形法兰盘及输出轴；右侧主体部分可见黑色的行星减速器外壳及尾部伸出的线缆接口。结合页面文字标注，该电机内部集成驱动电路板、编码器、线圈、转子等组件，采用FOC驱动与CAN通信，支持动力学控制（运控模式）及基于PID的位置模式（运动学控制）。",
+  "metadata": {
+    "generation": {
+      "method": "qwen_api",
+      "backend": "api",
+      "provider": "qwen",
+      "model": "qwen3.7-plus",
+      "status": "success",
+      "api_error": null
+    },
+    "review": {
+      "required": false,
+      "status": null,
+      "reason": null,
+      "course_relevant": true
+    }
+  },
+  "error": null,
+  "method": "qwen_api",
+  "backend": "api",
+  "provider": "qwen",
+  "model": "qwen3.7-plus",
+  "status": "success",
+  "api_error": null,
+  "indexable": true,
+  "review_required": false,
+  "review_reason": null,
+  "review_status": null,
+  "course_relevant": true
+}

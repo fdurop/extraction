@@ -1,0 +1,33 @@
+{
+  "original_path": "extraction/output/qwen_qwen3.7-plus_8/debug/images/w10-1-直线运动平台（下）_slide_15_img_4.png",
+  "enhanced_path": "extraction/output/qwen_qwen3.7-plus_8/debug/images/w10-1-直线运动平台（下）_slide_15_img_4_enhanced.png",
+  "description": "类型：公式\n红色圆角矩形背景上显示白色数学公式：$\\tilde{u}_s(t) = \\frac{1}{2}[u_s(t) + u_s(t - 2\\tau)]$。公式左侧为带波浪号的 $u_s(t)$，右侧为二分之一乘以方括号，括号内包含原函数 $u_s(t)$ 与延迟项 $u_s(t - 2\\tau)$ 之和。",
+  "metadata": {
+    "generation": {
+      "method": "qwen_api",
+      "backend": "api",
+      "provider": "qwen",
+      "model": "qwen3.7-plus",
+      "status": "success",
+      "api_error": null
+    },
+    "review": {
+      "required": false,
+      "status": null,
+      "reason": null,
+      "course_relevant": true
+    }
+  },
+  "error": null,
+  "method": "qwen_api",
+  "backend": "api",
+  "provider": "qwen",
+  "model": "qwen3.7-plus",
+  "status": "success",
+  "api_error": null,
+  "indexable": true,
+  "review_required": false,
+  "review_reason": null,
+  "review_status": null,
+  "course_relevant": true
+}

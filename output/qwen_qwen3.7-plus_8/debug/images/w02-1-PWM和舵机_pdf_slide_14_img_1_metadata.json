@@ -1,0 +1,33 @@
+{
+  "original_path": "extraction/output/qwen_qwen3.7-plus_8/debug/images/w02-1-PWM和舵机_p14_img2.jpeg",
+  "enhanced_path": "extraction/output/qwen_qwen3.7-plus_8/debug/images/w02-1-PWM和舵机_p14_img2_enhanced.jpeg",
+  "description": "类型：照片\n图片展示了一块型号为SG90PROA1的绿色舵机控制电路板及其接口标注。左侧蓝色接线端子被红框标出为“电源接口”，注明GND是负线（-）。上方黑色排针接口被标为“舵机接口”，文字说明GND是-，S是信号线。板载拨动开关区域标有“手动”、“中位”及“指示灯”。右上角的旋钮被标注为“旋钮调节舵机角度”。右下角的按键被标注为“回中功能(按键)”。板上可见电容、芯片等电子元件。",
+  "metadata": {
+    "generation": {
+      "method": "qwen_api",
+      "backend": "api",
+      "provider": "qwen",
+      "model": "qwen3.7-plus",
+      "status": "success",
+      "api_error": null
+    },
+    "review": {
+      "required": false,
+      "status": null,
+      "reason": null,
+      "course_relevant": true
+    }
+  },
+  "error": null,
+  "method": "qwen_api",
+  "backend": "api",
+  "provider": "qwen",
+  "model": "qwen3.7-plus",
+  "status": "success",
+  "api_error": null,
+  "indexable": true,
+  "review_required": false,
+  "review_reason": null,
+  "review_status": null,
+  "course_relevant": true
+}

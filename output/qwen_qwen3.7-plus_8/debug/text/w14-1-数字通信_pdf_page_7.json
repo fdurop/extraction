@@ -1,0 +1,30 @@
+{
+  "page_num": 6,
+  "raw_text": "机电系统原理及实践—— 数字通信\n机电智控实验室tangguoan@fudan.edu.cn mmguo@fudan.edu.cn\n§2.2 Serial 库的用法\nhttps://www.arduino.cc/reference/en/language/functions/communication/serial/\nSerial.begin(speed)：以指定波特率初始化串口；\nSerial.print/println(val)：以ASCII码发送val/val+’\\n’；\nSerial.write(val)：以二进制发送一个字节；\nSerial.write(str)：以二进制发送一个字符串；\nSerial.write(buf,len)：以二进制发送buf中的len个字节；\nSerial.available()：返回数据流中待读取字节数；\nSerial.read()：返回读取的一个字节；\nSerial.readBytes(buf,len)：读取len个字节到buf中；\nSerial.parseInt/parseFloat()：返回从ASCII码流中解析的一个整数/浮点数；\nserialEvent()：系统串口中断处理函数。\n23-7\n发\n送\n读\n取\n数据流：约定好解释方式的二进制比特流\n",
+  "cleaned_text": "§2.2 Serial 库的用法\nhttps://www.arduino.cc/reference/en/language/functions/communication/serial/\nSerial.begin(speed)：以指定波特率初始化串口；\nSerial.print/println(val)：以ASCII码发送val/val+’\\n’；\nSerial.write(val)：以二进制发送一个字节；\nSerial.write(str)：以二进制发送一个字符串；\nSerial.write(buf,len)：以二进制发送buf中的len个字节；\nSerial.available()：返回数据流中待读取字节数；\nSerial.read()：返回读取的一个字节；\nSerial.readBytes(buf,len)：读取len个字节到buf中；\nSerial.parseInt/parseFloat()：返回从ASCII码流中解析的一个整数/浮点数；\nserialEvent()：系统串口中断处理函数。\n发\n送\n读\n取\n数据流：约定好解释方式的二进制比特流",
+  "key_points": [
+    "Serial.begin(speed)：以指定波特率初始化串口；",
+    "Serial.print/println(val)：以ASCII码发送val/val+’\\n’；",
+    "Serial.write(val)：以二进制发送一个字节；",
+    "Serial.write(str)：以二进制发送一个字符串；",
+    "Serial.write(buf,len)：以二进制发送buf中的len个字节；",
+    "Serial.available()：返回数据流中待读取字节数；",
+    "Serial.read()：返回读取的一个字节；",
+    "Serial.readBytes(buf,len)：读取len个字节到buf中；",
+    "serialEvent()：系统串口中断处理函数。"
+  ],
+  "technical_terms": [
+    "系统串口中断",
+    "系统串口中断处理"
+  ],
+  "has_images": true,
+  "image_count": 1,
+  "image_paths": [
+    "extraction/output/qwen_qwen3.7-plus_8/debug/images/w14-1-数字通信_p7_img5.jpeg"
+  ],
+  "metadata": {
+    "char_count": 565,
+    "word_count": 24,
+    "line_count": 21
+  }
+}

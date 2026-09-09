@@ -1,0 +1,33 @@
+{
+  "original_path": "extraction/output/qwen_qwen3.7-plus_8/debug/images/w02-1-PWM和舵机_p11_img4.jpeg",
+  "enhanced_path": "extraction/output/qwen_qwen3.7-plus_8/debug/images/w02-1-PWM和舵机_p11_img4_enhanced.jpeg",
+  "description": "类型：照片\n图片横向展示了三款通过黑色连杆机械连接的舵机实物。从左至右依次为：黑色外壳的ZP15S（标签含ZL ROBOT SERVO）、红色外壳的ZX20S（侧面印有20kg.cm及ZL TECH字样）、蓝色外壳的PM30S（侧面印有30KG.CM）。三者输出轴均装有银色金属齿轮，并通过连接件串联，直观呈现了总线舵机多机协同的物理连接形态。",
+  "metadata": {
+    "generation": {
+      "method": "qwen_api",
+      "backend": "api",
+      "provider": "qwen",
+      "model": "qwen3.7-plus",
+      "status": "success",
+      "api_error": null
+    },
+    "review": {
+      "required": false,
+      "status": null,
+      "reason": null,
+      "course_relevant": true
+    }
+  },
+  "error": null,
+  "method": "qwen_api",
+  "backend": "api",
+  "provider": "qwen",
+  "model": "qwen3.7-plus",
+  "status": "success",
+  "api_error": null,
+  "indexable": true,
+  "review_required": false,
+  "review_reason": null,
+  "review_status": null,
+  "course_relevant": true
+}

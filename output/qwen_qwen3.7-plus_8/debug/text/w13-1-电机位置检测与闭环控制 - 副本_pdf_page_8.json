@@ -1,0 +1,28 @@
+{
+  "page_num": 7,
+  "raw_text": "机电系统原理及实践—— 电机位置检测与闭环控制\n机电智控实验室tangguoan@fudan.edu.cn mmguo@fudan.edu.cn\n§2.3 实践：读取编码器信息，显示脉冲计数值\n16-8\n初始化端口\n上电\n初始化串口\n启动时间中断\n串口打印\n计数值\n根据方向\n加减计数\n计数\nsetup()\n外部\n中断\n时间\n中断\n启动外部中断\nResolution: 脉冲数/圈\n棕：Vcc，uno 5V\n蓝：0V（COM，共阴极），uno GND\n黑：A相输出，uno D2 或D3（外部中断）\n白：B相输出，uno 数字口\n橙：Z相输出（零点槽信号，本次不用）\n限时：30分钟\n用loop代替时间\n中断亦可，但不\n能用delay进行延\n时，否则影响外\n部中断的触发。\nw13-s1-\nreadEncoder.ino\n",
+  "cleaned_text": "§2.3 实践：读取编码器信息，显示脉冲计数值\n初始化端口\n上电\n初始化串口\n启动时间中断\n串口打印\n计数值\n根据方向\n加减计数\n计数\nsetup()\n外部\n中断\n时间\n中断\n启动外部中断\nResolution: 脉冲数/圈\n棕：Vcc，uno 5V\n蓝：0V（COM，共阴极），uno GND\n黑：A相输出，uno D2 或D3（外部中断）\n白：B相输出，uno 数字口\n橙：Z相输出（零点槽信号，本次不用）\n限时：30分钟\n用loop代替时间\n中断亦可，但不\n能用delay进行延\n时，否则影响外\n部中断的触发。\nw13-s1-\nreadEncoder.ino",
+  "key_points": [
+    "Resolution: 脉冲数/圈",
+    "部中断的触发。"
+  ],
+  "technical_terms": [
+    "COM",
+    "GND",
+    "w13-s1",
+    "启动外部中断",
+    "启动时间中断",
+    "外部中断"
+  ],
+  "has_images": true,
+  "image_count": 2,
+  "image_paths": [
+    "extraction/output/qwen_qwen3.7-plus_8/debug/images/w13-1-电机位置检测与闭环控制 - 副本_p8_img3.jpeg",
+    "extraction/output/qwen_qwen3.7-plus_8/debug/images/w13-1-电机位置检测与闭环控制 - 副本_p8_img10.jpeg"
+  ],
+  "metadata": {
+    "char_count": 361,
+    "word_count": 42,
+    "line_count": 34
+  }
+}

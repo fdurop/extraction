@@ -1,0 +1,33 @@
+{
+  "original_path": "extraction/output/qwen_qwen3.7-plus_8/debug/images/w01-1-课程简介_p5_img2.jpeg",
+  "enhanced_path": "extraction/output/qwen_qwen3.7-plus_8/debug/images/w01-1-课程简介_p5_img2_enhanced.jpeg",
+  "description": "类型：照片\n图片展示了舞台表演场景，背景为山水幕布。画面中有四台白色双足人形机器人，身穿红黄配色背心，头戴蓝色面罩，手持红色短棍，呈对称站立姿态。前景中央有一名穿红衣的机器人与右侧一名穿黄衣的人类舞者正在做武术动作。右上角有“直播”标识，右下角显示“2025 中央广播电视总台 春节联欢晚会”字样及Logo。",
+  "metadata": {
+    "generation": {
+      "method": "qwen_api",
+      "backend": "api",
+      "provider": "qwen",
+      "model": "qwen3.7-plus",
+      "status": "success",
+      "api_error": null
+    },
+    "review": {
+      "required": false,
+      "status": null,
+      "reason": null,
+      "course_relevant": true
+    }
+  },
+  "error": null,
+  "method": "qwen_api",
+  "backend": "api",
+  "provider": "qwen",
+  "model": "qwen3.7-plus",
+  "status": "success",
+  "api_error": null,
+  "indexable": true,
+  "review_required": false,
+  "review_reason": null,
+  "review_status": null,
+  "course_relevant": true
+}

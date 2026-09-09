@@ -1,0 +1,18 @@
+{
+  "page_num": 11,
+  "raw_text": "机电系统原理及实践—— Arduino软硬件基础\n机电智控实验室tangguoan@fudan.edu.cn mmguo@fudan.edu.cn\n§4.1 二进制\n各种进制的对应关系\n数值在内存中的存储方式\n\n1000 10 = 3E8 16\n14-12\n十\n进制\n十六\n进制\n八\n进制\n二\n进制\n0\n0x0\n00\n0b0\n1\n0x1\n01\n0b1\n2\n0x2\n02\n0b10\n3\n0x3\n03\n0b11\n4\n0x4\n04\n0b100\n5\n0x5\n05\n0b101\n6\n0x6\n06\n0b110\n7\n0x7\n07\n0b111\n8\n0x8\n010\n0b1000\n9\n0x9\n011\n0b1001\n10\n0xA\n012\n0b1010\n11\n0xB\n013\n0b1011\n12\n0xC\n014\n0b1100\n13\n0xD\n015\n0b1101\n14\n0xE\n016\n0b1110\n15\n0xF\n017\n0b1111\n16\n0x10\n020\n0b10000\n内存字节\n短整型\n（2字节）\n整型\n（4字节）\n浮点型\n（4字节）\n0\n0xE8\n0xE8\n0x00\n1\n0x03\n0x03\n0x00\n2\n0x00\n0x7A\n3\n0x00\n0x44\nw01-s4-dumpMemory.ino\nw01-s3-base.ino\n室 复旦大\n智控实验室 复旦大学 机电\n学 机电智控实验室 复旦大学 机电智控实验\n复旦大学 机电智控实验室 复旦大学 机电智控实验室 复旦\n大学 机电智控实验室 复旦大学 机电智控实验室 复旦大学 机电\n电智控实验室 复旦大学 机电智控实验室 复旦大学 机电智控实\n验室 复旦大学 机电智控实验室 复旦大学 机电智控实验室 \n旦大学 机电智控实验室 复旦大学 机电智控\n电智控实验室 复旦大学 \n验室 复\n",
+  "cleaned_text": "§4.1 二进制\n各种进制的对应关系\n数值在内存中的存储方式\n1000 10 = 3E8 16\n十\n进制\n十六\n进制\n八\n进制\n二\n进制\n0\n0x0\n00\n0b0\n1\n0x1\n01\n0b1\n2\n0x2\n02\n0b10\n3\n0x3\n03\n0b11\n4\n0x4\n04\n0b100\n5\n0x5\n05\n0b101\n6\n0x6\n06\n0b110\n7\n0x7\n07\n0b111\n8\n0x8\n010\n0b1000\n9\n0x9\n011\n0b1001\n10\n0xA\n012\n0b1010\n11\n0xB\n013\n0b1011\n12\n0xC\n014\n0b1100\n13\n0xD\n015\n0b1101\n14\n0xE\n016\n0b1110\n15\n0xF\n017\n0b1111\n16\n0x10\n020\n0b10000\n内存字节\n短整型\n（2字节）\n整型\n（4字节）\n浮点型\n（4字节）\n0\n0xE8\n0xE8\n0x00\n1\n0x03\n0x03\n0x00\n2\n0x00\n0x7A\n3\n0x00\n0x44\nw01-s4-dumpMemory.ino\nw01-s3-base.ino",
+  "key_points": [],
+  "technical_terms": [
+    "w01-s3-base",
+    "w01-s4-dumpMemory"
+  ],
+  "has_images": false,
+  "image_count": 0,
+  "image_paths": [],
+  "metadata": {
+    "char_count": 763,
+    "word_count": 152,
+    "line_count": 118
+  }
+}

@@ -9,6 +9,7 @@ from .formula_extractor import FormulaExtractor
 from .formula_validator import FormulaValidator
 from .table_extractor import TableExtractor
 from .table_validator import TableValidator
+from .table_image_preprocessor import TableImagePreprocessor
 from .code_extractor import CodeExtractor
 
 __all__ = [
@@ -18,5 +19,6 @@ __all__ = [
     'FormulaValidator',
     'TableExtractor',
     'TableValidator',
+    'TableImagePreprocessor',
     'CodeExtractor'
 ]

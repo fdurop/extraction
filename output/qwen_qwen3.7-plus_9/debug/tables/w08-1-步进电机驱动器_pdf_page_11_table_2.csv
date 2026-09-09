@@ -1,0 +1,17 @@
+﻿Pulse/rev,SW5,SW6,SW7,SW8
+Default,on,on,on,on
+400,off,on,on,on
+800,on,off,on,on
+1600,off,off,on,on
+3200,on,on,off,on
+6400,off,on,off,on
+12800,on,off,off,on
+25600,off,off,off,on
+1000,on,on,on,off
+2000,off,on,on,off
+4000,on,off,on,off
+5000,off,off,on,off
+8000,on,on,off,off
+10000,off,on,off,off
+20000,on,off,off,off
+25000,off,off,off,off

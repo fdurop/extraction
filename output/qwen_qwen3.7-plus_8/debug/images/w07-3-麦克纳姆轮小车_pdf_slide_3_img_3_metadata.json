@@ -1,0 +1,33 @@
+{
+  "original_path": "extraction/output/qwen_qwen3.7-plus_8/debug/images/w07-3-麦克纳姆轮小车_p3_img4.jpeg",
+  "enhanced_path": "extraction/output/qwen_qwen3.7-plus_8/debug/images/w07-3-麦克纳姆轮小车_p3_img4_enhanced.jpeg",
+  "description": "类型：照片\n图片展示了一个白色的双轮机器人底盘实物，放置在灰色地面上。该装置由两个平行的白色圆柱形轮毂电机组成，每个电机两端安装有黑色的麦克纳姆轮（轮缘带有斜向辊子）。 chassis中部可见裸露的红色与黑色导线及电子元件，后端延伸出一个L型白色支架，顶端安装有一个黑色的圆柱形传感器（类似摄像头或激光雷达）。图片左侧竖排叠加黄色黑边文字：“可集成检测设备”。",
+  "metadata": {
+    "generation": {
+      "method": "qwen_api",
+      "backend": "api",
+      "provider": "qwen",
+      "model": "qwen3.7-plus",
+      "status": "success",
+      "api_error": null
+    },
+    "review": {
+      "required": false,
+      "status": null,
+      "reason": null,
+      "course_relevant": true
+    }
+  },
+  "error": null,
+  "method": "qwen_api",
+  "backend": "api",
+  "provider": "qwen",
+  "model": "qwen3.7-plus",
+  "status": "success",
+  "api_error": null,
+  "indexable": true,
+  "review_required": false,
+  "review_reason": null,
+  "review_status": null,
+  "course_relevant": true
+}

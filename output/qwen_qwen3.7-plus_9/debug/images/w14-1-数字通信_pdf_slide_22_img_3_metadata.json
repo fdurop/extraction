@@ -1,0 +1,33 @@
+{
+  "original_path": "extraction/output/qwen_qwen3.7-plus_9/debug/images/w14-1-数字通信_p22_img5.jpeg",
+  "enhanced_path": "extraction/output/qwen_qwen3.7-plus_9/debug/images/w14-1-数字通信_p22_img5_enhanced.jpeg",
+  "description": "类型：代码\n图片展示了一段C/C++语言的`void loop()`函数代码片段，包含大括号及缩进结构。可见关键文字包括变量声明`flagRecv = 0;`、`float pos;`，控制流语句`if (flagRecv)`、`while (CAN_MSGAVAIL == CAN.checkReceive())`。函数调用包括`CAN.readMsgBuf(&len, recvBuf)`、`memcpy(&pos, &recvBuf[0], len)`、`Serial.println(pos)`以及`CAN.MCP_CAN::sendMsgBuf(slaveID, 0, 2, \"OK\")`。代码行之间穿插中文注释，如“// clear flag”、“// 读取数据到缓冲区”、“// 把缓冲区二进制数据转换为浮点数”、“// 返回处理成功的信息”。",
+  "metadata": {
+    "generation": {
+      "method": "qwen_api",
+      "backend": "api",
+      "provider": "qwen",
+      "model": "qwen3.7-plus",
+      "status": "success",
+      "api_error": null
+    },
+    "review": {
+      "required": false,
+      "status": null,
+      "reason": null,
+      "course_relevant": true
+    }
+  },
+  "error": null,
+  "method": "qwen_api",
+  "backend": "api",
+  "provider": "qwen",
+  "model": "qwen3.7-plus",
+  "status": "success",
+  "api_error": null,
+  "indexable": true,
+  "review_required": false,
+  "review_reason": null,
+  "review_status": null,
+  "course_relevant": true
+}

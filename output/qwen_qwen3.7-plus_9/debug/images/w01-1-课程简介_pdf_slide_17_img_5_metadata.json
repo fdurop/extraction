@@ -1,0 +1,33 @@
+{
+  "original_path": "extraction/output/qwen_qwen3.7-plus_9/debug/images/w01-1-课程简介_p17_img6.jpeg",
+  "enhanced_path": "extraction/output/qwen_qwen3.7-plus_9/debug/images/w01-1-课程简介_p17_img6_enhanced.jpeg",
+  "description": "类型：照片\n图片展示了一个白色仿生机器鱼漂浮在深色水面上，水面散布着枯叶。该装置具有流线型白色躯干、背鳍及两侧白色的胸鳍/腹鳍，尾部连接着机械推进结构。左上角可见一只手提着连接在机器鱼尾部的红色导线。结合上下文“往届案例”及“机器鱼”文字，此为机电系统课程的学生实践项目实物演示场景。",
+  "metadata": {
+    "generation": {
+      "method": "qwen_api",
+      "backend": "api",
+      "provider": "qwen",
+      "model": "qwen3.7-plus",
+      "status": "success",
+      "api_error": null
+    },
+    "review": {
+      "required": false,
+      "status": null,
+      "reason": null,
+      "course_relevant": true
+    }
+  },
+  "error": null,
+  "method": "qwen_api",
+  "backend": "api",
+  "provider": "qwen",
+  "model": "qwen3.7-plus",
+  "status": "success",
+  "api_error": null,
+  "indexable": true,
+  "review_required": false,
+  "review_reason": null,
+  "review_status": null,
+  "course_relevant": true
+}

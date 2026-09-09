@@ -13,30 +13,10 @@ if hasattr(sys.stdout, "reconfigure"):
 if hasattr(sys.stderr, "reconfigure"):
     sys.stderr.reconfigure(encoding="utf-8", errors="replace")
 
-# 获取当前文件的绝对路径
 current_dir = os.path.dirname(os.path.abspath(__file__))
-
-# 查找项目根目录并切换工作目录（确保input/output路径正确）
-def find_and_set_project_root():
-    """查找项目根目录并设置为工作目录"""
-    current = os.path.abspath(current_dir)
-    for _ in range(5):
-        if os.path.isfile(os.path.join(current, 'run_src2.py')) and os.path.isdir(
-            os.path.join(current, 'src2')
-        ):
-            os.chdir(current)
-            return current
-        parent = os.path.dirname(current)
-        if parent == current:
-            break
-        current = parent
-    parent = os.path.dirname(current_dir)
-    if os.path.isfile(os.path.join(parent, 'run_src2.py')):
-        os.chdir(parent)
-        return parent
-    raise RuntimeError("无法定位项目根目录：需要 run_src2.py 和 src2/ 目录")
-
-project_root = find_and_set_project_root()
+extraction_root = os.path.dirname(current_dir)
+workspace_root = os.path.dirname(extraction_root)
+os.chdir(workspace_root)
 
 # 添加src2目录到路径（这样可以直接导入core、parsers、utils）
 sys.path.insert(0, current_dir)
@@ -76,7 +56,7 @@ def _build_output_base_dir(vlm_config):
         return cleaned or "model"
 
     base_name = f"{safe(provider)}_{safe(model)}"
-    output_root = "output"
+    output_root = os.path.join("extraction", "output")
     os.makedirs(output_root, exist_ok=True)
 
     pattern = re.compile(rf"^{re.escape(base_name)}_(\d+)$")
@@ -95,7 +75,16 @@ def _build_output_base_dir(vlm_config):
 class MultimodalPreprocessor:
     """多模态数据预处理器 - 重构版"""
     
-    def __init__(self):
+    def __init__(
+        self,
+        output_base_dir=None,
+        resume=False,
+        user_id=None,
+        username=None,
+        course_id=None,
+        course_name=None,
+        job_id=None,
+    ):
         """初始化基于远程多模态 API 的预处理工具。"""
         # 初始化日志系统
         self.logger = get_logger("MultimodalPreprocessor")
@@ -104,10 +93,10 @@ class MultimodalPreprocessor:
         print("\n" + "=" * 60)
         print("多模态数据提取系统 - 重构版 v2.0")
         print("=" * 60)
-        print(f"   工作目录: {os.getcwd()}")
+        print("   工作目录: extraction-main")
         self.vlm_config = load_vlm_config()
         self.embedding_config = load_embedding_config()
-        self.output_base_dir = _build_output_base_dir(self.vlm_config)
+        self.output_base_dir = output_base_dir or _build_output_base_dir(self.vlm_config)
         print(
             f"   配置: API-VLM={self.vlm_config.get('provider', 'qwen')}/"
             f"{self.vlm_config.get('model', 'model')}"
@@ -118,6 +107,12 @@ class MultimodalPreprocessor:
             f"({self.embedding_config.get('dimension', 1024)} dimensions)"
         )
         print(f"   输出目录: {self.output_base_dir}")
+        print(
+            "   任务身份: "
+            f"user={username or user_id or 'default_user'} "
+            f"course={course_name or course_id or 'default_course'} "
+            f"job={job_id or '-'}"
+        )
         
         self.logger.info("开始初始化多模态预处理工具（重构版）")
         self.logger.info("运行模式: remote_api")
@@ -156,7 +151,7 @@ class MultimodalPreprocessor:
             print(f"   [OK] API多模态模型已启用: {self.vlm_client.provider}/{self.vlm_client.model}")
             self.logger.info(f"API VLM enabled: {self.vlm_client.provider}/{self.vlm_client.model}")
         elif self.vlm_config.get("enabled", True):
-            print(f"   [WARN] API多模态模型未启用：请填写 {self.vlm_config.get('config_path', 'config/vlm_api.yaml')} 中的 api_key")
+            print(f"   [WARN] API多模态模型未启用：请填写 {self.vlm_config.get('config_path', 'extraction/config/vlm_api.yaml')} 中的 api_key")
             self.logger.warning("API VLM is not available; image descriptions will be limited.")
 
         print("\n[步骤 4/4] 初始化核心处理与输出模块...")
@@ -174,7 +169,23 @@ class MultimodalPreprocessor:
         self.code_extractor = CodeExtractor(logger=self.logger)
         print("   [OK] 核心处理模块初始化完成")
         
-        self.output_manager = OutputManager(base_dir=self.output_base_dir, logger=self.logger)
+        self.output_manager = OutputManager(
+            base_dir=self.output_base_dir,
+            logger=self.logger,
+            user_id=user_id,
+            username=username,
+            course_id=course_id,
+            course_name=course_name,
+            job_id=job_id,
+        )
+        if resume:
+            restored = self.output_manager.load_existing()
+            self.logger.info("恢复已有抽取检查点: %s", restored)
+            print(
+                "   [OK] 已恢复检查点: "
+                f"{restored['documents']} 个文档, {restored['pages']} 页, "
+                f"{restored['nodes']} 个节点"
+            )
         print("   [OK] 输出目录创建完成")
         
         print("\n" + "=" * 60)
@@ -189,6 +200,16 @@ class MultimodalPreprocessor:
         
         # 专业术语库
         self.professional_terms = set()
+        if resume:
+            terms_path = os.path.join(self.output_base_dir, "debug", "professional_terms_library.json")
+            try:
+                if os.path.exists(terms_path):
+                    import json
+                    with open(terms_path, "r", encoding="utf-8") as f:
+                        terms_data = json.load(f)
+                    self.professional_terms.update(terms_data.get("terms", []))
+            except Exception as exc:
+                self.logger.warning("恢复专业术语库失败，将继续运行: %s", exc)
 
     def _vlm_source_metadata(self):
         if self.vlm_client:
@@ -534,7 +555,16 @@ class MultimodalPreprocessor:
         return summary
 
 
-def main():
+def main(
+    input_dir=None,
+    input_file=None,
+    output_dir=None,
+    user_id=None,
+    username=None,
+    course_id=None,
+    course_name=None,
+    job_id=None,
+):
     """主函数"""
     # 初始化主日志
     main_logger = get_logger("Main")
@@ -547,19 +577,33 @@ def main():
         max_files = int(max_files_raw) if max_files_raw.isdigit() else None
 
         # 初始化处理器
-        processor = MultimodalPreprocessor()
+        processor = MultimodalPreprocessor(
+            output_base_dir=output_dir,
+            user_id=user_id,
+            username=username,
+            course_id=course_id,
+            course_name=course_name,
+            job_id=job_id,
+        )
         main_logger.info("处理器初始化完成")
         
         # 检查输入目录中的文件
-        input_dir = "input"
-        if not os.path.exists(input_dir):
+        input_dir = input_dir or os.path.join("extraction", "input")
+        if not input_file and not os.path.exists(input_dir):
             os.makedirs(input_dir, exist_ok=True)
             print(f"[ERROR] 输入目录不存在，已创建: {input_dir}")
             print("请将PDF或PPTX文件放入input目录后重新运行")
             return
         
         # 查找所有支持的文件
-        input_files = FileUtils.get_files(input_dir, extensions=['.pdf', '.pptx'])
+        if input_file:
+            if not os.path.isfile(input_file):
+                raise FileNotFoundError(f"输入文件不存在: {input_file}")
+            if os.path.splitext(input_file)[1].lower() not in {".pdf", ".pptx"}:
+                raise ValueError(f"不支持的输入文件格式: {input_file}")
+            input_files = [input_file]
+        else:
+            input_files = FileUtils.get_files(input_dir, extensions=['.pdf', '.pptx'])
         if max_files is not None:
             input_files = input_files[:max_files]
         

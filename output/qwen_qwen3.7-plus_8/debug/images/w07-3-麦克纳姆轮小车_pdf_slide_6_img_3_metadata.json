@@ -1,0 +1,33 @@
+{
+  "original_path": "extraction/output/qwen_qwen3.7-plus_8/debug/images/w07-3-麦克纳姆轮小车_p6_img4.png",
+  "enhanced_path": "extraction/output/qwen_qwen3.7-plus_8/debug/images/w07-3-麦克纳姆轮小车_p6_img4_enhanced.png",
+  "description": "类型：示意图\n图片展示了麦克纳姆轮小车的俯视受力分析图。矩形车体四角安装有辊子呈45度排列的轮子，对角线位置的轮子标签相同：左上和右下标记为“A轮”，右上和左下标记为“B轮”。每个轮子中心绘有红色箭头矢量，分解为沿车轮轴线方向和垂直于轴线方向的分量。车体几何中心处有一个指向左侧的红色箭头，标注为“V合”，表示合成速度方向。背景含有“复旦大学机电智控实验室”的水印文字。",
+  "metadata": {
+    "generation": {
+      "method": "qwen_api",
+      "backend": "api",
+      "provider": "qwen",
+      "model": "qwen3.7-plus",
+      "status": "success",
+      "api_error": null
+    },
+    "review": {
+      "required": false,
+      "status": null,
+      "reason": null,
+      "course_relevant": true
+    }
+  },
+  "error": null,
+  "method": "qwen_api",
+  "backend": "api",
+  "provider": "qwen",
+  "model": "qwen3.7-plus",
+  "status": "success",
+  "api_error": null,
+  "indexable": true,
+  "review_required": false,
+  "review_reason": null,
+  "review_status": null,
+  "course_relevant": true
+}

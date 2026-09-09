@@ -1,0 +1,24 @@
+{
+  "page_num": 6,
+  "raw_text": "机电系统原理及实践—— 电机位置检测与闭环控制\n机电智控实验室tangguoan@fudan.edu.cn mmguo@fudan.edu.cn\n向左移动（逆时针）\n当A相出现上升沿时，B相为HIGH；\n当A相出现下降沿时，B相为LOW.\n向右移动（顺时针）\n当A相出现上升沿时，B相为LOW；\n当A相出现下降沿时，B相为HIGH.\n将A相接到uno 的外部中断\n在中断ISR中，读取B相电平。\n根据触发方式（上升沿或下降沿）和B相电平，判断电机转动方向。\n对周期加减计数，根据编码器分辨率（P/R），计算出角度增量（相对初始点的角位移）。\n§2.2 检测原理\n16-7\n← 向左移动\n向右移动→\n",
+  "cleaned_text": "向左移动（逆时针）\n当A相出现上升沿时，B相为HIGH；\n当A相出现下降沿时，B相为LOW.\n向右移动（顺时针）\n当A相出现上升沿时，B相为LOW；\n当A相出现下降沿时，B相为HIGH.\n将A相接到uno 的外部中断\n在中断ISR中，读取B相电平。\n根据触发方式（上升沿或下降沿）和B相电平，判断电机转动方向。\n对周期加减计数，根据编码器分辨率（P/R），计算出角度增量（相对初始点的角位移）。\n§2.2 检测原理\n← 向左移动\n向右移动→",
+  "key_points": [
+    "在中断ISR中，读取B相电平。",
+    "根据触发方式（上升沿或下降沿）和B相电平，判断电机转动方向。",
+    "对周期加减计数，根据编码器分辨率（P/R），计算出角度增量（相对初始点的角位移）。"
+  ],
+  "technical_terms": [
+    "判断电机",
+    "的外部中断"
+  ],
+  "has_images": true,
+  "image_count": 1,
+  "image_paths": [
+    "extraction/output/qwen_qwen3.7-plus_8/debug/images/w13-1-电机位置检测与闭环控制 - 副本_p7_img3.jpeg"
+  ],
+  "metadata": {
+    "char_count": 309,
+    "word_count": 21,
+    "line_count": 17
+  }
+}

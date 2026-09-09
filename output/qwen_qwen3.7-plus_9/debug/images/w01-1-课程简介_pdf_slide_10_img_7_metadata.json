@@ -1,0 +1,33 @@
+{
+  "original_path": "extraction/output/qwen_qwen3.7-plus_9/debug/images/w01-1-课程简介_p10_img8.jpeg",
+  "enhanced_path": "extraction/output/qwen_qwen3.7-plus_9/debug/images/w01-1-课程简介_p10_img8_enhanced.jpeg",
+  "description": "类型：照片\n图片左侧展示一个黑色方形步进电机，顶部伸出金属轴，侧面贴有白色规格标签。右侧为一个黑色矩形运动控制驱动器，面板印有“雷赛智能”商标及“RS7”型号标识。驱动器表面包含两组密集的拨码开关阵列、若干状态指示灯以及标有PWR、ALM等的文字说明。设备右边缘设有三组绿色接线端子排和一组蓝色端子排，用于电气连接。该硬件组合对应课程列表中“步进电机”及其驱动控制的相关内容。",
+  "metadata": {
+    "generation": {
+      "method": "qwen_api",
+      "backend": "api",
+      "provider": "qwen",
+      "model": "qwen3.7-plus",
+      "status": "success",
+      "api_error": null
+    },
+    "review": {
+      "required": false,
+      "status": null,
+      "reason": null,
+      "course_relevant": true
+    }
+  },
+  "error": null,
+  "method": "qwen_api",
+  "backend": "api",
+  "provider": "qwen",
+  "model": "qwen3.7-plus",
+  "status": "success",
+  "api_error": null,
+  "indexable": true,
+  "review_required": false,
+  "review_reason": null,
+  "review_status": null,
+  "course_relevant": true
+}

@@ -1,0 +1,28 @@
+{
+  "page_num": 12,
+  "raw_text": "机电系统原理及实践—— 电机位置检测与闭环控制\n机电智控实验室tangguoan@fudan.edu.cn mmguo@fudan.edu.cn\n§4.2 Bang-Bang 控制\n起停式控制（Bang-Bang control），也称为砰砰控制、开关控制。\n让输出在两种状态之间切换的闭环控制器。\n例：最大火力烧开水，在煮沸后关闭热源。\n16-13\n温度测量\n温度阈值\n比较\n停机\n停机时间\n比较\n开机\n> 2 min\n≤ 2 min\n超过阈值\n低于阈值\nBang！\nBang！\n",
+  "cleaned_text": "§4.2 Bang-Bang 控制\n起停式控制（Bang-Bang control），也称为砰砰控制、开关控制。\n让输出在两种状态之间切换的闭环控制器。\n例：最大火力烧开水，在煮沸后关闭热源。\n温度测量\n温度阈值\n比较\n停机\n停机时间\n比较\n开机\n> 2 min\n≤ 2 min\n超过阈值\n低于阈值\nBang！\nBang！",
+  "key_points": [
+    "起停式控制（Bang-Bang control），也称为砰砰控制、开关控制。",
+    "让输出在两种状态之间切换的闭环控制器。",
+    "例：最大火力烧开水，在煮沸后关闭热源。",
+    "Bang！",
+    "Bang！"
+  ],
+  "technical_terms": [
+    "也称为砰砰控制",
+    "开关控制",
+    "种状态之间切换的闭环控制",
+    "起停式控制"
+  ],
+  "has_images": true,
+  "image_count": 1,
+  "image_paths": [
+    "extraction/output/qwen_qwen3.7-plus_9/debug/images/w13-1-电机位置检测与闭环控制 - 副本_p13_img3.jpeg"
+  ],
+  "metadata": {
+    "char_count": 244,
+    "word_count": 29,
+    "line_count": 21
+  }
+}

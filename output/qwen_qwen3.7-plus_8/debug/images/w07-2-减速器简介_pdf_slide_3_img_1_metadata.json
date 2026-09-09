@@ -1,0 +1,33 @@
+{
+  "original_path": "extraction/output/qwen_qwen3.7-plus_8/debug/images/w07-2-减速器简介_p3_img2.jpeg",
+  "enhanced_path": "extraction/output/qwen_qwen3.7-plus_8/debug/images/w07-2-减速器简介_p3_img2_enhanced.jpeg",
+  "description": "类型：照片\n图片展示了一个金属底盘的移动机器人内部结构俯视图。底盘四角各安装有一个银色圆柱形直流电机，电机输出轴直接连接黑色橡胶轮胎，构成四轮驱动系统。 chassis中央固定着一块白色的长方形锂电池，标签显示品牌为“QISUO祺索”，容量“3000mAh”，电压标识“7.4V”。电池周围分布着黑色的电源线和白色的信号线，连接至电机及底部的红色接线端子。 chassis左侧边缘贴有黄色标签，可见“左前”、“右前”等方位标识文字。该图直观展示了机电系统中电机作为执行部件的实际安装布局。",
+  "metadata": {
+    "generation": {
+      "method": "qwen_api",
+      "backend": "api",
+      "provider": "qwen",
+      "model": "qwen3.7-plus",
+      "status": "success",
+      "api_error": null
+    },
+    "review": {
+      "required": false,
+      "status": null,
+      "reason": null,
+      "course_relevant": true
+    }
+  },
+  "error": null,
+  "method": "qwen_api",
+  "backend": "api",
+  "provider": "qwen",
+  "model": "qwen3.7-plus",
+  "status": "success",
+  "api_error": null,
+  "indexable": true,
+  "review_required": false,
+  "review_reason": null,
+  "review_status": null,
+  "course_relevant": true
+}

@@ -1,0 +1,33 @@
+{
+  "original_path": "extraction/output/qwen_qwen3.7-plus_9/debug/images/w15-2-机器人运动学及其应用_p6_img5.jpeg",
+  "enhanced_path": "extraction/output/qwen_qwen3.7-plus_9/debug/images/w15-2-机器人运动学及其应用_p6_img5_enhanced.jpeg",
+  "description": "类型：示意图\n图片展示了一个串联机器人腿部机械结构模型。顶部安装有一个电机，电机轴端带有小齿轮（或同步带轮）。该驱动轮通过传动机构连接一根细长的连杆（大腿），连杆另一端通过转动副（关节）连接到下方较粗短的连杆（小腿）末端。整体呈现为两杆串联的开链结构，展示了电机驱动关节运动的机械构型。",
+  "metadata": {
+    "generation": {
+      "method": "qwen_api",
+      "backend": "api",
+      "provider": "qwen",
+      "model": "qwen3.7-plus",
+      "status": "success",
+      "api_error": null
+    },
+    "review": {
+      "required": false,
+      "status": null,
+      "reason": null,
+      "course_relevant": true
+    }
+  },
+  "error": null,
+  "method": "qwen_api",
+  "backend": "api",
+  "provider": "qwen",
+  "model": "qwen3.7-plus",
+  "status": "success",
+  "api_error": null,
+  "indexable": true,
+  "review_required": false,
+  "review_reason": null,
+  "review_status": null,
+  "course_relevant": true
+}

@@ -1,0 +1,33 @@
+{
+  "original_path": "extraction/output/qwen_qwen3.7-plus_8/debug/images/w01-2-Arduino软硬件基础_p14_img2.jpeg",
+  "enhanced_path": "extraction/output/qwen_qwen3.7-plus_8/debug/images/w01-2-Arduino软硬件基础_p14_img2_enhanced.jpeg",
+  "description": "类型：照片\n图片展示了一个金属封装的圆柱形电子元件，放置在灰色纹理表面上。该元件前端为透明琥珀色圆顶透镜，中部为银色螺纹金属外壳，尾部连接处包裹有蓝色热缩管，并引出红色和黑色两根导线。结合上下文“用LED灯发送摩斯电码”，该对象为课程作业中使用的指示灯硬件实物。",
+  "metadata": {
+    "generation": {
+      "method": "qwen_api",
+      "backend": "api",
+      "provider": "qwen",
+      "model": "qwen3.7-plus",
+      "status": "success",
+      "api_error": null
+    },
+    "review": {
+      "required": false,
+      "status": null,
+      "reason": null,
+      "course_relevant": true
+    }
+  },
+  "error": null,
+  "method": "qwen_api",
+  "backend": "api",
+  "provider": "qwen",
+  "model": "qwen3.7-plus",
+  "status": "success",
+  "api_error": null,
+  "indexable": true,
+  "review_required": false,
+  "review_reason": null,
+  "review_status": null,
+  "course_relevant": true
+}

@@ -1,0 +1,33 @@
+{
+  "original_path": "extraction/output/qwen_qwen3.7-plus_9/debug/images/w15-2-机器人运动学及其应用_p15_img5.jpeg",
+  "enhanced_path": "extraction/output/qwen_qwen3.7-plus_9/debug/images/w15-2-机器人运动学及其应用_p15_img5_enhanced.jpeg",
+  "description": "类型：示意图\n图片展示了电机控制系统的方框图逻辑。左侧包含两个输入回路：上方为“设定角度”与“当前角度”比较后经过增益Kp；下方为“设定速度”与“当前速度”比较后经过增益Kd。中间部分显示Kp输出、Kd输出与“设定力矩”三者相加，生成“期望力矩 (t_ref)”。该信号随后进入模块“f(t_ref)”，最终输出“期望iq (iq_ref)”。右下角独立显示一个标有“0”的方框，指向输出“期望id (id_ref)”。图中通过连线明确了角度环、速度环及力矩叠加的信号流向关系。",
+  "metadata": {
+    "generation": {
+      "method": "qwen_api",
+      "backend": "api",
+      "provider": "qwen",
+      "model": "qwen3.7-plus",
+      "status": "success",
+      "api_error": null
+    },
+    "review": {
+      "required": false,
+      "status": null,
+      "reason": null,
+      "course_relevant": true
+    }
+  },
+  "error": null,
+  "method": "qwen_api",
+  "backend": "api",
+  "provider": "qwen",
+  "model": "qwen3.7-plus",
+  "status": "success",
+  "api_error": null,
+  "indexable": true,
+  "review_required": false,
+  "review_reason": null,
+  "review_status": null,
+  "course_relevant": true
+}

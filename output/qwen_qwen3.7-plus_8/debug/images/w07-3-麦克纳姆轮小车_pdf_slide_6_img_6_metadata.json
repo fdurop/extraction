@@ -1,0 +1,33 @@
+{
+  "original_path": "extraction/output/qwen_qwen3.7-plus_8/debug/images/w07-3-麦克纳姆轮小车_p6_img7.png",
+  "enhanced_path": "extraction/output/qwen_qwen3.7-plus_8/debug/images/w07-3-麦克纳姆轮小车_p6_img7_enhanced.png",
+  "description": "类型：示意图\n图片展示了麦克纳姆轮小车的俯视结构及受力方向。中央为矩形车身，四角分别安装有麦克纳姆轮。左上角和右下角标记为“A轮”，右上角和左下角标记为“B轮”。每个车轮中心均引出一个红色箭头，指示力的矢量方向：左侧两轮（A轮与B轮）的红色箭头指向左上方，右侧两轮（B轮与A轮）的红色箭头指向右下方。背景布满“复旦大学 机电智控实验室”的重复水印文字。",
+  "metadata": {
+    "generation": {
+      "method": "qwen_api",
+      "backend": "api",
+      "provider": "qwen",
+      "model": "qwen3.7-plus",
+      "status": "success",
+      "api_error": null
+    },
+    "review": {
+      "required": false,
+      "status": null,
+      "reason": null,
+      "course_relevant": true
+    }
+  },
+  "error": null,
+  "method": "qwen_api",
+  "backend": "api",
+  "provider": "qwen",
+  "model": "qwen3.7-plus",
+  "status": "success",
+  "api_error": null,
+  "indexable": true,
+  "review_required": false,
+  "review_reason": null,
+  "review_status": null,
+  "course_relevant": true
+}

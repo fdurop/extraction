@@ -1,0 +1,33 @@
+{
+  "original_path": "extraction/output/qwen_qwen3.7-plus_9/debug/images/w08-1-步进电机驱动器_p8_img3.png",
+  "enhanced_path": "extraction/output/qwen_qwen3.7-plus_9/debug/images/w08-1-步进电机驱动器_p8_img3_enhanced.png",
+  "description": "类型：示意图\n图片展示了一个数字信号的脉冲波形图。纵轴方向标示了电平状态，上方为“HIGH”，下方为“LOW”。蓝色折线描绘了信号从低电平跳变至高电平，维持一段时间后回落至低电平的过程。在信号上升的垂直边沿旁，竖向标注有英文单词“RISING”；在信号下降的垂直边沿旁，竖向标注有英文单词“FALLING”。该图直观地定义了信号电平变化的两个关键边缘特征。",
+  "metadata": {
+    "generation": {
+      "method": "qwen_api",
+      "backend": "api",
+      "provider": "qwen",
+      "model": "qwen3.7-plus",
+      "status": "success",
+      "api_error": null
+    },
+    "review": {
+      "required": false,
+      "status": null,
+      "reason": null,
+      "course_relevant": true
+    }
+  },
+  "error": null,
+  "method": "qwen_api",
+  "backend": "api",
+  "provider": "qwen",
+  "model": "qwen3.7-plus",
+  "status": "success",
+  "api_error": null,
+  "indexable": true,
+  "review_required": false,
+  "review_reason": null,
+  "review_status": null,
+  "course_relevant": true
+}

@@ -1,0 +1,38 @@
+{
+  "page_num": 16,
+  "raw_text": "机电系统原理及实践—— 数字通信\n机电智控实验室tangguoan@fudan.edu.cn mmguo@fudan.edu.cn\n§5 SPI\n串行外设接口(Serial Peripheral Interface)\n同步、全双工、串行通信接口；\n常用于连接微控制器和各种外设，如传感器、显示屏等。\n使用四个引脚。\n23-17\n引脚\n功能\nUno 端口\nSCK\n（System Clock）\n系统时钟\nD13\nMOSI\n（Master Output, Slave Input）\n从主机向外设发送数据\nD11\nMISO\n（Master Input, Slave Output）\n从外设向主机发送数据\nD12\nSS/CS\n（Slave/Chip Select）\n指定要联机的外设\n（0 代表选取，1 代表未选取）\nD10\n(按说明书)\nICSP\nIn-Circuit Serial Programming\n在线串行编程\n",
+  "cleaned_text": "§5 SPI\n串行外设接口(Serial Peripheral Interface)\n同步、全双工、串行通信接口；\n常用于连接微控制器和各种外设，如传感器、显示屏等。\n使用四个引脚。\n引脚\n功能\nUno 端口\nSCK\n（System Clock）\n系统时钟\nD13\nMOSI\n（Master Output, Slave Input）\n从主机向外设发送数据\nD11\nMISO\n（Master Input, Slave Output）\n从外设向主机发送数据\nD12\nSS/CS\n（Slave/Chip Select）\n指定要联机的外设\n（0 代表选取，1 代表未选取）\nD10\n(按说明书)\nICSP\nIn-Circuit Serial Programming\n在线串行编程",
+  "key_points": [
+    "常用于连接微控制器和各种外设，如传感器、显示屏等。",
+    "使用四个引脚。",
+    "Uno 端口",
+    "SCK",
+    "D13",
+    "MOSI",
+    "D11",
+    "MISO",
+    "D12",
+    "SS/CS"
+  ],
+  "technical_terms": [
+    "CS",
+    "ICSP",
+    "MISO",
+    "MOSI",
+    "SCK",
+    "SPI",
+    "SS",
+    "Uno",
+    "常用于连接微控制"
+  ],
+  "has_images": true,
+  "image_count": 1,
+  "image_paths": [
+    "extraction/output/qwen_qwen3.7-plus_8/debug/images/w14-1-数字通信_p17_img4.jpeg"
+  ],
+  "metadata": {
+    "char_count": 412,
+    "word_count": 50,
+    "line_count": 33
+  }
+}

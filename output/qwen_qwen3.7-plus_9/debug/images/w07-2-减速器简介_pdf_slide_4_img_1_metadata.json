@@ -1,0 +1,33 @@
+{
+  "original_path": "extraction/output/qwen_qwen3.7-plus_9/debug/images/w07-2-减速器简介_p4_img2.jpeg",
+  "enhanced_path": "extraction/output/qwen_qwen3.7-plus_9/debug/images/w07-2-减速器简介_p4_img2_enhanced.jpeg",
+  "description": "类型：示意图\n图片展示了一个齿轮减速器的内部结构剖视图。主体为蓝色箱体，内部包含多根平行排列的传动轴。轴上安装有银灰色金属齿轮和黄色轮毂组件，齿轮之间呈现啮合状态，且可见明显的尺寸差异（小齿轮与大齿轮配合）。轴端支撑处绘有滚珠轴承结构。该图直观展示了多级齿轮传动的空间布局及机械组件装配关系。",
+  "metadata": {
+    "generation": {
+      "method": "qwen_api",
+      "backend": "api",
+      "provider": "qwen",
+      "model": "qwen3.7-plus",
+      "status": "success",
+      "api_error": null
+    },
+    "review": {
+      "required": false,
+      "status": null,
+      "reason": null,
+      "course_relevant": true
+    }
+  },
+  "error": null,
+  "method": "qwen_api",
+  "backend": "api",
+  "provider": "qwen",
+  "model": "qwen3.7-plus",
+  "status": "success",
+  "api_error": null,
+  "indexable": true,
+  "review_required": false,
+  "review_reason": null,
+  "review_status": null,
+  "course_relevant": true
+}

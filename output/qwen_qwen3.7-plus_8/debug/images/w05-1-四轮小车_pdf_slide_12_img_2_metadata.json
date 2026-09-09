@@ -1,0 +1,33 @@
+{
+  "original_path": "extraction/output/qwen_qwen3.7-plus_8/debug/images/w05-1-四轮小车_p12_img3.png",
+  "enhanced_path": "extraction/output/qwen_qwen3.7-plus_8/debug/images/w05-1-四轮小车_p12_img3_enhanced.png",
+  "description": "类型：示意图\n图片展示了一个红色的圆角矩形标签，内部左侧印有白色大写英文“VIN”，右侧为一个白色圆形区域，内含红色大写英文“IN”。该图形对应课件文本中关于MCU供电接口“Vin”的标识。",
+  "metadata": {
+    "generation": {
+      "method": "qwen_api",
+      "backend": "api",
+      "provider": "qwen",
+      "model": "qwen3.7-plus",
+      "status": "success",
+      "api_error": null
+    },
+    "review": {
+      "required": false,
+      "status": null,
+      "reason": null,
+      "course_relevant": true
+    }
+  },
+  "error": null,
+  "method": "qwen_api",
+  "backend": "api",
+  "provider": "qwen",
+  "model": "qwen3.7-plus",
+  "status": "success",
+  "api_error": null,
+  "indexable": true,
+  "review_required": false,
+  "review_reason": null,
+  "review_status": null,
+  "course_relevant": true
+}

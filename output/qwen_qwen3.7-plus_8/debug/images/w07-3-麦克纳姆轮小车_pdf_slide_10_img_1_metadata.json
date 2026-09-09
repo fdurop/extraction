@@ -1,0 +1,33 @@
+{
+  "original_path": "extraction/output/qwen_qwen3.7-plus_8/debug/images/w07-3-麦克纳姆轮小车_p10_img2.jpeg",
+  "enhanced_path": "extraction/output/qwen_qwen3.7-plus_8/debug/images/w07-3-麦克纳姆轮小车_p10_img2_enhanced.jpeg",
+  "description": "类型：示意图\n图片展示了DFROBOT Quad Motor Driver Shield for Arduino V1.0扩展板的接口分布。顶部绿色框标注“数字引脚”，包含SCL、SDA、AREF、GND及DIGITAL(PWM) 0-13排针。左侧红色框标注“电机接口”，纵向排列M1至M4四组接线端子，每组含正负极。右下角红色框标注“电机电源接口”，标有PWR+/-及2.5V-13.5V电压范围。底部红色框为“电源输出”，包含3.3V、5V、GND、VIN等引脚；蓝色框为“模拟引脚”，包含ANALOGIN A0-A5。板载可见芯片、开关及DFROBOT标识。",
+  "metadata": {
+    "generation": {
+      "method": "qwen_api",
+      "backend": "api",
+      "provider": "qwen",
+      "model": "qwen3.7-plus",
+      "status": "success",
+      "api_error": null
+    },
+    "review": {
+      "required": false,
+      "status": null,
+      "reason": null,
+      "course_relevant": true
+    }
+  },
+  "error": null,
+  "method": "qwen_api",
+  "backend": "api",
+  "provider": "qwen",
+  "model": "qwen3.7-plus",
+  "status": "success",
+  "api_error": null,
+  "indexable": true,
+  "review_required": false,
+  "review_reason": null,
+  "review_status": null,
+  "course_relevant": true
+}

@@ -1,0 +1,14 @@
+{
+  "source_image": "extraction/output/qwen_qwen3.7-plus_9/debug/images/w14-1-数字通信_p13_img12.jpeg",
+  "extraction_method": "qwen_api_智能识别",
+  "language": "cpp",
+  "description": "初始化Arduino软串口，配置引脚7为RX、引脚8为TX（用于连接蓝牙模块），并在setup中设置波特率为9600。",
+  "code_file": "w14-1-数字通信_pdf_page_13_code_1.cpp",
+  "page": 13,
+  "index": 1,
+  "timestamp": "2026-09-09T21:24:41.797919",
+  "raw_response": "语言: C++ (Arduino)\n```cpp\n#include <SoftwareSerial.h>\n\n// 设置软串口使用的针脚\n// 7 为 RX (接蓝牙TXD), 8 为 TX (接蓝牙RXD)\nSoftwareSerial softSerial(7, 8);\n\nvoid setup() {\n  //设定软串口波特率\n  softSerial.begin(9600);\n}\n```\n功能: 初始化Arduino软串口，配置引脚7为RX、引脚8为TX（用于连接蓝牙模块），并在setup中设置波特率为9600。",
+  "backend": "api",
+  "provider": "qwen",
+  "model": "qwen3.7-plus"
+}

@@ -1,0 +1,33 @@
+{
+  "original_path": "extraction/output/qwen_qwen3.7-plus_9/debug/images/w10-1-直线运动平台（下）_slide_7_vector_fallback.png",
+  "enhanced_path": "extraction/output/qwen_qwen3.7-plus_9/debug/images/w10-1-直线运动平台（下）_slide_7_vector_fallback_enhanced.png",
+  "description": "类型：其他\n图片左侧标题为“§3.2 时间中断”，列出delay函数缺点（难以实现复杂定时逻辑、阻塞运行），指出需精确定时任务应采用时间中断（如固定间隔设置速度），并说明Arduino Uno R3有三个内部定时器（Timer0/2为8位，Timer1为16位）。中间嵌入一张关于“§2.1 中断”定义的缩略图。右侧展示代码片段w10-s5-blink.ino，包含`#include <TimerOne.h>`，setup函数中调用`Timer1.initialize`、`Timer1.attachInterrupt(LED)`及`Timer1.start()`，以及LED函数内的`digitalWrite`和布尔变量翻转逻辑。",
+  "metadata": {
+    "generation": {
+      "method": "qwen_api",
+      "backend": "api",
+      "provider": "qwen",
+      "model": "qwen3.7-plus",
+      "status": "success",
+      "api_error": null
+    },
+    "review": {
+      "required": false,
+      "status": null,
+      "reason": null,
+      "course_relevant": true
+    }
+  },
+  "error": null,
+  "method": "qwen_api",
+  "backend": "api",
+  "provider": "qwen",
+  "model": "qwen3.7-plus",
+  "status": "success",
+  "api_error": null,
+  "indexable": true,
+  "review_required": false,
+  "review_reason": null,
+  "review_status": null,
+  "course_relevant": true
+}

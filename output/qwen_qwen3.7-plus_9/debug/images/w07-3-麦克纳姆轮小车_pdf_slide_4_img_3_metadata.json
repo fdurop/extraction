@@ -1,0 +1,33 @@
+{
+  "original_path": "extraction/output/qwen_qwen3.7-plus_9/debug/images/w07-3-麦克纳姆轮小车_p4_img4.jpeg",
+  "enhanced_path": "extraction/output/qwen_qwen3.7-plus_9/debug/images/w07-3-麦克纳姆轮小车_p4_img4_enhanced.jpeg",
+  "description": "类型：照片\n图片展示了一辆麦克纳姆轮小车实物，放置在浅色瓷砖地面上。车身底盘采用银色铝型材框架结构，四个角分别安装有黑色的麦克纳姆轮，轮毂外圈可见呈角度排列的小辊子。车架平台上固定着多个电子模块，包括带有蓝色散热片的金属外壳驱动器、绿色电路板以及白色电源盒，各组件之间通过黑色导线连接。该图片直观呈现了课程所述的麦克纳姆轮小车硬件组装形态及关键部件布局。",
+  "metadata": {
+    "generation": {
+      "method": "qwen_api",
+      "backend": "api",
+      "provider": "qwen",
+      "model": "qwen3.7-plus",
+      "status": "success",
+      "api_error": null
+    },
+    "review": {
+      "required": false,
+      "status": null,
+      "reason": null,
+      "course_relevant": true
+    }
+  },
+  "error": null,
+  "method": "qwen_api",
+  "backend": "api",
+  "provider": "qwen",
+  "model": "qwen3.7-plus",
+  "status": "success",
+  "api_error": null,
+  "indexable": true,
+  "review_required": false,
+  "review_reason": null,
+  "review_status": null,
+  "course_relevant": true
+}

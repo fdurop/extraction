@@ -1,0 +1,33 @@
+{
+  "original_path": "extraction/output/qwen_qwen3.7-plus_9/debug/images/w03-1-直流电机原理_p16_img2.jpeg",
+  "enhanced_path": "extraction/output/qwen_qwen3.7-plus_9/debug/images/w03-1-直流电机原理_p16_img2_enhanced.jpeg",
+  "description": "类型：照片\n图片展示了一个简易直流电机模型放置在木纹桌面上。主体包含一个银色圆柱形外壳、红色端盖的微型电机，通过导线连接至一节黑红配色的圆柱形电池和一个黑色底座的单刀开关。底部字幕显示：“这是一个很常见的直流有刷电机”。该实物图直观展示了直流有刷电机的基本外观及简单驱动电路连接，与课程“直流电机原理”主题直接相关。",
+  "metadata": {
+    "generation": {
+      "method": "qwen_api",
+      "backend": "api",
+      "provider": "qwen",
+      "model": "qwen3.7-plus",
+      "status": "success",
+      "api_error": null
+    },
+    "review": {
+      "required": false,
+      "status": null,
+      "reason": null,
+      "course_relevant": true
+    }
+  },
+  "error": null,
+  "method": "qwen_api",
+  "backend": "api",
+  "provider": "qwen",
+  "model": "qwen3.7-plus",
+  "status": "success",
+  "api_error": null,
+  "indexable": true,
+  "review_required": false,
+  "review_reason": null,
+  "review_status": null,
+  "course_relevant": true
+}

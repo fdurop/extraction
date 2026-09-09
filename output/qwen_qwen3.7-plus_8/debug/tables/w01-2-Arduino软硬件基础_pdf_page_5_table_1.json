@@ -1,0 +1,246 @@
+{
+  "has_table": true,
+  "title": "",
+  "headers": [
+    [
+      "特性",
+      "Arduino Uno R3",
+      "Arduino Uno R4",
+      "STM32"
+    ]
+  ],
+  "cells": [
+    [
+      "微控制器",
+      "ATmega328P",
+      "RA4M1 (Arm Cortex-M4)",
+      "多种型号 (Arm Cortex-M0/M3/M4/M7)"
+    ],
+    [
+      "架构",
+      "8位 AVR",
+      "32位 Arm Cortex-M4",
+      "32位 Arm Cortex-M"
+    ],
+    [
+      "时钟速度",
+      "16 MHz",
+      "48 MHz",
+      "通常 72 MHz - 480 MHz"
+    ],
+    [
+      "Flash 内存",
+      "32 KB",
+      "256 KB",
+      "64 KB - 2 MB"
+    ],
+    [
+      "SRAM",
+      "2 KB",
+      "32 KB",
+      "20 KB - 1 MB"
+    ],
+    [
+      "EEPROM",
+      "1 KB",
+      "8 KB",
+      "通常无 (需外部或模拟)"
+    ],
+    [
+      "GPIO 引脚",
+      "14 (6 PWM)",
+      "14 (6 PWM)",
+      "数量因型号而异"
+    ],
+    [
+      "模拟输入",
+      "6 (10位)",
+      "6 (12位)",
+      "数量因型号而异"
+    ],
+    [
+      "通信接口",
+      "UART, I2C, SPI",
+      "UART, I2C, SPI, CAN",
+      "UART, I2C, SPI, CAN, USB, 以太网等"
+    ],
+    [
+      "USB 接口",
+      "USB Type-B",
+      "USB Type-C",
+      "通常为 Micro-USB 或 USB-C"
+    ],
+    [
+      "电源",
+      "5V",
+      "5V",
+      "通常 3.3V (部分支持 5V)"
+    ],
+    [
+      "开发环境",
+      "Arduino IDE",
+      "Arduino IDE",
+      "Arduino IDE, STM32CubeIDE, Keil, IAR 等"
+    ],
+    [
+      "扩展性",
+      "有限",
+      "较好",
+      "非常好"
+    ],
+    [
+      "成本",
+      "低",
+      "中等",
+      "低到高"
+    ],
+    [
+      "适用场景",
+      "初学者、简单项目",
+      "中级用户、复杂项目",
+      "高级用户、高性能项目"
+    ]
+  ],
+  "merged_cells": [],
+  "units": {},
+  "footnotes": [],
+  "uncertain_cells": [],
+  "confidence": 1.0,
+  "raw_response": "{\n  \"has_table\": true,\n  \"title\": \"\",\n  \"headers\": [\n    [\n      \"特性\",\n      \"Arduino Uno R3\",\n      \"Arduino Uno R4\",\n      \"STM32\"\n    ]\n  ],\n  \"cells\": [\n    [\n      \"微控制器\",\n      \"ATmega328P\",\n      \"RA4M1 (Arm Cortex-M4)\",\n      \"多种型号 (Arm Cortex-M0/M3/M4/M7)\"\n    ],\n    [\n      \"架构\",\n      \"8位 AVR\",\n      \"32位 Arm Cortex-M4\",\n      \"32位 Arm Cortex-M\"\n    ],\n    [\n      \"时钟速度\",\n      \"16 MHz\",\n      \"48 MHz\",\n      \"通常 72 MHz - 480 MHz\"\n    ],\n    [\n      \"Flash 内存\",\n      \"32 KB\",\n      \"256 KB\",\n      \"64 KB - 2 MB\"\n    ],\n    [\n      \"SRAM\",\n      \"2 KB\",\n      \"32 KB\",\n      \"20 KB - 1 MB\"\n    ],\n    [\n      \"EEPROM\",\n      \"1 KB\",\n      \"8 KB\",\n      \"通常无 (需外部或模拟)\"\n    ],\n    [\n      \"GPIO 引脚\",\n      \"14 (6 PWM)\",\n      \"14 (6 PWM)\",\n      \"数量因型号而异\"\n    ],\n    [\n      \"模拟输入\",\n      \"6 (10位)\",\n      \"6 (12位)\",\n      \"数量因型号而异\"\n    ],\n    [\n      \"通信接口\",\n      \"UART, I2C, SPI\",\n      \"UART, I2C, SPI, CAN\",\n      \"UART, I2C, SPI, CAN, USB, 以太网等\"\n    ],\n    [\n      \"USB 接口\",\n      \"USB Type-B\",\n      \"USB Type-C\",\n      \"通常为 Micro-USB 或 USB-C\"\n    ],\n    [\n      \"电源\",\n      \"5V\",\n      \"5V\",\n      \"通常 3.3V (部分支持 5V)\"\n    ],\n    [\n      \"开发环境\",\n      \"Arduino IDE\",\n      \"Arduino IDE\",\n      \"Arduino IDE, STM32CubeIDE, Keil, IAR 等\"\n    ],\n    [\n      \"扩展性\",\n      \"有限\",\n      \"较好\",\n      \"非常好\"\n    ],\n    [\n      \"成本\",\n      \"低\",\n      \"中等\",\n      \"低到高\"\n    ],\n    [\n      \"适用场景\",\n      \"初学者、简单项目\",\n      \"中级用户、复杂项目\",\n      \"高级用户、高性能项目\"\n    ]\n  ],\n  \"merged_cells\": [],\n  \"units\": {},\n  \"footnotes\": [],\n  \"uncertain_cells\": [],\n  \"confidence\": 1.0\n}",
+  "source_image": "extraction/output/qwen_qwen3.7-plus_8/debug/images/w01-2-Arduino软硬件基础_p5_img2.png",
+  "recognition_image_path": "extraction/output/qwen_qwen3.7-plus_8/debug/images/w01-2-Arduino软硬件基础_p5_img2_table_ready_r0.png",
+  "source_type": "image_vlm_table",
+  "extraction_method": "qwen_api_table",
+  "backend": "api",
+  "provider": "qwen",
+  "model": "qwen3.7-plus",
+  "image_index": 0,
+  "preprocessing": {
+    "rotation": 0,
+    "scale": 1.4599,
+    "attempt": 1
+  },
+  "auto_repairs": [],
+  "rows": 15,
+  "cols": 4,
+  "description": "",
+  "json": [
+    {
+      "特性": "微控制器",
+      "Arduino Uno R3": "ATmega328P",
+      "Arduino Uno R4": "RA4M1 (Arm Cortex-M4)",
+      "STM32": "多种型号 (Arm Cortex-M0/M3/M4/M7)"
+    },
+    {
+      "特性": "架构",
+      "Arduino Uno R3": "8位 AVR",
+      "Arduino Uno R4": "32位 Arm Cortex-M4",
+      "STM32": "32位 Arm Cortex-M"
+    },
+    {
+      "特性": "时钟速度",
+      "Arduino Uno R3": "16 MHz",
+      "Arduino Uno R4": "48 MHz",
+      "STM32": "通常 72 MHz - 480 MHz"
+    },
+    {
+      "特性": "Flash 内存",
+      "Arduino Uno R3": "32 KB",
+      "Arduino Uno R4": "256 KB",
+      "STM32": "64 KB - 2 MB"
+    },
+    {
+      "特性": "SRAM",
+      "Arduino Uno R3": "2 KB",
+      "Arduino Uno R4": "32 KB",
+      "STM32": "20 KB - 1 MB"
+    },
+    {
+      "特性": "EEPROM",
+      "Arduino Uno R3": "1 KB",
+      "Arduino Uno R4": "8 KB",
+      "STM32": "通常无 (需外部或模拟)"
+    },
+    {
+      "特性": "GPIO 引脚",
+      "Arduino Uno R3": "14 (6 PWM)",
+      "Arduino Uno R4": "14 (6 PWM)",
+      "STM32": "数量因型号而异"
+    },
+    {
+      "特性": "模拟输入",
+      "Arduino Uno R3": "6 (10位)",
+      "Arduino Uno R4": "6 (12位)",
+      "STM32": "数量因型号而异"
+    },
+    {
+      "特性": "通信接口",
+      "Arduino Uno R3": "UART, I2C, SPI",
+      "Arduino Uno R4": "UART, I2C, SPI, CAN",
+      "STM32": "UART, I2C, SPI, CAN, USB, 以太网等"
+    },
+    {
+      "特性": "USB 接口",
+      "Arduino Uno R3": "USB Type-B",
+      "Arduino Uno R4": "USB Type-C",
+      "STM32": "通常为 Micro-USB 或 USB-C"
+    },
+    {
+      "特性": "电源",
+      "Arduino Uno R3": "5V",
+      "Arduino Uno R4": "5V",
+      "STM32": "通常 3.3V (部分支持 5V)"
+    },
+    {
+      "特性": "开发环境",
+      "Arduino Uno R3": "Arduino IDE",
+      "Arduino Uno R4": "Arduino IDE",
+      "STM32": "Arduino IDE, STM32CubeIDE, Keil, IAR 等"
+    },
+    {
+      "特性": "扩展性",
+      "Arduino Uno R3": "有限",
+      "Arduino Uno R4": "较好",
+      "STM32": "非常好"
+    },
+    {
+      "特性": "成本",
+      "Arduino Uno R3": "低",
+      "Arduino Uno R4": "中等",
+      "STM32": "低到高"
+    },
+    {
+      "特性": "适用场景",
+      "Arduino Uno R3": "初学者、简单项目",
+      "Arduino Uno R4": "中级用户、复杂项目",
+      "STM32": "高级用户、高性能项目"
+    }
+  ],
+  "csv": "特性,Arduino Uno R3,Arduino Uno R4,STM32\n微控制器,ATmega328P,RA4M1 (Arm Cortex-M4),多种型号 (Arm Cortex-M0/M3/M4/M7)\n架构,8位 AVR,32位 Arm Cortex-M4,32位 Arm Cortex-M\n时钟速度,16 MHz,48 MHz,通常 72 MHz - 480 MHz\nFlash 内存,32 KB,256 KB,64 KB - 2 MB\nSRAM,2 KB,32 KB,20 KB - 1 MB\nEEPROM,1 KB,8 KB,通常无 (需外部或模拟)\nGPIO 引脚,14 (6 PWM),14 (6 PWM),数量因型号而异\n模拟输入,6 (10位),6 (12位),数量因型号而异\n通信接口,\"UART, I2C, SPI\",\"UART, I2C, SPI, CAN\",\"UART, I2C, SPI, CAN, USB, 以太网等\"\nUSB 接口,USB Type-B,USB Type-C,通常为 Micro-USB 或 USB-C\n电源,5V,5V,通常 3.3V (部分支持 5V)\n开发环境,Arduino IDE,Arduino IDE,\"Arduino IDE, STM32CubeIDE, Keil, IAR 等\"\n扩展性,有限,较好,非常好\n成本,低,中等,低到高\n适用场景,初学者、简单项目,中级用户、复杂项目,高级用户、高性能项目\n",
+  "row_lengths": [
+    4,
+    4,
+    4,
+    4,
+    4,
+    4,
+    4,
+    4,
+    4,
+    4,
+    4,
+    4,
+    4,
+    4,
+    4,
+    4
+  ],
+  "validation_issues": [],
+  "validation_status": "passed",
+  "review_required": false,
+  "review_reason": null,
+  "review_status": null,
+  "indexable": true,
+  "table_id": "w01-2-Arduino软硬件基础_pdf_page_5_table_1",
+  "page_num": 5
+}

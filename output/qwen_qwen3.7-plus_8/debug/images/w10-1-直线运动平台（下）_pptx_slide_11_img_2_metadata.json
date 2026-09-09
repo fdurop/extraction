@@ -1,0 +1,33 @@
+{
+  "original_path": "extraction/output/qwen_qwen3.7-plus_8/debug/images/w10-1-直线运动平台（下）_slide_11_img_2.png",
+  "enhanced_path": "extraction/output/qwen_qwen3.7-plus_8/debug/images/w10-1-直线运动平台（下）_slide_11_img_2_enhanced.png",
+  "description": "类型：公式\n图片包含三个红色数学表达式及中文标注。顶部为二阶微分方程：θ(t)的二阶导数加2ωnζ乘以θ(t)的一阶导数加ωn²θ(t)等于üs(t)除以l。中部文字“固有频率”后接公式ωn等于根号下g/l。底部文字“阻尼比”后接公式ζ等于c除以2m倍根号下gl，并注有“c为阻尼”。",
+  "metadata": {
+    "generation": {
+      "method": "qwen_api",
+      "backend": "api",
+      "provider": "qwen",
+      "model": "qwen3.7-plus",
+      "status": "success",
+      "api_error": null
+    },
+    "review": {
+      "required": false,
+      "status": null,
+      "reason": null,
+      "course_relevant": true
+    }
+  },
+  "error": null,
+  "method": "qwen_api",
+  "backend": "api",
+  "provider": "qwen",
+  "model": "qwen3.7-plus",
+  "status": "success",
+  "api_error": null,
+  "indexable": true,
+  "review_required": false,
+  "review_reason": null,
+  "review_status": null,
+  "course_relevant": true
+}

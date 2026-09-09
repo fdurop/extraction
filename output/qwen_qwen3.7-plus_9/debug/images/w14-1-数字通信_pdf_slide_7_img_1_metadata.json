@@ -1,0 +1,33 @@
+{
+  "original_path": "extraction/output/qwen_qwen3.7-plus_9/debug/images/w14-1-数字通信_p7_img5.jpeg",
+  "enhanced_path": "extraction/output/qwen_qwen3.7-plus_9/debug/images/w14-1-数字通信_p7_img5_enhanced.jpeg",
+  "description": "类型：截图\n图片展示了Arduino IDE软件界面。左侧为顶部菜单栏，显示“File”、“Edit”、“Sketch”等选项，其中“Examples”菜单被展开。右侧级联显示了示例代码分类列表，包含“01.Basics”至“11.ArduinoISP”等文件夹，其中“04.Communication”项被高亮选中。最右侧弹出了通信类示例的具体子菜单，可见“ASCIITable”、“Dimmer”、“Graph”、“Midi”、“MultiSerialMega”、“PhysicalPixel”、“ReadASCIIString”、“SerialCallResponse”、“SerialCallResponseASCII”、“SerialEvent”、“SerialPassthrough”及“VirtualColorMixer”等文本条目。背景隐约可见代码编辑区及“void setup()”等字样。",
+  "metadata": {
+    "generation": {
+      "method": "qwen_api",
+      "backend": "api",
+      "provider": "qwen",
+      "model": "qwen3.7-plus",
+      "status": "success",
+      "api_error": null
+    },
+    "review": {
+      "required": false,
+      "status": null,
+      "reason": null,
+      "course_relevant": true
+    }
+  },
+  "error": null,
+  "method": "qwen_api",
+  "backend": "api",
+  "provider": "qwen",
+  "model": "qwen3.7-plus",
+  "status": "success",
+  "api_error": null,
+  "indexable": true,
+  "review_required": false,
+  "review_reason": null,
+  "review_status": null,
+  "course_relevant": true
+}

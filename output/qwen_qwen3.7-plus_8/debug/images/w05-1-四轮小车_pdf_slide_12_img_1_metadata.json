@@ -1,0 +1,33 @@
+{
+  "original_path": "extraction/output/qwen_qwen3.7-plus_8/debug/images/w05-1-四轮小车_p12_img2.jpeg",
+  "enhanced_path": "extraction/output/qwen_qwen3.7-plus_8/debug/images/w05-1-四轮小车_p12_img2_enhanced.jpeg",
+  "description": "类型：照片\n图片展示了一块绿色的Arduino Uno开发板实物。板载主要组件包括左侧的银色USB Type-B接口和黑色的圆形DC电源插座（对应文中DC 5.5×2.1 mm接头）。板上印有白色“ARDUINO UNO”标志及无限符号。边缘分布着黑色排母接口，丝印标注了“DIGITAL ~PWM~”（引脚0-13）、“ANALOG IN”（引脚A0-A5）以及“POWER”区域（包含Vin、GND、5V、3.3V）。此外可见板上的主控芯片、晶振、复位按钮、LED指示灯及电容等电子元器件。",
+  "metadata": {
+    "generation": {
+      "method": "qwen_api",
+      "backend": "api",
+      "provider": "qwen",
+      "model": "qwen3.7-plus",
+      "status": "success",
+      "api_error": null
+    },
+    "review": {
+      "required": false,
+      "status": null,
+      "reason": null,
+      "course_relevant": true
+    }
+  },
+  "error": null,
+  "method": "qwen_api",
+  "backend": "api",
+  "provider": "qwen",
+  "model": "qwen3.7-plus",
+  "status": "success",
+  "api_error": null,
+  "indexable": true,
+  "review_required": false,
+  "review_reason": null,
+  "review_status": null,
+  "course_relevant": true
+}

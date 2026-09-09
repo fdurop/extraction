@@ -1,0 +1,33 @@
+{
+  "original_path": "extraction/output/qwen_qwen3.7-plus_8/debug/images/w15-2-机器人运动学及其应用_p4_img3.jpeg",
+  "enhanced_path": "extraction/output/qwen_qwen3.7-plus_8/debug/images/w15-2-机器人运动学及其应用_p4_img3_enhanced.jpeg",
+  "description": "类型：示意图\n图片横向排列三个机械结构模型。左侧为转动副示意图，显示一水平杆穿过垂直轴套，上方绘有表示绕虚线轴旋转的弯曲箭头；中间为移动副示意图，展示矩形滑块与杆件配合，下方绘有表示沿轴线双向直线移动的直箭头；右侧为螺旋副示意图，描绘螺杆穿过螺母的结构，下方同样绘有表示轴向移动的双向直箭头。",
+  "metadata": {
+    "generation": {
+      "method": "qwen_api",
+      "backend": "api",
+      "provider": "qwen",
+      "model": "qwen3.7-plus",
+      "status": "success",
+      "api_error": null
+    },
+    "review": {
+      "required": false,
+      "status": null,
+      "reason": null,
+      "course_relevant": true
+    }
+  },
+  "error": null,
+  "method": "qwen_api",
+  "backend": "api",
+  "provider": "qwen",
+  "model": "qwen3.7-plus",
+  "status": "success",
+  "api_error": null,
+  "indexable": true,
+  "review_required": false,
+  "review_reason": null,
+  "review_status": null,
+  "course_relevant": true
+}

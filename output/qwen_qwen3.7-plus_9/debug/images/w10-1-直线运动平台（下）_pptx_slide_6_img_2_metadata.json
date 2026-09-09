@@ -1,0 +1,33 @@
+{
+  "original_path": "extraction/output/qwen_qwen3.7-plus_9/debug/images/w10-1-直线运动平台（下）_slide_6_img_2.png",
+  "enhanced_path": "extraction/output/qwen_qwen3.7-plus_9/debug/images/w10-1-直线运动平台（下）_slide_6_img_2_enhanced.png",
+  "description": "类型：代码\n图片展示了用于步进电机速度控制的C语言`loop`函数代码片段。\n主要逻辑包含：\n1. 获取当前微秒时间`currentLoopTime`。\n2. 若`inMoving`为真，计算时间间隔`dt`。\n3. 执行角度累加：`pulse2Send += speedPerPulse * dt`。\n4. 判断步进条件：当`abs(pulse2Send) >= 0.5`时，调用`step()`函数根据方向步进一格。\n5. 步进后调整累加值：若`pulse2Send > 0`则减1，否则加1。\n6. 最后更新`lastLoopTime`为当前时间。\n代码中包含“循环之间的间隔”、“角度累加，以脉冲数为单位”、“是否需要步进一格”等中文注释。",
+  "metadata": {
+    "generation": {
+      "method": "qwen_api",
+      "backend": "api",
+      "provider": "qwen",
+      "model": "qwen3.7-plus",
+      "status": "success",
+      "api_error": null
+    },
+    "review": {
+      "required": false,
+      "status": null,
+      "reason": null,
+      "course_relevant": true
+    }
+  },
+  "error": null,
+  "method": "qwen_api",
+  "backend": "api",
+  "provider": "qwen",
+  "model": "qwen3.7-plus",
+  "status": "success",
+  "api_error": null,
+  "indexable": true,
+  "review_required": false,
+  "review_reason": null,
+  "review_status": null,
+  "course_relevant": true
+}

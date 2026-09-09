@@ -1,0 +1,39 @@
+{
+  "page": 15,
+  "formula_count": 1,
+  "accepted_count": 1,
+  "review_count": 0,
+  "formulas": [
+    {
+      "source_image": "extraction/output/qwen_qwen3.7-plus_9/debug/images/w13-1-电机位置检测与闭环控制 - 副本_p15_img3.jpeg",
+      "source_type": "image_vlm",
+      "extraction_method": "qwen_api_formula",
+      "backend": "api",
+      "provider": "qwen",
+      "model": "qwen3.7-plus",
+      "image_index": 0,
+      "raw_response": "{\n  \"has_formula\": true,\n  \"formulas\": [\n    {\n      \"latex\": \"u(t) = K_p e(t) + K_i \\\\int_{0}^{t} e(t) \\\\mathrm{d}t + K_d \\\\frac{\\\\mathrm{d}e(t)}{\\\\mathrm{d}t} + u(0)\",\n      \"uncertain_symbols\": [],\n      \"is_complete_formula\": true,\n      \"confidence\": 0.95\n    }\n  ]\n}",
+      "parse_error": null,
+      "partial_response": false,
+      "review_reason": null,
+      "latex": "u(t) = K_p e(t) + K_i \\int_{0}^{t} e(t) \\mathrm{d}t + K_d \\frac{\\mathrm{d}e(t)}{\\mathrm{d}t} + u(0)",
+      "uncertain_symbols": [],
+      "is_complete_formula": true,
+      "confidence": 0.95,
+      "plain_text": "u(t) = K_p e(t) + K_i \\int_{0}^{t} e(t) \\mathrm{d}t + K_d \\frac{\\mathrm{d}e(t)}{\\mathrm{d}t} + u(0)",
+      "name": "",
+      "meaning": "",
+      "description": "",
+      "symbols": [],
+      "conditions": [],
+      "validation_issues": [],
+      "validation_status": "passed",
+      "review_required": false,
+      "review_status": null,
+      "indexable": true,
+      "formula_id": "w13-1-电机位置检测与闭环控制 - 副本_pdf_page_15_formula_1",
+      "page_num": 15
+    }
+  ],
+  "timestamp": "2026-09-09T21:22:24.764492"
+}

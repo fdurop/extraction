@@ -1,0 +1,33 @@
+{
+  "original_path": "extraction/output/qwen_qwen3.7-plus_9/debug/images/w04-1-有刷直流电机驱动器及其应用_slide_5_img_1.png",
+  "enhanced_path": "extraction/output/qwen_qwen3.7-plus_9/debug/images/w04-1-有刷直流电机驱动器及其应用_slide_5_img_1_enhanced.png",
+  "description": "类型：照片\n图片展示了一个电磁继电器控制电路的实物连接。上方为一块带有绿色接线端子的黑色控制器主板，右侧连接黑色USB数据线。下方为红色双路继电器模块，板上印有“SRD-5VDC-SL-C”及“2 Relay Module High/Low level trigger”字样，并装有两个蓝色继电器。左侧为一个金属按钮开关，正发出绿光。红、黑、白、绿四色导线将控制器的输出端子、继电器模块的输入端子（VCC, GND, IN）以及按钮开关相互连接，构成完整回路。",
+  "metadata": {
+    "generation": {
+      "method": "qwen_api",
+      "backend": "api",
+      "provider": "qwen",
+      "model": "qwen3.7-plus",
+      "status": "success",
+      "api_error": null
+    },
+    "review": {
+      "required": false,
+      "status": null,
+      "reason": null,
+      "course_relevant": true
+    }
+  },
+  "error": null,
+  "method": "qwen_api",
+  "backend": "api",
+  "provider": "qwen",
+  "model": "qwen3.7-plus",
+  "status": "success",
+  "api_error": null,
+  "indexable": true,
+  "review_required": false,
+  "review_reason": null,
+  "review_status": null,
+  "course_relevant": true
+}

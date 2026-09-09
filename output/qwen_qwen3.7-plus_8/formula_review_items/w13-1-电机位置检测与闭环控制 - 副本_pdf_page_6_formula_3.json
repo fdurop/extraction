@@ -1,0 +1,33 @@
+{
+  "source_image": "extraction/output/qwen_qwen3.7-plus_8/debug/images/w13-1-电机位置检测与闭环控制 - 副本_p6_img3.jpeg",
+  "source_type": "image_vlm",
+  "extraction_method": "qwen_api_formula",
+  "backend": "api",
+  "provider": "qwen",
+  "model": "qwen3.7-plus",
+  "image_index": 0,
+  "raw_response": "{\n  \"has_formula\": true,\n  \"formulas\": [\n    {\n      \"latex\": \"d/4\",\n      \"uncertain_symbols\": [],\n      \"confidence\": 1.0\n    },\n    {\n      \"latex\": \"d/2\",\n      \"uncertain_symbols\": [],\n      \"confidence\": 1.0\n    },\n    {\n      \"latex\": \"d\",\n      \"uncertain_symbols\": [],\n      \"confidence\": 1.0\n    },\n    {\n      \"latex\": \"v\",\n      \"uncertain_symbols\": [],\n      \"confidence\": 1.0\n    },\n    {\n      \"latex\": \"t=0\",\n      \"uncertain_symbols\": [],\n      \"confidence\": 1.0\n    },\n    {\n      \"latex\": \"t=0.25*d/v\",\n      \"uncertain_symbols\": [],\n      \"confidence\": 1.0\n    },\n    {\n      \"latex\": \"t=0.5*d/v\",\n      \"uncertain_symbols\": [],\n      \"confidence\": 1.0\n    },\n    {\n      \"latex\": \"t=0.75*d/v\",\n      \"uncertain_symbols\": [],\n      \"confidence\": 1.0\n    },\n    {\n      \"latex\": \"t=d/v\",\n      \"uncertain_symbols\": [],\n      \"confidence\": 1.0\n    },\n    {\n      \"latex\": \"d/N/4\",\n      \"uncertain_symbols\": [],\n      \"confidence\": 1.0\n    },\n    {\n      \"latex\": \"d/v\",\n      \"uncertain_symbols\": [],\n      \"confidence\": 1.0\n    }\n  ]\n}",
+  "parse_error": null,
+  "partial_response": false,
+  "review_reason": "not_substantive_formula",
+  "latex": "d",
+  "uncertain_symbols": [],
+  "confidence": 0.72,
+  "plain_text": "d",
+  "name": "",
+  "meaning": "",
+  "description": "",
+  "symbols": [],
+  "conditions": [],
+  "validation_issues": [
+    "not_substantive_formula"
+  ],
+  "validation_status": "review",
+  "review_required": true,
+  "review_status": "pending",
+  "indexable": false,
+  "formula_id": "w13-1-电机位置检测与闭环控制 - 副本_pdf_page_6_formula_3",
+  "page_num": 6,
+  "review_image_path": "extraction/output/qwen_qwen3.7-plus_8/formula_review_items/w13-1-电机位置检测与闭环控制 - 副本_pdf_page_6_formula_3.png",
+  "source_document": "w13-1-电机位置检测与闭环控制 - 副本_pdf"
+}

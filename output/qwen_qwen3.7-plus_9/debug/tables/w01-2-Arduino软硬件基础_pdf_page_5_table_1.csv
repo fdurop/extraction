@@ -1,0 +1,16 @@
+﻿特性,Arduino Uno R3,Arduino Uno R4,STM32
+微控制器,ATmega328P,RA4M1 (Arm Cortex-M4),多种型号 (Arm Cortex-M0/M3/M4/M7)
+架构,8位 AVR,32位 Arm Cortex-M4,32位 Arm Cortex-M
+时钟速度,16 MHz,48 MHz,通常 72 MHz - 480 MHz
+Flash 内存,32 KB,256 KB,64 KB - 2 MB
+SRAM,2 KB,32 KB,20 KB - 1 MB
+EEPROM,1 KB,8 KB,通常无 (需外部或模拟)
+GPIO 引脚,14 (6 PWM),14 (6 PWM),数量因型号而异
+模拟输入,6 (10位),6 (12位),数量因型号而异
+通信接口,"UART, I2C, SPI","UART, I2C, SPI, CAN","UART, I2C, SPI, CAN, USB, 以太网等"
+USB 接口,USB Type-B,USB Type-C,通常为 Micro-USB 或 USB-C
+电源,5V,5V,通常 3.3V (部分支持 5V)
+开发环境,Arduino IDE,Arduino IDE,"Arduino IDE, STM32CubeIDE, Keil, IAR 等"
+扩展性,有限,较好,非常好
+成本,低,中等,低到高
+适用场景,初学者、简单项目,中级用户、复杂项目,高级用户、高性能项目

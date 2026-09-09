@@ -1,0 +1,189 @@
+{
+  "has_table": true,
+  "title": "",
+  "headers": [
+    [
+      "电机",
+      "方向控制脚",
+      "正转",
+      "反转",
+      "速度控制脚",
+      "速度范围"
+    ]
+  ],
+  "cells": [
+    [
+      "",
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    [
+      "M1",
+      "4",
+      "LOW",
+      "HIGH",
+      "3",
+      "0-255"
+    ],
+    [
+      "",
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    [
+      "M2",
+      "12",
+      "HIGH",
+      "LOW",
+      "11",
+      "0-255"
+    ],
+    [
+      "",
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    [
+      "M3",
+      "8",
+      "LOW",
+      "HIGH",
+      "5",
+      "0-255"
+    ],
+    [
+      "",
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    [
+      "M4",
+      "7",
+      "HIGH",
+      "LOW",
+      "6",
+      "0-255"
+    ]
+  ],
+  "merged_cells": [],
+  "units": {},
+  "footnotes": [],
+  "uncertain_cells": [],
+  "confidence": 0.82,
+  "raw_response": "{\n  \"has_table\": true,\n  \"title\": \"\",\n  \"headers\": [\n    [\n      \"电机\",\n      \"方向控制脚\",\n      \"正转\",\n      \"反转\",\n      \"速度控制脚\",\n      \"速度范围\"\n    ]\n  ],\n  \"cells\": [\n    [\n      \"\",\n      \"\",\n      \"\",\n      \"\",\n      \"\",\n      \"\"\n    ],\n    [\n      \"M1\",\n      \"4\",\n      \"LOW\",\n      \"HIGH\",\n      \"3\",\n      \"0-255\"\n    ],\n    [\n      \"\",\n      \"\",\n      \"\",\n      \"\",\n      \"\",\n      \"\"\n    ],\n    [\n      \"M2\",\n      \"12\",\n      \"HIGH\",\n      \"LOW\",\n      \"11\",\n      \"0-255\"\n    ],\n    [\n      \"\",\n      \"\",\n      \"\",\n      \"\",\n      \"\",\n      \"\"\n    ],\n    [\n      \"M3\",\n      \"8\",\n      \"LOW\",\n      \"HIGH\",\n      \"5\",\n      \"0-255\"\n    ],\n    [\n      \"\",\n      \"\",\n      \"\",\n      \"\",\n      \"\",\n      \"\"\n    ],\n    [\n      \"M4\",\n      \"7\",\n      \"HIGH\",\n      \"LOW\",\n      \"6\",\n      \"0-255\"\n    ]\n  ],\n  \"merged_cells\": [],\n  \"units\": {},\n  \"footnotes\": [],\n  \"uncertain_cells\": [],\n  \"confidence\": 1.0\n}",
+  "source_image": "extraction/output/qwen_qwen3.7-plus_8/debug/images/w07-3-麦克纳姆轮小车_p10_img3.png",
+  "recognition_image_path": "extraction/output/qwen_qwen3.7-plus_8/debug/images/w07-3-麦克纳姆轮小车_p10_img3_table_ready_r0.png",
+  "source_type": "image_vlm_table",
+  "extraction_method": "qwen_api_table",
+  "backend": "api",
+  "provider": "qwen",
+  "model": "qwen3.7-plus",
+  "image_index": 1,
+  "preprocessing": {
+    "rotation": 0,
+    "scale": 2.0592,
+    "attempt": 1
+  },
+  "auto_repairs": [],
+  "rows": 8,
+  "cols": 6,
+  "description": "",
+  "json": [
+    {
+      "电机": "",
+      "方向控制脚": "",
+      "正转": "",
+      "反转": "",
+      "速度控制脚": "",
+      "速度范围": ""
+    },
+    {
+      "电机": "M1",
+      "方向控制脚": "4",
+      "正转": "LOW",
+      "反转": "HIGH",
+      "速度控制脚": "3",
+      "速度范围": "0-255"
+    },
+    {
+      "电机": "",
+      "方向控制脚": "",
+      "正转": "",
+      "反转": "",
+      "速度控制脚": "",
+      "速度范围": ""
+    },
+    {
+      "电机": "M2",
+      "方向控制脚": "12",
+      "正转": "HIGH",
+      "反转": "LOW",
+      "速度控制脚": "11",
+      "速度范围": "0-255"
+    },
+    {
+      "电机": "",
+      "方向控制脚": "",
+      "正转": "",
+      "反转": "",
+      "速度控制脚": "",
+      "速度范围": ""
+    },
+    {
+      "电机": "M3",
+      "方向控制脚": "8",
+      "正转": "LOW",
+      "反转": "HIGH",
+      "速度控制脚": "5",
+      "速度范围": "0-255"
+    },
+    {
+      "电机": "",
+      "方向控制脚": "",
+      "正转": "",
+      "反转": "",
+      "速度控制脚": "",
+      "速度范围": ""
+    },
+    {
+      "电机": "M4",
+      "方向控制脚": "7",
+      "正转": "HIGH",
+      "反转": "LOW",
+      "速度控制脚": "6",
+      "速度范围": "0-255"
+    }
+  ],
+  "csv": "电机,方向控制脚,正转,反转,速度控制脚,速度范围\n,,,,,\nM1,4,LOW,HIGH,3,0-255\n,,,,,\nM2,12,HIGH,LOW,11,0-255\n,,,,,\nM3,8,LOW,HIGH,5,0-255\n,,,,,\nM4,7,HIGH,LOW,6,0-255\n",
+  "row_lengths": [
+    6,
+    6,
+    6,
+    6,
+    6,
+    6,
+    6,
+    6,
+    6
+  ],
+  "validation_issues": [],
+  "validation_status": "passed",
+  "review_required": false,
+  "review_reason": null,
+  "review_status": null,
+  "indexable": true,
+  "table_id": "w07-3-麦克纳姆轮小车_pdf_page_10_table_1",
+  "page_num": 10
+}

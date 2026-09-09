@@ -1,0 +1,31 @@
+{
+  "page_num": 10,
+  "raw_text": "机电系统原理及实践—— 直流电机原理\n机电智控实验室tangguoan@fudan.edu.cn mmguo@fudan.edu.cn\n§3 无刷直流电机原理\n驱动方式——正弦波控制\n三个相位差为120°的正弦波电流可以形成一个\n以𝜔𝜔为角速度旋转的矢量磁场。\n20-11\n2\nsin(\n)\n3\nVI\nt\nπ\nω\n=\n+\n2\nsin(\n)\n3\nW\nI\nt\nπ\nω\n=\n−\nU\nV\nW\nsin\nUI\nt\nω\n=\n电流(标量)\ni\n\nj\n\n( cos\nsin\n)\n6\n6\nV\nVI\nπ\nπ\n=\n+\nB\ni\nj\n\n\n\n(\ncos\nsin\n)\n6\n6\nW\nW\nI\nπ\nπ\n=\n−\n+\nB\ni\nj\n\n\n\nU\nUI\n= −\nB\nj\n\n\n磁场分布(矢量)\nsin\nt\nω\n2\nsin(\n)\n3\nt\nπ\nω +\n2\nsin(\n)\n3\nt\nπ\nω −\nU\nV\nW\n电压(标量)\n𝐵𝐵= 𝐵𝐵𝑈𝑈+ 𝐵𝐵𝑉𝑉+ B𝑊𝑊\n= 3\n2 (⃗𝚤𝚤cos 𝜔𝜔𝑡𝑡−⃗𝚥𝚥sin 𝜔𝜔𝑡𝑡)\n室 复旦大\n智控实验室 复旦大学 机电\n学 机电智控实验室 复旦大学 机电智控实验\n复旦大学 机电智控实验室 复旦大学 机电智控实验室 复旦\n大学 机电智控实验室 复旦大学 机电智控实验室 复旦大学 机电\n电智控实验室 复旦大学 机电智控实验室 复旦大学 机电智控实\n验室 复旦大学 机电智控实验室 复旦大学 机电智控实验室 \n旦大学 机电智控实验室 复旦大学 机电智控\n电智控实验室 复旦大学 \n验室 复\n",
+  "cleaned_text": "§3 无刷直流电机原理\n驱动方式——正弦波控制\n三个相位差为120°的正弦波电流可以形成一个\n以𝜔𝜔为角速度旋转的矢量磁场。\n2\nsin(\n)\n3\nVI\nt\nπ\nω\n=\n+\n2\nsin(\n)\n3\nW\nI\nt\nπ\nω\n=\n−\nU\nV\nW\nsin\nUI\nt\nω\n=\n电流(标量)\ni\nj\n( cos\nsin\n)\n6\n6\nV\nVI\nπ\nπ\n=\n+\nB\ni\nj\n(\ncos\nsin\n)\n6\n6\nW\nW\nI\nπ\nπ\n=\n−\n+\nB\ni\nj\nU\nUI\n= −\nB\nj\n磁场分布(矢量)\nsin\nt\nω\n2\nsin(\n)\n3\nt\nπ\nω +\n2\nsin(\n)\n3\nt\nπ\nω −\nU\nV\nW\n电压(标量)\n𝐵𝐵= 𝐵𝐵𝑈𝑈+ 𝐵𝐵𝑉𝑉+ B𝑊𝑊\n= 3\n2 (⃗𝚤𝚤cos 𝜔𝜔𝑡𝑡−⃗𝚥𝚥sin 𝜔𝜔𝑡𝑡)",
+  "key_points": [
+    "以𝜔𝜔为角速度旋转的矢量磁场。",
+    "VI",
+    "W",
+    "I",
+    "U",
+    "V",
+    "W",
+    "UI",
+    "V",
+    "VI"
+  ],
+  "technical_terms": [
+    "UI",
+    "VI",
+    "无刷直流电机",
+    "正弦波控制"
+  ],
+  "has_images": false,
+  "image_count": 0,
+  "image_paths": [],
+  "metadata": {
+    "char_count": 648,
+    "word_count": 162,
+    "line_count": 121
+  }
+}

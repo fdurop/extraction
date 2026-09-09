@@ -1,0 +1,169 @@
+{
+  "title": "齿轮箱规格",
+  "headers": [
+    [
+      "减速比",
+      "L",
+      "段数",
+      "额定力矩",
+      ""
+    ],
+    [
+      "",
+      "mm",
+      "",
+      "mN.m",
+      "kgf.cm"
+    ]
+  ],
+  "cells": [
+    [
+      "1/9",
+      "22.5",
+      "2",
+      "147",
+      "1.5"
+    ],
+    [
+      "1/13.5",
+      "22.5",
+      "3",
+      "245",
+      "2.5"
+    ],
+    [
+      "1/24~1/37",
+      "24.5",
+      "4",
+      "392",
+      "4"
+    ],
+    [
+      "1/45~1/95",
+      "26.5",
+      "5",
+      "588",
+      "6"
+    ],
+    [
+      "1/133~1/244",
+      "29.5",
+      "6",
+      "784",
+      "8"
+    ],
+    [
+      "1/401~1/627",
+      "30.5",
+      "7",
+      "980",
+      "10"
+    ]
+  ],
+  "merged_cells": [
+    [
+      0,
+      3,
+      0,
+      4
+    ]
+  ],
+  "units": {
+    "mm": "长度单位",
+    "mN.m": "力矩单位",
+    "kgf.cm": "力矩单位"
+  },
+  "footnotes": [],
+  "uncertain_cells": [],
+  "confidence": 0.5466,
+  "source_image": "extraction/output/qwen_qwen3.7-plus_9/debug/images/w04-1-有刷直流电机驱动器及其应用_slide_20_img_4.jpeg",
+  "recognition_image_path": "extraction/output/qwen_qwen3.7-plus_9/debug/images/w04-1-有刷直流电机驱动器及其应用_slide_20_img_4_table_ready_r0.png",
+  "source_type": "image_vlm_table",
+  "extraction_method": "qwen_api_table",
+  "backend": "api",
+  "provider": "qwen",
+  "model": "qwen3.7-plus",
+  "image_index": 1,
+  "table_region_index": 3,
+  "visible_table_count": 3,
+  "extracted_table_count": 3,
+  "coverage_complete": true,
+  "raw_response": "{\n  \"has_table\": true,\n  \"visible_table_count\": 3,\n  \"coverage_complete\": true,\n  \"tables\": [\n    {\n      \"title\": \"\",\n      \"headers\": [],\n      \"cells\": [\n        [\n          \"外壳材质\",\n          \"金属\"\n        ],\n        [\n          \"输出轴承型式\",\n          \"含油轴承\"\n        ],\n        [\n          \"径向力\",\n          \"≤ 1 kgf\"\n        ],\n        [\n          \"轴向力\",\n          \"≤ 0.7 kgf\"\n        ],\n        [\n          \"主轴最大承受压入力\",\n          \"≤ 5 kgf\"\n        ],\n        [\n          \"径向间隙\",\n          \"≤ 0.1 mm\"\n        ],\n        [\n          \"轴向间隙\",\n          \"≤ 0.5 mm\"\n        ]\n      ],\n      \"merged_cells\": [],\n      \"units\": {},\n      \"footnotes\": [],\n      \"uncertain_cells\": [],\n      \"confidence\": 1.0\n    },\n    {\n      \"title\": \"齿轮箱电机（额定力矩 / 转速一览表）\",\n      \"headers\": [\n        [\n          \"形式\",\n          \"\",\n          \"减速比\",\n          \"1/9\",\n          \"1/13.5\",\n          \"1/24\",\n          \"1/31.6\",\n          \"1/37\",\n          \"1/45\",\n          \"1/57\",\n          \"1/73.6\",\n          \"1/86\",\n          \"1/95\",\n          \"1/133\",\n          \"1/160\",\n          \"1/172\",\n          \"1/201\",\n          \"1/244\",\n          \"1/401\",\n          \"1/501\",\n          \"1/627\"\n        ]\n      ],\n      \"cells\": [\n        [\n          \"ZYTD-520\\n(12V-3500R)\",\n          \"空载转速 (r/min)\",\n          \"380\",\n          \"255\",\n          \"145\",\n          \"110\",\n          \"93\",\n          \"76\",\n          \"60\",\n          \"47\",\n          \"40\",\n          \"36\",\n          \"26\",\n          \"21\",\n          \"20\",\n          \"17\",\n          \"14\",\n          \"9\",\n          \"7\",\n          \"5\"\n        ],\n        [\n          null,\n          \"负载转速 (r/min)\",\n          \"315\",\n          \"210\",\n          \"120\",\n          \"90\",\n          \"76\",\n          \"63\",\n          \"50\",\n          \"38\",\n          \"33\",\n          \"30\",\n          \"21\",\n          \"17\",\n          \"16\",\n          \"14\",\n          \"12\",\n          \"7\",\n          \"6\",\n          \"5\"\n        ],\n        [\n          null,\n          \"负载力矩 (kgf.cm)\",\n          \"0.45\",\n          \"0.6\",\n          \"1\",\n          \"1.2\",\n          \"1.4\",\n          \"1.6\",\n          \"2\",\n          \"2.7\",\n          \"3.1\",\n          \"3.5\",\n          \"4.3\",\n          \"5.2\",\n          \"5.6\",\n          \"6.6\",\n          \"8\",\n          \"10\",\n          \"10\",\n          \"10\"\n        ],\n        [\n          \"ZYTD-520\\n(24V-5000R)\",\n          \"空载转速 (r/min)\",\n          \"555\",\n          \"370\",\n          \"210\",\n          \"160\",\n          \"135\",\n          \"111\",\n          \"88\",\n          \"68\",\n          \"58\",\n          \"53\",\n          \"38\",\n          \"31\",\n          \"29\",\n          \"25\",\n          \"21\",\n          \"12\",\n          \"10\",\n          \"8\"\n        ],\n        [\n          null,\n          \"负载转速 (r/min)\",\n          \"460\",\n          \"310\",\n          \"175\",\n          \"130\",\n          \"113\",\n          \"93\",\n          \"73\",\n          \"57\",\n          \"48\",\n          \"44\",\n          \"31\",\n          \"26\",\n          \"24\",\n          \"21\",\n          \"17\",\n          \"11\",\n          \"9\",\n          \"7\"\n        ],\n        [\n          null,\n          \"负载力矩 (kgf.cm)\",\n          \"0.48\",\n          \"0.63\",\n          \"1\",\n          \"1.3\",\n          \"1.5\",\n          \"1.7\",\n          \"2.1\",\n          \"2.9\",\n          \"3.3\",\n          \"3.7\",\n          \"4.6\",\n          \"5.6\",\n          \"6\",\n          \"7.1\",\n          \"8\",\n          \"10\",\n          \"10\",\n          \"10\"\n        ],\n        [\n          \"回转方向\",\n          \"电源正极接 + 端子\",\n          \"CCW\",\n          \"CW\",\n          null,\n          \"CCW\",\n          null,\n          null,\n          \"CW\",\n          null,\n          null,\n          null,\n          null,\n          \"CCW\",\n          null,\n          null,\n          null,\n          null,\n          \"CW\",\n          null,\n          null\n        ]\n      ],\n      \"merged_cells\": [\n        [\n          0,\n          0,\n          2,\n          0\n        ],\n        [\n          3,\n          0,\n          5,\n          0\n        ],\n        [\n          6,\n          3,\n          6,\n          4\n        ],\n        [\n          6,\n          5,\n          6,\n          6\n        ],\n        [\n          6,\n          7,\n          6,\n          10\n        ],\n        [\n          6,\n          11,\n          6,\n          15\n        ],\n        [\n          6,\n          16,\n          6,\n          18\n        ],\n        [\n          6,\n          19,\n          6,\n          20\n        ]\n      ],\n      \"units\": {\n        \"r/min\": \"转速单位\",\n        \"kgf.cm\": \"力矩单位\"\n      },\n      \"footnotes\": [],\n      \"uncertain_cells\": [],\n      \"confidence\": 1.0\n    },\n    {\n      \"title\": \"齿轮箱规格\",\n      \"headers\": [\n        [\n          \"减速比\",\n          \"L\",\n          \"段数\",\n          \"额定力矩\",\n          \"\"\n        ],\n        [\n          null,\n          \"mm\",\n          null,\n          \"mN.m\",\n          \"kgf.cm\"\n        ]\n      ],\n      \"cells\": [\n        [\n          \"1/9\",\n          \"22.5\",\n          \"2\",\n          \"147\",\n          \"1.5\"\n        ],\n        [\n          \"1/13.5\",\n          \"22.5\",\n          \"3\",\n          \"245\",\n          \"2.5\"\n        ],\n        [\n          \"1/24~1/37\",\n          \"24.5\",\n          \"4\",\n          \"392\",\n          \"4\"\n        ],\n        [\n          \"1/45~1/95\",\n          \"26.5\",\n          \"5\",\n          \"588\",\n          \"6\"\n        ],\n        [\n          \"1/133~1/244\",\n          \"29.5\",\n          \"6\",\n          \"784\",\n          \"8\"\n        ],\n        [\n          \"1/401~1/627\",\n          \"30.5\",\n          \"7\",\n          \"980\",\n          \"10\"\n        ]\n      ],\n      \"merged_cells\": [\n        [\n          0,\n          3,\n          0,\n          4\n        ]\n      ],\n      \"units\": {\n        \"mm\": \"长度单位\",\n        \"mN.m\": \"力矩单位\",\n        \"kgf.cm\": \"力矩单位\"\n      },\n      \"footnotes\": [],\n      \"uncertain_cells\": [],\n      \"confidence\": 1.0\n    }\n  ]\n}",
+  "preprocessing": {
+    "rotation": 0,
+    "scale": 2.0356,
+    "attempt": 1
+  },
+  "auto_repairs": [],
+  "rows": 6,
+  "cols": 5,
+  "description": "齿轮箱规格",
+  "json": [
+    {
+      "column_1": "1/9",
+      "mm": "22.5",
+      "column_3": "2",
+      "mN.m": "147",
+      "kgf.cm": "1.5"
+    },
+    {
+      "column_1": "1/13.5",
+      "mm": "22.5",
+      "column_3": "3",
+      "mN.m": "245",
+      "kgf.cm": "2.5"
+    },
+    {
+      "column_1": "1/24~1/37",
+      "mm": "24.5",
+      "column_3": "4",
+      "mN.m": "392",
+      "kgf.cm": "4"
+    },
+    {
+      "column_1": "1/45~1/95",
+      "mm": "26.5",
+      "column_3": "5",
+      "mN.m": "588",
+      "kgf.cm": "6"
+    },
+    {
+      "column_1": "1/133~1/244",
+      "mm": "29.5",
+      "column_3": "6",
+      "mN.m": "784",
+      "kgf.cm": "8"
+    },
+    {
+      "column_1": "1/401~1/627",
+      "mm": "30.5",
+      "column_3": "7",
+      "mN.m": "980",
+      "kgf.cm": "10"
+    }
+  ],
+  "csv": "减速比,L,段数,额定力矩,\n,mm,,mN.m,kgf.cm\n1/9,22.5,2,147,1.5\n1/13.5,22.5,3,245,2.5\n1/24~1/37,24.5,4,392,4\n1/45~1/95,26.5,5,588,6\n1/133~1/244,29.5,6,784,8\n1/401~1/627,30.5,7,980,10\n",
+  "row_lengths": [
+    5,
+    5,
+    5,
+    5,
+    5,
+    5,
+    5,
+    5
+  ],
+  "validation_issues": [
+    "multiple_tables_require_review",
+    "multiple_tables_require_review"
+  ],
+  "validation_status": "review",
+  "review_required": true,
+  "review_reason": "multiple_tables_require_review",
+  "review_status": "pending",
+  "indexable": false,
+  "table_id": "w04-1-有刷直流电机驱动器及其应用_pptx_page_20_table_3",
+  "page_num": 20,
+  "review_image_path": "extraction/output/qwen_qwen3.7-plus_9/table_review_items/w04-1-有刷直流电机驱动器及其应用_pptx_page_20_table_3.png",
+  "source_document": "w04-1-有刷直流电机驱动器及其应用_pptx"
+}

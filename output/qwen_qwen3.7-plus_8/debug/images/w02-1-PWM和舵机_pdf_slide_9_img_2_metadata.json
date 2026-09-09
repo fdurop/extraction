@@ -1,0 +1,33 @@
+{
+  "original_path": "extraction/output/qwen_qwen3.7-plus_8/debug/images/w02-1-PWM和舵机_p9_img3.jpeg",
+  "enhanced_path": "extraction/output/qwen_qwen3.7-plus_8/debug/images/w02-1-PWM和舵机_p9_img3_enhanced.jpeg",
+  "description": "类型：照片\n图片展示了一个绿色多自由度机械臂放置在桌面上，前方散落着红、蓝、绿等颜色的立方体及圆柱体积木，左侧有一个红色托盘。右侧电脑显示器屏幕显示着积木的实时视觉反馈画面，包含彩色图像与深度图，并标注有“Dist: 274mm”。图片左下角叠加文字“三维空间抓取”，底部中央叠加文字“根据目标物品的RGB数据”。背景为带有蓝色光点的黑色洞洞板。",
+  "metadata": {
+    "generation": {
+      "method": "qwen_api",
+      "backend": "api",
+      "provider": "qwen",
+      "model": "qwen3.7-plus",
+      "status": "success",
+      "api_error": null
+    },
+    "review": {
+      "required": false,
+      "status": null,
+      "reason": null,
+      "course_relevant": true
+    }
+  },
+  "error": null,
+  "method": "qwen_api",
+  "backend": "api",
+  "provider": "qwen",
+  "model": "qwen3.7-plus",
+  "status": "success",
+  "api_error": null,
+  "indexable": true,
+  "review_required": false,
+  "review_reason": null,
+  "review_status": null,
+  "course_relevant": true
+}

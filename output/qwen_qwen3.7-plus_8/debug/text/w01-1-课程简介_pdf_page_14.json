@@ -1,0 +1,21 @@
+{
+  "page_num": 13,
+  "raw_text": "机电系统原理及实践—— 课程简介\n机电智控实验室tangguoan@fudan.edu.cn mmguo@fudan.edu.cn\n§3.3 教学方式\n边学边做\n即学即创\n18-14\n分组实践\n期末设计\n登辉项目\n室 复旦大\n智控实验室 复旦大学 机电\n学 机电智控实验室 复旦大学 机电智控实验\n复旦大学 机电智控实验室 复旦大学 机电智控实验室 复旦\n旦大学 机电智控实验室 复旦大学 机电智控实验室 复旦大学 机电\n电智控实验室 复旦大学 机电智控实验室 复旦大学 机电智控实\n验室 复旦大学 机电智控实验室 复旦大学 机电智控实验室 \n旦大学 机电智控实验室 复旦大学 机电智控\n电智控实验室 复旦大学 \n实验室 复\n",
+  "cleaned_text": "§3.3 教学方式\n边学边做\n即学即创\n分组实践\n期末设计\n登辉项目",
+  "key_points": [],
+  "technical_terms": [],
+  "has_images": true,
+  "image_count": 5,
+  "image_paths": [
+    "extraction/output/qwen_qwen3.7-plus_8/debug/images/w01-1-课程简介_p14_img2.jpeg",
+    "extraction/output/qwen_qwen3.7-plus_8/debug/images/w01-1-课程简介_p14_img3.jpeg",
+    "extraction/output/qwen_qwen3.7-plus_8/debug/images/w01-1-课程简介_p14_img4.jpeg",
+    "extraction/output/qwen_qwen3.7-plus_8/debug/images/w01-1-课程简介_p14_img5.jpeg",
+    "extraction/output/qwen_qwen3.7-plus_8/debug/images/w01-1-课程简介_p14_img6.jpeg"
+  ],
+  "metadata": {
+    "char_count": 315,
+    "word_count": 50,
+    "line_count": 20
+  }
+}

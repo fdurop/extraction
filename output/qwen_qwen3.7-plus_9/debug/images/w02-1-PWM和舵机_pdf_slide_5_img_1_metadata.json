@@ -1,0 +1,33 @@
+{
+  "original_path": "extraction/output/qwen_qwen3.7-plus_9/debug/images/w02-1-PWM和舵机_p5_img2.jpeg",
+  "enhanced_path": "extraction/output/qwen_qwen3.7-plus_9/debug/images/w02-1-PWM和舵机_p5_img2_enhanced.jpeg",
+  "description": "类型：照片\n图片展示了一块Arduino UNO开发板的俯视图。板载可见USB接口、电源插孔、复位按钮、晶振及主控芯片。顶部边缘排列着数字引脚（DIGITAL），标有0至13编号，其中部分引脚旁注有“~”符号及“PWM”字样，对应课程中的脉宽调制功能。底部边缘设有模拟输入引脚（ANALOG IN），标记为A0至A5，以及电源接口（POWER）。该硬件实物图直观展示了课程所述的数字IO与模拟IO端口的物理分布。",
+  "metadata": {
+    "generation": {
+      "method": "qwen_api",
+      "backend": "api",
+      "provider": "qwen",
+      "model": "qwen3.7-plus",
+      "status": "success",
+      "api_error": null
+    },
+    "review": {
+      "required": false,
+      "status": null,
+      "reason": null,
+      "course_relevant": true
+    }
+  },
+  "error": null,
+  "method": "qwen_api",
+  "backend": "api",
+  "provider": "qwen",
+  "model": "qwen3.7-plus",
+  "status": "success",
+  "api_error": null,
+  "indexable": true,
+  "review_required": false,
+  "review_reason": null,
+  "review_status": null,
+  "course_relevant": true
+}

@@ -1,0 +1,18 @@
+{
+  "page_num": 13,
+  "raw_text": "机电系统原理及实践—— 机器人运动学简介\n机电智控实验室tangguoan@fudan.edu.cn mmguo@fudan.edu.cn\n§2.4 路径规划\n机器狗的单腿路径规划\n21-14\n迈步(摆动相)：圆弧路径\n\n圆心角满足三次多项式\n\n根据圆心角解算电机角度\n蹬腿(支撑相)：直线路径\n\n水平距离满足三次多项式\n\n根据水平距离解算电机角度\n",
+  "cleaned_text": "§2.4 路径规划\n机器狗的单腿路径规划\n迈步(摆动相)：圆弧路径\n圆心角满足三次多项式\n根据圆心角解算电机角度\n蹬腿(支撑相)：直线路径\n水平距离满足三次多项式\n根据水平距离解算电机角度",
+  "key_points": [],
+  "technical_terms": [
+    "根据圆心角解算电机",
+    "根据水平距离解算电机"
+  ],
+  "has_images": false,
+  "image_count": 0,
+  "image_paths": [],
+  "metadata": {
+    "char_count": 182,
+    "word_count": 18,
+    "line_count": 16
+  }
+}

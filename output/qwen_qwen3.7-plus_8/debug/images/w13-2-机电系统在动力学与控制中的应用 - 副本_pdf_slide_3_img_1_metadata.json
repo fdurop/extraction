@@ -1,0 +1,33 @@
+{
+  "original_path": "extraction/output/qwen_qwen3.7-plus_8/debug/images/w13-2-机电系统在动力学与控制中的应用 - 副本_p3_img3.jpeg",
+  "enhanced_path": "extraction/output/qwen_qwen3.7-plus_8/debug/images/w13-2-机电系统在动力学与控制中的应用 - 副本_p3_img3_enhanced.jpeg",
+  "description": "类型：照片\n图片展示了一套放置在实验桌上的机电系统实物装置。主体为一根水平安装的金色导轨（同步带滑台），导轨上装配有两个橙色的移动滑块组件，组件下方垂有黑色线缆。导轨左端固定有黑色的驱动或控制盒模块。背景为投影幕布，显示文字“机电系统原理及实践”、“系统在动力学与控制中的应用”及复旦大学校徽。该装置对应页面文本中的“同步带滑台”、“驱动盒”及“操纵/控制盒”等系统组成部件。",
+  "metadata": {
+    "generation": {
+      "method": "qwen_api",
+      "backend": "api",
+      "provider": "qwen",
+      "model": "qwen3.7-plus",
+      "status": "success",
+      "api_error": null
+    },
+    "review": {
+      "required": false,
+      "status": null,
+      "reason": null,
+      "course_relevant": true
+    }
+  },
+  "error": null,
+  "method": "qwen_api",
+  "backend": "api",
+  "provider": "qwen",
+  "model": "qwen3.7-plus",
+  "status": "success",
+  "api_error": null,
+  "indexable": true,
+  "review_required": false,
+  "review_reason": null,
+  "review_status": null,
+  "course_relevant": true
+}

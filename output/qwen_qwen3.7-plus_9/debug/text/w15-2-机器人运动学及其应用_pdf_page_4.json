@@ -1,0 +1,34 @@
+{
+  "page_num": 3,
+  "raw_text": "机电系统原理及实践—— 机器人运动学简介\n机电智控实验室tangguoan@fudan.edu.cn mmguo@fudan.edu.cn\n§1.1 机器人概述\n常见运动副\n21-4\n机构的自由度用𝑀表示，其计算公式为\n𝑀= 6 𝑛−𝑝+ ෍\n𝑖=1\n5\n𝑖𝑝𝑖\n𝑛为去掉机架剩余的构件数目，𝑝为运动副的个数，𝑖为运动副的自由度，𝑝𝑖为自由度为𝑖\n的运动副的个数。\n转动副\n移动副\n螺旋副\n圆柱副\n球面副\n平面副\nR\nP\nH\nC(PR)\nS(RRR)\nE(PPR)\n虎克铰\nU(RR)\n",
+  "cleaned_text": "§1.1 机器人概述\n常见运动副\n机构的自由度用𝑀表示，其计算公式为\n𝑀= 6 𝑛−𝑝+ ෍\n𝑖=1\n5\n𝑖𝑝𝑖\n𝑛为去掉机架剩余的构件数目，𝑝为运动副的个数，𝑖为运动副的自由度，𝑝𝑖为自由度为𝑖\n的运动副的个数。\n转动副\n移动副\n螺旋副\n圆柱副\n球面副\n平面副\nR\nP\nH\nC(PR)\nS(RRR)\nE(PPR)\n虎克铰\nU(RR)",
+  "key_points": [
+    "𝑀= 6 𝑛−𝑝+ ෍",
+    "的运动副的个数。",
+    "R",
+    "P",
+    "H",
+    "C(PR)",
+    "S(RRR)",
+    "E(PPR)",
+    "U(RR)"
+  ],
+  "technical_terms": [
+    "PPR",
+    "PR",
+    "RR",
+    "RRR"
+  ],
+  "has_images": true,
+  "image_count": 3,
+  "image_paths": [
+    "extraction/output/qwen_qwen3.7-plus_9/debug/images/w15-2-机器人运动学及其应用_p4_img3.jpeg",
+    "extraction/output/qwen_qwen3.7-plus_9/debug/images/w15-2-机器人运动学及其应用_p4_img4.jpeg",
+    "extraction/output/qwen_qwen3.7-plus_9/debug/images/w15-2-机器人运动学及其应用_p4_img5.jpeg"
+  ],
+  "metadata": {
+    "char_count": 246,
+    "word_count": 32,
+    "line_count": 27
+  }
+}

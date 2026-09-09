@@ -1,0 +1,31 @@
+{
+  "page_num": 7,
+  "raw_text": "§3 \n实践：\n有刷直流电机驱动与控制\nStep 1: \n控制\n有刷\n直流电机的\n转向\n正转 \n2 s\n，停\n 2 s\n，再反转 \n2 s.\n硬件\nUno\n四路固态继电器\n代码\npinMode\n(\npinID\n, \nOUTPUT\n);  // \n数字端口输出初始化\ndigitalWrite\n(\npinID\n, HIGH/LOW);  // \n数字端口输出高\n/\n低电平\ndelay\n(time);  // \n延时，单位：毫秒\n23-\n提示\n输入回路（控制环\n/\n弱电）与输出回路（动力环\n/\n强电）不能混淆\n.\n输出回路的电流方向只能 \nA \n→ \nB.\n评分规则\n基准分（\n20 \n分钟之内完成）\n      1 ~ 4 \n名：\n100 / 95 / 90 / 88\n扣分\n      强\n/\n弱电接错：扣 \n20 \n分\n/\n次\n           线头脱落：扣 \n10 \n分\n/\n次\n           线路杂乱：扣 \n5 ~ 20 \n分\n       \n代码不规范：扣\n 5 ~ 10 \n分\n                   \n超时：扣 \n2 \n分\n/\n分钟",
+  "cleaned_text": "§3\n实践：\n有刷直流电机驱动与控制\nStep 1:\n控制\n有刷\n直流电机的\n转向\n正转\n2 s\n，停\n2 s\n，再反转\n2 s.\n硬件\nUno\n四路固态继电器\n代码\npinMode\n(\npinID\n,\nOUTPUT\n); //\n数字端口输出初始化\ndigitalWrite\n(\npinID\n, HIGH/LOW); //\n数字端口输出高\n/\n低电平\ndelay\n(time); //\n延时，单位：毫秒\n提示\n输入回路（控制环\n/\n弱电）与输出回路（动力环\n/\n强电）不能混淆\n.\n输出回路的电流方向只能\nA\n→\nB.\n评分规则\n基准分（\n20\n分钟之内完成）\n1 ~ 4\n名：\n100 / 95 / 90 / 88\n扣分\n强\n/\n弱电接错：扣\n20\n分\n/\n次\n线头脱落：扣\n10\n分\n/\n次\n线路杂乱：扣\n5 ~ 20\n分\n代码不规范：扣\n5 ~ 10\n分\n超时：扣\n2\n分\n/\n分钟",
+  "key_points": [
+    "实践：",
+    "Step 1:",
+    "Uno",
+    "OUTPUT",
+    "A",
+    "B.",
+    "名："
+  ],
+  "technical_terms": [
+    "HIGH",
+    "LOW",
+    "OUTPUT",
+    "Uno",
+    "有刷直流电机",
+    "有刷直流电机驱动与控制",
+    "直流电机"
+  ],
+  "has_images": false,
+  "image_count": 0,
+  "image_paths": [],
+  "metadata": {
+    "char_count": 487,
+    "word_count": 98,
+    "line_count": 80
+  }
+}

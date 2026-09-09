@@ -1,0 +1,18 @@
+{
+  "page_num": 0,
+  "raw_text": "机电系统原理及实践\n电机位置检测与闭环控制\n",
+  "cleaned_text": "机电系统原理及实践\n电机位置检测与闭环控制",
+  "key_points": [],
+  "technical_terms": [
+    "机电系统",
+    "电机位置检测与闭环控制"
+  ],
+  "has_images": false,
+  "image_count": 0,
+  "image_paths": [],
+  "metadata": {
+    "char_count": 22,
+    "word_count": 2,
+    "line_count": 3
+  }
+}

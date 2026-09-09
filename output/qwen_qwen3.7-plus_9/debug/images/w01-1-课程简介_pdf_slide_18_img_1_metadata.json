@@ -1,0 +1,33 @@
+{
+  "original_path": "extraction/output/qwen_qwen3.7-plus_9/debug/images/w01-1-课程简介_p18_img2.jpeg",
+  "enhanced_path": "extraction/output/qwen_qwen3.7-plus_9/debug/images/w01-1-课程简介_p18_img2_enhanced.jpeg",
+  "description": "类型：照片\n图片展示实验室加工场景。左侧一名穿粉色卫衣、戴护目镜的人员手持带红色按钮的黑色手柄控制器，面对灰色机柜操作。右上方墙壁悬挂数控系统显示屏，显示坐标数值及按键面板。右侧为机床主轴结构，右下角局部特写显示刀具正在对金属工件进行切削加工，产生大量银色碎屑。该图直观展示了课程提及的高精度数控铣床实际运行状态。",
+  "metadata": {
+    "generation": {
+      "method": "qwen_api",
+      "backend": "api",
+      "provider": "qwen",
+      "model": "qwen3.7-plus",
+      "status": "success",
+      "api_error": null
+    },
+    "review": {
+      "required": false,
+      "status": null,
+      "reason": null,
+      "course_relevant": true
+    }
+  },
+  "error": null,
+  "method": "qwen_api",
+  "backend": "api",
+  "provider": "qwen",
+  "model": "qwen3.7-plus",
+  "status": "success",
+  "api_error": null,
+  "indexable": true,
+  "review_required": false,
+  "review_reason": null,
+  "review_status": null,
+  "course_relevant": true
+}

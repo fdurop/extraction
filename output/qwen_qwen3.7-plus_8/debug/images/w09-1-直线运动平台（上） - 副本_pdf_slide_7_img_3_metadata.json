@@ -1,0 +1,33 @@
+{
+  "original_path": "extraction/output/qwen_qwen3.7-plus_8/debug/images/w09-1-直线运动平台（上） - 副本_p7_img5.jpeg",
+  "enhanced_path": "extraction/output/qwen_qwen3.7-plus_8/debug/images/w09-1-直线运动平台（上） - 副本_p7_img5_enhanced.jpeg",
+  "description": "类型：照片\n图片展示了一个黄色工业开关模块的正面特写。模块上下两端各有两个金属接线端子，顶部端子旁标注数字“24”和“12”，底部端子旁标注“23”和“11”。模块中央透明窗口内可见机械触点结构，左侧为绿色组件，右侧为红色组件。结合页面文字可知，该器件为急停开关，包含一对NO触点和一对NC触点，用于连接5V电源、驱动器（ENA+、ENA-）及GND，在紧急情况下切断设备电源。",
+  "metadata": {
+    "generation": {
+      "method": "qwen_api",
+      "backend": "api",
+      "provider": "qwen",
+      "model": "qwen3.7-plus",
+      "status": "success",
+      "api_error": null
+    },
+    "review": {
+      "required": false,
+      "status": null,
+      "reason": null,
+      "course_relevant": true
+    }
+  },
+  "error": null,
+  "method": "qwen_api",
+  "backend": "api",
+  "provider": "qwen",
+  "model": "qwen3.7-plus",
+  "status": "success",
+  "api_error": null,
+  "indexable": true,
+  "review_required": false,
+  "review_reason": null,
+  "review_status": null,
+  "course_relevant": true
+}

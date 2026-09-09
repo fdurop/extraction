@@ -1,0 +1,33 @@
+{
+  "original_path": "extraction/output/qwen_qwen3.7-plus_9/debug/images/w02-1-PWM和舵机_p10_img3.jpeg",
+  "enhanced_path": "extraction/output/qwen_qwen3.7-plus_9/debug/images/w02-1-PWM和舵机_p10_img3_enhanced.jpeg",
+  "description": "类型：照片\n图片展示了一个黑色的长方体舵机实物。顶部设有带圆孔的安装耳片。正面中心有一个突出的黄色金属齿轮转轴，轴面有齿纹。机身下部贴有白色标签，印有型号“LD-1501MG”及品牌标识“JXSERVO”。底部同样具有安装用的耳片结构。该图片直观展示了课程文本中提到的舵机外观、转轴及型号标识，属于课程相关知识。",
+  "metadata": {
+    "generation": {
+      "method": "qwen_api",
+      "backend": "api",
+      "provider": "qwen",
+      "model": "qwen3.7-plus",
+      "status": "success",
+      "api_error": null
+    },
+    "review": {
+      "required": false,
+      "status": null,
+      "reason": null,
+      "course_relevant": true
+    }
+  },
+  "error": null,
+  "method": "qwen_api",
+  "backend": "api",
+  "provider": "qwen",
+  "model": "qwen3.7-plus",
+  "status": "success",
+  "api_error": null,
+  "indexable": true,
+  "review_required": false,
+  "review_reason": null,
+  "review_status": null,
+  "course_relevant": true
+}

@@ -1,0 +1,33 @@
+{
+  "original_path": "extraction/output/qwen_qwen3.7-plus_9/debug/images/w13-1-电机位置检测与闭环控制 - 副本_p4_img6.jpeg",
+  "enhanced_path": "extraction/output/qwen_qwen3.7-plus_9/debug/images/w13-1-电机位置检测与闭环控制 - 副本_p4_img6_enhanced.jpeg",
+  "description": "类型：照片\n图片展示机电实验场景。左侧一名穿粉色卫衣的学生正手持黑色操控盒进行操作，面前是一台带有仪表盘和旋钮的米色仪器。右侧放置一台小型数控铣床设备，可见其金属主轴结构及底座。设备上方墙壁安装有黑色数显表，多根黑色线缆连接各部件。该场景对应文中提到的步进电机、编码器、光栅尺及闭环控制系统的实物应用演示。",
+  "metadata": {
+    "generation": {
+      "method": "qwen_api",
+      "backend": "api",
+      "provider": "qwen",
+      "model": "qwen3.7-plus",
+      "status": "success",
+      "api_error": null
+    },
+    "review": {
+      "required": false,
+      "status": null,
+      "reason": null,
+      "course_relevant": true
+    }
+  },
+  "error": null,
+  "method": "qwen_api",
+  "backend": "api",
+  "provider": "qwen",
+  "model": "qwen3.7-plus",
+  "status": "success",
+  "api_error": null,
+  "indexable": true,
+  "review_required": false,
+  "review_reason": null,
+  "review_status": null,
+  "course_relevant": true
+}

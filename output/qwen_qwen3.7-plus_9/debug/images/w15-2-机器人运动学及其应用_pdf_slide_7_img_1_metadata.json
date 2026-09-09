@@ -1,0 +1,33 @@
+{
+  "original_path": "extraction/output/qwen_qwen3.7-plus_9/debug/images/w15-2-机器人运动学及其应用_p7_img3.jpeg",
+  "enhanced_path": "extraction/output/qwen_qwen3.7-plus_9/debug/images/w15-2-机器人运动学及其应用_p7_img3_enhanced.jpeg",
+  "description": "类型：示意图\n图中展示了串联机器人相邻两个连杆（Link i-1与Link i）及其对应关节轴线（Axis i-1与Axis i）的空间几何关系。每个关节处建立了坐标系，包含红色箭头表示的坐标轴（如Z_i-1, X_i-1, Z_i, X_i）。图中标注了D-H参数法的四个关键变量：连杆扭转角α_i-1（橙色弧线）、连杆长度a_i-1（绿色虚线）、连杆偏距d_i（紫色线段）以及关节角θ_i（黑色弧线）。该图直观呈现了通过齐次坐标变换描述多连杆系统位姿所需的几何定义。",
+  "metadata": {
+    "generation": {
+      "method": "qwen_api",
+      "backend": "api",
+      "provider": "qwen",
+      "model": "qwen3.7-plus",
+      "status": "success",
+      "api_error": null
+    },
+    "review": {
+      "required": false,
+      "status": null,
+      "reason": null,
+      "course_relevant": true
+    }
+  },
+  "error": null,
+  "method": "qwen_api",
+  "backend": "api",
+  "provider": "qwen",
+  "model": "qwen3.7-plus",
+  "status": "success",
+  "api_error": null,
+  "indexable": true,
+  "review_required": false,
+  "review_reason": null,
+  "review_status": null,
+  "course_relevant": true
+}

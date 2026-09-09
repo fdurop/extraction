@@ -1,0 +1,28 @@
+{
+  "page_num": 4,
+  "raw_text": "机电系统原理及实践—— 无刷直流电机驱动简介\n机电智控实验室tangguoan@fudan.edu.cn mmguo@fudan.edu.cn\n§2 无刷直流电机原理回顾\n9-5\nU\nV\nW\n无刷直流电机驱动器？\nphase\nU\nV\nW\n1\n+\n–\n×\n2\n×\n–\n+\n3\n–\n×\n+\n4\n–\n+\n×\n5\n×\n+\n–\n6\n+\n×\n–\n",
+  "cleaned_text": "§2 无刷直流电机原理回顾\nU\nV\nW\n无刷直流电机驱动器？\nphase\nU\nV\nW\n1\n+\n–\n×\n2\n×\n–\n+\n3\n–\n×\n+\n4\n–\n+\n×\n5\n×\n+\n–\n6\n+\n×\n–",
+  "key_points": [
+    "U",
+    "V",
+    "W",
+    "U",
+    "V",
+    "W"
+  ],
+  "technical_terms": [
+    "无刷直流电机",
+    "无刷直流电机驱动器"
+  ],
+  "has_images": true,
+  "image_count": 2,
+  "image_paths": [
+    "extraction/output/qwen_qwen3.7-plus_9/debug/images/w15-1-无刷直流电机驱动器_p5_img3.jpeg",
+    "extraction/output/qwen_qwen3.7-plus_9/debug/images/w15-1-无刷直流电机驱动器_p5_img4.jpeg"
+  ],
+  "metadata": {
+    "char_count": 167,
+    "word_count": 39,
+    "line_count": 37
+  }
+}

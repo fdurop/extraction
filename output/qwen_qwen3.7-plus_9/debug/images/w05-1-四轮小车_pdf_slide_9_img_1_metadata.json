@@ -1,0 +1,33 @@
+{
+  "original_path": "extraction/output/qwen_qwen3.7-plus_9/debug/images/w05-1-四轮小车_p9_img2.jpeg",
+  "enhanced_path": "extraction/output/qwen_qwen3.7-plus_9/debug/images/w05-1-四轮小车_p9_img2_enhanced.jpeg",
+  "description": "类型：照片\n图片展示了四轮小车驱动方案的硬件实物连接。左侧为绿色动力接线端子座；中间红色底板上排列着四个蓝色电磁继电器；右侧黑色扩展板（印有YwRobot）上集成有两路白色固态继电器模块及排针接口。红、黑、蓝、黄等多色导线将MCU控制信号端（对应IN1-IN4等）、继电器输入输出端（NC/COM/NO）以及电源端子（DC+/-）相互连接，直观呈现了电磁继电器与固态继电器混合使用的电路布局。",
+  "metadata": {
+    "generation": {
+      "method": "qwen_api",
+      "backend": "api",
+      "provider": "qwen",
+      "model": "qwen3.7-plus",
+      "status": "success",
+      "api_error": null
+    },
+    "review": {
+      "required": false,
+      "status": null,
+      "reason": null,
+      "course_relevant": true
+    }
+  },
+  "error": null,
+  "method": "qwen_api",
+  "backend": "api",
+  "provider": "qwen",
+  "model": "qwen3.7-plus",
+  "status": "success",
+  "api_error": null,
+  "indexable": true,
+  "review_required": false,
+  "review_reason": null,
+  "review_status": null,
+  "course_relevant": true
+}

@@ -1,0 +1,33 @@
+{
+  "original_path": "extraction/output/qwen_qwen3.7-plus_8/debug/images/w03-1-直流电机原理_p7_img5.jpeg",
+  "enhanced_path": "extraction/output/qwen_qwen3.7-plus_8/debug/images/w03-1-直流电机原理_p7_img5_enhanced.jpeg",
+  "description": "类型：照片\n图片展示了一个橙白配色的双刀双掷开关实物。开关顶部设有两组接线端子，每组包含三个红色圆形接线孔及对应的十字螺丝，中间有物理隔断。侧面可见用于导轨安装的卡扣结构。该组件对应课程实践中用于控制直流电机转动方向的执行元件。",
+  "metadata": {
+    "generation": {
+      "method": "qwen_api",
+      "backend": "api",
+      "provider": "qwen",
+      "model": "qwen3.7-plus",
+      "status": "success",
+      "api_error": null
+    },
+    "review": {
+      "required": false,
+      "status": null,
+      "reason": null,
+      "course_relevant": true
+    }
+  },
+  "error": null,
+  "method": "qwen_api",
+  "backend": "api",
+  "provider": "qwen",
+  "model": "qwen3.7-plus",
+  "status": "success",
+  "api_error": null,
+  "indexable": true,
+  "review_required": false,
+  "review_reason": null,
+  "review_status": null,
+  "course_relevant": true
+}

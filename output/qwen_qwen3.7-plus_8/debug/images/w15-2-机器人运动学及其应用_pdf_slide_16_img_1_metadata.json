@@ -1,0 +1,33 @@
+{
+  "original_path": "extraction/output/qwen_qwen3.7-plus_8/debug/images/w15-2-机器人运动学及其应用_p16_img3.jpeg",
+  "enhanced_path": "extraction/output/qwen_qwen3.7-plus_8/debug/images/w15-2-机器人运动学及其应用_p16_img3_enhanced.jpeg",
+  "description": "类型：照片\n图片展示了一个双足机器人实物模型，背景为黑色。机器人顶部横向安装有一根金属轴，两端带有灰色轮状部件，轴中部固定着黑色的电路板及蓝色接线端子。机身主体由白色支架和两个并列的黑色圆柱形电机组成，红黑导线连接在电机侧面。下方延伸出两条白色的扁平腿足结构，呈前后交错姿态，直观展示了“两条腿依次迈步”的机械构型。左侧腿足组件上贴有黄色的三角形警告标签。",
+  "metadata": {
+    "generation": {
+      "method": "qwen_api",
+      "backend": "api",
+      "provider": "qwen",
+      "model": "qwen3.7-plus",
+      "status": "success",
+      "api_error": null
+    },
+    "review": {
+      "required": false,
+      "status": null,
+      "reason": null,
+      "course_relevant": true
+    }
+  },
+  "error": null,
+  "method": "qwen_api",
+  "backend": "api",
+  "provider": "qwen",
+  "model": "qwen3.7-plus",
+  "status": "success",
+  "api_error": null,
+  "indexable": true,
+  "review_required": false,
+  "review_reason": null,
+  "review_status": null,
+  "course_relevant": true
+}

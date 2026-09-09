@@ -1,0 +1,20 @@
+{
+  "page_num": 8,
+  "raw_text": "机电系统原理及实践—— 机电系统在动力学与控制中的应用\n机电智控实验室tangguoan@fudan.edu.cn mmguo@fudan.edu.cn\n16-9\n§4 单摆残余振动的抑制——消振/隔振/抑振\n",
+  "cleaned_text": "§4 单摆残余振动的抑制——消振/隔振/抑振",
+  "key_points": [],
+  "technical_terms": [],
+  "has_images": true,
+  "image_count": 4,
+  "image_paths": [
+    "extraction/output/qwen_qwen3.7-plus_9/debug/images/w13-2-机电系统在动力学与控制中的应用 - 副本_p9_img3.jpeg",
+    "extraction/output/qwen_qwen3.7-plus_9/debug/images/w13-2-机电系统在动力学与控制中的应用 - 副本_p9_img4.jpeg",
+    "extraction/output/qwen_qwen3.7-plus_9/debug/images/w13-2-机电系统在动力学与控制中的应用 - 副本_p9_img5.jpeg",
+    "extraction/output/qwen_qwen3.7-plus_9/debug/images/w13-2-机电系统在动力学与控制中的应用 - 副本_p9_img6.jpeg"
+  ],
+  "metadata": {
+    "char_count": 105,
+    "word_count": 7,
+    "line_count": 5
+  }
+}

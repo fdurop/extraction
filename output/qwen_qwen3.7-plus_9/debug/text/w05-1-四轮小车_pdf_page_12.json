@@ -1,0 +1,26 @@
+{
+  "page_num": 11,
+  "raw_text": "机电系统原理及实践—— 四轮小车\n机电智控实验室tangguoan@fudan.edu.cn mmguo@fudan.edu.cn\nMCU的供电\n电压范围7~12 V\n推荐9 V\n供电接口\nUSB\nDC 5.5×2.1 mm 接头\nVin\n15-12\n室 复旦大\n智控实验室 复旦大学 机电\n学 机电智控实验室 复旦大学 机电智控实验\n复旦大学 机电智控实验室 复旦大学 机电智控实验室 复旦\n大学 机电智控实验室 复旦大学 机电智控实验室 复旦大学 机电\n电智控实验室 复旦大学 机电智控实验室 复旦大学 机电智控实\n验室 复旦大学 机电智控实验室 复旦大学 机电智控实验室 \n旦大学 机电智控实验室 复旦大学 机电智控\n电智控实验室 复旦大学 \n验室 复\n",
+  "cleaned_text": "MCU的供电\n电压范围7~12 V\n推荐9 V\n供电接口\nUSB\nDC 5.5×2.1 mm 接头\nVin",
+  "key_points": [
+    "MCU的供电",
+    "USB",
+    "DC 5.5×2.1 mm 接头",
+    "Vin"
+  ],
+  "technical_terms": [
+    "DC",
+    "USB"
+  ],
+  "has_images": true,
+  "image_count": 2,
+  "image_paths": [
+    "extraction/output/qwen_qwen3.7-plus_9/debug/images/w05-1-四轮小车_p12_img2.jpeg",
+    "extraction/output/qwen_qwen3.7-plus_9/debug/images/w05-1-四轮小车_p12_img3.png"
+  ],
+  "metadata": {
+    "char_count": 336,
+    "word_count": 55,
+    "line_count": 21
+  }
+}

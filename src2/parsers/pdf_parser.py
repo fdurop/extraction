@@ -12,7 +12,7 @@ from utils.image_filters import repeated_image_paths, should_keep_image
 
 
 class PDFParser(BaseParser):
-    def __init__(self, logger=None, output_images_dir: str = os.path.join("output", "default", "images")):
+    def __init__(self, logger=None, output_images_dir: str = os.path.join("extraction", "output", "default", "images")):
         super().__init__(logger)
         self.current_doc = None
         self.output_images_dir = output_images_dir
@@ -145,7 +145,7 @@ class PDFParser(BaseParser):
         self,
         file_path: str,
         page_num: int,
-        output_dir: str = os.path.join("output", "default", "images"),
+        output_dir: str = os.path.join("extraction", "output", "default", "images"),
     ) -> List[str]:
         try:
             doc = fitz.open(file_path)

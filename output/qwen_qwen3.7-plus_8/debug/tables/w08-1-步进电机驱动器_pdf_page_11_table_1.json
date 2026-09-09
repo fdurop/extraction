@@ -1,0 +1,175 @@
+{
+  "has_table": true,
+  "title": "Current Table (Peak=RMS×1.4)",
+  "headers": [
+    [
+      "Peak",
+      "RMS",
+      "SW1",
+      "SW2",
+      "SW3"
+    ]
+  ],
+  "cells": [
+    [
+      "Default",
+      "",
+      "on",
+      "on",
+      "on"
+    ],
+    [
+      "1.31A",
+      "0.94A",
+      "off",
+      "on",
+      "on"
+    ],
+    [
+      "1.63A",
+      "1.16A",
+      "on",
+      "off",
+      "on"
+    ],
+    [
+      "1.94A",
+      "1.39A",
+      "off",
+      "off",
+      "on"
+    ],
+    [
+      "2.24A",
+      "1.60A",
+      "on",
+      "on",
+      "off"
+    ],
+    [
+      "2.55A",
+      "1.82A",
+      "off",
+      "on",
+      "off"
+    ],
+    [
+      "2.87A",
+      "2.05A",
+      "on",
+      "off",
+      "off"
+    ],
+    [
+      "3.20A",
+      "2.29A",
+      "off",
+      "off",
+      "off"
+    ]
+  ],
+  "merged_cells": [],
+  "units": {},
+  "footnotes": [
+    "SW4:off=Half current;on=Full current;",
+    "Auto Tuning:SW4 change 2 times in 1 sec."
+  ],
+  "uncertain_cells": [],
+  "confidence": 0.991,
+  "raw_response": "{\n  \"has_table\": true,\n  \"title\": \"Current Table (Peak=RMS×1.4)\",\n  \"headers\": [\n    [\n      \"Peak\",\n      \"RMS\",\n      \"SW1\",\n      \"SW2\",\n      \"SW3\"\n    ]\n  ],\n  \"cells\": [\n    [\n      \"Default\",\n      \"\",\n      \"on\",\n      \"on\",\n      \"on\"\n    ],\n    [\n      \"1.31A\",\n      \"0.94A\",\n      \"off\",\n      \"on\",\n      \"on\"\n    ],\n    [\n      \"1.63A\",\n      \"1.16A\",\n      \"on\",\n      \"off\",\n      \"on\"\n    ],\n    [\n      \"1.94A\",\n      \"1.39A\",\n      \"off\",\n      \"off\",\n      \"on\"\n    ],\n    [\n      \"2.24A\",\n      \"1.60A\",\n      \"on\",\n      \"on\",\n      \"off\"\n    ],\n    [\n      \"2.55A\",\n      \"1.82A\",\n      \"off\",\n      \"on\",\n      \"off\"\n    ],\n    [\n      \"2.87A\",\n      \"2.05A\",\n      \"on\",\n      \"off\",\n      \"off\"\n    ],\n    [\n      \"3.20A\",\n      \"2.29A\",\n      \"off\",\n      \"off\",\n      \"off\"\n    ]\n  ],\n  \"merged_cells\": [],\n  \"units\": {},\n  \"footnotes\": [\n    \"SW4:off=Half current;on=Full current;\",\n    \"Auto Tuning:SW4 change 2 times in 1 sec.\"\n  ],\n  \"uncertain_cells\": [],\n  \"confidence\": 1.0\n}",
+  "source_image": "extraction/output/qwen_qwen3.7-plus_8/debug/images/w08-1-步进电机驱动器_p11_img2.jpeg",
+  "recognition_image_path": "extraction/output/qwen_qwen3.7-plus_8/debug/images/w08-1-步进电机驱动器_p11_img2_table_ready_r0.png",
+  "source_type": "image_vlm_table",
+  "extraction_method": "qwen_api_table",
+  "backend": "api",
+  "provider": "qwen",
+  "model": "qwen3.7-plus",
+  "image_index": 0,
+  "preprocessing": {
+    "rotation": 0,
+    "scale": 1.9876,
+    "attempt": 1
+  },
+  "auto_repairs": [],
+  "rows": 8,
+  "cols": 5,
+  "description": "Current Table (Peak=RMS×1.4)",
+  "json": [
+    {
+      "Peak": "Default",
+      "RMS": "",
+      "SW1": "on",
+      "SW2": "on",
+      "SW3": "on"
+    },
+    {
+      "Peak": "1.31A",
+      "RMS": "0.94A",
+      "SW1": "off",
+      "SW2": "on",
+      "SW3": "on"
+    },
+    {
+      "Peak": "1.63A",
+      "RMS": "1.16A",
+      "SW1": "on",
+      "SW2": "off",
+      "SW3": "on"
+    },
+    {
+      "Peak": "1.94A",
+      "RMS": "1.39A",
+      "SW1": "off",
+      "SW2": "off",
+      "SW3": "on"
+    },
+    {
+      "Peak": "2.24A",
+      "RMS": "1.60A",
+      "SW1": "on",
+      "SW2": "on",
+      "SW3": "off"
+    },
+    {
+      "Peak": "2.55A",
+      "RMS": "1.82A",
+      "SW1": "off",
+      "SW2": "on",
+      "SW3": "off"
+    },
+    {
+      "Peak": "2.87A",
+      "RMS": "2.05A",
+      "SW1": "on",
+      "SW2": "off",
+      "SW3": "off"
+    },
+    {
+      "Peak": "3.20A",
+      "RMS": "2.29A",
+      "SW1": "off",
+      "SW2": "off",
+      "SW3": "off"
+    }
+  ],
+  "csv": "Peak,RMS,SW1,SW2,SW3\nDefault,,on,on,on\n1.31A,0.94A,off,on,on\n1.63A,1.16A,on,off,on\n1.94A,1.39A,off,off,on\n2.24A,1.60A,on,on,off\n2.55A,1.82A,off,on,off\n2.87A,2.05A,on,off,off\n3.20A,2.29A,off,off,off\n",
+  "row_lengths": [
+    5,
+    5,
+    5,
+    5,
+    5,
+    5,
+    5,
+    5,
+    5
+  ],
+  "validation_issues": [],
+  "validation_status": "passed",
+  "review_required": false,
+  "review_reason": null,
+  "review_status": null,
+  "indexable": true,
+  "table_id": "w08-1-步进电机驱动器_pdf_page_11_table_1",
+  "page_num": 11
+}

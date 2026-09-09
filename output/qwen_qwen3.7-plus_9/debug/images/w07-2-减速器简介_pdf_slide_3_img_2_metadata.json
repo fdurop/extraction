@@ -1,0 +1,33 @@
+{
+  "original_path": "extraction/output/qwen_qwen3.7-plus_9/debug/images/w07-2-减速器简介_p3_img3.jpeg",
+  "enhanced_path": "extraction/output/qwen_qwen3.7-plus_9/debug/images/w07-2-减速器简介_p3_img3_enhanced.jpeg",
+  "description": "类型：照片\n图片展示了一个银色圆柱形金属外壳的直流减速电机（GEAR BOX MOTOR），前端伸出金属输出轴。机身贴有白色标签，可见品牌“ZHENG”及参数文字：“ZGA37RG-24100-230318A6207”、“DC 12V”、“rpm:205”。尾部标签显示型号“ZYTD520”、“DC:12V”、“5000r/min”。该实物图直观展示了课程提到的减速器外观，且标签上的输入转速（5000r/min）与输出转速（205rpm）对应了页面文本中关于减速比计算的示例数据（5000/205）。",
+  "metadata": {
+    "generation": {
+      "method": "qwen_api",
+      "backend": "api",
+      "provider": "qwen",
+      "model": "qwen3.7-plus",
+      "status": "success",
+      "api_error": null
+    },
+    "review": {
+      "required": false,
+      "status": null,
+      "reason": null,
+      "course_relevant": true
+    }
+  },
+  "error": null,
+  "method": "qwen_api",
+  "backend": "api",
+  "provider": "qwen",
+  "model": "qwen3.7-plus",
+  "status": "success",
+  "api_error": null,
+  "indexable": true,
+  "review_required": false,
+  "review_reason": null,
+  "review_status": null,
+  "course_relevant": true
+}

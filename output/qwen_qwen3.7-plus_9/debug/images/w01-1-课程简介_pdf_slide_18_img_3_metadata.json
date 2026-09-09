@@ -1,0 +1,33 @@
+{
+  "original_path": "extraction/output/qwen_qwen3.7-plus_9/debug/images/w01-1-课程简介_p18_img4.jpeg",
+  "enhanced_path": "extraction/output/qwen_qwen3.7-plus_9/debug/images/w01-1-课程简介_p18_img4_enhanced.jpeg",
+  "description": "类型：照片\n图片展示一台Bambu Lab品牌的X1-Carbon型号3D打印机。设备主体为银白色立方体机箱，正面右侧印有黑色Bambu Lab标志。机身左上方设有触摸控制屏，顶部安装有多色耗材自动供料系统（AMS），透明罩内可见绿、蓝、红等颜色的线材卷盘。中部为黑色打印腔体，透过玻璃门可见内部打印平台及机械结构组件。该设备对应课程简介中列出的“3D打印机”实验条件。",
+  "metadata": {
+    "generation": {
+      "method": "qwen_api",
+      "backend": "api",
+      "provider": "qwen",
+      "model": "qwen3.7-plus",
+      "status": "success",
+      "api_error": null
+    },
+    "review": {
+      "required": false,
+      "status": null,
+      "reason": null,
+      "course_relevant": true
+    }
+  },
+  "error": null,
+  "method": "qwen_api",
+  "backend": "api",
+  "provider": "qwen",
+  "model": "qwen3.7-plus",
+  "status": "success",
+  "api_error": null,
+  "indexable": true,
+  "review_required": false,
+  "review_reason": null,
+  "review_status": null,
+  "course_relevant": true
+}

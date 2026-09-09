@@ -1,0 +1,31 @@
+{
+  "page_num": 12,
+  "raw_text": "机电系统原理及实践—— 数字通信\n机电智控实验室tangguoan@fudan.edu.cn mmguo@fudan.edu.cn\n§4 蓝牙(Bluetooth)\n一种短距离(一般10 m 内)无线数字通信技术。\nHC06蓝牙模块用法\n只能被动连接(电脑主动搜索)。\nArduino通过软串口库来使用蓝牙模块。\n实践：用蓝牙通信替换上例的串口通信。\n23-13\nHC06蓝牙模块\n默认密码1234\n正面\n背面\nMatlab中，蓝牙用法与串口\n完全一致。或参考\nhttps://ww2.mathworks.cn/help/\nmatlab/import_export/bluetooth\n-communication-overview.html\n",
+  "cleaned_text": "§4 蓝牙(Bluetooth)\n一种短距离(一般10 m 内)无线数字通信技术。\nHC06蓝牙模块用法\n只能被动连接(电脑主动搜索)。\nArduino通过软串口库来使用蓝牙模块。\n实践：用蓝牙通信替换上例的串口通信。\nHC06蓝牙模块\n默认密码1234\n正面\n背面\nMatlab中，蓝牙用法与串口\n完全一致。或参考\nhttps://ww2.mathworks.cn/help/\nmatlab/import_export/bluetooth\n-communication-overview.html",
+  "key_points": [
+    "一种短距离(一般10 m 内)无线数字通信技术。",
+    "HC06蓝牙模块用法",
+    "只能被动连接(电脑主动搜索)。",
+    "Arduino通过软串口库来使用蓝牙模块。",
+    "实践：用蓝牙通信替换上例的串口通信。",
+    "HC06蓝牙模块",
+    "Matlab中，蓝牙用法与串口"
+  ],
+  "technical_terms": [
+    "ww2",
+    "无线数字通信技术"
+  ],
+  "has_images": true,
+  "image_count": 4,
+  "image_paths": [
+    "extraction/output/qwen_qwen3.7-plus_9/debug/images/w14-1-数字通信_p13_img3.jpeg",
+    "extraction/output/qwen_qwen3.7-plus_9/debug/images/w14-1-数字通信_p13_img11.jpeg",
+    "extraction/output/qwen_qwen3.7-plus_9/debug/images/w14-1-数字通信_p13_img12.jpeg",
+    "extraction/output/qwen_qwen3.7-plus_9/debug/images/w14-1-数字通信_p13_img13.jpeg"
+  ],
+  "metadata": {
+    "char_count": 327,
+    "word_count": 23,
+    "line_count": 19
+  }
+}

@@ -1,0 +1,5 @@
+﻿序号,LaTeX公式,名称,描述,来源图像,提取方法,置信度,验证状态,是否需审核
+1,u(t) = K_p e(t) + K_i \int_{0}^{t} e(t) \mathrm{d}t + K_d \frac{\mathrm{d}e(t)}{\mathrm{d}t} + u(0),,,extraction/output/qwen_qwen3.7-plus_8/debug/images/w13-1-电机位置检测与闭环控制 - 副本_p15_img3.jpeg,qwen_api_formula,0.95,passed,False
+2,K_p = 1;,,,extraction/output/qwen_qwen3.7-plus_8/debug/images/w13-1-电机位置检测与闭环控制 - 副本_p15_img3.jpeg,qwen_api_formula,0.9,passed,False
+3,K_i = 0;,,,extraction/output/qwen_qwen3.7-plus_8/debug/images/w13-1-电机位置检测与闭环控制 - 副本_p15_img3.jpeg,qwen_api_formula,0.9,passed,False
+4,K_d = 0;,,,extraction/output/qwen_qwen3.7-plus_8/debug/images/w13-1-电机位置检测与闭环控制 - 副本_p15_img3.jpeg,qwen_api_formula,0.9,passed,False

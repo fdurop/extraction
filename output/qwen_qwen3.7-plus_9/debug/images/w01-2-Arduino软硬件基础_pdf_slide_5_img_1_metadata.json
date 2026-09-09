@@ -1,0 +1,33 @@
+{
+  "original_path": "extraction/output/qwen_qwen3.7-plus_9/debug/images/w01-2-Arduino软硬件基础_p5_img2.png",
+  "enhanced_path": "extraction/output/qwen_qwen3.7-plus_9/debug/images/w01-2-Arduino软硬件基础_p5_img2_enhanced.png",
+  "description": "类型：表格\n图片展示了Arduino Uno R3、Arduino Uno R4与STM32三种微控制器的特性对比表。表格纵向列出14项对比维度，包括微控制器型号（如ATmega3228P、RA4M1）、架构（8位AVR、32位Arm Cortex）、时钟速度、Flash内存、SRAM、EEPROM、GPIO引脚数量及PWM支持、模拟输入位数、通信接口（UART, I2C, SPI, CAN等）、USB接口类型、电源电压、开发环境（Arduino IDE, Keil等）、扩展性、成本及适用场景。横向分别列出了这三种硬件在上述指标的具体参数差异，例如R4相比R3在内存和接口上的升级，以及STM32作为高性能选项的参数范围。",
+  "metadata": {
+    "generation": {
+      "method": "qwen_api",
+      "backend": "api",
+      "provider": "qwen",
+      "model": "qwen3.7-plus",
+      "status": "success",
+      "api_error": null
+    },
+    "review": {
+      "required": false,
+      "status": null,
+      "reason": null,
+      "course_relevant": true
+    }
+  },
+  "error": null,
+  "method": "qwen_api",
+  "backend": "api",
+  "provider": "qwen",
+  "model": "qwen3.7-plus",
+  "status": "success",
+  "api_error": null,
+  "indexable": true,
+  "review_required": false,
+  "review_reason": null,
+  "review_status": null,
+  "course_relevant": true
+}

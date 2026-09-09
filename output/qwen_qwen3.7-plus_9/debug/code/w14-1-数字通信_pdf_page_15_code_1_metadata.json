@@ -1,0 +1,14 @@
+{
+  "source_image": "extraction/output/qwen_qwen3.7-plus_9/debug/images/w14-1-数字通信_p15_img4.jpeg",
+  "extraction_method": "qwen_api_智能识别",
+  "language": "cpp",
+  "description": "该代码是一个 Arduino 程序，通过 I2C 总线与从机（下位机）进行通信。它首先将一个浮点数（π）以原始字节形式发送给地址为 20 的从机，然后请求并读取从机返回的一个字节数据，最后通过串口打印该返回值。常用于主从设备间的数据交换或状态查询。",
+  "code_file": "w14-1-数字通信_pdf_page_15_code_1.cpp",
+  "page": 15,
+  "index": 1,
+  "timestamp": "2026-09-09T21:25:03.074187",
+  "raw_response": "语言: C++ (Arduino)\n```cpp\n#include <Wire.h>\n\n// 下位机 I2C 地址\nconst byte slaveAdress = 20;\n\nvoid setup() {\n  Serial.begin(9600);\n  while (!Serial) {}\n\n  float ang = PI;\n\n  // 作为主机启动 I2C 通信\n  Wire.begin();\n  // 开始向下位机发送信息\n  Wire.beginTransmission(slaveAdress);\n  // 发送具体数据\n  Wire.write((byte*)&ang, sizeof(ang));\n  // 结束发送\n  Wire.endTransmission();\n\n  // 向下位机请求 1 字节数据\n  Wire.requestFrom(slaveAdress, 1);\n  // 等待反馈\n  while (!Wire.available())\n    ;\n  // 读取下位机发送的 1 个字节\n  bool res = Wire.read();\n\n  Serial.println(res);\n}\n```\n功能: 该代码是一个 Arduino 程序，通过 I2C 总线与从机（下位机）进行通信。它首先将一个浮点数（π）以原始字节形式发送给地址为 20 的从机，然后请求并读取从机返回的一个字节数据，最后通过串口打印该返回值。常用于主从设备间的数据交换或状态查询。",
+  "backend": "api",
+  "provider": "qwen",
+  "model": "qwen3.7-plus"
+}

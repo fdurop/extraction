@@ -1,0 +1,33 @@
+{
+  "original_path": "extraction/output/qwen_qwen3.7-plus_9/debug/images/w13-1-电机位置检测与闭环控制 - 副本_p15_img3.jpeg",
+  "enhanced_path": "extraction/output/qwen_qwen3.7-plus_9/debug/images/w13-1-电机位置检测与闭环控制 - 副本_p15_img3_enhanced.jpeg",
+  "description": "类型：示意图\n图片标题为“比例控制-P”。主体为一个二维坐标图，纵轴标注“Cycles”，横轴标注“Time (seconds)”。图表右侧列出了三组参数设定，分别为“Kp = 1...”、“Kp = 0...”和“Kp = 1...”。由于图片分辨率极低且存在严重噪点，坐标系内的具体曲线走势、刻度数值及右侧参数的完整后缀均模糊不可辨。",
+  "metadata": {
+    "generation": {
+      "method": "qwen_api",
+      "backend": "api",
+      "provider": "qwen",
+      "model": "qwen3.7-plus",
+      "status": "success",
+      "api_error": null
+    },
+    "review": {
+      "required": false,
+      "status": null,
+      "reason": null,
+      "course_relevant": true
+    }
+  },
+  "error": null,
+  "method": "qwen_api",
+  "backend": "api",
+  "provider": "qwen",
+  "model": "qwen3.7-plus",
+  "status": "success",
+  "api_error": null,
+  "indexable": true,
+  "review_required": false,
+  "review_reason": null,
+  "review_status": null,
+  "course_relevant": true
+}

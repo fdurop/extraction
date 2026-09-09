@@ -1,0 +1,33 @@
+{
+  "original_path": "extraction/output/qwen_qwen3.7-plus_8/debug/images/w04-1-有刷直流电机驱动器及其应用_slide_7_img_1.png",
+  "enhanced_path": "extraction/output/qwen_qwen3.7-plus_8/debug/images/w04-1-有刷直流电机驱动器及其应用_slide_7_img_1_enhanced.png",
+  "description": "类型：示意图\n左侧为电源输入端，上方绿色线标注“接电源-”，下方红色线标注“接电源+”，分别连接至两个标有“接线端子”的矩形框。端子引出绿线和红线连接至中间“双刀双掷开关”的四个触点，其中红线存在交叉连线。开关右侧输出端连接至标有字母“M”及文字“电机”的圆形符号。该图展示了利用双刀双掷开关改变电机接线极性的电路结构。",
+  "metadata": {
+    "generation": {
+      "method": "qwen_api",
+      "backend": "api",
+      "provider": "qwen",
+      "model": "qwen3.7-plus",
+      "status": "success",
+      "api_error": null
+    },
+    "review": {
+      "required": false,
+      "status": null,
+      "reason": null,
+      "course_relevant": true
+    }
+  },
+  "error": null,
+  "method": "qwen_api",
+  "backend": "api",
+  "provider": "qwen",
+  "model": "qwen3.7-plus",
+  "status": "success",
+  "api_error": null,
+  "indexable": true,
+  "review_required": false,
+  "review_reason": null,
+  "review_status": null,
+  "course_relevant": true
+}

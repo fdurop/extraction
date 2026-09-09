@@ -1,0 +1,35 @@
+{
+  "page_num": 4,
+  "raw_text": "机电系统原理及实践—— 数字通信\n机电智控实验室tangguoan@fudan.edu.cn mmguo@fudan.edu.cn\n例：麦轮四足机器人\n23-5\n遥控器\n上位机\nArduino \nUno R4\n姿态传感器\n关节电机\n左前\n关节电机\n右前\n关节电机\n左后\n关节电机\n右后\n麦轮编码器\n电机\n左前\n麦轮编码器\n电机\n右前\n麦轮编码器\n电机\n左后\n麦轮编码器\n电机\n右后\n下位机\nMega\nIIC\nCAN\nCAN\nCAN\nCAN\n蓝\n牙\nIIC\n",
+  "cleaned_text": "例：麦轮四足机器人\n遥控器\n上位机\nArduino\nUno R4\n姿态传感器\n关节电机\n左前\n关节电机\n右前\n关节电机\n左后\n关节电机\n右后\n麦轮编码器\n电机\n左前\n麦轮编码器\n电机\n右前\n麦轮编码器\n电机\n左后\n麦轮编码器\n电机\n右后\n下位机\nMega\nIIC\nCAN\nCAN\nCAN\nCAN\n蓝\n牙\nIIC",
+  "key_points": [
+    "Arduino",
+    "Uno R4",
+    "Mega",
+    "IIC",
+    "CAN",
+    "CAN",
+    "CAN",
+    "CAN",
+    "IIC"
+  ],
+  "technical_terms": [
+    "Arduino",
+    "CAN",
+    "IIC",
+    "Uno",
+    "关节电机",
+    "姿态传感器"
+  ],
+  "has_images": true,
+  "image_count": 2,
+  "image_paths": [
+    "extraction/output/qwen_qwen3.7-plus_8/debug/images/w14-1-数字通信_p5_img3.jpeg",
+    "extraction/output/qwen_qwen3.7-plus_8/debug/images/w14-1-数字通信_p5_img4.png"
+  ],
+  "metadata": {
+    "char_count": 228,
+    "word_count": 42,
+    "line_count": 40
+  }
+}

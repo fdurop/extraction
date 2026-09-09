@@ -1,0 +1,33 @@
+{
+  "original_path": "extraction/output/qwen_qwen3.7-plus_8/debug/images/w01-1-课程简介_p17_img5.jpeg",
+  "enhanced_path": "extraction/output/qwen_qwen3.7-plus_8/debug/images/w01-1-课程简介_p17_img5_enhanced.jpeg",
+  "description": "类型：照片\n图片展示了一个机电系统实验装置，主体为放置在白色桌面上的小提琴演奏机器人。该装置包含一把红棕色小提琴，琴身被固定在黑色与黄色相间的机械夹具中。一根细长的黑色多关节机械臂从右侧延伸过来，末端夹持琴弓搭在琴弦上。左上角嵌入了一个局部特写图，更清晰地显示了琴头部分的固定结构、舵机及连接线缆。背景可见实验室环境及投影幕布。结合上下文，此图对应课程简介中的“往届案例”之“小提琴演奏”项目。",
+  "metadata": {
+    "generation": {
+      "method": "qwen_api",
+      "backend": "api",
+      "provider": "qwen",
+      "model": "qwen3.7-plus",
+      "status": "success",
+      "api_error": null
+    },
+    "review": {
+      "required": false,
+      "status": null,
+      "reason": null,
+      "course_relevant": true
+    }
+  },
+  "error": null,
+  "method": "qwen_api",
+  "backend": "api",
+  "provider": "qwen",
+  "model": "qwen3.7-plus",
+  "status": "success",
+  "api_error": null,
+  "indexable": true,
+  "review_required": false,
+  "review_reason": null,
+  "review_status": null,
+  "course_relevant": true
+}

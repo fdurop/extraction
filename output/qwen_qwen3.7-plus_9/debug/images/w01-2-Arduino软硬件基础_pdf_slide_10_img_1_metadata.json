@@ -1,0 +1,33 @@
+{
+  "original_path": "extraction/output/qwen_qwen3.7-plus_9/debug/images/w01-2-Arduino软硬件基础_p10_img2.jpeg",
+  "enhanced_path": "extraction/output/qwen_qwen3.7-plus_9/debug/images/w01-2-Arduino软硬件基础_p10_img2_enhanced.jpeg",
+  "description": "类型：照片\n图片展示了一把世达（SATA）品牌剥线钳，型号标识为91212。工具主体由米白色金属头部和绿色防滑手柄组成，中间连接处可见黑色复位弹簧，头部顶端设有用于剥离导线绝缘层的钳口结构。该图片对应课程文本中“导线的制备要求”环节，直观展示了文中提到的“剥线钳”实物对象。",
+  "metadata": {
+    "generation": {
+      "method": "qwen_api",
+      "backend": "api",
+      "provider": "qwen",
+      "model": "qwen3.7-plus",
+      "status": "success",
+      "api_error": null
+    },
+    "review": {
+      "required": false,
+      "status": null,
+      "reason": null,
+      "course_relevant": true
+    }
+  },
+  "error": null,
+  "method": "qwen_api",
+  "backend": "api",
+  "provider": "qwen",
+  "model": "qwen3.7-plus",
+  "status": "success",
+  "api_error": null,
+  "indexable": true,
+  "review_required": false,
+  "review_reason": null,
+  "review_status": null,
+  "course_relevant": true
+}

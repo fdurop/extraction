@@ -1,0 +1,33 @@
+{
+  "original_path": "extraction/output/qwen_qwen3.7-plus_8/debug/images/w10-1-直线运动平台（下）_slide_3_vector_fallback.png",
+  "enhanced_path": "extraction/output/qwen_qwen3.7-plus_8/debug/images/w10-1-直线运动平台（下）_slide_3_vector_fallback_enhanced.png",
+  "description": "类型：示意图\n标题“§1 滑台初始化复位”。左侧列出步骤：①触碰滑台边界（触发接近开关）；②到达起始位置（反向移动，接近开关复位即停）；③等待控制指令。右侧为电路接线图，核心为UNO板：D4/D5接方向操纵杆（左移/右移）；D6/D7接步进电机驱动器（PUL+/PUL-/DIR+/DIR-）；5V/GND经急停开关(EMG)接驱动器ENA+/ENA-；A0接电位器(AI)；D10接启停开关(DI)；D11/D12分别接LIM-左/LIM-右接近开关(DI)。驱动器输出A/A-/B/B-至步进电机，并接强电电源。右上角红框提问：“在初始化过程中，启停开关不起作用，如何改进？”。底部标注文件名“w10-s1-sliderReset.ino”。",
+  "metadata": {
+    "generation": {
+      "method": "qwen_api",
+      "backend": "api",
+      "provider": "qwen",
+      "model": "qwen3.7-plus",
+      "status": "success",
+      "api_error": null
+    },
+    "review": {
+      "required": false,
+      "status": null,
+      "reason": null,
+      "course_relevant": true
+    }
+  },
+  "error": null,
+  "method": "qwen_api",
+  "backend": "api",
+  "provider": "qwen",
+  "model": "qwen3.7-plus",
+  "status": "success",
+  "api_error": null,
+  "indexable": true,
+  "review_required": false,
+  "review_reason": null,
+  "review_status": null,
+  "course_relevant": true
+}

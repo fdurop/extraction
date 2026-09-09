@@ -1,0 +1,33 @@
+{
+  "original_path": "extraction/output/qwen_qwen3.7-plus_9/debug/images/w10-1-直线运动平台（下）_slide_6_img_1.png",
+  "enhanced_path": "extraction/output/qwen_qwen3.7-plus_9/debug/images/w10-1-直线运动平台（下）_slide_6_img_1_enhanced.png",
+  "description": "类型：公式\n图片展示了步进电机转角$\\theta(t)$与转速$\\omega(t)$的关系。首先列出连续时间积分公式：$\\theta(t_1) = \\theta(t_0) + \\int_{t_0}^{t_1} \\omega(t)dt$。接着定义$\\Delta t$为loop循环时间间隔，给出离散化公式：$\\theta[n\\Delta t] = \\theta[(n-1)\\Delta t] + \\omega[n\\Delta t]\\Delta t$。随后说明用每脉冲转角$\\Delta\\theta$将$\\theta$和$\\omega$无量纲化，单位分别为脉冲数和脉冲数/微秒。最后指出当$|\\theta[n\\Delta t]| \\ge 0.5$时电机转动一格，同时累加值$\\mp 1$，角位移误差始终小于$\\Delta\\theta/2$。",
+  "metadata": {
+    "generation": {
+      "method": "qwen_api",
+      "backend": "api",
+      "provider": "qwen",
+      "model": "qwen3.7-plus",
+      "status": "success",
+      "api_error": null
+    },
+    "review": {
+      "required": false,
+      "status": null,
+      "reason": null,
+      "course_relevant": true
+    }
+  },
+  "error": null,
+  "method": "qwen_api",
+  "backend": "api",
+  "provider": "qwen",
+  "model": "qwen3.7-plus",
+  "status": "success",
+  "api_error": null,
+  "indexable": true,
+  "review_required": false,
+  "review_reason": null,
+  "review_status": null,
+  "course_relevant": true
+}

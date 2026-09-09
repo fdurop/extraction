@@ -1,0 +1,23 @@
+{
+  "page_num": 15,
+  "raw_text": "机电系统原理及实践—— 机电系统在动力学与控制中的应用\n机电智控实验室tangguoan@fudan.edu.cn mmguo@fudan.edu.cn\n16-16\n§5.3 倒立摆演示——闭环倒立\nmax\nmax\ncos ( )< 0 and |sin ( ) | <sin\n and | ( )| < \nt\nt\nt\n\n\n\n\n\n当摆角接近垂直向上的位置，即\n(\n)\n1\n2\n3\ns\n4\ns\n5\ns\n(2)\n(2)\ns\ns\n1\n2\n3\n5\n5\n( )\nsin ( )+\n( )+\n( )+\n( )+\n( )d\n(\n)\n( )\n +\n( )\n38.53,  \n 6.58,  \n7.2,  \n6.63,  \n3.16\nt\nk\nt\nk\nt\nk u t\nk u t\nk\nu t\nt\nu\nt\nt\nt\nT\nu\nt\nk\nk\nk\nk\nk\n\n\n\n\n= −\n+ \n=\n\n=\n=\n= −\n= −\n= −\n\n否则继续执行闭环起摆。\n",
+  "cleaned_text": "§5.3 倒立摆演示——闭环倒立\nmax\nmax\ncos ( )< 0 and |sin ( ) | <sin\nand | ( )| <\nt\nt\nt\n当摆角接近垂直向上的位置，即\n(\n)\n1\n2\n3\ns\n4\ns\n5\ns\n(2)\n(2)\ns\ns\n1\n2\n3\n5\n5\n( )\nsin ( )+\n( )+\n( )+\n( )+\n( )d\n(\n)\n( )\n+\n( )\n38.53,\n6.58,\n7.2,\n6.63,\n3.16\nt\nk\nt\nk\nt\nk u t\nk u t\nk\nu t\nt\nu\nt\nt\nt\nT\nu\nt\nk\nk\nk\nk\nk\n= −\n+\n=\n=\n=\n= −\n= −\n= −\n否则继续执行闭环起摆。",
+  "key_points": [
+    "38.53,",
+    "6.58,",
+    "7.2,",
+    "6.63,",
+    "3.16",
+    "T",
+    "否则继续执行闭环起摆。"
+  ],
+  "technical_terms": [],
+  "has_images": false,
+  "image_count": 0,
+  "image_paths": [],
+  "metadata": {
+    "char_count": 417,
+    "word_count": 124,
+    "line_count": 90
+  }
+}

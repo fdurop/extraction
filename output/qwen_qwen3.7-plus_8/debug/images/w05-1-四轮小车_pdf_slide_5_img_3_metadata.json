@@ -1,0 +1,33 @@
+{
+  "original_path": "extraction/output/qwen_qwen3.7-plus_8/debug/images/w05-1-四轮小车_p5_img4.jpeg",
+  "enhanced_path": "extraction/output/qwen_qwen3.7-plus_8/debug/images/w05-1-四轮小车_p5_img4_enhanced.jpeg",
+  "description": "类型：照片\n图片展示了四轮小车驱动系统的三个关键硬件组件，背景为黑色。左侧是一个银色圆柱形直流减速电机，机身贴有白色标签，可见“Faulhaber”品牌标识及型号“3557...”，前端伸出金属输出轴。右侧是一个黑色橡胶轮胎，安装在带有辐条结构的轮毂上，胎面具有明显的防滑纹理。中间下方放置着一个小型的金属联轴器，呈阶梯轴状，侧面可见用于紧固的螺丝孔。这三个对象并列展示，直观呈现了电机、传动连接件与车轮的物理形态。",
+  "metadata": {
+    "generation": {
+      "method": "qwen_api",
+      "backend": "api",
+      "provider": "qwen",
+      "model": "qwen3.7-plus",
+      "status": "success",
+      "api_error": null
+    },
+    "review": {
+      "required": false,
+      "status": null,
+      "reason": null,
+      "course_relevant": true
+    }
+  },
+  "error": null,
+  "method": "qwen_api",
+  "backend": "api",
+  "provider": "qwen",
+  "model": "qwen3.7-plus",
+  "status": "success",
+  "api_error": null,
+  "indexable": true,
+  "review_required": false,
+  "review_reason": null,
+  "review_status": null,
+  "course_relevant": true
+}

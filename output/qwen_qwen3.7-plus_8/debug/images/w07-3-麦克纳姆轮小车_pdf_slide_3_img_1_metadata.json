@@ -1,0 +1,33 @@
+{
+  "original_path": "extraction/output/qwen_qwen3.7-plus_8/debug/images/w07-3-麦克纳姆轮小车_p3_img2.jpeg",
+  "enhanced_path": "extraction/output/qwen_qwen3.7-plus_8/debug/images/w07-3-麦克纳姆轮小车_p3_img2_enhanced.jpeg",
+  "description": "类型：照片\n图片展示了一个工业车间场景。右侧主体是一台黄色的重型自动导引车（AGV），车身侧面印有绿色箭头标识，底盘四角安装有麦克纳姆轮，车上载有银灰色圆柱形容器及黑色机械升降结构。左侧背景可见发出橙红色光芒的高温熔炉或加热设备，以及绿色的工业门和墙壁安全标识。前景放置有深色的矩形金属模具或料箱。该图直观展示了课程文本中提到的麦克纳姆轮在工业全方位移动平台（如仓储机器人、叉车）中的实际应用形态。",
+  "metadata": {
+    "generation": {
+      "method": "qwen_api",
+      "backend": "api",
+      "provider": "qwen",
+      "model": "qwen3.7-plus",
+      "status": "success",
+      "api_error": null
+    },
+    "review": {
+      "required": false,
+      "status": null,
+      "reason": null,
+      "course_relevant": true
+    }
+  },
+  "error": null,
+  "method": "qwen_api",
+  "backend": "api",
+  "provider": "qwen",
+  "model": "qwen3.7-plus",
+  "status": "success",
+  "api_error": null,
+  "indexable": true,
+  "review_required": false,
+  "review_reason": null,
+  "review_status": null,
+  "course_relevant": true
+}

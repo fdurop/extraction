@@ -1,0 +1,306 @@
+{
+  "title": "Pulse/rev Table",
+  "headers": [
+    [
+      "Pulse/rev",
+      "SW5",
+      "SW6",
+      "SW7",
+      "SW8"
+    ]
+  ],
+  "cells": [
+    [
+      "200",
+      "ON",
+      "ON",
+      "ON",
+      "ON"
+    ],
+    [
+      "400",
+      "OFF",
+      "ON",
+      "ON",
+      "ON"
+    ],
+    [
+      "800",
+      "ON",
+      "OFF",
+      "ON",
+      "ON"
+    ],
+    [
+      "1600",
+      "OFF",
+      "OFF",
+      "ON",
+      "ON"
+    ],
+    [
+      "3200",
+      "ON",
+      "ON",
+      "OFF",
+      "ON"
+    ],
+    [
+      "6400",
+      "OFF",
+      "ON",
+      "OFF",
+      "ON"
+    ],
+    [
+      "12800",
+      "ON",
+      "OFF",
+      "OFF",
+      "ON"
+    ],
+    [
+      "25600",
+      "OFF",
+      "OFF",
+      "OFF",
+      "ON"
+    ],
+    [
+      "51200",
+      "ON",
+      "ON",
+      "ON",
+      "OFF"
+    ],
+    [
+      "10000",
+      "OFF",
+      "ON",
+      "ON",
+      "OFF"
+    ],
+    [
+      "20000",
+      "ON",
+      "OFF",
+      "ON",
+      "OFF"
+    ],
+    [
+      "40000",
+      "OFF",
+      "OFF",
+      "ON",
+      "OFF"
+    ],
+    [
+      "80000",
+      "ON",
+      "ON",
+      "OFF",
+      "OFF"
+    ],
+    [
+      "160000",
+      "OFF",
+      "ON",
+      "OFF",
+      "OFF"
+    ],
+    [
+      "320000",
+      "ON",
+      "OFF",
+      "OFF",
+      "OFF"
+    ],
+    [
+      "640000",
+      "OFF",
+      "OFF",
+      "OFF",
+      "OFF"
+    ]
+  ],
+  "merged_cells": [],
+  "units": {},
+  "footnotes": [],
+  "uncertain_cells": [
+    [
+      9,
+      0
+    ]
+  ],
+  "confidence": 0.3156,
+  "source_image": "extraction/output/qwen_qwen3.7-plus_9/debug/images/w03-1-直流电机原理_p18_img2.jpeg",
+  "recognition_image_path": "extraction/output/qwen_qwen3.7-plus_9/debug/images/w03-1-直流电机原理_p18_img2_table_ready_r0.png",
+  "source_type": "image_vlm_table",
+  "extraction_method": "qwen_api_table",
+  "backend": "api",
+  "provider": "qwen",
+  "model": "qwen3.7-plus",
+  "image_index": 0,
+  "table_region_index": 2,
+  "visible_table_count": 2,
+  "extracted_table_count": 2,
+  "coverage_complete": true,
+  "raw_response": "{\n  \"has_table\": true,\n  \"visible_table_count\": 2,\n  \"coverage_complete\": true,\n  \"tables\": [\n    {\n      \"title\": \"Current Table\",\n      \"headers\": [\n        [\n          \"Peak\",\n          \"RMS\",\n          \"SW1\",\n          \"SW2\",\n          \"SW3\"\n        ]\n      ],\n      \"cells\": [\n        [\n          \"1.0\",\n          \"0.7\",\n          \"ON\",\n          \"ON\",\n          \"ON\"\n        ],\n        [\n          \"1.2\",\n          \"1.1\",\n          \"OFF\",\n          \"ON\",\n          \"ON\"\n        ],\n        [\n          \"1.6\",\n          \"1.4\",\n          \"ON\",\n          \"OFF\",\n          \"ON\"\n        ],\n        [\n          \"1.8\",\n          \"1.6\",\n          \"OFF\",\n          \"OFF\",\n          \"ON\"\n        ],\n        [\n          \"2.0\",\n          \"2.1\",\n          \"ON\",\n          \"ON\",\n          \"OFF\"\n        ],\n        [\n          \"2.7\",\n          \"2.8\",\n          \"OFF\",\n          \"ON\",\n          \"OFF\"\n        ],\n        [\n          \"4.0\",\n          \"3.5\",\n          \"ON\",\n          \"OFF\",\n          \"OFF\"\n        ],\n        [\n          \"5.0\",\n          \"3.1\",\n          \"OFF\",\n          \"OFF\",\n          \"OFF\"\n        ]\n      ],\n      \"merged_cells\": [],\n      \"units\": {\n        \"Peak\": \"A\",\n        \"RMS\": \"A\"\n      },\n      \"footnotes\": [\n        \"SW4 off=Half Current, on=Full Current\"\n      ],\n      \"uncertain_cells\": [],\n      \"confidence\": 0.95\n    },\n    {\n      \"title\": \"Pulse/rev Table\",\n      \"headers\": [\n        [\n          \"Pulse/rev\",\n          \"SW5\",\n          \"SW6\",\n          \"SW7\",\n          \"SW8\"\n        ]\n      ],\n      \"cells\": [\n        [\n          \"200\",\n          \"ON\",\n          \"ON\",\n          \"ON\",\n          \"ON\"\n        ],\n        [\n          \"400\",\n          \"OFF\",\n          \"ON\",\n          \"ON\",\n          \"ON\"\n        ],\n        [\n          \"800\",\n          \"ON\",\n          \"OFF\",\n          \"ON\",\n          \"ON\"\n        ],\n        [\n          \"1600\",\n          \"OFF\",\n          \"OFF\",\n          \"ON\",\n          \"ON\"\n        ],\n        [\n          \"3200\",\n          \"ON\",\n          \"ON\",\n          \"OFF\",\n          \"ON\"\n        ],\n        [\n          \"6400\",\n          \"OFF\",\n          \"ON\",\n          \"OFF\",\n          \"ON\"\n        ],\n        [\n          \"12800\",\n          \"ON\",\n          \"OFF\",\n          \"OFF\",\n          \"ON\"\n        ],\n        [\n          \"25600\",\n          \"OFF\",\n          \"OFF\",\n          \"OFF\",\n          \"ON\"\n        ],\n        [\n          \"51200\",\n          \"ON\",\n          \"ON\",\n          \"ON\",\n          \"OFF\"\n        ],\n        [\n          \"10000\",\n          \"OFF\",\n          \"ON\",\n          \"ON\",\n          \"OFF\"\n        ],\n        [\n          \"20000\",\n          \"ON\",\n          \"OFF\",\n          \"ON\",\n          \"OFF\"\n        ],\n        [\n          \"40000\",\n          \"OFF\",\n          \"OFF\",\n          \"ON\",\n          \"OFF\"\n        ],\n        [\n          \"80000\",\n          \"ON\",\n          \"ON\",\n          \"OFF\",\n          \"OFF\"\n        ],\n        [\n          \"160000\",\n          \"OFF\",\n          \"ON\",\n          \"OFF\",\n          \"OFF\"\n        ],\n        [\n          \"320000\",\n          \"ON\",\n          \"OFF\",\n          \"OFF\",\n          \"OFF\"\n        ],\n        [\n          \"640000\",\n          \"OFF\",\n          \"OFF\",\n          \"OFF\",\n          \"OFF\"\n        ]\n      ],\n      \"merged_cells\": [],\n      \"units\": {},\n      \"footnotes\": [],\n      \"uncertain_cells\": [\n        [\n          9,\n          0\n        ]\n      ],\n      \"confidence\": 0.85\n    }\n  ]\n}",
+  "preprocessing": {
+    "rotation": 0,
+    "scale": 2.8933,
+    "attempt": 1
+  },
+  "auto_repairs": [],
+  "rows": 16,
+  "cols": 5,
+  "description": "Pulse/rev Table",
+  "json": [
+    {
+      "Pulse/rev": "200",
+      "SW5": "ON",
+      "SW6": "ON",
+      "SW7": "ON",
+      "SW8": "ON"
+    },
+    {
+      "Pulse/rev": "400",
+      "SW5": "OFF",
+      "SW6": "ON",
+      "SW7": "ON",
+      "SW8": "ON"
+    },
+    {
+      "Pulse/rev": "800",
+      "SW5": "ON",
+      "SW6": "OFF",
+      "SW7": "ON",
+      "SW8": "ON"
+    },
+    {
+      "Pulse/rev": "1600",
+      "SW5": "OFF",
+      "SW6": "OFF",
+      "SW7": "ON",
+      "SW8": "ON"
+    },
+    {
+      "Pulse/rev": "3200",
+      "SW5": "ON",
+      "SW6": "ON",
+      "SW7": "OFF",
+      "SW8": "ON"
+    },
+    {
+      "Pulse/rev": "6400",
+      "SW5": "OFF",
+      "SW6": "ON",
+      "SW7": "OFF",
+      "SW8": "ON"
+    },
+    {
+      "Pulse/rev": "12800",
+      "SW5": "ON",
+      "SW6": "OFF",
+      "SW7": "OFF",
+      "SW8": "ON"
+    },
+    {
+      "Pulse/rev": "25600",
+      "SW5": "OFF",
+      "SW6": "OFF",
+      "SW7": "OFF",
+      "SW8": "ON"
+    },
+    {
+      "Pulse/rev": "51200",
+      "SW5": "ON",
+      "SW6": "ON",
+      "SW7": "ON",
+      "SW8": "OFF"
+    },
+    {
+      "Pulse/rev": "10000",
+      "SW5": "OFF",
+      "SW6": "ON",
+      "SW7": "ON",
+      "SW8": "OFF"
+    },
+    {
+      "Pulse/rev": "20000",
+      "SW5": "ON",
+      "SW6": "OFF",
+      "SW7": "ON",
+      "SW8": "OFF"
+    },
+    {
+      "Pulse/rev": "40000",
+      "SW5": "OFF",
+      "SW6": "OFF",
+      "SW7": "ON",
+      "SW8": "OFF"
+    },
+    {
+      "Pulse/rev": "80000",
+      "SW5": "ON",
+      "SW6": "ON",
+      "SW7": "OFF",
+      "SW8": "OFF"
+    },
+    {
+      "Pulse/rev": "160000",
+      "SW5": "OFF",
+      "SW6": "ON",
+      "SW7": "OFF",
+      "SW8": "OFF"
+    },
+    {
+      "Pulse/rev": "320000",
+      "SW5": "ON",
+      "SW6": "OFF",
+      "SW7": "OFF",
+      "SW8": "OFF"
+    },
+    {
+      "Pulse/rev": "640000",
+      "SW5": "OFF",
+      "SW6": "OFF",
+      "SW7": "OFF",
+      "SW8": "OFF"
+    }
+  ],
+  "csv": "Pulse/rev,SW5,SW6,SW7,SW8\n200,ON,ON,ON,ON\n400,OFF,ON,ON,ON\n800,ON,OFF,ON,ON\n1600,OFF,OFF,ON,ON\n3200,ON,ON,OFF,ON\n6400,OFF,ON,OFF,ON\n12800,ON,OFF,OFF,ON\n25600,OFF,OFF,OFF,ON\n51200,ON,ON,ON,OFF\n10000,OFF,ON,ON,OFF\n20000,ON,OFF,ON,OFF\n40000,OFF,OFF,ON,OFF\n80000,ON,ON,OFF,OFF\n160000,OFF,ON,OFF,OFF\n320000,ON,OFF,OFF,OFF\n640000,OFF,OFF,OFF,OFF\n",
+  "row_lengths": [
+    5,
+    5,
+    5,
+    5,
+    5,
+    5,
+    5,
+    5,
+    5,
+    5,
+    5,
+    5,
+    5,
+    5,
+    5,
+    5,
+    5
+  ],
+  "validation_issues": [
+    "uncertain_cells",
+    "uncertain_cells",
+    "multiple_tables_require_review"
+  ],
+  "validation_status": "review",
+  "review_required": true,
+  "review_reason": "uncertain_cells",
+  "review_status": "pending",
+  "indexable": false,
+  "table_id": "w03-1-直流电机原理_pdf_page_18_table_2",
+  "page_num": 18,
+  "review_image_path": "extraction/output/qwen_qwen3.7-plus_9/table_review_items/w03-1-直流电机原理_pdf_page_18_table_2.png",
+  "source_document": "w03-1-直流电机原理_pdf"
+}

@@ -1,0 +1,33 @@
+{
+  "original_path": "extraction/output/qwen_qwen3.7-plus_8/debug/images/w01-1-课程简介_p12_img2.jpeg",
+  "enhanced_path": "extraction/output/qwen_qwen3.7-plus_8/debug/images/w01-1-课程简介_p12_img2_enhanced.jpeg",
+  "description": "类型：照片\n图片展示室内实验室场景，地面停放一辆轮式机器人实践平台。该机器人采用金属框架底盘，配备四个麦克纳姆轮，顶部安装有白色半球形传感器及黑色电路板等电子元件。一名身穿深色短袖的男子站立在机器人旁，双手持握控制器进行操作。背景可见投影幕布、实验桌及带有观察窗的白色房门。结合上下文，该图直观展示了课程中提及的“实践平台的迭代进化——轮式机器人”实物形态。",
+  "metadata": {
+    "generation": {
+      "method": "qwen_api",
+      "backend": "api",
+      "provider": "qwen",
+      "model": "qwen3.7-plus",
+      "status": "success",
+      "api_error": null
+    },
+    "review": {
+      "required": false,
+      "status": null,
+      "reason": null,
+      "course_relevant": true
+    }
+  },
+  "error": null,
+  "method": "qwen_api",
+  "backend": "api",
+  "provider": "qwen",
+  "model": "qwen3.7-plus",
+  "status": "success",
+  "api_error": null,
+  "indexable": true,
+  "review_required": false,
+  "review_reason": null,
+  "review_status": null,
+  "course_relevant": true
+}

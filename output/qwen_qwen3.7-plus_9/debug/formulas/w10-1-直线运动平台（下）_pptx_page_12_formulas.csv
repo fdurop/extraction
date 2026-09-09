@@ -1,0 +1,8 @@
+﻿序号,LaTeX公式,名称,描述,来源图像,提取方法,置信度,验证状态,是否需审核
+1,\ddot{\theta}(t) + 2\omega_n\zeta\dot{\theta}(t) + \omega_n^2\theta(t) = \frac{\ddot{u}_s(t)}{l},,,extraction/output/qwen_qwen3.7-plus_9/debug/images/w10-1-直线运动平台（下）_slide_12_img_1.png,qwen_api_formula,1.0,passed,False
+2,\omega_n = \sqrt{\frac{g}{l}},,,extraction/output/qwen_qwen3.7-plus_9/debug/images/w10-1-直线运动平台（下）_slide_12_img_1.png,qwen_api_formula,1.0,passed,False
+3,\zeta = \frac{c}{2m\sqrt{gl}},,,extraction/output/qwen_qwen3.7-plus_9/debug/images/w10-1-直线运动平台（下）_slide_12_img_1.png,qwen_api_formula,1.0,passed,False
+4,e^{-\zeta \omega_n t} \sin(\omega_d t),,,extraction/output/qwen_qwen3.7-plus_9/debug/images/w10-1-直线运动平台（下）_slide_12_img_2.png,qwen_api_formula,0.72,review,True
+5,e^{-\zeta \omega_n t} \cos(\omega_d t),,,extraction/output/qwen_qwen3.7-plus_9/debug/images/w10-1-直线运动平台（下）_slide_12_img_2.png,qwen_api_formula,0.72,review,True
+6,\omega_d = \omega_n \sqrt{1 - \zeta^2},,,extraction/output/qwen_qwen3.7-plus_9/debug/images/w10-1-直线运动平台（下）_slide_12_img_2.png,qwen_api_formula,1.0,passed,False
+7,"c = 0, \quad \zeta = 0, \quad \omega_d = \omega_n",,,extraction/output/qwen_qwen3.7-plus_9/debug/images/w10-1-直线运动平台（下）_slide_12_img_2.png,qwen_api_formula,1.0,passed,False

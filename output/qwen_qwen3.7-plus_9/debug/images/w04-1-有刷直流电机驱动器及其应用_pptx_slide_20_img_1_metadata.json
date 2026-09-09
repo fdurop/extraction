@@ -1,0 +1,33 @@
+{
+  "original_path": "extraction/output/qwen_qwen3.7-plus_9/debug/images/w04-1-有刷直流电机驱动器及其应用_slide_20_img_2.png",
+  "enhanced_path": "extraction/output/qwen_qwen3.7-plus_9/debug/images/w04-1-有刷直流电机驱动器及其应用_slide_20_img_2_enhanced.png",
+  "description": "类型：示意图\n图片展示了钣金件一角的局部工程图。可见两条垂直相交的粗实线构成零件外轮廓。中心位置绘有十字中心线，围绕中心有一个直径标注为Φ30.9的点画线圆（分布圆）。在此圆周上均匀分布着6个小圆孔，引线标注尺寸为“6-Φ3.2”，表示数量为6个、直径为3.2的孔。其中一个孔位于左下方45度方向，其余孔对称分布。",
+  "metadata": {
+    "generation": {
+      "method": "qwen_api",
+      "backend": "api",
+      "provider": "qwen",
+      "model": "qwen3.7-plus",
+      "status": "success",
+      "api_error": null
+    },
+    "review": {
+      "required": false,
+      "status": null,
+      "reason": null,
+      "course_relevant": true
+    }
+  },
+  "error": null,
+  "method": "qwen_api",
+  "backend": "api",
+  "provider": "qwen",
+  "model": "qwen3.7-plus",
+  "status": "success",
+  "api_error": null,
+  "indexable": true,
+  "review_required": false,
+  "review_reason": null,
+  "review_status": null,
+  "course_relevant": true
+}

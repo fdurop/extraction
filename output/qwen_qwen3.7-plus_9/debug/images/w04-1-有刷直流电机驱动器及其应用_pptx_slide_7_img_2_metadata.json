@@ -1,0 +1,33 @@
+{
+  "original_path": "extraction/output/qwen_qwen3.7-plus_9/debug/images/w04-1-有刷直流电机驱动器及其应用_slide_7_img_2.png",
+  "enhanced_path": "extraction/output/qwen_qwen3.7-plus_9/debug/images/w04-1-有刷直流电机驱动器及其应用_slide_7_img_2_enhanced.png",
+  "description": "类型：示意图\n图片展示了有刷直流电机调速与转向的控制逻辑文本结构。\n第一部分标题为“调速：调整电流大小”，下级内容包括“PWM信号 + 固态继电器”，以及说明文字“控制环的模拟电压 调节 动力环的模拟电压”。\n第二部分标题为“转向：调整电流方向”，下级内容包括“H桥电路⇔双刀双掷开关”，以及实现方式“四路固态继电器 或 两路电磁继电器”。\n文字通过深蓝色圆点、浅蓝色圆点和灰色圆点区分层级，红色字体强调关键组件与原理描述。",
+  "metadata": {
+    "generation": {
+      "method": "qwen_api",
+      "backend": "api",
+      "provider": "qwen",
+      "model": "qwen3.7-plus",
+      "status": "success",
+      "api_error": null
+    },
+    "review": {
+      "required": false,
+      "status": null,
+      "reason": null,
+      "course_relevant": true
+    }
+  },
+  "error": null,
+  "method": "qwen_api",
+  "backend": "api",
+  "provider": "qwen",
+  "model": "qwen3.7-plus",
+  "status": "success",
+  "api_error": null,
+  "indexable": true,
+  "review_required": false,
+  "review_reason": null,
+  "review_status": null,
+  "course_relevant": true
+}

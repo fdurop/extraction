@@ -1,0 +1,33 @@
+{
+  "original_path": "extraction/output/qwen_qwen3.7-plus_9/debug/images/w04-1-有刷直流电机驱动器及其应用_slide_12_img_1.png",
+  "enhanced_path": "extraction/output/qwen_qwen3.7-plus_9/debug/images/w04-1-有刷直流电机驱动器及其应用_slide_12_img_1_enhanced.png",
+  "description": "类型：照片\n图片展示了一块红色的有刷直流电机驱动板（型号XY-15AS）。左侧黑色接线端子连接电机（标注M）；右上角绿色接线端子连接9~36V电源（标注+、-），旁注“保险丝”；右下角黄色排针接口包含五个引脚，从上至下依次标注为GND、1N2、1N1、PWM、5VO，对应连线说明分别接地、接1/0信号、接1/0信号、接PWM信号及输出5V电压。板上可见大型电解电容、芯片及电阻等电子元件。",
+  "metadata": {
+    "generation": {
+      "method": "qwen_api",
+      "backend": "api",
+      "provider": "qwen",
+      "model": "qwen3.7-plus",
+      "status": "success",
+      "api_error": null
+    },
+    "review": {
+      "required": false,
+      "status": null,
+      "reason": null,
+      "course_relevant": true
+    }
+  },
+  "error": null,
+  "method": "qwen_api",
+  "backend": "api",
+  "provider": "qwen",
+  "model": "qwen3.7-plus",
+  "status": "success",
+  "api_error": null,
+  "indexable": true,
+  "review_required": false,
+  "review_reason": null,
+  "review_status": null,
+  "course_relevant": true
+}

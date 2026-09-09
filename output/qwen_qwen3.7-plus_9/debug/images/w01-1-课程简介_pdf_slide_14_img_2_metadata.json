@@ -1,0 +1,33 @@
+{
+  "original_path": "extraction/output/qwen_qwen3.7-plus_9/debug/images/w01-1-课程简介_p14_img3.jpeg",
+  "enhanced_path": "extraction/output/qwen_qwen3.7-plus_9/debug/images/w01-1-课程简介_p14_img3_enhanced.jpeg",
+  "description": "类型：照片\n图片展示机电实验室场景。左侧一名穿粉色卫衣、戴护目镜的女生手持黑色有线操作盒，面对银色仪器柜。墙上挂有防护面罩及带数字显示屏的黑色数控系统控制器，线缆连接至右侧设备。右侧为正在运行的数控铣床特写，可见主轴、刀具及覆盖金属切屑的工作台。画面直观呈现课程“边学边做”及分组实践的教学环境。",
+  "metadata": {
+    "generation": {
+      "method": "qwen_api",
+      "backend": "api",
+      "provider": "qwen",
+      "model": "qwen3.7-plus",
+      "status": "success",
+      "api_error": null
+    },
+    "review": {
+      "required": false,
+      "status": null,
+      "reason": null,
+      "course_relevant": true
+    }
+  },
+  "error": null,
+  "method": "qwen_api",
+  "backend": "api",
+  "provider": "qwen",
+  "model": "qwen3.7-plus",
+  "status": "success",
+  "api_error": null,
+  "indexable": true,
+  "review_required": false,
+  "review_reason": null,
+  "review_status": null,
+  "course_relevant": true
+}

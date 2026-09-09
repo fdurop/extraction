@@ -1,0 +1,32 @@
+{
+  "page_num": 9,
+  "raw_text": "§3 \n实践：\n有刷直流电机驱动与控制\nStep 2: \n控制\n有刷\n直流电机的转向和\n转速\n正弦速度变化\n硬件\nUno\n四路固态继电器 \n+ \n一路固态继电器（用\nPWM\n控制）\n或：\n仅用四路固态继电器，对 \nch1 \n和 \nch3 \n采用\nPWM\n控制\n。\n代码\nmillis\n();  // \n返回值：程序运行以来的毫秒数（\nunsigned long\n）\nanalogWrite\n(\npinPWM\n, \npwm\n);  // \n带 \n~ \n的数字端口\n输出 \npwm\n \n信号\n23-\n评分规则\n基准分（\n15 \n分钟之内完成）\n      1 ~ 4 \n名：\n100 / 95 / 90 / 88\n扣分\n      强\n/\n弱电接错：扣 \n20 \n分\n/\n次\n           线头脱落：扣 \n10 \n分\n/\n次\n           线路杂乱：扣 \n5 ~ 20 \n分\n       \n代码不规范：扣\n 5 ~ 10 \n分\n                   \n超时：扣 \n2 \n分\n/\n分钟",
+  "cleaned_text": "§3\n实践：\n有刷直流电机驱动与控制\nStep 2:\n控制\n有刷\n直流电机的转向和\n转速\n正弦速度变化\n硬件\nUno\n四路固态继电器\n+\n一路固态继电器（用\nPWM\n控制）\n或：\n仅用四路固态继电器，对\nch1\n和\nch3\n采用\nPWM\n控制\n。\n代码\nmillis\n(); //\n返回值：程序运行以来的毫秒数（\nunsigned long\n）\nanalogWrite\n(\npinPWM\n,\npwm\n); //\n带\n~\n的数字端口\n输出\npwm\n信号\n评分规则\n基准分（\n15\n分钟之内完成）\n1 ~ 4\n名：\n100 / 95 / 90 / 88\n扣分\n强\n/\n弱电接错：扣\n20\n分\n/\n次\n线头脱落：扣\n10\n分\n/\n次\n线路杂乱：扣\n5 ~ 20\n分\n代码不规范：扣\n5 ~ 10\n分\n超时：扣\n2\n分\n/\n分钟",
+  "key_points": [
+    "实践：",
+    "Step 2:",
+    "Uno",
+    "PWM",
+    "或：",
+    "PWM",
+    "。",
+    "名："
+  ],
+  "technical_terms": [
+    "PWM",
+    "Uno",
+    "ch1",
+    "ch3",
+    "有刷直流电机",
+    "有刷直流电机驱动与控制",
+    "直流电机"
+  ],
+  "has_images": false,
+  "image_count": 0,
+  "image_paths": [],
+  "metadata": {
+    "char_count": 456,
+    "word_count": 91,
+    "line_count": 78
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "page_num": 6,
+  "raw_text": "机电系统原理及实践—— 机器人运动学简介\n机电智控实验室tangguoan@fudan.edu.cn mmguo@fudan.edu.cn\n§1.2 串联机器人\nD-H 参数法\n由Denavit 和Hartenberg 提出。\n在机器人的每个link上建立一个坐标系，通过齐次坐标变换实现两个连杆上的坐标变换，建\n立多连杆串联系统中首末坐标系的变换关系。\n21-7\n",
+  "cleaned_text": "§1.2 串联机器人\nD-H 参数法\n由Denavit 和Hartenberg 提出。\n在机器人的每个link上建立一个坐标系，通过齐次坐标变换实现两个连杆上的坐标变换，建\n立多连杆串联系统中首末坐标系的变换关系。",
+  "key_points": [
+    "D-H 参数法",
+    "由Denavit 和Hartenberg 提出。",
+    "立多连杆串联系统中首末坐标系的变换关系。"
+  ],
+  "technical_terms": [
+    "D-H",
+    "立多连杆串联系统"
+  ],
+  "has_images": true,
+  "image_count": 1,
+  "image_paths": [
+    "extraction/output/qwen_qwen3.7-plus_9/debug/images/w15-2-机器人运动学及其应用_p7_img3.jpeg"
+  ],
+  "metadata": {
+    "char_count": 186,
+    "word_count": 14,
+    "line_count": 9
+  }
+}

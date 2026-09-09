@@ -1,0 +1,33 @@
+{
+  "original_path": "extraction/output/qwen_qwen3.7-plus_9/debug/images/w01-1-课程简介_p14_img5.jpeg",
+  "enhanced_path": "extraction/output/qwen_qwen3.7-plus_9/debug/images/w01-1-课程简介_p14_img5_enhanced.jpeg",
+  "description": "类型：照片\n画面展示实验室场景，三名学生围绕桌台进行实践。桌上放置蓝色收纳箱，内部装满杂乱连接的电子线缆与模块，旁侧有黑色笔记本电脑及固定于支架的硬件设备。背景投影幕布显示编程界面，左侧可见“import time”、“cap_device = 0”等Python代码片段，右侧呈现手部骨骼关键点检测的实时影像，一名学生正对着镜头做出手势，屏幕上同步显示该手部的识别连线图。",
+  "metadata": {
+    "generation": {
+      "method": "qwen_api",
+      "backend": "api",
+      "provider": "qwen",
+      "model": "qwen3.7-plus",
+      "status": "success",
+      "api_error": null
+    },
+    "review": {
+      "required": false,
+      "status": null,
+      "reason": null,
+      "course_relevant": true
+    }
+  },
+  "error": null,
+  "method": "qwen_api",
+  "backend": "api",
+  "provider": "qwen",
+  "model": "qwen3.7-plus",
+  "status": "success",
+  "api_error": null,
+  "indexable": true,
+  "review_required": false,
+  "review_reason": null,
+  "review_status": null,
+  "course_relevant": true
+}

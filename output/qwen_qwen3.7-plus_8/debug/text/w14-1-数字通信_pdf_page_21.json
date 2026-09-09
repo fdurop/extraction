@@ -1,0 +1,26 @@
+{
+  "page_num": 20,
+  "raw_text": "机电系统原理及实践—— 数字通信\n机电智控实验室tangguoan@fudan.edu.cn mmguo@fudan.edu.cn\n§6 CAN\nArduino CAN 库\n从elearning 下载Seeed_Arduino_CAN.zip.\n解压到C 盘“文档”下的Arduino\\libraries 目录。\nCAN 报文格式\n标识符(CAN ID)\n标准：11 位\n扩展：29 位\n数据：长度为0 到8 个字节。\n23-21\n两个Uno间的CAN 通信\n",
+  "cleaned_text": "§6 CAN\nArduino CAN 库\n从elearning 下载Seeed_Arduino_CAN.zip.\n解压到C 盘“文档”下的Arduino\\libraries 目录。\nCAN 报文格式\n标识符(CAN ID)\n标准：11 位\n扩展：29 位\n数据：长度为0 到8 个字节。\n两个Uno间的CAN 通信",
+  "key_points": [
+    "Arduino CAN 库",
+    "解压到C 盘“文档”下的Arduino\\libraries 目录。",
+    "CAN 报文格式",
+    "数据：长度为0 到8 个字节。"
+  ],
+  "technical_terms": [
+    "Arduino",
+    "CAN",
+    "ID"
+  ],
+  "has_images": true,
+  "image_count": 1,
+  "image_paths": [
+    "extraction/output/qwen_qwen3.7-plus_8/debug/images/w14-1-数字通信_p21_img3.jpeg"
+  ],
+  "metadata": {
+    "char_count": 238,
+    "word_count": 28,
+    "line_count": 14
+  }
+}

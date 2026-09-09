@@ -1,0 +1,33 @@
+{
+  "original_path": "extraction/output/qwen_qwen3.7-plus_8/debug/images/w13-2-机电系统在动力学与控制中的应用 - 副本_p3_img4.jpeg",
+  "enhanced_path": "extraction/output/qwen_qwen3.7-plus_8/debug/images/w13-2-机电系统在动力学与控制中的应用 - 副本_p3_img4_enhanced.jpeg",
+  "description": "类型：照片\n图片展示一个黑色长方体金属电子设备，外壳顶部及侧面具有散热鳍片结构。设备左侧面板连接有两根线缆，上方为带金属接头的黑色线缆，下方为银灰色同轴电缆。设备右侧侧面可见四个呈水平线性排列的圆形金属接口（疑似BNC接口）。该物体放置于白色背景上，结合上下文判断为机电系统中的驱动盒或控制盒硬件实物。",
+  "metadata": {
+    "generation": {
+      "method": "qwen_api",
+      "backend": "api",
+      "provider": "qwen",
+      "model": "qwen3.7-plus",
+      "status": "success",
+      "api_error": null
+    },
+    "review": {
+      "required": false,
+      "status": null,
+      "reason": null,
+      "course_relevant": true
+    }
+  },
+  "error": null,
+  "method": "qwen_api",
+  "backend": "api",
+  "provider": "qwen",
+  "model": "qwen3.7-plus",
+  "status": "success",
+  "api_error": null,
+  "indexable": true,
+  "review_required": false,
+  "review_reason": null,
+  "review_status": null,
+  "course_relevant": true
+}

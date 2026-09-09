@@ -1,0 +1,33 @@
+{
+  "original_path": "extraction/output/qwen_qwen3.7-plus_9/debug/images/w13-2-机电系统在动力学与控制中的应用 - 副本_p3_img4.jpeg",
+  "enhanced_path": "extraction/output/qwen_qwen3.7-plus_9/debug/images/w13-2-机电系统在动力学与控制中的应用 - 副本_p3_img4_enhanced.jpeg",
+  "description": "类型：照片\n图片展示一个黑色长方体金属外壳设备，表面具有散热鳍片纹理。设备左侧连接有一根带有银色金属接头的黑色线缆，前端下方连接有一根灰色细线缆（接头呈金色）。设备右侧侧面可见四个排列整齐的银色圆形接口或螺丝固定点。该物体放置于白色背景上，结合上下文判断为机电系统中的驱动盒或控制盒实物。",
+  "metadata": {
+    "generation": {
+      "method": "qwen_api",
+      "backend": "api",
+      "provider": "qwen",
+      "model": "qwen3.7-plus",
+      "status": "success",
+      "api_error": null
+    },
+    "review": {
+      "required": false,
+      "status": null,
+      "reason": null,
+      "course_relevant": true
+    }
+  },
+  "error": null,
+  "method": "qwen_api",
+  "backend": "api",
+  "provider": "qwen",
+  "model": "qwen3.7-plus",
+  "status": "success",
+  "api_error": null,
+  "indexable": true,
+  "review_required": false,
+  "review_reason": null,
+  "review_status": null,
+  "course_relevant": true
+}

@@ -1,0 +1,21 @@
+{
+  "page_num": 17,
+  "raw_text": "机电系统原理及实践—— 数字通信\n机电智控实验室tangguoan@fudan.edu.cn mmguo@fudan.edu.cn\n§5 SPI\nSPI 库的用法\nhttps://www.arduino.cc/reference/en/language/functions/communication/spi/\n文档：https://docs.arduino.cc/tutorials/generic/introduction-to-the-serial-peripheral-interface\n接气压传感器案例：https://docs.arduino.cc/tutorials/communication/BarometricPressureSensor\n23-18\n两个Uno间的\nSPI 通信\n",
+  "cleaned_text": "§5 SPI\nSPI 库的用法\nhttps://www.arduino.cc/reference/en/language/functions/communication/spi/\n文档：https://docs.arduino.cc/tutorials/generic/introduction-to-the-serial-peripheral-interface\n接气压传感器案例：https://docs.arduino.cc/tutorials/communication/BarometricPressureSensor\n两个Uno间的\nSPI 通信",
+  "key_points": [
+    "SPI 库的用法",
+    "SPI 通信"
+  ],
+  "technical_terms": [
+    "SPI",
+    "接气压传感器"
+  ],
+  "has_images": false,
+  "image_count": 0,
+  "image_paths": [],
+  "metadata": {
+    "char_count": 356,
+    "word_count": 15,
+    "line_count": 11
+  }
+}

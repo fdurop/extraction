@@ -23,6 +23,8 @@ from datetime import datetime
 from typing import Any, Dict, List, Optional
 
 from .vector_index import build_vector_index
+from .embedding_text_cleaner import clean_embedding_text, compose_embedding_text
+from .path_config import extraction_path, workspace_relative
 
 
 def _clean(value: Any) -> str:
@@ -51,12 +53,7 @@ def _safe_list(value: Any) -> List[str]:
 
 
 def _relpath(value: Any) -> str:
-    if not value:
-        return ""
-    try:
-        return os.path.relpath(str(value), os.getcwd()).replace(os.sep, "/")
-    except Exception:
-        return str(value).replace("\\", "/")
+    return workspace_relative(value)
 
 
 def _relpath_list(value: Any) -> List[str]:
@@ -66,17 +63,21 @@ def _relpath_list(value: Any) -> List[str]:
 class KnowledgeExporter:
     def __init__(
         self,
-        base_dir: str = "output",
+        base_dir: str = extraction_path("output"),
         user_id: Optional[str] = None,
+        username: Optional[str] = None,
         course_id: Optional[str] = None,
         course_name: Optional[str] = None,
+        job_id: Optional[str] = None,
         logger=None,
     ):
         self.base_dir = base_dir
         self.logger = logger
         self.user_id = user_id or os.getenv("EXTRACTION_USER_ID", "default_user")
+        self.username = username or os.getenv("EXTRACTION_USERNAME", self.user_id)
         self.course_id = course_id or os.getenv("EXTRACTION_COURSE_ID", "default_course")
         self.course_name = course_name or os.getenv("EXTRACTION_COURSE_NAME", "default_course")
+        self.job_id = job_id or os.getenv("EXTRACTION_JOB_ID", "")
         self.created_at = datetime.now().isoformat()
 
         self.documents: Dict[str, Dict[str, Any]] = {}
@@ -84,14 +85,57 @@ class KnowledgeExporter:
         self.content_items: Dict[str, Dict[str, Any]] = {}
         self.nodes: Dict[str, Dict[str, Any]] = {}
 
+    def load_existing(self) -> Dict[str, int]:
+        """Restore a document-level checkpoint from an existing run directory."""
+        manifest = self._read_json("course_manifest.json", {})
+        documents = self._read_json("documents.json", [])
+        pages = self._read_json("pages.json", [])
+        content_items = self._read_json("content_list.json", [])
+        nodes = self._read_json("multimodal_nodes.json", [])
+
+        if not isinstance(manifest, dict):
+            raise ValueError("course_manifest.json must contain an object")
+        for filename, value in (
+            ("documents.json", documents),
+            ("pages.json", pages),
+            ("content_list.json", content_items),
+            ("multimodal_nodes.json", nodes),
+        ):
+            if not isinstance(value, list):
+                raise ValueError(f"{filename} must contain a list")
+
+        # IDs depend on course_id, so restore identity before processing more files.
+        self.user_id = manifest.get("user_id") or self.user_id
+        self.username = manifest.get("username") or self.username
+        self.course_id = manifest.get("course_id") or self.course_id
+        self.course_name = manifest.get("course_name") or self.course_name
+        self.job_id = manifest.get("job_id") or self.job_id
+        self.created_at = manifest.get("created_at") or self.created_at
+
+        self.documents = {
+            item["document_id"]: item for item in documents if item.get("document_id")
+        }
+        self.pages = {item["page_id"]: item for item in pages if item.get("page_id")}
+        self.content_items = {
+            item["element_id"]: item for item in content_items if item.get("element_id")
+        }
+        self.nodes = {item["node_id"]: item for item in nodes if item.get("node_id")}
+
+        return {
+            "documents": len(self.documents),
+            "pages": len(self.pages),
+            "content_items": len(self.content_items),
+            "nodes": len(self.nodes),
+        }
+
     def document_id(self, filename: str) -> str:
-        return f"doc_{_short_hash(self.course_id, filename)}"
+        return f"doc_{_short_hash(self.user_id, self.course_id, filename)}"
 
     def page_id(self, filename: str, page_num: int) -> str:
-        return f"page_{_short_hash(self.course_id, filename, page_num + 1)}"
+        return f"page_{_short_hash(self.user_id, self.course_id, filename, page_num + 1)}"
 
     def element_id(self, filename: str, page_num: int, kind: str, index: int) -> str:
-        return f"{kind}_{_short_hash(self.course_id, filename, page_num + 1, kind, index + 1)}"
+        return f"{kind}_{_short_hash(self.user_id, self.course_id, filename, page_num + 1, kind, index + 1)}"
 
     def embedding_id(self, node_id: str) -> str:
         return f"emb_{node_id}"
@@ -103,7 +147,10 @@ class KnowledgeExporter:
         self.documents[doc_id] = {
             "document_id": doc_id,
             "user_id": self.user_id,
+            "username": self.username,
             "course_id": self.course_id,
+            "course_name": self.course_name,
+            "job_id": self.job_id,
             "file_name": metadata.get("file_name") or filename,
             "file_type": metadata.get("file_type") or metadata.get("extension") or "",
             "file_path": _relpath(metadata.get("file_path") or ""),
@@ -135,7 +182,10 @@ class KnowledgeExporter:
         self.pages[page_id] = {
             "page_id": page_id,
             "user_id": self.user_id,
+            "username": self.username,
             "course_id": self.course_id,
+            "course_name": self.course_name,
+            "job_id": self.job_id,
             "document_id": doc_id,
             "page_no": page_num + 1,
             "title": merged_title,
@@ -146,7 +196,9 @@ class KnowledgeExporter:
             "prev_page_id": self.page_id(filename, page_num - 1) if page_num > 0 else existing.get("prev_page_id"),
             "next_page_id": self.page_id(filename, page_num + 1) if raw_text or images or page_image_path or not existing else existing.get("next_page_id"),
             "embedding_id": self.embedding_id(page_id),
-            "embedding_text": " ".join([merged_title, merged_summary, merged_raw_text[:500]]).strip(),
+            "embedding_text": compose_embedding_text(
+                [merged_title, merged_raw_text[:800]], node_type="Page", max_chars=1000
+            ),
         }
         self._add_node(
             node_id=page_id,
@@ -175,7 +227,9 @@ class KnowledgeExporter:
         element_id = self.element_id(filename, page_num, "text", 0)
         key_points = data.get("key_points") or []
         terms = data.get("technical_terms") or []
-        embedding_text = " ".join([text, " ".join(key_points), " ".join(terms)]).strip()
+        embedding_text = compose_embedding_text(
+            [text, key_points, terms], node_type="TextChunk", max_chars=1800
+        )
         item = self._base_item(element_id, "text", filename, page_num, page_id)
         item.update(
             {
@@ -228,13 +282,17 @@ class KnowledgeExporter:
                 )
             return None
         image_path = _relpath(data.get("original_path") or data.get("image_path") or data.get("enhanced_path") or "")
-        embedding_text = " ".join(
+        embedding_description = clean_embedding_text(
+            description, node_type="Figure", max_chars=420
+        )
+        embedding_text = compose_embedding_text(
             [
-                f"image figure page {page_num + 1}",
-                description,
-                _clean(data.get("method")),
-            ]
-        ).strip()
+                data.get("caption", ""),
+                embedding_description,
+            ],
+            node_type="Figure",
+            max_chars=500,
+        )
         item = self._base_item(element_id, "image", filename, page_num, page_id)
         item.update(
             {
@@ -242,6 +300,7 @@ class KnowledgeExporter:
                 "enhanced_path": _relpath(data.get("enhanced_path")),
                 "caption": data.get("caption", ""),
                 "description": description,
+                "embedding_description": embedding_description,
                 "method": data.get("method"),
                 "backend": data.get("backend"),
                 "provider": data.get("provider"),
@@ -252,6 +311,7 @@ class KnowledgeExporter:
                 "indexable": data.get("indexable", bool(description)),
                 "embedding_id": self.embedding_id(element_id),
                 "embedding_text": embedding_text,
+                "embedding_text_policy": "cleaned_v1",
             }
         )
         self.content_items[element_id] = item
@@ -274,6 +334,8 @@ class KnowledgeExporter:
                 "api_error": data.get("api_error"),
                 "enhanced_path": _relpath(data.get("enhanced_path")),
                 "indexable": data.get("indexable", bool(description)),
+                "embedding_description": embedding_description,
+                "embedding_text_policy": "cleaned_v1",
             },
         )
         return element_id
@@ -290,9 +352,11 @@ class KnowledgeExporter:
             symbols = formula.get("symbols") or []
             conditions = formula.get("conditions") or []
             source_image = _relpath(formula.get("source_image"))
-            embedding_text = " ".join(
-                [formula_name, latex, description, _clean(symbols), _clean(conditions)]
-            ).strip()
+            embedding_text = compose_embedding_text(
+                [formula_name, latex, description, symbols, conditions],
+                node_type="Formula",
+                max_chars=1600,
+            )
             item = self._base_item(element_id, "equation", filename, page_num, page_id)
             item.update(
                 {
@@ -349,9 +413,11 @@ class KnowledgeExporter:
             headers = _clean(table.get("headers"))
             title = _clean(table.get("title"))
             source_image = _relpath(table.get("source_image"))
-            embedding_text = " ".join(
-                [title, headers, description, _clean(table.get("units")), table_body[:1500]]
-            ).strip()
+            embedding_text = compose_embedding_text(
+                [title, headers, description, table.get("units"), table_body[:1500]],
+                node_type="Table",
+                max_chars=2000,
+            )
             item = self._base_item(element_id, "table", filename, page_num, page_id)
             item.update(
                 {
@@ -402,16 +468,33 @@ class KnowledgeExporter:
             ids.append(element_id)
         return ids
 
-    def add_code(self, code_blocks: List[Dict[str, Any]], filename: str, page_num: int):
+    def next_code_index(self, filename: str, page_num: int) -> int:
+        """Return the first unused zero-based code index for a page."""
+        page_id = self.page_id(filename, page_num)
+        index = 0
+        while self.element_id(filename, page_num, "code", index) in self.content_items:
+            index += 1
+        return index
+
+    def add_code(
+        self,
+        code_blocks: List[Dict[str, Any]],
+        filename: str,
+        page_num: int,
+        start_index: int = 0,
+    ):
         ids = []
         page_id = self.register_page(filename, page_num)
         for idx, code in enumerate(code_blocks or []):
-            element_id = self.element_id(filename, page_num, "code", idx)
+            absolute_index = start_index + idx
+            element_id = self.element_id(filename, page_num, "code", absolute_index)
             code_text = code.get("code", "")
             description = _clean(code.get("description"))
             language = code.get("language", "txt")
             source_image = _relpath(code.get("source_image"))
-            embedding_text = " ".join([language, description, code_text[:1500]]).strip()
+            embedding_text = compose_embedding_text(
+                [language, description, code_text[:1500]], node_type="CodeBlock", max_chars=2000
+            )
             item = self._base_item(element_id, "code", filename, page_num, page_id)
             item.update(
                 {
@@ -431,7 +514,7 @@ class KnowledgeExporter:
             self._add_node(
                 element_id,
                 "CodeBlock",
-                name=f"{language} code page {page_num + 1}-{idx + 1}",
+                name=f"{language} code page {page_num + 1}-{absolute_index + 1}",
                 summary=self._summary(description or code_text, 160),
                 description=description or code_text,
                 document_id=self.document_id(filename),
@@ -455,12 +538,16 @@ class KnowledgeExporter:
 
         course_manifest = {
             "user_id": self.user_id,
+            "username": self.username,
             "course_id": self.course_id,
             "course_name": self.course_name,
+            "job_id": self.job_id,
             "created_at": self.created_at,
             "updated_at": datetime.now().isoformat(),
             "documents": sorted(self.documents.keys()),
             "output_schema": "multimodal_graphrag_extraction_v1",
+            "path_base": "extraction-main",
+            "path_format": "workspace_relative_posix",
         }
 
         self._write_json("course_manifest.json", course_manifest)
@@ -487,6 +574,11 @@ class KnowledgeExporter:
                 "count": 0,
             }
         self._write_json("knowledge_export_summary.json", {
+            "user_id": self.user_id,
+            "username": self.username,
+            "course_id": self.course_id,
+            "course_name": self.course_name,
+            "job_id": self.job_id,
             "documents": len(self.documents),
             "pages": len(self.pages),
             "content_items": len(self.content_items),
@@ -553,6 +645,12 @@ class KnowledgeExporter:
     def _build_schema(self) -> Dict[str, Any]:
         return {
             "schema_name": "multimodal_graphrag_extraction_v1",
+            "identity_fields": [
+                "user_id", "username", "course_id", "course_name", "job_id"
+            ],
+            "path_base": "extraction-main",
+            "path_format": "workspace_relative_posix",
+            "extraction_root": "extraction",
             "node_files": {
                 "documents": "documents.json",
                 "pages": "pages.json",
@@ -601,7 +699,10 @@ class KnowledgeExporter:
             "element_id": element_id,
             "type": kind,
             "user_id": self.user_id,
+            "username": self.username,
             "course_id": self.course_id,
+            "course_name": self.course_name,
+            "job_id": self.job_id,
             "document_id": self.document_id(filename),
             "page_id": page_id,
             "page_idx": page_num,
@@ -625,7 +726,10 @@ class KnowledgeExporter:
             "node_id": node_id,
             "node_type": node_type,
             "user_id": self.user_id,
+            "username": self.username,
             "course_id": self.course_id,
+            "course_name": self.course_name,
+            "job_id": self.job_id,
             "document_id": document_id,
             "source_page_id": page_id,
             "name": name or node_id,
@@ -641,8 +745,19 @@ class KnowledgeExporter:
 
     def _write_json(self, filename: str, data: Any):
         path = os.path.join(self.base_dir, filename)
-        with open(path, "w", encoding="utf-8") as f:
+        temp_path = f"{path}.tmp"
+        with open(temp_path, "w", encoding="utf-8") as f:
             json.dump(self._normalize_paths(data), f, ensure_ascii=False, indent=2, default=str)
+            f.flush()
+            os.fsync(f.fileno())
+        os.replace(temp_path, path)
+
+    def _read_json(self, filename: str, default: Any) -> Any:
+        path = os.path.join(self.base_dir, filename)
+        if not os.path.exists(path):
+            return default
+        with open(path, "r", encoding="utf-8") as f:
+            return json.load(f)
 
     def _fix_page_links(self):
         by_doc: Dict[str, List[Dict[str, Any]]] = {}
@@ -680,11 +795,15 @@ class KnowledgeExporter:
             "path", "paths", "file_path", "source_path", "source_image",
             "original_path", "enhanced_path", "image_path", "image_paths",
             "page_image_path", "review_image_path", "metadata_path", "matrix_path",
+            "recognition_image_path",
         }
         if isinstance(value, str):
             has_drive = bool(os.path.splitdrive(value)[0])
             explicit_path = has_drive or value.startswith(("\\\\", "/")) or value.startswith(
-                ("input/", "output/", "debug/", "kg_data/", "input\\", "output\\", "debug\\", "kg_data\\")
+                (
+                    "extraction/", "input/", "output/", "debug/", "kg_data/",
+                    "extraction\\", "input\\", "output\\", "debug\\", "kg_data\\",
+                )
             )
             if key in path_keys or explicit_path:
                 return _relpath(value)

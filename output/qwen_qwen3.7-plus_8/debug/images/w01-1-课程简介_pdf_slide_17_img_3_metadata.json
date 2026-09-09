@@ -1,0 +1,33 @@
+{
+  "original_path": "extraction/output/qwen_qwen3.7-plus_8/debug/images/w01-1-课程简介_p17_img4.jpeg",
+  "enhanced_path": "extraction/output/qwen_qwen3.7-plus_8/debug/images/w01-1-课程简介_p17_img4_enhanced.jpeg",
+  "description": "类型：照片\n画面展示实验室桌面场景，前景为一台打开的笔记本电脑，屏幕显示实时摄像头画面及覆盖在人手上的橙色骨骼节点连线（手势识别）。电脑左侧有一只伸出的真实左手，掌心朝向屏幕。背景桌面上摆放着白色仪器电源、黑色鼠标、透明亚克力板及带有绿色电路板的机械装置组件。",
+  "metadata": {
+    "generation": {
+      "method": "qwen_api",
+      "backend": "api",
+      "provider": "qwen",
+      "model": "qwen3.7-plus",
+      "status": "success",
+      "api_error": null
+    },
+    "review": {
+      "required": false,
+      "status": null,
+      "reason": null,
+      "course_relevant": true
+    }
+  },
+  "error": null,
+  "method": "qwen_api",
+  "backend": "api",
+  "provider": "qwen",
+  "model": "qwen3.7-plus",
+  "status": "success",
+  "api_error": null,
+  "indexable": true,
+  "review_required": false,
+  "review_reason": null,
+  "review_status": null,
+  "course_relevant": true
+}

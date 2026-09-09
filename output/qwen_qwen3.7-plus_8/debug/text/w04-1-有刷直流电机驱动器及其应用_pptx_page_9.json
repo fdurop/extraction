@@ -1,0 +1,23 @@
+{
+  "page_num": 8,
+  "raw_text": "控制\n有刷\n直流电机的\n转向\n23-\n提示\n输入回路（控制环\n/\n弱电）与输出回路（动力环\n/\n强电）不能混淆\n.\n输出回路的电流方向只能 \nA \n→ \nB.\nw04-s1-changeDCMotorDir.ino\n信号电\n功率电",
+  "cleaned_text": "控制\n有刷\n直流电机的\n转向\n提示\n输入回路（控制环\n/\n弱电）与输出回路（动力环\n/\n强电）不能混淆\n.\n输出回路的电流方向只能\nA\n→\nB.\nw04-s1-changeDCMotorDir.ino\n信号电\n功率电",
+  "key_points": [
+    "A",
+    "B."
+  ],
+  "technical_terms": [
+    "w04-s1-changeDCMotorDir",
+    "直流电机"
+  ],
+  "has_images": true,
+  "image_count": 1,
+  "image_paths": [
+    "extraction/output/qwen_qwen3.7-plus_8/debug/images/w04-1-有刷直流电机驱动器及其应用_slide_9_vector_fallback.png"
+  ],
+  "metadata": {
+    "char_count": 115,
+    "word_count": 19,
+    "line_count": 19
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "original_path": "extraction/output/qwen_qwen3.7-plus_8/debug/images/w01-1-课程简介_p11_img2.jpeg",
+  "enhanced_path": "extraction/output/qwen_qwen3.7-plus_8/debug/images/w01-1-课程简介_p11_img2_enhanced.jpeg",
+  "description": "类型：照片\n图片由编号0至3的四个分图组成，展示了一台固定在黑色底座上的银色单连杆机械臂实验装置。机械臂末端悬挂着一个橙黄色圆柱形负载。四幅画面记录了该机械臂在垂直平面内运动的不同瞬间，主要展示了臂杆角度及悬挂负载姿态随时间变化的序列，背景为深色幕布及带有标记线的白色台面。",
+  "metadata": {
+    "generation": {
+      "method": "qwen_api",
+      "backend": "api",
+      "provider": "qwen",
+      "model": "qwen3.7-plus",
+      "status": "success",
+      "api_error": null
+    },
+    "review": {
+      "required": false,
+      "status": null,
+      "reason": null,
+      "course_relevant": true
+    }
+  },
+  "error": null,
+  "method": "qwen_api",
+  "backend": "api",
+  "provider": "qwen",
+  "model": "qwen3.7-plus",
+  "status": "success",
+  "api_error": null,
+  "indexable": true,
+  "review_required": false,
+  "review_reason": null,
+  "review_status": null,
+  "course_relevant": true
+}

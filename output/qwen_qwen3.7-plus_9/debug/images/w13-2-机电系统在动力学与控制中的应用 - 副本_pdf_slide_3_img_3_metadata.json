@@ -1,0 +1,33 @@
+{
+  "original_path": "extraction/output/qwen_qwen3.7-plus_9/debug/images/w13-2-机电系统在动力学与控制中的应用 - 副本_p3_img5.jpeg",
+  "enhanced_path": "extraction/output/qwen_qwen3.7-plus_9/debug/images/w13-2-机电系统在动力学与控制中的应用 - 副本_p3_img5_enhanced.jpeg",
+  "description": "类型：照片\n图片展示了一个银灰色金属长方体设备，即上下文提到的驱动盒。设备前面板为黑色，底部排列着一排带有红、黄、绿等颜色标识的圆形航空插头接口，并连接有多根黑色线缆。设备顶面安装有一个金色的同轴连接器（天线接口）和一个白色的圆柱形组件，侧面可见部分散热鳍片结构，顶部贴有黄色标签。该实物图对应课程章节中的硬件组成部分。",
+  "metadata": {
+    "generation": {
+      "method": "qwen_api",
+      "backend": "api",
+      "provider": "qwen",
+      "model": "qwen3.7-plus",
+      "status": "success",
+      "api_error": null
+    },
+    "review": {
+      "required": false,
+      "status": null,
+      "reason": null,
+      "course_relevant": true
+    }
+  },
+  "error": null,
+  "method": "qwen_api",
+  "backend": "api",
+  "provider": "qwen",
+  "model": "qwen3.7-plus",
+  "status": "success",
+  "api_error": null,
+  "indexable": true,
+  "review_required": false,
+  "review_reason": null,
+  "review_status": null,
+  "course_relevant": true
+}

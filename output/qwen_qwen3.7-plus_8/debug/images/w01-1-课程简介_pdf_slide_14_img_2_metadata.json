@@ -1,0 +1,33 @@
+{
+  "original_path": "extraction/output/qwen_qwen3.7-plus_8/debug/images/w01-1-课程简介_p14_img3.jpeg",
+  "enhanced_path": "extraction/output/qwen_qwen3.7-plus_8/debug/images/w01-1-课程简介_p14_img3_enhanced.jpeg",
+  "description": "类型：照片\n图片展示机电智控实验室场景。左侧一名穿粉色卫衣、戴护目镜的学生手持黑色有线操作盒，面对银色仪器柜。墙上挂有防护面罩。右上方悬挂黑色数控系统显示屏，显示坐标数值及功能键。右侧为立式加工设备（铣床或雕铣机），主轴下方金属工作台上有大量银色金属切屑。右下角嵌入局部特写，显示刀具正在对金属工件进行切削加工。整体呈现学生操作数控机床进行实践的画面。",
+  "metadata": {
+    "generation": {
+      "method": "qwen_api",
+      "backend": "api",
+      "provider": "qwen",
+      "model": "qwen3.7-plus",
+      "status": "success",
+      "api_error": null
+    },
+    "review": {
+      "required": false,
+      "status": null,
+      "reason": null,
+      "course_relevant": true
+    }
+  },
+  "error": null,
+  "method": "qwen_api",
+  "backend": "api",
+  "provider": "qwen",
+  "model": "qwen3.7-plus",
+  "status": "success",
+  "api_error": null,
+  "indexable": true,
+  "review_required": false,
+  "review_reason": null,
+  "review_status": null,
+  "course_relevant": true
+}

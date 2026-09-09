@@ -1,0 +1,33 @@
+{
+  "original_path": "extraction/output/qwen_qwen3.7-plus_8/debug/images/w04-1-有刷直流电机驱动器及其应用_slide_20_vector_fallback.png",
+  "enhanced_path": "extraction/output/qwen_qwen3.7-plus_8/debug/images/w04-1-有刷直流电机驱动器及其应用_slide_20_vector_fallback_enhanced.png",
+  "description": "类型：示意图/公式\n图片展示钣金设计内容。左侧为L型折弯截面图，标注尺寸A、B、T及内半径R，下方列出展开长度计算公式 $L=\\frac{\\pi}{2}(R+K \\times T)\\frac{\\theta}{90^{\\circ}}$ 及K折弯系数说明。左下角包含两个圆形零件详图，标注有“6-M3均布”、“P.C.D$\\phi$31”、“$\\phi$30.9”及“6-$\\phi$3.2”。右侧为主体“铝合金底盘”平面布局图，用蓝色虚线框标示四个“电机”位置，中间横向区域标示“导轨”，下方区域标示“锂电池”、“开关 LED”。红色箭头指向“预留孔”。右下角注明材料为“铝板”，厚度2mm，工艺要求“四边沿虚线向下弯折90度”。",
+  "metadata": {
+    "generation": {
+      "method": "qwen_api",
+      "backend": "api",
+      "provider": "qwen",
+      "model": "qwen3.7-plus",
+      "status": "success",
+      "api_error": null
+    },
+    "review": {
+      "required": false,
+      "status": null,
+      "reason": null,
+      "course_relevant": true
+    }
+  },
+  "error": null,
+  "method": "qwen_api",
+  "backend": "api",
+  "provider": "qwen",
+  "model": "qwen3.7-plus",
+  "status": "success",
+  "api_error": null,
+  "indexable": true,
+  "review_required": false,
+  "review_reason": null,
+  "review_status": null,
+  "course_relevant": true
+}

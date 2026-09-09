@@ -1,0 +1,33 @@
+{
+  "original_path": "extraction/output/qwen_qwen3.7-plus_9/debug/images/w14-1-数字通信_p13_img11.jpeg",
+  "enhanced_path": "extraction/output/qwen_qwen3.7-plus_9/debug/images/w14-1-数字通信_p13_img11_enhanced.jpeg",
+  "description": "类型：截图\n图片展示了Arduino IDE的“LIBRARY MANAGER”（库管理器）界面。搜索栏中输入了关键词“softserial”。下方列表显示了搜索结果“AltSoftSerial by Paul Stoffregen”，状态标记为“1.4 installed”（已安装版本1.4）。底部包含该库的简短描述：“Software emulated serial using hardware timers for improved compatibility Improved softwar...”，对应页面上下文中提到的使用软串口库配合蓝牙模块的内容。",
+  "metadata": {
+    "generation": {
+      "method": "qwen_api",
+      "backend": "api",
+      "provider": "qwen",
+      "model": "qwen3.7-plus",
+      "status": "success",
+      "api_error": null
+    },
+    "review": {
+      "required": false,
+      "status": null,
+      "reason": null,
+      "course_relevant": true
+    }
+  },
+  "error": null,
+  "method": "qwen_api",
+  "backend": "api",
+  "provider": "qwen",
+  "model": "qwen3.7-plus",
+  "status": "success",
+  "api_error": null,
+  "indexable": true,
+  "review_required": false,
+  "review_reason": null,
+  "review_status": null,
+  "course_relevant": true
+}

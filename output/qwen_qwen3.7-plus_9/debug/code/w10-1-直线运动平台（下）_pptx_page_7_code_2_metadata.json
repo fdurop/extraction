@@ -1,0 +1,14 @@
+{
+  "source_image": "extraction/output/qwen_qwen3.7-plus_9/debug/images/w10-1-直线运动平台（下）_slide_7_vector_fallback.png",
+  "extraction_method": "qwen_api_智能识别",
+  "language": "cpp",
+  "description": "使用Timer1定时器库实现每隔1秒触发一次中断，在中断服务函数中切换内置LED的亮灭状态，从而实现LED每秒闪烁一次的效果。这是利用时间中断替代delay函数进行非阻塞定时的典型示例。",
+  "code_file": "w10-1-直线运动平台（下）_pptx_page_7_code_2.cpp",
+  "page": 7,
+  "index": 2,
+  "timestamp": "2026-09-09T21:18:51.892868",
+  "raw_response": "语言: Arduino (C/C++)\n```cpp\n#include <TimerOne.h>\n\nvoid setup() {\n  //初始化LED端口\n  pinMode(LED_BUILTIN, OUTPUT);\n\n  // 每 1 s 触发一次时间中断\n  Timer1.initialize(long(1 * 1E6));\n\n  // 设置中断响应函数\n  Timer1.attachInterrupt(LED);\n\n  // 启动时间中断\n  Timer1.start();\n}\n\nvoid LED() {\n  static bool light = true;\n\n  digitalWrite(LED_BUILTIN, light);\n  light = !light;\n}\n```\n功能: 使用Timer1定时器库实现每隔1秒触发一次中断，在中断服务函数中切换内置LED的亮灭状态，从而实现LED每秒闪烁一次的效果。这是利用时间中断替代delay函数进行非阻塞定时的典型示例。",
+  "backend": "api",
+  "provider": "qwen",
+  "model": "qwen3.7-plus"
+}

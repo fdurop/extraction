@@ -1,0 +1,33 @@
+{
+  "original_path": "extraction/output/qwen_qwen3.7-plus_9/debug/images/w15-1-无刷直流电机驱动器_p9_img3.jpeg",
+  "enhanced_path": "extraction/output/qwen_qwen3.7-plus_9/debug/images/w15-1-无刷直流电机驱动器_p9_img3_enhanced.jpeg",
+  "description": "类型：照片\n图片展示了一个红白配色的矩形安全警示标签。标签顶部为红色背景，印有白色感叹号图标及中英文“危险 DANGER”字样；中部白色区域绘有黑色剪影，显示一只手被卷入两个旋转滚轮之间；底部印有英文“ROLLING KEEP HANDS AWAY”及中文“机器运转中请注意手”。该图片对应课程实践中关于CyberGear电机操作的安全提示（小心夹手），属于课程相关的安全警示信息。",
+  "metadata": {
+    "generation": {
+      "method": "qwen_api",
+      "backend": "api",
+      "provider": "qwen",
+      "model": "qwen3.7-plus",
+      "status": "success",
+      "api_error": null
+    },
+    "review": {
+      "required": false,
+      "status": null,
+      "reason": null,
+      "course_relevant": true
+    }
+  },
+  "error": null,
+  "method": "qwen_api",
+  "backend": "api",
+  "provider": "qwen",
+  "model": "qwen3.7-plus",
+  "status": "success",
+  "api_error": null,
+  "indexable": true,
+  "review_required": false,
+  "review_reason": null,
+  "review_status": null,
+  "course_relevant": true
+}

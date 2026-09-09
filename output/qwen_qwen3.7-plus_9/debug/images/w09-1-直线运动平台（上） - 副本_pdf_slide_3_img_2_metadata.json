@@ -1,0 +1,33 @@
+{
+  "original_path": "extraction/output/qwen_qwen3.7-plus_9/debug/images/w09-1-直线运动平台（上） - 副本_p3_img4.jpeg",
+  "enhanced_path": "extraction/output/qwen_qwen3.7-plus_9/debug/images/w09-1-直线运动平台（上） - 副本_p3_img4_enhanced.jpeg",
+  "description": "类型：照片\n图片展示了一个单轴直线运动平台实物。左侧末端安装有黑色的步进电机，电机轴通过联轴器连接至一根金属丝杆。丝杆沿轴向延伸，穿过黑色的滑块组件。滑块安装在两条平行的圆柱形导轨上，位于银色铝型材底座上方。右侧末端为固定支撑座。整体结构呈现电机驱动丝杆旋转，进而带动滑块在导轨上做直线运动的机械布局。",
+  "metadata": {
+    "generation": {
+      "method": "qwen_api",
+      "backend": "api",
+      "provider": "qwen",
+      "model": "qwen3.7-plus",
+      "status": "success",
+      "api_error": null
+    },
+    "review": {
+      "required": false,
+      "status": null,
+      "reason": null,
+      "course_relevant": true
+    }
+  },
+  "error": null,
+  "method": "qwen_api",
+  "backend": "api",
+  "provider": "qwen",
+  "model": "qwen3.7-plus",
+  "status": "success",
+  "api_error": null,
+  "indexable": true,
+  "review_required": false,
+  "review_reason": null,
+  "review_status": null,
+  "course_relevant": true
+}

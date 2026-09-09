@@ -1,0 +1,33 @@
+{
+  "original_path": "extraction/output/qwen_qwen3.7-plus_9/debug/images/w05-1-四轮小车_p6_img2.png",
+  "enhanced_path": "extraction/output/qwen_qwen3.7-plus_9/debug/images/w05-1-四轮小车_p6_img2_enhanced.png",
+  "description": "类型：示意图\n图中展示了四轮小车电控系统的电路连接。左下角为12V锂电池，经自锁开关连接至接线器。接线器分出三路：一路经12V LED指示灯回路；一路通过接插件为右上角MCU模块（引脚D3-D6）及左侧固态继电器模块（8通道，含SW1-SW8及A/B端）提供DC12V供电；第三路经分线器连接底部四个减速电机组件（左后、左前、右后、右前）。MCU模块的输出端分别连接至固态继电器模块的输入端（ch1-ch8），继电器的输出端则通过红蓝导线与分线器及电机相连，构成完整的驱动控制回路。",
+  "metadata": {
+    "generation": {
+      "method": "qwen_api",
+      "backend": "api",
+      "provider": "qwen",
+      "model": "qwen3.7-plus",
+      "status": "success",
+      "api_error": null
+    },
+    "review": {
+      "required": false,
+      "status": null,
+      "reason": null,
+      "course_relevant": true
+    }
+  },
+  "error": null,
+  "method": "qwen_api",
+  "backend": "api",
+  "provider": "qwen",
+  "model": "qwen3.7-plus",
+  "status": "success",
+  "api_error": null,
+  "indexable": true,
+  "review_required": false,
+  "review_reason": null,
+  "review_status": null,
+  "course_relevant": true
+}

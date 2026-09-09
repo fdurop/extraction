@@ -1,0 +1,30 @@
+{
+  "page_num": 15,
+  "raw_text": "机电系统原理及实践—— 数字通信\n机电智控实验室tangguoan@fudan.edu.cn mmguo@fudan.edu.cn\n§5 IIC\nIIC与蓝牙结合，实现麦轮车的遥控。\n23-16\n手机发送控制指令\n上位机\nUNO\n+\n蓝牙模块\n下位机\nUNO\n+\n直流电机\n驱动板\n蓝牙\n通信\nI2C\n通信\n驱动\n麦轮车\n",
+  "cleaned_text": "§5 IIC\nIIC与蓝牙结合，实现麦轮车的遥控。\n手机发送控制指令\n上位机\nUNO\n+\n蓝牙模块\n下位机\nUNO\n+\n直流电机\n驱动板\n蓝牙\n通信\nI2C\n通信\n驱动\n麦轮车",
+  "key_points": [
+    "IIC与蓝牙结合，实现麦轮车的遥控。",
+    "UNO",
+    "UNO",
+    "I2C"
+  ],
+  "technical_terms": [
+    "I2C",
+    "IIC",
+    "UNO",
+    "手机发送控制",
+    "直流电机"
+  ],
+  "has_images": true,
+  "image_count": 3,
+  "image_paths": [
+    "extraction/output/qwen_qwen3.7-plus_8/debug/images/w14-1-数字通信_p16_img3.jpeg",
+    "extraction/output/qwen_qwen3.7-plus_8/debug/images/w14-1-数字通信_p16_img4.jpeg",
+    "extraction/output/qwen_qwen3.7-plus_8/debug/images/w14-1-数字通信_p16_img5.jpeg"
+  ],
+  "metadata": {
+    "char_count": 162,
+    "word_count": 24,
+    "line_count": 22
+  }
+}

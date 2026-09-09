@@ -1,0 +1,33 @@
+{
+  "original_path": "extraction/output/qwen_qwen3.7-plus_9/debug/images/w14-1-数字通信_p13_img3.jpeg",
+  "enhanced_path": "extraction/output/qwen_qwen3.7-plus_9/debug/images/w14-1-数字通信_p13_img3_enhanced.jpeg",
+  "description": "类型：照片\n图片展示了HC-06蓝牙模块的正面与背面实物图。左侧为模块正面，可见蓝色PCB板、顶部的板载天线、中间的黑色芯片及底部的排针接口。右侧为模块背面，印有白色丝印文字，标注了引脚定义及电气参数。可见文字包括型号“ZS-040”，电源规格“Power:3.6V—6V”和电平标准“LEVEL:3.3V”。底部排列着六个引脚，从左至右依次标记为EN、VCC、GND、TXD、RXD、STATE，并配有指示方向的箭头。",
+  "metadata": {
+    "generation": {
+      "method": "qwen_api",
+      "backend": "api",
+      "provider": "qwen",
+      "model": "qwen3.7-plus",
+      "status": "success",
+      "api_error": null
+    },
+    "review": {
+      "required": false,
+      "status": null,
+      "reason": null,
+      "course_relevant": true
+    }
+  },
+  "error": null,
+  "method": "qwen_api",
+  "backend": "api",
+  "provider": "qwen",
+  "model": "qwen3.7-plus",
+  "status": "success",
+  "api_error": null,
+  "indexable": true,
+  "review_required": false,
+  "review_reason": null,
+  "review_status": null,
+  "course_relevant": true
+}

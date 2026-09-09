@@ -1,0 +1,33 @@
+{
+  "page_num": 2,
+  "raw_text": "机电系统原理及实践—— Arduino软硬件基础\n机电智控实验室tangguoan@fudan.edu.cn mmguo@fudan.edu.cn\n§1 Arduino Uno\n微控制单元（Microcontroller Unit，MCU）—— 通常用于底层驱动控制\n单片微型计算机（Single Chip Microcomputer）或者单片机。\n把中央处理器（CPU）的频率与规格做适当缩减，并将内存、计数器、UART等周边接口，\n整合在单一芯片上，形成芯片级的计算机，为不同的应用场合做不同组合控制。\n手机、PC外围设备、汽车电子、电机、机器臂的控制等，都用到MCU。\nArduino是一款便捷灵活、方便上手的开源电子原型平台。\n硬件：各种型号的Arduino板，如Uno、Nano、Mega 等。\n软件：Arduino IDE\n官网：https://www.arduino.cc\n在线模拟器：https://wokwi.com/arduino\n14-3\n室 复旦大\n智控实验室 复旦大学 机电\n学 机电智控实验室 复旦大学 机电智控实验\n复旦大学 机电智控实验室 复旦大学 机电智控实验室 复旦\n大学 机电智控实验室 复旦大学 机电智控实验室 复旦大学 机电\n电智控实验室 复旦大学 机电智控实验室 复旦大学 机电智控实\n验室 复旦大学 机电智控实验室 复旦大学 机电智控实验室 \n旦大学 机电智控实验室 复旦大学 机电智控\n电智控实验室 复旦大学 \n验室 复\n",
+  "cleaned_text": "§1 Arduino Uno\n微控制单元（Microcontroller Unit，MCU）—— 通常用于底层驱动控制\n单片微型计算机（Single Chip Microcomputer）或者单片机。\n把中央处理器（CPU）的频率与规格做适当缩减，并将内存、计数器、UART等周边接口，\n整合在单一芯片上，形成芯片级的计算机，为不同的应用场合做不同组合控制。\n手机、PC外围设备、汽车电子、电机、机器臂的控制等，都用到MCU。\nArduino是一款便捷灵活、方便上手的开源电子原型平台。\n硬件：各种型号的Arduino板，如Uno、Nano、Mega 等。\n软件：Arduino IDE\n官网：https://www.arduino.cc\n在线模拟器：https://wokwi.com/arduino",
+  "key_points": [
+    "单片微型计算机（Single Chip Microcomputer）或者单片机。",
+    "整合在单一芯片上，形成芯片级的计算机，为不同的应用场合做不同组合控制。",
+    "手机、PC外围设备、汽车电子、电机、机器臂的控制等，都用到MCU。",
+    "Arduino是一款便捷灵活、方便上手的开源电子原型平台。",
+    "硬件：各种型号的Arduino板，如Uno、Nano、Mega 等。"
+  ],
+  "technical_terms": [
+    "Arduino",
+    "CPU",
+    "IDE",
+    "MCU",
+    "Uno",
+    "把中央处理",
+    "机器臂的控制",
+    "的应用场合做不同组合控制",
+    "通常用于底层驱动控制"
+  ],
+  "has_images": true,
+  "image_count": 1,
+  "image_paths": [
+    "extraction/output/qwen_qwen3.7-plus_9/debug/images/w01-2-Arduino软硬件基础_p3_img2.jpeg"
+  ],
+  "metadata": {
+    "char_count": 644,
+    "word_count": 62,
+    "line_count": 25
+  }
+}

@@ -3,6 +3,8 @@ from __future__ import annotations
 import os
 from typing import Any, Dict
 
+from .path_config import extraction_path, resolve_workspace_path, workspace_relative
+
 
 def find_project_root(start_path: str | None = None) -> str:
     current = os.path.abspath(start_path or os.getcwd())
@@ -73,11 +75,11 @@ def load_simple_yaml(path: str) -> Dict[str, Any]:
 
 
 def load_vlm_config(config_path: str | None = None) -> Dict[str, Any]:
-    project_root = find_project_root(os.path.dirname(__file__))
-    path = config_path or os.getenv(
+    path_value = config_path or os.getenv(
         "EXTRACTION_VLM_CONFIG",
-        os.path.join(project_root, "config", "vlm_api.yaml"),
+        extraction_path("config", "vlm_api.yaml"),
     )
+    path = str(resolve_workspace_path(path_value))
     data = load_simple_yaml(path)
     vlm = dict(data.get("vlm") or {})
 
@@ -92,17 +94,17 @@ def load_vlm_config(config_path: str | None = None) -> Dict[str, Any]:
     if env_model:
         vlm["model"] = env_model
 
-    vlm["config_path"] = path
+    vlm["config_path"] = workspace_relative(path)
     return vlm
 
 
 def load_embedding_config(config_path: str | None = None) -> Dict[str, Any]:
     """Load the embedding API config, reusing the VLM key by default."""
-    project_root = find_project_root(os.path.dirname(__file__))
-    path = config_path or os.getenv(
+    path_value = config_path or os.getenv(
         "EXTRACTION_VLM_CONFIG",
-        os.path.join(project_root, "config", "vlm_api.yaml"),
+        extraction_path("config", "vlm_api.yaml"),
     )
+    path = str(resolve_workspace_path(path_value))
     data = load_simple_yaml(path)
     vlm = dict(data.get("vlm") or {})
     embedding = dict(data.get("embedding") or {})
@@ -129,5 +131,5 @@ def load_embedding_config(config_path: str | None = None) -> Dict[str, Any]:
         "query_instruction",
         "Retrieve relevant evidence from Chinese educational course materials.",
     )
-    embedding["config_path"] = path
+    embedding["config_path"] = workspace_relative(path)
     return embedding

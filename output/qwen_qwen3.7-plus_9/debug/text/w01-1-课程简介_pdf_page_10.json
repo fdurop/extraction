@@ -1,0 +1,32 @@
+{
+  "page_num": 9,
+  "raw_text": "机电系统原理及实践—— 课程简介\n机电智控实验室tangguoan@fudan.edu.cn mmguo@fudan.edu.cn\n§3.2 教学内容\n18-10\n主要硬件\n附加知识点\n应用\n单片机\n嵌入式开发/数字通信\n复杂控制系统\n舵机\n脉宽调制\n多轴机械臂\n有刷直流电机\n继电器/减速器\n轮式机器人\n步进电机\n编码器/PID控制\n直线运动平台\n无刷直流电机\n机器人正/逆运动学\n足式机器人\n室 复旦大\n智控实验室 复旦大学 机电\n学 机电智控实验室 复旦大学 机电智控实验\n复旦大学 机电智控实验室 复旦大学 机电智控实验室 复旦\n旦大学 机电智控实验室 复旦大学 机电智控实验室 复旦大学 机电\n电智控实验室 复旦大学 机电智控实验室 复旦大学 机电智控实\n验室 复旦大学 机电智控实验室 复旦大学 机电智控实验室 \n旦大学 机电智控实验室 复旦大学 机电智控\n电智控实验室 复旦大学 \n实验室 复\n",
+  "cleaned_text": "§3.2 教学内容\n主要硬件\n附加知识点\n应用\n单片机\n嵌入式开发/数字通信\n复杂控制系统\n舵机\n脉宽调制\n多轴机械臂\n有刷直流电机\n继电器/减速器\n轮式机器人\n步进电机\n编码器/PID控制\n直线运动平台\n无刷直流电机\n机器人正/逆运动学\n足式机器人",
+  "key_points": [],
+  "technical_terms": [
+    "复杂控制",
+    "复杂控制系统",
+    "无刷直流电机",
+    "有刷直流电机",
+    "步进电机"
+  ],
+  "has_images": true,
+  "image_count": 10,
+  "image_paths": [
+    "extraction/output/qwen_qwen3.7-plus_9/debug/images/w01-1-课程简介_p10_img2.jpeg",
+    "extraction/output/qwen_qwen3.7-plus_9/debug/images/w01-1-课程简介_p10_img3.jpeg",
+    "extraction/output/qwen_qwen3.7-plus_9/debug/images/w01-1-课程简介_p10_img4.jpeg",
+    "extraction/output/qwen_qwen3.7-plus_9/debug/images/w01-1-课程简介_p10_img5.png",
+    "extraction/output/qwen_qwen3.7-plus_9/debug/images/w01-1-课程简介_p10_img6.jpeg",
+    "extraction/output/qwen_qwen3.7-plus_9/debug/images/w01-1-课程简介_p10_img7.jpeg",
+    "extraction/output/qwen_qwen3.7-plus_9/debug/images/w01-1-课程简介_p10_img8.jpeg",
+    "extraction/output/qwen_qwen3.7-plus_9/debug/images/w01-1-课程简介_p10_img9.jpeg",
+    "extraction/output/qwen_qwen3.7-plus_9/debug/images/w01-1-课程简介_p10_img10.jpeg",
+    "extraction/output/qwen_qwen3.7-plus_9/debug/images/w01-1-课程简介_p10_img11.jpeg"
+  ],
+  "metadata": {
+    "char_count": 404,
+    "word_count": 63,
+    "line_count": 33
+  }
+}

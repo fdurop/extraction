@@ -1,0 +1,26 @@
+{
+  "page_num": 13,
+  "raw_text": "机电系统原理及实践—— 机电系统在动力学与控制中的应用\n机电智控实验室tangguoan@fudan.edu.cn mmguo@fudan.edu.cn\n16-14\n§5.1 倒立摆演示——开环起摆\ns\ns\n0\n0\ns\nn\nn\nn\n0\n(\n0)\n0.5[ ( )\n(\n2 )]\n(0\n2 )\n0\n(\n2\n4)\n( )\n2.0 sin\n( -4)\n(4\n4\n3\n)\n(\n4\n3\n)\nn\nt\nv t\nv t\nT\nt\nT\nT\nT\nT\nt\nv t\nt\nt\nT\nt\nT\n\n\n\n\n\n+\n−\n\n+\n\n\n+\n\n= \n\n\n+\n\n\n\n+\n\n第一闭环开始\n( )\nsv t =\n其中\n平滑移动至中点的二次速度曲线\n",
+  "cleaned_text": "§5.1 倒立摆演示——开环起摆\ns\ns\n0\n0\ns\nn\nn\nn\n0\n(\n0)\n0.5[ ( )\n(\n2 )]\n(0\n2 )\n0\n(\n2\n4)\n( )\n2.0 sin\n( -4)\n(4\n4\n3\n)\n(\n4\n3\n)\nn\nt\nv t\nv t\nT\nt\nT\nT\nT\nT\nt\nv t\nt\nt\nT\nt\nT\n+\n−\n+\n+\n=\n+\n+\n第一闭环开始\n( )\nsv t =\n其中\n平滑移动至中点的二次速度曲线",
+  "key_points": [
+    "0)",
+    "0.5[ ( )",
+    "4)",
+    "2.0 sin",
+    "T",
+    "T",
+    "T",
+    "T",
+    "T",
+    "T"
+  ],
+  "technical_terms": [],
+  "has_images": false,
+  "image_count": 0,
+  "image_paths": [],
+  "metadata": {
+    "char_count": 315,
+    "word_count": 96,
+    "line_count": 80
+  }
+}

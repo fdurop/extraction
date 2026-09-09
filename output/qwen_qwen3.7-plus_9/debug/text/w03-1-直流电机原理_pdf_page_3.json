@@ -1,0 +1,20 @@
+{
+  "page_num": 2,
+  "raw_text": "机电系统原理及实践—— 直流电机原理\n机电智控实验室tangguoan@fudan.edu.cn mmguo@fudan.edu.cn\n§1 舵机的局限\n舵机的功能无法满足我们后续需求\n转角受到限制，一般在0 到90/180/270 度之间，\n无法实现无限制的旋转；\n转速相对较慢，并且难以精确控速；\n力矩较小，无法承受较大负载。\n20-3\n室 复旦大\n智控实验室 复旦大学 机电\n学 机电智控实验室 复旦大学 机电智控实验\n复旦大学 机电智控实验室 复旦大学 机电智控实验室 复旦\n大学 机电智控实验室 复旦大学 机电智控实验室 复旦大学 机电\n电智控实验室 复旦大学 机电智控实验室 复旦大学 机电智控实\n验室 复旦大学 机电智控实验室 复旦大学 机电智控实验室 \n旦大学 机电智控实验室 复旦大学 机电智控\n电智控实验室 复旦大学 \n验室 复\n",
+  "cleaned_text": "§1 舵机的局限\n舵机的功能无法满足我们后续需求\n转角受到限制，一般在0 到90/180/270 度之间，\n无法实现无限制的旋转；\n转速相对较慢，并且难以精确控速；\n力矩较小，无法承受较大负载。",
+  "key_points": [
+    "力矩较小，无法承受较大负载。"
+  ],
+  "technical_terms": [],
+  "has_images": true,
+  "image_count": 2,
+  "image_paths": [
+    "extraction/output/qwen_qwen3.7-plus_9/debug/images/w03-1-直流电机原理_p3_img2.jpeg",
+    "extraction/output/qwen_qwen3.7-plus_9/debug/images/w03-1-直流电机原理_p3_img3.jpeg"
+  ],
+  "metadata": {
+    "char_count": 379,
+    "word_count": 52,
+    "line_count": 20
+  }
+}

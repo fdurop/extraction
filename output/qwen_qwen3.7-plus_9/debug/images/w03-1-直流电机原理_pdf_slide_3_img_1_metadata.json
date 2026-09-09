@@ -1,0 +1,33 @@
+{
+  "original_path": "extraction/output/qwen_qwen3.7-plus_9/debug/images/w03-1-直流电机原理_p3_img2.jpeg",
+  "enhanced_path": "extraction/output/qwen_qwen3.7-plus_9/debug/images/w03-1-直流电机原理_p3_img2_enhanced.jpeg",
+  "description": "类型：照片\n图片展示一台绿色多自由度机械臂安装在黑色移动底盘上。机械臂末端执行器处投射出青色锥形光束覆盖下方区域，光束边缘标注距离“260mm”。画面左下角列出三种几何目标物及其尺寸标签：蓝色圆形代表“Φ30mm 球体”，绿色圆柱代表“Φ30x40mm 圆柱体”，红色立方体代表“20*30*40mm 正方体”。背景为深色，突显机械臂结构与视觉识别范围。",
+  "metadata": {
+    "generation": {
+      "method": "qwen_api",
+      "backend": "api",
+      "provider": "qwen",
+      "model": "qwen3.7-plus",
+      "status": "success",
+      "api_error": null
+    },
+    "review": {
+      "required": false,
+      "status": null,
+      "reason": null,
+      "course_relevant": true
+    }
+  },
+  "error": null,
+  "method": "qwen_api",
+  "backend": "api",
+  "provider": "qwen",
+  "model": "qwen3.7-plus",
+  "status": "success",
+  "api_error": null,
+  "indexable": true,
+  "review_required": false,
+  "review_reason": null,
+  "review_status": null,
+  "course_relevant": true
+}

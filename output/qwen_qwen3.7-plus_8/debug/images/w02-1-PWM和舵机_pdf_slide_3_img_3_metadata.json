@@ -1,0 +1,33 @@
+{
+  "original_path": "extraction/output/qwen_qwen3.7-plus_8/debug/images/w02-1-PWM和舵机_p3_img4.jpeg",
+  "enhanced_path": "extraction/output/qwen_qwen3.7-plus_8/debug/images/w02-1-PWM和舵机_p3_img4_enhanced.jpeg",
+  "description": "类型：照片\n图片展示了Arduino电路板局部特写。可见黑色ATMEGA MEGA16U2芯片、标有JP2的四个焊盘区域、以及丝印标识RX、TX、AREF、GND和DIGITAL引脚编号（8至13，其中9、10、11旁标有波浪号）。画面中央一个标有“102”字样的黑色贴片元件旁，一颗黄色LED灯处于点亮发光状态。左下角可见部分白色Arduino无限大标志。",
+  "metadata": {
+    "generation": {
+      "method": "qwen_api",
+      "backend": "api",
+      "provider": "qwen",
+      "model": "qwen3.7-plus",
+      "status": "success",
+      "api_error": null
+    },
+    "review": {
+      "required": false,
+      "status": null,
+      "reason": null,
+      "course_relevant": true
+    }
+  },
+  "error": null,
+  "method": "qwen_api",
+  "backend": "api",
+  "provider": "qwen",
+  "model": "qwen3.7-plus",
+  "status": "success",
+  "api_error": null,
+  "indexable": true,
+  "review_required": false,
+  "review_reason": null,
+  "review_status": null,
+  "course_relevant": true
+}

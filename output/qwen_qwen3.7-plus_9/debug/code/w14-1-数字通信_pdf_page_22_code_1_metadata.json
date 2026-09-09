@@ -1,0 +1,14 @@
+{
+  "source_image": "extraction/output/qwen_qwen3.7-plus_9/debug/images/w14-1-数字通信_p22_img3.jpeg",
+  "extraction_method": "qwen_api_智能识别",
+  "language": "cpp",
+  "description": "该代码用于Arduino平台，通过MCP2515 CAN控制器进行CAN总线通信。程序初始化CAN总线（波特率1000kbps），从串口获取一个浮点型位置值，将其发送给指定的从机（slaveID=1），然后等待并接收从机返回的消息，最后将从机的ID和返回的字符串信息打印到串口。",
+  "code_file": "w14-1-数字通信_pdf_page_22_code_1.cpp",
+  "page": 22,
+  "index": 1,
+  "timestamp": "2026-09-09T21:25:57.211606",
+  "raw_response": "语言: C++ (Arduino)\n```cpp\n#include <SPI.h>\n#include \"mcp2515_can.h\"\n\n// For Arduino MCP2515 Hat:\n// the cs pin of the version after v1.1 is default to D9\n// v0.9b and v1.0 is default D10\nconst int SPI_CS_PIN = 9;\nconst int CAN_INT_PIN = 2;\nmcp2515_can CAN(SPI_CS_PIN);  // Set CS pin\n\nunsigned char recvBuf[8];    // 接受信息缓存\nuint8_t len;                 // 接收到的字节数\nconst uint8_t slaveID = 1;   // 下位机 CAN ID\n\nvoid setup() {\n  Serial.begin(1000000);\n  while (!Serial) {};\n  // init can bus : baudrate = 1000k\n  while (CAN_OK != CAN.begin(CAN_1000KBPS)) {\n    Serial.println(\"CAN init fail, retry...\");\n    delay(100);\n  }\n  Serial.println(\"CAN init ok!\\n\");\n\n  // 从串口输入一个位置\n  float pos = inputPos();\n  // 发送 pos 给下位机\n  CAN_MCP_CAN::sendMsgBuf(slaveID, 0, sizeof(pos), (byte *)&pos);\n  // 等待下位机返回信息\n  while (CAN_MSGAVAIL != CAN.checkReceive())\n    ;\n  // 读取下位机返回的信息，并在串口输出\n  len = 0;\n  CAN.readMsgBuf(&len, recvBuf);\n  int id = CAN.getCanId();\n  Serial.print(\"id : \"); Serial.println(id);\n  Serial.println((char *)recvBuf);\n}\n```\n功能: 该代码用于Arduino平台，通过MCP2515 CAN控制器进行CAN总线通信。程序初始化CAN总线（波特率1000kbps），从串口获取一个浮点型位置值，将其发送给指定的从机（slaveID=1），然后等待并接收从机返回的消息，最后将从机的ID和返回的字符串信息打印到串口。",
+  "backend": "api",
+  "provider": "qwen",
+  "model": "qwen3.7-plus"
+}

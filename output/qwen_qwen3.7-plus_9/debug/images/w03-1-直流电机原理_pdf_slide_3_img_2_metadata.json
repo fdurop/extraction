@@ -1,0 +1,33 @@
+{
+  "original_path": "extraction/output/qwen_qwen3.7-plus_9/debug/images/w03-1-直流电机原理_p3_img3.jpeg",
+  "enhanced_path": "extraction/output/qwen_qwen3.7-plus_9/debug/images/w03-1-直流电机原理_p3_img3_enhanced.jpeg",
+  "description": "类型：照片\n图片展示了一个白色的四足机器人实物，具有圆柱形躯干和四条黑色的关节腿，置于灰色地面上。结合页面上下文“§1 舵机的局限”，该图片作为视觉案例，对应文中提到的舵机功能无法满足后续需求（如转角受限、转速慢、力矩小等），用于直观展示仅依赖舵机驱动的机电系统在负载或运动性能上的局限性。",
+  "metadata": {
+    "generation": {
+      "method": "qwen_api",
+      "backend": "api",
+      "provider": "qwen",
+      "model": "qwen3.7-plus",
+      "status": "success",
+      "api_error": null
+    },
+    "review": {
+      "required": false,
+      "status": null,
+      "reason": null,
+      "course_relevant": true
+    }
+  },
+  "error": null,
+  "method": "qwen_api",
+  "backend": "api",
+  "provider": "qwen",
+  "model": "qwen3.7-plus",
+  "status": "success",
+  "api_error": null,
+  "indexable": true,
+  "review_required": false,
+  "review_reason": null,
+  "review_status": null,
+  "course_relevant": true
+}

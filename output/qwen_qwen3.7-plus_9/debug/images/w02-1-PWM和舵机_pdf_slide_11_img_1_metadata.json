@@ -1,0 +1,33 @@
+{
+  "original_path": "extraction/output/qwen_qwen3.7-plus_9/debug/images/w02-1-PWM和舵机_p11_img2.jpeg",
+  "enhanced_path": "extraction/output/qwen_qwen3.7-plus_9/debug/images/w02-1-PWM和舵机_p11_img2_enhanced.jpeg",
+  "description": "类型：示意图\n图片展示了一款标有“30 KG.CM 数字舵机”及“众灵科技”字样的黑色总线舵机实物。机身侧面设有“ID”标识区。图中通过蓝色线条引出左右两侧的接口放大图，分别标注为“左侧接口”和“右侧接口”。两个接口均为三孔插座，引脚定义通过红线一一对应标注，从左至右依次为“信号端”、“舵机正极”、“舵机负极”。",
+  "metadata": {
+    "generation": {
+      "method": "qwen_api",
+      "backend": "api",
+      "provider": "qwen",
+      "model": "qwen3.7-plus",
+      "status": "success",
+      "api_error": null
+    },
+    "review": {
+      "required": false,
+      "status": null,
+      "reason": null,
+      "course_relevant": true
+    }
+  },
+  "error": null,
+  "method": "qwen_api",
+  "backend": "api",
+  "provider": "qwen",
+  "model": "qwen3.7-plus",
+  "status": "success",
+  "api_error": null,
+  "indexable": true,
+  "review_required": false,
+  "review_reason": null,
+  "review_status": null,
+  "course_relevant": true
+}

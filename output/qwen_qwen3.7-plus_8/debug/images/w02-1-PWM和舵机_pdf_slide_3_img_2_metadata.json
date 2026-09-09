@@ -1,0 +1,33 @@
+{
+  "original_path": "extraction/output/qwen_qwen3.7-plus_8/debug/images/w02-1-PWM和舵机_p3_img3.jpeg",
+  "enhanced_path": "extraction/output/qwen_qwen3.7-plus_8/debug/images/w02-1-PWM和舵机_p3_img3_enhanced.jpeg",
+  "description": "类型：照片\n图片展示了Arduino电路板局部特写。可见绿色PCB板及白色丝印标识，包括左侧“ARDUINO”字样、中间“DIGITAL - PWM”及数字引脚编号（8至13，其中9、10、11前标有波浪号~）、上方“AREF”和“GND”。左上角有一块黑色芯片，印有“ATMEL MEGA16U2”等字符。芯片右侧有一个被白色虚线框选中的区域，标记为“JP2”，内部包含四个圆形金属焊盘。此外还可见RX/TX指示灯、标有“102”的贴片元件及黄色LED灯。",
+  "metadata": {
+    "generation": {
+      "method": "qwen_api",
+      "backend": "api",
+      "provider": "qwen",
+      "model": "qwen3.7-plus",
+      "status": "success",
+      "api_error": null
+    },
+    "review": {
+      "required": false,
+      "status": null,
+      "reason": null,
+      "course_relevant": true
+    }
+  },
+  "error": null,
+  "method": "qwen_api",
+  "backend": "api",
+  "provider": "qwen",
+  "model": "qwen3.7-plus",
+  "status": "success",
+  "api_error": null,
+  "indexable": true,
+  "review_required": false,
+  "review_reason": null,
+  "review_status": null,
+  "course_relevant": true
+}

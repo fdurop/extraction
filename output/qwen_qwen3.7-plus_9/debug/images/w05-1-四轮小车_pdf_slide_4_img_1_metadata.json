@@ -1,0 +1,33 @@
+{
+  "original_path": "extraction/output/qwen_qwen3.7-plus_9/debug/images/w05-1-四轮小车_p4_img2.png",
+  "enhanced_path": "extraction/output/qwen_qwen3.7-plus_9/debug/images/w05-1-四轮小车_p4_img2_enhanced.png",
+  "description": "类型：示意图\n图中展示了一个电机控制电路。左侧为红、绿两色输入导线，连接至一个标有“双刀双掷开关”的组件。该开关包含上下两组触点及联动闸刀。开关右侧输出端连接至一个圆形符号，圆内标有大写字母“M”，旁边注有文字“电机”。电路通过双刀双掷开关将左侧线路与右侧电机相连。",
+  "metadata": {
+    "generation": {
+      "method": "qwen_api",
+      "backend": "api",
+      "provider": "qwen",
+      "model": "qwen3.7-plus",
+      "status": "success",
+      "api_error": null
+    },
+    "review": {
+      "required": false,
+      "status": null,
+      "reason": null,
+      "course_relevant": true
+    }
+  },
+  "error": null,
+  "method": "qwen_api",
+  "backend": "api",
+  "provider": "qwen",
+  "model": "qwen3.7-plus",
+  "status": "success",
+  "api_error": null,
+  "indexable": true,
+  "review_required": false,
+  "review_reason": null,
+  "review_status": null,
+  "course_relevant": true
+}

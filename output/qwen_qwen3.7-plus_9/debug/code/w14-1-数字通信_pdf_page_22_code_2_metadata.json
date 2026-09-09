@@ -1,0 +1,14 @@
+{
+  "source_image": "extraction/output/qwen_qwen3.7-plus_9/debug/images/w14-1-数字通信_p22_img4.jpeg",
+  "extraction_method": "qwen_api_智能识别",
+  "language": "cpp",
+  "description": "该代码用于Arduino平台，通过MCP2515 CAN控制器模块初始化CAN总线通信（波特率1000kbps），并配置外部中断引脚来监听CAN总线上的数据接收事件。当检测到CAN中断信号时，设置接收标志位`flagRecv`为true，以便主程序后续处理接收到的CAN数据。",
+  "code_file": "w14-1-数字通信_pdf_page_22_code_2.cpp",
+  "page": 22,
+  "index": 2,
+  "timestamp": "2026-09-09T21:26:10.236166",
+  "raw_response": "语言: C/C++ (Arduino)\n```cpp\n#include <SPI.h>\n#include \"mcp2515_can.h\"\n\nconst int SPI_CS_PIN = 9;\nconst int CAN_INT_PIN = 2;\nmcp2515_can CAN(SPI_CS_PIN);  // Set CS pin\n\nunsigned char recvBuf[8];  // 接受信息缓存\nuint8_t len;               // 接收到的字节数\nconst uint8_t slaveID = 1; // 下位机 CAN ID\nbool flagRecv;\n\nvoid setup() {\n  Serial.begin(1000000);\n  while (!Serial) {};\n\n  // Init can bus : baudrate = 1000k\n  while (CAN_OK != CAN.begin(CAN_1000KBPS)) {\n    Serial.println(\"CAN init fail, retry...\");\n    delay(100);\n  }\n  Serial.println(\"CAN init ok!\\n\");\n  // 设置监听CAN的外部中断\n  attachInterrupt(digitalPinToInterrupt(CAN_INT_PIN), posMonitor, FALLING);\n}\n\n// 监听CAN的外部中断\nvoid posMonitor() {\n  flagRecv = true;\n}\n```\n功能: 该代码用于Arduino平台，通过MCP2515 CAN控制器模块初始化CAN总线通信（波特率1000kbps），并配置外部中断引脚来监听CAN总线上的数据接收事件。当检测到CAN中断信号时，设置接收标志位`flagRecv`为true，以便主程序后续处理接收到的CAN数据。",
+  "backend": "api",
+  "provider": "qwen",
+  "model": "qwen3.7-plus"
+}

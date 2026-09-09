@@ -1,0 +1,33 @@
+{
+  "original_path": "extraction/output/qwen_qwen3.7-plus_9/debug/images/w04-1-有刷直流电机驱动器及其应用_slide_14_img_1.png",
+  "enhanced_path": "extraction/output/qwen_qwen3.7-plus_9/debug/images/w04-1-有刷直流电机驱动器及其应用_slide_14_img_1_enhanced.png",
+  "description": "类型：照片\n图片展示了一套电机驱动控制硬件组件。右侧为一块绿色PCB电路板，板上焊接有银色铝制散热片、绿色接线端子排、红色LED指示灯、蓝色电阻、黑色芯片及电解电容，板面印有“电位器”字样。左侧连接有两个外部控制器：上方是一个带黑色旋钮的电位器，通过黄、红、黑三色导线连接至电路板；下方是一个黑色船型开关（标有I/O符号），通过红、黑导线连接。该实物图对应文中提到的转速控制（电位器）与转向控制（开关）元件。",
+  "metadata": {
+    "generation": {
+      "method": "qwen_api",
+      "backend": "api",
+      "provider": "qwen",
+      "model": "qwen3.7-plus",
+      "status": "success",
+      "api_error": null
+    },
+    "review": {
+      "required": false,
+      "status": null,
+      "reason": null,
+      "course_relevant": true
+    }
+  },
+  "error": null,
+  "method": "qwen_api",
+  "backend": "api",
+  "provider": "qwen",
+  "model": "qwen3.7-plus",
+  "status": "success",
+  "api_error": null,
+  "indexable": true,
+  "review_required": false,
+  "review_reason": null,
+  "review_status": null,
+  "course_relevant": true
+}

@@ -1,0 +1,33 @@
+{
+  "original_path": "extraction/output/qwen_qwen3.7-plus_8/debug/images/w04-1-有刷直流电机驱动器及其应用_slide_20_img_2.png",
+  "enhanced_path": "extraction/output/qwen_qwen3.7-plus_8/debug/images/w04-1-有刷直流电机驱动器及其应用_slide_20_img_2_enhanced.png",
+  "description": "类型：示意图\n图片展示了钣金件一角的局部工程图。可见左上角为圆角矩形轮廓，内部绘有十字中心线。中心位置有一个圆孔，周围沿虚线圆周均匀分布6个小圆孔。标注显示大圆直径为Ø30.9，6个小孔规格为6-Ø3.2。结合页面文字“展开长度”，该图提供了计算钣金展开尺寸所需的孔位布局及直径数据。",
+  "metadata": {
+    "generation": {
+      "method": "qwen_api",
+      "backend": "api",
+      "provider": "qwen",
+      "model": "qwen3.7-plus",
+      "status": "success",
+      "api_error": null
+    },
+    "review": {
+      "required": false,
+      "status": null,
+      "reason": null,
+      "course_relevant": true
+    }
+  },
+  "error": null,
+  "method": "qwen_api",
+  "backend": "api",
+  "provider": "qwen",
+  "model": "qwen3.7-plus",
+  "status": "success",
+  "api_error": null,
+  "indexable": true,
+  "review_required": false,
+  "review_reason": null,
+  "review_status": null,
+  "course_relevant": true
+}

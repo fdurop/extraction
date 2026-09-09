@@ -1,0 +1,33 @@
+{
+  "original_path": "extraction/output/qwen_qwen3.7-plus_9/debug/images/w05-1-四轮小车_p12_img2.jpeg",
+  "enhanced_path": "extraction/output/qwen_qwen3.7-plus_9/debug/images/w05-1-四轮小车_p12_img2_enhanced.jpeg",
+  "description": "类型：照片\n图片展示了一块绿色的Arduino Uno微控制器电路板。板上可见银色USB接口、黑色圆形DC电源插座、复位按钮及晶振。边缘排列着黑色排母接口，丝印标注了“DIGITAL”、“PWM”、“ANALOG IN”、“POWER”等功能区，以及引脚编号（0-13）、A0-A5、GND、5V、3.3V、Vin、TX、RX等标识。板中央印有白色的无限符号Logo及“ARDUINO UNO”字样，右下角印有“ARDUINO.CC”。该图片直观展示了课程提到的MCU硬件实物及其供电与信号接口布局。",
+  "metadata": {
+    "generation": {
+      "method": "qwen_api",
+      "backend": "api",
+      "provider": "qwen",
+      "model": "qwen3.7-plus",
+      "status": "success",
+      "api_error": null
+    },
+    "review": {
+      "required": false,
+      "status": null,
+      "reason": null,
+      "course_relevant": true
+    }
+  },
+  "error": null,
+  "method": "qwen_api",
+  "backend": "api",
+  "provider": "qwen",
+  "model": "qwen3.7-plus",
+  "status": "success",
+  "api_error": null,
+  "indexable": true,
+  "review_required": false,
+  "review_reason": null,
+  "review_status": null,
+  "course_relevant": true
+}

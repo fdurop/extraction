@@ -1,0 +1,33 @@
+{
+  "original_path": "extraction/output/qwen_qwen3.7-plus_8/debug/images/w07-3-麦克纳姆轮小车_p4_img3.jpeg",
+  "enhanced_path": "extraction/output/qwen_qwen3.7-plus_8/debug/images/w07-3-麦克纳姆轮小车_p4_img3_enhanced.jpeg",
+  "description": "类型：示意图\n图片展示了麦克纳姆轮小车的底盘俯视布局。中央为一个灰色矩形车体，四角通过黄色连接件安装有四个轮子。左侧前后轮分别标记为“A轮”和“B轮”，右侧前后轮分别标记为“B轮”和“A轮”。轮子上的黑色辊子呈倾斜排列，左前轮（A轮）与右后轮（A轮）的辊子轴线方向平行，右前轮（B轮）与左后轮（B轮）的辊子轴线方向平行，且两组辊子轴线方向相互交叉，构成典型的X型全向移动轮系配置。",
+  "metadata": {
+    "generation": {
+      "method": "qwen_api",
+      "backend": "api",
+      "provider": "qwen",
+      "model": "qwen3.7-plus",
+      "status": "success",
+      "api_error": null
+    },
+    "review": {
+      "required": false,
+      "status": null,
+      "reason": null,
+      "course_relevant": true
+    }
+  },
+  "error": null,
+  "method": "qwen_api",
+  "backend": "api",
+  "provider": "qwen",
+  "model": "qwen3.7-plus",
+  "status": "success",
+  "api_error": null,
+  "indexable": true,
+  "review_required": false,
+  "review_reason": null,
+  "review_status": null,
+  "course_relevant": true
+}

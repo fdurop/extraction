@@ -1,0 +1,183 @@
+{
+  "title": "Current Table",
+  "headers": [
+    [
+      "Peak",
+      "RMS",
+      "SW1",
+      "SW2",
+      "SW3"
+    ]
+  ],
+  "cells": [
+    [
+      "1.0",
+      "0.7",
+      "ON",
+      "ON",
+      "ON"
+    ],
+    [
+      "1.2",
+      "1.1",
+      "OFF",
+      "ON",
+      "ON"
+    ],
+    [
+      "1.6",
+      "1.4",
+      "ON",
+      "OFF",
+      "ON"
+    ],
+    [
+      "1.8",
+      "1.6",
+      "OFF",
+      "OFF",
+      "ON"
+    ],
+    [
+      "2.0",
+      "2.1",
+      "ON",
+      "ON",
+      "OFF"
+    ],
+    [
+      "2.7",
+      "2.8",
+      "OFF",
+      "ON",
+      "OFF"
+    ],
+    [
+      "4.0",
+      "3.5",
+      "ON",
+      "OFF",
+      "OFF"
+    ],
+    [
+      "5.0",
+      "3.1",
+      "OFF",
+      "OFF",
+      "OFF"
+    ]
+  ],
+  "merged_cells": [],
+  "units": {
+    "Peak": "A",
+    "RMS": "A"
+  },
+  "footnotes": [
+    "SW4 off=Half Current, on=Full Current"
+  ],
+  "uncertain_cells": [],
+  "confidence": 0.5709,
+  "source_image": "extraction/output/qwen_qwen3.7-plus_9/debug/images/w03-1-直流电机原理_p18_img2.jpeg",
+  "recognition_image_path": "extraction/output/qwen_qwen3.7-plus_9/debug/images/w03-1-直流电机原理_p18_img2_table_ready_r0.png",
+  "source_type": "image_vlm_table",
+  "extraction_method": "qwen_api_table",
+  "backend": "api",
+  "provider": "qwen",
+  "model": "qwen3.7-plus",
+  "image_index": 0,
+  "table_region_index": 1,
+  "visible_table_count": 2,
+  "extracted_table_count": 2,
+  "coverage_complete": true,
+  "raw_response": "{\n  \"has_table\": true,\n  \"visible_table_count\": 2,\n  \"coverage_complete\": true,\n  \"tables\": [\n    {\n      \"title\": \"Current Table\",\n      \"headers\": [\n        [\n          \"Peak\",\n          \"RMS\",\n          \"SW1\",\n          \"SW2\",\n          \"SW3\"\n        ]\n      ],\n      \"cells\": [\n        [\n          \"1.0\",\n          \"0.7\",\n          \"ON\",\n          \"ON\",\n          \"ON\"\n        ],\n        [\n          \"1.2\",\n          \"1.1\",\n          \"OFF\",\n          \"ON\",\n          \"ON\"\n        ],\n        [\n          \"1.6\",\n          \"1.4\",\n          \"ON\",\n          \"OFF\",\n          \"ON\"\n        ],\n        [\n          \"1.8\",\n          \"1.6\",\n          \"OFF\",\n          \"OFF\",\n          \"ON\"\n        ],\n        [\n          \"2.0\",\n          \"2.1\",\n          \"ON\",\n          \"ON\",\n          \"OFF\"\n        ],\n        [\n          \"2.7\",\n          \"2.8\",\n          \"OFF\",\n          \"ON\",\n          \"OFF\"\n        ],\n        [\n          \"4.0\",\n          \"3.5\",\n          \"ON\",\n          \"OFF\",\n          \"OFF\"\n        ],\n        [\n          \"5.0\",\n          \"3.1\",\n          \"OFF\",\n          \"OFF\",\n          \"OFF\"\n        ]\n      ],\n      \"merged_cells\": [],\n      \"units\": {\n        \"Peak\": \"A\",\n        \"RMS\": \"A\"\n      },\n      \"footnotes\": [\n        \"SW4 off=Half Current, on=Full Current\"\n      ],\n      \"uncertain_cells\": [],\n      \"confidence\": 0.95\n    },\n    {\n      \"title\": \"Pulse/rev Table\",\n      \"headers\": [\n        [\n          \"Pulse/rev\",\n          \"SW5\",\n          \"SW6\",\n          \"SW7\",\n          \"SW8\"\n        ]\n      ],\n      \"cells\": [\n        [\n          \"200\",\n          \"ON\",\n          \"ON\",\n          \"ON\",\n          \"ON\"\n        ],\n        [\n          \"400\",\n          \"OFF\",\n          \"ON\",\n          \"ON\",\n          \"ON\"\n        ],\n        [\n          \"800\",\n          \"ON\",\n          \"OFF\",\n          \"ON\",\n          \"ON\"\n        ],\n        [\n          \"1600\",\n          \"OFF\",\n          \"OFF\",\n          \"ON\",\n          \"ON\"\n        ],\n        [\n          \"3200\",\n          \"ON\",\n          \"ON\",\n          \"OFF\",\n          \"ON\"\n        ],\n        [\n          \"6400\",\n          \"OFF\",\n          \"ON\",\n          \"OFF\",\n          \"ON\"\n        ],\n        [\n          \"12800\",\n          \"ON\",\n          \"OFF\",\n          \"OFF\",\n          \"ON\"\n        ],\n        [\n          \"25600\",\n          \"OFF\",\n          \"OFF\",\n          \"OFF\",\n          \"ON\"\n        ],\n        [\n          \"51200\",\n          \"ON\",\n          \"ON\",\n          \"ON\",\n          \"OFF\"\n        ],\n        [\n          \"10000\",\n          \"OFF\",\n          \"ON\",\n          \"ON\",\n          \"OFF\"\n        ],\n        [\n          \"20000\",\n          \"ON\",\n          \"OFF\",\n          \"ON\",\n          \"OFF\"\n        ],\n        [\n          \"40000\",\n          \"OFF\",\n          \"OFF\",\n          \"ON\",\n          \"OFF\"\n        ],\n        [\n          \"80000\",\n          \"ON\",\n          \"ON\",\n          \"OFF\",\n          \"OFF\"\n        ],\n        [\n          \"160000\",\n          \"OFF\",\n          \"ON\",\n          \"OFF\",\n          \"OFF\"\n        ],\n        [\n          \"320000\",\n          \"ON\",\n          \"OFF\",\n          \"OFF\",\n          \"OFF\"\n        ],\n        [\n          \"640000\",\n          \"OFF\",\n          \"OFF\",\n          \"OFF\",\n          \"OFF\"\n        ]\n      ],\n      \"merged_cells\": [],\n      \"units\": {},\n      \"footnotes\": [],\n      \"uncertain_cells\": [\n        [\n          9,\n          0\n        ]\n      ],\n      \"confidence\": 0.85\n    }\n  ]\n}",
+  "preprocessing": {
+    "rotation": 0,
+    "scale": 2.8933,
+    "attempt": 1
+  },
+  "auto_repairs": [],
+  "rows": 8,
+  "cols": 5,
+  "description": "Current Table",
+  "json": [
+    {
+      "Peak": "1.0",
+      "RMS": "0.7",
+      "SW1": "ON",
+      "SW2": "ON",
+      "SW3": "ON"
+    },
+    {
+      "Peak": "1.2",
+      "RMS": "1.1",
+      "SW1": "OFF",
+      "SW2": "ON",
+      "SW3": "ON"
+    },
+    {
+      "Peak": "1.6",
+      "RMS": "1.4",
+      "SW1": "ON",
+      "SW2": "OFF",
+      "SW3": "ON"
+    },
+    {
+      "Peak": "1.8",
+      "RMS": "1.6",
+      "SW1": "OFF",
+      "SW2": "OFF",
+      "SW3": "ON"
+    },
+    {
+      "Peak": "2.0",
+      "RMS": "2.1",
+      "SW1": "ON",
+      "SW2": "ON",
+      "SW3": "OFF"
+    },
+    {
+      "Peak": "2.7",
+      "RMS": "2.8",
+      "SW1": "OFF",
+      "SW2": "ON",
+      "SW3": "OFF"
+    },
+    {
+      "Peak": "4.0",
+      "RMS": "3.5",
+      "SW1": "ON",
+      "SW2": "OFF",
+      "SW3": "OFF"
+    },
+    {
+      "Peak": "5.0",
+      "RMS": "3.1",
+      "SW1": "OFF",
+      "SW2": "OFF",
+      "SW3": "OFF"
+    }
+  ],
+  "csv": "Peak,RMS,SW1,SW2,SW3\n1.0,0.7,ON,ON,ON\n1.2,1.1,OFF,ON,ON\n1.6,1.4,ON,OFF,ON\n1.8,1.6,OFF,OFF,ON\n2.0,2.1,ON,ON,OFF\n2.7,2.8,OFF,ON,OFF\n4.0,3.5,ON,OFF,OFF\n5.0,3.1,OFF,OFF,OFF\n",
+  "row_lengths": [
+    5,
+    5,
+    5,
+    5,
+    5,
+    5,
+    5,
+    5,
+    5
+  ],
+  "validation_issues": [
+    "multiple_tables_require_review",
+    "multiple_tables_require_review"
+  ],
+  "validation_status": "review",
+  "review_required": true,
+  "review_reason": "multiple_tables_require_review",
+  "review_status": "pending",
+  "indexable": false,
+  "table_id": "w03-1-直流电机原理_pdf_page_18_table_1",
+  "page_num": 18
+}

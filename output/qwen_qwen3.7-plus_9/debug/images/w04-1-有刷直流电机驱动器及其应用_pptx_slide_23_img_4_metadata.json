@@ -1,0 +1,33 @@
+{
+  "original_path": "extraction/output/qwen_qwen3.7-plus_9/debug/images/w04-1-有刷直流电机驱动器及其应用_slide_23_img_4.png",
+  "enhanced_path": "extraction/output/qwen_qwen3.7-plus_9/debug/images/w04-1-有刷直流电机驱动器及其应用_slide_23_img_4_enhanced.png",
+  "description": "类型：照片\n图片展示了一个维特智能（WIT）品牌的JY901S型号传感器模块。该模块由银色金属屏蔽罩和绿色PCB底板组成，两侧排列着金色引脚。金属壳表面印有“WIT JY901S”、“SN:2019010410105”、“CE ISO90010”字样及一个二维码。结合上下文，这是课程中提到的用于感知车辆姿态和加速度的IMU（惯性测量单元）硬件实物。",
+  "metadata": {
+    "generation": {
+      "method": "qwen_api",
+      "backend": "api",
+      "provider": "qwen",
+      "model": "qwen3.7-plus",
+      "status": "success",
+      "api_error": null
+    },
+    "review": {
+      "required": false,
+      "status": null,
+      "reason": null,
+      "course_relevant": true
+    }
+  },
+  "error": null,
+  "method": "qwen_api",
+  "backend": "api",
+  "provider": "qwen",
+  "model": "qwen3.7-plus",
+  "status": "success",
+  "api_error": null,
+  "indexable": true,
+  "review_required": false,
+  "review_reason": null,
+  "review_status": null,
+  "course_relevant": true
+}

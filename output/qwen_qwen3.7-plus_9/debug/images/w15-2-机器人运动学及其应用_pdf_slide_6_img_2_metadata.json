@@ -1,0 +1,33 @@
+{
+  "original_path": "extraction/output/qwen_qwen3.7-plus_9/debug/images/w15-2-机器人运动学及其应用_p6_img4.jpeg",
+  "enhanced_path": "extraction/output/qwen_qwen3.7-plus_9/debug/images/w15-2-机器人运动学及其应用_p6_img4_enhanced.jpeg",
+  "description": "类型：示意图\n图片展示了一个串联机器人腿部机械结构的三维模型。左上端为圆柱形关节驱动组件，包含齿轮传动机构及外壳，中心可见橙色环形部件。该组件通过转动副连接一根粉色长连杆（大腿），连杆中部有平行四边形加强筋结构。连杆下端通过另一转动副连接第二根较短的粉色连杆（小腿），末端设有安装接口。整体呈现典型的两自由度串联连杆机构形态，背景为白色渐变。",
+  "metadata": {
+    "generation": {
+      "method": "qwen_api",
+      "backend": "api",
+      "provider": "qwen",
+      "model": "qwen3.7-plus",
+      "status": "success",
+      "api_error": null
+    },
+    "review": {
+      "required": false,
+      "status": null,
+      "reason": null,
+      "course_relevant": true
+    }
+  },
+  "error": null,
+  "method": "qwen_api",
+  "backend": "api",
+  "provider": "qwen",
+  "model": "qwen3.7-plus",
+  "status": "success",
+  "api_error": null,
+  "indexable": true,
+  "review_required": false,
+  "review_reason": null,
+  "review_status": null,
+  "course_relevant": true
+}

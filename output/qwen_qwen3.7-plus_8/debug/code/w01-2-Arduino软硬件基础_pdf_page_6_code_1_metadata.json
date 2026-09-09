@@ -1,0 +1,14 @@
+{
+  "source_image": "extraction/output/qwen_qwen3.7-plus_8/debug/images/w01-2-Arduino软硬件基础_p6_img2.jpeg",
+  "extraction_method": "qwen_api_智能识别",
+  "language": "cpp",
+  "description": "这是Arduino IDE的默认空白模板代码。`setup()`函数在程序启动时运行一次，用于初始化设置；`loop()`函数随后无限循环执行，用于放置主要的运行逻辑。目前代码体内为空，未实现任何具体功能。",
+  "code_file": "w01-2-Arduino软硬件基础_pdf_page_6_code_1.cpp",
+  "page": 6,
+  "index": 1,
+  "timestamp": "2026-09-09T09:15:41.418759",
+  "raw_response": "语言: Arduino (C/C++)\n```cpp\nvoid setup() {\n  // put your setup code here, to run once:\n\n}\n\nvoid loop() {\n  // put your main code here, to run repeatedly:\n\n}\n```\n功能: 这是Arduino IDE的默认空白模板代码。`setup()`函数在程序启动时运行一次，用于初始化设置；`loop()`函数随后无限循环执行，用于放置主要的运行逻辑。目前代码体内为空，未实现任何具体功能。",
+  "backend": "api",
+  "provider": "qwen",
+  "model": "qwen3.7-plus"
+}

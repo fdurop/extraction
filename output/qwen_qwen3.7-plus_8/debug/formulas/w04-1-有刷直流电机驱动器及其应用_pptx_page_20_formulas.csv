@@ -1,0 +1,2 @@
+﻿序号,LaTeX公式,名称,描述,来源图像,提取方法,置信度,验证状态,是否需审核
+1,L = \frac{\pi}{2} (R + K \times T) \frac{\theta}{90^\circ},,,extraction/output/qwen_qwen3.7-plus_8/debug/images/w04-1-有刷直流电机驱动器及其应用_slide_20_vector_fallback.png,qwen_api_formula,1.0,passed,False

@@ -1,0 +1,28 @@
+{
+  "page_num": 7,
+  "raw_text": "机电系统原理及实践—— 无刷直流电机驱动简介\n机电智控实验室tangguoan@fudan.edu.cn mmguo@fudan.edu.cn\n§4.1 小米CyberGear 微电机\n集成了驱动和通信的BLDC.\n\n驱动方式：FOC.\n\n通信方式：CAN.\n\n磁编码器：14 bit (单圈绝对值)。\n9-8\n驱动电路板\n编码器\n线圈\n外壳\n行星减速器\n转子\n运控模式：动力学控制\n位置模式：运动学控制\nPID控制\n",
+  "cleaned_text": "§4.1 小米CyberGear 微电机\n集成了驱动和通信的BLDC.\n驱动方式：FOC.\n通信方式：CAN.\n磁编码器：14 bit (单圈绝对值)。\n驱动电路板\n编码器\n线圈\n外壳\n行星减速器\n转子\n运控模式：动力学控制\n位置模式：运动学控制\nPID控制",
+  "key_points": [
+    "磁编码器：14 bit (单圈绝对值)。",
+    "PID控制"
+  ],
+  "technical_terms": [
+    "CAN",
+    "FOC",
+    "动力学控制",
+    "运动学控制"
+  ],
+  "has_images": true,
+  "image_count": 4,
+  "image_paths": [
+    "extraction/output/qwen_qwen3.7-plus_8/debug/images/w15-1-无刷直流电机驱动器_p8_img3.jpeg",
+    "extraction/output/qwen_qwen3.7-plus_8/debug/images/w15-1-无刷直流电机驱动器_p8_img4.jpeg",
+    "extraction/output/qwen_qwen3.7-plus_8/debug/images/w15-1-无刷直流电机驱动器_p8_img5.jpeg",
+    "extraction/output/qwen_qwen3.7-plus_8/debug/images/w15-1-无刷直流电机驱动器_p8_img8.jpeg"
+  ],
+  "metadata": {
+    "char_count": 213,
+    "word_count": 26,
+    "line_count": 21
+  }
+}

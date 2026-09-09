@@ -1,0 +1,14 @@
+{
+  "source_image": "extraction/output/qwen_qwen3.7-plus_8/debug/images/w01-2-Arduino软硬件基础_p8_img2.png",
+  "extraction_method": "qwen_api_智能识别",
+  "language": "cpp",
+  "description": "控制Arduino板载LED灯以指定的周期和占空比进行闪烁。通过调整`cycle`（周期）和`duty`（占空比）变量，可以改变LED亮灭的时间比例，实现类似PWM的效果。当前配置下LED会持续亮起（因为duty=1）。",
+  "code_file": "w01-2-Arduino软硬件基础_pdf_page_8_code_1.cpp",
+  "page": 8,
+  "index": 1,
+  "timestamp": "2026-09-09T09:16:03.779240",
+  "raw_response": "语言: Arduino (C/C++)\n```cpp\n// the setup function runs once when you press reset or power the board\nvoid setup() {\n  // pinMode: 初始化数字端口\n  pinMode(LED_BUILTIN, OUTPUT);   // 使用Uno时，LED_BUILTIN 为 port 13.\n}\n\n// the loop function runs over and over again forever\nvoid loop() {\n  int cycle = 20;    // 明暗周期，单位 ms. 可尝试较小数值，如 20 ms\n  float duty = 1;    // 占空比，表示点亮时长与cycle的比值，在0-1之间变化\n\n  // digitalWrite: 向指定数字端口输出高/低电平\n  digitalWrite(LED_BUILTIN, HIGH);   // turn the LED on (HIGH is the voltage level)\n  delay(duty * cycle);               // wait for a second, unit: ms\n  digitalWrite(LED_BUILTIN, LOW);    // turn the LED off by making the voltage LOW\n  delay(cycle * (1 - duty));         // wait for a second, unit: ms\n}\n```\n功能: 控制Arduino板载LED灯以指定的周期和占空比进行闪烁。通过调整`cycle`（周期）和`duty`（占空比）变量，可以改变LED亮灭的时间比例，实现类似PWM的效果。当前配置下LED会持续亮起（因为duty=1）。",
+  "backend": "api",
+  "provider": "qwen",
+  "model": "qwen3.7-plus"
+}

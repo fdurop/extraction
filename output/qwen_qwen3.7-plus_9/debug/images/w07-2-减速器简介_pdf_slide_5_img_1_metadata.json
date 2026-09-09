@@ -1,0 +1,33 @@
+{
+  "original_path": "extraction/output/qwen_qwen3.7-plus_9/debug/images/w07-2-减速器简介_p5_img2.jpeg",
+  "enhanced_path": "extraction/output/qwen_qwen3.7-plus_9/debug/images/w07-2-减速器简介_p5_img2_enhanced.jpeg",
+  "description": "类型：照片\n图片展示了一个黄色的工业减速器实物。主体为黄色圆柱形外壳，前端连接银色方形金属法兰盘，盘面四角及边缘分布有黑色安装螺孔。法兰盘中心伸出一根银色金属输出轴，轴端可见键槽结构。设备后端连接白色圆柱形部件（电机），整体置于白色背景中。结合上下文，该图对应课程中行星减速器的外观实例。",
+  "metadata": {
+    "generation": {
+      "method": "qwen_api",
+      "backend": "api",
+      "provider": "qwen",
+      "model": "qwen3.7-plus",
+      "status": "success",
+      "api_error": null
+    },
+    "review": {
+      "required": false,
+      "status": null,
+      "reason": null,
+      "course_relevant": true
+    }
+  },
+  "error": null,
+  "method": "qwen_api",
+  "backend": "api",
+  "provider": "qwen",
+  "model": "qwen3.7-plus",
+  "status": "success",
+  "api_error": null,
+  "indexable": true,
+  "review_required": false,
+  "review_reason": null,
+  "review_status": null,
+  "course_relevant": true
+}

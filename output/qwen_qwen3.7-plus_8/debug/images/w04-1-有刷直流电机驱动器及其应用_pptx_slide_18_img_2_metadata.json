@@ -1,0 +1,33 @@
+{
+  "original_path": "extraction/output/qwen_qwen3.7-plus_8/debug/images/w04-1-有刷直流电机驱动器及其应用_slide_18_img_2.png",
+  "enhanced_path": "extraction/output/qwen_qwen3.7-plus_8/debug/images/w04-1-有刷直流电机驱动器及其应用_slide_18_img_2_enhanced.png",
+  "description": "类型：照片\n图片展示了五种电气结构部件。左侧为两个金属圆柱形传感器，均带有螺纹外壳，其中一个顶部引出黑色线缆且前端呈绿色，另一个为平顶金属面。上方中间是一个灰色塑料接线端子，配有三个橙色按压式杠杆。右下方是一组透明外壳的接线端子排，包含多个蓝色和红色的操作杠杆。最右侧边缘可见一个细小的金属针形端子。这些物体均为实物拍摄，背景为白色。",
+  "metadata": {
+    "generation": {
+      "method": "qwen_api",
+      "backend": "api",
+      "provider": "qwen",
+      "model": "qwen3.7-plus",
+      "status": "success",
+      "api_error": null
+    },
+    "review": {
+      "required": false,
+      "status": null,
+      "reason": null,
+      "course_relevant": true
+    }
+  },
+  "error": null,
+  "method": "qwen_api",
+  "backend": "api",
+  "provider": "qwen",
+  "model": "qwen3.7-plus",
+  "status": "success",
+  "api_error": null,
+  "indexable": true,
+  "review_required": false,
+  "review_reason": null,
+  "review_status": null,
+  "course_relevant": true
+}

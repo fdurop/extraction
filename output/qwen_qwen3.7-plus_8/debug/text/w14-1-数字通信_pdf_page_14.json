@@ -1,0 +1,33 @@
+{
+  "page_num": 13,
+  "raw_text": "机电系统原理及实践—— 数字通信\n机电智控实验室tangguoan@fudan.edu.cn mmguo@fudan.edu.cn\nI2C 时序图\n多用于数据量不大且传输距离短的场合下的主从通信。\n\n主(上位) 机启动总线，并产生时钟用于传送数据。\n\n任何接收数据的器件均被认为是从(下位) 机。\n一种同步、半双工、二线制、一对多的总线标准。\n\n时钟线SCL (Serial Clock Line)；\n\n数据线SDA (Serial Data Line)。\n\nSCL处于高时，SDA拉低的动作作为开始信号；\n\nSCL处于高时，SDA拉高的动作作为结束信号。\n\n传输数据时，SDA在SCL低电平时改变数据，在SCL高电平时保持数据。\n\n每个SCL脉冲的高电平传递1位数据。\n§5 集成电路间总线(Inter-Integrated Circuit，IIC/I2C)\n23-14\n计算机的总线结构\n",
+  "cleaned_text": "I2C 时序图\n多用于数据量不大且传输距离短的场合下的主从通信。\n主(上位) 机启动总线，并产生时钟用于传送数据。\n任何接收数据的器件均被认为是从(下位) 机。\n一种同步、半双工、二线制、一对多的总线标准。\n时钟线SCL (Serial Clock Line)；\n数据线SDA (Serial Data Line)。\nSCL处于高时，SDA拉低的动作作为开始信号；\nSCL处于高时，SDA拉高的动作作为结束信号。\n传输数据时，SDA在SCL低电平时改变数据，在SCL高电平时保持数据。\n每个SCL脉冲的高电平传递1位数据。\n§5 集成电路间总线(Inter-Integrated Circuit，IIC/I2C)\n计算机的总线结构",
+  "key_points": [
+    "I2C 时序图",
+    "多用于数据量不大且传输距离短的场合下的主从通信。",
+    "主(上位) 机启动总线，并产生时钟用于传送数据。",
+    "任何接收数据的器件均被认为是从(下位) 机。",
+    "一种同步、半双工、二线制、一对多的总线标准。",
+    "数据线SDA (Serial Data Line)。",
+    "SCL处于高时，SDA拉低的动作作为开始信号；",
+    "SCL处于高时，SDA拉高的动作作为结束信号。",
+    "传输数据时，SDA在SCL低电平时改变数据，在SCL高电平时保持数据。",
+    "每个SCL脉冲的高电平传递1位数据。"
+  ],
+  "technical_terms": [
+    "I2C",
+    "IIC",
+    "一对多的总线标准"
+  ],
+  "has_images": true,
+  "image_count": 2,
+  "image_paths": [
+    "extraction/output/qwen_qwen3.7-plus_8/debug/images/w14-1-数字通信_p14_img5.jpeg",
+    "extraction/output/qwen_qwen3.7-plus_8/debug/images/w14-1-数字通信_p14_img6.jpeg"
+  ],
+  "metadata": {
+    "char_count": 406,
+    "word_count": 37,
+    "line_count": 25
+  }
+}

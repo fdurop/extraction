@@ -1,0 +1,33 @@
+{
+  "original_path": "extraction/output/qwen_qwen3.7-plus_8/debug/images/w03-1-直流电机原理_p10_img2.png",
+  "enhanced_path": "extraction/output/qwen_qwen3.7-plus_8/debug/images/w03-1-直流电机原理_p10_img2_enhanced.png",
+  "description": "类型：示意图\n图片展示了无刷直流电机三相绕组（U、V、W）星形连接及不同通电阶段的电流路径。包含三个圆形定子截面图，内部绘有代表绕组的锯齿状线条。\n左图标注“V-U”，红色箭头指示电流从V相流入，经中心点流向U相流出，W相绕组为黑色；\n中图标注“V-W”，红色箭头指示电流从V相流入，经中心点流向W相流出，U相绕组为黑色；\n右图标注“U-W”，红色箭头指示电流从U相流入，经中心点流向W相流出，V相绕组为黑色。\n红色线条代表通电绕组及电流方向，黑色线条代表未通电绕组。",
+  "metadata": {
+    "generation": {
+      "method": "qwen_api",
+      "backend": "api",
+      "provider": "qwen",
+      "model": "qwen3.7-plus",
+      "status": "success",
+      "api_error": null
+    },
+    "review": {
+      "required": false,
+      "status": null,
+      "reason": null,
+      "course_relevant": true
+    }
+  },
+  "error": null,
+  "method": "qwen_api",
+  "backend": "api",
+  "provider": "qwen",
+  "model": "qwen3.7-plus",
+  "status": "success",
+  "api_error": null,
+  "indexable": true,
+  "review_required": false,
+  "review_reason": null,
+  "review_status": null,
+  "course_relevant": true
+}

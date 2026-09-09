@@ -1,0 +1,33 @@
+{
+  "original_path": "extraction/output/qwen_qwen3.7-plus_9/debug/images/w15-2-机器人运动学及其应用_p17_img6.jpeg",
+  "enhanced_path": "extraction/output/qwen_qwen3.7-plus_9/debug/images/w15-2-机器人运动学及其应用_p17_img6_enhanced.jpeg",
+  "description": "类型：照片\n图片展示了一个放置在白色桌面上的四足机器人实物原型。机器人主体由银色金属横梁和绿色电路板构成，背部连接着大量红色和黑色的导线。四条腿通过银色舵机与身体连接，腿部末端装有黑色轮子或足端结构。背景可见黑色圆凳、白色实验台以及右侧一台显示数字的电源仪器。图片上方叠加有黑色文字“四条腿依次迈步”和“对角同时迈步”。",
+  "metadata": {
+    "generation": {
+      "method": "qwen_api",
+      "backend": "api",
+      "provider": "qwen",
+      "model": "qwen3.7-plus",
+      "status": "success",
+      "api_error": null
+    },
+    "review": {
+      "required": false,
+      "status": null,
+      "reason": null,
+      "course_relevant": true
+    }
+  },
+  "error": null,
+  "method": "qwen_api",
+  "backend": "api",
+  "provider": "qwen",
+  "model": "qwen3.7-plus",
+  "status": "success",
+  "api_error": null,
+  "indexable": true,
+  "review_required": false,
+  "review_reason": null,
+  "review_status": null,
+  "course_relevant": true
+}

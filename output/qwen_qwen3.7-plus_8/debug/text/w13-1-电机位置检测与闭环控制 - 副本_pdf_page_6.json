@@ -1,0 +1,20 @@
+{
+  "page_num": 5,
+  "raw_text": "机电系统原理及实践—— 电机位置检测与闭环控制\n机电智控实验室tangguoan@fudan.edu.cn mmguo@fudan.edu.cn\n§2.2 检测原理\n16-6\n← 向左移动\nt\n光敏传感器\n光源\nt\n向右移动→\nt\nt\n光敏传感器\n光源\n周期\n",
+  "cleaned_text": "§2.2 检测原理\n← 向左移动\nt\n光敏传感器\n光源\nt\n向右移动→\nt\nt\n光敏传感器\n光源\n周期",
+  "key_points": [],
+  "technical_terms": [
+    "光敏传感器"
+  ],
+  "has_images": true,
+  "image_count": 2,
+  "image_paths": [
+    "extraction/output/qwen_qwen3.7-plus_8/debug/images/w13-1-电机位置检测与闭环控制 - 副本_p6_img3.jpeg",
+    "extraction/output/qwen_qwen3.7-plus_8/debug/images/w13-1-电机位置检测与闭环控制 - 副本_p6_img4.png"
+  ],
+  "metadata": {
+    "char_count": 130,
+    "word_count": 19,
+    "line_count": 16
+  }
+}

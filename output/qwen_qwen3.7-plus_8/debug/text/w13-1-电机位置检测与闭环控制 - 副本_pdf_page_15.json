@@ -1,0 +1,33 @@
+{
+  "page_num": 14,
+  "raw_text": "机电系统原理及实践—— 电机位置检测与闭环控制\n机电智控实验室tangguoan@fudan.edu.cn mmguo@fudan.edu.cn\n§4.3 PID 控制\n比例-积分-微分（Proportional Integral Derivative）控制\n𝑢𝑡= 𝐾𝑝𝑒𝑡+ 𝐾𝑖න\n0\n𝑡\n𝑒𝑡d𝑡+ 𝐾𝑑\nd𝑒𝑡\nd𝑡\n+ 𝑢(0)\n16-15\n其中，𝑢(𝑡) 表示输出，𝒆(𝒕) 表示偏差，\n𝐾𝑝/𝐾𝑖/𝐾𝑑分别为比例/积分/微分系数。\n经典控制理论中最重要的控制方法，历史\n悠久。\n至今，PID算法及其改进算法仍是最简单、\n有效且应用最广泛的常用控制方法。\nP\nI\nD\n",
+  "cleaned_text": "§4.3 PID 控制\n比例-积分-微分（Proportional Integral Derivative）控制\n𝑢𝑡= 𝐾𝑝𝑒𝑡+ 𝐾𝑖න\n0\n𝑡\n𝑒𝑡d𝑡+ 𝐾𝑑\nd𝑒𝑡\nd𝑡\n+ 𝑢(0)\n其中，𝑢(𝑡) 表示输出，𝒆(𝒕) 表示偏差，\n𝐾𝑝/𝐾𝑖/𝐾𝑑分别为比例/积分/微分系数。\n经典控制理论中最重要的控制方法，历史\n悠久。\n至今，PID算法及其改进算法仍是最简单、\n有效且应用最广泛的常用控制方法。\nP\nI\nD",
+  "key_points": [
+    "𝐾𝑝/𝐾𝑖/𝐾𝑑分别为比例/积分/微分系数。",
+    "悠久。",
+    "有效且应用最广泛的常用控制方法。",
+    "P",
+    "I",
+    "D"
+  ],
+  "technical_terms": [
+    "PID",
+    "中最重要的控制方法",
+    "应用最广泛的常用控制方法",
+    "效且应用最广泛的常用控制",
+    "理论中最重要的控制",
+    "算法及其改进算法",
+    "经典控制",
+    "经典控制理论"
+  ],
+  "has_images": true,
+  "image_count": 1,
+  "image_paths": [
+    "extraction/output/qwen_qwen3.7-plus_8/debug/images/w13-1-电机位置检测与闭环控制 - 副本_p15_img3.jpeg"
+  ],
+  "metadata": {
+    "char_count": 295,
+    "word_count": 33,
+    "line_count": 22
+  }
+}

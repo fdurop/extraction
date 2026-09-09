@@ -1,0 +1,33 @@
+{
+  "original_path": "extraction/output/qwen_qwen3.7-plus_9/debug/images/w04-1-有刷直流电机驱动器及其应用_slide_23_img_1.png",
+  "enhanced_path": "extraction/output/qwen_qwen3.7-plus_9/debug/images/w04-1-有刷直流电机驱动器及其应用_slide_23_img_1_enhanced.png",
+  "description": "类型：照片\n图片展示了一个带有编码器的直流电机组件。主体为银色圆柱形金属外壳，前端伸出一根金属输出轴。尾部连接着一块绿色的圆形电路板（PCB），板上可见黑色的圆形霍尔传感器元件、贴片电阻电容及焊点。电路板边缘焊接有一个白色的插座接口，旁边印有白色丝印文字，清晰可见“电机线+”、“编码器GND”、“编码器B相”等引脚定义标识。该硬件对应课程文本中提到的用于测量车轮旋转圈数的“编码器”。",
+  "metadata": {
+    "generation": {
+      "method": "qwen_api",
+      "backend": "api",
+      "provider": "qwen",
+      "model": "qwen3.7-plus",
+      "status": "success",
+      "api_error": null
+    },
+    "review": {
+      "required": false,
+      "status": null,
+      "reason": null,
+      "course_relevant": true
+    }
+  },
+  "error": null,
+  "method": "qwen_api",
+  "backend": "api",
+  "provider": "qwen",
+  "model": "qwen3.7-plus",
+  "status": "success",
+  "api_error": null,
+  "indexable": true,
+  "review_required": false,
+  "review_reason": null,
+  "review_status": null,
+  "course_relevant": true
+}

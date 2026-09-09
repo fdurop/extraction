@@ -1,0 +1,33 @@
+{
+  "original_path": "extraction/output/qwen_qwen3.7-plus_9/debug/images/w07-3-麦克纳姆轮小车_p5_img3.png",
+  "enhanced_path": "extraction/output/qwen_qwen3.7-plus_9/debug/images/w07-3-麦克纳姆轮小车_p5_img3_enhanced.png",
+  "description": "类型：示意图\n图片展示了麦克纳姆轮（B轮）的地面投影视图及受力分析。灰色矩形代表轮毂，内部包含四个黑色椭圆辊子。红色实线表示轮毂轴线，红色虚线表示辊子轴线，二者存在夹角。蓝色向下箭头标记为v，指示速度方向；黄色向上箭头标记为Ff，指示摩擦力方向。橙色箭头展示力在辊子坐标系下的分解：沿辊子轴线方向的F⊥（滚动摩擦力）和垂直于辊子轴线方向的F∥（静摩擦力）。左上角有红色旋转箭头示意运动趋势。图中明确标注了“接触点”、“轮毂轴线”和“辊子轴线”。",
+  "metadata": {
+    "generation": {
+      "method": "qwen_api",
+      "backend": "api",
+      "provider": "qwen",
+      "model": "qwen3.7-plus",
+      "status": "success",
+      "api_error": null
+    },
+    "review": {
+      "required": false,
+      "status": null,
+      "reason": null,
+      "course_relevant": true
+    }
+  },
+  "error": null,
+  "method": "qwen_api",
+  "backend": "api",
+  "provider": "qwen",
+  "model": "qwen3.7-plus",
+  "status": "success",
+  "api_error": null,
+  "indexable": true,
+  "review_required": false,
+  "review_reason": null,
+  "review_status": null,
+  "course_relevant": true
+}

@@ -1,0 +1,33 @@
+{
+  "original_path": "extraction/output/qwen_qwen3.7-plus_8/debug/images/w01-2-Arduino软硬件基础_p6_img2.jpeg",
+  "enhanced_path": "extraction/output/qwen_qwen3.7-plus_8/debug/images/w01-2-Arduino软硬件基础_p6_img2_enhanced.jpeg",
+  "description": "类型：照片\n图片展示了Arduino IDE 2.1.1软件界面截图。顶部标题栏显示“sketch_sep3a | Arduino IDE 2.1.1”，下方菜单栏包含File、Edit、Sketch等选项。工具栏左侧有验证和上传图标，中间下拉菜单显示当前选择板卡为“Arduino Uno”。界面主体分为左右两部分：左侧为“LIBRARY MANAGER”（库管理器）面板，包含搜索框及Type/Topic筛选，列表中可见“AIPlc_Opta”、“AIPlc_PMC”、“Arduino Cloud Provider Examples”等库及其INSTALL按钮；右侧为代码编辑区，文件名“sketch_sep3a.ino”，显示了第1至10行代码，包含`void setup() {`和`void loop() {`两个函数结构及注释。底部状态栏显示光标位置及“Arduino Uno [not connected]”。",
+  "metadata": {
+    "generation": {
+      "method": "qwen_api",
+      "backend": "api",
+      "provider": "qwen",
+      "model": "qwen3.7-plus",
+      "status": "success",
+      "api_error": null
+    },
+    "review": {
+      "required": false,
+      "status": null,
+      "reason": null,
+      "course_relevant": true
+    }
+  },
+  "error": null,
+  "method": "qwen_api",
+  "backend": "api",
+  "provider": "qwen",
+  "model": "qwen3.7-plus",
+  "status": "success",
+  "api_error": null,
+  "indexable": true,
+  "review_required": false,
+  "review_reason": null,
+  "review_status": null,
+  "course_relevant": true
+}

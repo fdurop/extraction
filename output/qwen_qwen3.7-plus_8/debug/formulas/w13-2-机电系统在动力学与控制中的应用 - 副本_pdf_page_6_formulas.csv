@@ -1,0 +1,2 @@
+﻿序号,LaTeX公式,名称,描述,来源图像,提取方法,置信度,验证状态,是否需审核
+1,t = (last_loop_time - Buttons.tstart) * 1.0e-6,,,,text_rule,0.78,passed,False

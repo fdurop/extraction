@@ -1,0 +1,24 @@
+{
+  "page_num": 8,
+  "raw_text": "机电系统原理及实践—— 数字通信\n机电智控实验室tangguoan@fudan.edu.cn mmguo@fudan.edu.cn\n§3.1 Matlab APP 简介\n创建专业的App，无需软件开发\n专业背景。\n只需拖放可视化组件，即可实现图\n形用户界面(GUI)设计布局，还可\n以使用集成的编辑器快速为其行为\n编程。\n23-9\nhttps://ww2.mathworks.cn/products/matlab/app-designer.html\n",
+  "cleaned_text": "§3.1 Matlab APP 简介\n创建专业的App，无需软件开发\n专业背景。\n只需拖放可视化组件，即可实现图\n形用户界面(GUI)设计布局，还可\n以使用集成的编辑器快速为其行为\n编程。\nhttps://ww2.mathworks.cn/products/matlab/app-designer.html",
+  "key_points": [
+    "专业背景。",
+    "编程。"
+  ],
+  "technical_terms": [
+    "APP",
+    "GUI",
+    "ww2"
+  ],
+  "has_images": true,
+  "image_count": 1,
+  "image_paths": [
+    "extraction/output/qwen_qwen3.7-plus_8/debug/images/w14-1-数字通信_p9_img3.jpeg"
+  ],
+  "metadata": {
+    "char_count": 228,
+    "word_count": 16,
+    "line_count": 12
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "page_num": 1,
+  "raw_text": "机电系统原理及实践—— 脉宽调制& 舵机\n机电智控实验室tangguoan@fudan.edu.cn mmguo@fudan.edu.cn\n控制\n内容提要\n15-2\n脉宽调制（PWM）\n实践：用电位器调节LED灯亮度\n舵机（servo）\n实践：用电位器控制舵机\n模拟输出\n模拟输入\n角度伺服\n电机应用\n控制\n室 复旦大\n智控实验室 复旦大学 机电\n学 机电智控实验室 复旦大学 机电智控实验\n复旦大学 机电智控实验室 复旦大学 机电智控实验室 复旦\n大学 机电智控实验室 复旦大学 机电智控实验室 复旦大学 机电\n电智控实验室 复旦大学 机电智控实验室 复旦大学 机电智控实\n验室 复旦大学 机电智控实验室 复旦大学 机电智控实验室 \n旦大学 机电智控实验室 复旦大学 机电智控\n电智控实验室 复旦大学 \n验室 复\n",
+  "cleaned_text": "控制\n内容提要\n脉宽调制（PWM）\n实践：用电位器调节LED灯亮度\n舵机（servo）\n实践：用电位器控制舵机\n模拟输出\n模拟输入\n角度伺服\n电机应用\n控制",
+  "key_points": [],
+  "technical_terms": [
+    "PWM",
+    "用电位器控制"
+  ],
+  "has_images": false,
+  "image_count": 0,
+  "image_paths": [],
+  "metadata": {
+    "char_count": 358,
+    "word_count": 55,
+    "line_count": 25
+  }
+}

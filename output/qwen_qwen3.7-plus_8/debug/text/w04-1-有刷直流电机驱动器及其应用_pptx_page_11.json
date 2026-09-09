@@ -1,0 +1,20 @@
+{
+  "page_num": 10,
+  "raw_text": "控制\n有刷\n直流电机的转向和\n转速\n23-\nw04-s2-changeDCMotorSpeed.ino",
+  "cleaned_text": "控制\n有刷\n直流电机的转向和\n转速\nw04-s2-changeDCMotorSpeed.ino",
+  "key_points": [],
+  "technical_terms": [
+    "w04-s2-changeDCMotorSpeed",
+    "直流电机"
+  ],
+  "has_images": true,
+  "image_count": 1,
+  "image_paths": [
+    "extraction/output/qwen_qwen3.7-plus_8/debug/images/w04-1-有刷直流电机驱动器及其应用_slide_11_vector_fallback.png"
+  ],
+  "metadata": {
+    "char_count": 51,
+    "word_count": 6,
+    "line_count": 6
+  }
+}

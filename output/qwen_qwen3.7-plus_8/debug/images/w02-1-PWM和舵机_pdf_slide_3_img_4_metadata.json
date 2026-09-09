@@ -1,0 +1,33 @@
+{
+  "original_path": "extraction/output/qwen_qwen3.7-plus_8/debug/images/w02-1-PWM和舵机_p3_img5.jpeg",
+  "enhanced_path": "extraction/output/qwen_qwen3.7-plus_8/debug/images/w02-1-PWM和舵机_p3_img5_enhanced.jpeg",
+  "description": "类型：代码\n图片展示了C语言代码片段，位于`void loop()`函数体内。定义整型变量`cycle`赋值为20，注释为“明暗周期”；定义浮点型变量`duty`赋值为1，注释为“占空比”。随后通过`digitalWrite`函数控制`LED_BUILTIN`引脚输出`HIGH`和`LOW`电平，中间穿插`delay`函数进行延时，延时时间分别由`duty * cycle`和`cycle * (1 - duty)`计算得出，用于实现脉宽调制逻辑。",
+  "metadata": {
+    "generation": {
+      "method": "qwen_api",
+      "backend": "api",
+      "provider": "qwen",
+      "model": "qwen3.7-plus",
+      "status": "success",
+      "api_error": null
+    },
+    "review": {
+      "required": false,
+      "status": null,
+      "reason": null,
+      "course_relevant": true
+    }
+  },
+  "error": null,
+  "method": "qwen_api",
+  "backend": "api",
+  "provider": "qwen",
+  "model": "qwen3.7-plus",
+  "status": "success",
+  "api_error": null,
+  "indexable": true,
+  "review_required": false,
+  "review_reason": null,
+  "review_status": null,
+  "course_relevant": true
+}

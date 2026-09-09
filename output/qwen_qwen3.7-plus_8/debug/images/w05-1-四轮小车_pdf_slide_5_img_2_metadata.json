@@ -1,0 +1,33 @@
+{
+  "original_path": "extraction/output/qwen_qwen3.7-plus_8/debug/images/w05-1-四轮小车_p5_img3.jpeg",
+  "enhanced_path": "extraction/output/qwen_qwen3.7-plus_8/debug/images/w05-1-四轮小车_p5_img3_enhanced.jpeg",
+  "description": "类型：照片\n图片展示了四轮小车底盘的内部硬件布局。金属箱体四角各安装有一个银色直流减速电机，电机轴向上延伸出箱体外。箱体底部中央固定着一块白色QISUO品牌12V 3000mAh锂电池组。电池上方设有一排绿色接线端子，旁侧贴有标注“前轮”、“后轮”及数字0-9的黄色标签。电机通过红黑导线连接至绿色的马达端子接口，箱体内可见多股黄、绿、白、黑等颜色的信号线与电源线交错连接，右侧边缘设有蓝色航空插头及黑色电源开关接口。",
+  "metadata": {
+    "generation": {
+      "method": "qwen_api",
+      "backend": "api",
+      "provider": "qwen",
+      "model": "qwen3.7-plus",
+      "status": "success",
+      "api_error": null
+    },
+    "review": {
+      "required": false,
+      "status": null,
+      "reason": null,
+      "course_relevant": true
+    }
+  },
+  "error": null,
+  "method": "qwen_api",
+  "backend": "api",
+  "provider": "qwen",
+  "model": "qwen3.7-plus",
+  "status": "success",
+  "api_error": null,
+  "indexable": true,
+  "review_required": false,
+  "review_reason": null,
+  "review_status": null,
+  "course_relevant": true
+}

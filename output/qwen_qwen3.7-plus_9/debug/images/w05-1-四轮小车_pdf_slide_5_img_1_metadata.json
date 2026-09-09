@@ -1,0 +1,33 @@
+{
+  "original_path": "extraction/output/qwen_qwen3.7-plus_9/debug/images/w05-1-四轮小车_p5_img2.jpeg",
+  "enhanced_path": "extraction/output/qwen_qwen3.7-plus_9/debug/images/w05-1-四轮小车_p5_img2_enhanced.jpeg",
+  "description": "类型：照片\n图片展示了一辆四轮小车的硬件实物外视图。主体为银色金属矩形 chassis，四角安装有黑色橡胶轮胎。车体顶部固定有绿色扩展板及电路模块，包含一排白色继电器、多个绿色接线端子以及红蓝黑等颜色的连接导线。金属面板前方设有一个圆形自锁式按钮开关和一个LED指示灯，侧面贴有黄色标签，上书“前进方向”字样。该图直观呈现了课程所述四轮小车的总体结构与外部组件布局。",
+  "metadata": {
+    "generation": {
+      "method": "qwen_api",
+      "backend": "api",
+      "provider": "qwen",
+      "model": "qwen3.7-plus",
+      "status": "success",
+      "api_error": null
+    },
+    "review": {
+      "required": false,
+      "status": null,
+      "reason": null,
+      "course_relevant": true
+    }
+  },
+  "error": null,
+  "method": "qwen_api",
+  "backend": "api",
+  "provider": "qwen",
+  "model": "qwen3.7-plus",
+  "status": "success",
+  "api_error": null,
+  "indexable": true,
+  "review_required": false,
+  "review_reason": null,
+  "review_status": null,
+  "course_relevant": true
+}

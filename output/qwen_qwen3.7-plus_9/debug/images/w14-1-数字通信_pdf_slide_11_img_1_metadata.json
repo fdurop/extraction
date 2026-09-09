@@ -1,0 +1,33 @@
+{
+  "original_path": "extraction/output/qwen_qwen3.7-plus_9/debug/images/w14-1-数字通信_p11_img3.jpeg",
+  "enhanced_path": "extraction/output/qwen_qwen3.7-plus_9/debug/images/w14-1-数字通信_p11_img3_enhanced.jpeg",
+  "description": "类型：代码\n图片展示了Arduino C++代码片段，行号15至52。定义了全局变量`volatile bool dataReady`、`float T`和`float L`。`setup()`函数中执行`Serial.begin(9600)`及引脚初始化。代码注释区分了两种串口接收方式：方式1利用`serialEvent()`中断配合`Serial.readBytes`读取浮点数；方式2在`loop()`函数中通过`while (!Serial.available())`循环等待，同样使用`Serial.readBytes`读取数据。接收到数据后设置标志位，并在`if (dataReady)`判断块中通过`Serial.print`输出\"Uno received: \"及变量T、L的数值（保留6位小数），最后重置标志位。",
+  "metadata": {
+    "generation": {
+      "method": "qwen_api",
+      "backend": "api",
+      "provider": "qwen",
+      "model": "qwen3.7-plus",
+      "status": "success",
+      "api_error": null
+    },
+    "review": {
+      "required": false,
+      "status": null,
+      "reason": null,
+      "course_relevant": true
+    }
+  },
+  "error": null,
+  "method": "qwen_api",
+  "backend": "api",
+  "provider": "qwen",
+  "model": "qwen3.7-plus",
+  "status": "success",
+  "api_error": null,
+  "indexable": true,
+  "review_required": false,
+  "review_reason": null,
+  "review_status": null,
+  "course_relevant": true
+}

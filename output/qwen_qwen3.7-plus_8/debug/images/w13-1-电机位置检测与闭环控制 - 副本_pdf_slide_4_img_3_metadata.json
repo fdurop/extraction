@@ -1,0 +1,33 @@
+{
+  "original_path": "extraction/output/qwen_qwen3.7-plus_8/debug/images/w13-1-电机位置检测与闭环控制 - 副本_p4_img5.jpeg",
+  "enhanced_path": "extraction/output/qwen_qwen3.7-plus_8/debug/images/w13-1-电机位置检测与闭环控制 - 副本_p4_img5_enhanced.jpeg",
+  "description": "类型：照片\n图片展示了一个黑色圆柱形旋转编码器实物，顶部伸出金属转轴。机身标签印有型号“E6B2-CWZ6C”及名称“ROTARY ENCODER (INCREMENTAL)”。可见技术参数包括分辨率“Resolution : 1000 P/R”和电源“Power Supply : 5 to 24 VDC”。标签下方列出了接线定义，包含“Brown : 0V(COMMON)”、“Shield : GND”，以及右侧对应的“Black”、“White”、“Orange”线色标识。右下角有CE认证标志。",
+  "metadata": {
+    "generation": {
+      "method": "qwen_api",
+      "backend": "api",
+      "provider": "qwen",
+      "model": "qwen3.7-plus",
+      "status": "success",
+      "api_error": null
+    },
+    "review": {
+      "required": false,
+      "status": null,
+      "reason": null,
+      "course_relevant": true
+    }
+  },
+  "error": null,
+  "method": "qwen_api",
+  "backend": "api",
+  "provider": "qwen",
+  "model": "qwen3.7-plus",
+  "status": "success",
+  "api_error": null,
+  "indexable": true,
+  "review_required": false,
+  "review_reason": null,
+  "review_status": null,
+  "course_relevant": true
+}

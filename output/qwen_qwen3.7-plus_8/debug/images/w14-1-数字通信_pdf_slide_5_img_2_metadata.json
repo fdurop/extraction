@@ -1,0 +1,33 @@
+{
+  "original_path": "extraction/output/qwen_qwen3.7-plus_8/debug/images/w14-1-数字通信_p5_img4.png",
+  "enhanced_path": "extraction/output/qwen_qwen3.7-plus_8/debug/images/w14-1-数字通信_p5_img4_enhanced.png",
+  "description": "类型：示意图\n图片展示了麦轮四足机器人的系统架构框图。顶层为遥控器，通过箭头指向第二层的上位机。上位机右侧连接姿态传感器，存在双向箭头交互。上位机下方分出五条通信线路连接第三层模块：左右两侧各两个模块标注为“小米电机1”（对应关节电机），通过CAN总线连接；中间模块标注为“下位机”，通过IIC总线连接。最底层排列四个模块，均标注为“麦轮电机编码器”（对应麦轮编码器及电机），分别由上一层的四个“小米电机1”模块和下位机向下引出箭头连接。图中明确标识了CAN和IIC两种通信接口类型及层级关系。",
+  "metadata": {
+    "generation": {
+      "method": "qwen_api",
+      "backend": "api",
+      "provider": "qwen",
+      "model": "qwen3.7-plus",
+      "status": "success",
+      "api_error": null
+    },
+    "review": {
+      "required": false,
+      "status": null,
+      "reason": null,
+      "course_relevant": true
+    }
+  },
+  "error": null,
+  "method": "qwen_api",
+  "backend": "api",
+  "provider": "qwen",
+  "model": "qwen3.7-plus",
+  "status": "success",
+  "api_error": null,
+  "indexable": true,
+  "review_required": false,
+  "review_reason": null,
+  "review_status": null,
+  "course_relevant": true
+}

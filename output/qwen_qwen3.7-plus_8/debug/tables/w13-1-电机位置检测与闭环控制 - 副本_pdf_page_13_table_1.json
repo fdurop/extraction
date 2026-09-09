@@ -1,0 +1,33 @@
+{
+  "source_image": "extraction/output/qwen_qwen3.7-plus_8/debug/images/w13-1-电机位置检测与闭环控制 - 副本_p13_img3.jpeg",
+  "source_type": "image_vlm_table",
+  "extraction_method": "vlm_table_preprocessed",
+  "headers": [],
+  "cells": [],
+  "review_required": true,
+  "review_reason": "table_not_detected_after_rotation",
+  "image_index": 0,
+  "merged_cells": [],
+  "auto_repairs": [],
+  "rows": 0,
+  "cols": 0,
+  "title": "",
+  "description": "",
+  "units": {},
+  "footnotes": [],
+  "uncertain_cells": [],
+  "json": [],
+  "csv": "",
+  "row_lengths": [],
+  "confidence": 0.111,
+  "validation_issues": [
+    "table_not_detected_after_rotation",
+    "table_too_small",
+    "too_many_empty_cells"
+  ],
+  "validation_status": "review",
+  "review_status": "pending",
+  "indexable": false,
+  "table_id": "w13-1-电机位置检测与闭环控制 - 副本_pdf_page_13_table_1",
+  "page_num": 13
+}

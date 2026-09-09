@@ -1,0 +1,30 @@
+{
+  "page_num": 9,
+  "raw_text": "机电系统原理及实践—— Arduino软硬件基础\n机电智控实验室tangguoan@fudan.edu.cn mmguo@fudan.edu.cn\n剥\n线\n钳\n§3 实践：熟悉Arduino Uno\n导线的制备要求\n根据导线线径，选择剥线钳合适的槽口；\n剥出铜芯的长度5-8 mm 左右；\n导线比实际需求略长1 cm 左右。\n导线接入后，必须确认牢固程度，切忌\n虚接。\n外接LED灯的开启和关闭\n14-10\nGND\nD13\nw01-s2-blink.ino\n室 复旦大\n智控实验室 复旦大学 机电\n学 机电智控实验室 复旦大学 机电智控实验\n复旦大学 机电智控实验室 复旦大学 机电智控实验室 复旦\n大学 机电智控实验室 复旦大学 机电智控实验室 复旦大学 机电\n电智控实验室 复旦大学 机电智控实验室 复旦大学 机电智控实\n验室 复旦大学 机电智控实验室 复旦大学 机电智控实验室 \n旦大学 机电智控实验室 复旦大学 机电智控\n电智控实验室 复旦大学 \n验室 复\n",
+  "cleaned_text": "剥\n线\n钳\n§3 实践：熟悉Arduino Uno\n导线的制备要求\n根据导线线径，选择剥线钳合适的槽口；\n剥出铜芯的长度5-8 mm 左右；\n导线比实际需求略长1 cm 左右。\n导线接入后，必须确认牢固程度，切忌\n虚接。\n外接LED灯的开启和关闭\nGND\nD13\nw01-s2-blink.ino",
+  "key_points": [
+    "导线比实际需求略长1 cm 左右。",
+    "虚接。",
+    "GND",
+    "D13"
+  ],
+  "technical_terms": [
+    "GND",
+    "Uno",
+    "w01-s2-blink"
+  ],
+  "has_images": true,
+  "image_count": 5,
+  "image_paths": [
+    "extraction/output/qwen_qwen3.7-plus_9/debug/images/w01-2-Arduino软硬件基础_p10_img2.jpeg",
+    "extraction/output/qwen_qwen3.7-plus_9/debug/images/w01-2-Arduino软硬件基础_p10_img3.jpeg",
+    "extraction/output/qwen_qwen3.7-plus_9/debug/images/w01-2-Arduino软硬件基础_p10_img4.jpeg",
+    "extraction/output/qwen_qwen3.7-plus_9/debug/images/w01-2-Arduino软硬件基础_p10_img5.jpeg",
+    "extraction/output/qwen_qwen3.7-plus_9/debug/images/w01-2-Arduino软硬件基础_p10_img8.jpeg"
+  ],
+  "metadata": {
+    "char_count": 439,
+    "word_count": 63,
+    "line_count": 28
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "original_path": "extraction/output/qwen_qwen3.7-plus_9/debug/images/w01-1-课程简介_p14_img2.jpeg",
+  "enhanced_path": "extraction/output/qwen_qwen3.7-plus_9/debug/images/w01-1-课程简介_p14_img2_enhanced.jpeg",
+  "description": "类型：照片\n图片展示了一个机电系统实验台场景。左侧桌面上放置一台白色打印机，其上方安装有包含电路板和镜头的装置。中间棕色沙发前的桌面上，有一个固定在黄色底座上的银色机械组件（含电机与透镜），旁边叠放着两台黑色仪器箱，面板上有接口和绿色指示灯。右侧立着一个黑色三脚架，顶部架设带有传感器的摄像设备。右下角是一台打开的笔记本电脑，屏幕显示着软件界面，其中包含一个呈现蓝色光斑图像的窗口。背景白墙上方有两个绿色光点，左上角挂有两幅带框画作。各设备间通过黑色线缆连接。",
+  "metadata": {
+    "generation": {
+      "method": "qwen_api",
+      "backend": "api",
+      "provider": "qwen",
+      "model": "qwen3.7-plus",
+      "status": "success",
+      "api_error": null
+    },
+    "review": {
+      "required": false,
+      "status": null,
+      "reason": null,
+      "course_relevant": true
+    }
+  },
+  "error": null,
+  "method": "qwen_api",
+  "backend": "api",
+  "provider": "qwen",
+  "model": "qwen3.7-plus",
+  "status": "success",
+  "api_error": null,
+  "indexable": true,
+  "review_required": false,
+  "review_reason": null,
+  "review_status": null,
+  "course_relevant": true
+}

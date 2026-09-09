@@ -1,0 +1,43 @@
+{
+  "page_num": 5,
+  "raw_text": "机电系统原理及实践—— 无刷直流电机驱动简介\n机电智控实验室tangguoan@fudan.edu.cn mmguo@fudan.edu.cn\n§3 无刷直流电机的驱动原理\n方波驱动——六步法\n9-6\nphase\nU\nV\nW\n1\n+\n–\n×\n2\n×\n–\n+\n3\n–\n×\n+\n4\n–\n+\n×\n5\n×\n+\n–\n6\n+\n×\n–\n两路固态继电器组成\n一个单刀双掷开关\n端子1  \nV+\n端子2  \nV–\nCOM\nch1\nch2\nA1\nB1\nA2\nB2\n用六路固态继电器\n驱动无刷直流电机\nch6\nA\nB\nch5\nA\nB\nch4\nA\nB\nch3\nA\nB\nch2\nA\nB\nch1\nA\nB\nDC+\nDC-\nD5\nD6\nD7\nD8\nD9\nD10\nD11\nD12\nCH1\nCH2\nCH3\nCH4\nCH5\nCH6\nCH7\nCH8\n5V\nGND\nU\nV\nW\nch7\nA\nB\nch8\nA\nB\nGND\nA0\n5V\nD4\nD3\n电源+\n电源-\n固态\n继电器\n电\n位\n器\n单刀\n双掷\n开关\nUno\n",
+  "cleaned_text": "§3 无刷直流电机的驱动原理\n方波驱动——六步法\nphase\nU\nV\nW\n1\n+\n–\n×\n2\n×\n–\n+\n3\n–\n×\n+\n4\n–\n+\n×\n5\n×\n+\n–\n6\n+\n×\n–\n两路固态继电器组成\n一个单刀双掷开关\n端子1\nV+\n端子2\nV–\nCOM\nch1\nch2\nA1\nB1\nA2\nB2\n用六路固态继电器\n驱动无刷直流电机\nch6\nA\nB\nch5\nA\nB\nch4\nA\nB\nch3\nA\nB\nch2\nA\nB\nch1\nA\nB\nDC+\nDC-\nD5\nD6\nD7\nD8\nD9\nD10\nD11\nD12\nCH1\nCH2\nCH3\nCH4\nCH5\nCH6\nCH7\nCH8\n5V\nGND\nU\nV\nW\nch7\nA\nB\nch8\nA\nB\nGND\nA0\n5V\nD4\nD3\n电源+\n电源-\n固态\n继电器\n电\n位\n器\n单刀\n双掷\n开关\nUno",
+  "key_points": [
+    "U",
+    "V",
+    "W",
+    "V+",
+    "V–",
+    "COM",
+    "A1",
+    "B1",
+    "A2",
+    "B2"
+  ],
+  "technical_terms": [
+    "COM",
+    "DC",
+    "GND",
+    "Uno",
+    "ch1",
+    "ch2",
+    "ch3",
+    "ch4",
+    "ch5",
+    "ch6",
+    "ch7",
+    "ch8",
+    "无刷直流电机",
+    "驱动无刷直流电机"
+  ],
+  "has_images": true,
+  "image_count": 1,
+  "image_paths": [
+    "extraction/output/qwen_qwen3.7-plus_9/debug/images/w15-1-无刷直流电机驱动器_p6_img3.jpeg"
+  ],
+  "metadata": {
+    "char_count": 435,
+    "word_count": 114,
+    "line_count": 112
+  }
+}

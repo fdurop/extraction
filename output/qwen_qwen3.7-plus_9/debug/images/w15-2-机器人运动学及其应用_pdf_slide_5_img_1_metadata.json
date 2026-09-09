@@ -1,0 +1,33 @@
+{
+  "original_path": "extraction/output/qwen_qwen3.7-plus_9/debug/images/w15-2-机器人运动学及其应用_p5_img3.jpeg",
+  "enhanced_path": "extraction/output/qwen_qwen3.7-plus_9/debug/images/w15-2-机器人运动学及其应用_p5_img3_enhanced.jpeg",
+  "description": "类型：照片\n图片展示了一台橙色的六轴串联机器人实物模型。该机器人固定在一块方形木质底板上，具有明显的多连杆串联结构。底部为圆柱形基座，向上依次连接大臂和小臂，关节处可见银色螺丝或轴销细节。机械臂末端安装有白色的夹持器（手爪），夹持着两根黑色杆状物。整体呈现典型的工业机械臂形态，对应文中提到的“六轴机器人”实例。",
+  "metadata": {
+    "generation": {
+      "method": "qwen_api",
+      "backend": "api",
+      "provider": "qwen",
+      "model": "qwen3.7-plus",
+      "status": "success",
+      "api_error": null
+    },
+    "review": {
+      "required": false,
+      "status": null,
+      "reason": null,
+      "course_relevant": true
+    }
+  },
+  "error": null,
+  "method": "qwen_api",
+  "backend": "api",
+  "provider": "qwen",
+  "model": "qwen3.7-plus",
+  "status": "success",
+  "api_error": null,
+  "indexable": true,
+  "review_required": false,
+  "review_reason": null,
+  "review_status": null,
+  "course_relevant": true
+}

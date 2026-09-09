@@ -1,0 +1,33 @@
+{
+  "original_path": "extraction/output/qwen_qwen3.7-plus_8/debug/images/w01-1-课程简介_p13_img3.jpeg",
+  "enhanced_path": "extraction/output/qwen_qwen3.7-plus_8/debug/images/w01-1-课程简介_p13_img3_enhanced.jpeg",
+  "description": "类型：照片\n图片展示了一个放置在白色平面上的机电装置实物。该装置主体由两根平行的金属杆连接左右两部分组件。左侧组件包含银色圆形端盖、黑色外壳及内部可见的线圈绕组，呈现电机或致动器特征，并连接有红黑导线。右侧组件为黑色矩形盒体，侧面引出一根蓝色气管，底部垂直安装有一根带有两个灰色轮子的金属轴。中间金属杆上固定有一个贴有标签的白色小长方体元件。结合上下文，这是课程介绍的足式机器人实践平台硬件实物图。",
+  "metadata": {
+    "generation": {
+      "method": "qwen_api",
+      "backend": "api",
+      "provider": "qwen",
+      "model": "qwen3.7-plus",
+      "status": "success",
+      "api_error": null
+    },
+    "review": {
+      "required": false,
+      "status": null,
+      "reason": null,
+      "course_relevant": true
+    }
+  },
+  "error": null,
+  "method": "qwen_api",
+  "backend": "api",
+  "provider": "qwen",
+  "model": "qwen3.7-plus",
+  "status": "success",
+  "api_error": null,
+  "indexable": true,
+  "review_required": false,
+  "review_reason": null,
+  "review_status": null,
+  "course_relevant": true
+}

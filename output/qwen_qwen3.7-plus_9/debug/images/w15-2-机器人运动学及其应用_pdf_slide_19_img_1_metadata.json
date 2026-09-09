@@ -1,0 +1,33 @@
+{
+  "original_path": "extraction/output/qwen_qwen3.7-plus_9/debug/images/w15-2-机器人运动学及其应用_p19_img3.jpeg",
+  "enhanced_path": "extraction/output/qwen_qwen3.7-plus_9/debug/images/w15-2-机器人运动学及其应用_p19_img3_enhanced.jpeg",
+  "description": "类型：照片\n图片展示了一个红色的多关节机械臂装置，固定于白色桌面边缘。机械臂主体由红色部件通过银色螺丝连接而成，呈弯曲形态，顶部可见黑色电机及连接的红黑导线。末端执行器位置悬挂着一个粉色的骨头状物体，该物体通过白色细绳系在机械臂前端。背景包含木质地板、桌下的蓝色网线、左侧的白色仪器以及右上角的键盘和摆件。",
+  "metadata": {
+    "generation": {
+      "method": "qwen_api",
+      "backend": "api",
+      "provider": "qwen",
+      "model": "qwen3.7-plus",
+      "status": "success",
+      "api_error": null
+    },
+    "review": {
+      "required": false,
+      "status": null,
+      "reason": null,
+      "course_relevant": true
+    }
+  },
+  "error": null,
+  "method": "qwen_api",
+  "backend": "api",
+  "provider": "qwen",
+  "model": "qwen3.7-plus",
+  "status": "success",
+  "api_error": null,
+  "indexable": true,
+  "review_required": false,
+  "review_reason": null,
+  "review_status": null,
+  "course_relevant": true
+}

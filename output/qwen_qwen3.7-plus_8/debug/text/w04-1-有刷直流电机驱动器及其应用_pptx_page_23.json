@@ -1,0 +1,28 @@
+{
+  "page_num": 22,
+  "raw_text": "拓展至\n智能\n小车\n感知\n环境\n与\n自身状态\n，自主规划、决策、行动。\n基于各种\n传感器\n编码器：车轮旋转圈数\nIMU\n：车辆姿态、加速度\n超声波雷达：短距离障碍物\n激光雷达：避障、建图、导航\n深度相机：立体视觉\n23-\nIMU\n深度相机\n激光雷达\n数据融合\n精准定位\n编码器\n避障循迹",
+  "cleaned_text": "拓展至\n智能\n小车\n感知\n环境\n与\n自身状态\n，自主规划、决策、行动。\n基于各种\n传感器\n编码器：车轮旋转圈数\nIMU\n：车辆姿态、加速度\n超声波雷达：短距离障碍物\n激光雷达：避障、建图、导航\n深度相机：立体视觉\nIMU\n深度相机\n激光雷达\n数据融合\n精准定位\n编码器\n避障循迹",
+  "key_points": [
+    "，自主规划、决策、行动。",
+    "IMU",
+    "IMU"
+  ],
+  "technical_terms": [
+    "IMU"
+  ],
+  "has_images": true,
+  "image_count": 6,
+  "image_paths": [
+    "extraction/output/qwen_qwen3.7-plus_8/debug/images/w04-1-有刷直流电机驱动器及其应用_slide_23_img_1.png",
+    "extraction/output/qwen_qwen3.7-plus_8/debug/images/w04-1-有刷直流电机驱动器及其应用_slide_23_img_2.png",
+    "extraction/output/qwen_qwen3.7-plus_8/debug/images/w04-1-有刷直流电机驱动器及其应用_slide_23_img_3.png",
+    "extraction/output/qwen_qwen3.7-plus_8/debug/images/w04-1-有刷直流电机驱动器及其应用_slide_23_img_4.png",
+    "extraction/output/qwen_qwen3.7-plus_8/debug/images/w04-1-有刷直流电机驱动器及其应用_slide_23_img_5.png",
+    "extraction/output/qwen_qwen3.7-plus_8/debug/images/w04-1-有刷直流电机驱动器及其应用_slide_23_img_6.png"
+  ],
+  "metadata": {
+    "char_count": 143,
+    "word_count": 24,
+    "line_count": 24
+  }
+}

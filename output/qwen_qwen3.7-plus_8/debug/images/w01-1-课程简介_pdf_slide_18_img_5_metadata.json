@@ -1,0 +1,33 @@
+{
+  "original_path": "extraction/output/qwen_qwen3.7-plus_8/debug/images/w01-1-课程简介_p18_img6.jpeg",
+  "enhanced_path": "extraction/output/qwen_qwen3.7-plus_8/debug/images/w01-1-课程简介_p18_img6_enhanced.jpeg",
+  "description": "类型：照片\n图片展示了一辆ROS2小车实物。该机器人采用四轮底盘结构，车身主体由亮绿色板材（疑似3D打印或激光切割件）与黑色金属框架构成，轮毂为银黑相间样式。车顶前方安装有一个黑色的长条形多镜头传感器模组（类似深度相机），后方竖立着一块黑色矩形平板（疑似计算单元或显示屏）。结合上下文，该设备对应课程简介中列出的“ROS2 小车”教学硬件。",
+  "metadata": {
+    "generation": {
+      "method": "qwen_api",
+      "backend": "api",
+      "provider": "qwen",
+      "model": "qwen3.7-plus",
+      "status": "success",
+      "api_error": null
+    },
+    "review": {
+      "required": false,
+      "status": null,
+      "reason": null,
+      "course_relevant": true
+    }
+  },
+  "error": null,
+  "method": "qwen_api",
+  "backend": "api",
+  "provider": "qwen",
+  "model": "qwen3.7-plus",
+  "status": "success",
+  "api_error": null,
+  "indexable": true,
+  "review_required": false,
+  "review_reason": null,
+  "review_status": null,
+  "course_relevant": true
+}

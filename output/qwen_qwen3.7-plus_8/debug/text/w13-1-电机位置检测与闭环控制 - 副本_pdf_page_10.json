@@ -1,0 +1,25 @@
+{
+  "page_num": 9,
+  "raw_text": "机电系统原理及实践—— 电机位置检测与闭环控制\n机电智控实验室tangguoan@fudan.edu.cn mmguo@fudan.edu.cn\n§3 霍尔编码器\n霍尔编码器\n检测原理与光电编码器相似。\n16-10\n光电式\n霍尔式\n码盘\n磁环\n光电传感器\n霍尔元件\nA、B两相输出\nA、B两相输出\n每圈脉冲数\n103 量级\n每圈脉冲数\n101 量级\n带霍尔编码器的\n减速电机\n磁环\n霍尔\n元件\n",
+  "cleaned_text": "§3 霍尔编码器\n霍尔编码器\n检测原理与光电编码器相似。\n光电式\n霍尔式\n码盘\n磁环\n光电传感器\n霍尔元件\nA、B两相输出\nA、B两相输出\n每圈脉冲数\n103 量级\n每圈脉冲数\n101 量级\n带霍尔编码器的\n减速电机\n磁环\n霍尔\n元件",
+  "key_points": [
+    "检测原理与光电编码器相似。",
+    "A、B两相输出",
+    "A、B两相输出"
+  ],
+  "technical_terms": [
+    "光电传感器",
+    "减速电机"
+  ],
+  "has_images": true,
+  "image_count": 2,
+  "image_paths": [
+    "extraction/output/qwen_qwen3.7-plus_8/debug/images/w13-1-电机位置检测与闭环控制 - 副本_p10_img3.jpeg",
+    "extraction/output/qwen_qwen3.7-plus_8/debug/images/w13-1-电机位置检测与闭环控制 - 副本_p10_img6.jpeg"
+  ],
+  "metadata": {
+    "char_count": 199,
+    "word_count": 28,
+    "line_count": 24
+  }
+}

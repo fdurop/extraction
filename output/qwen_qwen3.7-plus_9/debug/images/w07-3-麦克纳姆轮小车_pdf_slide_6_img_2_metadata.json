@@ -1,0 +1,33 @@
+{
+  "original_path": "extraction/output/qwen_qwen3.7-plus_9/debug/images/w07-3-麦克纳姆轮小车_p6_img3.png",
+  "enhanced_path": "extraction/output/qwen_qwen3.7-plus_9/debug/images/w07-3-麦克纳姆轮小车_p6_img3_enhanced.png",
+  "description": "类型：示意图\n图片展示了麦克纳姆轮小车的地面投影视图及受力分析。矩形车体四角分别布置车轮，左上与右下标记为“A轮”，右上与左下标记为“B轮”。每个车轮处绘有红色矢量箭头，分解为沿车身纵向和横向的分力。其中，纵向分力均指向车尾方向，横向分力在左侧指向右、右侧指向左（或相互抵消）。车体几何中心处有一个指向下方的红色合速度矢量，标记为“V合”。图片顶部有黄色标签注明当前运动状态为“后退”。",
+  "metadata": {
+    "generation": {
+      "method": "qwen_api",
+      "backend": "api",
+      "provider": "qwen",
+      "model": "qwen3.7-plus",
+      "status": "success",
+      "api_error": null
+    },
+    "review": {
+      "required": false,
+      "status": null,
+      "reason": null,
+      "course_relevant": true
+    }
+  },
+  "error": null,
+  "method": "qwen_api",
+  "backend": "api",
+  "provider": "qwen",
+  "model": "qwen3.7-plus",
+  "status": "success",
+  "api_error": null,
+  "indexable": true,
+  "review_required": false,
+  "review_reason": null,
+  "review_status": null,
+  "course_relevant": true
+}

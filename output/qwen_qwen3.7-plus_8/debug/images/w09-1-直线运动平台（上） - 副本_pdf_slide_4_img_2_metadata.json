@@ -1,0 +1,33 @@
+{
+  "original_path": "extraction/output/qwen_qwen3.7-plus_8/debug/images/w09-1-直线运动平台（上） - 副本_p4_img4.jpeg",
+  "enhanced_path": "extraction/output/qwen_qwen3.7-plus_8/debug/images/w09-1-直线运动平台（上） - 副本_p4_img4_enhanced.jpeg",
+  "description": "类型：示意图\n图片展示了一个Z轴直交型机械臂的三维结构模型。主体由两条平行的黄色长导轨构成基座，上方横跨一根垂直于基座的黄色运动梁。梁上安装有粉色滑块及蓝绿配色的垂直组件（Z轴）。基座两端及横梁侧面可见黑色的驱动或支撑模块。图片左上角标有文字“Z轴”及“直交型机械臂”。整体呈现多轴直线运动平台的机械组装形态。",
+  "metadata": {
+    "generation": {
+      "method": "qwen_api",
+      "backend": "api",
+      "provider": "qwen",
+      "model": "qwen3.7-plus",
+      "status": "success",
+      "api_error": null
+    },
+    "review": {
+      "required": false,
+      "status": null,
+      "reason": null,
+      "course_relevant": true
+    }
+  },
+  "error": null,
+  "method": "qwen_api",
+  "backend": "api",
+  "provider": "qwen",
+  "model": "qwen3.7-plus",
+  "status": "success",
+  "api_error": null,
+  "indexable": true,
+  "review_required": false,
+  "review_reason": null,
+  "review_status": null,
+  "course_relevant": true
+}

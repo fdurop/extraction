@@ -1,0 +1,33 @@
+{
+  "original_path": "extraction/output/qwen_qwen3.7-plus_8/debug/images/w13-2-机电系统在动力学与控制中的应用 - 副本_p9_img6.jpeg",
+  "enhanced_path": "extraction/output/qwen_qwen3.7-plus_8/debug/images/w13-2-机电系统在动力学与控制中的应用 - 副本_p9_img6_enhanced.jpeg",
+  "description": "类型：照片\n图片展示了一个在轨道上运行的人造卫星（外观特征类似哈勃空间望远镜）。主体为银灰色圆柱形镜筒，表面覆盖有深色热控材料。卫星两侧对称展开着两块大型矩形太阳能电池阵列，板面呈深蓝色并带有网格纹理。卫星底部可见延伸出的仪器或天线结构。背景为地球大气层边缘及太空环境。",
+  "metadata": {
+    "generation": {
+      "method": "qwen_api",
+      "backend": "api",
+      "provider": "qwen",
+      "model": "qwen3.7-plus",
+      "status": "success",
+      "api_error": null
+    },
+    "review": {
+      "required": false,
+      "status": null,
+      "reason": null,
+      "course_relevant": true
+    }
+  },
+  "error": null,
+  "method": "qwen_api",
+  "backend": "api",
+  "provider": "qwen",
+  "model": "qwen3.7-plus",
+  "status": "success",
+  "api_error": null,
+  "indexable": true,
+  "review_required": false,
+  "review_reason": null,
+  "review_status": null,
+  "course_relevant": true
+}

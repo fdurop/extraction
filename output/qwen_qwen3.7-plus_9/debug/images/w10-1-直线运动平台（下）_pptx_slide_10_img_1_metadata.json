@@ -1,0 +1,33 @@
+{
+  "original_path": "extraction/output/qwen_qwen3.7-plus_9/debug/images/w10-1-直线运动平台（下）_slide_10_img_1.png",
+  "enhanced_path": "extraction/output/qwen_qwen3.7-plus_9/debug/images/w10-1-直线运动平台（下）_slide_10_img_1_enhanced.png",
+  "description": "类型：照片\n图片分为上下两部分对比展示实验现象。上方图右上角标注“输入整形”，显示白色框架实验台顶部的直线模组驱动悬挂的金色圆锥摆，摆锤处于相对静止或微幅摆动状态。下方图右上角标注“无整形”，展示相同装置，但金色圆锥摆呈现大幅度的往复摆动。背景可见实验室墙壁、插座及蓝色收纳筐。图片直观对比了施加输入整形与未施加时系统的振动抑制效果。",
+  "metadata": {
+    "generation": {
+      "method": "qwen_api",
+      "backend": "api",
+      "provider": "qwen",
+      "model": "qwen3.7-plus",
+      "status": "success",
+      "api_error": null
+    },
+    "review": {
+      "required": false,
+      "status": null,
+      "reason": null,
+      "course_relevant": true
+    }
+  },
+  "error": null,
+  "method": "qwen_api",
+  "backend": "api",
+  "provider": "qwen",
+  "model": "qwen3.7-plus",
+  "status": "success",
+  "api_error": null,
+  "indexable": true,
+  "review_required": false,
+  "review_reason": null,
+  "review_status": null,
+  "course_relevant": true
+}

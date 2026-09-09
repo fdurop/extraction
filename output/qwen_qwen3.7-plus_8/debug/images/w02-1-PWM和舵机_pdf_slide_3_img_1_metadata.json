@@ -1,0 +1,33 @@
+{
+  "original_path": "extraction/output/qwen_qwen3.7-plus_8/debug/images/w02-1-PWM和舵机_p3_img2.jpeg",
+  "enhanced_path": "extraction/output/qwen_qwen3.7-plus_8/debug/images/w02-1-PWM和舵机_p3_img2_enhanced.jpeg",
+  "description": "类型：照片\n图片展示了Arduino电路板局部特写。可见绿色PCB板及白色丝印标识，包括左侧“ARDUINO”字样、右侧数字端口编号“13”、“12”、“~11”、“~10”、“~9”及“DIGITAL”字样，上方有“AREF”、“GND”接口标识。左上角有一颗标有“ATMEGA16U2”的黑色芯片。画面中央有一个贴片电阻（标号102）旁的黄色LED灯处于点亮发光状态。右上角有排针接口及虚线框选的“JP2”区域。该图直观展示了课程提到的板载LED硬件实物及其点亮效果。",
+  "metadata": {
+    "generation": {
+      "method": "qwen_api",
+      "backend": "api",
+      "provider": "qwen",
+      "model": "qwen3.7-plus",
+      "status": "success",
+      "api_error": null
+    },
+    "review": {
+      "required": false,
+      "status": null,
+      "reason": null,
+      "course_relevant": true
+    }
+  },
+  "error": null,
+  "method": "qwen_api",
+  "backend": "api",
+  "provider": "qwen",
+  "model": "qwen3.7-plus",
+  "status": "success",
+  "api_error": null,
+  "indexable": true,
+  "review_required": false,
+  "review_reason": null,
+  "review_status": null,
+  "course_relevant": true
+}

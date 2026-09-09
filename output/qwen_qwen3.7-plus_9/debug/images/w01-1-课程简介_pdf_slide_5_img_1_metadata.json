@@ -1,0 +1,33 @@
+{
+  "original_path": "extraction/output/qwen_qwen3.7-plus_9/debug/images/w01-1-课程简介_p5_img2.jpeg",
+  "enhanced_path": "extraction/output/qwen_qwen3.7-plus_9/debug/images/w01-1-课程简介_p5_img2_enhanced.jpeg",
+  "description": "类型：照片\n图片展示了2026年中央广播电视总台春节联欢晚会的直播画面。舞台背景为山水图案，多名身穿红黄配色传统服饰的人形机器人与人类演员正在进行武术或舞蹈表演。机器人具有类人关节结构，手持红色短棍道具，呈马步或伸展姿态排列在舞台上。右上角有“直播”标识，右下角显示“2026 中央广播电视总台 春节联欢晚会”字样及台标。该图片作为具身智能机器人的应用实例展示。",
+  "metadata": {
+    "generation": {
+      "method": "qwen_api",
+      "backend": "api",
+      "provider": "qwen",
+      "model": "qwen3.7-plus",
+      "status": "success",
+      "api_error": null
+    },
+    "review": {
+      "required": false,
+      "status": null,
+      "reason": null,
+      "course_relevant": true
+    }
+  },
+  "error": null,
+  "method": "qwen_api",
+  "backend": "api",
+  "provider": "qwen",
+  "model": "qwen3.7-plus",
+  "status": "success",
+  "api_error": null,
+  "indexable": true,
+  "review_required": false,
+  "review_reason": null,
+  "review_status": null,
+  "course_relevant": true
+}

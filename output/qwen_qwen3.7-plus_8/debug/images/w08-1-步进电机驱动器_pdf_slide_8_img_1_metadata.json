@@ -1,0 +1,33 @@
+{
+  "original_path": "extraction/output/qwen_qwen3.7-plus_8/debug/images/w08-1-步进电机驱动器_p8_img2.png",
+  "enhanced_path": "extraction/output/qwen_qwen3.7-plus_8/debug/images/w08-1-步进电机驱动器_p8_img2_enhanced.png",
+  "description": "类型：代码\n图片展示了一段Arduino C++代码。全局变量定义：`const byte ledPin = 13;`，`const byte interruptPin = 2;`，`volatile byte state = LOW;`。`setup()`函数中：设置`ledPin`为`OUTPUT`，`interruptPin`为`INPUT_PULLUP`；调用`attachInterrupt(digitalPinToInterrupt(interruptPin), blink, CHANGE);`。`loop()`函数中：执行`digitalWrite(ledPin, state);`。自定义函数`void blink()`中：执行`state = !state;`。",
+  "metadata": {
+    "generation": {
+      "method": "qwen_api",
+      "backend": "api",
+      "provider": "qwen",
+      "model": "qwen3.7-plus",
+      "status": "success",
+      "api_error": null
+    },
+    "review": {
+      "required": false,
+      "status": null,
+      "reason": null,
+      "course_relevant": true
+    }
+  },
+  "error": null,
+  "method": "qwen_api",
+  "backend": "api",
+  "provider": "qwen",
+  "model": "qwen3.7-plus",
+  "status": "success",
+  "api_error": null,
+  "indexable": true,
+  "review_required": false,
+  "review_reason": null,
+  "review_status": null,
+  "course_relevant": true
+}

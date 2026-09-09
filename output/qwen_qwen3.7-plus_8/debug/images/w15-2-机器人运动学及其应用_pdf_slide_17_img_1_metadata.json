@@ -1,0 +1,33 @@
+{
+  "original_path": "extraction/output/qwen_qwen3.7-plus_8/debug/images/w15-2-机器人运动学及其应用_p17_img3.jpeg",
+  "enhanced_path": "extraction/output/qwen_qwen3.7-plus_8/debug/images/w15-2-机器人运动学及其应用_p17_img3_enhanced.jpeg",
+  "description": "类型：照片\n图片展示了一台放置在白色桌面上的四足机器人实物原型。该机器人具有银色金属框架结构，四条腿末端装有黑色轮子，腿部关节处可见电机及红黑导线连接。机身中部上方固定有一个黑色方形盒子（疑似电池或控制单元）。桌面右侧放置一台显示绿色数字“0.509”的白色电子仪器（疑似直流电源），通过导线与机器人相连。背景可见实验室环境，包括黑色凳子、金属架及地面。",
+  "metadata": {
+    "generation": {
+      "method": "qwen_api",
+      "backend": "api",
+      "provider": "qwen",
+      "model": "qwen3.7-plus",
+      "status": "success",
+      "api_error": null
+    },
+    "review": {
+      "required": false,
+      "status": null,
+      "reason": null,
+      "course_relevant": true
+    }
+  },
+  "error": null,
+  "method": "qwen_api",
+  "backend": "api",
+  "provider": "qwen",
+  "model": "qwen3.7-plus",
+  "status": "success",
+  "api_error": null,
+  "indexable": true,
+  "review_required": false,
+  "review_reason": null,
+  "review_status": null,
+  "course_relevant": true
+}

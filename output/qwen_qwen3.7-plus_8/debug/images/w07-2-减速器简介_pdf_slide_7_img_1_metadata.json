@@ -1,0 +1,33 @@
+{
+  "original_path": "extraction/output/qwen_qwen3.7-plus_8/debug/images/w07-2-减速器简介_p7_img2.jpeg",
+  "enhanced_path": "extraction/output/qwen_qwen3.7-plus_8/debug/images/w07-2-减速器简介_p7_img2_enhanced.jpeg",
+  "description": "[COURSE_IRRELEVANT] 图片为带有“萌萌战队”和Bilibili水印的视频截图，画面显示布满陨石坑的月球表面及字幕“格林威治时间1971年7月30日22:16”。该图像属于航天历史影像，与本页课程主题“谐波减速器”的结构、原理及优缺点完全无关，无法提供有效的课程知识。",
+  "metadata": {
+    "generation": {
+      "method": "qwen_api",
+      "backend": "api",
+      "provider": "qwen",
+      "model": "qwen3.7-plus",
+      "status": "success",
+      "api_error": null
+    },
+    "review": {
+      "required": true,
+      "status": "pending",
+      "reason": "course_irrelevant",
+      "course_relevant": false
+    }
+  },
+  "error": null,
+  "method": "qwen_api",
+  "backend": "api",
+  "provider": "qwen",
+  "model": "qwen3.7-plus",
+  "status": "success",
+  "api_error": null,
+  "indexable": false,
+  "review_required": true,
+  "review_reason": "course_irrelevant",
+  "review_status": "pending",
+  "course_relevant": false
+}

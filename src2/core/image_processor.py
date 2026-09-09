@@ -8,14 +8,14 @@ import re
 from PIL import Image, ImageEnhance
 from typing import Optional, Dict, Any
 
+try:
+    from utils.path_config import workspace_relative
+except ImportError:  # Package import used by tests and library callers.
+    from ..utils.path_config import workspace_relative
+
 
 def _relative_path(path: Optional[str]) -> str:
-    if not path:
-        return ""
-    try:
-        return os.path.relpath(path, os.getcwd()).replace(os.sep, "/")
-    except Exception:
-        return str(path).replace("\\", "/")
+    return workspace_relative(path)
 
 
 class ImageProcessor:

@@ -1,0 +1,33 @@
+{
+  "original_path": "extraction/output/qwen_qwen3.7-plus_8/debug/images/w07-3-麦克纳姆轮小车_p9_img2.jpeg",
+  "enhanced_path": "extraction/output/qwen_qwen3.7-plus_8/debug/images/w07-3-麦克纳姆轮小车_p9_img2_enhanced.jpeg",
+  "description": "类型：照片\n图片展示了麦轮小车内部硬件装配实物。金属底盘四角安装有带白色辊子的麦克纳姆轮，由四个银色直流电机驱动，底部贴有“右后”、“左后”黄色标签。 chassis中部左侧堆叠安装了控制电路板，包含底层蓝色Arduino UNO和上层黑色四路电机驱动扩展板，可见绿色接线端子及红黑白连接线。右侧固定有一个银色长方体电池盒，标签显示“Suo索 3000mAh”。该图直观呈现了课程所述的电机、驱动扩展板与车体的物理连接及布局。",
+  "metadata": {
+    "generation": {
+      "method": "qwen_api",
+      "backend": "api",
+      "provider": "qwen",
+      "model": "qwen3.7-plus",
+      "status": "success",
+      "api_error": null
+    },
+    "review": {
+      "required": false,
+      "status": null,
+      "reason": null,
+      "course_relevant": true
+    }
+  },
+  "error": null,
+  "method": "qwen_api",
+  "backend": "api",
+  "provider": "qwen",
+  "model": "qwen3.7-plus",
+  "status": "success",
+  "api_error": null,
+  "indexable": true,
+  "review_required": false,
+  "review_reason": null,
+  "review_status": null,
+  "course_relevant": true
+}

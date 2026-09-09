@@ -1,0 +1,33 @@
+{
+  "original_path": "extraction/output/qwen_qwen3.7-plus_8/debug/images/w08-1-步进电机驱动器_p3_img2.png",
+  "enhanced_path": "extraction/output/qwen_qwen3.7-plus_8/debug/images/w08-1-步进电机驱动器_p3_img2_enhanced.png",
+  "description": "类型：示意图/表格\n标题“§3 步进电机原理”，副标题“实践：用两个双刀双掷开关驱动步进电机”。左侧电路图展示两个标有“双刀双掷开关”的组件，通过红线（接电源+）和绿线（接电源-）连接至接线端子，输出端连接至标有A、A、B、B̅的电机接口。右侧表格列出phase 1至8对应的A相与B相状态，包含+、-、×符号组合。右上角有复旦大学校徽。",
+  "metadata": {
+    "generation": {
+      "method": "qwen_api",
+      "backend": "api",
+      "provider": "qwen",
+      "model": "qwen3.7-plus",
+      "status": "success",
+      "api_error": null
+    },
+    "review": {
+      "required": false,
+      "status": null,
+      "reason": null,
+      "course_relevant": true
+    }
+  },
+  "error": null,
+  "method": "qwen_api",
+  "backend": "api",
+  "provider": "qwen",
+  "model": "qwen3.7-plus",
+  "status": "success",
+  "api_error": null,
+  "indexable": true,
+  "review_required": false,
+  "review_reason": null,
+  "review_status": null,
+  "course_relevant": true
+}

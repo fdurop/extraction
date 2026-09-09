@@ -1,0 +1,33 @@
+{
+  "original_path": "extraction/output/qwen_qwen3.7-plus_8/debug/images/w14-1-数字通信_p20_img4.jpeg",
+  "enhanced_path": "extraction/output/qwen_qwen3.7-plus_8/debug/images/w14-1-数字通信_p20_img4_enhanced.jpeg",
+  "description": "类型：示意图\n图片标题为“Pinmap of CAN_BUS Shield”，展示了CAN总线扩展板的引脚定义图。左侧图例定义了颜色含义：黑色代表GND，红色代表INT，绿色代表FREE（剩余可用端口），灰色代表PIN NAME，蓝色代表SPI，黄色代表CONTROL。图中主体为电路板，左右两侧引出排针引脚并通过连线标注功能。左侧引脚包括NC、IOREF、RST、3.3V、5V、GND、Vin以及模拟口A0至A5，其中A0-A5标记为FREE。右侧引脚包括SCL、SDA、AREF、GND及数字口D2至D13，标注了SCK、MISO、MOSI、CS、INT等SPI通信相关信号及FREE状态。底部另有RST、SCK、MISO、GND、MOSI、5V的图例说明。",
+  "metadata": {
+    "generation": {
+      "method": "qwen_api",
+      "backend": "api",
+      "provider": "qwen",
+      "model": "qwen3.7-plus",
+      "status": "success",
+      "api_error": null
+    },
+    "review": {
+      "required": false,
+      "status": null,
+      "reason": null,
+      "course_relevant": true
+    }
+  },
+  "error": null,
+  "method": "qwen_api",
+  "backend": "api",
+  "provider": "qwen",
+  "model": "qwen3.7-plus",
+  "status": "success",
+  "api_error": null,
+  "indexable": true,
+  "review_required": false,
+  "review_reason": null,
+  "review_status": null,
+  "course_relevant": true
+}

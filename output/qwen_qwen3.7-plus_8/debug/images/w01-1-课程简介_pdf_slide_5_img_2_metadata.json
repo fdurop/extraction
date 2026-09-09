@@ -1,0 +1,33 @@
+{
+  "original_path": "extraction/output/qwen_qwen3.7-plus_8/debug/images/w01-1-课程简介_p5_img3.jpeg",
+  "enhanced_path": "extraction/output/qwen_qwen3.7-plus_8/debug/images/w01-1-课程简介_p5_img3_enhanced.jpeg",
+  "description": "类型：照片\n图片展示了一个绿色多关节机械臂放置在桌面上，周围散落着红、蓝、绿等颜色的立方体及圆柱体积木。右侧电脑显示器屏幕分为两部分，左侧显示积木的彩色实时画面，右侧显示蓝色深度图并标注“Dist: 274mm”。部分积木上方叠加了发光的虚拟轮廓框。图片左下角有文字标签“三维空间抓取”，底部中央有字幕“根据目标物品的RGB数据”。",
+  "metadata": {
+    "generation": {
+      "method": "qwen_api",
+      "backend": "api",
+      "provider": "qwen",
+      "model": "qwen3.7-plus",
+      "status": "success",
+      "api_error": null
+    },
+    "review": {
+      "required": false,
+      "status": null,
+      "reason": null,
+      "course_relevant": true
+    }
+  },
+  "error": null,
+  "method": "qwen_api",
+  "backend": "api",
+  "provider": "qwen",
+  "model": "qwen3.7-plus",
+  "status": "success",
+  "api_error": null,
+  "indexable": true,
+  "review_required": false,
+  "review_reason": null,
+  "review_status": null,
+  "course_relevant": true
+}

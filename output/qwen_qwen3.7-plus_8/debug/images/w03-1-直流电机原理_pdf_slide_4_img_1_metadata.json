@@ -1,0 +1,33 @@
+{
+  "original_path": "extraction/output/qwen_qwen3.7-plus_8/debug/images/w03-1-直流电机原理_p4_img2.jpeg",
+  "enhanced_path": "extraction/output/qwen_qwen3.7-plus_8/debug/images/w03-1-直流电机原理_p4_img2_enhanced.jpeg",
+  "description": "类型：示意图\n图中展示了一个水平放置的螺线管（线圈），左侧引出端标记为负极（-），右侧引出端标记为正极（+）。蓝色带箭头曲线表示磁感线，在螺线管外部从右向左环绕，内部磁感线呈直线状由右指向左。螺线管左端外部标有红色圆形“N”极，右端外部标有绿色圆形“S”极。该图直观展示了通电螺线管的磁场分布及极性，对应页面文本中的“安培定则”。",
+  "metadata": {
+    "generation": {
+      "method": "qwen_api",
+      "backend": "api",
+      "provider": "qwen",
+      "model": "qwen3.7-plus",
+      "status": "success",
+      "api_error": null
+    },
+    "review": {
+      "required": false,
+      "status": null,
+      "reason": null,
+      "course_relevant": true
+    }
+  },
+  "error": null,
+  "method": "qwen_api",
+  "backend": "api",
+  "provider": "qwen",
+  "model": "qwen3.7-plus",
+  "status": "success",
+  "api_error": null,
+  "indexable": true,
+  "review_required": false,
+  "review_reason": null,
+  "review_status": null,
+  "course_relevant": true
+}

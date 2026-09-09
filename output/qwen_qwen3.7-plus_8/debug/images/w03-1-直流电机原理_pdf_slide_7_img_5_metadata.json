@@ -1,0 +1,33 @@
+{
+  "original_path": "extraction/output/qwen_qwen3.7-plus_8/debug/images/w03-1-直流电机原理_p7_img6.jpeg",
+  "enhanced_path": "extraction/output/qwen_qwen3.7-plus_8/debug/images/w03-1-直流电机原理_p7_img6_enhanced.jpeg",
+  "description": "类型：照片\n图片展示了两个绿色的接线端子组件，背景为黑色。左下方的组件连接有多根不同颜色的导线（白、灰、紫、蓝、绿），右上方标注红色气泡文字“针座”，指向该组件的金属引脚端；左下方标注红色气泡文字“孔座”，指向该组件的接线孔端。结合页面上下文，该图用于展示实践环节中直流稳压电源与电机控制电路所需的电源分配端子及对接端子的物理形态与接口结构。",
+  "metadata": {
+    "generation": {
+      "method": "qwen_api",
+      "backend": "api",
+      "provider": "qwen",
+      "model": "qwen3.7-plus",
+      "status": "success",
+      "api_error": null
+    },
+    "review": {
+      "required": false,
+      "status": null,
+      "reason": null,
+      "course_relevant": true
+    }
+  },
+  "error": null,
+  "method": "qwen_api",
+  "backend": "api",
+  "provider": "qwen",
+  "model": "qwen3.7-plus",
+  "status": "success",
+  "api_error": null,
+  "indexable": true,
+  "review_required": false,
+  "review_reason": null,
+  "review_status": null,
+  "course_relevant": true
+}

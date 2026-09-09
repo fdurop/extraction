@@ -1,0 +1,33 @@
+{
+  "original_path": "extraction/output/qwen_qwen3.7-plus_9/debug/images/w03-1-直流电机原理_p16_img3.jpeg",
+  "enhanced_path": "extraction/output/qwen_qwen3.7-plus_9/debug/images/w03-1-直流电机原理_p16_img3_enhanced.jpeg",
+  "description": "类型：示意图\n图片展示了步进电机的内部结构截面。中心为垂直放置的条形转子，上端标记N极，下端标记S极。外围圆形定子内分布着四组线圈绕组，分别位于上下左右四个方位。上方绕组引出端标记为A，下方绕组引出端标记为$\\bar{A}$；右侧绕组引出端标记为B，左侧绕组引出端标记为$\\bar{B}$。图中清晰呈现了定子线圈围绕转子的空间布局及外部接线端子标识。",
+  "metadata": {
+    "generation": {
+      "method": "qwen_api",
+      "backend": "api",
+      "provider": "qwen",
+      "model": "qwen3.7-plus",
+      "status": "success",
+      "api_error": null
+    },
+    "review": {
+      "required": false,
+      "status": null,
+      "reason": null,
+      "course_relevant": true
+    }
+  },
+  "error": null,
+  "method": "qwen_api",
+  "backend": "api",
+  "provider": "qwen",
+  "model": "qwen3.7-plus",
+  "status": "success",
+  "api_error": null,
+  "indexable": true,
+  "review_required": false,
+  "review_reason": null,
+  "review_status": null,
+  "course_relevant": true
+}

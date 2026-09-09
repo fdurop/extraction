@@ -1,0 +1,33 @@
+{
+  "original_path": "extraction/output/qwen_qwen3.7-plus_9/debug/images/w09-1-直线运动平台（上） - 副本_p3_img3.jpeg",
+  "enhanced_path": "extraction/output/qwen_qwen3.7-plus_9/debug/images/w09-1-直线运动平台（上） - 副本_p3_img3_enhanced.jpeg",
+  "description": "类型：照片\n图片展示了直线运动平台的局部机械结构。主体包含银色的线性导轨和黑色的滑块组件。右侧安装有一台带有散热棱纹的黑色步进电机。电机轴通过联轴器连接至传动系统，图中清晰呈现了一条白色的同步齿带绕过齿轮，体现了齿带传动方式。该结构直观展示了电机、导轨、滑块及传动机构的物理连接与空间布局。",
+  "metadata": {
+    "generation": {
+      "method": "qwen_api",
+      "backend": "api",
+      "provider": "qwen",
+      "model": "qwen3.7-plus",
+      "status": "success",
+      "api_error": null
+    },
+    "review": {
+      "required": false,
+      "status": null,
+      "reason": null,
+      "course_relevant": true
+    }
+  },
+  "error": null,
+  "method": "qwen_api",
+  "backend": "api",
+  "provider": "qwen",
+  "model": "qwen3.7-plus",
+  "status": "success",
+  "api_error": null,
+  "indexable": true,
+  "review_required": false,
+  "review_reason": null,
+  "review_status": null,
+  "course_relevant": true
+}

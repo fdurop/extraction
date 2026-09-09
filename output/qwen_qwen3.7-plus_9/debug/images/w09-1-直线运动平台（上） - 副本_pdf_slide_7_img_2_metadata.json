@@ -1,0 +1,33 @@
+{
+  "original_path": "extraction/output/qwen_qwen3.7-plus_9/debug/images/w09-1-直线运动平台（上） - 副本_p7_img4.jpeg",
+  "enhanced_path": "extraction/output/qwen_qwen3.7-plus_9/debug/images/w09-1-直线运动平台（上） - 副本_p7_img4_enhanced.jpeg",
+  "description": "类型：照片\n图片展示了一个急停开关实物，顶部为红色蘑菇头按钮，下方依次为黄色环、黑色螺纹座及透明底座。透过透明外壳可见内部机械结构，包含标有“NO”和“NC”的触点模块。结合页面文字可知，该器件又称紧急开关，用于紧急情况下切断设备电源，一般接在控制回路中。图示电路连接显示，开关串联在5V电源与驱动器ENA+之间，ENA-接GND，利用一对NC触点实现控制功能。",
+  "metadata": {
+    "generation": {
+      "method": "qwen_api",
+      "backend": "api",
+      "provider": "qwen",
+      "model": "qwen3.7-plus",
+      "status": "success",
+      "api_error": null
+    },
+    "review": {
+      "required": false,
+      "status": null,
+      "reason": null,
+      "course_relevant": true
+    }
+  },
+  "error": null,
+  "method": "qwen_api",
+  "backend": "api",
+  "provider": "qwen",
+  "model": "qwen3.7-plus",
+  "status": "success",
+  "api_error": null,
+  "indexable": true,
+  "review_required": false,
+  "review_reason": null,
+  "review_status": null,
+  "course_relevant": true
+}

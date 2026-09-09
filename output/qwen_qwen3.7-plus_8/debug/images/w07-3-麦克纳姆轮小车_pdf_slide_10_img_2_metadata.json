@@ -1,0 +1,33 @@
+{
+  "original_path": "extraction/output/qwen_qwen3.7-plus_8/debug/images/w07-3-麦克纳姆轮小车_p10_img3.png",
+  "enhanced_path": "extraction/output/qwen_qwen3.7-plus_8/debug/images/w07-3-麦克纳姆轮小车_p10_img3_enhanced.png",
+  "description": "类型：表格\n图片展示了四路直流电机驱动扩展板的控制引脚定义表。表格包含六列，分别为电机、方向控制脚、正转、反转、速度控制脚、速度范围。数据行对应四个电机M1至M4：\nM1：方向脚4（LOW正转，HIGH反转），速度脚3，范围0-255；\nM2：方向脚12（HIGH正转，LOW反转），速度脚11，范围0-255；\nM3：方向脚8（LOW正转，HIGH反转），速度脚5，范围0-255；\nM4：方向脚7（HIGH正转，LOW反转），速度脚6，范围0-255。",
+  "metadata": {
+    "generation": {
+      "method": "qwen_api",
+      "backend": "api",
+      "provider": "qwen",
+      "model": "qwen3.7-plus",
+      "status": "success",
+      "api_error": null
+    },
+    "review": {
+      "required": false,
+      "status": null,
+      "reason": null,
+      "course_relevant": true
+    }
+  },
+  "error": null,
+  "method": "qwen_api",
+  "backend": "api",
+  "provider": "qwen",
+  "model": "qwen3.7-plus",
+  "status": "success",
+  "api_error": null,
+  "indexable": true,
+  "review_required": false,
+  "review_reason": null,
+  "review_status": null,
+  "course_relevant": true
+}

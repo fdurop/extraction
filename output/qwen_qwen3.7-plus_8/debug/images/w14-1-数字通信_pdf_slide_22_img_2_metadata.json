@@ -1,0 +1,33 @@
+{
+  "original_path": "extraction/output/qwen_qwen3.7-plus_8/debug/images/w14-1-数字通信_p22_img4.jpeg",
+  "enhanced_path": "extraction/output/qwen_qwen3.7-plus_8/debug/images/w14-1-数字通信_p22_img4_enhanced.jpeg",
+  "description": "类型：代码\n图片展示了Arduino C++代码片段，用于CAN通信初始化。\n顶部包含头文件`<SPI.h>`和`\"mcp2515_can.h\"`。\n定义了常量`SPI_CS_PIN`为9，`CAN_INT_PIN`为2，并实例化`mcp2515_can`对象。\n声明了变量：字符数组`recvBuf[8]`（注释：接受信息缓存），`uint8_t len`（注释：接收到的字节数），`slaveID`设为1（注释：下位机 CAN ID），以及布尔变量`flagRecv`。\n`setup()`函数中：启动1000000波特率串口；通过while循环尝试以1000Kbps波特率初始化CAN总线，失败则打印错误并延时，成功则打印\"CAN init ok!\"；调用`attachInterrupt`设置外部中断，绑定引脚`CAN_INT_PIN`到`posMonitor`函数，触发方式为`FALLING`。\n底部定义了中断服务函数`void posMonitor()`，内容为将`flagRecv`置为true。\n左侧边缘可见部分中文注释，如“例：通过CAN发送和接收信”、“息”、“// 设置监听CAN的外部中断”、“// 监听CAN的外部中断”。",
+  "metadata": {
+    "generation": {
+      "method": "qwen_api",
+      "backend": "api",
+      "provider": "qwen",
+      "model": "qwen3.7-plus",
+      "status": "success",
+      "api_error": null
+    },
+    "review": {
+      "required": false,
+      "status": null,
+      "reason": null,
+      "course_relevant": true
+    }
+  },
+  "error": null,
+  "method": "qwen_api",
+  "backend": "api",
+  "provider": "qwen",
+  "model": "qwen3.7-plus",
+  "status": "success",
+  "api_error": null,
+  "indexable": true,
+  "review_required": false,
+  "review_reason": null,
+  "review_status": null,
+  "course_relevant": true
+}

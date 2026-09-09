@@ -1,0 +1,25 @@
+{
+  "page_num": 4,
+  "raw_text": "机电系统原理及实践—— 课程简介\n机电智控实验室tangguoan@fudan.edu.cn mmguo@fudan.edu.cn\n具身智能（Embodied AI）\n具身智能：基于物理实体与环境互动，进行感知和行\n动的智能系统。\n人工智能的下一个浪潮\n具身智能机器人：与环境交互感知，能自主规划、决\n策、行动，具有执行能力的机器人。\n18-5\n室 复旦大\n智控实验室 复旦大学 机电\n学 机电智控实验室 复旦大学 机电智控实验\n复旦大学 机电智控实验室 复旦大学 机电智控实验室 复旦\n旦大学 机电智控实验室 复旦大学 机电智控实验室 复旦大学 机电\n电智控实验室 复旦大学 机电智控实验室 复旦大学 机电智控实\n验室 复旦大学 机电智控实验室 复旦大学 机电智控实验室 \n旦大学 机电智控实验室 复旦大学 机电智控\n电智控实验室 复旦大学 \n实验室 复\n",
+  "cleaned_text": "具身智能（Embodied AI）\n具身智能：基于物理实体与环境互动，进行感知和行\n动的智能系统。\n人工智能的下一个浪潮\n具身智能机器人：与环境交互感知，能自主规划、决\n策、行动，具有执行能力的机器人。",
+  "key_points": [
+    "动的智能系统。",
+    "策、行动，具有执行能力的机器人。"
+  ],
+  "technical_terms": [
+    "AI",
+    "动的智能系统"
+  ],
+  "has_images": true,
+  "image_count": 3,
+  "image_paths": [
+    "extraction/output/qwen_qwen3.7-plus_8/debug/images/w01-1-课程简介_p5_img2.jpeg",
+    "extraction/output/qwen_qwen3.7-plus_8/debug/images/w01-1-课程简介_p5_img3.jpeg",
+    "extraction/output/qwen_qwen3.7-plus_8/debug/images/w01-1-课程简介_p5_img4.jpeg"
+  ],
+  "metadata": {
+    "char_count": 382,
+    "word_count": 50,
+    "line_count": 20
+  }
+}

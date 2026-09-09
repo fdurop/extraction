@@ -1,0 +1,33 @@
+{
+  "original_path": "extraction/output/qwen_qwen3.7-plus_8/debug/images/w02-1-PWM和舵机_p4_img2.png",
+  "enhanced_path": "extraction/output/qwen_qwen3.7-plus_8/debug/images/w02-1-PWM和舵机_p4_img2_enhanced.png",
+  "description": "类型：示意图\n图片展示了三组垂直排列的方波波形图，纵轴标示电压刻度0V和5V。每组波形右侧标注了对应的等效模拟电压值（从上至下依次为2.5V、3.75V、1V）。波形下方标注了各阶段高电平与低电平所占的时间百分比（如50%/50%、75%/25%、20%/80%）。图中通过虚线指示了不同占空比方波对应的平均电压水平，直观呈现了脉冲宽度变化与输出电压数值的对应关系。",
+  "metadata": {
+    "generation": {
+      "method": "qwen_api",
+      "backend": "api",
+      "provider": "qwen",
+      "model": "qwen3.7-plus",
+      "status": "success",
+      "api_error": null
+    },
+    "review": {
+      "required": false,
+      "status": null,
+      "reason": null,
+      "course_relevant": true
+    }
+  },
+  "error": null,
+  "method": "qwen_api",
+  "backend": "api",
+  "provider": "qwen",
+  "model": "qwen3.7-plus",
+  "status": "success",
+  "api_error": null,
+  "indexable": true,
+  "review_required": false,
+  "review_reason": null,
+  "review_status": null,
+  "course_relevant": true
+}

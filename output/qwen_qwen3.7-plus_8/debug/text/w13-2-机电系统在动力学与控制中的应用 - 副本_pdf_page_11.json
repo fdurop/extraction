@@ -1,0 +1,17 @@
+{
+  "page_num": 10,
+  "raw_text": "机电系统原理及实践—— 机电系统在动力学与控制中的应用\n机电智控实验室tangguoan@fudan.edu.cn mmguo@fudan.edu.cn\n16-11\n§4.2 单摆残余振动的抑制——单摆抑振的动力学原理\nsu\ng\nl\nl\n\n\n+\n= −\n2\ns\nn\nn\n2\n,  \nu\ng\nl\nl\n\n\n\n\n=\n=\n\n\n\n\nn\n2\nn\n0\n2\n\n\n\n\n+\n+\n=\nn\n2\nn\n( )\ne\nsin(\n1\n)\nt\nt\nA\nt\n\n\n\n\n\n−\n=\n−\n+\n",
+  "cleaned_text": "§4.2 单摆残余振动的抑制——单摆抑振的动力学原理\nsu\ng\nl\nl\n+\n= −\n2\ns\nn\nn\n2\n,\nu\ng\nl\nl\n=\n=\nn\n2\nn\n0\n2\n+\n+\n=\nn\n2\nn\n( )\ne\nsin(\n1\n)\nt\nt\nA\nt\n−\n=\n−\n+",
+  "key_points": [
+    "A"
+  ],
+  "technical_terms": [],
+  "has_images": false,
+  "image_count": 0,
+  "image_paths": [],
+  "metadata": {
+    "char_count": 247,
+    "word_count": 70,
+    "line_count": 66
+  }
+}

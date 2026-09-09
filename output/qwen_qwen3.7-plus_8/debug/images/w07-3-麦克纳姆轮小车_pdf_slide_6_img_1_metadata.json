@@ -1,0 +1,33 @@
+{
+  "original_path": "extraction/output/qwen_qwen3.7-plus_8/debug/images/w07-3-麦克纳姆轮小车_p6_img2.png",
+  "enhanced_path": "extraction/output/qwen_qwen3.7-plus_8/debug/images/w07-3-麦克纳姆轮小车_p6_img2_enhanced.png",
+  "description": "类型：示意图\n图片展示麦克纳姆轮小车地面投影视图。中心为矩形车体，四角分别安装A轮（左上、右下）和B轮（右上、左下）。每个车轮处绘有红色箭头表示分速度矢量，所有矢量的合力方向指向车头正前方，标注为“V合”。顶部黄色标签注明运动状态为“前进”。背景布满“复旦大学 机电智控实验室”重复水印，右下角有CSDN标识。",
+  "metadata": {
+    "generation": {
+      "method": "qwen_api",
+      "backend": "api",
+      "provider": "qwen",
+      "model": "qwen3.7-plus",
+      "status": "success",
+      "api_error": null
+    },
+    "review": {
+      "required": false,
+      "status": null,
+      "reason": null,
+      "course_relevant": true
+    }
+  },
+  "error": null,
+  "method": "qwen_api",
+  "backend": "api",
+  "provider": "qwen",
+  "model": "qwen3.7-plus",
+  "status": "success",
+  "api_error": null,
+  "indexable": true,
+  "review_required": false,
+  "review_reason": null,
+  "review_status": null,
+  "course_relevant": true
+}

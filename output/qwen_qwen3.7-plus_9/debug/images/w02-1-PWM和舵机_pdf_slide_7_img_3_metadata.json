@@ -1,0 +1,33 @@
+{
+  "original_path": "extraction/output/qwen_qwen3.7-plus_9/debug/images/w02-1-PWM和舵机_p7_img4.png",
+  "enhanced_path": "extraction/output/qwen_qwen3.7-plus_9/debug/images/w02-1-PWM和舵机_p7_img4_enhanced.png",
+  "description": "类型：示意图\n图片展示了电位器的接线原理。上方水平线标注三个连接点，从左至右依次为“5V”、“A1”和“GND”。下方绘制了一个长方形电阻符号代表电位器主体。左侧竖线将电阻左端连接至“5V”，右侧竖线将电阻右端连接至“GND”。电阻上方有一个带箭头的滑动触头符号，箭头指向电阻体，并通过折线向上连接至中间的“A1”端口。",
+  "metadata": {
+    "generation": {
+      "method": "qwen_api",
+      "backend": "api",
+      "provider": "qwen",
+      "model": "qwen3.7-plus",
+      "status": "success",
+      "api_error": null
+    },
+    "review": {
+      "required": false,
+      "status": null,
+      "reason": null,
+      "course_relevant": true
+    }
+  },
+  "error": null,
+  "method": "qwen_api",
+  "backend": "api",
+  "provider": "qwen",
+  "model": "qwen3.7-plus",
+  "status": "success",
+  "api_error": null,
+  "indexable": true,
+  "review_required": false,
+  "review_reason": null,
+  "review_status": null,
+  "course_relevant": true
+}

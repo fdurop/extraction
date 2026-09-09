@@ -1,0 +1,33 @@
+{
+  "original_path": "extraction/output/qwen_qwen3.7-plus_8/debug/images/w07-2-减速器简介_p3_img3.jpeg",
+  "enhanced_path": "extraction/output/qwen_qwen3.7-plus_8/debug/images/w07-2-减速器简介_p3_img3_enhanced.jpeg",
+  "description": "类型：照片\n图片展示了一个银色圆柱形金属外壳的直流减速电机（Gear Box Motor），前端伸出金属输出轴。机身贴有白色标签，可见品牌“ZHENG”及文字“GEAR BOX MOTOR”。标签上标注了具体参数：“DC: 12V”、“rpm: 205”以及型号编码。该实物图直观展示了课程文本中提到的减速器外观，且标签上的转速参数（205 rpm）与页面文字中列出的算式“减速比=5000/205”中的数值直接对应，承载了具体的课程实例信息。",
+  "metadata": {
+    "generation": {
+      "method": "qwen_api",
+      "backend": "api",
+      "provider": "qwen",
+      "model": "qwen3.7-plus",
+      "status": "success",
+      "api_error": null
+    },
+    "review": {
+      "required": false,
+      "status": null,
+      "reason": null,
+      "course_relevant": true
+    }
+  },
+  "error": null,
+  "method": "qwen_api",
+  "backend": "api",
+  "provider": "qwen",
+  "model": "qwen3.7-plus",
+  "status": "success",
+  "api_error": null,
+  "indexable": true,
+  "review_required": false,
+  "review_reason": null,
+  "review_status": null,
+  "course_relevant": true
+}

@@ -1,0 +1,27 @@
+{
+  "page_num": 11,
+  "raw_text": "机电系统原理及实践—— 机电系统在动力学与控制中的应用\n机电智控实验室tangguoan@fudan.edu.cn mmguo@fudan.edu.cn\n16-12\n§4.3 单摆残余振动的抑制——单摆抑振方法的实现\ns\nn\n2\nu\nl\n\n=\ns\nn\n2\nu\nl\n\n=\n振动抑制要求：\n滑台控制策略：\nif ( t < T0 + 2 ) {\nvlc = 0;\n}\nelse {\nJointEncoderSampling();\nvlc = Kp * JointEncoder.diff;\n}\n代码实现：\np\nu\nK \n=\n易于实现\n滑台加速度\n摆动角速度\np\nu\nK \n=\n编码器计数\n电机速度\n",
+  "cleaned_text": "§4.3 单摆残余振动的抑制——单摆抑振方法的实现\ns\nn\n2\nu\nl\n=\ns\nn\n2\nu\nl\n=\n振动抑制要求：\n滑台控制策略：\nif ( t < T0 + 2 ) {\nvlc = 0;\n}\nelse {\nJointEncoderSampling();\nvlc = Kp * JointEncoder.diff;\n}\n代码实现：\np\nu\nK\n=\n易于实现\n滑台加速度\n摆动角速度\np\nu\nK\n=\n编码器计数\n电机速度",
+  "key_points": [
+    "振动抑制要求：",
+    "滑台控制策略：",
+    "JointEncoderSampling();",
+    "代码实现：",
+    "K",
+    "K"
+  ],
+  "technical_terms": [
+    "单摆抑振方法",
+    "滑台控制"
+  ],
+  "has_images": true,
+  "image_count": 1,
+  "image_paths": [
+    "extraction/output/qwen_qwen3.7-plus_9/debug/images/w13-2-机电系统在动力学与控制中的应用 - 副本_p12_img3.jpeg"
+  ],
+  "metadata": {
+    "char_count": 305,
+    "word_count": 61,
+    "line_count": 42
+  }
+}

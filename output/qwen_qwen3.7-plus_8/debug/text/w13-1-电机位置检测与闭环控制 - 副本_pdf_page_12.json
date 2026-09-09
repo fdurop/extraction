@@ -1,0 +1,17 @@
+{
+  "page_num": 11,
+  "raw_text": "机电系统原理及实践—— 电机位置检测与闭环控制\n机电智控实验室tangguoan@fudan.edu.cn mmguo@fudan.edu.cn\n开环与闭环控制的基本流程\n16-12\n控制器\n执行器\n控制对象\n控制量\n给定值\n被控量\n干扰\n控制器\n执行器\n控制对象\n控制量\n给定值\n被控量\n干扰\n反馈环节\n反\n馈\n量\n比较器\n开环\n控制\n系统\n闭环\n控制\n系统\n",
+  "cleaned_text": "开环与闭环控制的基本流程\n控制器\n执行器\n控制对象\n控制量\n给定值\n被控量\n干扰\n控制器\n执行器\n控制对象\n控制量\n给定值\n被控量\n干扰\n反馈环节\n反\n馈\n量\n比较器\n开环\n控制\n系统\n闭环\n控制\n系统",
+  "key_points": [],
+  "technical_terms": [
+    "开环与闭环控制"
+  ],
+  "has_images": false,
+  "image_count": 0,
+  "image_paths": [],
+  "metadata": {
+    "char_count": 181,
+    "word_count": 31,
+    "line_count": 30
+  }
+}

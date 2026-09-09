@@ -1,0 +1,33 @@
+{
+  "original_path": "extraction/output/qwen_qwen3.7-plus_8/debug/images/w10-1-直线运动平台（下）_slide_4_img_3.png",
+  "enhanced_path": "extraction/output/qwen_qwen3.7-plus_8/debug/images/w10-1-直线运动平台（下）_slide_4_img_3_enhanced.png",
+  "description": "类型：示意图\n图片展示了一个机械传动结构的局部特写，主要包含左侧的灰色圆柱形轴体和右侧缠绕其上的螺旋状丝杠螺纹。螺纹部分呈现立体渲染效果，螺旋槽内部及侧面被标记为醒目的红色，其余螺纹表面为灰白色。该结构直观展示了丝杠的螺旋几何特征，对应页面文本中关于“丝杠转速”及“滑台定位”的教学内容。",
+  "metadata": {
+    "generation": {
+      "method": "qwen_api",
+      "backend": "api",
+      "provider": "qwen",
+      "model": "qwen3.7-plus",
+      "status": "success",
+      "api_error": null
+    },
+    "review": {
+      "required": false,
+      "status": null,
+      "reason": null,
+      "course_relevant": true
+    }
+  },
+  "error": null,
+  "method": "qwen_api",
+  "backend": "api",
+  "provider": "qwen",
+  "model": "qwen3.7-plus",
+  "status": "success",
+  "api_error": null,
+  "indexable": true,
+  "review_required": false,
+  "review_reason": null,
+  "review_status": null,
+  "course_relevant": true
+}

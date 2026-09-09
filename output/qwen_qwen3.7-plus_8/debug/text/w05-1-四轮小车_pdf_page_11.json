@@ -1,0 +1,26 @@
+{
+  "page_num": 10,
+  "raw_text": "机电系统原理及实践—— 四轮小车\n机电智控实验室tangguoan@fudan.edu.cn mmguo@fudan.edu.cn\n驱动方案四：四路直流电机驱动扩展板\n每个电机单独控制。\n可实现更复杂的动作。\n集成化，体积小，结构紧凑。\n15-11\n室 复旦大\n智控实验室 复旦大学 机电\n学 机电智控实验室 复旦大学 机电智控实验\n复旦大学 机电智控实验室 复旦大学 机电智控实验室 复旦\n大学 机电智控实验室 复旦大学 机电智控实验室 复旦大学 机电\n电智控实验室 复旦大学 机电智控实验室 复旦大学 机电智控实\n验室 复旦大学 机电智控实验室 复旦大学 机电智控实验室 \n旦大学 机电智控实验室 复旦大学 机电智控\n电智控实验室 复旦大学 \n验室 复\n",
+  "cleaned_text": "驱动方案四：四路直流电机驱动扩展板\n每个电机单独控制。\n可实现更复杂的动作。\n集成化，体积小，结构紧凑。",
+  "key_points": [
+    "每个电机单独控制。",
+    "可实现更复杂的动作。",
+    "集成化，体积小，结构紧凑。"
+  ],
+  "technical_terms": [
+    "四路直流电机",
+    "每个电机",
+    "每个电机单独控制"
+  ],
+  "has_images": true,
+  "image_count": 2,
+  "image_paths": [
+    "extraction/output/qwen_qwen3.7-plus_8/debug/images/w05-1-四轮小车_p11_img2.jpeg",
+    "extraction/output/qwen_qwen3.7-plus_8/debug/images/w05-1-四轮小车_p11_img3.jpeg"
+  ],
+  "metadata": {
+    "char_count": 332,
+    "word_count": 47,
+    "line_count": 18
+  }
+}

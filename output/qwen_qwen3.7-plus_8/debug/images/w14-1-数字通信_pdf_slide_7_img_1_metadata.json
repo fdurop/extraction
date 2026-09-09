@@ -1,0 +1,33 @@
+{
+  "original_path": "extraction/output/qwen_qwen3.7-plus_8/debug/images/w14-1-数字通信_p7_img5.jpeg",
+  "enhanced_path": "extraction/output/qwen_qwen3.7-plus_8/debug/images/w14-1-数字通信_p7_img5_enhanced.jpeg",
+  "description": "类型：照片\n图片展示了Arduino IDE软件界面的截图。左侧为顶部菜单栏，显示“File”、“Edit”等选项，其中“Examples”菜单被展开，高亮选中了“04.Communication”子菜单项。右侧弹出了级联列表，列出了多个串口通信相关的示例程序名称，清晰可见的包括“ASCIITable”、“Dimmer”、“Graph”、“Midi”、“MultiSerial”、“PhysicalPixel”、“ReadASCIIString”、“SerialCallResponse”、“SerialCallResponseASCII”、“SerialEvent”、“SerialPassthrough”和“VirtualColorMixer”。背景隐约可见代码编辑区及“void setup()”等字样。",
+  "metadata": {
+    "generation": {
+      "method": "qwen_api",
+      "backend": "api",
+      "provider": "qwen",
+      "model": "qwen3.7-plus",
+      "status": "success",
+      "api_error": null
+    },
+    "review": {
+      "required": false,
+      "status": null,
+      "reason": null,
+      "course_relevant": true
+    }
+  },
+  "error": null,
+  "method": "qwen_api",
+  "backend": "api",
+  "provider": "qwen",
+  "model": "qwen3.7-plus",
+  "status": "success",
+  "api_error": null,
+  "indexable": true,
+  "review_required": false,
+  "review_reason": null,
+  "review_status": null,
+  "course_relevant": true
+}

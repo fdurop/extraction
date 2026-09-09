@@ -1,0 +1,33 @@
+{
+  "original_path": "extraction/output/qwen_qwen3.7-plus_9/debug/images/w13-1-电机位置检测与闭环控制 - 副本_p4_img4.jpeg",
+  "enhanced_path": "extraction/output/qwen_qwen3.7-plus_9/debug/images/w13-1-电机位置检测与闭环控制 - 副本_p4_img4_enhanced.jpeg",
+  "description": "类型：照片\n图片展示一台置于黄色工业柜上的小型数控铣床实验装置。主体包含绿灰色主轴头、垂直立柱及金属工作台。X轴和Y轴滑台末端各安装有一个银色圆柱形编码器（或步进电机），通过联轴器连接丝杆。右前方黑色盒体上设有红色急停按钮及若干旋钮开关。背景墙面挂有配电板及写有文字的纸张。该实物图对应文中“电驱-数显铣床”、“步进电机+编码器”及“闭环”控制系统的硬件构成。",
+  "metadata": {
+    "generation": {
+      "method": "qwen_api",
+      "backend": "api",
+      "provider": "qwen",
+      "model": "qwen3.7-plus",
+      "status": "success",
+      "api_error": null
+    },
+    "review": {
+      "required": false,
+      "status": null,
+      "reason": null,
+      "course_relevant": true
+    }
+  },
+  "error": null,
+  "method": "qwen_api",
+  "backend": "api",
+  "provider": "qwen",
+  "model": "qwen3.7-plus",
+  "status": "success",
+  "api_error": null,
+  "indexable": true,
+  "review_required": false,
+  "review_reason": null,
+  "review_status": null,
+  "course_relevant": true
+}

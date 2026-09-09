@@ -1,0 +1,33 @@
+{
+  "original_path": "extraction/output/qwen_qwen3.7-plus_8/debug/images/w10-1-直线运动平台（下）_slide_10_img_1.png",
+  "enhanced_path": "extraction/output/qwen_qwen3.7-plus_8/debug/images/w10-1-直线运动平台（下）_slide_10_img_1_enhanced.png",
+  "description": "类型：照片\n图片分为上下两部分对比展示实验现象。上方画面右上角标注蓝色标签“输入整形”，显示白色框架实验台顶部的水平滑轨装置，下方悬挂的金色圆锥摆锤处于静止垂直状态。下方画面右上角标注蓝色标签“无整形”，显示相同实验装置，但悬挂的金色圆锥摆锤明显偏离垂直线，呈现摆动姿态。背景均为实验室环境，可见墙壁插座、地面及后方设备。",
+  "metadata": {
+    "generation": {
+      "method": "qwen_api",
+      "backend": "api",
+      "provider": "qwen",
+      "model": "qwen3.7-plus",
+      "status": "success",
+      "api_error": null
+    },
+    "review": {
+      "required": false,
+      "status": null,
+      "reason": null,
+      "course_relevant": true
+    }
+  },
+  "error": null,
+  "method": "qwen_api",
+  "backend": "api",
+  "provider": "qwen",
+  "model": "qwen3.7-plus",
+  "status": "success",
+  "api_error": null,
+  "indexable": true,
+  "review_required": false,
+  "review_reason": null,
+  "review_status": null,
+  "course_relevant": true
+}

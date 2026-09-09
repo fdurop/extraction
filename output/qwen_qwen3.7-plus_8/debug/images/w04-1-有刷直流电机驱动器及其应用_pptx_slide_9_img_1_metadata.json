@@ -1,0 +1,33 @@
+{
+  "original_path": "extraction/output/qwen_qwen3.7-plus_8/debug/images/w04-1-有刷直流电机驱动器及其应用_slide_9_vector_fallback.png",
+  "enhanced_path": "extraction/output/qwen_qwen3.7-plus_8/debug/images/w04-1-有刷直流电机驱动器及其应用_slide_9_vector_fallback_enhanced.png",
+  "description": "类型：示意图\n图片展示控制有刷直流电机转向的电路连接。左侧为驱动模块实物接线图，区分信号电（连接D3-D6、GND、5V）与功率电（连接12V、0V及电机M），标注引脚IN1-IN8、DC+、DC-及输出端A1-B4。右侧为H桥电路原理图，包含四个通道（ch1-ch4）开关管、电机M及UNO控制器（连接D3-D6），标有V+、V-及节点A1-A4、B1-B4。右上角提示框注明输入回路（弱电）与输出回路（强电）不可混淆，且输出回路电流方向只能A→B。底部标注文件名w04-s1-changeDCMotorDir.ino。",
+  "metadata": {
+    "generation": {
+      "method": "qwen_api",
+      "backend": "api",
+      "provider": "qwen",
+      "model": "qwen3.7-plus",
+      "status": "success",
+      "api_error": null
+    },
+    "review": {
+      "required": false,
+      "status": null,
+      "reason": null,
+      "course_relevant": true
+    }
+  },
+  "error": null,
+  "method": "qwen_api",
+  "backend": "api",
+  "provider": "qwen",
+  "model": "qwen3.7-plus",
+  "status": "success",
+  "api_error": null,
+  "indexable": true,
+  "review_required": false,
+  "review_reason": null,
+  "review_status": null,
+  "course_relevant": true
+}

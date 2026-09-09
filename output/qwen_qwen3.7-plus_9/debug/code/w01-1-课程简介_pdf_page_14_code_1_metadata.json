@@ -1,0 +1,14 @@
+{
+  "source_image": "extraction/output/qwen_qwen3.7-plus_9/debug/images/w01-1-课程简介_p14_img5.jpeg",
+  "extraction_method": "qwen_api_智能识别",
+  "language": "python",
+  "description": "这段代码是用于配置计算机视觉（很可能是 MediaPipe Hands 或类似的手部追踪库）的初始化参数。它设置了摄像头设备ID、分辨率、是否使用静态图像模式、检测的最大手数，以及检测和追踪的置信度阈值。结合投影屏幕上的手部关键点识别图像，可以判断这是用于实时手势识别或交互系统的Python代码。",
+  "code_file": "w01-1-课程简介_pdf_page_14_code_1.py",
+  "page": 14,
+  "index": 1,
+  "timestamp": "2026-09-09T20:54:25.926437",
+  "raw_response": "语言: Python\n```python\nimport time\n\n# parameters and def\ncap_device = 0\ncap_width = 960\ncap_height = 680\nuse_static_image_mode = False\nnum_hands = 2\n\n# set confidence level\nmin_detection_confidence = 0.5\nmin_tracking_confidence = 0.5\n```\n功能: 这段代码是用于配置计算机视觉（很可能是 MediaPipe Hands 或类似的手部追踪库）的初始化参数。它设置了摄像头设备ID、分辨率、是否使用静态图像模式、检测的最大手数，以及检测和追踪的置信度阈值。结合投影屏幕上的手部关键点识别图像，可以判断这是用于实时手势识别或交互系统的Python代码。",
+  "backend": "api",
+  "provider": "qwen",
+  "model": "qwen3.7-plus"
+}

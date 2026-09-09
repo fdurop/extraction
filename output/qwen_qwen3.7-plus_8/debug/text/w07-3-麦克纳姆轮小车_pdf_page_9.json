@@ -1,0 +1,36 @@
+{
+  "page_num": 8,
+  "raw_text": "机电系统原理及实践—— 麦克纳姆轮小车\n机电智控实验室tangguoan@fudan.edu.cn mmguo@fudan.edu.cn\n§4 麦轮小车设计\n用麦轮替换普通轮。\n用直流电机驱动扩展板替换自制驱\n动器原理样机。\n11-9\nPWM1 PWM2 PWM3 PWM4\nDIR1\nDIR2\nDIR3\nDIR4\n~D3\n~D11\n~D5\n~D6\nD4\nD12\nD8\nD7\nM\n1、左前\nM\n2、右前\nM\n3、左后\nM\n4、右后\nMotor 2\nMotor 3\nMotor 1\nMotor 4\nPower\nPWM1\nPWM2\nPWM3\nPWM4\nDIR1\nDIR2\nDIR3\nDIR4\n四路有刷直流电机\n运动控制模块\nD3~\nD11~\nD4\n DC12\nD5~\nD6~\nD12\nD8\nD7\nD3/D9/D10/D11采用490 Hz PWM\nD5/D6 采用980 Hz PWM (Timer0)\n四路直流电机\n驱动扩展板\n(插在UNO上)\n室 复旦大\n智控实验室 复旦大学 机电\n学 机电智控实验室 复旦大学 机电智控实验\n复旦大学 机电智控实验室 复旦大学 机电智控实验室 复旦\n大学 机电智控实验室 复旦大学 机电智控实验室 复旦大学 机电\n电智控实验室 复旦大学 机电智控实验室 复旦大学 机电智控实\n验室 复旦大学 机电智控实验室 复旦大学 机电智控实验室 \n旦大学 机电智控实验室 复旦大学 机电智控\n电智控实验室 复旦大学 \n验室 复\n",
+  "cleaned_text": "§4 麦轮小车设计\n用麦轮替换普通轮。\n用直流电机驱动扩展板替换自制驱\n动器原理样机。\nPWM1 PWM2 PWM3 PWM4\nDIR1\nDIR2\nDIR3\nDIR4\n~D3\n~D11\n~D5\n~D6\nD4\nD12\nD8\nD7\nM\n1、左前\nM\n2、右前\nM\n3、左后\nM\n4、右后\nMotor 2\nMotor 3\nMotor 1\nMotor 4\nPower\nPWM1\nPWM2\nPWM3\nPWM4\nDIR1\nDIR2\nDIR3\nDIR4\n四路有刷直流电机\n运动控制模块\nD3~\nD11~\nD4\nDC12\nD5~\nD6~\nD12\nD8\nD7\nD3/D9/D10/D11采用490 Hz PWM\nD5/D6 采用980 Hz PWM (Timer0)\n四路直流电机\n驱动扩展板\n(插在UNO上)",
+  "key_points": [
+    "用麦轮替换普通轮。",
+    "动器原理样机。",
+    "PWM1 PWM2 PWM3 PWM4",
+    "DIR1",
+    "DIR2",
+    "DIR3",
+    "DIR4",
+    "D4",
+    "D12",
+    "D8"
+  ],
+  "technical_terms": [
+    "PWM",
+    "Timer0",
+    "四路有刷直流电机",
+    "四路直流电机",
+    "用直流电机",
+    "运动控制"
+  ],
+  "has_images": true,
+  "image_count": 2,
+  "image_paths": [
+    "extraction/output/qwen_qwen3.7-plus_8/debug/images/w07-3-麦克纳姆轮小车_p9_img2.jpeg",
+    "extraction/output/qwen_qwen3.7-plus_8/debug/images/w07-3-麦克纳姆轮小车_p9_img3.jpeg"
+  ],
+  "metadata": {
+    "char_count": 628,
+    "word_count": 111,
+    "line_count": 68
+  }
+}

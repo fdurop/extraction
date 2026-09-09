@@ -1,0 +1,33 @@
+{
+  "original_path": "extraction/output/qwen_qwen3.7-plus_9/debug/images/w05-1-四轮小车_p3_img4.png",
+  "enhanced_path": "extraction/output/qwen_qwen3.7-plus_9/debug/images/w05-1-四轮小车_p3_img4_enhanced.png",
+  "description": "类型：示意图\n图片包含上下两个电路原理图，展示双刀双掷开关控制直流电机（标有M）的接线方式。左侧红、绿两根输入线分别连接开关上下两组触点。上方图中，开关闭合使红线接电机上端、绿线接电机下端，电机旁箭头指示顺时针旋转；下方图中，开关状态改变，红线接电机下端、绿线接电机上端，电机旁箭头指示逆时针旋转。虚线连接上下两个开关表示机械联动。背景布满“复旦大学 机电智控实验室”水印。",
+  "metadata": {
+    "generation": {
+      "method": "qwen_api",
+      "backend": "api",
+      "provider": "qwen",
+      "model": "qwen3.7-plus",
+      "status": "success",
+      "api_error": null
+    },
+    "review": {
+      "required": false,
+      "status": null,
+      "reason": null,
+      "course_relevant": true
+    }
+  },
+  "error": null,
+  "method": "qwen_api",
+  "backend": "api",
+  "provider": "qwen",
+  "model": "qwen3.7-plus",
+  "status": "success",
+  "api_error": null,
+  "indexable": true,
+  "review_required": false,
+  "review_reason": null,
+  "review_status": null,
+  "course_relevant": true
+}

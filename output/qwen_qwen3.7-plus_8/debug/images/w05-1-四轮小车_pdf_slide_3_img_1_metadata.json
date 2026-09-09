@@ -1,0 +1,33 @@
+{
+  "original_path": "extraction/output/qwen_qwen3.7-plus_8/debug/images/w05-1-四轮小车_p3_img2.jpeg",
+  "enhanced_path": "extraction/output/qwen_qwen3.7-plus_8/debug/images/w05-1-四轮小车_p3_img2_enhanced.jpeg",
+  "description": "类型：示意图\n图片展示了有刷直流电机的内部结构剖面。左右两侧分别为标有S（蓝色）和N（红色）的定子（Stator）磁极。中间为转子（Rotor），其上绕有线圈（Coil），红色线条示意绕组走向，黑色箭头标示电流方向。转子轴端连接换向器（Commutator）。底部有两个黄色的电刷（Brush）分别与换向器接触，并引出外部接线端子。该图直观呈现了电机各部件的空间位置及连接关系。",
+  "metadata": {
+    "generation": {
+      "method": "qwen_api",
+      "backend": "api",
+      "provider": "qwen",
+      "model": "qwen3.7-plus",
+      "status": "success",
+      "api_error": null
+    },
+    "review": {
+      "required": false,
+      "status": null,
+      "reason": null,
+      "course_relevant": true
+    }
+  },
+  "error": null,
+  "method": "qwen_api",
+  "backend": "api",
+  "provider": "qwen",
+  "model": "qwen3.7-plus",
+  "status": "success",
+  "api_error": null,
+  "indexable": true,
+  "review_required": false,
+  "review_reason": null,
+  "review_status": null,
+  "course_relevant": true
+}

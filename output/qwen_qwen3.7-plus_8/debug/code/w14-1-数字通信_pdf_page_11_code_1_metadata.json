@@ -1,0 +1,14 @@
+{
+  "source_image": "extraction/output/qwen_qwen3.7-plus_8/debug/images/w14-1-数字通信_p11_img4.jpeg",
+  "extraction_method": "qwen_api_智能识别",
+  "language": "matlab",
+  "description": "该MATLAB代码演示了串口的完整使用流程，包括：建立串口连接（COM4，波特率9600）、三种接收信息的方式（回调函数直接执行、回调函数调用自定义函数、轮询查询等待）、以单精度浮点格式发送数据、以及使用完毕后释放串口资源。",
+  "code_file": "w14-1-数字通信_pdf_page_11_code_1.m",
+  "page": 11,
+  "index": 1,
+  "timestamp": "2026-09-09T11:04:51.475535",
+  "raw_response": "语言: MATLAB\n```matlab\n% 建立串口连接，端口号和波特率根据实际情况设置\ns = serialport(\"COM4\", 9600);\npause(2); % 等待串口建立\n\n% 接收方式 1 和 2 常用于带GUI的APP\n% 接收信息方式1：设置回调函数，直接给出函数语句，无需传递参数\nconfigureCallback(s, \"terminator\", @(~,~) fprintf('返回信息: %s', readline(s)));\n\n% 接收信息方式2：设置回调函数，专门定义一个函数，需传递参数\nconfigureCallback(s, \"terminator\", @(~,~) receiveResponse(s));\n\nT = 10; L = 150;\n% 将T和L的值以单精度形式(4字节，对应C语言的float类型)发送\nwrite(s, [T L], \"single\");\npause(1); % 等待数据发送\n\n% 接收信息方式3：查询等待\n% timeout = 1; % 设置超时时间（秒）\n% startTime = tic;\n% while s.NumBytesAvailable == 0 && toc(startTime) < timeout\n%     pause(0.01); % 短暂暂停\n% end\n\n% if s.NumBytesAvailable > 0\n%     fprintf('返回信息: %s', readline(s));\n% else\n%     fprintf('错误：接收超时，未收到返回信息\\n');\n% end\n\ndelete(s); clear s; % 串口用完后，务必释放\n\n% 当串口有信息输入时的回调函数\nfunction receiveResponse(s)\n    fprintf('返回信息: %s', readline(s));\nend\n```\n功能: 该MATLAB代码演示了串口的完整使用流程，包括：建立串口连接（COM4，波特率9600）、三种接收信息的方式（回调函数直接执行、回调函数调用自定义函数、轮询查询等待）、以单精度浮点格式发送数据、以及使用完毕后释放串口资源。",
+  "backend": "api",
+  "provider": "qwen",
+  "model": "qwen3.7-plus"
+}

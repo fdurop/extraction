@@ -1,0 +1,33 @@
+{
+  "original_path": "extraction/output/qwen_qwen3.7-plus_9/debug/images/w10-1-直线运动平台（下）_slide_13_img_2.png",
+  "enhanced_path": "extraction/output/qwen_qwen3.7-plus_9/debug/images/w10-1-直线运动平台（下）_slide_13_img_2_enhanced.png",
+  "description": "类型：公式\n图片包含三部分教学内容。首先是对单摆方程进行Laplace变换的推导，得出传递函数表达式 $\\Theta(s) = \\frac{s^2}{l(s^2 + \\omega_n^2)} U_s(s)$。其次列出了自由振动位移函数的拉普拉斯变换公式，分别展示了 $\\mathcal{L}[\\sin(\\omega_n t)]$ 和 $\\mathcal{L}[\\cos(\\omega_n t)]$ 等于 $\\frac{\\omega_n}{s^2 + \\omega_n^2}$ 与 $\\frac{s}{s^2 + \\omega_n^2}$，并进一步分解为含虚数单位 $i$ 的分式形式。最后通过文字结论指出，残余振动响应含有的极点来自传递函数，这是导致单摆无法立即停止的根源。",
+  "metadata": {
+    "generation": {
+      "method": "qwen_api",
+      "backend": "api",
+      "provider": "qwen",
+      "model": "qwen3.7-plus",
+      "status": "success",
+      "api_error": null
+    },
+    "review": {
+      "required": false,
+      "status": null,
+      "reason": null,
+      "course_relevant": true
+    }
+  },
+  "error": null,
+  "method": "qwen_api",
+  "backend": "api",
+  "provider": "qwen",
+  "model": "qwen3.7-plus",
+  "status": "success",
+  "api_error": null,
+  "indexable": true,
+  "review_required": false,
+  "review_reason": null,
+  "review_status": null,
+  "course_relevant": true
+}

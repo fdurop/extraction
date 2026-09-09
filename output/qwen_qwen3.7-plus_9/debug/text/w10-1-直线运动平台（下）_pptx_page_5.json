@@ -1,0 +1,19 @@
+{
+  "page_num": 4,
+  "raw_text": "§2.2 \n低通滤波\n17-\n迭代\n提高程序效率\n同时也是 待删除旧数据 的位置\nw10-s3-sliderAbsLocation-LPF\n.ino\n限时 \n20 \n分钟",
+  "cleaned_text": "§2.2\n低通滤波\n迭代\n提高程序效率\n同时也是 待删除旧数据 的位置\nw10-s3-sliderAbsLocation-LPF\n.ino\n限时\n20\n分钟",
+  "key_points": [],
+  "technical_terms": [
+    "w10-s3-sliderAbsLocation-LPF"
+  ],
+  "has_images": true,
+  "image_count": 1,
+  "image_paths": [
+    "extraction/output/qwen_qwen3.7-plus_9/debug/images/w10-1-直线运动平台（下）_slide_5_img_1.png"
+  ],
+  "metadata": {
+    "char_count": 85,
+    "word_count": 13,
+    "line_count": 11
+  }
+}

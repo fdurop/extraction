@@ -1,0 +1,33 @@
+{
+  "original_path": "extraction/output/qwen_qwen3.7-plus_8/debug/images/w10-1-直线运动平台（下）_slide_11_img_1.png",
+  "enhanced_path": "extraction/output/qwen_qwen3.7-plus_8/debug/images/w10-1-直线运动平台（下）_slide_11_img_1_enhanced.png",
+  "description": "类型：示意图\n标题为“问题描述”。内容包含两点：第一点描述长度为l、质量为m的单摆安装在滑块S上，滑块可在横杆AB上移动；第二点要求设计滑块从横杆左端A点移动到右端B的位移函数u_s(t)，使得滑块到达B点后单摆的振动尽可能小。文中“单摆”、“滑块”、“位移函数”及符号“u_s(t)”标红。",
+  "metadata": {
+    "generation": {
+      "method": "qwen_api",
+      "backend": "api",
+      "provider": "qwen",
+      "model": "qwen3.7-plus",
+      "status": "success",
+      "api_error": null
+    },
+    "review": {
+      "required": false,
+      "status": null,
+      "reason": null,
+      "course_relevant": true
+    }
+  },
+  "error": null,
+  "method": "qwen_api",
+  "backend": "api",
+  "provider": "qwen",
+  "model": "qwen3.7-plus",
+  "status": "success",
+  "api_error": null,
+  "indexable": true,
+  "review_required": false,
+  "review_reason": null,
+  "review_status": null,
+  "course_relevant": true
+}

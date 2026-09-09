@@ -1,0 +1,33 @@
+{
+  "original_path": "extraction/output/qwen_qwen3.7-plus_9/debug/images/w14-1-数字通信_p4_img3.jpeg",
+  "enhanced_path": "extraction/output/qwen_qwen3.7-plus_9/debug/images/w14-1-数字通信_p4_img3_enhanced.jpeg",
+  "description": "类型：示意图\n图片展示了一个分层控制系统架构。顶部为一块Arduino主控板，通过四条标有“数字通信”的红色连线，分别连接至下方并列的四块Arduino从控板。每块从控板下方均标注“底层控制”，并通过红色箭头指向两组硬件设备：上方为两个竖立的绿色驱动器模块，下方为两个银灰色的电机装置，底部统一标注文字“执行器/作动器/actuator”。整体呈现出一主多从、逐级控制的拓扑结构。",
+  "metadata": {
+    "generation": {
+      "method": "qwen_api",
+      "backend": "api",
+      "provider": "qwen",
+      "model": "qwen3.7-plus",
+      "status": "success",
+      "api_error": null
+    },
+    "review": {
+      "required": false,
+      "status": null,
+      "reason": null,
+      "course_relevant": true
+    }
+  },
+  "error": null,
+  "method": "qwen_api",
+  "backend": "api",
+  "provider": "qwen",
+  "model": "qwen3.7-plus",
+  "status": "success",
+  "api_error": null,
+  "indexable": true,
+  "review_required": false,
+  "review_reason": null,
+  "review_status": null,
+  "course_relevant": true
+}

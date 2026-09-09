@@ -1,0 +1,33 @@
+{
+  "original_path": "extraction/output/qwen_qwen3.7-plus_8/debug/images/w14-1-数字通信_p6_img3.jpeg",
+  "enhanced_path": "extraction/output/qwen_qwen3.7-plus_8/debug/images/w14-1-数字通信_p6_img3_enhanced.jpeg",
+  "description": "类型：示意图\n图片展示了TTL电平UART通信协议的时序波形图。纵坐标标注了5V和0V两个电平状态，左侧标有“TTL”字样。横轴表示时间序列，波形从左至右依次包含以下部分：\n1. 初始高电平状态，标注为“Idle”。\n2. 下降沿后的低电平脉冲，底部标注为“Start Bit”（起始位）。\n3. 随后是8个数据位脉冲，波形上方对应的二进制数值依次为1、0、1、0、1、0、1、0。波形下方分别标注了起始数据位为“LSB”（最低有效位），结束数据位为“MSB”（最高有效位）。\n4. 最后是一个高电平脉冲，底部标注为“Stop Bit”（停止位）。\n5. 波形结束后恢复至高电平状态，右侧标注为“Idle”。",
+  "metadata": {
+    "generation": {
+      "method": "qwen_api",
+      "backend": "api",
+      "provider": "qwen",
+      "model": "qwen3.7-plus",
+      "status": "success",
+      "api_error": null
+    },
+    "review": {
+      "required": false,
+      "status": null,
+      "reason": null,
+      "course_relevant": true
+    }
+  },
+  "error": null,
+  "method": "qwen_api",
+  "backend": "api",
+  "provider": "qwen",
+  "model": "qwen3.7-plus",
+  "status": "success",
+  "api_error": null,
+  "indexable": true,
+  "review_required": false,
+  "review_reason": null,
+  "review_status": null,
+  "course_relevant": true
+}

@@ -1,0 +1,33 @@
+{
+  "original_path": "extraction/output/qwen_qwen3.7-plus_9/debug/images/w01-2-Arduino软硬件基础_p10_img4.jpeg",
+  "enhanced_path": "extraction/output/qwen_qwen3.7-plus_9/debug/images/w01-2-Arduino软硬件基础_p10_img4_enhanced.jpeg",
+  "description": "类型：照片\n图片展示了一个安装在绿色底板上的电子模块组件。主体包含一排（约8个）白色长方体继电器，下方对应排列着绿色的接线端子排。右侧垂直安装有一块带有多个绿色端子的电路板（疑似Arduino扩展板或转接板）。多根红色、蓝色、黑色及黄色的导线将右侧电路板与下方的继电器端子相连，部分导线末端带有黄色管型预绝缘端子。左侧可见黑色电源线接入，左下角贴有黄色三角形警告标识。该图直观展示了机电系统中继电器模块的实物形态及接线布局。",
+  "metadata": {
+    "generation": {
+      "method": "qwen_api",
+      "backend": "api",
+      "provider": "qwen",
+      "model": "qwen3.7-plus",
+      "status": "success",
+      "api_error": null
+    },
+    "review": {
+      "required": false,
+      "status": null,
+      "reason": null,
+      "course_relevant": true
+    }
+  },
+  "error": null,
+  "method": "qwen_api",
+  "backend": "api",
+  "provider": "qwen",
+  "model": "qwen3.7-plus",
+  "status": "success",
+  "api_error": null,
+  "indexable": true,
+  "review_required": false,
+  "review_reason": null,
+  "review_status": null,
+  "course_relevant": true
+}

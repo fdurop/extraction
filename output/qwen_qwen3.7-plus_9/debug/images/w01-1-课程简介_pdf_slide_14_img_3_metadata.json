@@ -1,0 +1,33 @@
+{
+  "original_path": "extraction/output/qwen_qwen3.7-plus_9/debug/images/w01-1-课程简介_p14_img4.jpeg",
+  "enhanced_path": "extraction/output/qwen_qwen3.7-plus_9/debug/images/w01-1-课程简介_p14_img4_enhanced.jpeg",
+  "description": "类型：照片\n图片展示了一套机电实验装置。主体是一台绿灰配色的立式钻铣床，安装在黄色的工业移动工具柜上。机床工作台上加装了由步进电机、联轴器和丝杆组成的XY轴自动进给平台。工具柜台面上放置着一个黑色的操作盒，配有红色急停按钮和旋钮开关。背景墙面装有电源插座面板及张贴的文档。该设备直观展示了课程涉及的机电系统硬件实践环境。",
+  "metadata": {
+    "generation": {
+      "method": "qwen_api",
+      "backend": "api",
+      "provider": "qwen",
+      "model": "qwen3.7-plus",
+      "status": "success",
+      "api_error": null
+    },
+    "review": {
+      "required": false,
+      "status": null,
+      "reason": null,
+      "course_relevant": true
+    }
+  },
+  "error": null,
+  "method": "qwen_api",
+  "backend": "api",
+  "provider": "qwen",
+  "model": "qwen3.7-plus",
+  "status": "success",
+  "api_error": null,
+  "indexable": true,
+  "review_required": false,
+  "review_reason": null,
+  "review_status": null,
+  "course_relevant": true
+}

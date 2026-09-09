@@ -1,0 +1,33 @@
+{
+  "original_path": "extraction/output/qwen_qwen3.7-plus_9/debug/images/w02-1-PWM和舵机_p11_img4.jpeg",
+  "enhanced_path": "extraction/output/qwen_qwen3.7-plus_9/debug/images/w02-1-PWM和舵机_p11_img4_enhanced.jpeg",
+  "description": "类型：照片\n图片横向展示了三款通过黑色线缆串联连接的舵机实物。从左至右依次为：黑色外壳的ZP15S型号、红色外壳且侧面印有“20KG.CM”字样的ZX20S型号、以及蓝色外壳且侧面印有“30KG.CM”字样的PM30S型号。所有舵机顶部均可见金属输出轴齿轮，机身贴有包含“ZL ROBOT SERVO”及对应型号编号的标签。该图直观呈现了总线舵机多机级联的物理形态及不同规格的外观差异。",
+  "metadata": {
+    "generation": {
+      "method": "qwen_api",
+      "backend": "api",
+      "provider": "qwen",
+      "model": "qwen3.7-plus",
+      "status": "success",
+      "api_error": null
+    },
+    "review": {
+      "required": false,
+      "status": null,
+      "reason": null,
+      "course_relevant": true
+    }
+  },
+  "error": null,
+  "method": "qwen_api",
+  "backend": "api",
+  "provider": "qwen",
+  "model": "qwen3.7-plus",
+  "status": "success",
+  "api_error": null,
+  "indexable": true,
+  "review_required": false,
+  "review_reason": null,
+  "review_status": null,
+  "course_relevant": true
+}

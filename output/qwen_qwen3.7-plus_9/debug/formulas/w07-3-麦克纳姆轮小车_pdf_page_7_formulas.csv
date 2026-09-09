@@ -1,0 +1,8 @@
+﻿序号,LaTeX公式,名称,描述,来源图像,提取方法,置信度,验证状态,是否需审核
+1,v_{\parallel 4} = \frac{\sqrt{2}}{2} v_{cx} + \frac{\sqrt{2}}{2} v_{cy} + \frac{\sqrt{2}}{2} \omega_c (r_x + r_y),,,extraction/output/qwen_qwen3.7-plus_9/debug/images/w07-3-麦克纳姆轮小车_p7_img2.png,qwen_api_formula,0.95,passed,False
+2,v_{\parallel 4} = \vec{v}_4 \cdot \vec{e}_{\parallel 4},,,extraction/output/qwen_qwen3.7-plus_9/debug/images/w07-3-麦克纳姆轮小车_p7_img2.png,qwen_api_formula,0.9,passed,False
+3,v_{\perp 4} = \vec{v}_4 \cdot \vec{e}_{\perp 4},,,extraction/output/qwen_qwen3.7-plus_9/debug/images/w07-3-麦克纳姆轮小车_p7_img2.png,qwen_api_formula,0.9,passed,False
+4,v_{\parallel 4} = v_{\omega 4} \cos 45^\circ,,,extraction/output/qwen_qwen3.7-plus_9/debug/images/w07-3-麦克纳姆轮小车_p7_img2.png,qwen_api_formula,0.95,passed,False
+5,v_{\omega 4} = \omega_4 R,,,extraction/output/qwen_qwen3.7-plus_9/debug/images/w07-3-麦克纳姆轮小车_p7_img2.png,qwen_api_formula,0.95,passed,False
+6,\omega_4 = \frac{1}{R} [v_{cx} + v_{cy} + \omega_c (r_x + r_y)],,,extraction/output/qwen_qwen3.7-plus_9/debug/images/w07-3-麦克纳姆轮小车_p7_img2.png,qwen_api_formula,0.95,passed,False
+7,\boldsymbol{v}_i = \boldsymbol{v}_c + \boldsymbol{\omega}_c \times \boldsymbol{r}_i,,,extraction/output/qwen_qwen3.7-plus_9/debug/images/w07-3-麦克纳姆轮小车_p7_img2.png,qwen_api_formula,0.98,passed,False

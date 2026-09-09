@@ -1,0 +1,33 @@
+{
+  "original_path": "extraction/output/qwen_qwen3.7-plus_8/debug/images/w01-1-课程简介_p17_img3.jpeg",
+  "enhanced_path": "extraction/output/qwen_qwen3.7-plus_8/debug/images/w01-1-课程简介_p17_img3_enhanced.jpeg",
+  "description": "类型：照片\n左上角蓝色标签显示文字“智能铲砂机”。画面展示一套机电实验装置，主体为铝型材搭建的龙门架结构，横梁上装有滑块及垂直向下的执行机构。桌面上放置两个灰色圆柱体作为支撑或障碍物，中间有一个黄色小物体。左前方架设一台连接数据线的相机用于视觉采集，右侧放置一台笔记本电脑通过线缆与装置相连，构成闭环控制系统实物场景。",
+  "metadata": {
+    "generation": {
+      "method": "qwen_api",
+      "backend": "api",
+      "provider": "qwen",
+      "model": "qwen3.7-plus",
+      "status": "success",
+      "api_error": null
+    },
+    "review": {
+      "required": false,
+      "status": null,
+      "reason": null,
+      "course_relevant": true
+    }
+  },
+  "error": null,
+  "method": "qwen_api",
+  "backend": "api",
+  "provider": "qwen",
+  "model": "qwen3.7-plus",
+  "status": "success",
+  "api_error": null,
+  "indexable": true,
+  "review_required": false,
+  "review_reason": null,
+  "review_status": null,
+  "course_relevant": true
+}

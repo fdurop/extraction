@@ -1,0 +1,18 @@
+{
+  "page_num": 13,
+  "raw_text": "§4.1 \n输入整形\n17-",
+  "cleaned_text": "§4.1\n输入整形",
+  "key_points": [],
+  "technical_terms": [],
+  "has_images": true,
+  "image_count": 2,
+  "image_paths": [
+    "extraction/output/qwen_qwen3.7-plus_8/debug/images/w10-1-直线运动平台（下）_slide_14_img_1.png",
+    "extraction/output/qwen_qwen3.7-plus_8/debug/images/w10-1-直线运动平台（下）_slide_14_img_2.png"
+  ],
+  "metadata": {
+    "char_count": 14,
+    "word_count": 3,
+    "line_count": 3
+  }
+}

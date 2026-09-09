@@ -1,0 +1,33 @@
+{
+  "original_path": "extraction/output/qwen_qwen3.7-plus_9/debug/images/w03-1-直流电机原理_p17_img2.png",
+  "enhanced_path": "extraction/output/qwen_qwen3.7-plus_9/debug/images/w03-1-直流电机原理_p17_img2_enhanced.png",
+  "description": "类型：示意图\n图片展示了步进电机转子在8个不同相位（编号1至8）下的位置状态。每个子图包含一个圆形定子，内部有垂直（A相）和水平（B相）分布的线圈绕组，中心为标有N极（蓝色）和S极（红色）的矩形永磁体转子。\n图1中转子垂直，A相绕组产生磁场；图3中转子水平，B相绕组产生磁场；图5中转子垂直但磁极反向。随着序号增加，转子呈现顺时针旋转趋势，各相绕组的磁极性（N/S）随步骤交替变化，直观演示了通过改变电流方向驱动转子步进旋转的过程。",
+  "metadata": {
+    "generation": {
+      "method": "qwen_api",
+      "backend": "api",
+      "provider": "qwen",
+      "model": "qwen3.7-plus",
+      "status": "success",
+      "api_error": null
+    },
+    "review": {
+      "required": false,
+      "status": null,
+      "reason": null,
+      "course_relevant": true
+    }
+  },
+  "error": null,
+  "method": "qwen_api",
+  "backend": "api",
+  "provider": "qwen",
+  "model": "qwen3.7-plus",
+  "status": "success",
+  "api_error": null,
+  "indexable": true,
+  "review_required": false,
+  "review_reason": null,
+  "review_status": null,
+  "course_relevant": true
+}

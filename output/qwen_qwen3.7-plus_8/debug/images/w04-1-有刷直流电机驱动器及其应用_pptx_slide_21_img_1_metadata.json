@@ -1,0 +1,33 @@
+{
+  "original_path": "extraction/output/qwen_qwen3.7-plus_8/debug/images/w04-1-有刷直流电机驱动器及其应用_slide_21_vector_fallback.png",
+  "enhanced_path": "extraction/output/qwen_qwen3.7-plus_8/debug/images/w04-1-有刷直流电机驱动器及其应用_slide_21_vector_fallback_enhanced.png",
+  "description": "类型：示意图\n图片标题为“控制电路原理”，展示有刷直流电机驱动器接线。左侧为驱动器端口定义（IN1-IN8, DC+, DC-, GND, 5V）及单电机M连接12V/PWM与0V的示意。右侧虚线框内为系统连接图：MCU模块（DC12V供电）输出信号至固态继电器模块，经接线端子座连接至小车底盘。底盘部分包含12V锂电池及四个减速电机组件（标记为右前、左前、右后、左后），通过红蓝导线并联接入接线端子。图中文字标注“一个电机变成四个轮子 只能进退不能转弯”。右上角有复旦大学校徽。",
+  "metadata": {
+    "generation": {
+      "method": "qwen_api",
+      "backend": "api",
+      "provider": "qwen",
+      "model": "qwen3.7-plus",
+      "status": "success",
+      "api_error": null
+    },
+    "review": {
+      "required": false,
+      "status": null,
+      "reason": null,
+      "course_relevant": true
+    }
+  },
+  "error": null,
+  "method": "qwen_api",
+  "backend": "api",
+  "provider": "qwen",
+  "model": "qwen3.7-plus",
+  "status": "success",
+  "api_error": null,
+  "indexable": true,
+  "review_required": false,
+  "review_reason": null,
+  "review_status": null,
+  "course_relevant": true
+}

@@ -12,13 +12,11 @@ import numpy as np
 
 from .config_loader import load_embedding_config
 from .embedding_client import ApiEmbeddingClient, create_embedding_client
+from .path_config import workspace_relative
 
 
 def _relpath(path: str) -> str:
-    try:
-        return os.path.relpath(path, os.getcwd()).replace(os.sep, "/")
-    except Exception:
-        return str(path).replace("\\", "/")
+    return workspace_relative(path)
 
 
 def _tokens(text: str) -> Iterable[str]:
@@ -113,7 +111,10 @@ def build_vector_index(
                     "node_id": record.get("node_id") or record.get("element_id"),
                     "node_type": record.get("node_type") or record.get("type"),
                     "user_id": record.get("user_id"),
+                    "username": record.get("username"),
                     "course_id": record.get("course_id"),
+                    "course_name": record.get("course_name"),
+                    "job_id": record.get("job_id"),
                     "document_id": record.get("document_id"),
                     "page_id": record.get("page_id") or record.get("source_page_id"),
                     "embedding_text": embedding_text,
@@ -137,6 +138,7 @@ def build_vector_index(
         "dim": dim,
         "text_type": "document",
         "output_type": "dense",
+        "embedding_text_policy": "cleaned_v1",
         "count": len(metadata),
         "matrix_file": os.path.basename(matrix_path),
         "usage": usage,

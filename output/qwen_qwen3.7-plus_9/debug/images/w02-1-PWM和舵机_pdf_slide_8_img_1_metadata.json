@@ -1,0 +1,33 @@
+{
+  "original_path": "extraction/output/qwen_qwen3.7-plus_9/debug/images/w02-1-PWM和舵机_p8_img2.jpeg",
+  "enhanced_path": "extraction/output/qwen_qwen3.7-plus_9/debug/images/w02-1-PWM和舵机_p8_img2_enhanced.jpeg",
+  "description": "类型：示意图\n图片展示了舵机（Servo）的内部结构剖视图，外壳呈半透明状。图中通过引线标注了四个核心组件：顶部的“GEAR BOX”（齿轮箱），包含橙色输出轴和白色减速齿轮；右侧圆柱形的“DC MOTOR”（直流电机）；左侧蓝色的“POTENTIOMETER”（电位器）；以及底部的黄色“CONTROL CIRCUIT”（控制电路板）。红、白、黑三色导线连接控制电路并延伸至外部的三孔接口插头。电机壳体上可见标签“SPRINGRC SM-S3317M”。",
+  "metadata": {
+    "generation": {
+      "method": "qwen_api",
+      "backend": "api",
+      "provider": "qwen",
+      "model": "qwen3.7-plus",
+      "status": "success",
+      "api_error": null
+    },
+    "review": {
+      "required": false,
+      "status": null,
+      "reason": null,
+      "course_relevant": true
+    }
+  },
+  "error": null,
+  "method": "qwen_api",
+  "backend": "api",
+  "provider": "qwen",
+  "model": "qwen3.7-plus",
+  "status": "success",
+  "api_error": null,
+  "indexable": true,
+  "review_required": false,
+  "review_reason": null,
+  "review_status": null,
+  "course_relevant": true
+}

@@ -1,0 +1,33 @@
+{
+  "original_path": "extraction/output/qwen_qwen3.7-plus_9/debug/images/w01-2-Arduino软硬件基础_p4_img2.jpeg",
+  "enhanced_path": "extraction/output/qwen_qwen3.7-plus_9/debug/images/w01-2-Arduino软硬件基础_p4_img2_enhanced.jpeg",
+  "description": "类型：照片\n图片展示了一块绿色的Arduino UNO R3开发板实物。板上清晰可见银色USB接口、黑色圆形电源接口、复位按钮及主控芯片。边缘排列着黑色排母接口，丝印标注了“DIGITAL”（数字口0-13，其中3/5/6/9/10/11标有波浪号）、“ANALOG IN”（模拟口A0-A5）以及“POWER”区域（包含Vin, 5V, 3.3V, GND）。板面印有白色的Arduino无限循环标志和“UNO”字样。",
+  "metadata": {
+    "generation": {
+      "method": "qwen_api",
+      "backend": "api",
+      "provider": "qwen",
+      "model": "qwen3.7-plus",
+      "status": "success",
+      "api_error": null
+    },
+    "review": {
+      "required": false,
+      "status": null,
+      "reason": null,
+      "course_relevant": true
+    }
+  },
+  "error": null,
+  "method": "qwen_api",
+  "backend": "api",
+  "provider": "qwen",
+  "model": "qwen3.7-plus",
+  "status": "success",
+  "api_error": null,
+  "indexable": true,
+  "review_required": false,
+  "review_reason": null,
+  "review_status": null,
+  "course_relevant": true
+}

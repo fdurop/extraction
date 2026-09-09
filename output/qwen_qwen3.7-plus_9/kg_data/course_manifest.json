@@ -1,0 +1,31 @@
+{
+  "user_id": "default_user",
+  "username": "default_user",
+  "course_id": "default_course",
+  "course_name": "default_course",
+  "job_id": "",
+  "created_at": "2026-09-09T20:52:40.213935",
+  "updated_at": "2026-09-09T21:29:16.911183",
+  "documents": [
+    "doc_62cf230e7410",
+    "doc_684000d68e86",
+    "doc_706c75b3a33c",
+    "doc_70ddac256b8e",
+    "doc_722db9a64ae1",
+    "doc_763640211857",
+    "doc_931d588dbdc2",
+    "doc_9338cee6f421",
+    "doc_9919061300c1",
+    "doc_a420f6421665",
+    "doc_a6418a212792",
+    "doc_a66076373d6c",
+    "doc_da537f45bb70",
+    "doc_da56f2e0b233",
+    "doc_dee7a79f857d",
+    "doc_e0f109d15b7a",
+    "doc_e9f2de30d0c9"
+  ],
+  "output_schema": "multimodal_graphrag_extraction_v1",
+  "path_base": "extraction-main",
+  "path_format": "workspace_relative_posix"
+}

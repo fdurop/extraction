@@ -1,0 +1,33 @@
+{
+  "original_path": "extraction/output/qwen_qwen3.7-plus_8/debug/images/w03-1-直流电机原理_p13_img2.jpeg",
+  "enhanced_path": "extraction/output/qwen_qwen3.7-plus_8/debug/images/w03-1-直流电机原理_p13_img2_enhanced.jpeg",
+  "description": "类型：照片\n图片展示了一套无刷直流电机系统实物。左侧为一个灰色方形外壳的无刷直流电机，前端有金属输出轴，尾部引出黑色线缆。右侧为一个黑色的长方体电子控制单元（驱动器），顶部设有散热片，侧面排列着三组绿色接线端子。驱动器面板印有“时代超群”商标及“直流无刷驱动器 ZM-6615”字样，并标注了电压电流参数及网址。该图片直观展示了课程文本中提到的需配合使用的电子控制单元（驱动器）与电机的实际形态。",
+  "metadata": {
+    "generation": {
+      "method": "qwen_api",
+      "backend": "api",
+      "provider": "qwen",
+      "model": "qwen3.7-plus",
+      "status": "success",
+      "api_error": null
+    },
+    "review": {
+      "required": false,
+      "status": null,
+      "reason": null,
+      "course_relevant": true
+    }
+  },
+  "error": null,
+  "method": "qwen_api",
+  "backend": "api",
+  "provider": "qwen",
+  "model": "qwen3.7-plus",
+  "status": "success",
+  "api_error": null,
+  "indexable": true,
+  "review_required": false,
+  "review_reason": null,
+  "review_status": null,
+  "course_relevant": true
+}

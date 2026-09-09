@@ -1,0 +1,33 @@
+{
+  "original_path": "extraction/output/qwen_qwen3.7-plus_9/debug/images/w02-1-PWM和舵机_p3_img4.jpeg",
+  "enhanced_path": "extraction/output/qwen_qwen3.7-plus_9/debug/images/w02-1-PWM和舵机_p3_img4_enhanced.jpeg",
+  "description": "类型：照片\n图片展示了Arduino电路板局部特写。可见黑色方形芯片印有“ATMEGA16U2”字样，旁边有标记为“JP2”的四针焊盘。数字接口区印有“DIGITAL”及引脚编号“13”、“12”、“~11”、“~10”、“~9”。在标号“L”附近的贴片LED处于点亮发光状态，旁边元件印有“102”。右侧边缘可见部分排针接口及“AREF”、“GND”标识。左下角可见巨大的Arduino Infinity标志局部。",
+  "metadata": {
+    "generation": {
+      "method": "qwen_api",
+      "backend": "api",
+      "provider": "qwen",
+      "model": "qwen3.7-plus",
+      "status": "success",
+      "api_error": null
+    },
+    "review": {
+      "required": false,
+      "status": null,
+      "reason": null,
+      "course_relevant": true
+    }
+  },
+  "error": null,
+  "method": "qwen_api",
+  "backend": "api",
+  "provider": "qwen",
+  "model": "qwen3.7-plus",
+  "status": "success",
+  "api_error": null,
+  "indexable": true,
+  "review_required": false,
+  "review_reason": null,
+  "review_status": null,
+  "course_relevant": true
+}

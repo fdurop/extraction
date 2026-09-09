@@ -1,0 +1,33 @@
+{
+  "original_path": "extraction/output/qwen_qwen3.7-plus_8/debug/images/w15-2-机器人运动学及其应用_p15_img8.jpeg",
+  "enhanced_path": "extraction/output/qwen_qwen3.7-plus_8/debug/images/w15-2-机器人运动学及其应用_p15_img8_enhanced.jpeg",
+  "description": "类型：示意图\n图片展示了FOC电流环控制系统的方框图，信号流向从左至右。输入端为“设定角度”，与反馈的“当前角度”在比较点相减，进入标有“位置环Kp”的三角形模块。输出经“速度限制”模块（含限幅符号）后，与反馈的“当前速度”在比较点相减，进入标有“速度环Kp”的模块。该模块输出与另一路信号在比较点相加，经过“力限保护”模块（含限幅符号及标注“黑田iq (iq_m)”），最终输入标有“FOC 电流环”的矩形框。图中包含两个反馈回路：一是“当前速度”直接反馈；二是“当前速度”经标有“S”和“Ki”的模块处理后反馈。右下角注有“注：S为速度解算”。",
+  "metadata": {
+    "generation": {
+      "method": "qwen_api",
+      "backend": "api",
+      "provider": "qwen",
+      "model": "qwen3.7-plus",
+      "status": "success",
+      "api_error": null
+    },
+    "review": {
+      "required": false,
+      "status": null,
+      "reason": null,
+      "course_relevant": true
+    }
+  },
+  "error": null,
+  "method": "qwen_api",
+  "backend": "api",
+  "provider": "qwen",
+  "model": "qwen3.7-plus",
+  "status": "success",
+  "api_error": null,
+  "indexable": true,
+  "review_required": false,
+  "review_reason": null,
+  "review_status": null,
+  "course_relevant": true
+}

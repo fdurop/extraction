@@ -1,0 +1,33 @@
+{
+  "original_path": "extraction/output/qwen_qwen3.7-plus_9/debug/images/w15-2-机器人运动学及其应用_p11_img4.jpeg",
+  "enhanced_path": "extraction/output/qwen_qwen3.7-plus_9/debug/images/w15-2-机器人运动学及其应用_p11_img4_enhanced.jpeg",
+  "description": "[COURSE_IRRELEVANT] 图片为一只白鹤的黑白剪影照片。虽然页面上下文涉及二连杆机械臂及“小腿不超过膝关节”的定解条件，该图像可能作为生物腿部的形态类比，但图片本身未包含任何机械结构、关节角度、坐标系或运动学标注，无法直接提供课程所需的原理或计算信息。",
+  "metadata": {
+    "generation": {
+      "method": "qwen_api",
+      "backend": "api",
+      "provider": "qwen",
+      "model": "qwen3.7-plus",
+      "status": "success",
+      "api_error": null
+    },
+    "review": {
+      "required": true,
+      "status": "pending",
+      "reason": "course_irrelevant",
+      "course_relevant": false
+    }
+  },
+  "error": null,
+  "method": "qwen_api",
+  "backend": "api",
+  "provider": "qwen",
+  "model": "qwen3.7-plus",
+  "status": "success",
+  "api_error": null,
+  "indexable": false,
+  "review_required": true,
+  "review_reason": "course_irrelevant",
+  "review_status": "pending",
+  "course_relevant": false
+}

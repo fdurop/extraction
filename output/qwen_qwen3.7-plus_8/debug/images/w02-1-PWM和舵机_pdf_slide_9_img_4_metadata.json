@@ -1,0 +1,33 @@
+{
+  "original_path": "extraction/output/qwen_qwen3.7-plus_8/debug/images/w02-1-PWM和舵机_p9_img5.jpeg",
+  "enhanced_path": "extraction/output/qwen_qwen3.7-plus_8/debug/images/w02-1-PWM和舵机_p9_img5_enhanced.jpeg",
+  "description": "类型：照片\n图片展示了一个漂浮在深色水面上的白色仿生机器鱼模型。该模型具有流线型白色躯干、背鳍和腹鳍，尾部连接着推进装置。画面上方有一只手通过红黑双色导线与机器鱼相连，似乎正在进行供电或信号控制测试。水面上散落着枯枝落叶。结合页面文字“舵机的应用”及列表中的“机器鱼”，该图展示了舵机在仿生机器人中的具体应用实例。",
+  "metadata": {
+    "generation": {
+      "method": "qwen_api",
+      "backend": "api",
+      "provider": "qwen",
+      "model": "qwen3.7-plus",
+      "status": "success",
+      "api_error": null
+    },
+    "review": {
+      "required": false,
+      "status": null,
+      "reason": null,
+      "course_relevant": true
+    }
+  },
+  "error": null,
+  "method": "qwen_api",
+  "backend": "api",
+  "provider": "qwen",
+  "model": "qwen3.7-plus",
+  "status": "success",
+  "api_error": null,
+  "indexable": true,
+  "review_required": false,
+  "review_reason": null,
+  "review_status": null,
+  "course_relevant": true
+}

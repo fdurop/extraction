@@ -1,0 +1,33 @@
+{
+  "original_path": "extraction/output/qwen_qwen3.7-plus_8/debug/images/w01-1-课程简介_p10_img4.jpeg",
+  "enhanced_path": "extraction/output/qwen_qwen3.7-plus_8/debug/images/w01-1-课程简介_p10_img4_enhanced.jpeg",
+  "description": "类型：照片\n黑色背景上展示了一个舵机及其配件。主体为一个黑色长方体舵机，顶部贴有紫色标签，输出轴上安装有一个黑色的十字形舵盘。右侧放置着一根卷曲的橙黄红三色导线，末端带有黑色连接器。下方散落着三个不同形状的黑色塑料舵盘附件，分别为四孔十字形、六孔圆形和单臂形。结合上下文，该图对应课程教学内容中“主要硬件”列表下的“舵机”。",
+  "metadata": {
+    "generation": {
+      "method": "qwen_api",
+      "backend": "api",
+      "provider": "qwen",
+      "model": "qwen3.7-plus",
+      "status": "success",
+      "api_error": null
+    },
+    "review": {
+      "required": false,
+      "status": null,
+      "reason": null,
+      "course_relevant": true
+    }
+  },
+  "error": null,
+  "method": "qwen_api",
+  "backend": "api",
+  "provider": "qwen",
+  "model": "qwen3.7-plus",
+  "status": "success",
+  "api_error": null,
+  "indexable": true,
+  "review_required": false,
+  "review_reason": null,
+  "review_status": null,
+  "course_relevant": true
+}

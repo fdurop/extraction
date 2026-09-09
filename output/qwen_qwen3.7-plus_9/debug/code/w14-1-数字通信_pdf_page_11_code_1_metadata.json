@@ -1,0 +1,14 @@
+{
+  "source_image": "extraction/output/qwen_qwen3.7-plus_9/debug/images/w14-1-数字通信_p11_img3.jpeg",
+  "extraction_method": "qwen_api_智能识别",
+  "language": "cpp",
+  "description": "这是一个Arduino程序，通过串口接收两个浮点数（T和L），并通过串口打印接收到的数据。程序提供了两种接收方式：方式1使用串口中断（serialEvent），方式2使用轮询等待（在loop中阻塞等待）。接收到数据后会打印\"Uno received: \"及两个浮点数的值（保留6位小数）。",
+  "code_file": "w14-1-数字通信_pdf_page_11_code_1.cpp",
+  "page": 11,
+  "index": 1,
+  "timestamp": "2026-09-09T21:24:15.842833",
+  "raw_response": "语言: C++ (Arduino)\n```cpp\nvolatile bool dataReady = false;\nfloat T;\nfloat L;\n\nvoid setup(){\n  Serial.begin(9600);\n  while (!Serial) {}  // 等待串口初始化完成\n\n  pinMode(LED_BUILTIN, OUTPUT);\n}\n\n// 方式1: 使用串口中断来接收数据，并非所有开发板都支持\nvoid serialEvent() {\n  if (Serial.available()) {\n    Serial.readBytes((byte *)&T, sizeof(float));\n    Serial.readBytes((byte *)&L, sizeof(float));\n    dataReady = true;\n  }\n}\n\nvoid loop() {\n  // ****************************************************\n  // 方式2: 查询等待，通用性好，效率低\n  while (!Serial.available())\n    ;\n\n  Serial.readBytes((byte *)&T, sizeof(float));\n  Serial.readBytes((byte *)&L, sizeof(float));\n  dataReady = true;\n  // ****************************************************/\n  if (dataReady) {\n    // 发送确认信息\n    Serial.print(\"Uno received: \");\n    Serial.print(T, 6);  // 显示6位小数\n    Serial.print(\", \");\n    Serial.println(L, 6);  // 显示6位小数\n    dataReady = false;\n  }\n}\n```\n功能: 这是一个Arduino程序，通过串口接收两个浮点数（T和L），并通过串口打印接收到的数据。程序提供了两种接收方式：方式1使用串口中断（serialEvent），方式2使用轮询等待（在loop中阻塞等待）。接收到数据后会打印\"Uno received: \"及两个浮点数的值（保留6位小数）。",
+  "backend": "api",
+  "provider": "qwen",
+  "model": "qwen3.7-plus"
+}

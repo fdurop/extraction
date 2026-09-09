@@ -1,0 +1,9 @@
+﻿Peak,RMS,SW1,SW2,SW3
+Default,,on,on,on
+1.31A,0.94A,off,on,on
+1.63A,1.16A,on,off,on
+1.94A,1.39A,off,off,on
+2.24A,1.60A,on,on,off
+2.55A,1.82A,off,on,off
+2.87A,2.05A,on,off,off
+3.20A,2.29A,off,off,off

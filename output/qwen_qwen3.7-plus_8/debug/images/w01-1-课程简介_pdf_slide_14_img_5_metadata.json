@@ -1,0 +1,33 @@
+{
+  "original_path": "extraction/output/qwen_qwen3.7-plus_8/debug/images/w01-1-课程简介_p14_img6.jpeg",
+  "enhanced_path": "extraction/output/qwen_qwen3.7-plus_8/debug/images/w01-1-课程简介_p14_img6_enhanced.jpeg",
+  "description": "类型：照片\n图片展示了实验室内的分组实践场景。多名学生围在白色长桌旁，正在组装和调试带有“Altron”标识的黑色垂直机械装置。桌面上摆放着笔记本电脑、银色仪器电源、黄色剥线钳、螺丝刀及连接导线。背景投影幕布显示标题“§3 无刷直流电机原理”。右侧有站立观察的人员。该场景直观呈现了课程简介中提到的“边学边做”及“分组实践”的教学环节。",
+  "metadata": {
+    "generation": {
+      "method": "qwen_api",
+      "backend": "api",
+      "provider": "qwen",
+      "model": "qwen3.7-plus",
+      "status": "success",
+      "api_error": null
+    },
+    "review": {
+      "required": false,
+      "status": null,
+      "reason": null,
+      "course_relevant": true
+    }
+  },
+  "error": null,
+  "method": "qwen_api",
+  "backend": "api",
+  "provider": "qwen",
+  "model": "qwen3.7-plus",
+  "status": "success",
+  "api_error": null,
+  "indexable": true,
+  "review_required": false,
+  "review_reason": null,
+  "review_status": null,
+  "course_relevant": true
+}

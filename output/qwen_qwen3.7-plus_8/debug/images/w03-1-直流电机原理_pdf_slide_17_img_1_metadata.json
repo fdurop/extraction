@@ -1,0 +1,33 @@
+{
+  "original_path": "extraction/output/qwen_qwen3.7-plus_8/debug/images/w03-1-直流电机原理_p17_img2.png",
+  "enhanced_path": "extraction/output/qwen_qwen3.7-plus_8/debug/images/w03-1-直流电机原理_p17_img2_enhanced.png",
+  "description": "类型：示意图\n图片展示了步进电机转子在8个不同相位（编号1至8）下的位置状态。每个子图包含一个圆形定子，内部有四个绕组线圈，分别标记为A、$\\bar{A}$、B、$\\bar{B}$。中心为矩形永磁体转子，标有红色S极和蓝色N极。随着序号增加，转子呈现顺时针旋转趋势，各图中定子上方或侧方的线圈旁标注了对应的N或S极性，显示了磁场方向的变化。",
+  "metadata": {
+    "generation": {
+      "method": "qwen_api",
+      "backend": "api",
+      "provider": "qwen",
+      "model": "qwen3.7-plus",
+      "status": "success",
+      "api_error": null
+    },
+    "review": {
+      "required": false,
+      "status": null,
+      "reason": null,
+      "course_relevant": true
+    }
+  },
+  "error": null,
+  "method": "qwen_api",
+  "backend": "api",
+  "provider": "qwen",
+  "model": "qwen3.7-plus",
+  "status": "success",
+  "api_error": null,
+  "indexable": true,
+  "review_required": false,
+  "review_reason": null,
+  "review_status": null,
+  "course_relevant": true
+}

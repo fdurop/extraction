@@ -1,0 +1,33 @@
+{
+  "original_path": "extraction/output/qwen_qwen3.7-plus_8/debug/images/w10-1-直线运动平台（下）_slide_14_img_2.png",
+  "enhanced_path": "extraction/output/qwen_qwen3.7-plus_8/debug/images/w10-1-直线运动平台（下）_slide_14_img_2_enhanced.png",
+  "description": "类型：示意图\n图片包含三个主要教学要点及对应公式推导。\n1. 标题“消除残余振动”：指出在 $U_s(s)$ 中配置两个零点 $s_1 = -i\\omega_n$ 和 $s_2 = i\\omega_n$。下方列出 $\\tilde{\\theta}(s)$ 的传递函数表达式，涉及 $l(s^2 + \\omega_n^2)$ 分母及零点项乘积。\n2. 标题“输入整形”：要求求 $\\tilde{U}_s(s)$ 的 Laplace 逆变换，给出时域表达式 $\\tilde{u}_s(t) = \\mathcal{L}^{-1}[C(s-s_1)(s-s_2)U_s(s)]$。\n3. 标题“如何求 Laplace 逆变换？利用 l'Hôpital 法则”：展示了两个极限计算式，分别为 $s \\to s_1$ 和 $s \\to s_2$ 时 $(e^{-s\\tau} - e^{-s_i\\tau})/(s-s_i)$ 的极限结果（均不等于0）。\n底部给出 $\\tilde{U}_s(s)$ 的等价变换公式，将其表示为含指数项 $(e^{-s\\tau} - e^{s_2\\tau})(e^{-s\\tau} - e^{s_1\\tau})$ 与 $U_s(s)$ 的乘积形式。",
+  "metadata": {
+    "generation": {
+      "method": "qwen_api",
+      "backend": "api",
+      "provider": "qwen",
+      "model": "qwen3.7-plus",
+      "status": "success",
+      "api_error": null
+    },
+    "review": {
+      "required": false,
+      "status": null,
+      "reason": null,
+      "course_relevant": true
+    }
+  },
+  "error": null,
+  "method": "qwen_api",
+  "backend": "api",
+  "provider": "qwen",
+  "model": "qwen3.7-plus",
+  "status": "success",
+  "api_error": null,
+  "indexable": true,
+  "review_required": false,
+  "review_reason": null,
+  "review_status": null,
+  "course_relevant": true
+}

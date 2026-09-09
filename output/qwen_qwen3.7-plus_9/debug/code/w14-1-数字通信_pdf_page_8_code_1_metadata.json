@@ -1,0 +1,14 @@
+{
+  "source_image": "extraction/output/qwen_qwen3.7-plus_9/debug/images/w14-1-数字通信_p8_img3.jpeg",
+  "extraction_method": "qwen_api_智能识别",
+  "language": "cpp",
+  "description": "该程序通过串口接收数据，当接收到字符'H'时点亮连接在13号引脚的LED灯，当接收到字符'L'时熄灭LED灯。",
+  "code_file": "w14-1-数字通信_pdf_page_8_code_1.cpp",
+  "page": 8,
+  "index": 1,
+  "timestamp": "2026-09-09T21:23:52.035088",
+  "raw_response": "语言: Arduino (C/C++)\n```cpp\nconst int ledPin = 13; // the pin that the LED is attached to\nint incomingByte;      // a variable to read incoming serial data into\n\nvoid setup() {\n  // initialize serial communication:\n  Serial.begin(9600);\n  // initialize the LED pin as an output:\n  pinMode(ledPin, OUTPUT);\n}\n\nvoid loop() {\n  // see if there's incoming serial data:\n  if (Serial.available() > 0) {\n    // read the oldest byte in the serial buffer:\n    incomingByte = Serial.read();\n    // if it's a capital H (ASCII 72), turn on the LED:\n    if (incomingByte == 'H') {\n      digitalWrite(ledPin, HIGH);\n    }\n    // if it's an L (ASCII 76) turn off the LED:\n    if (incomingByte == 'L') {\n      digitalWrite(ledPin, LOW);\n    }\n  }\n}\n```\n功能: 该程序通过串口接收数据，当接收到字符'H'时点亮连接在13号引脚的LED灯，当接收到字符'L'时熄灭LED灯。",
+  "backend": "api",
+  "provider": "qwen",
+  "model": "qwen3.7-plus"
+}

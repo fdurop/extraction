@@ -1,0 +1,41 @@
+{
+  "page_num": 8,
+  "raw_text": "机电系统原理及实践—— 无刷直流电机驱动简介\n机电智控实验室tangguoan@fudan.edu.cn mmguo@fudan.edu.cn\n§4.2 实践：操纵CyberGear无刷直流电机\n采用位置模式，将电机转动至指定角度。\n将二连杆摆成一直线后再通电。\n根据指定ID，连接一个电机。\n\n肩/髋关节电机ID：1，肘/膝关节电机ID：2.\n在串口监视器(波特率：1 M) 输入目标角度(±90°以内)。\nCyberGear类的主要成员函数\n\n构造函数：CyberGear(uint8_t id, const String &name, int8_t dir);\n\n设置机械零位：bool setOrigin();\n\n设置控制方式：bool setRunMode(RUN_MODE mode);\n\n使能电机：bool enableMotor();\n\n指定目标角度：bool setLocationRef(float loc);\n\n获取当前角度：float getLocation();\n9-9\nw15-s1-locationDemo.rar\n小心夹手\n24V(电源+)\nGND(电源−)\nCAN_L\nCAN_H\n",
+  "cleaned_text": "§4.2 实践：操纵CyberGear无刷直流电机\n采用位置模式，将电机转动至指定角度。\n将二连杆摆成一直线后再通电。\n根据指定ID，连接一个电机。\n肩/髋关节电机ID：1，肘/膝关节电机ID：2.\n在串口监视器(波特率：1 M) 输入目标角度(±90°以内)。\nCyberGear类的主要成员函数\n构造函数：CyberGear(uint8_t id, const String &name, int8_t dir);\n设置机械零位：bool setOrigin();\n设置控制方式：bool setRunMode(RUN_MODE mode);\n使能电机：bool enableMotor();\n指定目标角度：bool setLocationRef(float loc);\n获取当前角度：float getLocation();\nw15-s1-locationDemo.rar\n小心夹手\n24V(电源+)\nGND(电源−)\nCAN_L\nCAN_H",
+  "key_points": [
+    "采用位置模式，将电机转动至指定角度。",
+    "将二连杆摆成一直线后再通电。",
+    "根据指定ID，连接一个电机。",
+    "在串口监视器(波特率：1 M) 输入目标角度(±90°以内)。",
+    "CyberGear类的主要成员函数",
+    "GND(电源−)",
+    "CAN_L",
+    "CAN_H"
+  ],
+  "technical_terms": [
+    "CAN_H",
+    "CAN_L",
+    "GND",
+    "RUN_MODE",
+    "int8_t",
+    "uint8_t",
+    "w15-s1-locationDemo",
+    "使能电机",
+    "无刷直流电机",
+    "膝关节电机",
+    "设置控制",
+    "连接一个电机",
+    "髋关节电机"
+  ],
+  "has_images": true,
+  "image_count": 2,
+  "image_paths": [
+    "extraction/output/qwen_qwen3.7-plus_8/debug/images/w15-1-无刷直流电机驱动器_p9_img3.jpeg",
+    "extraction/output/qwen_qwen3.7-plus_8/debug/images/w15-1-无刷直流电机驱动器_p9_img6.jpeg"
+  ],
+  "metadata": {
+    "char_count": 520,
+    "word_count": 47,
+    "line_count": 30
+  }
+}

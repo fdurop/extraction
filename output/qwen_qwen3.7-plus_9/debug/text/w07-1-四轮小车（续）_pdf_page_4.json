@@ -1,0 +1,26 @@
+{
+  "page_num": 3,
+  "raw_text": "机电系统原理及实践—— 四轮小车（续）\n机电智控实验室tangguoan@fudan.edu.cn mmguo@fudan.edu.cn\n§2 软件设计——模块化设计\n6-4\n文件名\n说明\n层次\n功能\nw05-s1-4WheelCarCpp.ino\n主程序\n应用层\n（需求）\n定义4wheelCar类的对象，通过调用对象的\n成员函数，完成各种指定动作。\n4wheelCar.h\n四轮小车类\n头文件\n中间层\n（车）\n定义两个DCMotorDriver类的对象作为成员\n（左轮和右轮），通过调用对象的成员函\n数，驱动电机按指定速度和方向运转；\n接收上层传入的参数，实现前进、后退、\n原地旋转、停止、柔顺等基本操作。\n4wheelCar.cpp\n四轮小车类\n源文件\nDCMotorDriver.h\n直流电机驱动器类\n头文件\n底层\n（电机）\n根据上层传入的参数，驱动电机按指定速\n度和方向运转。\nDCMotorDriver.cpp\n直流电机驱动器类\n源文件\n模块化与效率之间，需取舍平衡。\n室 复旦大\n智控实验室 复旦大学 机电\n \n \n学 机电智控实验室 复旦大学 机电智控实验\n \n \n复旦大学 机电智控实验室 复旦大学 机电智控实验室 复旦\n \n \n大学 机电智控实验室 复旦大学 机电智控实验室 复旦大学 机电\n \n \n电智控实验室 复旦大学 机电智控实验室 复旦大学 机电智控实\n \n \n验室 复旦大学 机电智控实验室 复旦大学 机电智控实验室 \n \n \n旦大学 机电智控实验室 复旦大学 机电智控\n \n \n电智控实验室 复旦大学 \n验室 复\n",
+  "cleaned_text": "§2 软件设计——模块化设计\n文件名\n说明\n层次\n功能\nw05-s1-4WheelCarCpp.ino\n主程序\n应用层\n（需求）\n定义4wheelCar类的对象，通过调用对象的\n成员函数，完成各种指定动作。\n4wheelCar.h\n四轮小车类\n头文件\n中间层\n（车）\n定义两个DCMotorDriver类的对象作为成员\n（左轮和右轮），通过调用对象的成员函\n数，驱动电机按指定速度和方向运转；\n接收上层传入的参数，实现前进、后退、\n原地旋转、停止、柔顺等基本操作。\n4wheelCar.cpp\n四轮小车类\n源文件\nDCMotorDriver.h\n直流电机驱动器类\n头文件\n底层\n（电机）\n根据上层传入的参数，驱动电机按指定速\n度和方向运转。\nDCMotorDriver.cpp\n直流电机驱动器类\n源文件\n模块化与效率之间，需取舍平衡。",
+  "key_points": [
+    "成员函数，完成各种指定动作。",
+    "原地旋转、停止、柔顺等基本操作。",
+    "DCMotorDriver.h",
+    "度和方向运转。",
+    "DCMotorDriver.cpp",
+    "模块化与效率之间，需取舍平衡。"
+  ],
+  "technical_terms": [
+    "w05-s1-4WheelCarCpp",
+    "直流电机驱动器",
+    "驱动电机"
+  ],
+  "has_images": false,
+  "image_count": 0,
+  "image_paths": [],
+  "metadata": {
+    "char_count": 673,
+    "word_count": 79,
+    "line_count": 63
+  }
+}

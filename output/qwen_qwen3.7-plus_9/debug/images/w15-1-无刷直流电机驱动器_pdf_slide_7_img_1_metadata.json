@@ -1,0 +1,33 @@
+{
+  "original_path": "extraction/output/qwen_qwen3.7-plus_9/debug/images/w15-1-无刷直流电机驱动器_p7_img3.jpeg",
+  "enhanced_path": "extraction/output/qwen_qwen3.7-plus_9/debug/images/w15-1-无刷直流电机驱动器_p7_img3_enhanced.jpeg",
+  "description": "类型：示意图\n图片标题为“如何控制无刷直流电机”。左侧展示电路原理图，包含DC电源、GND、由六个开关组成的逆变器电路及控制电路模块，箭头指示控制信号流向逆变器。中间为电机截面结构图，显示定子绕组（U相、V相、W相）及其对应的霍尔传感器位置（Hu、Hv、Hw），转子位于中心。右侧为坐标图，横轴标注转子位置（电角度）从0°至360°，纵轴对应信号电平；图中绘制了三条阶梯状波形（霍尔传感器输出信号）和三条正弦曲线波形（逆变器输出的模拟电压），展示了各线圈磁场及其合力关系。",
+  "metadata": {
+    "generation": {
+      "method": "qwen_api",
+      "backend": "api",
+      "provider": "qwen",
+      "model": "qwen3.7-plus",
+      "status": "success",
+      "api_error": null
+    },
+    "review": {
+      "required": false,
+      "status": null,
+      "reason": null,
+      "course_relevant": true
+    }
+  },
+  "error": null,
+  "method": "qwen_api",
+  "backend": "api",
+  "provider": "qwen",
+  "model": "qwen3.7-plus",
+  "status": "success",
+  "api_error": null,
+  "indexable": true,
+  "review_required": false,
+  "review_reason": null,
+  "review_status": null,
+  "course_relevant": true
+}

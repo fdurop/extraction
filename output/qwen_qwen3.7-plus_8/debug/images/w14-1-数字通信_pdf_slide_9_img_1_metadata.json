@@ -1,0 +1,33 @@
+{
+  "original_path": "extraction/output/qwen_qwen3.7-plus_8/debug/images/w14-1-数字通信_p9_img3.jpeg",
+  "enhanced_path": "extraction/output/qwen_qwen3.7-plus_8/debug/images/w14-1-数字通信_p9_img3_enhanced.jpeg",
+  "description": "类型：示意图\n图片展示了一个标题为“麦轮小车 远程遥控系统”的软件界面。左侧控制区包含“蓝牙”状态指示及“重新连接”按钮；下方设有两个圆形旋钮控件，分别用于调节“方位 (°)”和“距离 (m)”，当前数值显示均为0.00；底部有一个“发送目标位置”按钮。右侧显示区为一个极坐标图，角度轴标记从0°至330°，径向轴刻度为1至5，坐标原点处有一个红色箭头指向0°方向。",
+  "metadata": {
+    "generation": {
+      "method": "qwen_api",
+      "backend": "api",
+      "provider": "qwen",
+      "model": "qwen3.7-plus",
+      "status": "success",
+      "api_error": null
+    },
+    "review": {
+      "required": false,
+      "status": null,
+      "reason": null,
+      "course_relevant": true
+    }
+  },
+  "error": null,
+  "method": "qwen_api",
+  "backend": "api",
+  "provider": "qwen",
+  "model": "qwen3.7-plus",
+  "status": "success",
+  "api_error": null,
+  "indexable": true,
+  "review_required": false,
+  "review_reason": null,
+  "review_status": null,
+  "course_relevant": true
+}

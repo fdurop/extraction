@@ -1,0 +1,132 @@
+{
+  "title": "",
+  "headers": [
+    [
+      "phase",
+      "U",
+      "V",
+      "W"
+    ]
+  ],
+  "cells": [
+    [
+      "1",
+      "+",
+      "–",
+      "×"
+    ],
+    [
+      "2",
+      "×",
+      "–",
+      "+"
+    ],
+    [
+      "3",
+      "–",
+      "×",
+      "+"
+    ],
+    [
+      "4",
+      "–",
+      "+",
+      "×"
+    ],
+    [
+      "5",
+      "×",
+      "+",
+      "–"
+    ],
+    [
+      "6",
+      "+",
+      "×",
+      "–"
+    ]
+  ],
+  "merged_cells": [],
+  "units": {},
+  "footnotes": [],
+  "uncertain_cells": [],
+  "confidence": 1.0,
+  "source_image": "extraction/output/qwen_qwen3.7-plus_9/debug/images/w15-1-无刷直流电机驱动器_p5_img4.jpeg",
+  "recognition_image_path": "extraction/output/qwen_qwen3.7-plus_9/debug/images/w15-1-无刷直流电机驱动器_p5_img4_table_ready_r90.png",
+  "source_type": "image_vlm_table",
+  "extraction_method": "qwen_api_table",
+  "backend": "api",
+  "provider": "qwen",
+  "model": "qwen3.7-plus",
+  "image_index": 1,
+  "table_region_index": 1,
+  "visible_table_count": 1,
+  "extracted_table_count": 1,
+  "coverage_complete": true,
+  "raw_response": "{\n  \"has_table\": true,\n  \"visible_table_count\": 1,\n  \"coverage_complete\": true,\n  \"tables\": [\n    {\n      \"title\": \"\",\n      \"headers\": [\n        [\n          \"phase\",\n          \"U\",\n          \"V\",\n          \"W\"\n        ]\n      ],\n      \"cells\": [\n        [\n          \"1\",\n          \"+\",\n          \"–\",\n          \"×\"\n        ],\n        [\n          \"2\",\n          \"×\",\n          \"–\",\n          \"+\"\n        ],\n        [\n          \"3\",\n          \"–\",\n          \"×\",\n          \"+\"\n        ],\n        [\n          \"4\",\n          \"–\",\n          \"+\",\n          \"×\"\n        ],\n        [\n          \"5\",\n          \"×\",\n          \"+\",\n          \"–\"\n        ],\n        [\n          \"6\",\n          \"+\",\n          \"×\",\n          \"–\"\n        ]\n      ],\n      \"merged_cells\": [],\n      \"units\": {},\n      \"footnotes\": [],\n      \"uncertain_cells\": [],\n      \"confidence\": 1.0\n    }\n  ]\n}",
+  "preprocessing": {
+    "rotation": 90,
+    "scale": 5.3512,
+    "attempt": 2
+  },
+  "auto_repairs": [],
+  "rows": 6,
+  "cols": 4,
+  "description": "",
+  "json": [
+    {
+      "phase": "1",
+      "U": "+",
+      "V": "–",
+      "W": "×"
+    },
+    {
+      "phase": "2",
+      "U": "×",
+      "V": "–",
+      "W": "+"
+    },
+    {
+      "phase": "3",
+      "U": "–",
+      "V": "×",
+      "W": "+"
+    },
+    {
+      "phase": "4",
+      "U": "–",
+      "V": "+",
+      "W": "×"
+    },
+    {
+      "phase": "5",
+      "U": "×",
+      "V": "+",
+      "W": "–"
+    },
+    {
+      "phase": "6",
+      "U": "+",
+      "V": "×",
+      "W": "–"
+    }
+  ],
+  "csv": "phase,U,V,W\n1,+,–,×\n2,×,–,+\n3,–,×,+\n4,–,+,×\n5,×,+,–\n6,+,×,–\n",
+  "row_lengths": [
+    4,
+    4,
+    4,
+    4,
+    4,
+    4,
+    4
+  ],
+  "validation_issues": [],
+  "validation_status": "passed",
+  "review_required": false,
+  "review_reason": null,
+  "review_status": null,
+  "indexable": true,
+  "table_id": "w15-1-无刷直流电机驱动器_pdf_page_5_table_1",
+  "page_num": 5
+}

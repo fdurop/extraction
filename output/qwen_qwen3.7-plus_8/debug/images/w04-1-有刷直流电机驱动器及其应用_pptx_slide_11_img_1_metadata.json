@@ -1,0 +1,33 @@
+{
+  "original_path": "extraction/output/qwen_qwen3.7-plus_8/debug/images/w04-1-有刷直流电机驱动器及其应用_slide_11_vector_fallback.png",
+  "enhanced_path": "extraction/output/qwen_qwen3.7-plus_8/debug/images/w04-1-有刷直流电机驱动器及其应用_slide_11_vector_fallback_enhanced.png",
+  "description": "类型：示意图\n图片标题为“控制有刷直流电机的转向和转速”。左侧展示电机驱动模块实物接线图，上方引脚D3-D9、GND、5V连接控制器，下方端子B1-B8/A1-A8中，A1、A2接绿色线至0V，B1、B2接红色线至12V/PWM，电机M接于A3、B3之间，外部输入12V。右侧为H桥电路原理图，包含四个晶体管ch1-ch4（节点A1-B4）及电机M，电源标有V+、V-。底部方框代表UNO控制器，引脚D3、D4连B2、B1，D5、D6连B4、B3，D9连A3。右下角标注文件名“w04-s2-changeDCMotorSpeed.ino”。",
+  "metadata": {
+    "generation": {
+      "method": "qwen_api",
+      "backend": "api",
+      "provider": "qwen",
+      "model": "qwen3.7-plus",
+      "status": "success",
+      "api_error": null
+    },
+    "review": {
+      "required": false,
+      "status": null,
+      "reason": null,
+      "course_relevant": true
+    }
+  },
+  "error": null,
+  "method": "qwen_api",
+  "backend": "api",
+  "provider": "qwen",
+  "model": "qwen3.7-plus",
+  "status": "success",
+  "api_error": null,
+  "indexable": true,
+  "review_required": false,
+  "review_reason": null,
+  "review_status": null,
+  "course_relevant": true
+}

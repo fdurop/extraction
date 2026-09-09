@@ -1,0 +1,33 @@
+{
+  "original_path": "extraction/output/qwen_qwen3.7-plus_9/debug/images/w01-1-课程简介_p17_img7.jpeg",
+  "enhanced_path": "extraction/output/qwen_qwen3.7-plus_9/debug/images/w01-1-课程简介_p17_img7_enhanced.jpeg",
+  "description": "类型：照片\n白色实验台面上放置一辆银色底盘的轮式机器人，车身搭载黑色垂直机械臂及顶部传感器组件，侧面贴有黄色标签。台面前景中央立有一个红色圆柱体物体。左侧排列着三个白色长方形收纳盒，内部装有杂乱线缆，旁边有一个敞开的棕色纸箱。背景为白色储物柜，透过玻璃门可见内部存放的仪器设备，左上方墙面挂有投影幕布。",
+  "metadata": {
+    "generation": {
+      "method": "qwen_api",
+      "backend": "api",
+      "provider": "qwen",
+      "model": "qwen3.7-plus",
+      "status": "success",
+      "api_error": null
+    },
+    "review": {
+      "required": false,
+      "status": null,
+      "reason": null,
+      "course_relevant": true
+    }
+  },
+  "error": null,
+  "method": "qwen_api",
+  "backend": "api",
+  "provider": "qwen",
+  "model": "qwen3.7-plus",
+  "status": "success",
+  "api_error": null,
+  "indexable": true,
+  "review_required": false,
+  "review_reason": null,
+  "review_status": null,
+  "course_relevant": true
+}

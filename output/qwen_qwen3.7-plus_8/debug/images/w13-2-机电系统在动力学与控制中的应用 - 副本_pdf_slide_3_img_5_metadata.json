@@ -1,0 +1,33 @@
+{
+  "original_path": "extraction/output/qwen_qwen3.7-plus_8/debug/images/w13-2-机电系统在动力学与控制中的应用 - 副本_p3_img7.jpeg",
+  "enhanced_path": "extraction/output/qwen_qwen3.7-plus_8/debug/images/w13-2-机电系统在动力学与控制中的应用 - 副本_p3_img7_enhanced.jpeg",
+  "description": "类型：照片\n图片展示了一个放置在桌面上的机电实验装置及背景投影屏幕。\n1. 背景屏幕：显示课程标题“机电系统原理及实践”、副标题“机电系统在动力学与控制中的应用”、联系邮箱tangguoan@fudan.edu.cn及mmguo@fudan.edu.cn，以及章节内容“§1 系统组成及动作展示”，下列有“系统复位”、“输入整形”、“振动抑制”、“倒立摆”等条目，右下角有复旦大学校徽。\n2. 前景装置：包含一个水平安装的长条形同步带滑台轨道，轨道上装配有两个黄色的移动滑块组件，左侧连接有一个黑色的驱动盒或控制箱，各部件之间通过黑色线缆连接。",
+  "metadata": {
+    "generation": {
+      "method": "qwen_api",
+      "backend": "api",
+      "provider": "qwen",
+      "model": "qwen3.7-plus",
+      "status": "success",
+      "api_error": null
+    },
+    "review": {
+      "required": false,
+      "status": null,
+      "reason": null,
+      "course_relevant": true
+    }
+  },
+  "error": null,
+  "method": "qwen_api",
+  "backend": "api",
+  "provider": "qwen",
+  "model": "qwen3.7-plus",
+  "status": "success",
+  "api_error": null,
+  "indexable": true,
+  "review_required": false,
+  "review_reason": null,
+  "review_status": null,
+  "course_relevant": true
+}

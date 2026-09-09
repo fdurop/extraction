@@ -1,0 +1,33 @@
+{
+  "original_path": "extraction/output/qwen_qwen3.7-plus_9/debug/images/w07-3-麦克纳姆轮小车_p7_img2.png",
+  "enhanced_path": "extraction/output/qwen_qwen3.7-plus_9/debug/images/w07-3-麦克纳姆轮小车_p7_img2_enhanced.png",
+  "description": "类型：示意图\n图片展示了麦克纳姆轮小车的运动学分析模型。左侧为小车质心（CENTER），标有质心平动速度矢量vc（橙色）、质心角速度wc（蓝色旋转箭头）及位置矢量r（虚线）。右侧为4号轮（M4）特写，包含轮子角速度ω4、线速度v4（红色竖直向上）、沿辊子轴线方向的分量v⊥4（浅橙色）及垂直于辊子轴线的分量v4（深橙色）。图中还列出了正逆运动学定义，以及涉及vcx、vcy、ωc、rx、ry、R等参数的速度分解公式和矢量运算公式vi = vc + ωc × ri。背景含有“复旦大学机电智控实验室”水印。",
+  "metadata": {
+    "generation": {
+      "method": "qwen_api",
+      "backend": "api",
+      "provider": "qwen",
+      "model": "qwen3.7-plus",
+      "status": "success",
+      "api_error": null
+    },
+    "review": {
+      "required": false,
+      "status": null,
+      "reason": null,
+      "course_relevant": true
+    }
+  },
+  "error": null,
+  "method": "qwen_api",
+  "backend": "api",
+  "provider": "qwen",
+  "model": "qwen3.7-plus",
+  "status": "success",
+  "api_error": null,
+  "indexable": true,
+  "review_required": false,
+  "review_reason": null,
+  "review_status": null,
+  "course_relevant": true
+}

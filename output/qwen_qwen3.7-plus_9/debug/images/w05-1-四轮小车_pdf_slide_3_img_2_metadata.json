@@ -1,0 +1,33 @@
+{
+  "original_path": "extraction/output/qwen_qwen3.7-plus_9/debug/images/w05-1-四轮小车_p3_img3.png",
+  "enhanced_path": "extraction/output/qwen_qwen3.7-plus_9/debug/images/w05-1-四轮小车_p3_img3_enhanced.png",
+  "description": "类型：示意图\n图中展示了一个电机控制电路。左侧有四根水平导线，上下两根为红色，中间两根为绿色，分别连接至开关左侧的四个触点。中间竖直排列着两个联动的开关臂，标注文字为“双刀双掷开关”。开关右侧通过黑色导线连接一个圆形符号，圆内有大写字母“M”，右下方标注文字“电机”。该图演示了利用双刀双掷开关改变电机接线状态的物理连接方式。",
+  "metadata": {
+    "generation": {
+      "method": "qwen_api",
+      "backend": "api",
+      "provider": "qwen",
+      "model": "qwen3.7-plus",
+      "status": "success",
+      "api_error": null
+    },
+    "review": {
+      "required": false,
+      "status": null,
+      "reason": null,
+      "course_relevant": true
+    }
+  },
+  "error": null,
+  "method": "qwen_api",
+  "backend": "api",
+  "provider": "qwen",
+  "model": "qwen3.7-plus",
+  "status": "success",
+  "api_error": null,
+  "indexable": true,
+  "review_required": false,
+  "review_reason": null,
+  "review_status": null,
+  "course_relevant": true
+}

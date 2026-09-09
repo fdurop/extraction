@@ -1,0 +1,33 @@
+{
+  "original_path": "extraction/output/qwen_qwen3.7-plus_9/debug/images/w10-1-直线运动平台（下）_slide_12_img_2.png",
+  "enhanced_path": "extraction/output/qwen_qwen3.7-plus_9/debug/images/w10-1-直线运动平台（下）_slide_12_img_2_enhanced.png",
+  "description": "类型：示意图\n图片包含五行主要文字及数学公式。第一行指出滑块停止后单摆的振动称为残余振动；第二行说明残余振动属于自由振动；第三行列出自由振动的位移函数由 $e^{-\\zeta\\omega_n t}\\sin(\\omega_d t)$ 和 $e^{-\\zeta\\omega_n t}\\cos(\\omega_d t)$ 叠加而成；第四行定义 $\\omega_d = \\omega_n\\sqrt{1-\\zeta^2}$ 为振荡频率；第五行设定忽略阻尼条件，即 $c=0, \\zeta=0, \\omega_d=\\omega_n$，并注明振动不衰减。关键术语“残余振动”和“自由振动”标红显示。",
+  "metadata": {
+    "generation": {
+      "method": "qwen_api",
+      "backend": "api",
+      "provider": "qwen",
+      "model": "qwen3.7-plus",
+      "status": "success",
+      "api_error": null
+    },
+    "review": {
+      "required": false,
+      "status": null,
+      "reason": null,
+      "course_relevant": true
+    }
+  },
+  "error": null,
+  "method": "qwen_api",
+  "backend": "api",
+  "provider": "qwen",
+  "model": "qwen3.7-plus",
+  "status": "success",
+  "api_error": null,
+  "indexable": true,
+  "review_required": false,
+  "review_reason": null,
+  "review_status": null,
+  "course_relevant": true
+}

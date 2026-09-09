@@ -1,0 +1,20 @@
+{
+  "page_num": 6,
+  "raw_text": "§2 \n有刷直流电机\n的调速与转向\n23-",
+  "cleaned_text": "§2\n有刷直流电机\n的调速与转向",
+  "key_points": [],
+  "technical_terms": [
+    "有刷直流电机"
+  ],
+  "has_images": true,
+  "image_count": 2,
+  "image_paths": [
+    "extraction/output/qwen_qwen3.7-plus_9/debug/images/w04-1-有刷直流电机驱动器及其应用_slide_7_img_1.png",
+    "extraction/output/qwen_qwen3.7-plus_9/debug/images/w04-1-有刷直流电机驱动器及其应用_slide_7_img_2.png"
+  ],
+  "metadata": {
+    "char_count": 21,
+    "word_count": 4,
+    "line_count": 4
+  }
+}

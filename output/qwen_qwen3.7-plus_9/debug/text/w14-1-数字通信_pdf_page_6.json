@@ -1,0 +1,37 @@
+{
+  "page_num": 5,
+  "raw_text": "机电系统原理及实践—— 数字通信\n机电智控实验室tangguoan@fudan.edu.cn mmguo@fudan.edu.cn\n§2.1 通用异步收发器(Universal Asynchronous Receiver/Transmitter，UART)\n异步、全双工、串行、一对一的通信协议\n\n波特率(Baud rate)：单位时间内传输的码元数。单位：Baud(二进制调制时等价于bps)。\n\n空闲位：高电平。\n\n起始位：低电平。\n\n数据位宽：5-8 位。\n小端模式：最低位(LSB)最高位(MSB)\n\n奇偶校验位：使1 的数目为奇/偶。\n\n停止位：1-2 位高电平。\n23-6\nbits per second\nATmega328 UART\nUSB接口\nTx\nRx\nArduino Uno\nTx/D1\nRx/D0\n",
+  "cleaned_text": "§2.1 通用异步收发器(Universal Asynchronous Receiver/Transmitter，UART)\n异步、全双工、串行、一对一的通信协议\n波特率(Baud rate)：单位时间内传输的码元数。单位：Baud(二进制调制时等价于bps)。\n空闲位：高电平。\n起始位：低电平。\n数据位宽：5-8 位。\n小端模式：最低位(LSB)最高位(MSB)\n奇偶校验位：使1 的数目为奇/偶。\n停止位：1-2 位高电平。\nbits per second\nATmega328 UART\nUSB接口\nTx\nRx\nArduino Uno\nTx/D1\nRx/D0",
+  "key_points": [
+    "波特率(Baud rate)：单位时间内传输的码元数。单位：Baud(二进制调制时等价于bps)。",
+    "空闲位：高电平。",
+    "起始位：低电平。",
+    "数据位宽：5-8 位。",
+    "奇偶校验位：使1 的数目为奇/偶。",
+    "停止位：1-2 位高电平。",
+    "ATmega328 UART",
+    "USB接口",
+    "Tx",
+    "Rx"
+  ],
+  "technical_terms": [
+    "ATmega328",
+    "Arduino",
+    "LSB",
+    "MSB",
+    "UART",
+    "Uno",
+    "一对一的通信协议"
+  ],
+  "has_images": true,
+  "image_count": 2,
+  "image_paths": [
+    "extraction/output/qwen_qwen3.7-plus_9/debug/images/w14-1-数字通信_p6_img3.jpeg",
+    "extraction/output/qwen_qwen3.7-plus_9/debug/images/w14-1-数字通信_p6_img4.jpeg"
+  ],
+  "metadata": {
+    "char_count": 369,
+    "word_count": 39,
+    "line_count": 27
+  }
+}

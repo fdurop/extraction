@@ -1,0 +1,33 @@
+{
+  "original_path": "extraction/output/qwen_qwen3.7-plus_8/debug/images/w13-2-机电系统在动力学与控制中的应用 - 副本_p9_img3.jpeg",
+  "enhanced_path": "extraction/output/qwen_qwen3.7-plus_8/debug/images/w13-2-机电系统在动力学与控制中的应用 - 副本_p9_img3_enhanced.jpeg",
+  "description": "类型：示意图\n图中包含三个矩形框及对应的文字标注，展示了振动控制的基本环节。左侧方框内文字为“振源”，右侧方框内文字为“受控对象”，两者之间通过一条水平直线连接，线上方标注“介质”，线条右端带有指向“受控对象”的箭头。在“振源”方框下方，有一向上箭头指向该框，对应文字为“消振”；在“介质”连线下方，有一向上箭头指向连线，对应文字为“隔振”；在“受控对象”方框下方，有一向上箭头指向该框，对应文字为“抑振”。",
+  "metadata": {
+    "generation": {
+      "method": "qwen_api",
+      "backend": "api",
+      "provider": "qwen",
+      "model": "qwen3.7-plus",
+      "status": "success",
+      "api_error": null
+    },
+    "review": {
+      "required": false,
+      "status": null,
+      "reason": null,
+      "course_relevant": true
+    }
+  },
+  "error": null,
+  "method": "qwen_api",
+  "backend": "api",
+  "provider": "qwen",
+  "model": "qwen3.7-plus",
+  "status": "success",
+  "api_error": null,
+  "indexable": true,
+  "review_required": false,
+  "review_reason": null,
+  "review_status": null,
+  "course_relevant": true
+}

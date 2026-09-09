@@ -1,0 +1,14 @@
+{
+  "source_image": "extraction/output/qwen_qwen3.7-plus_9/debug/images/w14-1-数字通信_p8_img4.jpeg",
+  "extraction_method": "qwen_api_智能识别",
+  "language": "cpp",
+  "description": "该Arduino程序通过串口接收用户输入的整数和浮点数，当检测到参数更新后，在loop中将这两个数值打印回串口。使用serialEvent()中断处理串口数据解析，用volatile布尔标志位实现主循环与中断之间的状态同步。",
+  "code_file": "w14-1-数字通信_pdf_page_8_code_2.cpp",
+  "page": 8,
+  "index": 2,
+  "timestamp": "2026-09-09T21:24:01.287245",
+  "raw_response": "语言: C++ (Arduino)\n```cpp\nint val_int;      // 整形参数\nfloat val_float;  // 浮点型参数\n\nvolatile bool updated = false;  // 参数更新标志\n\nvoid setup() {\n  Serial.begin(9600);\n}\n\n// 系统自动调用的串口事件中断服务程序\nvoid serialEvent() {\n  val_int = Serial.parseInt();   // 从ASCII数据流中解析整数\n  val_float = Serial.parseFloat();  // 从ASCII数据流中解析浮点数\n\n  Serial.read();  // 读取换行符'\\n'\n\n  updated = true;  // 参数已更新\n}\n\nvoid loop() {\n  // 若参数已更新，则显示新参数\n  if (updated) {\n    Serial.print(val_int);\n    Serial.print(\" \");\n    Serial.println(val_float);\n    updated = false;\n  }\n}\n```\n功能: 该Arduino程序通过串口接收用户输入的整数和浮点数，当检测到参数更新后，在loop中将这两个数值打印回串口。使用serialEvent()中断处理串口数据解析，用volatile布尔标志位实现主循环与中断之间的状态同步。",
+  "backend": "api",
+  "provider": "qwen",
+  "model": "qwen3.7-plus"
+}

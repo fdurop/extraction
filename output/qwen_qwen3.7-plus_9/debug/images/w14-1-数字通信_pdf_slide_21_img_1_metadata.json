@@ -1,0 +1,33 @@
+{
+  "original_path": "extraction/output/qwen_qwen3.7-plus_9/debug/images/w14-1-数字通信_p21_img3.jpeg",
+  "enhanced_path": "extraction/output/qwen_qwen3.7-plus_9/debug/images/w14-1-数字通信_p21_img3_enhanced.jpeg",
+  "description": "类型：示意图\n图片展示两个Arduino Uno开发板及扩展的CAN Bus Shield模块进行通信的硬件连接。左侧板与右侧板通过导线相连，具体连线标注为：左侧板的CAN_L引脚（绿色线框）连接至右侧板的CAN_L引脚；左侧板的CAN_H引脚（橙色线框）连接至右侧板的CAN_H引脚。板上可见DB9接口、绿色接线端子及排针，文字标签明确指示了CAN_L和CAN_H的信号对应关系。",
+  "metadata": {
+    "generation": {
+      "method": "qwen_api",
+      "backend": "api",
+      "provider": "qwen",
+      "model": "qwen3.7-plus",
+      "status": "success",
+      "api_error": null
+    },
+    "review": {
+      "required": false,
+      "status": null,
+      "reason": null,
+      "course_relevant": true
+    }
+  },
+  "error": null,
+  "method": "qwen_api",
+  "backend": "api",
+  "provider": "qwen",
+  "model": "qwen3.7-plus",
+  "status": "success",
+  "api_error": null,
+  "indexable": true,
+  "review_required": false,
+  "review_reason": null,
+  "review_status": null,
+  "course_relevant": true
+}

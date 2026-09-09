@@ -1,0 +1,33 @@
+{
+  "original_path": "extraction/output/qwen_qwen3.7-plus_9/debug/images/w04-1-有刷直流电机驱动器及其应用_slide_5_img_2.png",
+  "enhanced_path": "extraction/output/qwen_qwen3.7-plus_9/debug/images/w04-1-有刷直流电机驱动器及其应用_slide_5_img_2_enhanced.png",
+  "description": "类型：示意图\n图中展示了一个Arduino UNO开发板与继电器模块及LED灯的接线电路。\n1. 控制回路：Arduino的5V引脚（红线）连接继电器模块VCC，GND引脚（黑线）连接继电器模块GND，数字引脚3（白线）连接继电器模块IN。\n2. 工作回路：外部电源正极（黄线）经红色LED连接至继电器模块的NO（常开）端，继电器模块的COM（公共）端（绿线）连接回外部电源负极。\n继电器模块上可见PWR、LED1指示灯及VCC、GND、IN、NO、COM、NC接口标识。",
+  "metadata": {
+    "generation": {
+      "method": "qwen_api",
+      "backend": "api",
+      "provider": "qwen",
+      "model": "qwen3.7-plus",
+      "status": "success",
+      "api_error": null
+    },
+    "review": {
+      "required": false,
+      "status": null,
+      "reason": null,
+      "course_relevant": true
+    }
+  },
+  "error": null,
+  "method": "qwen_api",
+  "backend": "api",
+  "provider": "qwen",
+  "model": "qwen3.7-plus",
+  "status": "success",
+  "api_error": null,
+  "indexable": true,
+  "review_required": false,
+  "review_reason": null,
+  "review_status": null,
+  "course_relevant": true
+}

@@ -1,0 +1,33 @@
+{
+  "original_path": "extraction/output/qwen_qwen3.7-plus_9/debug/images/w09-1-直线运动平台（上） - 副本_p4_img5.jpeg",
+  "enhanced_path": "extraction/output/qwen_qwen3.7-plus_9/debug/images/w09-1-直线运动平台（上） - 副本_p4_img5_enhanced.jpeg",
+  "description": "类型：示意图\n图片展示了一个Z轴直交型机械臂的三维结构模型。该装置由三个相互垂直的运动轴组成：底部两根平行的金色导轨构成水平移动基座，上方横跨一根垂直于底座的导轨，最顶端竖立着一根Z轴立柱。X、Y、Z三个轴的末端均安装有蓝色的圆柱形电机或驱动组件，轴体之间通过红色和绿色的连接件固定，整体呈现直角坐标系的空間布局。",
+  "metadata": {
+    "generation": {
+      "method": "qwen_api",
+      "backend": "api",
+      "provider": "qwen",
+      "model": "qwen3.7-plus",
+      "status": "success",
+      "api_error": null
+    },
+    "review": {
+      "required": false,
+      "status": null,
+      "reason": null,
+      "course_relevant": true
+    }
+  },
+  "error": null,
+  "method": "qwen_api",
+  "backend": "api",
+  "provider": "qwen",
+  "model": "qwen3.7-plus",
+  "status": "success",
+  "api_error": null,
+  "indexable": true,
+  "review_required": false,
+  "review_reason": null,
+  "review_status": null,
+  "course_relevant": true
+}

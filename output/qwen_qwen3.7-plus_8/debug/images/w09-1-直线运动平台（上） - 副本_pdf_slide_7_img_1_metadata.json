@@ -1,0 +1,33 @@
+{
+  "original_path": "extraction/output/qwen_qwen3.7-plus_8/debug/images/w09-1-直线运动平台（上） - 副本_p7_img3.jpeg",
+  "enhanced_path": "extraction/output/qwen_qwen3.7-plus_8/debug/images/w09-1-直线运动平台（上） - 副本_p7_img3_enhanced.jpeg",
+  "description": "类型：照片\n图片展示了一个工业急停开关实物。主体为黄色方形底座配黑色基座，顶部设有红色蘑菇头按钮，按钮表面印有白色旋转箭头，底座斜面印有黑色“EMERGENCY STOP”字样。结合页面文字与电路图可知，该组件用于紧急情况下切断设备电源，通常接在控制回路中。电路连接示意图显示其包含一对NO触点和一对NC触点，串联于5V电源、驱动器ENA+及ENA-之间，涉及引脚23和24。",
+  "metadata": {
+    "generation": {
+      "method": "qwen_api",
+      "backend": "api",
+      "provider": "qwen",
+      "model": "qwen3.7-plus",
+      "status": "success",
+      "api_error": null
+    },
+    "review": {
+      "required": false,
+      "status": null,
+      "reason": null,
+      "course_relevant": true
+    }
+  },
+  "error": null,
+  "method": "qwen_api",
+  "backend": "api",
+  "provider": "qwen",
+  "model": "qwen3.7-plus",
+  "status": "success",
+  "api_error": null,
+  "indexable": true,
+  "review_required": false,
+  "review_reason": null,
+  "review_status": null,
+  "course_relevant": true
+}

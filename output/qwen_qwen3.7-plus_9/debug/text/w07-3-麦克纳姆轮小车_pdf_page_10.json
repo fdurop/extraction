@@ -1,0 +1,25 @@
+{
+  "page_num": 9,
+  "raw_text": "机电系统原理及实践—— 麦克纳姆轮小车\n机电智控实验室tangguoan@fudan.edu.cn mmguo@fudan.edu.cn\n四路直流电机驱动扩展板（Quad Motor Driver Shield for Arduino）\n直接插在MCU上，扩展其功能。\n集成化，体积小，结构紧凑。\n下表中“正/反转”指电机自身逆/顺时针旋转。\n官网使用手册及代码示例\n11-10\n室 复旦大\n智控实验室 复旦大学 机电\n学 机电智控实验室 复旦大学 机电智控实验\n复旦大学 机电智控实验室 复旦大学 机电智控实验室 复旦\n大学 机电智控实验室 复旦大学 机电智控实验室 复旦大学 机电\n电智控实验室 复旦大学 机电智控实验室 复旦大学 机电智控实\n验室 复旦大学 机电智控实验室 复旦大学 机电智控实验室 \n旦大学 机电智控实验室 复旦大学 机电智控\n电智控实验室 复旦大学 \n验室 复\n",
+  "cleaned_text": "四路直流电机驱动扩展板（Quad Motor Driver Shield for Arduino）\n直接插在MCU上，扩展其功能。\n集成化，体积小，结构紧凑。\n下表中“正/反转”指电机自身逆/顺时针旋转。\n官网使用手册及代码示例",
+  "key_points": [
+    "直接插在MCU上，扩展其功能。",
+    "集成化，体积小，结构紧凑。",
+    "下表中“正/反转”指电机自身逆/顺时针旋转。"
+  ],
+  "technical_terms": [
+    "Arduino",
+    "四路直流电机"
+  ],
+  "has_images": true,
+  "image_count": 2,
+  "image_paths": [
+    "extraction/output/qwen_qwen3.7-plus_9/debug/images/w07-3-麦克纳姆轮小车_p10_img2.jpeg",
+    "extraction/output/qwen_qwen3.7-plus_9/debug/images/w07-3-麦克纳姆轮小车_p10_img3.png"
+  ],
+  "metadata": {
+    "char_count": 398,
+    "word_count": 53,
+    "line_count": 19
+  }
+}

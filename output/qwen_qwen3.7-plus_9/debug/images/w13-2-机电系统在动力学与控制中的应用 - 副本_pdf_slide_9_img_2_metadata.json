@@ -1,0 +1,33 @@
+{
+  "original_path": "extraction/output/qwen_qwen3.7-plus_9/debug/images/w13-2-机电系统在动力学与控制中的应用 - 副本_p9_img4.jpeg",
+  "enhanced_path": "extraction/output/qwen_qwen3.7-plus_9/debug/images/w13-2-机电系统在动力学与控制中的应用 - 副本_p9_img4_enhanced.jpeg",
+  "description": "类型：照片\n图片展示了太空中的一台大型航天望远镜（外观类似哈勃空间望远镜）。主体呈银白色圆柱形，前端有遮光罩，中部两侧展开着巨大的矩形太阳能电池板，表面覆盖深色光伏电池网格。望远镜后端延伸出细长的天线或支架结构。在望远镜下方，通过一根细长的缆绳悬挂着一个黑色的球状物体（类似重力稳定锤或配重）。背景为漆黑的宇宙空间，底部可见地球蓝色的弧形边缘及大气层。",
+  "metadata": {
+    "generation": {
+      "method": "qwen_api",
+      "backend": "api",
+      "provider": "qwen",
+      "model": "qwen3.7-plus",
+      "status": "success",
+      "api_error": null
+    },
+    "review": {
+      "required": false,
+      "status": null,
+      "reason": null,
+      "course_relevant": true
+    }
+  },
+  "error": null,
+  "method": "qwen_api",
+  "backend": "api",
+  "provider": "qwen",
+  "model": "qwen3.7-plus",
+  "status": "success",
+  "api_error": null,
+  "indexable": true,
+  "review_required": false,
+  "review_reason": null,
+  "review_status": null,
+  "course_relevant": true
+}

@@ -1,0 +1,33 @@
+{
+  "original_path": "extraction/output/qwen_qwen3.7-plus_8/debug/images/w01-1-课程简介_p10_img5.png",
+  "enhanced_path": "extraction/output/qwen_qwen3.7-plus_8/debug/images/w01-1-课程简介_p10_img5_enhanced.png",
+  "description": "类型：照片\n图片展示了一个小型多轴机械臂装置。主体由蓝色金属连杆和关节组成，末端装有黑色双指夹爪（手爪）。机械臂安装在一个蓝色的圆柱形旋转底座上，底座固定于黑色圆形底板。底板右侧延伸出一块黑色电路板，板上可见芯片及接口元件。该实物图对应上下文中的“多轴机械臂”及“舵机”等硬件教学内容。",
+  "metadata": {
+    "generation": {
+      "method": "qwen_api",
+      "backend": "api",
+      "provider": "qwen",
+      "model": "qwen3.7-plus",
+      "status": "success",
+      "api_error": null
+    },
+    "review": {
+      "required": false,
+      "status": null,
+      "reason": null,
+      "course_relevant": true
+    }
+  },
+  "error": null,
+  "method": "qwen_api",
+  "backend": "api",
+  "provider": "qwen",
+  "model": "qwen3.7-plus",
+  "status": "success",
+  "api_error": null,
+  "indexable": true,
+  "review_required": false,
+  "review_reason": null,
+  "review_status": null,
+  "course_relevant": true
+}

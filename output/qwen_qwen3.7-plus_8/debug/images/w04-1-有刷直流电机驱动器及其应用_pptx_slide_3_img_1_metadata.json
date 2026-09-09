@@ -1,0 +1,33 @@
+{
+  "original_path": "extraction/output/qwen_qwen3.7-plus_8/debug/images/w04-1-有刷直流电机驱动器及其应用_slide_3_img_1.png",
+  "enhanced_path": "extraction/output/qwen_qwen3.7-plus_8/debug/images/w04-1-有刷直流电机驱动器及其应用_slide_3_img_1_enhanced.png",
+  "description": "类型：示意图\n图中展示了一个电路连接结构。左侧为输入端，包含红色和绿色导线连接至六个圆形触点。中间垂直排列文字“双刀双掷开关”，对应两组联动的开关臂，分别连接上下两侧的触点。右侧为一个圆圈，内部包含大写字母“M”，圆圈右下方标注文字“电机”。开关的右侧触点通过黑色导线分别连接至电机符号的上下两端，构成闭合回路连接关系。",
+  "metadata": {
+    "generation": {
+      "method": "qwen_api",
+      "backend": "api",
+      "provider": "qwen",
+      "model": "qwen3.7-plus",
+      "status": "success",
+      "api_error": null
+    },
+    "review": {
+      "required": false,
+      "status": null,
+      "reason": null,
+      "course_relevant": true
+    }
+  },
+  "error": null,
+  "method": "qwen_api",
+  "backend": "api",
+  "provider": "qwen",
+  "model": "qwen3.7-plus",
+  "status": "success",
+  "api_error": null,
+  "indexable": true,
+  "review_required": false,
+  "review_reason": null,
+  "review_status": null,
+  "course_relevant": true
+}

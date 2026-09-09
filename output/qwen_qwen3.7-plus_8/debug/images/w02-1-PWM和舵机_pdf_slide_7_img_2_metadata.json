@@ -1,0 +1,33 @@
+{
+  "original_path": "extraction/output/qwen_qwen3.7-plus_8/debug/images/w02-1-PWM和舵机_p7_img3.jpeg",
+  "enhanced_path": "extraction/output/qwen_qwen3.7-plus_8/debug/images/w02-1-PWM和舵机_p7_img3_enhanced.jpeg",
+  "description": "类型：照片\n图片展示了一个圆柱形金属外壳的电位器实物。外壳表面印有“Z1”、“Z2”字样及一个指示旋转方向的箭头符号，侧面下方标有数字“4”。组件中部设有矩形开口，露出内部蓝色的塑料基座和三个金属接线端子。该图片配合页面文字“电位器用法”，直观展示了课程实践中用于调节LED亮度的模拟输入元件外观及接口细节。",
+  "metadata": {
+    "generation": {
+      "method": "qwen_api",
+      "backend": "api",
+      "provider": "qwen",
+      "model": "qwen3.7-plus",
+      "status": "success",
+      "api_error": null
+    },
+    "review": {
+      "required": false,
+      "status": null,
+      "reason": null,
+      "course_relevant": true
+    }
+  },
+  "error": null,
+  "method": "qwen_api",
+  "backend": "api",
+  "provider": "qwen",
+  "model": "qwen3.7-plus",
+  "status": "success",
+  "api_error": null,
+  "indexable": true,
+  "review_required": false,
+  "review_reason": null,
+  "review_status": null,
+  "course_relevant": true
+}

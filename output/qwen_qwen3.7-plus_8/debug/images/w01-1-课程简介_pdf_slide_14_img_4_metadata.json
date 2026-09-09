@@ -1,0 +1,33 @@
+{
+  "original_path": "extraction/output/qwen_qwen3.7-plus_8/debug/images/w01-1-课程简介_p14_img5.jpeg",
+  "enhanced_path": "extraction/output/qwen_qwen3.7-plus_8/debug/images/w01-1-课程简介_p14_img5_enhanced.jpeg",
+  "description": "类型：照片\n画面展示实验室场景，三名学生围绕桌台进行实践。桌上放置蓝色收纳筐，内装大量连接复杂的电子线路与模块，旁有黑色机械装置及笔记本电脑。背景投影幕显示编程界面，左侧可见“import time”、“cap_device = 0”等Python代码参数，右侧呈现手部骨骼节点识别的实时影像。一名站立学生正对着屏幕做出“V”字手势，其动作与屏幕上被标记关键点的手部图像对应，直观展示了机电系统课程中“边学边做”的教学环节及人机交互实验内容。",
+  "metadata": {
+    "generation": {
+      "method": "qwen_api",
+      "backend": "api",
+      "provider": "qwen",
+      "model": "qwen3.7-plus",
+      "status": "success",
+      "api_error": null
+    },
+    "review": {
+      "required": false,
+      "status": null,
+      "reason": null,
+      "course_relevant": true
+    }
+  },
+  "error": null,
+  "method": "qwen_api",
+  "backend": "api",
+  "provider": "qwen",
+  "model": "qwen3.7-plus",
+  "status": "success",
+  "api_error": null,
+  "indexable": true,
+  "review_required": false,
+  "review_reason": null,
+  "review_status": null,
+  "course_relevant": true
+}

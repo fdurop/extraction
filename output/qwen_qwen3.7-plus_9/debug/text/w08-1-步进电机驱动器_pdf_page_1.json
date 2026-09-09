@@ -1,0 +1,18 @@
+{
+  "page_num": 0,
+  "raw_text": "机电系统原理及实践\n步进电机驱动器与外部中断\n复旦大学 机电智控实验室\n",
+  "cleaned_text": "机电系统原理及实践\n步进电机驱动器与外部中断",
+  "key_points": [],
+  "technical_terms": [
+    "机电系统",
+    "步进电机驱动器与外部中断"
+  ],
+  "has_images": false,
+  "image_count": 0,
+  "image_paths": [],
+  "metadata": {
+    "char_count": 36,
+    "word_count": 4,
+    "line_count": 4
+  }
+}

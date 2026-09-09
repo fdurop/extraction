@@ -1,0 +1,33 @@
+{
+  "original_path": "extraction/output/qwen_qwen3.7-plus_8/debug/images/w04-1-有刷直流电机驱动器及其应用_slide_23_img_5.png",
+  "enhanced_path": "extraction/output/qwen_qwen3.7-plus_8/debug/images/w04-1-有刷直流电机驱动器及其应用_slide_23_img_5_enhanced.png",
+  "description": "类型：照片\n图片展示了一个黑色圆柱形电子设备，外观特征符合激光雷达（LiDAR）。设备分为上下两层结构，上半部分侧面可见圆形的透镜窗口，顶部为白色平面并带有安装孔；下半部分为纯黑色圆柱体底座。结合页面上下文列出的传感器列表（编码器、IMU、超声波雷达、激光雷达、深度相机），该实物图对应其中的“激光雷达”组件，用于智能小车的避障、建图与导航。",
+  "metadata": {
+    "generation": {
+      "method": "qwen_api",
+      "backend": "api",
+      "provider": "qwen",
+      "model": "qwen3.7-plus",
+      "status": "success",
+      "api_error": null
+    },
+    "review": {
+      "required": false,
+      "status": null,
+      "reason": null,
+      "course_relevant": true
+    }
+  },
+  "error": null,
+  "method": "qwen_api",
+  "backend": "api",
+  "provider": "qwen",
+  "model": "qwen3.7-plus",
+  "status": "success",
+  "api_error": null,
+  "indexable": true,
+  "review_required": false,
+  "review_reason": null,
+  "review_status": null,
+  "course_relevant": true
+}

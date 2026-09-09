@@ -1,0 +1,33 @@
+{
+  "original_path": "extraction/output/qwen_qwen3.7-plus_8/debug/images/w15-1-无刷直流电机驱动器_p5_img3.jpeg",
+  "enhanced_path": "extraction/output/qwen_qwen3.7-plus_8/debug/images/w15-1-无刷直流电机驱动器_p5_img3_enhanced.jpeg",
+  "description": "类型：示意图\n图片展示了无刷直流电机的横截面结构。中心为圆形转子（rotor），呈红蓝双色分布，分别标记有N极和S极。转子外围环绕着三个呈三角形均匀分布的定子（stator）组件，每个定子由铁芯和缠绕其上的线圈构成。图中有引线分别指向转子和定子，并标注了中文名称及对应的英文单词“rotor”和“stator”。整体结构显示了永磁体转子与绕组定子的空间位置关系。",
+  "metadata": {
+    "generation": {
+      "method": "qwen_api",
+      "backend": "api",
+      "provider": "qwen",
+      "model": "qwen3.7-plus",
+      "status": "success",
+      "api_error": null
+    },
+    "review": {
+      "required": false,
+      "status": null,
+      "reason": null,
+      "course_relevant": true
+    }
+  },
+  "error": null,
+  "method": "qwen_api",
+  "backend": "api",
+  "provider": "qwen",
+  "model": "qwen3.7-plus",
+  "status": "success",
+  "api_error": null,
+  "indexable": true,
+  "review_required": false,
+  "review_reason": null,
+  "review_status": null,
+  "course_relevant": true
+}

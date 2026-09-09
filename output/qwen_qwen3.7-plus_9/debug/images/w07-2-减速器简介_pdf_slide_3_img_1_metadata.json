@@ -1,0 +1,33 @@
+{
+  "original_path": "extraction/output/qwen_qwen3.7-plus_9/debug/images/w07-2-减速器简介_p3_img2.jpeg",
+  "enhanced_path": "extraction/output/qwen_qwen3.7-plus_9/debug/images/w07-2-减速器简介_p3_img2_enhanced.jpeg",
+  "description": "类型：照片\n图片展示了一个金属底盘的移动机器人内部结构俯视图。底盘四角各安装有一个银色圆柱形直流减速电机，电机输出轴直接连接黑色橡胶轮胎。 chassis中央固定着一块白色的长方形锂电池组，标签可见“QISUO祺索”、“3000mAh”及“7.4V”字样。多根黑色电源线和白色信号线将电池、电机及底部的红色接线端子相互连接。左侧金属壁贴有黄色标签，依稀可见“左前”、“右前”等方位标识。该实物图直观展示了课程中提到的电机与减速器集成应用在机械结构中的实际形态。",
+  "metadata": {
+    "generation": {
+      "method": "qwen_api",
+      "backend": "api",
+      "provider": "qwen",
+      "model": "qwen3.7-plus",
+      "status": "success",
+      "api_error": null
+    },
+    "review": {
+      "required": false,
+      "status": null,
+      "reason": null,
+      "course_relevant": true
+    }
+  },
+  "error": null,
+  "method": "qwen_api",
+  "backend": "api",
+  "provider": "qwen",
+  "model": "qwen3.7-plus",
+  "status": "success",
+  "api_error": null,
+  "indexable": true,
+  "review_required": false,
+  "review_reason": null,
+  "review_status": null,
+  "course_relevant": true
+}

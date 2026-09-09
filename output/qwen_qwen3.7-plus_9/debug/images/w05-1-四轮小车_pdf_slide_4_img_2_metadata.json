@@ -1,0 +1,33 @@
+{
+  "original_path": "extraction/output/qwen_qwen3.7-plus_9/debug/images/w05-1-四轮小车_p4_img3.png",
+  "enhanced_path": "extraction/output/qwen_qwen3.7-plus_9/debug/images/w05-1-四轮小车_p4_img3_enhanced.png",
+  "description": "类型：示意图\n图片包含上下两个电路原理图，展示电机换向逻辑。\n上图：左侧红绿输入线连接至两个垂直排列的开关模块。上方开关连通红线回路，下方开关连通绿线回路。右侧电机符号（M）旁标有顺时针旋转箭头。\n下图：电路结构相同，但开关状态改变。上方开关切换至连通绿线，下方开关切换至连通红线。右侧电机符号（M）旁标有逆时针旋转箭头。\n图中通过开关触点的不同连接组合，改变了流经电机的电流路径及方向。",
+  "metadata": {
+    "generation": {
+      "method": "qwen_api",
+      "backend": "api",
+      "provider": "qwen",
+      "model": "qwen3.7-plus",
+      "status": "success",
+      "api_error": null
+    },
+    "review": {
+      "required": false,
+      "status": null,
+      "reason": null,
+      "course_relevant": true
+    }
+  },
+  "error": null,
+  "method": "qwen_api",
+  "backend": "api",
+  "provider": "qwen",
+  "model": "qwen3.7-plus",
+  "status": "success",
+  "api_error": null,
+  "indexable": true,
+  "review_required": false,
+  "review_reason": null,
+  "review_status": null,
+  "course_relevant": true
+}

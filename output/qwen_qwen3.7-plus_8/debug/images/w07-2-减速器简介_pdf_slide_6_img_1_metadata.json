@@ -1,0 +1,33 @@
+{
+  "original_path": "extraction/output/qwen_qwen3.7-plus_8/debug/images/w07-2-减速器简介_p6_img2.jpeg",
+  "enhanced_path": "extraction/output/qwen_qwen3.7-plus_8/debug/images/w07-2-减速器简介_p6_img2_enhanced.jpeg",
+  "description": "类型：照片\n图片展示了蜗轮蜗杆减速器的机械结构实物。左侧为银色金属框架，内部安装有一根银色蜗杆与一个金色蜗轮，两者呈垂直啮合状态，体现了电机驱动蜗杆进而驱动涡轮的空间关系。右侧黑色平面上散落着三颗内六角螺丝。右上角可见“知乎”字样水印。该图直观呈现了课程所述的蜗轮蜗杆传动组件及其装配形态。",
+  "metadata": {
+    "generation": {
+      "method": "qwen_api",
+      "backend": "api",
+      "provider": "qwen",
+      "model": "qwen3.7-plus",
+      "status": "success",
+      "api_error": null
+    },
+    "review": {
+      "required": false,
+      "status": null,
+      "reason": null,
+      "course_relevant": true
+    }
+  },
+  "error": null,
+  "method": "qwen_api",
+  "backend": "api",
+  "provider": "qwen",
+  "model": "qwen3.7-plus",
+  "status": "success",
+  "api_error": null,
+  "indexable": true,
+  "review_required": false,
+  "review_reason": null,
+  "review_status": null,
+  "course_relevant": true
+}

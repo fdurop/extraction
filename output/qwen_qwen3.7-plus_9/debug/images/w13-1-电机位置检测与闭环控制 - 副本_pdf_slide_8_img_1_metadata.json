@@ -1,0 +1,33 @@
+{
+  "original_path": "extraction/output/qwen_qwen3.7-plus_9/debug/images/w13-1-电机位置检测与闭环控制 - 副本_p8_img3.jpeg",
+  "enhanced_path": "extraction/output/qwen_qwen3.7-plus_9/debug/images/w13-1-电机位置检测与闭环控制 - 副本_p8_img3_enhanced.jpeg",
+  "description": "类型：照片\n图片展示了一个圆柱形黑色旋转编码器（型号E6B2-CWZ6C，增量式），顶部伸出金属轴。机身标签可见参数：Resolution: 1000 P/R，Power: 5 to 24VDC，Brown: 0V(COMMON)，Shield: GND。右侧列出了线色标识：Black（黑）、White（白）、Orange（橙）。该实物图对应课程实践中用于读取脉冲计数值的硬件对象。",
+  "metadata": {
+    "generation": {
+      "method": "qwen_api",
+      "backend": "api",
+      "provider": "qwen",
+      "model": "qwen3.7-plus",
+      "status": "success",
+      "api_error": null
+    },
+    "review": {
+      "required": false,
+      "status": null,
+      "reason": null,
+      "course_relevant": true
+    }
+  },
+  "error": null,
+  "method": "qwen_api",
+  "backend": "api",
+  "provider": "qwen",
+  "model": "qwen3.7-plus",
+  "status": "success",
+  "api_error": null,
+  "indexable": true,
+  "review_required": false,
+  "review_reason": null,
+  "review_status": null,
+  "course_relevant": true
+}

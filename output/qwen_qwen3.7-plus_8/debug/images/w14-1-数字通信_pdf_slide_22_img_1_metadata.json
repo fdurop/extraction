@@ -1,0 +1,33 @@
+{
+  "original_path": "extraction/output/qwen_qwen3.7-plus_8/debug/images/w14-1-数字通信_p22_img3.jpeg",
+  "enhanced_path": "extraction/output/qwen_qwen3.7-plus_8/debug/images/w14-1-数字通信_p22_img3_enhanced.jpeg",
+  "description": "类型：代码\n图片展示了Arduino C++代码片段，用于CAN通信测试。\n顶部包含头文件 `<SPI.h>` 和 `\"mcp2515_can.h\"`。\n定义了常量 `SPI_CS_PIN` 为9，`CAN_INT_PIN` 为2。\n声明了变量：字符数组 `recvBuf[8]`（接受信息缓存），`uint8_t len`（接收到的字节数），`slaveID` 设为1（下位机CAN ID）。\n`setup()` 函数中：初始化串口波特率1000000；通过 `while` 循环尝试以1000k波特率初始化CAN总线，失败则打印 \"CAN init fail, retry...\" 并延时，成功后打印 \"CAN init ok!\"。\n主逻辑部分：调用 `inputPos()` 获取浮点数 `pos`；使用 `CAN_MCP_CAN::sendMsgBuf` 发送 `pos` 给下位机；通过 `while` 循环等待 `CAN.checkReceive()` 返回可用状态；读取返回信息到 `recvBuf`；获取并打印CAN ID (`id`) 及接收到的字符串内容。",
+  "metadata": {
+    "generation": {
+      "method": "qwen_api",
+      "backend": "api",
+      "provider": "qwen",
+      "model": "qwen3.7-plus",
+      "status": "success",
+      "api_error": null
+    },
+    "review": {
+      "required": false,
+      "status": null,
+      "reason": null,
+      "course_relevant": true
+    }
+  },
+  "error": null,
+  "method": "qwen_api",
+  "backend": "api",
+  "provider": "qwen",
+  "model": "qwen3.7-plus",
+  "status": "success",
+  "api_error": null,
+  "indexable": true,
+  "review_required": false,
+  "review_reason": null,
+  "review_status": null,
+  "course_relevant": true
+}

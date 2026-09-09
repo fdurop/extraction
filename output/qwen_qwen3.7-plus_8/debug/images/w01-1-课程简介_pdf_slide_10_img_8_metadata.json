@@ -1,0 +1,33 @@
+{
+  "original_path": "extraction/output/qwen_qwen3.7-plus_8/debug/images/w01-1-课程简介_p10_img9.jpeg",
+  "enhanced_path": "extraction/output/qwen_qwen3.7-plus_8/debug/images/w01-1-课程简介_p10_img9_enhanced.jpeg",
+  "description": "类型：照片\n图片展示了一个黑色的工业电机部件，具有圆柱形主体和明显的环状散热棱纹。前端为圆形法兰盘，边缘分布有安装孔，中心轴伸处带有键槽及多个螺纹孔。该物体对应课程“主要硬件”列表中列出的电机（如直流电机或步进电机）实物示例，属于机电系统核心执行元件的视觉展示。",
+  "metadata": {
+    "generation": {
+      "method": "qwen_api",
+      "backend": "api",
+      "provider": "qwen",
+      "model": "qwen3.7-plus",
+      "status": "success",
+      "api_error": null
+    },
+    "review": {
+      "required": false,
+      "status": null,
+      "reason": null,
+      "course_relevant": true
+    }
+  },
+  "error": null,
+  "method": "qwen_api",
+  "backend": "api",
+  "provider": "qwen",
+  "model": "qwen3.7-plus",
+  "status": "success",
+  "api_error": null,
+  "indexable": true,
+  "review_required": false,
+  "review_reason": null,
+  "review_status": null,
+  "course_relevant": true
+}

@@ -1,0 +1,33 @@
+{
+  "original_path": "extraction/output/qwen_qwen3.7-plus_9/debug/images/w01-1-课程简介_p17_img4.jpeg",
+  "enhanced_path": "extraction/output/qwen_qwen3.7-plus_9/debug/images/w01-1-课程简介_p17_img4_enhanced.jpeg",
+  "description": "类型：照片\n画面展示实验室桌面场景，前景为一台打开的笔记本电脑，屏幕显示实时视频流及覆盖在人手上的橙色骨骼节点连线（手势识别界面）。电脑左侧伸出一只真实的人手，姿态与屏幕中的识别框对应。背景桌面上摆放着绿色电路板、白色电子仪器、鼠标及线缆等机电实验设备。该图片直观展示了课程涉及的视觉感知或人机交互实验内容。",
+  "metadata": {
+    "generation": {
+      "method": "qwen_api",
+      "backend": "api",
+      "provider": "qwen",
+      "model": "qwen3.7-plus",
+      "status": "success",
+      "api_error": null
+    },
+    "review": {
+      "required": false,
+      "status": null,
+      "reason": null,
+      "course_relevant": true
+    }
+  },
+  "error": null,
+  "method": "qwen_api",
+  "backend": "api",
+  "provider": "qwen",
+  "model": "qwen3.7-plus",
+  "status": "success",
+  "api_error": null,
+  "indexable": true,
+  "review_required": false,
+  "review_reason": null,
+  "review_status": null,
+  "course_relevant": true
+}

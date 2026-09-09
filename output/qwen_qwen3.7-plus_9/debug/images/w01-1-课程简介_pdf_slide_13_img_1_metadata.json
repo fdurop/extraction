@@ -1,0 +1,33 @@
+{
+  "original_path": "extraction/output/qwen_qwen3.7-plus_9/debug/images/w01-1-课程简介_p13_img2.jpeg",
+  "enhanced_path": "extraction/output/qwen_qwen3.7-plus_9/debug/images/w01-1-课程简介_p13_img2_enhanced.jpeg",
+  "description": "类型：照片\n图片展示了一台放置在浅色瓷砖地面上的足式机器人实物。机器人主体呈扁平长方体结构，中央安装有蓝色电池组及多层电路板，板上有绿色指示灯亮起。机身两侧对称分布着多组机械腿关节模块，大量黑色线缆连接各部件并延伸至外部。机器人后方通过黑色长线连接着一个置于地面的蓝银色方形电源设备。该图像直观呈现了课程简介中提到的“实践平台”及“足式机器人”的硬件形态。",
+  "metadata": {
+    "generation": {
+      "method": "qwen_api",
+      "backend": "api",
+      "provider": "qwen",
+      "model": "qwen3.7-plus",
+      "status": "success",
+      "api_error": null
+    },
+    "review": {
+      "required": false,
+      "status": null,
+      "reason": null,
+      "course_relevant": true
+    }
+  },
+  "error": null,
+  "method": "qwen_api",
+  "backend": "api",
+  "provider": "qwen",
+  "model": "qwen3.7-plus",
+  "status": "success",
+  "api_error": null,
+  "indexable": true,
+  "review_required": false,
+  "review_reason": null,
+  "review_status": null,
+  "course_relevant": true
+}

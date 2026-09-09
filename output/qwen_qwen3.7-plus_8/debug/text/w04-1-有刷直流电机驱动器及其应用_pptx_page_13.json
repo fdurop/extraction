@@ -1,0 +1,26 @@
+{
+  "page_num": 12,
+  "raw_text": "§3 \n实践：\n有刷直流电机驱动与控制\nStep 3\n：封装\n驱动器原理样机\n整合封装驱动代码，并测试验证。\n/* \n直流电机驱动器 \n    输入参数：\nspeed     \n    \n绝对值表示转速，范围 \n0 - 255.\n    \n大于零\n-\n逆时针，小于零\n-\n顺时针，\n0-\n停止\n.\n*/\nvoid \nDCMotorDriver\n(int speed) {\n     // \n驱动代码\n}\n23-\nw04-s3-DCMotorDriver.ino",
+  "cleaned_text": "§3\n实践：\n有刷直流电机驱动与控制\nStep 3\n：封装\n驱动器原理样机\n整合封装驱动代码，并测试验证。\n/*\n直流电机驱动器\n输入参数：\nspeed\n绝对值表示转速，范围\n0 - 255.\n大于零\n-\n逆时针，小于零\n-\n顺时针，\n停止\n.\n*/\nvoid\nDCMotorDriver\n(int speed) {\n//\n驱动代码\n}\nw04-s3-DCMotorDriver.ino",
+  "key_points": [
+    "实践：",
+    "Step 3",
+    "整合封装驱动代码，并测试验证。",
+    "输入参数：",
+    "DCMotorDriver"
+  ],
+  "technical_terms": [
+    "w04-s3-DCMotorDriver",
+    "有刷直流电机",
+    "有刷直流电机驱动与控制",
+    "直流电机驱动器"
+  ],
+  "has_images": false,
+  "image_count": 0,
+  "image_paths": [],
+  "metadata": {
+    "char_count": 230,
+    "word_count": 35,
+    "line_count": 32
+  }
+}

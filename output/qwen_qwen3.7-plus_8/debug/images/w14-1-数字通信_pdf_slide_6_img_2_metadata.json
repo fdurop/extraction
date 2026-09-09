@@ -1,0 +1,33 @@
+{
+  "original_path": "extraction/output/qwen_qwen3.7-plus_8/debug/images/w14-1-数字通信_p6_img4.jpeg",
+  "enhanced_path": "extraction/output/qwen_qwen3.7-plus_8/debug/images/w14-1-数字通信_p6_img4_enhanced.jpeg",
+  "description": "类型：照片\n图片展示了一块绿色的Arduino Uno开发板局部。板面中央印有白色的无限符号Logo及“UNO”、“ARDUINO”字样。上方边缘排列着黑色排母接口，数字引脚标号从0至13可见，其中引脚0旁标注“RX←”，引脚1旁标注“TX→”。左侧区域可见标有“AREF”、“GND”的接口以及一颗黑色方形芯片，芯片旁印有“TX”、“RX”字样及对应指示灯。右侧边缘可见标有“ON”的LED指示灯。",
+  "metadata": {
+    "generation": {
+      "method": "qwen_api",
+      "backend": "api",
+      "provider": "qwen",
+      "model": "qwen3.7-plus",
+      "status": "success",
+      "api_error": null
+    },
+    "review": {
+      "required": false,
+      "status": null,
+      "reason": null,
+      "course_relevant": true
+    }
+  },
+  "error": null,
+  "method": "qwen_api",
+  "backend": "api",
+  "provider": "qwen",
+  "model": "qwen3.7-plus",
+  "status": "success",
+  "api_error": null,
+  "indexable": true,
+  "review_required": false,
+  "review_reason": null,
+  "review_status": null,
+  "course_relevant": true
+}

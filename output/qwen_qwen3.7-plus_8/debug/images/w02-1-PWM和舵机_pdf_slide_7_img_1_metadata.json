@@ -1,0 +1,33 @@
+{
+  "original_path": "extraction/output/qwen_qwen3.7-plus_8/debug/images/w02-1-PWM和舵机_p7_img2.jpeg",
+  "enhanced_path": "extraction/output/qwen_qwen3.7-plus_8/debug/images/w02-1-PWM和舵机_p7_img2_enhanced.jpeg",
+  "description": "类型：照片\n图片展示了两个黑色工业旋钮电位器。左侧为正面视图，可见银色金属面板、黑色旋转手柄及白色刻度盘，刻度范围标有0至10的数字及指示箭头，面板边缘印有“K&N”字样。右侧为侧后方视图，展示了圆柱形黑色机身、顶部的调节旋钮及底部的接线端子结构。机身侧面印有白色参数文字，清晰可见品牌“TAYEE”、型号“LA42DNO-22 10X”、电气规格“AC-15 3A 240V”以及标准号“IEC 60947”和认证标志。该实物图对应课程中关于电位器作为模拟输入元件调节参数的教学内容。",
+  "metadata": {
+    "generation": {
+      "method": "qwen_api",
+      "backend": "api",
+      "provider": "qwen",
+      "model": "qwen3.7-plus",
+      "status": "success",
+      "api_error": null
+    },
+    "review": {
+      "required": false,
+      "status": null,
+      "reason": null,
+      "course_relevant": true
+    }
+  },
+  "error": null,
+  "method": "qwen_api",
+  "backend": "api",
+  "provider": "qwen",
+  "model": "qwen3.7-plus",
+  "status": "success",
+  "api_error": null,
+  "indexable": true,
+  "review_required": false,
+  "review_reason": null,
+  "review_status": null,
+  "course_relevant": true
+}

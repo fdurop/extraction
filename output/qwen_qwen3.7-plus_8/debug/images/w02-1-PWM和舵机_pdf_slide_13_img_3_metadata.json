@@ -1,0 +1,33 @@
+{
+  "original_path": "extraction/output/qwen_qwen3.7-plus_8/debug/images/w02-1-PWM和舵机_p13_img4.jpeg",
+  "enhanced_path": "extraction/output/qwen_qwen3.7-plus_8/debug/images/w02-1-PWM和舵机_p13_img4_enhanced.jpeg",
+  "description": "类型：示意图\n图片展示了Arduino Uno开发板与舵机的硬件接线连接。左侧为Arduino Uno主板，右侧为黑色舵机。两者通过三根导线相连：黄色导线从Uno板数字引脚9（DIGITAL PINS区域）连接至舵机信号端；红色导线从Uno板5V电源引脚（POWER区域）连接至舵机电源端；黑色导线从Uno板GND引脚连接至舵机地线端。图中清晰呈现了控制板与执行器之间的物理接口及连线对应关系。",
+  "metadata": {
+    "generation": {
+      "method": "qwen_api",
+      "backend": "api",
+      "provider": "qwen",
+      "model": "qwen3.7-plus",
+      "status": "success",
+      "api_error": null
+    },
+    "review": {
+      "required": false,
+      "status": null,
+      "reason": null,
+      "course_relevant": true
+    }
+  },
+  "error": null,
+  "method": "qwen_api",
+  "backend": "api",
+  "provider": "qwen",
+  "model": "qwen3.7-plus",
+  "status": "success",
+  "api_error": null,
+  "indexable": true,
+  "review_required": false,
+  "review_reason": null,
+  "review_status": null,
+  "course_relevant": true
+}

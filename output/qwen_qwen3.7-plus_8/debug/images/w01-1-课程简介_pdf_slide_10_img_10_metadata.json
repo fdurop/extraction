@@ -1,0 +1,33 @@
+{
+  "original_path": "extraction/output/qwen_qwen3.7-plus_8/debug/images/w01-1-课程简介_p10_img11.jpeg",
+  "enhanced_path": "extraction/output/qwen_qwen3.7-plus_8/debug/images/w01-1-课程简介_p10_img11_enhanced.jpeg",
+  "description": "类型：照片\n图片展示了一套放置在金属框架桌上的机电实验装置。主体为底部的铝合金直线运动平台（丝杆滑台），滑块上安装有黑色组件。平台上方通过支架固定着一块黑色控制面板，面板上可见绿色电路板、旋钮、仪表及接线端子，面板印有“Altron”标识。装置底部悬挂一根细线，末端系有一个金色圆锥摆锤。背景为灰色地毯和桌腿。",
+  "metadata": {
+    "generation": {
+      "method": "qwen_api",
+      "backend": "api",
+      "provider": "qwen",
+      "model": "qwen3.7-plus",
+      "status": "success",
+      "api_error": null
+    },
+    "review": {
+      "required": false,
+      "status": null,
+      "reason": null,
+      "course_relevant": true
+    }
+  },
+  "error": null,
+  "method": "qwen_api",
+  "backend": "api",
+  "provider": "qwen",
+  "model": "qwen3.7-plus",
+  "status": "success",
+  "api_error": null,
+  "indexable": true,
+  "review_required": false,
+  "review_reason": null,
+  "review_status": null,
+  "course_relevant": true
+}

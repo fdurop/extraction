@@ -1,0 +1,33 @@
+{
+  "original_path": "extraction/output/qwen_qwen3.7-plus_8/debug/images/w01-2-Arduino软硬件基础_p10_img4.jpeg",
+  "enhanced_path": "extraction/output/qwen_qwen3.7-plus_8/debug/images/w01-2-Arduino软硬件基础_p10_img4_enhanced.jpeg",
+  "description": "类型：照片\n图片展示了一个安装在绿色底板上的电子模块组件。主体包含一排（约8个）白色长方体继电器，侧面印有“ Relay”字样。继电器两侧及下方分布着多个绿色接线端子排。多根红色、蓝色、黑色和黄色的导线将下方的端子与上方的模块连接，部分导线端头压接了黄色管状端子。右侧竖立着一块带有绿色端子的电路板，左上角可见黑色风扇局部。该图展示了机电系统中的继电器模组实物及其接线状态。",
+  "metadata": {
+    "generation": {
+      "method": "qwen_api",
+      "backend": "api",
+      "provider": "qwen",
+      "model": "qwen3.7-plus",
+      "status": "success",
+      "api_error": null
+    },
+    "review": {
+      "required": false,
+      "status": null,
+      "reason": null,
+      "course_relevant": true
+    }
+  },
+  "error": null,
+  "method": "qwen_api",
+  "backend": "api",
+  "provider": "qwen",
+  "model": "qwen3.7-plus",
+  "status": "success",
+  "api_error": null,
+  "indexable": true,
+  "review_required": false,
+  "review_reason": null,
+  "review_status": null,
+  "course_relevant": true
+}

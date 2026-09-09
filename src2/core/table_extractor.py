@@ -8,6 +8,7 @@ import os
 import pandas as pd
 from typing import List, Dict, Any, Optional
 from .table_validator import TableValidator
+from .table_image_preprocessor import TableImagePreprocessor
 
 
 class TableExtractor:
@@ -21,6 +22,7 @@ class TableExtractor:
         self.logger = logger
         self.vlm_client = vlm_client
         self.validator = TableValidator()
+        self.image_preprocessor = TableImagePreprocessor()
     
     def extract_tables_from_pdf_page(self, page, page_text: str = "", method: str = "auto") -> List[Dict[str, Any]]:
         """
@@ -116,35 +118,127 @@ class TableExtractor:
     ) -> List[Dict[str, Any]]:
         if not self.vlm_client:
             return []
+        candidates = []
+        last_error = None
         try:
-            response = self.vlm_client.recognize_table(image_path, context=context)
-            if not response.get("has_table", True):
-                return []
-            table = {
-                **response,
-                "source_image": image_path,
-                "source_type": "image_vlm_table",
-                "extraction_method": f"{getattr(self.vlm_client, 'provider', 'vlm')}_api_table",
-                "backend": "api",
-                "provider": getattr(self.vlm_client, "provider", None),
-                "model": getattr(self.vlm_client, "model", None),
-                "image_index": image_index,
-            }
-            return [table]
+            for attempt, variant in enumerate(self.image_preprocessor.variants(image_path), 1):
+                try:
+                    response = self.vlm_client.recognize_table(variant.path, context=context)
+                except Exception as exc:
+                    last_error = exc
+                    # A rotated copy cannot repair a network/API failure. Stop here so
+                    # one timeout does not multiply into three paid retry sequences.
+                    break
+                if not response.get("has_table", True):
+                    continue
+
+                raw_tables = response.get("tables")
+                if not isinstance(raw_tables, list):
+                    # Backward compatibility for responses produced by the old prompt.
+                    raw_tables = [response]
+                raw_tables = [item for item in raw_tables if isinstance(item, dict)]
+                visible_count = response.get("visible_table_count")
+                coverage_complete = response.get("coverage_complete")
+                attempt_tables = []
+                for region_index, raw_table in enumerate(raw_tables):
+                    table = self.validator.validate({
+                        **raw_table,
+                        "source_image": image_path,
+                        "recognition_image_path": variant.path,
+                        "source_type": "image_vlm_table",
+                        "extraction_method": f"{getattr(self.vlm_client, 'provider', 'vlm')}_api_table",
+                        "backend": "api",
+                        "provider": getattr(self.vlm_client, "provider", None),
+                        "model": getattr(self.vlm_client, "model", None),
+                        "image_index": image_index,
+                        "table_region_index": region_index + 1,
+                        "visible_table_count": visible_count,
+                        "extracted_table_count": len(raw_tables),
+                        "coverage_complete": coverage_complete,
+                        "raw_response": response.get("raw_response", ""),
+                        "preprocessing": {
+                            "rotation": variant.rotation,
+                            "scale": variant.scale,
+                            "attempt": attempt,
+                        },
+                    })
+                    candidates.append(table)
+                    attempt_tables.append(table)
+                if attempt_tables and all(not table.get("review_required") for table in attempt_tables):
+                    if self.logger:
+                        self.logger.info(
+                            "表格图像识别通过: source=%s tables=%s rotation=%s scale=%s attempt=%s",
+                            image_path,
+                            len(attempt_tables),
+                            variant.rotation,
+                            variant.scale,
+                            attempt,
+                        )
+                    return attempt_tables
+                review_issues = {
+                    issue
+                    for table in attempt_tables
+                    for issue in table.get("validation_issues", [])
+                }
+                if attempt_tables and review_issues == {"multiple_tables_require_review"}:
+                    # The extraction is structurally complete; rotation would only
+                    # repeat a paid request. Keep all regions for teacher review.
+                    return attempt_tables
+
+            if candidates:
+                # Keep every region from the strongest preprocessing attempt so
+                # teacher review can repair an omitted or uncertain table.
+                attempt_numbers = {
+                    (item.get("preprocessing") or {}).get("attempt", 1)
+                    for item in candidates
+                }
+                best_attempt = max(
+                    attempt_numbers,
+                    key=lambda number: (
+                        max(
+                            int(item.get("extracted_table_count") or 0)
+                            for item in candidates
+                            if (item.get("preprocessing") or {}).get("attempt", 1) == number
+                        ),
+                        max(
+                            float(item.get("confidence") or 0.0)
+                            for item in candidates
+                            if (item.get("preprocessing") or {}).get("attempt", 1) == number
+                        ),
+                        -number,
+                    ),
+                )
+                return [
+                    item for item in candidates
+                    if (item.get("preprocessing") or {}).get("attempt", 1) == best_attempt
+                ]
         except Exception as exc:
+            last_error = exc
+
+        if last_error:
             if self.logger:
-                self.logger.error(f"表格视觉识别失败: {exc}")
+                self.logger.error(f"表格视觉识别失败: {last_error}")
             return [{
                 "source_image": image_path,
                 "source_type": "image_vlm_table",
                 "extraction_method": "vlm_table",
                 "headers": [],
                 "cells": [],
-                "api_error": str(exc),
+                "api_error": str(last_error),
                 "review_required": True,
                 "review_reason": "api_failed",
                 "image_index": image_index,
             }]
+        return [{
+            "source_image": image_path,
+            "source_type": "image_vlm_table",
+            "extraction_method": "vlm_table_preprocessed",
+            "headers": [],
+            "cells": [],
+            "review_required": True,
+            "review_reason": "table_not_detected_after_rotation",
+            "image_index": image_index,
+        }]
 
     def finalize_page(self, tables: List[Dict[str, Any]]) -> List[Dict[str, Any]]:
         return self.validator.validate_many(tables)

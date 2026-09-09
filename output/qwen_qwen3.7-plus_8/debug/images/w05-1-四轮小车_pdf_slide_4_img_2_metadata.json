@@ -1,0 +1,33 @@
+{
+  "original_path": "extraction/output/qwen_qwen3.7-plus_8/debug/images/w05-1-四轮小车_p4_img3.png",
+  "enhanced_path": "extraction/output/qwen_qwen3.7-plus_8/debug/images/w05-1-四轮小车_p4_img3_enhanced.png",
+  "description": "类型：示意图\n图片包含上下两个电路原理图，展示电机换向逻辑。左侧为红、绿两根输入导线。中间是两个垂直排列的矩形框，代表联动的双刀双掷开关，内部触点通过虚线连接表示机械同步。右侧是一个标有字母“M”的圆形符号代表电机，旁边有弧形箭头指示旋转方向。\n上方电路中，红色导线经开关连接电机上端，绿色导线连接下端，电机旁箭头指向顺时针方向。\n下方电路中，开关状态改变，绿色导线经开关连接电机上端，红色导线连接下端，电机旁箭头指向逆时针方向。\n图中通过开关切换改变了红绿导线与电机两端的连接关系，从而改变了电流流向和电机转向。",
+  "metadata": {
+    "generation": {
+      "method": "qwen_api",
+      "backend": "api",
+      "provider": "qwen",
+      "model": "qwen3.7-plus",
+      "status": "success",
+      "api_error": null
+    },
+    "review": {
+      "required": false,
+      "status": null,
+      "reason": null,
+      "course_relevant": true
+    }
+  },
+  "error": null,
+  "method": "qwen_api",
+  "backend": "api",
+  "provider": "qwen",
+  "model": "qwen3.7-plus",
+  "status": "success",
+  "api_error": null,
+  "indexable": true,
+  "review_required": false,
+  "review_reason": null,
+  "review_status": null,
+  "course_relevant": true
+}

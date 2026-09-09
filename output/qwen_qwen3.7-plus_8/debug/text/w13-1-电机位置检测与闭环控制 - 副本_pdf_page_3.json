@@ -1,0 +1,18 @@
+{
+  "page_num": 2,
+  "raw_text": "机电系统原理及实践—— 电机位置检测与闭环控制\n机电智控实验室tangguoan@fudan.edu.cn mmguo@fudan.edu.cn\n§1 编码器（encoder）概述\n用于提供反馈，将角位移或线位移转换为电信号的装置。\n感知位置，方向，速度，或计数，广泛应用于高度、行程、角度及速度的可\n靠或精确测量。\n分类\n16-3\n检测能力\n增量式\n（Incremental）\n单圈绝对值式\n（Absolute）\n多圈绝对值式\n传感器形式\n光电式\n霍尔式\n磁阻式\n电容式\n光电式\n霍尔式\n磁阻式\n电容式\n结构\n复杂\n简单\n较复杂\n灵活\n体积\n较大\n小\n较小\n小\n精度\n高\n较高\n高\n高\n成本\n较高\n低\n较低\n较低\n环境要求\n高\n低\n低\n低\n抗干扰\n弱\n一般\n强\n高\n特点\n",
+  "cleaned_text": "§1 编码器（encoder）概述\n用于提供反馈，将角位移或线位移转换为电信号的装置。\n感知位置，方向，速度，或计数，广泛应用于高度、行程、角度及速度的可\n靠或精确测量。\n分类\n检测能力\n增量式\n（Incremental）\n单圈绝对值式\n（Absolute）\n多圈绝对值式\n传感器形式\n光电式\n霍尔式\n磁阻式\n电容式\n光电式\n霍尔式\n磁阻式\n电容式\n结构\n复杂\n简单\n较复杂\n灵活\n体积\n较大\n小\n较小\n小\n精度\n高\n较高\n高\n高\n成本\n较高\n低\n较低\n较低\n环境要求\n高\n低\n低\n低\n抗干扰\n弱\n一般\n强\n高\n特点",
+  "key_points": [
+    "用于提供反馈，将角位移或线位移转换为电信号的装置。",
+    "靠或精确测量。"
+  ],
+  "technical_terms": [],
+  "has_images": false,
+  "image_count": 0,
+  "image_paths": [],
+  "metadata": {
+    "char_count": 341,
+    "word_count": 57,
+    "line_count": 55
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "original_path": "extraction/output/qwen_qwen3.7-plus_9/debug/images/w03-1-直流电机原理_p10_img4.jpeg",
+  "enhanced_path": "extraction/output/qwen_qwen3.7-plus_9/debug/images/w03-1-直流电机原理_p10_img4_enhanced.jpeg",
+  "description": "类型：示意图\n图片展示了无刷直流电机的横截面结构。中心为圆柱形转子（rotor），分为上下两部分，上部红色区域标有“N”，下部蓝色区域标有“S”。转子外围均匀分布着三个定子（stator）铁芯及绕组，分别位于顶部、左下和右下位置，彼此呈120度排列。红色线条代表导线，连接三个定子绕组，线上标有黑色箭头指示电流流向。图中通过引线明确标注了“转子 (rotor)”和“定子 (stator)”。",
+  "metadata": {
+    "generation": {
+      "method": "qwen_api",
+      "backend": "api",
+      "provider": "qwen",
+      "model": "qwen3.7-plus",
+      "status": "success",
+      "api_error": null
+    },
+    "review": {
+      "required": false,
+      "status": null,
+      "reason": null,
+      "course_relevant": true
+    }
+  },
+  "error": null,
+  "method": "qwen_api",
+  "backend": "api",
+  "provider": "qwen",
+  "model": "qwen3.7-plus",
+  "status": "success",
+  "api_error": null,
+  "indexable": true,
+  "review_required": false,
+  "review_reason": null,
+  "review_status": null,
+  "course_relevant": true
+}

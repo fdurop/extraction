@@ -1,0 +1,19 @@
+{
+  "page_num": 7,
+  "raw_text": "机电系统原理及实践—— 机电系统在动力学与控制中的应用\n机电智控实验室tangguoan@fudan.edu.cn mmguo@fudan.edu.cn\n16-8\n§3.2 输入整形——算法\n෤𝑣s(𝑡) = 0.5[𝑣s(𝑡) + 𝑣s(𝑡−2𝜏)]\n(\n)\n0\n0\n3\n0\n6\n(\n)\n0\n( )\n0\nothers\ns\nLt T\nt\nt\nT\nT\nv t\n−\n\n\n\n= \n\n整形前\n整形后\n",
+  "cleaned_text": "§3.2 输入整形——算法\n෤𝑣s(𝑡) = 0.5[𝑣s(𝑡) + 𝑣s(𝑡−2𝜏)]\n(\n)\n0\n0\n3\n0\n6\n(\n)\n0\n( )\n0\nothers\ns\nLt T\nt\nt\nT\nT\nv t\n−\n=\n整形前\n整形后",
+  "key_points": [
+    "Lt T",
+    "T",
+    "T"
+  ],
+  "technical_terms": [],
+  "has_images": false,
+  "image_count": 0,
+  "image_paths": [],
+  "metadata": {
+    "char_count": 203,
+    "word_count": 44,
+    "line_count": 34
+  }
+}

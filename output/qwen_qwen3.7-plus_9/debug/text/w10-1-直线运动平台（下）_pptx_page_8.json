@@ -1,0 +1,21 @@
+{
+  "page_num": 7,
+  "raw_text": "§3.3 \n实践：\n滑台的简谐运动\n17-\nw10-s6-sliderHarmonicMotion\n.ino\n限时 \n30 \n分钟",
+  "cleaned_text": "§3.3\n实践：\n滑台的简谐运动\nw10-s6-sliderHarmonicMotion\n.ino\n限时\n30\n分钟",
+  "key_points": [
+    "实践："
+  ],
+  "technical_terms": [
+    "w10-s6-sliderHarmonicMotion"
+  ],
+  "has_images": true,
+  "image_count": 1,
+  "image_paths": [
+    "extraction/output/qwen_qwen3.7-plus_9/debug/images/w10-1-直线运动平台（下）_slide_8_img_1.png"
+  ],
+  "metadata": {
+    "char_count": 65,
+    "word_count": 9,
+    "line_count": 9
+  }
+}

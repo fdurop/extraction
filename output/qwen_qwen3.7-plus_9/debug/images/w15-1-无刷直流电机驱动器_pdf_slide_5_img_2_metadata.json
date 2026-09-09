@@ -1,0 +1,33 @@
+{
+  "original_path": "extraction/output/qwen_qwen3.7-plus_9/debug/images/w15-1-无刷直流电机驱动器_p5_img4.jpeg",
+  "enhanced_path": "extraction/output/qwen_qwen3.7-plus_9/debug/images/w15-1-无刷直流电机驱动器_p5_img4_enhanced.jpeg",
+  "description": "类型：示意图\n图中展示了无刷直流电机驱动电路结构。左侧为接电源+和接电源-，分别连接至两个接线端子方框。中间排列三个单刀双掷开关模块，通过红色、绿色导线与接线端子相连。右侧为电机圆形符号，内部包含U、V、W三相绕组（以锯齿状电阻符号表示）。单刀双掷开关的输出端分别通过红、绿、蓝三色导线连接至电机的U、V、W端子。结合页面上下文表格，该图对应6步换相逻辑，展示了通过开关组合改变U、V、W三相电流方向（+、-、×）以驱动电机的拓扑关系。",
+  "metadata": {
+    "generation": {
+      "method": "qwen_api",
+      "backend": "api",
+      "provider": "qwen",
+      "model": "qwen3.7-plus",
+      "status": "success",
+      "api_error": null
+    },
+    "review": {
+      "required": false,
+      "status": null,
+      "reason": null,
+      "course_relevant": true
+    }
+  },
+  "error": null,
+  "method": "qwen_api",
+  "backend": "api",
+  "provider": "qwen",
+  "model": "qwen3.7-plus",
+  "status": "success",
+  "api_error": null,
+  "indexable": true,
+  "review_required": false,
+  "review_reason": null,
+  "review_status": null,
+  "course_relevant": true
+}

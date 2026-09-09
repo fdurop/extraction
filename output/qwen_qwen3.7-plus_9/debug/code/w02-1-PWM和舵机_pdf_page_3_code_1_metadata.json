@@ -1,0 +1,14 @@
+{
+  "source_image": "extraction/output/qwen_qwen3.7-plus_9/debug/images/w02-1-PWM和舵机_p3_img5.jpeg",
+  "extraction_method": "qwen_api_智能识别",
+  "language": "cpp",
+  "description": "Arduino程序的主循环函数，通过控制内置LED的亮灭时间来实现LED闪烁效果。使用占空比(duty)和周期(cycle)参数来控制LED点亮和熄灭的时长比例。",
+  "code_file": "w02-1-PWM和舵机_pdf_page_3_code_1.cpp",
+  "page": 3,
+  "index": 1,
+  "timestamp": "2026-09-09T20:57:24.546659",
+  "raw_response": "语言: C/C++ (Arduino)\n```cpp\nvoid loop() {\n  int cycle = 20;    // 明暗周期，单位\n  float duty = 1;    // 占空比，表示点\n\n  // digitalWrite: 向指定数字端口输出\n  digitalWrite(LED_BUILTIN, HIGH);\n  delay(duty * cycle);\n  digitalWrite(LED_BUILTIN, LOW);\n  delay(cycle * (1 - duty));\n}\n```\n功能: Arduino程序的主循环函数，通过控制内置LED的亮灭时间来实现LED闪烁效果。使用占空比(duty)和周期(cycle)参数来控制LED点亮和熄灭的时长比例。",
+  "backend": "api",
+  "provider": "qwen",
+  "model": "qwen3.7-plus"
+}

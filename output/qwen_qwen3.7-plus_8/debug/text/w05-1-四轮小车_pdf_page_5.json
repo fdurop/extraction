@@ -1,0 +1,24 @@
+{
+  "page_num": 4,
+  "raw_text": "机电系统原理及实践—— 四轮小车\n机电智控实验室tangguoan@fudan.edu.cn mmguo@fudan.edu.cn\n§2 硬件方案\n15-5\n直\n流\n电\n机\n减速器\n联轴器\n车轮\n直\n流\n电\n机\n减速器\n联轴器\n车轮\n直\n流\n电\n机\n减速器\n联轴器\n车轮\n直\n流\n电\n机\n减速器\n联轴器\n车轮\n前进\n后退\n12V\n锂电池\nLED\n开关\n12V供电插头\n马达\n端子\n马达\n端子\n总体结构\n外视图\n内视图\n通过接口分隔模块\n直流\n电机\n减速器\n联轴器\n自锁式\n按钮开关\nLED\n(与开关联动)\n联轴器螺丝\n对准转轴扁位\n室 复旦大\n智控实验室 复旦大学 机电\n学 机电智控实验室 复旦大学 机电智控实验\n复旦大学 机电智控实验室 复旦大学 机电智控实验室 复旦\n大学 机电智控实验室 复旦大学 机电智控实验室 复旦大学 机电\n电智控实验室 复旦大学 机电智控实验室 复旦大学 机电智控实\n验室 复旦大学 机电智控实验室 复旦大学 机电智控实验室 \n旦大学 机电智控实验室 复旦大学 机电智控\n电智控实验室 复旦大学 \n验室 复\n",
+  "cleaned_text": "§2 硬件方案\n直\n流\n电\n机\n减速器\n联轴器\n车轮\n直\n流\n电\n机\n减速器\n联轴器\n车轮\n直\n流\n电\n机\n减速器\n联轴器\n车轮\n直\n流\n电\n机\n减速器\n联轴器\n车轮\n前进\n后退\n12V\n锂电池\nLED\n开关\n12V供电插头\n马达\n端子\n马达\n端子\n总体结构\n外视图\n内视图\n通过接口分隔模块\n直流\n电机\n减速器\n联轴器\n自锁式\n按钮开关\nLED\n(与开关联动)\n联轴器螺丝\n对准转轴扁位",
+  "key_points": [
+    "LED",
+    "LED"
+  ],
+  "technical_terms": [
+    "LED"
+  ],
+  "has_images": true,
+  "image_count": 3,
+  "image_paths": [
+    "extraction/output/qwen_qwen3.7-plus_8/debug/images/w05-1-四轮小车_p5_img2.jpeg",
+    "extraction/output/qwen_qwen3.7-plus_8/debug/images/w05-1-四轮小车_p5_img3.jpeg",
+    "extraction/output/qwen_qwen3.7-plus_8/debug/images/w05-1-四轮小车_p5_img4.jpeg"
+  ],
+  "metadata": {
+    "char_count": 470,
+    "word_count": 98,
+    "line_count": 68
+  }
+}

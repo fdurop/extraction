@@ -1,0 +1,33 @@
+{
+  "original_path": "extraction/output/qwen_qwen3.7-plus_8/debug/images/w05-1-四轮小车_p3_img3.png",
+  "enhanced_path": "extraction/output/qwen_qwen3.7-plus_8/debug/images/w05-1-四轮小车_p3_img3_enhanced.png",
+  "description": "类型：示意图\n图中展示了一个电机控制电路。左侧为输入端，包含红色和绿色导线连接至四个圆形端子。中间组件标注为“双刀双掷开关”，包含两组联动的机械触点臂。右侧为一个圆圈，内部标有大写字母“M”，下方标注文字“电机”。开关的上下两组动触点分别通过黑色导线连接至电机的上下两端。该图配合页面标题“手动换向”，展示了利用双刀双掷开关改变电机接线极性以控制转向的物理连接方式。",
+  "metadata": {
+    "generation": {
+      "method": "qwen_api",
+      "backend": "api",
+      "provider": "qwen",
+      "model": "qwen3.7-plus",
+      "status": "success",
+      "api_error": null
+    },
+    "review": {
+      "required": false,
+      "status": null,
+      "reason": null,
+      "course_relevant": true
+    }
+  },
+  "error": null,
+  "method": "qwen_api",
+  "backend": "api",
+  "provider": "qwen",
+  "model": "qwen3.7-plus",
+  "status": "success",
+  "api_error": null,
+  "indexable": true,
+  "review_required": false,
+  "review_reason": null,
+  "review_status": null,
+  "course_relevant": true
+}

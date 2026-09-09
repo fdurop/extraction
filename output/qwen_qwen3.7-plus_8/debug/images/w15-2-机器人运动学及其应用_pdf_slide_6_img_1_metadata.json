@@ -1,0 +1,33 @@
+{
+  "original_path": "extraction/output/qwen_qwen3.7-plus_8/debug/images/w15-2-机器人运动学及其应用_p6_img3.jpeg",
+  "enhanced_path": "extraction/output/qwen_qwen3.7-plus_8/debug/images/w15-2-机器人运动学及其应用_p6_img3_enhanced.jpeg",
+  "description": "类型：示意图\n图片展示了一个串联机器人关节模组的三维结构。主体包含两个圆柱形电机（或减速器）组件，呈一定角度连接，表面可见散热棱纹及端盖螺丝细节。电机输出端通过销轴连接一根白色的长条形连杆，连杆另一端设有安装孔。整体呈现典型的机器人腿部或手臂关节机械构造，对应页面文本中“机器狗腿”的示例。",
+  "metadata": {
+    "generation": {
+      "method": "qwen_api",
+      "backend": "api",
+      "provider": "qwen",
+      "model": "qwen3.7-plus",
+      "status": "success",
+      "api_error": null
+    },
+    "review": {
+      "required": false,
+      "status": null,
+      "reason": null,
+      "course_relevant": true
+    }
+  },
+  "error": null,
+  "method": "qwen_api",
+  "backend": "api",
+  "provider": "qwen",
+  "model": "qwen3.7-plus",
+  "status": "success",
+  "api_error": null,
+  "indexable": true,
+  "review_required": false,
+  "review_reason": null,
+  "review_status": null,
+  "course_relevant": true
+}

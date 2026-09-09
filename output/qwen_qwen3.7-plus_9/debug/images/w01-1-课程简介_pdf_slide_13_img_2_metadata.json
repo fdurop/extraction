@@ -1,0 +1,33 @@
+{
+  "original_path": "extraction/output/qwen_qwen3.7-plus_9/debug/images/w01-1-课程简介_p13_img3.jpeg",
+  "enhanced_path": "extraction/output/qwen_qwen3.7-plus_9/debug/images/w01-1-课程简介_p13_img3_enhanced.jpeg",
+  "description": "类型：照片\n图片展示了一个放置在白色平面上的机电装置实物。该装置主体由两根平行的金属杆连接左右两部分组件。左侧组件包含两个上下排列的黑色圆柱形电机，固定在银色金属支架上，可见红黑导线连接；右侧组件为一个黑色矩形盒子，侧面引出一根蓝色气管，金属杆末端安装有灰色的轮子。结合上下文，这是课程介绍的足式机器人实践平台迭代过程中的第一代原型机。",
+  "metadata": {
+    "generation": {
+      "method": "qwen_api",
+      "backend": "api",
+      "provider": "qwen",
+      "model": "qwen3.7-plus",
+      "status": "success",
+      "api_error": null
+    },
+    "review": {
+      "required": false,
+      "status": null,
+      "reason": null,
+      "course_relevant": true
+    }
+  },
+  "error": null,
+  "method": "qwen_api",
+  "backend": "api",
+  "provider": "qwen",
+  "model": "qwen3.7-plus",
+  "status": "success",
+  "api_error": null,
+  "indexable": true,
+  "review_required": false,
+  "review_reason": null,
+  "review_status": null,
+  "course_relevant": true
+}

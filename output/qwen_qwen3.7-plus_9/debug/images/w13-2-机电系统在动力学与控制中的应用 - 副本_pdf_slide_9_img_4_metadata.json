@@ -1,0 +1,33 @@
+{
+  "original_path": "extraction/output/qwen_qwen3.7-plus_9/debug/images/w13-2-机电系统在动力学与控制中的应用 - 副本_p9_img6.jpeg",
+  "enhanced_path": "extraction/output/qwen_qwen3.7-plus_9/debug/images/w13-2-机电系统在动力学与控制中的应用 - 副本_p9_img6_enhanced.jpeg",
+  "description": "类型：照片\n图片展示了一个在轨道上运行的大型航天器（外观类似哈勃空间望远镜）。主体呈黑色圆柱形，表面覆盖有银色多层隔热材料，两侧对称展开着巨大的矩形太阳能电池帆板。航天器底部连接着白色的推进器或对接组件，右侧伸出一根细长的杆状结构（疑似天线或传感器吊杆）。背景为地球大气层边缘及深邃的太空环境。",
+  "metadata": {
+    "generation": {
+      "method": "qwen_api",
+      "backend": "api",
+      "provider": "qwen",
+      "model": "qwen3.7-plus",
+      "status": "success",
+      "api_error": null
+    },
+    "review": {
+      "required": false,
+      "status": null,
+      "reason": null,
+      "course_relevant": true
+    }
+  },
+  "error": null,
+  "method": "qwen_api",
+  "backend": "api",
+  "provider": "qwen",
+  "model": "qwen3.7-plus",
+  "status": "success",
+  "api_error": null,
+  "indexable": true,
+  "review_required": false,
+  "review_reason": null,
+  "review_status": null,
+  "course_relevant": true
+}

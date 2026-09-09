@@ -1,0 +1,20 @@
+{
+  "page_num": 1,
+  "raw_text": "机电系统原理及实践—— 电机位置检测与闭环控制\n机电智控实验室tangguoan@fudan.edu.cn mmguo@fudan.edu.cn\n内容提要\n16-2\n编码器概述\n光电编码器\n霍尔编码器\n步进电机闭环控制\n实践：用编码器对步进电机进行闭环控制\n",
+  "cleaned_text": "内容提要\n编码器概述\n光电编码器\n霍尔编码器\n步进电机闭环控制\n实践：用编码器对步进电机进行闭环控制",
+  "key_points": [],
+  "technical_terms": [
+    "器对步进电机进行闭环控制",
+    "步进电机",
+    "步进电机闭环控制",
+    "用编码器对步进电机"
+  ],
+  "has_images": false,
+  "image_count": 0,
+  "image_paths": [],
+  "metadata": {
+    "char_count": 129,
+    "word_count": 11,
+    "line_count": 10
+  }
+}

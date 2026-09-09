@@ -1,0 +1,760 @@
+[
+  {
+    "document_id": "doc_9338cee6f421",
+    "user_id": "default_user",
+    "username": "default_user",
+    "course_id": "default_course",
+    "course_name": "default_course",
+    "job_id": "",
+    "file_name": "w01-1-课程简介",
+    "file_type": "pdf",
+    "file_path": "extraction/input/w01-1-课程简介.pdf",
+    "page_count": 19,
+    "chapter_title": "w01-1-课程简介_pdf",
+    "document_order": null,
+    "metadata": {
+      "filename": "extraction/input/w01-1-课程简介.pdf",
+      "format": "pdf",
+      "total_pages": 19,
+      "pdf_metadata": {
+        "format": "PDF 1.7",
+        "title": "机电系统原理及实践",
+        "author": "郭 明旻",
+        "subject": "",
+        "keywords": "",
+        "creator": "Acrobat PDFMaker 25 PowerPoint 版",
+        "producer": "Adobe PDF Library 25.1.231",
+        "creationDate": "20260302120121+08'00'",
+        "modDate": "20260302120335+08'00'",
+        "trapped": "",
+        "encryption": "Standard V5 R6 256-bit AES"
+      },
+      "file_name": "w01-1-课程简介",
+      "file_type": "pdf",
+      "file_path": "extraction/input/w01-1-课程简介.pdf"
+    }
+  },
+  {
+    "document_id": "doc_763640211857",
+    "user_id": "default_user",
+    "username": "default_user",
+    "course_id": "default_course",
+    "course_name": "default_course",
+    "job_id": "",
+    "file_name": "w01-2-Arduino软硬件基础",
+    "file_type": "pdf",
+    "file_path": "extraction/input/w01-2-Arduino软硬件基础.pdf",
+    "page_count": 15,
+    "chapter_title": "w01-2-Arduino软硬件基础_pdf",
+    "document_order": null,
+    "metadata": {
+      "filename": "extraction/input/w01-2-Arduino软硬件基础.pdf",
+      "format": "pdf",
+      "total_pages": 15,
+      "pdf_metadata": {
+        "format": "PDF 1.7",
+        "title": "机电系统原理及实践",
+        "author": "郭 明旻",
+        "subject": "",
+        "keywords": "",
+        "creator": "Acrobat PDFMaker 25 PowerPoint 版",
+        "producer": "Adobe PDF Library 25.1.231",
+        "creationDate": "20260302120152+08'00'",
+        "modDate": "20260302120344+08'00'",
+        "trapped": "",
+        "encryption": "Standard V5 R6 256-bit AES"
+      },
+      "file_name": "w01-2-Arduino软硬件基础",
+      "file_type": "pdf",
+      "file_path": "extraction/input/w01-2-Arduino软硬件基础.pdf"
+    }
+  },
+  {
+    "document_id": "doc_da537f45bb70",
+    "user_id": "default_user",
+    "username": "default_user",
+    "course_id": "default_course",
+    "course_name": "default_course",
+    "job_id": "",
+    "file_name": "w02-1-PWM和舵机",
+    "file_type": "pdf",
+    "file_path": "extraction/input/w02-1-PWM和舵机.pdf",
+    "page_count": 16,
+    "chapter_title": "w02-1-PWM和舵机_pdf",
+    "document_order": null,
+    "metadata": {
+      "filename": "extraction/input/w02-1-PWM和舵机.pdf",
+      "format": "pdf",
+      "total_pages": 16,
+      "pdf_metadata": {
+        "format": "PDF 1.7",
+        "title": "机电系统原理及实践",
+        "author": "郭 明旻",
+        "subject": "",
+        "keywords": "",
+        "creator": "Acrobat PDFMaker 25 PowerPoint 版",
+        "producer": "Adobe PDF Library 25.1.231",
+        "creationDate": "20260308185722+08'00'",
+        "modDate": "20260308185907+08'00'",
+        "trapped": "",
+        "encryption": "Standard V5 R6 256-bit AES"
+      },
+      "file_name": "w02-1-PWM和舵机",
+      "file_type": "pdf",
+      "file_path": "extraction/input/w02-1-PWM和舵机.pdf"
+    }
+  },
+  {
+    "document_id": "doc_a66076373d6c",
+    "user_id": "default_user",
+    "username": "default_user",
+    "course_id": "default_course",
+    "course_name": "default_course",
+    "job_id": "",
+    "file_name": "w03-1-直流电机原理",
+    "file_type": "pdf",
+    "file_path": "extraction/input/w03-1-直流电机原理.pdf",
+    "page_count": 21,
+    "chapter_title": "w03-1-直流电机原理_pdf",
+    "document_order": null,
+    "metadata": {
+      "filename": "extraction/input/w03-1-直流电机原理.pdf",
+      "format": "pdf",
+      "total_pages": 21,
+      "pdf_metadata": {
+        "format": "PDF 1.7",
+        "title": "机电系统原理及实践",
+        "author": "郭 明旻",
+        "subject": "",
+        "keywords": "",
+        "creator": "Acrobat PDFMaker 25 PowerPoint 版",
+        "producer": "Adobe PDF Library 25.1.40",
+        "creationDate": "20260315140830+08'00'",
+        "modDate": "20260315140913+08'00'",
+        "trapped": "",
+        "encryption": "Standard V5 R6 256-bit AES"
+      },
+      "file_name": "w03-1-直流电机原理",
+      "file_type": "pdf",
+      "file_path": "extraction/input/w03-1-直流电机原理.pdf"
+    }
+  },
+  {
+    "document_id": "doc_62cf230e7410",
+    "user_id": "default_user",
+    "username": "default_user",
+    "course_id": "default_course",
+    "course_name": "default_course",
+    "job_id": "",
+    "file_name": "w04-1-有刷直流电机驱动器及其应用",
+    "file_type": "pptx",
+    "file_path": "extraction/input/w04-1-有刷直流电机驱动器及其应用.pptx",
+    "page_count": 24,
+    "chapter_title": "w04-1-有刷直流电机驱动器及其应用_pptx",
+    "document_order": null,
+    "metadata": {
+      "filename": "extraction/input/w04-1-有刷直流电机驱动器及其应用.pptx",
+      "format": "pptx",
+      "total_slides": 24,
+      "image_mapping": {
+        "11": [
+          "extraction/output/qwen_qwen3.7-plus_9/debug/images/w04-1-有刷直流电机驱动器及其应用_slide_11_vector_fallback.png"
+        ],
+        "12": [
+          "extraction/output/qwen_qwen3.7-plus_9/debug/images/w04-1-有刷直流电机驱动器及其应用_slide_12_img_1.png"
+        ],
+        "14": [
+          "extraction/output/qwen_qwen3.7-plus_9/debug/images/w04-1-有刷直流电机驱动器及其应用_slide_14_img_1.png"
+        ],
+        "15": [
+          "extraction/output/qwen_qwen3.7-plus_9/debug/images/w04-1-有刷直流电机驱动器及其应用_slide_15_img_1.png"
+        ],
+        "16": [
+          "extraction/output/qwen_qwen3.7-plus_9/debug/images/w04-1-有刷直流电机驱动器及其应用_slide_16_img_1.png",
+          "extraction/output/qwen_qwen3.7-plus_9/debug/images/w04-1-有刷直流电机驱动器及其应用_slide_16_img_2.png"
+        ],
+        "17": [
+          "extraction/output/qwen_qwen3.7-plus_9/debug/images/w04-1-有刷直流电机驱动器及其应用_slide_17_img_1.jpeg"
+        ],
+        "18": [
+          "extraction/output/qwen_qwen3.7-plus_9/debug/images/w04-1-有刷直流电机驱动器及其应用_slide_18_img_1.png",
+          "extraction/output/qwen_qwen3.7-plus_9/debug/images/w04-1-有刷直流电机驱动器及其应用_slide_18_img_2.png",
+          "extraction/output/qwen_qwen3.7-plus_9/debug/images/w04-1-有刷直流电机驱动器及其应用_slide_18_img_3.png",
+          "extraction/output/qwen_qwen3.7-plus_9/debug/images/w04-1-有刷直流电机驱动器及其应用_slide_18_img_4.png",
+          "extraction/output/qwen_qwen3.7-plus_9/debug/images/w04-1-有刷直流电机驱动器及其应用_slide_18_img_5.png",
+          "extraction/output/qwen_qwen3.7-plus_9/debug/images/w04-1-有刷直流电机驱动器及其应用_slide_18_img_6.png",
+          "extraction/output/qwen_qwen3.7-plus_9/debug/images/w04-1-有刷直流电机驱动器及其应用_slide_18_img_7.png"
+        ],
+        "19": [
+          "extraction/output/qwen_qwen3.7-plus_9/debug/images/w04-1-有刷直流电机驱动器及其应用_slide_19_img_1.png"
+        ],
+        "20": [
+          "extraction/output/qwen_qwen3.7-plus_9/debug/images/w04-1-有刷直流电机驱动器及其应用_slide_20_img_2.png",
+          "extraction/output/qwen_qwen3.7-plus_9/debug/images/w04-1-有刷直流电机驱动器及其应用_slide_20_img_4.jpeg",
+          "extraction/output/qwen_qwen3.7-plus_9/debug/images/w04-1-有刷直流电机驱动器及其应用_slide_20_img_5.png",
+          "extraction/output/qwen_qwen3.7-plus_9/debug/images/w04-1-有刷直流电机驱动器及其应用_slide_20_img_6.png",
+          "extraction/output/qwen_qwen3.7-plus_9/debug/images/w04-1-有刷直流电机驱动器及其应用_slide_20_vector_fallback.png"
+        ],
+        "21": [
+          "extraction/output/qwen_qwen3.7-plus_9/debug/images/w04-1-有刷直流电机驱动器及其应用_slide_21_vector_fallback.png"
+        ],
+        "23": [
+          "extraction/output/qwen_qwen3.7-plus_9/debug/images/w04-1-有刷直流电机驱动器及其应用_slide_23_img_1.png",
+          "extraction/output/qwen_qwen3.7-plus_9/debug/images/w04-1-有刷直流电机驱动器及其应用_slide_23_img_2.png",
+          "extraction/output/qwen_qwen3.7-plus_9/debug/images/w04-1-有刷直流电机驱动器及其应用_slide_23_img_3.png",
+          "extraction/output/qwen_qwen3.7-plus_9/debug/images/w04-1-有刷直流电机驱动器及其应用_slide_23_img_4.png",
+          "extraction/output/qwen_qwen3.7-plus_9/debug/images/w04-1-有刷直流电机驱动器及其应用_slide_23_img_5.png",
+          "extraction/output/qwen_qwen3.7-plus_9/debug/images/w04-1-有刷直流电机驱动器及其应用_slide_23_img_6.png"
+        ],
+        "3": [
+          "extraction/output/qwen_qwen3.7-plus_9/debug/images/w04-1-有刷直流电机驱动器及其应用_slide_3_img_1.png",
+          "extraction/output/qwen_qwen3.7-plus_9/debug/images/w04-1-有刷直流电机驱动器及其应用_slide_3_img_2.png",
+          "extraction/output/qwen_qwen3.7-plus_9/debug/images/w04-1-有刷直流电机驱动器及其应用_slide_3_img_3.png"
+        ],
+        "4": [
+          "extraction/output/qwen_qwen3.7-plus_9/debug/images/w04-1-有刷直流电机驱动器及其应用_slide_4_img_1.png",
+          "extraction/output/qwen_qwen3.7-plus_9/debug/images/w04-1-有刷直流电机驱动器及其应用_slide_4_img_2.jpg",
+          "extraction/output/qwen_qwen3.7-plus_9/debug/images/w04-1-有刷直流电机驱动器及其应用_slide_4_img_3.png"
+        ],
+        "5": [
+          "extraction/output/qwen_qwen3.7-plus_9/debug/images/w04-1-有刷直流电机驱动器及其应用_slide_5_img_1.png",
+          "extraction/output/qwen_qwen3.7-plus_9/debug/images/w04-1-有刷直流电机驱动器及其应用_slide_5_img_2.png"
+        ],
+        "6": [
+          "extraction/output/qwen_qwen3.7-plus_9/debug/images/w04-1-有刷直流电机驱动器及其应用_slide_6_img_1.png"
+        ],
+        "7": [
+          "extraction/output/qwen_qwen3.7-plus_9/debug/images/w04-1-有刷直流电机驱动器及其应用_slide_7_img_1.png",
+          "extraction/output/qwen_qwen3.7-plus_9/debug/images/w04-1-有刷直流电机驱动器及其应用_slide_7_img_2.png"
+        ],
+        "9": [
+          "extraction/output/qwen_qwen3.7-plus_9/debug/images/w04-1-有刷直流电机驱动器及其应用_slide_9_vector_fallback.png"
+        ]
+      },
+      "vector_conversion_failures": [
+        {
+          "slide_num": 11,
+          "source_path": "extraction/output/qwen_qwen3.7-plus_9/debug/images/w04-1-有刷直流电机驱动器及其应用_slide_11_img_1.wmf",
+          "reason": "single_vector_conversion_failed"
+        },
+        {
+          "slide_num": 20,
+          "source_path": "extraction/output/qwen_qwen3.7-plus_9/debug/images/w04-1-有刷直流电机驱动器及其应用_slide_20_img_1.wmf",
+          "reason": "single_vector_conversion_failed"
+        },
+        {
+          "slide_num": 20,
+          "source_path": "extraction/output/qwen_qwen3.7-plus_9/debug/images/w04-1-有刷直流电机驱动器及其应用_slide_20_img_3.wmf",
+          "reason": "single_vector_conversion_failed"
+        },
+        {
+          "slide_num": 21,
+          "source_path": "extraction/output/qwen_qwen3.7-plus_9/debug/images/w04-1-有刷直流电机驱动器及其应用_slide_21_img_1.wmf",
+          "reason": "single_vector_conversion_failed"
+        },
+        {
+          "slide_num": 21,
+          "source_path": "extraction/output/qwen_qwen3.7-plus_9/debug/images/w04-1-有刷直流电机驱动器及其应用_slide_21_img_2.wmf",
+          "reason": "single_vector_conversion_failed"
+        },
+        {
+          "slide_num": 21,
+          "source_path": "extraction/output/qwen_qwen3.7-plus_9/debug/images/w04-1-有刷直流电机驱动器及其应用_slide_21_img_3.wmf",
+          "reason": "single_vector_conversion_failed"
+        },
+        {
+          "slide_num": 9,
+          "source_path": "extraction/output/qwen_qwen3.7-plus_9/debug/images/w04-1-有刷直流电机驱动器及其应用_slide_9_img_1.wmf",
+          "reason": "single_vector_conversion_failed"
+        }
+      ],
+      "slide_fallbacks": {
+        "11": "extraction/output/qwen_qwen3.7-plus_9/debug/images/w04-1-有刷直流电机驱动器及其应用_slide_11_vector_fallback.png",
+        "20": "extraction/output/qwen_qwen3.7-plus_9/debug/images/w04-1-有刷直流电机驱动器及其应用_slide_20_vector_fallback.png",
+        "21": "extraction/output/qwen_qwen3.7-plus_9/debug/images/w04-1-有刷直流电机驱动器及其应用_slide_21_vector_fallback.png",
+        "9": "extraction/output/qwen_qwen3.7-plus_9/debug/images/w04-1-有刷直流电机驱动器及其应用_slide_9_vector_fallback.png"
+      },
+      "file_name": "w04-1-有刷直流电机驱动器及其应用",
+      "file_type": "pptx",
+      "file_path": "extraction/input/w04-1-有刷直流电机驱动器及其应用.pptx"
+    }
+  },
+  {
+    "document_id": "doc_dee7a79f857d",
+    "user_id": "default_user",
+    "username": "default_user",
+    "course_id": "default_course",
+    "course_name": "default_course",
+    "job_id": "",
+    "file_name": "w05-1-四轮小车",
+    "file_type": "pdf",
+    "file_path": "extraction/input/w05-1-四轮小车.pdf",
+    "page_count": 16,
+    "chapter_title": "w05-1-四轮小车_pdf",
+    "document_order": null,
+    "metadata": {
+      "filename": "extraction/input/w05-1-四轮小车.pdf",
+      "format": "pdf",
+      "total_pages": 16,
+      "pdf_metadata": {
+        "format": "PDF 1.7",
+        "title": "机电系统原理及实践",
+        "author": "郭 明旻",
+        "subject": "",
+        "keywords": "",
+        "creator": "Acrobat PDFMaker 25 PowerPoint 版",
+        "producer": "Adobe PDF Library 25.1.40",
+        "creationDate": "20260328153308+08'00'",
+        "modDate": "20260328153510+08'00'",
+        "trapped": "",
+        "encryption": "Standard V5 R6 256-bit AES"
+      },
+      "file_name": "w05-1-四轮小车",
+      "file_type": "pdf",
+      "file_path": "extraction/input/w05-1-四轮小车.pdf"
+    }
+  },
+  {
+    "document_id": "doc_931d588dbdc2",
+    "user_id": "default_user",
+    "username": "default_user",
+    "course_id": "default_course",
+    "course_name": "default_course",
+    "job_id": "",
+    "file_name": "w07-1-四轮小车（续）",
+    "file_type": "pdf",
+    "file_path": "extraction/input/w07-1-四轮小车（续）.pdf",
+    "page_count": 7,
+    "chapter_title": "w07-1-四轮小车（续）_pdf",
+    "document_order": null,
+    "metadata": {
+      "filename": "extraction/input/w07-1-四轮小车（续）.pdf",
+      "format": "pdf",
+      "total_pages": 7,
+      "pdf_metadata": {
+        "format": "PDF 1.7",
+        "title": "机电系统原理及实践",
+        "author": "郭 明旻",
+        "subject": "",
+        "keywords": "",
+        "creator": "Acrobat PDFMaker 26 PowerPoint 版",
+        "producer": "Adobe PDF Library 26.1.119",
+        "creationDate": "20260405160043+08'00'",
+        "modDate": "20260405160640+08'00'",
+        "trapped": "",
+        "encryption": "Standard V5 R6 256-bit AES"
+      },
+      "file_name": "w07-1-四轮小车（续）",
+      "file_type": "pdf",
+      "file_path": "extraction/input/w07-1-四轮小车（续）.pdf"
+    }
+  },
+  {
+    "document_id": "doc_706c75b3a33c",
+    "user_id": "default_user",
+    "username": "default_user",
+    "course_id": "default_course",
+    "course_name": "default_course",
+    "job_id": "",
+    "file_name": "w07-2-减速器简介",
+    "file_type": "pdf",
+    "file_path": "extraction/input/w07-2-减速器简介.pdf",
+    "page_count": 8,
+    "chapter_title": "w07-2-减速器简介_pdf",
+    "document_order": null,
+    "metadata": {
+      "filename": "extraction/input/w07-2-减速器简介.pdf",
+      "format": "pdf",
+      "total_pages": 8,
+      "pdf_metadata": {
+        "format": "PDF 1.7",
+        "title": "机电系统原理及实践",
+        "author": "郭 明旻",
+        "subject": "",
+        "keywords": "",
+        "creator": "Acrobat PDFMaker 26 PowerPoint 版",
+        "producer": "Adobe PDF Library 26.1.119",
+        "creationDate": "20260405160054+08'00'",
+        "modDate": "20260405160647+08'00'",
+        "trapped": "",
+        "encryption": "Standard V5 R6 256-bit AES"
+      },
+      "file_name": "w07-2-减速器简介",
+      "file_type": "pdf",
+      "file_path": "extraction/input/w07-2-减速器简介.pdf"
+    }
+  },
+  {
+    "document_id": "doc_684000d68e86",
+    "user_id": "default_user",
+    "username": "default_user",
+    "course_id": "default_course",
+    "course_name": "default_course",
+    "job_id": "",
+    "file_name": "w07-3-麦克纳姆轮小车",
+    "file_type": "pdf",
+    "file_path": "extraction/input/w07-3-麦克纳姆轮小车.pdf",
+    "page_count": 12,
+    "chapter_title": "w07-3-麦克纳姆轮小车_pdf",
+    "document_order": null,
+    "metadata": {
+      "filename": "extraction/input/w07-3-麦克纳姆轮小车.pdf",
+      "format": "pdf",
+      "total_pages": 12,
+      "pdf_metadata": {
+        "format": "PDF 1.7",
+        "title": "机电系统原理及实践",
+        "author": "郭 明旻",
+        "subject": "",
+        "keywords": "",
+        "creator": "Acrobat PDFMaker 26 PowerPoint 版",
+        "producer": "Adobe PDF Library 26.1.119",
+        "creationDate": "20260405155559+08'00'",
+        "modDate": "20260405160654+08'00'",
+        "trapped": "",
+        "encryption": "Standard V5 R6 256-bit AES"
+      },
+      "file_name": "w07-3-麦克纳姆轮小车",
+      "file_type": "pdf",
+      "file_path": "extraction/input/w07-3-麦克纳姆轮小车.pdf"
+    }
+  },
+  {
+    "document_id": "doc_e9f2de30d0c9",
+    "user_id": "default_user",
+    "username": "default_user",
+    "course_id": "default_course",
+    "course_name": "default_course",
+    "job_id": "",
+    "file_name": "w08-1-步进电机驱动器",
+    "file_type": "pdf",
+    "file_path": "extraction/input/w08-1-步进电机驱动器.pdf",
+    "page_count": 12,
+    "chapter_title": "w08-1-步进电机驱动器_pdf",
+    "document_order": null,
+    "metadata": {
+      "filename": "extraction/input/w08-1-步进电机驱动器.pdf",
+      "format": "pdf",
+      "total_pages": 12,
+      "pdf_metadata": {
+        "format": "PDF 1.7",
+        "title": "机电系统原理及实践",
+        "author": "郭 明旻",
+        "subject": "",
+        "keywords": "",
+        "creator": "Acrobat PDFMaker 25 PowerPoint 版",
+        "producer": "Adobe PDF Library 25.1.211",
+        "creationDate": "20250407111214+08'00'",
+        "modDate": "20250407111727+08'00'",
+        "trapped": "",
+        "encryption": "Standard V5 R6 256-bit AES"
+      },
+      "file_name": "w08-1-步进电机驱动器",
+      "file_type": "pdf",
+      "file_path": "extraction/input/w08-1-步进电机驱动器.pdf"
+    }
+  },
+  {
+    "document_id": "doc_e0f109d15b7a",
+    "user_id": "default_user",
+    "username": "default_user",
+    "course_id": "default_course",
+    "course_name": "default_course",
+    "job_id": "",
+    "file_name": "w09-1-直线运动平台（上） - 副本",
+    "file_type": "pdf",
+    "file_path": "extraction/input/w09-1-直线运动平台（上） - 副本.pdf",
+    "page_count": 13,
+    "chapter_title": "w09-1-直线运动平台（上） - 副本_pdf",
+    "document_order": null,
+    "metadata": {
+      "filename": "extraction/input/w09-1-直线运动平台（上） - 副本.pdf",
+      "format": "pdf",
+      "total_pages": 13,
+      "pdf_metadata": {
+        "format": "PDF 1.7",
+        "title": "",
+        "author": "",
+        "subject": "",
+        "keywords": "",
+        "creator": "Microsoft® PowerPoint® LTSC",
+        "producer": "pdf-lib (https://github.com/Hopding/pdf-lib)",
+        "creationDate": "20250513082607+08'00'",
+        "modDate": "20250513082927+08'00'",
+        "trapped": "",
+        "encryption": "Standard V5 R6 256-bit AES"
+      },
+      "file_name": "w09-1-直线运动平台（上） - 副本",
+      "file_type": "pdf",
+      "file_path": "extraction/input/w09-1-直线运动平台（上） - 副本.pdf"
+    }
+  },
+  {
+    "document_id": "doc_70ddac256b8e",
+    "user_id": "default_user",
+    "username": "default_user",
+    "course_id": "default_course",
+    "course_name": "default_course",
+    "job_id": "",
+    "file_name": "w10-1-直线运动平台（下）",
+    "file_type": "pptx",
+    "file_path": "extraction/input/w10-1-直线运动平台（下）.pptx",
+    "page_count": 18,
+    "chapter_title": "w10-1-直线运动平台（下）_pptx",
+    "document_order": null,
+    "metadata": {
+      "filename": "extraction/input/w10-1-直线运动平台（下）.pptx",
+      "format": "pptx",
+      "total_slides": 18,
+      "image_mapping": {
+        "10": [
+          "extraction/output/qwen_qwen3.7-plus_9/debug/images/w10-1-直线运动平台（下）_slide_10_img_1.png"
+        ],
+        "11": [
+          "extraction/output/qwen_qwen3.7-plus_9/debug/images/w10-1-直线运动平台（下）_slide_11_img_1.png",
+          "extraction/output/qwen_qwen3.7-plus_9/debug/images/w10-1-直线运动平台（下）_slide_11_img_2.png"
+        ],
+        "12": [
+          "extraction/output/qwen_qwen3.7-plus_9/debug/images/w10-1-直线运动平台（下）_slide_12_img_1.png",
+          "extraction/output/qwen_qwen3.7-plus_9/debug/images/w10-1-直线运动平台（下）_slide_12_img_2.png"
+        ],
+        "13": [
+          "extraction/output/qwen_qwen3.7-plus_9/debug/images/w10-1-直线运动平台（下）_slide_13_img_1.png",
+          "extraction/output/qwen_qwen3.7-plus_9/debug/images/w10-1-直线运动平台（下）_slide_13_img_2.png"
+        ],
+        "14": [
+          "extraction/output/qwen_qwen3.7-plus_9/debug/images/w10-1-直线运动平台（下）_slide_14_img_1.png",
+          "extraction/output/qwen_qwen3.7-plus_9/debug/images/w10-1-直线运动平台（下）_slide_14_img_2.png"
+        ],
+        "15": [
+          "extraction/output/qwen_qwen3.7-plus_9/debug/images/w10-1-直线运动平台（下）_slide_15_img_1.png",
+          "extraction/output/qwen_qwen3.7-plus_9/debug/images/w10-1-直线运动平台（下）_slide_15_img_2.png",
+          "extraction/output/qwen_qwen3.7-plus_9/debug/images/w10-1-直线运动平台（下）_slide_15_img_3.png",
+          "extraction/output/qwen_qwen3.7-plus_9/debug/images/w10-1-直线运动平台（下）_slide_15_img_4.png"
+        ],
+        "16": [
+          "extraction/output/qwen_qwen3.7-plus_9/debug/images/w10-1-直线运动平台（下）_slide_16_img_1.png"
+        ],
+        "3": [
+          "extraction/output/qwen_qwen3.7-plus_9/debug/images/w10-1-直线运动平台（下）_slide_3_vector_fallback.png"
+        ],
+        "4": [
+          "extraction/output/qwen_qwen3.7-plus_9/debug/images/w10-1-直线运动平台（下）_slide_4_img_1.png",
+          "extraction/output/qwen_qwen3.7-plus_9/debug/images/w10-1-直线运动平台（下）_slide_4_img_2.png",
+          "extraction/output/qwen_qwen3.7-plus_9/debug/images/w10-1-直线运动平台（下）_slide_4_img_3.png"
+        ],
+        "5": [
+          "extraction/output/qwen_qwen3.7-plus_9/debug/images/w10-1-直线运动平台（下）_slide_5_img_1.png"
+        ],
+        "6": [
+          "extraction/output/qwen_qwen3.7-plus_9/debug/images/w10-1-直线运动平台（下）_slide_6_img_1.png",
+          "extraction/output/qwen_qwen3.7-plus_9/debug/images/w10-1-直线运动平台（下）_slide_6_img_2.png"
+        ],
+        "7": [
+          "extraction/output/qwen_qwen3.7-plus_9/debug/images/w10-1-直线运动平台（下）_slide_7_img_1.png",
+          "extraction/output/qwen_qwen3.7-plus_9/debug/images/w10-1-直线运动平台（下）_slide_7_vector_fallback.png"
+        ],
+        "8": [
+          "extraction/output/qwen_qwen3.7-plus_9/debug/images/w10-1-直线运动平台（下）_slide_8_img_1.png"
+        ],
+        "9": [
+          "extraction/output/qwen_qwen3.7-plus_9/debug/images/w10-1-直线运动平台（下）_slide_9_img_1.png"
+        ]
+      },
+      "vector_conversion_failures": [
+        {
+          "slide_num": 3,
+          "source_path": "extraction/output/qwen_qwen3.7-plus_9/debug/images/w10-1-直线运动平台（下）_slide_3_img_1.wmf",
+          "reason": "single_vector_conversion_failed"
+        },
+        {
+          "slide_num": 7,
+          "source_path": "extraction/output/qwen_qwen3.7-plus_9/debug/images/w10-1-直线运动平台（下）_slide_7_img_2.emf",
+          "reason": "single_vector_conversion_failed"
+        }
+      ],
+      "slide_fallbacks": {
+        "3": "extraction/output/qwen_qwen3.7-plus_9/debug/images/w10-1-直线运动平台（下）_slide_3_vector_fallback.png",
+        "7": "extraction/output/qwen_qwen3.7-plus_9/debug/images/w10-1-直线运动平台（下）_slide_7_vector_fallback.png"
+      },
+      "file_name": "w10-1-直线运动平台（下）",
+      "file_type": "pptx",
+      "file_path": "extraction/input/w10-1-直线运动平台（下）.pptx"
+    }
+  },
+  {
+    "document_id": "doc_722db9a64ae1",
+    "user_id": "default_user",
+    "username": "default_user",
+    "course_id": "default_course",
+    "course_name": "default_course",
+    "job_id": "",
+    "file_name": "w13-1-电机位置检测与闭环控制 - 副本",
+    "file_type": "pdf",
+    "file_path": "extraction/input/w13-1-电机位置检测与闭环控制 - 副本.pdf",
+    "page_count": 17,
+    "chapter_title": "w13-1-电机位置检测与闭环控制 - 副本_pdf",
+    "document_order": null,
+    "metadata": {
+      "filename": "extraction/input/w13-1-电机位置检测与闭环控制 - 副本.pdf",
+      "format": "pdf",
+      "total_pages": 17,
+      "pdf_metadata": {
+        "format": "PDF 1.7",
+        "title": "",
+        "author": "",
+        "subject": "",
+        "keywords": "",
+        "creator": "Microsoft® PowerPoint® LTSC",
+        "producer": "pdf-lib (https://github.com/Hopding/pdf-lib)",
+        "creationDate": "20250513210958+08'00'",
+        "modDate": "20250513211138+08'00'",
+        "trapped": "",
+        "encryption": "Standard V5 R6 256-bit AES"
+      },
+      "file_name": "w13-1-电机位置检测与闭环控制 - 副本",
+      "file_type": "pdf",
+      "file_path": "extraction/input/w13-1-电机位置检测与闭环控制 - 副本.pdf"
+    }
+  },
+  {
+    "document_id": "doc_a420f6421665",
+    "user_id": "default_user",
+    "username": "default_user",
+    "course_id": "default_course",
+    "course_name": "default_course",
+    "job_id": "",
+    "file_name": "w13-2-机电系统在动力学与控制中的应用 - 副本",
+    "file_type": "pdf",
+    "file_path": "extraction/input/w13-2-机电系统在动力学与控制中的应用 - 副本.pdf",
+    "page_count": 17,
+    "chapter_title": "w13-2-机电系统在动力学与控制中的应用 - 副本_pdf",
+    "document_order": null,
+    "metadata": {
+      "filename": "extraction/input/w13-2-机电系统在动力学与控制中的应用 - 副本.pdf",
+      "format": "pdf",
+      "total_pages": 17,
+      "pdf_metadata": {
+        "format": "PDF 1.7",
+        "title": "",
+        "author": "",
+        "subject": "",
+        "keywords": "",
+        "creator": "Microsoft® PowerPoint® LTSC",
+        "producer": "pdf-lib (https://github.com/Hopding/pdf-lib)",
+        "creationDate": "20250514124135+08'00'",
+        "modDate": "20250514124249+08'00'",
+        "trapped": "",
+        "encryption": "Standard V5 R6 256-bit AES"
+      },
+      "file_name": "w13-2-机电系统在动力学与控制中的应用 - 副本",
+      "file_type": "pdf",
+      "file_path": "extraction/input/w13-2-机电系统在动力学与控制中的应用 - 副本.pdf"
+    }
+  },
+  {
+    "document_id": "doc_da56f2e0b233",
+    "user_id": "default_user",
+    "username": "default_user",
+    "course_id": "default_course",
+    "course_name": "default_course",
+    "job_id": "",
+    "file_name": "w14-1-数字通信",
+    "file_type": "pdf",
+    "file_path": "extraction/input/w14-1-数字通信.pdf",
+    "page_count": 24,
+    "chapter_title": "w14-1-数字通信_pdf",
+    "document_order": null,
+    "metadata": {
+      "filename": "extraction/input/w14-1-数字通信.pdf",
+      "format": "pdf",
+      "total_pages": 24,
+      "pdf_metadata": {
+        "format": "PDF 1.7",
+        "title": "",
+        "author": "",
+        "subject": "",
+        "keywords": "",
+        "creator": "Microsoft® PowerPoint® LTSC",
+        "producer": "pdf-lib (https://github.com/Hopding/pdf-lib)",
+        "creationDate": "20250521180502+08'00'",
+        "modDate": "20250521180600+08'00'",
+        "trapped": "",
+        "encryption": "Standard V5 R6 256-bit AES"
+      },
+      "file_name": "w14-1-数字通信",
+      "file_type": "pdf",
+      "file_path": "extraction/input/w14-1-数字通信.pdf"
+    }
+  },
+  {
+    "document_id": "doc_a6418a212792",
+    "user_id": "default_user",
+    "username": "default_user",
+    "course_id": "default_course",
+    "course_name": "default_course",
+    "job_id": "",
+    "file_name": "w15-1-无刷直流电机驱动器",
+    "file_type": "pdf",
+    "file_path": "extraction/input/w15-1-无刷直流电机驱动器.pdf",
+    "page_count": 10,
+    "chapter_title": "w15-1-无刷直流电机驱动器_pdf",
+    "document_order": null,
+    "metadata": {
+      "filename": "extraction/input/w15-1-无刷直流电机驱动器.pdf",
+      "format": "pdf",
+      "total_pages": 10,
+      "pdf_metadata": {
+        "format": "PDF 1.7",
+        "title": "",
+        "author": "",
+        "subject": "",
+        "keywords": "",
+        "creator": "Microsoft® PowerPoint® LTSC",
+        "producer": "pdf-lib (https://github.com/Hopding/pdf-lib)",
+        "creationDate": "20250528160940+08'00'",
+        "modDate": "20250528161335+08'00'",
+        "trapped": "",
+        "encryption": "Standard V5 R6 256-bit AES"
+      },
+      "file_name": "w15-1-无刷直流电机驱动器",
+      "file_type": "pdf",
+      "file_path": "extraction/input/w15-1-无刷直流电机驱动器.pdf"
+    }
+  },
+  {
+    "document_id": "doc_9919061300c1",
+    "user_id": "default_user",
+    "username": "default_user",
+    "course_id": "default_course",
+    "course_name": "default_course",
+    "job_id": "",
+    "file_name": "w15-2-机器人运动学及其应用",
+    "file_type": "pdf",
+    "file_path": "extraction/input/w15-2-机器人运动学及其应用.pdf",
+    "page_count": 22,
+    "chapter_title": "w15-2-机器人运动学及其应用_pdf",
+    "document_order": null,
+    "metadata": {
+      "filename": "extraction/input/w15-2-机器人运动学及其应用.pdf",
+      "format": "pdf",
+      "total_pages": 22,
+      "pdf_metadata": {
+        "format": "PDF 1.7",
+        "title": "",
+        "author": "",
+        "subject": "",
+        "keywords": "",
+        "creator": "Microsoft® PowerPoint® LTSC",
+        "producer": "pdf-lib (https://github.com/Hopding/pdf-lib)",
+        "creationDate": "20250528161125+08'00'",
+        "modDate": "20250528161327+08'00'",
+        "trapped": "",
+        "encryption": "Standard V5 R6 256-bit AES"
+      },
+      "file_name": "w15-2-机器人运动学及其应用",
+      "file_type": "pdf",
+      "file_path": "extraction/input/w15-2-机器人运动学及其应用.pdf"
+    }
+  }
+]

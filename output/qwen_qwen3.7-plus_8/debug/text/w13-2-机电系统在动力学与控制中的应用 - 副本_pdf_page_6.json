@@ -1,0 +1,23 @@
+{
+  "page_num": 5,
+  "raw_text": "机电系统原理及实践—— 机电系统在动力学与控制中的应用\n机电智控实验室tangguoan@fudan.edu.cn mmguo@fudan.edu.cn\n16-6\n§2.2“多选一”动作开关的控制程序——实现B\n// 端口检测、动作执行\nif ( Buttons.RUNING_MODE == Buttons.NONE ) {\n// 只在非任务执行过程中监测和响应按钮动作\nfor ( int i = 0; i < Buttons.NumButtons; i++ ) {            // 逐个按钮开关循环\nButtons.PortVolt[i] = digitalRead(Buttons.pinBUT[i]);     // 监测每个按钮端口的电平\nif ( Buttons.PortVolt[i] < Buttons.PortVoltLast[i]  ) {   // 当监测到按钮开关被按下(端口电平由高转低)\nButtons.RUNING_MODE = i;                                // 定义将要执行的任务代码\nButtons.tstart = last_loop_time;                        // 记录按钮被按下的时间，近似为任务的开始时间\n}\nButtons.PortVoltLast[i] = Buttons.PortVolt[i];            // 记录按钮端口的当前电平，作为下一次监测的参考\n}\n}\nelse {\n// 任务代码已定义，则执行相应的任务\nfloat t = (last_loop_time - Buttons.tstart) * 1.0e-6;       \n// 计算任务开始至当前的时间差\nSlider.slider_speed = (*Buttons.pCBfunc[Buttons.RUNING_MODE])(t);     // 根据任务类型和时间差更新滑台的移动速度\n}\n",
+  "cleaned_text": "§2.2“多选一”动作开关的控制程序——实现B\n// 端口检测、动作执行\nif ( Buttons.RUNING_MODE == Buttons.NONE ) {\n// 只在非任务执行过程中监测和响应按钮动作\nfor ( int i = 0; i < Buttons.NumButtons; i++ ) { // 逐个按钮开关循环\nButtons.PortVolt[i] = digitalRead(Buttons.pinBUT[i]); // 监测每个按钮端口的电平\nif ( Buttons.PortVolt[i] < Buttons.PortVoltLast[i] ) { // 当监测到按钮开关被按下(端口电平由高转低)\nButtons.RUNING_MODE = i; // 定义将要执行的任务代码\nButtons.tstart = last_loop_time; // 记录按钮被按下的时间，近似为任务的开始时间\n}\nButtons.PortVoltLast[i] = Buttons.PortVolt[i]; // 记录按钮端口的当前电平，作为下一次监测的参考\n}\n}\nelse {\n// 任务代码已定义，则执行相应的任务\nfloat t = (last_loop_time - Buttons.tstart) * 1.0e-6;\n// 计算任务开始至当前的时间差\nSlider.slider_speed = (*Buttons.pCBfunc[Buttons.RUNING_MODE])(t); // 根据任务类型和时间差更新滑台的移动速度\n}",
+  "key_points": [
+    "Buttons.RUNING_MODE = i; // 定义将要执行的任务代码"
+  ],
+  "technical_terms": [
+    "NONE",
+    "RUNING_MODE",
+    "任务类型和时间差更新滑台",
+    "动作开关的控制",
+    "端口检测"
+  ],
+  "has_images": false,
+  "image_count": 0,
+  "image_paths": [],
+  "metadata": {
+    "char_count": 857,
+    "word_count": 83,
+    "line_count": 23
+  }
+}

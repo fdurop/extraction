@@ -1,0 +1,33 @@
+{
+  "original_path": "extraction/output/qwen_qwen3.7-plus_9/debug/images/w13-1-电机位置检测与闭环控制 - 副本_p6_img3.jpeg",
+  "enhanced_path": "extraction/output/qwen_qwen3.7-plus_9/debug/images/w13-1-电机位置检测与闭环控制 - 副本_p6_img3_enhanced.jpeg",
+  "description": "类型：示意图\n图片展示了光栅位移检测原理。上部为五个时间序列（t=0至t=d/v）的机械运动图，显示标有周期d和间距d/4、d/2的黑白相间光栅尺以速度v向左移动，经过固定的光敏传感器A和B。下部为对应的A电平与B电平时序波形图，纵轴表示电平高低，横轴表示位移（标注d/N/4及多个d/v周期）。图中显示A、B两路输出为方波信号，且存在相位差（空间上相差d/4），用于反映位移变化。",
+  "metadata": {
+    "generation": {
+      "method": "qwen_api",
+      "backend": "api",
+      "provider": "qwen",
+      "model": "qwen3.7-plus",
+      "status": "success",
+      "api_error": null
+    },
+    "review": {
+      "required": false,
+      "status": null,
+      "reason": null,
+      "course_relevant": true
+    }
+  },
+  "error": null,
+  "method": "qwen_api",
+  "backend": "api",
+  "provider": "qwen",
+  "model": "qwen3.7-plus",
+  "status": "success",
+  "api_error": null,
+  "indexable": true,
+  "review_required": false,
+  "review_reason": null,
+  "review_status": null,
+  "course_relevant": true
+}

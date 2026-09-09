@@ -1,0 +1,21 @@
+{
+  "page_num": 9,
+  "raw_text": "机电系统原理及实践—— 机器人运动学简介\n机电智控实验室tangguoan@fudan.edu.cn mmguo@fudan.edu.cn\n§2.2 二连杆机械臂的正运动学\n给定关节旋转角度，确定机械臂末端位置，即点𝑃的坐标。\n由简单几何学知识\n𝑥= 𝐿1sin 𝜃1 −𝐿2 sin 𝜃2 −𝜃1 ,\n𝑦= 𝐿1 cos 𝜃1 + 𝐿2 cos 𝜃2 −𝜃1 .\n21-10\n𝜃1\n𝜃2\n𝑦\n𝑥\n𝑃(𝑥, 𝑦)\n𝑂\n𝐿1\n𝐿2\n",
+  "cleaned_text": "§2.2 二连杆机械臂的正运动学\n给定关节旋转角度，确定机械臂末端位置，即点𝑃的坐标。\n由简单几何学知识\n𝑥= 𝐿1sin 𝜃1 −𝐿2 sin 𝜃2 −𝜃1 ,\n𝑦= 𝐿1 cos 𝜃1 + 𝐿2 cos 𝜃2 −𝜃1 .\n𝜃1\n𝜃2\n𝑦\n𝑥\n𝑃(𝑥, 𝑦)\n𝑂\n𝐿1\n𝐿2",
+  "key_points": [
+    "给定关节旋转角度，确定机械臂末端位置，即点𝑃的坐标。",
+    "𝑃(𝑥, 𝑦)",
+    "𝑂",
+    "𝐿1",
+    "𝐿2"
+  ],
+  "technical_terms": [],
+  "has_images": false,
+  "image_count": 0,
+  "image_paths": [],
+  "metadata": {
+    "char_count": 219,
+    "word_count": 36,
+    "line_count": 17
+  }
+}

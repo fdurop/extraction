@@ -1,0 +1,31 @@
+{
+  "page_num": 17,
+  "raw_text": "机电系统原理及实践—— 课程简介\n机电智控实验室tangguoan@fudan.edu.cn mmguo@fudan.edu.cn\n加工与二次开发的条件\n18-18\n高精度数控铣床\n3D\n打印机\n激光雕刻机\nROS2 机械臂\nJetson Orin Nano\nROS2 小车\nJetson Orin NX\n机器狗\nBabyAlpha DevQ\n轮足式机器人\n登辉项目\n室 复旦大\n智控实验室 复旦大学 机电\n学 机电智控实验室 复旦大学 机电智控实验\n复旦大学 机电智控实验室 复旦大学 机电智控实验室 复旦\n旦大学 机电智控实验室 复旦大学 机电智控实验室 复旦大学 机电\n电智控实验室 复旦大学 机电智控实验室 复旦大学 机电智控实\n验室 复旦大学 机电智控实验室 复旦大学 机电智控实验室 \n旦大学 机电智控实验室 复旦大学 机电智控\n电智控实验室 复旦大学 \n实验室 复\n",
+  "cleaned_text": "加工与二次开发的条件\n高精度数控铣床\n3D\n打印机\n激光雕刻机\nROS2 机械臂\nJetson Orin Nano\nROS2 小车\nJetson Orin NX\n机器狗\nBabyAlpha DevQ\n轮足式机器人\n登辉项目",
+  "key_points": [
+    "ROS2 机械臂",
+    "Jetson Orin Nano",
+    "ROS2 小车",
+    "Jetson Orin NX",
+    "BabyAlpha DevQ"
+  ],
+  "technical_terms": [
+    "NX"
+  ],
+  "has_images": true,
+  "image_count": 7,
+  "image_paths": [
+    "extraction/output/qwen_qwen3.7-plus_8/debug/images/w01-1-课程简介_p18_img2.jpeg",
+    "extraction/output/qwen_qwen3.7-plus_8/debug/images/w01-1-课程简介_p18_img3.jpeg",
+    "extraction/output/qwen_qwen3.7-plus_8/debug/images/w01-1-课程简介_p18_img4.jpeg",
+    "extraction/output/qwen_qwen3.7-plus_8/debug/images/w01-1-课程简介_p18_img5.jpeg",
+    "extraction/output/qwen_qwen3.7-plus_8/debug/images/w01-1-课程简介_p18_img6.jpeg",
+    "extraction/output/qwen_qwen3.7-plus_8/debug/images/w01-1-课程简介_p18_img7.jpeg",
+    "extraction/output/qwen_qwen3.7-plus_8/debug/images/w01-1-课程简介_p18_img8.jpeg"
+  ],
+  "metadata": {
+    "char_count": 390,
+    "word_count": 63,
+    "line_count": 27
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "original_path": "extraction/output/qwen_qwen3.7-plus_9/debug/images/w14-1-数字通信_p5_img4.png",
+  "enhanced_path": "extraction/output/qwen_qwen3.7-plus_9/debug/images/w14-1-数字通信_p5_img4_enhanced.png",
+  "description": "类型：示意图\n图片展示了麦轮四足机器人的系统架构框图。顶层为遥控器，通过箭头指向第二层的上位机。上位机右侧连接姿态传感器，存在双向箭头交互。上位机下方分出五条通信链路：左右两侧各两个模块标注为CAN通信，中间一个模块标注为IIC通信并连接至下位机（Mega）。最底层排列四个模块，分别对应左前、右前、左后、右后的关节电机控制器及麦轮编码器，由上层模块向下引出箭头连接。",
+  "metadata": {
+    "generation": {
+      "method": "qwen_api",
+      "backend": "api",
+      "provider": "qwen",
+      "model": "qwen3.7-plus",
+      "status": "success",
+      "api_error": null
+    },
+    "review": {
+      "required": false,
+      "status": null,
+      "reason": null,
+      "course_relevant": true
+    }
+  },
+  "error": null,
+  "method": "qwen_api",
+  "backend": "api",
+  "provider": "qwen",
+  "model": "qwen3.7-plus",
+  "status": "success",
+  "api_error": null,
+  "indexable": true,
+  "review_required": false,
+  "review_reason": null,
+  "review_status": null,
+  "course_relevant": true
+}

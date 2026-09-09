@@ -1,0 +1,34 @@
+{
+  "page_num": 6,
+  "raw_text": "机电系统原理及实践—— 无刷直流电机驱动简介\n机电智控实验室tangguoan@fudan.edu.cn mmguo@fudan.edu.cn\n§3 无刷直流电机的驱动原理\n正弦波驱动：使电机转动更流畅。\n9-7\n矢量控制：可进行电流(力矩)、速度、位置三个闭环控制(PID)。\nFOC (Field-Oriented Control)，磁场定向控制，亦称矢量控制。\n目前无刷直流电机高效控制的最优方法之一。\n采用正弦波驱动时\n各线圈的磁场及其合力\n",
+  "cleaned_text": "§3 无刷直流电机的驱动原理\n正弦波驱动：使电机转动更流畅。\n矢量控制：可进行电流(力矩)、速度、位置三个闭环控制(PID)。\nFOC (Field-Oriented Control)，磁场定向控制，亦称矢量控制。\n目前无刷直流电机高效控制的最优方法之一。\n采用正弦波驱动时\n各线圈的磁场及其合力",
+  "key_points": [
+    "正弦波驱动：使电机转动更流畅。",
+    "矢量控制：可进行电流(力矩)、速度、位置三个闭环控制(PID)。",
+    "FOC (Field-Oriented Control)，磁场定向控制，亦称矢量控制。",
+    "目前无刷直流电机高效控制的最优方法之一。"
+  ],
+  "technical_terms": [
+    "FOC",
+    "PID",
+    "亦称矢量控制",
+    "位置三个闭环控制",
+    "无刷直流电机",
+    "流电机高效控制的最优方法",
+    "目前无刷直流电机",
+    "目前无刷直流电机高效控制",
+    "矢量控制",
+    "磁场定向控制"
+  ],
+  "has_images": true,
+  "image_count": 2,
+  "image_paths": [
+    "extraction/output/qwen_qwen3.7-plus_9/debug/images/w15-1-无刷直流电机驱动器_p7_img3.jpeg",
+    "extraction/output/qwen_qwen3.7-plus_9/debug/images/w15-1-无刷直流电机驱动器_p7_img4.jpeg"
+  ],
+  "metadata": {
+    "char_count": 229,
+    "word_count": 15,
+    "line_count": 11
+  }
+}

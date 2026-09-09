@@ -1,0 +1,33 @@
+{
+  "original_path": "extraction/output/qwen_qwen3.7-plus_8/debug/images/w07-3-麦克纳姆轮小车_p3_img3.jpeg",
+  "enhanced_path": "extraction/output/qwen_qwen3.7-plus_8/debug/images/w07-3-麦克纳姆轮小车_p3_img3_enhanced.jpeg",
+  "description": "类型：照片\n图片展示了一个工业厂房内部场景。画面主体为两台黄色的龙门架式移动机器人（或自动导引车），分别位于左右两侧，底部可见轮组结构。两台设备通过顶部的黑色横梁连接，共同吊运着一组竖直排列的银色大型圆柱形物体（疑似变压器线圈）。背景可见红色的起重机横梁、钢结构屋顶以及地面上整齐堆放的多排同类银色圆柱体设备。该图直观展示了麦克纳姆轮在重型工业搬运平台中的实际应用形态。",
+  "metadata": {
+    "generation": {
+      "method": "qwen_api",
+      "backend": "api",
+      "provider": "qwen",
+      "model": "qwen3.7-plus",
+      "status": "success",
+      "api_error": null
+    },
+    "review": {
+      "required": false,
+      "status": null,
+      "reason": null,
+      "course_relevant": true
+    }
+  },
+  "error": null,
+  "method": "qwen_api",
+  "backend": "api",
+  "provider": "qwen",
+  "model": "qwen3.7-plus",
+  "status": "success",
+  "api_error": null,
+  "indexable": true,
+  "review_required": false,
+  "review_reason": null,
+  "review_status": null,
+  "course_relevant": true
+}

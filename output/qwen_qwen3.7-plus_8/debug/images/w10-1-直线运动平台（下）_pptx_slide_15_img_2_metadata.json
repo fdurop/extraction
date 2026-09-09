@@ -1,0 +1,33 @@
+{
+  "original_path": "extraction/output/qwen_qwen3.7-plus_8/debug/images/w10-1-直线运动平台（下）_slide_15_img_2.png",
+  "enhanced_path": "extraction/output/qwen_qwen3.7-plus_8/debug/images/w10-1-直线运动平台（下）_slide_15_img_2_enhanced.png",
+  "description": "类型：公式\n图片展示了求拉普拉斯逆变换 $\\mathcal{L}^{-1}(\\tilde{U}_s(s))$ 的推导过程及参数确定原则。\n首先列出 $\\tilde{U}_s(s)$ 的表达式，包含指数项与 $U_s(s)$ 的乘积，随后化简为含 $\\cos(\\omega_n\\tau)$ 的形式。\n接着给出时域响应 $\\tilde{u}_s(t)$ 的表达式，由 $u_s(t)$ 及其延迟项 $u_s(t-\\tau)$、$u_s(t-2\\tau)$ 线性组合而成，系数涉及 $C$ 和 $\\cos(\\omega_n\\tau)$，并简化记为 $c_1, c_2$。\n下方列出“确定参数的原则”：\n1. 凸函数经过整形后仍为凸函数（$c_1, c_2$ 非负），推导出 $c_2 = 2C\\cos(\\omega_n\\tau) = 0$；\n2. 延时尽可能短（$\\tau$ 尽可能小），得出 $\\tau = \\frac{\\pi}{2\\omega_n}$；\n3. 总位移保持不变，得出 $c_1 = 1/2$。",
+  "metadata": {
+    "generation": {
+      "method": "qwen_api",
+      "backend": "api",
+      "provider": "qwen",
+      "model": "qwen3.7-plus",
+      "status": "success",
+      "api_error": null
+    },
+    "review": {
+      "required": false,
+      "status": null,
+      "reason": null,
+      "course_relevant": true
+    }
+  },
+  "error": null,
+  "method": "qwen_api",
+  "backend": "api",
+  "provider": "qwen",
+  "model": "qwen3.7-plus",
+  "status": "success",
+  "api_error": null,
+  "indexable": true,
+  "review_required": false,
+  "review_reason": null,
+  "review_status": null,
+  "course_relevant": true
+}

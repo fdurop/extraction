@@ -1,0 +1,33 @@
+{
+  "original_path": "extraction/output/qwen_qwen3.7-plus_8/debug/images/w01-2-Arduino软硬件基础_p10_img5.jpeg",
+  "enhanced_path": "extraction/output/qwen_qwen3.7-plus_8/debug/images/w01-2-Arduino软硬件基础_p10_img5_enhanced.jpeg",
+  "description": "类型：照片\n图片展示了一个垂直安装的绿色长方形电子模块，内部包含多排白色矩形元件（疑似继电器）及底部的电路板。大量红色和蓝色导线连接在模块两侧的绿色接线端子上，布线较为杂乱。一根黑色粗电缆从右侧接入，顶部有一根蓝色导线呈环状连接。该实物图对应课程中Arduino硬件连接与导线制备的实践内容。",
+  "metadata": {
+    "generation": {
+      "method": "qwen_api",
+      "backend": "api",
+      "provider": "qwen",
+      "model": "qwen3.7-plus",
+      "status": "success",
+      "api_error": null
+    },
+    "review": {
+      "required": false,
+      "status": null,
+      "reason": null,
+      "course_relevant": true
+    }
+  },
+  "error": null,
+  "method": "qwen_api",
+  "backend": "api",
+  "provider": "qwen",
+  "model": "qwen3.7-plus",
+  "status": "success",
+  "api_error": null,
+  "indexable": true,
+  "review_required": false,
+  "review_reason": null,
+  "review_status": null,
+  "course_relevant": true
+}

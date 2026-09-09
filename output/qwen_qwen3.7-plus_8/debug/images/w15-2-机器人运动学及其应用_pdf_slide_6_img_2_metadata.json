@@ -1,0 +1,33 @@
+{
+  "original_path": "extraction/output/qwen_qwen3.7-plus_8/debug/images/w15-2-机器人运动学及其应用_p6_img4.jpeg",
+  "enhanced_path": "extraction/output/qwen_qwen3.7-plus_8/debug/images/w15-2-机器人运动学及其应用_p6_img4_enhanced.jpeg",
+  "description": "类型：示意图\n图片展示了一个串联机器人腿部机械结构的三维模型。左上端为驱动组件，包含两个并排安装的圆柱形电机及减速器装置。中部通过橙色环形部件连接一根倾斜的长连杆（大腿），该连杆下端通过销轴铰接另一根水平延伸的短连杆（小腿）。两根连杆构成折线型串联结构，末端设有安装孔。背景为白色，左下方有黑色投影。",
+  "metadata": {
+    "generation": {
+      "method": "qwen_api",
+      "backend": "api",
+      "provider": "qwen",
+      "model": "qwen3.7-plus",
+      "status": "success",
+      "api_error": null
+    },
+    "review": {
+      "required": false,
+      "status": null,
+      "reason": null,
+      "course_relevant": true
+    }
+  },
+  "error": null,
+  "method": "qwen_api",
+  "backend": "api",
+  "provider": "qwen",
+  "model": "qwen3.7-plus",
+  "status": "success",
+  "api_error": null,
+  "indexable": true,
+  "review_required": false,
+  "review_reason": null,
+  "review_status": null,
+  "course_relevant": true
+}

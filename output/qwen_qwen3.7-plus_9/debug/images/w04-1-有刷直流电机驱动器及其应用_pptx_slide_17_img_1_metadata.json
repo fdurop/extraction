@@ -1,0 +1,33 @@
+{
+  "original_path": "extraction/output/qwen_qwen3.7-plus_9/debug/images/w04-1-有刷直流电机驱动器及其应用_slide_17_img_1.jpeg",
+  "enhanced_path": "extraction/output/qwen_qwen3.7-plus_9/debug/images/w04-1-有刷直流电机驱动器及其应用_slide_17_img_1_enhanced.jpeg",
+  "description": "类型：照片\n图片展示了一个基于金属底盘的移动机器人硬件实物。底盘四角安装有黑色全向轮（麦克纳姆轮）。顶部通过绿色支架固定着一块红色的8路固态继电器模块（印有“8 Solid State Relay”字样）和一块带有多个绿色接线端子的黑色扩展板。红、蓝、黑等颜色的导线将继电器输出端与扩展板端子相连，白色排线连接至上方接口。该硬件平台对应代码中通过引脚控制电机运动（前进、后退、停止）的执行机构。",
+  "metadata": {
+    "generation": {
+      "method": "qwen_api",
+      "backend": "api",
+      "provider": "qwen",
+      "model": "qwen3.7-plus",
+      "status": "success",
+      "api_error": null
+    },
+    "review": {
+      "required": false,
+      "status": null,
+      "reason": null,
+      "course_relevant": true
+    }
+  },
+  "error": null,
+  "method": "qwen_api",
+  "backend": "api",
+  "provider": "qwen",
+  "model": "qwen3.7-plus",
+  "status": "success",
+  "api_error": null,
+  "indexable": true,
+  "review_required": false,
+  "review_reason": null,
+  "review_status": null,
+  "course_relevant": true
+}

@@ -1,0 +1,33 @@
+{
+  "original_path": "extraction/output/qwen_qwen3.7-plus_8/debug/images/w08-1-步进电机驱动器_p3_img4.png",
+  "enhanced_path": "extraction/output/qwen_qwen3.7-plus_8/debug/images/w08-1-步进电机驱动器_p3_img4_enhanced.png",
+  "description": "类型：示意图\n图片展示了由四路固态继电器组成的H桥电路结构。中央为标有“M”的蓝色圆形电机符号。左侧两个继电器分别连接控制端ch1、ch2及电源V+、V-，节点标记为A1、B1和A2、B2；右侧两个继电器分别连接控制端ch3、ch4及电源V+、V-，节点标记为A3、B3和A4、B4。四个继电器的输出端汇聚连接至电机M的两端。图片底部文字说明：“四路固态继电器组成一个H桥电路”。",
+  "metadata": {
+    "generation": {
+      "method": "qwen_api",
+      "backend": "api",
+      "provider": "qwen",
+      "model": "qwen3.7-plus",
+      "status": "success",
+      "api_error": null
+    },
+    "review": {
+      "required": false,
+      "status": null,
+      "reason": null,
+      "course_relevant": true
+    }
+  },
+  "error": null,
+  "method": "qwen_api",
+  "backend": "api",
+  "provider": "qwen",
+  "model": "qwen3.7-plus",
+  "status": "success",
+  "api_error": null,
+  "indexable": true,
+  "review_required": false,
+  "review_reason": null,
+  "review_status": null,
+  "course_relevant": true
+}

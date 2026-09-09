@@ -1,0 +1,33 @@
+{
+  "original_path": "extraction/output/qwen_qwen3.7-plus_8/debug/images/w15-2-机器人运动学及其应用_p8_img3.jpeg",
+  "enhanced_path": "extraction/output/qwen_qwen3.7-plus_8/debug/images/w15-2-机器人运动学及其应用_p8_img3_enhanced.jpeg",
+  "description": "类型：示意图\n图片展示了一个Stewart并联机器人平台结构。主体由上下两个平行的多边形平台组成，平台中心均有圆形开口，边缘分布着安装孔。上下平台之间通过六根伸缩支杆连接，形成闭环机构。每根支杆呈现两段式套筒结构，代表由移动副连接的构件。支杆两端分别通过关节组件与上下平台相连，对应文本描述的球面副与虎克连接方式，整体构成六自由度并联机构。",
+  "metadata": {
+    "generation": {
+      "method": "qwen_api",
+      "backend": "api",
+      "provider": "qwen",
+      "model": "qwen3.7-plus",
+      "status": "success",
+      "api_error": null
+    },
+    "review": {
+      "required": false,
+      "status": null,
+      "reason": null,
+      "course_relevant": true
+    }
+  },
+  "error": null,
+  "method": "qwen_api",
+  "backend": "api",
+  "provider": "qwen",
+  "model": "qwen3.7-plus",
+  "status": "success",
+  "api_error": null,
+  "indexable": true,
+  "review_required": false,
+  "review_reason": null,
+  "review_status": null,
+  "course_relevant": true
+}

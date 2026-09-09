@@ -33,7 +33,7 @@ class ApiVLMClient:
         self.temperature = float(config.get("temperature") or 0.1)
         self.image_detail = str(config.get("image_detail") or "auto")
         self.formula_max_tokens = int(config.get("formula_max_tokens") or 2000)
-        self.table_max_tokens = int(config.get("table_max_tokens") or 1500)
+        self.table_max_tokens = int(config.get("table_max_tokens") or 3000)
         self.table_timeout_seconds = int(config.get("table_timeout_seconds") or 150)
         self.table_retry_count = int(config.get("table_retry_count") or 1)
         thinking_value = config.get("enable_thinking", False)
@@ -59,10 +59,12 @@ class ApiVLMClient:
         prompt = (
             "识别图片中实际可见的数学、物理或工程公式，只输出合法JSON，不要输出Markdown代码块。"
             "严格保留下标、上标、分数、根号、积分上下限、矩阵、希腊字母、数字和正负号；不得补写不可见内容。"
+            "英文字母大小写必须逐字符忠实于图片，不能因上下文把小写c改成大写C；无法确认大小写时加入uncertain_symbols。"
+            "不要把孤立的正负号、数值阈值、尺寸标注、变量标签、公式标题或一条公式中的局部项单独当作完整公式。"
             "无法确认的字符在LaTeX中写为?，并加入uncertain_symbols。JSON格式："
-            '{"has_formula":true,"formulas":[{"latex":"","uncertain_symbols":[],"confidence":0.0}]}. '
+            '{"has_formula":true,"formulas":[{"latex":"","uncertain_symbols":[],"is_complete_formula":true,"confidence":0.0}]}. '
             "没有公式时返回 {\"has_formula\":false,\"formulas\":[]}。"
-            "每个公式只允许返回latex、uncertain_symbols、confidence三个字段；不要解释公式含义、"
+            "每个公式只允许返回latex、uncertain_symbols、is_complete_formula、confidence四个字段；不要解释公式含义、"
             "不要展开符号列表。同一条跨行公式应合并为一个latex字符串。"
             f"页面上下文仅用于消歧，不得用于补写公式：{(context or '')[:800]}"
         )
@@ -141,12 +143,16 @@ class ApiVLMClient:
 
     def recognize_table(self, image_path: str, context: str = "") -> Dict[str, Any]:
         prompt = (
-            "识别图片中实际可见的表格，只输出合法JSON，不要输出Markdown代码块。"
+            "识别图片中实际可见的全部表格，只输出合法JSON，不要输出Markdown代码块。"
+            "先独立清点视觉上分离的表格区域，再逐表转录；一张图片存在两张或更多表格时不得合并或遗漏。"
             "严格保留原始行列、空单元格、数字、小数点、百分号、正负号和单位，不得推测被遮挡内容。"
-            "多级表头用二维headers表示，无法确认的单元格填null并在uncertain_cells记录[row,col]。JSON格式："
-            '{"has_table":true,"title":"","headers":[[""]],"cells":[[""]],'
-            '"merged_cells":[],"units":{},"footnotes":[],"uncertain_cells":[],"confidence":0.0}. '
-            "没有表格时返回 {\"has_table\":false,\"headers\":[],\"cells\":[]}。"
+            "多级表头用二维headers表示，无法确认的单元格填null并在uncertain_cells记录[row,col]。"
+            "visible_table_count表示图片中看到的表格区域数；只有所有区域和单元格都已处理时coverage_complete才为true。JSON格式："
+            '{"has_table":true,"visible_table_count":2,"coverage_complete":true,"tables":['
+            '{"title":"","headers":[[""]],"cells":[[""]],"merged_cells":[],"units":{},'
+            '"footnotes":[],"uncertain_cells":[],"confidence":0.0}]}. '
+            "没有表格时返回 {\"has_table\":false,\"visible_table_count\":0,"
+            "\"coverage_complete\":true,\"tables\":[]}。"
             f"页面上下文仅用于消歧：{(context or '')[:800]}"
         )
         response = self._chat_with_image(

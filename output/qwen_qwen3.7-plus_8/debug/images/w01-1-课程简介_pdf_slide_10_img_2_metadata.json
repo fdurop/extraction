@@ -1,0 +1,33 @@
+{
+  "original_path": "extraction/output/qwen_qwen3.7-plus_8/debug/images/w01-1-课程简介_p10_img3.jpeg",
+  "enhanced_path": "extraction/output/qwen_qwen3.7-plus_8/debug/images/w01-1-课程简介_p10_img3_enhanced.jpeg",
+  "description": "类型：照片\n图片展示一台轮式机器人实物，位于白色桌面上。机器人采用银色金属框架结构，底部安装有四个麦克纳姆轮，轮毂为白色，轮胎为黑色。车身中部固定一块白色电路板，板上可见蓝色接线端子及红黑导线。顶部横向安装两个黑色圆柱形电机，正中央竖立一个红色急停按钮。整体呈现复杂的机电组装形态，包含裸露的线缆与机械传动部件，对应课程中“轮式机器人”及“主要硬件”的教学内容。",
+  "metadata": {
+    "generation": {
+      "method": "qwen_api",
+      "backend": "api",
+      "provider": "qwen",
+      "model": "qwen3.7-plus",
+      "status": "success",
+      "api_error": null
+    },
+    "review": {
+      "required": false,
+      "status": null,
+      "reason": null,
+      "course_relevant": true
+    }
+  },
+  "error": null,
+  "method": "qwen_api",
+  "backend": "api",
+  "provider": "qwen",
+  "model": "qwen3.7-plus",
+  "status": "success",
+  "api_error": null,
+  "indexable": true,
+  "review_required": false,
+  "review_reason": null,
+  "review_status": null,
+  "course_relevant": true
+}

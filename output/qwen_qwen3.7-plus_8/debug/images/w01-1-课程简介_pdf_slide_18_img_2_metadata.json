@@ -1,0 +1,33 @@
+{
+  "original_path": "extraction/output/qwen_qwen3.7-plus_8/debug/images/w01-1-课程简介_p18_img3.jpeg",
+  "enhanced_path": "extraction/output/qwen_qwen3.7-plus_8/debug/images/w01-1-课程简介_p18_img3_enhanced.jpeg",
+  "description": "类型：照片\n图中展示一台绿色多关节机械臂安装在黑色移动底盘上，末端执行器向下投射出锥形青色光束，标注作用距离为260mm。画面左下角列有三种几何目标物体及其规格标签：蓝色球体（Φ30mm 球体）、绿色圆柱体（Φ30x40mm 圆柱体）和红色正方体（20*30*40mm 正方体）。该图片直观展示了课程提及的“ROS2 机械臂”硬件实物及其视觉感知或操作对象。",
+  "metadata": {
+    "generation": {
+      "method": "qwen_api",
+      "backend": "api",
+      "provider": "qwen",
+      "model": "qwen3.7-plus",
+      "status": "success",
+      "api_error": null
+    },
+    "review": {
+      "required": false,
+      "status": null,
+      "reason": null,
+      "course_relevant": true
+    }
+  },
+  "error": null,
+  "method": "qwen_api",
+  "backend": "api",
+  "provider": "qwen",
+  "model": "qwen3.7-plus",
+  "status": "success",
+  "api_error": null,
+  "indexable": true,
+  "review_required": false,
+  "review_reason": null,
+  "review_status": null,
+  "course_relevant": true
+}

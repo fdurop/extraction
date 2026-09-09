@@ -1,0 +1,21 @@
+{
+  "page_num": 10,
+  "raw_text": "机电系统原理及实践—— 课程简介\n机电智控实验室tangguoan@fudan.edu.cn mmguo@fudan.edu.cn\n动起来按指定路径动动得又快又好\n18-11\n前馈控制\n反馈控制\n室 复旦大\n智控实验室 复旦大学 机电\n学 机电智控实验室 复旦大学 机电智控实验\n复旦大学 机电智控实验室 复旦大学 机电智控实验室 复旦\n旦大学 机电智控实验室 复旦大学 机电智控实验室 复旦大学 机电\n电智控实验室 复旦大学 机电智控实验室 复旦大学 机电智控实\n验室 复旦大学 机电智控实验室 复旦大学 机电智控实验室 \n旦大学 机电智控实验室 复旦大学 机电智控\n电智控实验室 复旦大学 \n实验室 复\n",
+  "cleaned_text": "动起来按指定路径动动得又快又好\n前馈控制\n反馈控制",
+  "key_points": [],
+  "technical_terms": [
+    "前馈控制",
+    "反馈控制"
+  ],
+  "has_images": true,
+  "image_count": 2,
+  "image_paths": [
+    "extraction/output/qwen_qwen3.7-plus_8/debug/images/w01-1-课程简介_p11_img2.jpeg",
+    "extraction/output/qwen_qwen3.7-plus_8/debug/images/w01-1-课程简介_p11_img3.jpeg"
+  ],
+  "metadata": {
+    "char_count": 306,
+    "word_count": 46,
+    "line_count": 17
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "original_path": "extraction/output/qwen_qwen3.7-plus_9/debug/images/w03-1-直流电机原理_p5_img4.png",
+  "enhanced_path": "extraction/output/qwen_qwen3.7-plus_9/debug/images/w03-1-直流电机原理_p5_img4_enhanced.png",
+  "description": "类型：示意图\n图片展示有刷直流电机横截面结构。外部为环形定子机壳。内部中心为转子，包含三个呈辐射状分布的绕组线圈。底部设有一对磁极，上方标记S，下方标记N。转子轴心处绘有换向器结构，通过电刷与外部电路连接。左侧引出蓝色导线连接负极（-），右侧引出红色导线连接正极（+）。图上方有一个弯曲箭头指示旋转方向。左右两侧分别有蓝色和红色的矩形块状标识。",
+  "metadata": {
+    "generation": {
+      "method": "qwen_api",
+      "backend": "api",
+      "provider": "qwen",
+      "model": "qwen3.7-plus",
+      "status": "success",
+      "api_error": null
+    },
+    "review": {
+      "required": false,
+      "status": null,
+      "reason": null,
+      "course_relevant": true
+    }
+  },
+  "error": null,
+  "method": "qwen_api",
+  "backend": "api",
+  "provider": "qwen",
+  "model": "qwen3.7-plus",
+  "status": "success",
+  "api_error": null,
+  "indexable": true,
+  "review_required": false,
+  "review_reason": null,
+  "review_status": null,
+  "course_relevant": true
+}

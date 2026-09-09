@@ -1,0 +1,33 @@
+{
+  "original_path": "extraction/output/qwen_qwen3.7-plus_8/debug/images/w01-1-课程简介_p10_img10.jpeg",
+  "enhanced_path": "extraction/output/qwen_qwen3.7-plus_8/debug/images/w01-1-课程简介_p10_img10_enhanced.jpeg",
+  "description": "类型：照片\n图片展示了一个轮式机器人的内部底盘结构。主体为白色矩形框架，前后两端各安装有一组直流电机与车轮组件。框架中央固定着一块绿色接线端子排电路板，通过红黑导线连接至右侧一个贴有蓝黄标签的白色方形控制器盒。底部可见黄色标签分别标注“右轮”和“左轮”。该硬件实物图对应课程列表中“轮式机器人”、“有刷直流电机”及“继电器”等主要硬件教学内容。",
+  "metadata": {
+    "generation": {
+      "method": "qwen_api",
+      "backend": "api",
+      "provider": "qwen",
+      "model": "qwen3.7-plus",
+      "status": "success",
+      "api_error": null
+    },
+    "review": {
+      "required": false,
+      "status": null,
+      "reason": null,
+      "course_relevant": true
+    }
+  },
+  "error": null,
+  "method": "qwen_api",
+  "backend": "api",
+  "provider": "qwen",
+  "model": "qwen3.7-plus",
+  "status": "success",
+  "api_error": null,
+  "indexable": true,
+  "review_required": false,
+  "review_reason": null,
+  "review_status": null,
+  "course_relevant": true
+}

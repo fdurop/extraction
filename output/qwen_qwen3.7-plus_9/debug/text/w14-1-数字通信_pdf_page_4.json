@@ -1,0 +1,19 @@
+{
+  "page_num": 3,
+  "raw_text": "机电系统原理及实践—— 数字通信\n机电智控实验室tangguoan@fudan.edu.cn mmguo@fudan.edu.cn\n§1 数字通信概述\n常用于分层架构中，在上/下位机之间传递指令与数据，实现模块化设计。\n23-4\n",
+  "cleaned_text": "§1 数字通信概述\n常用于分层架构中，在上/下位机之间传递指令与数据，实现模块化设计。",
+  "key_points": [
+    "常用于分层架构中，在上/下位机之间传递指令与数据，实现模块化设计。"
+  ],
+  "technical_terms": [],
+  "has_images": true,
+  "image_count": 1,
+  "image_paths": [
+    "extraction/output/qwen_qwen3.7-plus_9/debug/images/w14-1-数字通信_p4_img3.jpeg"
+  ],
+  "metadata": {
+    "char_count": 116,
+    "word_count": 8,
+    "line_count": 6
+  }
+}

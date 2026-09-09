@@ -1,0 +1,33 @@
+{
+  "original_path": "extraction/output/qwen_qwen3.7-plus_9/debug/images/w15-1-无刷直流电机驱动器_p4_img3.jpeg",
+  "enhanced_path": "extraction/output/qwen_qwen3.7-plus_9/debug/images/w15-1-无刷直流电机驱动器_p4_img3_enhanced.jpeg",
+  "description": "类型：示意图\n图片展示了手拨开关控制步进电机的接线原理。图中包含两个标注为“双刀双掷开关”的组件、一个标有“A A B B”端口的“电机”以及两个“接线端子”。红色导线连接上方“接线端子”（标注接电源+）至两个开关的公共端；绿色导线连接下方“接线端子”（标注接电源-）并汇合后分别连至两个开关的另一侧触点。开关的输出端通过黑线分别连接至电机的A相和B相端口，呈现利用双刀双掷开关改变电流方向以驱动电机的电路拓扑。",
+  "metadata": {
+    "generation": {
+      "method": "qwen_api",
+      "backend": "api",
+      "provider": "qwen",
+      "model": "qwen3.7-plus",
+      "status": "success",
+      "api_error": null
+    },
+    "review": {
+      "required": false,
+      "status": null,
+      "reason": null,
+      "course_relevant": true
+    }
+  },
+  "error": null,
+  "method": "qwen_api",
+  "backend": "api",
+  "provider": "qwen",
+  "model": "qwen3.7-plus",
+  "status": "success",
+  "api_error": null,
+  "indexable": true,
+  "review_required": false,
+  "review_reason": null,
+  "review_status": null,
+  "course_relevant": true
+}

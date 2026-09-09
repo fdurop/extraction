@@ -109,6 +109,21 @@ class TableValidator:
         if item["uncertain_cells"]:
             issues.append("uncertain_cells")
 
+        if item.get("backend") == "api":
+            visible_count = item.get("visible_table_count")
+            extracted_count = item.get("extracted_table_count")
+            if item.get("coverage_complete") is not True:
+                issues.append("table_coverage_unverified")
+            try:
+                visible_count = int(visible_count)
+                extracted_count = int(extracted_count)
+                if visible_count != extracted_count:
+                    issues.append("table_coverage_mismatch")
+                if visible_count > 1:
+                    issues.append("multiple_tables_require_review")
+            except (TypeError, ValueError):
+                issues.append("table_count_unverified")
+
         source_confidence = item.get("accuracy", item.get("confidence"))
         try:
             source_confidence = float(source_confidence) / 100.0 if float(source_confidence) > 1 else float(source_confidence)
@@ -117,7 +132,8 @@ class TableValidator:
         score = 0.35 * consistency + 0.30 * non_empty_ratio + 0.35 * source_confidence
         score -= 0.18 * len(issues)
         score = max(0.0, min(1.0, score))
-        review_required = bool(issues) or score < 0.70
+        pass_threshold = 0.90 if item.get("backend") == "api" else 0.70
+        review_required = bool(issues) or score < pass_threshold
         item.update(
             {
                 "confidence": round(score, 4),

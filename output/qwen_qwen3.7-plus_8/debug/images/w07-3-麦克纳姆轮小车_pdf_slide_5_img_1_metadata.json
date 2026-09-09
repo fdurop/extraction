@@ -1,0 +1,33 @@
+{
+  "original_path": "extraction/output/qwen_qwen3.7-plus_8/debug/images/w07-3-麦克纳姆轮小车_p5_img2.png",
+  "enhanced_path": "extraction/output/qwen_qwen3.7-plus_8/debug/images/w07-3-麦克纳姆轮小车_p5_img2_enhanced.png",
+  "description": "类型：示意图\n图中展示麦克纳姆轮受力分析模型。红色实线箭头表示轮毂轴线，红色虚线箭头表示辊子轴线，两者夹角标注为γ=45°。橙色箭头代表摩擦力Ff，被分解为垂直于辊子轴线的分量F和平行于辊子轴线的分量F∥（黄色箭头）。F∥进一步在轮毂坐标系中分解为沿轮毂轴线的F∥x（橙色向左）和垂直于轮毂轴线的F∥y（绿色向上）。蓝色弯曲箭头指示运动或旋转方向。背景包含三个深灰色椭圆代表辊子。",
+  "metadata": {
+    "generation": {
+      "method": "qwen_api",
+      "backend": "api",
+      "provider": "qwen",
+      "model": "qwen3.7-plus",
+      "status": "success",
+      "api_error": null
+    },
+    "review": {
+      "required": false,
+      "status": null,
+      "reason": null,
+      "course_relevant": true
+    }
+  },
+  "error": null,
+  "method": "qwen_api",
+  "backend": "api",
+  "provider": "qwen",
+  "model": "qwen3.7-plus",
+  "status": "success",
+  "api_error": null,
+  "indexable": true,
+  "review_required": false,
+  "review_reason": null,
+  "review_status": null,
+  "course_relevant": true
+}

@@ -1,0 +1,29 @@
+{
+  "page_num": 10,
+  "raw_text": "机电系统原理及实践—— 机器人运动学简介\n机电智控实验室tangguoan@fudan.edu.cn mmguo@fudan.edu.cn\n§2.3 二连杆机械臂的逆运动学\n给定机械臂末端位置，即点𝑃的坐标，\n确定各个关节的旋转角度。\n一般而言，机械臂的逆运动学解不唯一。\n平面2R机械臂：两个关于OP镜像对称的解。\n定解条件\n根据实际问题提出定解条件。\n本例：小腿不超过膝关节，即𝜽𝟐≥𝟎。\n21-11\n𝜃1\n𝜃2\n𝑦\n𝑥\n𝑃(𝑥, 𝑦)\n𝑂\n𝐿1\n𝐿2\n𝐿\n",
+  "cleaned_text": "§2.3 二连杆机械臂的逆运动学\n给定机械臂末端位置，即点𝑃的坐标，\n确定各个关节的旋转角度。\n一般而言，机械臂的逆运动学解不唯一。\n平面2R机械臂：两个关于OP镜像对称的解。\n定解条件\n根据实际问题提出定解条件。\n本例：小腿不超过膝关节，即𝜽𝟐≥𝟎。\n𝜃1\n𝜃2\n𝑦\n𝑥\n𝑃(𝑥, 𝑦)\n𝑂\n𝐿1\n𝐿2\n𝐿",
+  "key_points": [
+    "确定各个关节的旋转角度。",
+    "一般而言，机械臂的逆运动学解不唯一。",
+    "平面2R机械臂：两个关于OP镜像对称的解。",
+    "根据实际问题提出定解条件。",
+    "本例：小腿不超过膝关节，即𝜽𝟐≥𝟎。",
+    "𝑃(𝑥, 𝑦)",
+    "𝑂",
+    "𝐿1",
+    "𝐿2",
+    "𝐿"
+  ],
+  "technical_terms": [],
+  "has_images": true,
+  "image_count": 2,
+  "image_paths": [
+    "extraction/output/qwen_qwen3.7-plus_8/debug/images/w15-2-机器人运动学及其应用_p11_img3.jpeg",
+    "extraction/output/qwen_qwen3.7-plus_8/debug/images/w15-2-机器人运动学及其应用_p11_img4.jpeg"
+  ],
+  "metadata": {
+    "char_count": 237,
+    "word_count": 24,
+    "line_count": 21
+  }
+}

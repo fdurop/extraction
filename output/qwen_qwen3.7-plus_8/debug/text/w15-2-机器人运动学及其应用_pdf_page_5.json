@@ -1,0 +1,28 @@
+{
+  "page_num": 4,
+  "raw_text": "机电系统原理及实践—— 机器人运动学简介\n机电智控实验室tangguoan@fudan.edu.cn mmguo@fudan.edu.cn\n§1.2 串联机器人\n多个连杆串联，连接形成首尾不封闭的结构。\n逆运动学难于正运动学。\n常见串联机器人\n六轴机器人\n6个关节的合成，实现末端的6自由度动作。\n具有高灵活性、超大负载、高定位精度等众多优点。\nSCARA (Selective Compliance Assembly Robot Arm) 机器人\n\n三个转动关节（2R1H），关节的轴线相互平行。\n\n各臂只沿平面方向旋转，又称平面关节型机器人。\n21-5\n六\n轴\n机\n器\n人\nSCARA\n机器人\n关节1\n关节2\n关节3\n",
+  "cleaned_text": "§1.2 串联机器人\n多个连杆串联，连接形成首尾不封闭的结构。\n逆运动学难于正运动学。\n常见串联机器人\n六轴机器人\n6个关节的合成，实现末端的6自由度动作。\n具有高灵活性、超大负载、高定位精度等众多优点。\nSCARA (Selective Compliance Assembly Robot Arm) 机器人\n三个转动关节（2R1H），关节的轴线相互平行。\n各臂只沿平面方向旋转，又称平面关节型机器人。\n六\n轴\n机\n器\n人\nSCARA\n机器人\n关节1\n关节2\n关节3",
+  "key_points": [
+    "多个连杆串联，连接形成首尾不封闭的结构。",
+    "逆运动学难于正运动学。",
+    "6个关节的合成，实现末端的6自由度动作。",
+    "具有高灵活性、超大负载、高定位精度等众多优点。",
+    "三个转动关节（2R1H），关节的轴线相互平行。",
+    "各臂只沿平面方向旋转，又称平面关节型机器人。",
+    "SCARA"
+  ],
+  "technical_terms": [
+    "SCARA"
+  ],
+  "has_images": true,
+  "image_count": 2,
+  "image_paths": [
+    "extraction/output/qwen_qwen3.7-plus_8/debug/images/w15-2-机器人运动学及其应用_p5_img3.jpeg",
+    "extraction/output/qwen_qwen3.7-plus_8/debug/images/w15-2-机器人运动学及其应用_p5_img4.jpeg"
+  ],
+  "metadata": {
+    "char_count": 320,
+    "word_count": 34,
+    "line_count": 26
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "page_num": 3,
+  "raw_text": "机电系统原理及实践—— 无刷直流电机驱动简介\n机电智控实验室tangguoan@fudan.edu.cn mmguo@fudan.edu.cn\n§1 电机驱动器回顾\n9-4\n通道6\nA\nB\n通道5\nA\nB\n通道4\nA\nB\n通道3\nA\nB\n通道2\nA\nB\n通道1\nA\nB\n通道8\nA\nB\n通道7\nA\nB\nDC+\nDC-\nD5\nD6\nD7\nD8\nD9\nD10\nD11\nD12\nCH1\nCH2\nCH3\nCH4\nCH5\nCH6\nCH7\nCH8\n5V\nGND\n接电源-\nA\nA\nB\nB\n接电源+\n步进电机驱动器\n手拨开关控制步进电机\n",
+  "cleaned_text": "§1 电机驱动器回顾\n通道6\nA\nB\n通道5\nA\nB\n通道4\nA\nB\n通道3\nA\nB\n通道2\nA\nB\n通道1\nA\nB\n通道8\nA\nB\n通道7\nA\nB\nDC+\nDC-\nD5\nD6\nD7\nD8\nD9\nD10\nD11\nD12\nCH1\nCH2\nCH3\nCH4\nCH5\nCH6\nCH7\nCH8\n5V\nGND\n接电源-\nA\nA\nB\nB\n接电源+\n步进电机驱动器\n手拨开关控制步进电机",
+  "key_points": [
+    "A",
+    "B",
+    "A",
+    "B",
+    "A",
+    "B",
+    "A",
+    "B",
+    "A",
+    "B"
+  ],
+  "technical_terms": [
+    "DC",
+    "GND",
+    "手拨开关控制",
+    "手拨开关控制步进电机",
+    "步进电机驱动器",
+    "电机驱动器"
+  ],
+  "has_images": true,
+  "image_count": 1,
+  "image_paths": [
+    "extraction/output/qwen_qwen3.7-plus_8/debug/images/w15-1-无刷直流电机驱动器_p4_img3.jpeg"
+  ],
+  "metadata": {
+    "char_count": 262,
+    "word_count": 59,
+    "line_count": 57
+  }
+}

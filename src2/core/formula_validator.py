@@ -49,12 +49,18 @@ class FormulaValidator:
             issues.append("empty_latex")
         if latex and self._is_atomic_symbol(latex):
             issues.append("not_substantive_formula")
+        if latex and self._is_isolated_fragment(latex):
+            issues.append("isolated_formula_fragment")
+        if latex and self._has_possible_case_collision(latex):
+            issues.append("possible_symbol_case_confusion")
         if latex and not self._balanced(latex):
             issues.append("unbalanced_delimiters")
         if latex and self._has_incomplete_command(latex):
             issues.append("incomplete_latex_command")
         if item["uncertain_symbols"] or any(marker in latex.lower() for marker in self._UNCERTAIN_MARKERS):
             issues.append("uncertain_symbols")
+        if item.get("is_complete_formula") is False:
+            issues.append("model_reports_incomplete_formula")
         if len(latex) > 1500:
             issues.append("latex_too_long")
 
@@ -71,7 +77,8 @@ class FormulaValidator:
         confidence -= 0.28 * len(issues)
         confidence = max(0.0, min(1.0, confidence))
 
-        review_required = bool(issues) or confidence < 0.70
+        pass_threshold = 0.85 if "image" in source_type or item.get("backend") == "api" else 0.70
+        review_required = bool(issues) or confidence < pass_threshold
         item.update(
             {
                 "confidence": round(confidence, 4),
@@ -174,3 +181,27 @@ class FormulaValidator:
         stripped = re.sub(r"\\(?:tilde|widetilde|hat|bar|mathbf|mathrm|text)\s*", "", latex)
         stripped = re.sub(r"[{}_^\s]", "", stripped)
         return bool(re.fullmatch(r"[A-Za-zΑ-Ωα-ω]+(?:\([^()]*\))?", stripped))
+
+    @staticmethod
+    def _is_isolated_fragment(latex: str) -> bool:
+        """Flag short labels or operands that need surrounding visual context."""
+        compact = re.sub(r"\s+", "", latex)
+        if re.fullmatch(r"\\(?:pm|mp)[+-]?\d+(?:\.\d+)?", compact):
+            return True
+        relations = ("=", "<", ">", r"\le", r"\ge", r"\approx", r"\sim", r"\propto", r"\Rightarrow")
+        substantive = (r"\int", r"\sum", r"\prod", r"\lim", r"\begin")
+        if any(marker in compact for marker in relations + substantive):
+            return False
+        # Expressions such as d/4 or Delta-theta/2 are commonly diagram labels
+        # or pieces of prose. Retain them for teacher review instead of deleting.
+        return len(compact) <= 32 and bool(re.search(r"[A-Za-zΑ-Ωα-ω\\]", compact))
+
+    @staticmethod
+    def _has_possible_case_collision(latex: str) -> bool:
+        """Detect self-scaling equations where VLM case confusion is plausible."""
+        compact = re.sub(r"\s+", "", latex)
+        match = re.fullmatch(
+            r"([A-Za-z])=\1(?:\\?cdot|\\?times|[*/])(.+)",
+            compact,
+        )
+        return bool(match)

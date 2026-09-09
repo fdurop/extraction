@@ -1,0 +1,14 @@
+{
+  "source_image": "extraction/output/qwen_qwen3.7-plus_8/debug/images/w08-1-步进电机驱动器_p8_img2.png",
+  "extraction_method": "qwen_api_智能识别",
+  "language": "cpp",
+  "description": "通过外部中断控制LED开关。当连接到引脚2的按钮/开关状态发生变化时，触发中断服务函数blink()，切换LED（引脚13）的亮灭状态。",
+  "code_file": "w08-1-步进电机驱动器_pdf_page_8_code_1.cpp",
+  "page": 8,
+  "index": 1,
+  "timestamp": "2026-09-09T09:30:46.778177",
+  "raw_response": "语言: Arduino (C/C++)\n```cpp\nconst byte ledPin = 13;\nconst byte interruptPin = 2;\nvolatile byte state = LOW;\n\nvoid setup() {\n  pinMode(ledPin, OUTPUT);\n  pinMode(interruptPin, INPUT_PULLUP);\n  attachInterrupt(digitalPinToInterrupt(interruptPin), blink, CHANGE);\n}\n\nvoid loop() {\n  digitalWrite(ledPin, state);\n}\n\nvoid blink() {\n  state = !state;\n}\n```\n功能: 通过外部中断控制LED开关。当连接到引脚2的按钮/开关状态发生变化时，触发中断服务函数blink()，切换LED（引脚13）的亮灭状态。",
+  "backend": "api",
+  "provider": "qwen",
+  "model": "qwen3.7-plus"
+}

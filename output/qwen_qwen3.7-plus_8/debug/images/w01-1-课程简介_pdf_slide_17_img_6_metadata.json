@@ -1,0 +1,33 @@
+{
+  "original_path": "extraction/output/qwen_qwen3.7-plus_8/debug/images/w01-1-课程简介_p17_img7.jpeg",
+  "enhanced_path": "extraction/output/qwen_qwen3.7-plus_8/debug/images/w01-1-课程简介_p17_img7_enhanced.jpeg",
+  "description": "类型：照片\n白色实验台面上放置一辆四轮移动机器人底盘，顶部垂直安装有黑色机械臂及末端执行器，车身可见裸露电路板与连线。台面中央有一个红色圆柱体，左侧排列着三个白色长方形收纳盒（内含线缆）及一个棕色纸箱。背景为白色储物柜（部分为玻璃门，可见内部仪器）及左侧投影幕布。结合上下文“往届案例”及“麦轮小车机械臂”，该图展示了课程相关的机电系统实物平台。",
+  "metadata": {
+    "generation": {
+      "method": "qwen_api",
+      "backend": "api",
+      "provider": "qwen",
+      "model": "qwen3.7-plus",
+      "status": "success",
+      "api_error": null
+    },
+    "review": {
+      "required": false,
+      "status": null,
+      "reason": null,
+      "course_relevant": true
+    }
+  },
+  "error": null,
+  "method": "qwen_api",
+  "backend": "api",
+  "provider": "qwen",
+  "model": "qwen3.7-plus",
+  "status": "success",
+  "api_error": null,
+  "indexable": true,
+  "review_required": false,
+  "review_reason": null,
+  "review_status": null,
+  "course_relevant": true
+}

@@ -1,0 +1,31 @@
+{
+  "page_num": 6,
+  "raw_text": "机电系统原理及实践—— 脉宽调制& 舵机\n机电智控实验室tangguoan@fudan.edu.cn mmguo@fudan.edu.cn\n§2 实践：用电位器调节LED灯亮度\n电位器：起控制作用。\n作为模拟输入，在一定范围内调节某个参数，\n如灯的亮度，电机转速等。\n注意电位器阻值的选取。\n读取电位器数值（AI: A/D转换）\nsensorValue = analogRead(analogInPin)\n\nanalogInPin：A0/A1/A2/A3/A4/A5\n根据AI，控制AO，达到调节效果。\n提示：控制操作放在loop 循环中。\n注意：剥线和接线的工艺要求。\n15-7\nZ1\nZ2\n↑\n10k\n电位器用法\n电位器\nw02-s2-LedKnob.ino\n0-1023\n室 复旦大\n智控实验室 复旦大学 机电\n学 机电智控实验室 复旦大学 机电智控实验\n复旦大学 机电智控实验室 复旦大学 机电智控实验室 复旦\n大学 机电智控实验室 复旦大学 机电智控实验室 复旦大学 机电\n电智控实验室 复旦大学 机电智控实验室 复旦大学 机电智控实\n验室 复旦大学 机电智控实验室 复旦大学 机电智控实验室 \n旦大学 机电智控实验室 复旦大学 机电智控\n电智控实验室 复旦大学 \n验室 复\n",
+  "cleaned_text": "§2 实践：用电位器调节LED灯亮度\n电位器：起控制作用。\n作为模拟输入，在一定范围内调节某个参数，\n如灯的亮度，电机转速等。\n注意电位器阻值的选取。\n读取电位器数值（AI: A/D转换）\nsensorValue = analogRead(analogInPin)\nanalogInPin：A0/A1/A2/A3/A4/A5\n根据AI，控制AO，达到调节效果。\n提示：控制操作放在loop 循环中。\n注意：剥线和接线的工艺要求。\nZ1\nZ2\n↑\n10k\n电位器用法\n电位器\nw02-s2-LedKnob.ino\n0-1023",
+  "key_points": [
+    "电位器：起控制作用。",
+    "如灯的亮度，电机转速等。",
+    "注意电位器阻值的选取。",
+    "根据AI，控制AO，达到调节效果。",
+    "提示：控制操作放在loop 循环中。",
+    "注意：剥线和接线的工艺要求。",
+    "Z1",
+    "Z2"
+  ],
+  "technical_terms": [
+    "AI",
+    "w02-s2-LedKnob"
+  ],
+  "has_images": true,
+  "image_count": 3,
+  "image_paths": [
+    "extraction/output/qwen_qwen3.7-plus_9/debug/images/w02-1-PWM和舵机_p7_img2.jpeg",
+    "extraction/output/qwen_qwen3.7-plus_9/debug/images/w02-1-PWM和舵机_p7_img3.jpeg",
+    "extraction/output/qwen_qwen3.7-plus_9/debug/images/w02-1-PWM和舵机_p7_img4.png"
+  ],
+  "metadata": {
+    "char_count": 552,
+    "word_count": 69,
+    "line_count": 34
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "page_num": 15,
+  "raw_text": "§4 \n有刷直流电机应用\n——\n四轮小车设计与制作\n23-\n前进\n后退\n12V\n锂电池\n总体设计\nLED\n开关\n12V\n供电插头\n马达\n端子\n马达\n端子",
+  "cleaned_text": "§4\n有刷直流电机应用\n——\n四轮小车设计与制作\n前进\n后退\n12V\n锂电池\n总体设计\nLED\n开关\n12V\n供电插头\n马达\n端子\n马达\n端子",
+  "key_points": [
+    "LED"
+  ],
+  "technical_terms": [
+    "LED",
+    "有刷直流电机"
+  ],
+  "has_images": true,
+  "image_count": 2,
+  "image_paths": [
+    "extraction/output/qwen_qwen3.7-plus_9/debug/images/w04-1-有刷直流电机驱动器及其应用_slide_16_img_1.png",
+    "extraction/output/qwen_qwen3.7-plus_9/debug/images/w04-1-有刷直流电机驱动器及其应用_slide_16_img_2.png"
+  ],
+  "metadata": {
+    "char_count": 76,
+    "word_count": 18,
+    "line_count": 18
+  }
+}

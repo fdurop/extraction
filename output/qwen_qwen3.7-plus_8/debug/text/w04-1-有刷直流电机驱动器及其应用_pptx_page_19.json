@@ -1,0 +1,17 @@
+{
+  "page_num": 18,
+  "raw_text": "物料清单\n23-",
+  "cleaned_text": "物料清单",
+  "key_points": [],
+  "technical_terms": [],
+  "has_images": true,
+  "image_count": 1,
+  "image_paths": [
+    "extraction/output/qwen_qwen3.7-plus_8/debug/images/w04-1-有刷直流电机驱动器及其应用_slide_19_img_1.png"
+  ],
+  "metadata": {
+    "char_count": 8,
+    "word_count": 2,
+    "line_count": 2
+  }
+}

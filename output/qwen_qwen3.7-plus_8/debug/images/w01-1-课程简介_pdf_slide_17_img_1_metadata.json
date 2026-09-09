@@ -1,0 +1,33 @@
+{
+  "original_path": "extraction/output/qwen_qwen3.7-plus_8/debug/images/w01-1-课程简介_p17_img2.jpeg",
+  "enhanced_path": "extraction/output/qwen_qwen3.7-plus_8/debug/images/w01-1-课程简介_p17_img2_enhanced.jpeg",
+  "description": "类型：照片\n图片展示了一辆放置在白色纸板上的金属底盘机器人小车。车身呈不规则多边形，由银色金属板组装而成，表面可见螺丝孔。车辆四角安装有黑色的全向轮（麦轮）。车体内部及顶部裸露着电子元件，包括一块绿色的电路板、黑色的连接线束以及一个顶部亮着红光的圆柱形传感器模块。背景为米色瓷砖地面，纸板上散落着少量红色碎屑。结合上下文“麦轮小车”及实验室信息，该图片为课程往届实践案例的实物展示。",
+  "metadata": {
+    "generation": {
+      "method": "qwen_api",
+      "backend": "api",
+      "provider": "qwen",
+      "model": "qwen3.7-plus",
+      "status": "success",
+      "api_error": null
+    },
+    "review": {
+      "required": false,
+      "status": null,
+      "reason": null,
+      "course_relevant": true
+    }
+  },
+  "error": null,
+  "method": "qwen_api",
+  "backend": "api",
+  "provider": "qwen",
+  "model": "qwen3.7-plus",
+  "status": "success",
+  "api_error": null,
+  "indexable": true,
+  "review_required": false,
+  "review_reason": null,
+  "review_status": null,
+  "course_relevant": true
+}

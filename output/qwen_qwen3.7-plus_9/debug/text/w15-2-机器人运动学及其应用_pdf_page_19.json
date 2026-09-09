@@ -1,0 +1,26 @@
+{
+  "page_num": 18,
+  "raw_text": "机电系统原理及实践—— 机器人运动学简介\n机电智控实验室tangguoan@fudan.edu.cn mmguo@fudan.edu.cn\n自适应PID的运动学控制\n经典PID：系数固定。\n自适应PID：对系数再次应用PID.\n原理：PID系数影响电机的输出扭矩。\n实现一定的动力学控制效果。\n需优化二次PID的系数。\n21-19\n",
+  "cleaned_text": "自适应PID的运动学控制\n经典PID：系数固定。\n自适应PID：对系数再次应用PID.\n原理：PID系数影响电机的输出扭矩。\n实现一定的动力学控制效果。\n需优化二次PID的系数。",
+  "key_points": [
+    "经典PID：系数固定。",
+    "原理：PID系数影响电机的输出扭矩。",
+    "实现一定的动力学控制效果。",
+    "需优化二次PID的系数。"
+  ],
+  "technical_terms": [
+    "实现一定的动力学控制",
+    "的运动学控制",
+    "系数影响电机"
+  ],
+  "has_images": true,
+  "image_count": 1,
+  "image_paths": [
+    "extraction/output/qwen_qwen3.7-plus_9/debug/images/w15-2-机器人运动学及其应用_p19_img3.jpeg"
+  ],
+  "metadata": {
+    "char_count": 171,
+    "word_count": 11,
+    "line_count": 10
+  }
+}

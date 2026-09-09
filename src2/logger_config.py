@@ -16,12 +16,11 @@ class LoggerSetup:
     _log_file_path = None
     
     @classmethod
-    def setup_logger(cls, name, log_dir="logs", level=logging.INFO):
+    def setup_logger(cls, name, log_dir=os.path.join("extraction", "logs"), level=logging.INFO):
         # 可选的日志目录配置：
         # log_dir="logs"                    # 项目根目录下的 logs 文件夹
-        # log_dir="E:/project_logs"         # 绝对路径
-        # log_dir="output/运行日志"          # 中文路径
-        # log_dir="D:/logs/extraction"      # 其他盘符
+        # log_dir="extraction/logs"         # 默认运行日志
+        # log_dir="extraction/output/logs"  # 自定义相对目录
         """
         设置并返回一个logger实例
         

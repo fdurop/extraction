@@ -1,0 +1,14 @@
+{
+  "source_image": "extraction/output/qwen_qwen3.7-plus_8/debug/images/w14-1-数字通信_p22_img6.jpeg",
+  "extraction_method": "qwen_api_智能识别",
+  "language": "cpp",
+  "description": "该函数用于从串口（Serial）读取用户输入的浮点数。它会先阻塞等待串口有数据传入，然后使用 `Serial.parseFloat()` 解析出一个浮点数值，接着读取并丢弃随后的换行符，最后返回解析到的浮点数。常用于 Arduino 项目中获取用户通过串口监视器输入的坐标或参数。",
+  "code_file": "w14-1-数字通信_pdf_page_22_code_1.cpp",
+  "page": 22,
+  "index": 1,
+  "timestamp": "2026-09-09T11:06:43.664772",
+  "raw_response": "语言: C/C++ (Arduino)\n```cpp\nfloat inputPos() {\n  while (!Serial.available())\n    ;\n\n  // 从ASCII数据流中解析浮点数\n  float res = Serial.parseFloat();\n  // 读取换行符 '\\n'\n  Serial.read();\n  return res;\n}\n```\n功能: 该函数用于从串口（Serial）读取用户输入的浮点数。它会先阻塞等待串口有数据传入，然后使用 `Serial.parseFloat()` 解析出一个浮点数值，接着读取并丢弃随后的换行符，最后返回解析到的浮点数。常用于 Arduino 项目中获取用户通过串口监视器输入的坐标或参数。",
+  "backend": "api",
+  "provider": "qwen",
+  "model": "qwen3.7-plus"
+}

@@ -1,0 +1,126 @@
+{
+  "filename": "extraction/input/w04-1-有刷直流电机驱动器及其应用.pptx",
+  "format": "pptx",
+  "total_slides": 24,
+  "image_mapping": {
+    "11": [
+      "extraction/output/qwen_qwen3.7-plus_8/debug/images/w04-1-有刷直流电机驱动器及其应用_slide_11_vector_fallback.png"
+    ],
+    "12": [
+      "extraction/output/qwen_qwen3.7-plus_8/debug/images/w04-1-有刷直流电机驱动器及其应用_slide_12_img_1.png"
+    ],
+    "14": [
+      "extraction/output/qwen_qwen3.7-plus_8/debug/images/w04-1-有刷直流电机驱动器及其应用_slide_14_img_1.png"
+    ],
+    "15": [
+      "extraction/output/qwen_qwen3.7-plus_8/debug/images/w04-1-有刷直流电机驱动器及其应用_slide_15_img_1.png"
+    ],
+    "16": [
+      "extraction/output/qwen_qwen3.7-plus_8/debug/images/w04-1-有刷直流电机驱动器及其应用_slide_16_img_1.png",
+      "extraction/output/qwen_qwen3.7-plus_8/debug/images/w04-1-有刷直流电机驱动器及其应用_slide_16_img_2.png"
+    ],
+    "17": [
+      "extraction/output/qwen_qwen3.7-plus_8/debug/images/w04-1-有刷直流电机驱动器及其应用_slide_17_img_1.jpeg"
+    ],
+    "18": [
+      "extraction/output/qwen_qwen3.7-plus_8/debug/images/w04-1-有刷直流电机驱动器及其应用_slide_18_img_1.png",
+      "extraction/output/qwen_qwen3.7-plus_8/debug/images/w04-1-有刷直流电机驱动器及其应用_slide_18_img_2.png",
+      "extraction/output/qwen_qwen3.7-plus_8/debug/images/w04-1-有刷直流电机驱动器及其应用_slide_18_img_3.png",
+      "extraction/output/qwen_qwen3.7-plus_8/debug/images/w04-1-有刷直流电机驱动器及其应用_slide_18_img_4.png",
+      "extraction/output/qwen_qwen3.7-plus_8/debug/images/w04-1-有刷直流电机驱动器及其应用_slide_18_img_5.png",
+      "extraction/output/qwen_qwen3.7-plus_8/debug/images/w04-1-有刷直流电机驱动器及其应用_slide_18_img_6.png",
+      "extraction/output/qwen_qwen3.7-plus_8/debug/images/w04-1-有刷直流电机驱动器及其应用_slide_18_img_7.png"
+    ],
+    "19": [
+      "extraction/output/qwen_qwen3.7-plus_8/debug/images/w04-1-有刷直流电机驱动器及其应用_slide_19_img_1.png"
+    ],
+    "20": [
+      "extraction/output/qwen_qwen3.7-plus_8/debug/images/w04-1-有刷直流电机驱动器及其应用_slide_20_img_2.png",
+      "extraction/output/qwen_qwen3.7-plus_8/debug/images/w04-1-有刷直流电机驱动器及其应用_slide_20_img_4.jpeg",
+      "extraction/output/qwen_qwen3.7-plus_8/debug/images/w04-1-有刷直流电机驱动器及其应用_slide_20_img_5.png",
+      "extraction/output/qwen_qwen3.7-plus_8/debug/images/w04-1-有刷直流电机驱动器及其应用_slide_20_img_6.png",
+      "extraction/output/qwen_qwen3.7-plus_8/debug/images/w04-1-有刷直流电机驱动器及其应用_slide_20_vector_fallback.png"
+    ],
+    "21": [
+      "extraction/output/qwen_qwen3.7-plus_8/debug/images/w04-1-有刷直流电机驱动器及其应用_slide_21_vector_fallback.png"
+    ],
+    "23": [
+      "extraction/output/qwen_qwen3.7-plus_8/debug/images/w04-1-有刷直流电机驱动器及其应用_slide_23_img_1.png",
+      "extraction/output/qwen_qwen3.7-plus_8/debug/images/w04-1-有刷直流电机驱动器及其应用_slide_23_img_2.png",
+      "extraction/output/qwen_qwen3.7-plus_8/debug/images/w04-1-有刷直流电机驱动器及其应用_slide_23_img_3.png",
+      "extraction/output/qwen_qwen3.7-plus_8/debug/images/w04-1-有刷直流电机驱动器及其应用_slide_23_img_4.png",
+      "extraction/output/qwen_qwen3.7-plus_8/debug/images/w04-1-有刷直流电机驱动器及其应用_slide_23_img_5.png",
+      "extraction/output/qwen_qwen3.7-plus_8/debug/images/w04-1-有刷直流电机驱动器及其应用_slide_23_img_6.png"
+    ],
+    "3": [
+      "extraction/output/qwen_qwen3.7-plus_8/debug/images/w04-1-有刷直流电机驱动器及其应用_slide_3_img_1.png",
+      "extraction/output/qwen_qwen3.7-plus_8/debug/images/w04-1-有刷直流电机驱动器及其应用_slide_3_img_2.png",
+      "extraction/output/qwen_qwen3.7-plus_8/debug/images/w04-1-有刷直流电机驱动器及其应用_slide_3_img_3.png"
+    ],
+    "4": [
+      "extraction/output/qwen_qwen3.7-plus_8/debug/images/w04-1-有刷直流电机驱动器及其应用_slide_4_img_1.png",
+      "extraction/output/qwen_qwen3.7-plus_8/debug/images/w04-1-有刷直流电机驱动器及其应用_slide_4_img_2.jpg",
+      "extraction/output/qwen_qwen3.7-plus_8/debug/images/w04-1-有刷直流电机驱动器及其应用_slide_4_img_3.png"
+    ],
+    "5": [
+      "extraction/output/qwen_qwen3.7-plus_8/debug/images/w04-1-有刷直流电机驱动器及其应用_slide_5_img_1.png",
+      "extraction/output/qwen_qwen3.7-plus_8/debug/images/w04-1-有刷直流电机驱动器及其应用_slide_5_img_2.png"
+    ],
+    "6": [
+      "extraction/output/qwen_qwen3.7-plus_8/debug/images/w04-1-有刷直流电机驱动器及其应用_slide_6_img_1.png"
+    ],
+    "7": [
+      "extraction/output/qwen_qwen3.7-plus_8/debug/images/w04-1-有刷直流电机驱动器及其应用_slide_7_img_1.png",
+      "extraction/output/qwen_qwen3.7-plus_8/debug/images/w04-1-有刷直流电机驱动器及其应用_slide_7_img_2.png"
+    ],
+    "9": [
+      "extraction/output/qwen_qwen3.7-plus_8/debug/images/w04-1-有刷直流电机驱动器及其应用_slide_9_vector_fallback.png"
+    ]
+  },
+  "vector_conversion_failures": [
+    {
+      "slide_num": 11,
+      "source_path": "extraction/output/qwen_qwen3.7-plus_8/debug/images/w04-1-有刷直流电机驱动器及其应用_slide_11_img_1.wmf",
+      "reason": "single_vector_conversion_failed"
+    },
+    {
+      "slide_num": 20,
+      "source_path": "extraction/output/qwen_qwen3.7-plus_8/debug/images/w04-1-有刷直流电机驱动器及其应用_slide_20_img_1.wmf",
+      "reason": "single_vector_conversion_failed"
+    },
+    {
+      "slide_num": 20,
+      "source_path": "extraction/output/qwen_qwen3.7-plus_8/debug/images/w04-1-有刷直流电机驱动器及其应用_slide_20_img_3.wmf",
+      "reason": "single_vector_conversion_failed"
+    },
+    {
+      "slide_num": 21,
+      "source_path": "extraction/output/qwen_qwen3.7-plus_8/debug/images/w04-1-有刷直流电机驱动器及其应用_slide_21_img_1.wmf",
+      "reason": "single_vector_conversion_failed"
+    },
+    {
+      "slide_num": 21,
+      "source_path": "extraction/output/qwen_qwen3.7-plus_8/debug/images/w04-1-有刷直流电机驱动器及其应用_slide_21_img_2.wmf",
+      "reason": "single_vector_conversion_failed"
+    },
+    {
+      "slide_num": 21,
+      "source_path": "extraction/output/qwen_qwen3.7-plus_8/debug/images/w04-1-有刷直流电机驱动器及其应用_slide_21_img_3.wmf",
+      "reason": "single_vector_conversion_failed"
+    },
+    {
+      "slide_num": 9,
+      "source_path": "extraction/output/qwen_qwen3.7-plus_8/debug/images/w04-1-有刷直流电机驱动器及其应用_slide_9_img_1.wmf",
+      "reason": "single_vector_conversion_failed"
+    }
+  ],
+  "slide_fallbacks": {
+    "11": "extraction/output/qwen_qwen3.7-plus_8/debug/images/w04-1-有刷直流电机驱动器及其应用_slide_11_vector_fallback.png",
+    "20": "extraction/output/qwen_qwen3.7-plus_8/debug/images/w04-1-有刷直流电机驱动器及其应用_slide_20_vector_fallback.png",
+    "21": "extraction/output/qwen_qwen3.7-plus_8/debug/images/w04-1-有刷直流电机驱动器及其应用_slide_21_vector_fallback.png",
+    "9": "extraction/output/qwen_qwen3.7-plus_8/debug/images/w04-1-有刷直流电机驱动器及其应用_slide_9_vector_fallback.png"
+  },
+  "file_name": "w04-1-有刷直流电机驱动器及其应用",
+  "file_type": "pptx",
+  "file_path": "extraction/input/w04-1-有刷直流电机驱动器及其应用.pptx"
+}

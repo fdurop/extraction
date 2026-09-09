@@ -12,21 +12,18 @@ from datetime import datetime
 from PIL import Image
 
 from .knowledge_exporter import KnowledgeExporter
+from .path_config import extraction_path, resolve_workspace_path, workspace_relative
 
 
 def _relpath(value):
-    if not value:
-        return ""
-    try:
-        return os.path.relpath(str(value), os.getcwd()).replace(os.sep, "/")
-    except Exception:
-        return str(value).replace("\\", "/")
+    return workspace_relative(value)
 
 
 _PATH_KEYS = {
     "path", "paths", "file_path", "source_path", "source_image",
     "original_path", "enhanced_path", "image_path", "image_paths",
     "page_image_path", "review_image_path", "metadata_path", "matrix_path",
+    "recognition_image_path",
 }
 
 
@@ -38,7 +35,10 @@ def _normalize_paths(value, key=None):
     if isinstance(value, str):
         has_drive = bool(os.path.splitdrive(value)[0])
         explicit_path = has_drive or value.startswith(("\\\\", "/")) or value.startswith(
-            ("input/", "output/", "debug/", "kg_data/", "input\\", "output\\", "debug\\", "kg_data\\")
+            (
+                "extraction/", "input/", "output/", "debug/", "kg_data/",
+                "extraction\\", "input\\", "output\\", "debug\\", "kg_data\\",
+            )
         )
         if key in _PATH_KEYS or explicit_path:
             return _relpath(value)
@@ -48,7 +48,16 @@ def _normalize_paths(value, key=None):
 class OutputManager:
     """统一的输出管理器"""
     
-    def __init__(self, base_dir: str = "output", logger=None):
+    def __init__(
+        self,
+        base_dir: str = extraction_path("output"),
+        logger=None,
+        user_id: str = None,
+        username: str = None,
+        course_id: str = None,
+        course_name: str = None,
+        job_id: str = None,
+    ):
         """
         初始化输出管理器
         
@@ -63,7 +72,15 @@ class OutputManager:
         self.formula_review_dir = os.path.join(base_dir, "formula_review_items")
         self.table_review_dir = os.path.join(base_dir, "table_review_items")
         self.logger = logger
-        self.knowledge_exporter = KnowledgeExporter(base_dir=self.kg_dir, logger=logger)
+        self.knowledge_exporter = KnowledgeExporter(
+            base_dir=self.kg_dir,
+            logger=logger,
+            user_id=user_id,
+            username=username,
+            course_id=course_id,
+            course_name=course_name,
+            job_id=job_id,
+        )
         
         # 创建输出目录结构
         self.dirs = {
@@ -85,6 +102,10 @@ class OutputManager:
         """创建所有输出目录"""
         for dir_path in self.dirs.values():
             os.makedirs(dir_path, exist_ok=True)
+
+    def load_existing(self) -> Dict[str, int]:
+        """Load the formal checkpoint and return restored item counts."""
+        return self.knowledge_exporter.load_existing()
     
     def save_text(self, data: Dict[str, Any], filename: str, page_num: int):
         """
@@ -148,7 +169,7 @@ class OutputManager:
 
         source_path = data.get("enhanced_path") or data.get("original_path") or data.get("image_path")
         if source_path and not os.path.isabs(str(source_path)):
-            source_path = os.path.join(os.getcwd(), str(source_path).replace("/", os.sep))
+            source_path = str(resolve_workspace_path(source_path))
 
         preview_saved = False
         if source_path and os.path.exists(source_path):
@@ -359,7 +380,7 @@ class OutputManager:
         preview_file = os.path.join(review_dir, f"{base_name}.png")
         source_path = item.get("source_image")
         if source_path and not os.path.isabs(str(source_path)):
-            source_path = os.path.join(os.getcwd(), str(source_path).replace("/", os.sep))
+            source_path = str(resolve_workspace_path(source_path))
 
         review_item = dict(item)
         if source_path and os.path.exists(source_path):
@@ -397,9 +418,11 @@ class OutputManager:
         """
         if not code_blocks:
             return
-        
+
         try:
+            start_index = self.knowledge_exporter.next_code_index(filename, page_num)
             for idx, code_block in enumerate(code_blocks):
+                absolute_index = start_index + idx
                 language = code_block.get('language', 'txt').lower()
                 
                 # 根据语言确定文件扩展名
@@ -438,7 +461,7 @@ class OutputManager:
                 # 1. 保存纯源代码文件（不添加任何额外内容）
                 code_file = os.path.join(
                     self.dirs["code"],
-                    f"{filename}_page_{page_num+1}_code_{idx+1}{ext}"
+                    f"{filename}_page_{page_num+1}_code_{absolute_index+1}{ext}"
                 )
                 
                 # 只写入纯代码，不添加注释或其他内容
@@ -448,7 +471,7 @@ class OutputManager:
                 # 2. 保存JSON元数据（包含所有辅助信息）
                 metadata_file = os.path.join(
                     self.dirs["code"],
-                    f"{filename}_page_{page_num+1}_code_{idx+1}_metadata.json"
+                    f"{filename}_page_{page_num+1}_code_{absolute_index+1}_metadata.json"
                 )
                 
                 metadata = {
@@ -458,7 +481,7 @@ class OutputManager:
                     "description": code_block.get('description', ''),
                     "code_file": os.path.basename(code_file),
                     "page": page_num + 1,
-                    "index": idx + 1,
+                    "index": absolute_index + 1,
                     "timestamp": datetime.now().isoformat(),
                     "raw_response": code_block.get('raw_response', ''),
                     "backend": code_block.get('backend', ''),
@@ -471,7 +494,12 @@ class OutputManager:
                 
                 if self.logger:
                     self.logger.info(f"保存代码: {os.path.basename(code_file)} + metadata.json")
-            self.knowledge_exporter.add_code(code_blocks, filename, page_num)
+            self.knowledge_exporter.add_code(
+                code_blocks,
+                filename,
+                page_num,
+                start_index=start_index,
+            )
             
         except Exception as e:
             if self.logger:

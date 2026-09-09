@@ -1,0 +1,33 @@
+{
+  "original_path": "extraction/output/qwen_qwen3.7-plus_8/debug/images/w07-3-麦克纳姆轮小车_p4_img2.jpeg",
+  "enhanced_path": "extraction/output/qwen_qwen3.7-plus_8/debug/images/w07-3-麦克纳姆轮小车_p4_img2_enhanced.jpeg",
+  "description": "类型：照片\n图片展示了一个蓝色的麦克纳姆轮实物。主体为星形蓝色轮毂，中心有银色圆形安装盘及轴孔，盘面分布若干螺丝。轮毂外缘圆周方向均匀安装有多个黑色圆柱形小辊子，辊子通过金属轴固定，其轴线与轮毂旋转平面呈一定夹角（对应文中45°）。该结构直观展示了课程文本中描述的“轮毂”与“辊子”的空间装配关系及外观特征。",
+  "metadata": {
+    "generation": {
+      "method": "qwen_api",
+      "backend": "api",
+      "provider": "qwen",
+      "model": "qwen3.7-plus",
+      "status": "success",
+      "api_error": null
+    },
+    "review": {
+      "required": false,
+      "status": null,
+      "reason": null,
+      "course_relevant": true
+    }
+  },
+  "error": null,
+  "method": "qwen_api",
+  "backend": "api",
+  "provider": "qwen",
+  "model": "qwen3.7-plus",
+  "status": "success",
+  "api_error": null,
+  "indexable": true,
+  "review_required": false,
+  "review_reason": null,
+  "review_status": null,
+  "course_relevant": true
+}

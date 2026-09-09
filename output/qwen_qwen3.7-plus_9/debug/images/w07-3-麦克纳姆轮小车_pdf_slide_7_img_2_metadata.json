@@ -1,0 +1,33 @@
+{
+  "original_path": "extraction/output/qwen_qwen3.7-plus_9/debug/images/w07-3-麦克纳姆轮小车_p7_img3.png",
+  "enhanced_path": "extraction/output/qwen_qwen3.7-plus_9/debug/images/w07-3-麦克纳姆轮小车_p7_img3_enhanced.png",
+  "description": "类型：示意图\n图片展示了麦克纳姆轮小车的运动学分析模型（地面投影视图）。图中包含四个呈矩形分布的轮子模块，分别标记为M1、M2、M3、M4，对应位置点A、B、C、D。几何中心标记为CENTER，标有质心平动速度矢量vc（橙色）和质心角速度矢量ωc（蓝色旋转箭头）。每个轮子处绘制了速度矢量分解图，包含轮子线速度vi（红色）、质心速度vc（橙色）及旋转分速度ωc×r（蓝色虚线）。图中标注了轮组横向间距rx和纵向间距ry。配合文字列出了正逆运动学定义、第4号轮的速度投影公式、线速度与角速度关系式以及刚体速度合成通用公式vi=vc+ωc×ri。",
+  "metadata": {
+    "generation": {
+      "method": "qwen_api",
+      "backend": "api",
+      "provider": "qwen",
+      "model": "qwen3.7-plus",
+      "status": "success",
+      "api_error": null
+    },
+    "review": {
+      "required": false,
+      "status": null,
+      "reason": null,
+      "course_relevant": true
+    }
+  },
+  "error": null,
+  "method": "qwen_api",
+  "backend": "api",
+  "provider": "qwen",
+  "model": "qwen3.7-plus",
+  "status": "success",
+  "api_error": null,
+  "indexable": true,
+  "review_required": false,
+  "review_reason": null,
+  "review_status": null,
+  "course_relevant": true
+}

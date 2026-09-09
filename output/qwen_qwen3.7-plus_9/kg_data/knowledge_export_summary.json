@@ -1,0 +1,21 @@
+{
+  "user_id": "default_user",
+  "username": "default_user",
+  "course_id": "default_course",
+  "course_name": "default_course",
+  "job_id": "",
+  "documents": 17,
+  "pages": 271,
+  "content_items": 682,
+  "nodes": 953,
+  "vectors": {
+    "status": "success",
+    "backend": "qwen_api/qwen3.7-text-embedding",
+    "model": "qwen3.7-text-embedding",
+    "dim": 1024,
+    "count": 953,
+    "matrix_path": "extraction/output/qwen_qwen3.7-plus_9/kg_data/vectors/vector_matrix.npy",
+    "metadata_path": "extraction/output/qwen_qwen3.7-plus_9/kg_data/vectors/vector_index.json"
+  },
+  "updated_at": "2026-09-09T21:29:58.891826"
+}

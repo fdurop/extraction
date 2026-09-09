@@ -1,0 +1,33 @@
+{
+  "page_num": 7,
+  "raw_text": "机电系统原理及实践—— 四轮小车\n机电智控实验室tangguoan@fudan.edu.cn mmguo@fudan.edu.cn\n四轮统一控制\n只能进退，不能转向。\n四个独立电机的作用无\n法充分发挥。\n驱动方案一：固态继电器4 路+ 1 路\n15-8\n接线端子座\nDC+\nDC-\nIN1\nIN2\nIN3\nIN4\nIN5\nIN6\nIN7\nIN8\nA1\nB1\nA2\nB2\nA3\nB3\nA4\nB4\nA5\nB5\nA6\nB6\nA7\nB7\nA8\nB8\n24V/PWM\nDC12V\nMCU模块\nD9~\nD6\nD5\nD4\nD3\nGND\n5V\n固态继电器模块\n有刷直\n流电机\n驱动器\n室 复旦大\n智控实验室 复旦大学 机电\n学 机电智控实验室 复旦大学 机电智控实验\n复旦大学 机电智控实验室 复旦大学 机电智控实验室 复旦\n大学 机电智控实验室 复旦大学 机电智控实验室 复旦大学 机电\n电智控实验室 复旦大学 机电智控实验室 复旦大学 机电智控实\n验室 复旦大学 机电智控实验室 复旦大学 机电智控实验室 \n旦大学 机电智控实验室 复旦大学 机电智控\n电智控实验室 复旦大学 \n验室 复\n",
+  "cleaned_text": "四轮统一控制\n只能进退，不能转向。\n四个独立电机的作用无\n法充分发挥。\n驱动方案一：固态继电器4 路+ 1 路\n接线端子座\nDC+\nDC-\nIN1\nIN2\nIN3\nIN4\nIN5\nIN6\nIN7\nIN8\nA1\nB1\nA2\nB2\nA3\nB3\nA4\nB4\nA5\nB5\nA6\nB6\nA7\nB7\nA8\nB8\n24V/PWM\nDC12V\nMCU模块\nD9~\nD6\nD5\nD4\nD3\nGND\n5V\n固态继电器模块\n有刷直\n流电机\n驱动器",
+  "key_points": [
+    "只能进退，不能转向。",
+    "法充分发挥。",
+    "DC+",
+    "DC-",
+    "IN1",
+    "IN2",
+    "IN3",
+    "IN4",
+    "IN5",
+    "IN6"
+  ],
+  "technical_terms": [
+    "DC",
+    "DC12V",
+    "GND",
+    "PWM",
+    "四个独立电机",
+    "四轮统一控制"
+  ],
+  "has_images": false,
+  "image_count": 0,
+  "image_paths": [],
+  "metadata": {
+    "char_count": 491,
+    "word_count": 92,
+    "line_count": 60
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "original_path": "extraction/output/qwen_qwen3.7-plus_9/debug/images/w01-1-课程简介_p10_img2.jpeg",
+  "enhanced_path": "extraction/output/qwen_qwen3.7-plus_9/debug/images/w01-1-课程简介_p10_img2_enhanced.jpeg",
+  "description": "类型：照片\n图片展示了一块绿色的Arduino UNO开发板实物。板面中央印有白色的无限符号Logo及“UNO”、“ARDUINO”字样。左侧可见银色的USB接口和黑色的圆形电源插孔。底部边缘排列着标有“POWER”、“ANALOG IN”及A0至A5的黑色引脚插座。右侧边缘为数字引脚区，印有“DIGITAL (PWM~)”及0至13等编号。板面上分布着黑色的集成电路芯片、晶振、电容等电子元器件。该硬件对应课程教学内容中的“单片机”与“嵌入式开发”知识点。",
+  "metadata": {
+    "generation": {
+      "method": "qwen_api",
+      "backend": "api",
+      "provider": "qwen",
+      "model": "qwen3.7-plus",
+      "status": "success",
+      "api_error": null
+    },
+    "review": {
+      "required": false,
+      "status": null,
+      "reason": null,
+      "course_relevant": true
+    }
+  },
+  "error": null,
+  "method": "qwen_api",
+  "backend": "api",
+  "provider": "qwen",
+  "model": "qwen3.7-plus",
+  "status": "success",
+  "api_error": null,
+  "indexable": true,
+  "review_required": false,
+  "review_reason": null,
+  "review_status": null,
+  "course_relevant": true
+}

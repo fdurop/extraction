@@ -1,0 +1,25 @@
+{
+  "page_num": 11,
+  "raw_text": "机电系统原理及实践—— 直流电机原理\n机电智控实验室tangguoan@fudan.edu.cn mmguo@fudan.edu.cn\n§3 无刷直流电机原理\n20-12\n驱动方式——FOC\n磁场定向控制（field-oriented control），即矢量控制。\n该表由AI生成\n室 复旦大\n智控实验室 复旦大学 机电\n学 机电智控实验室 复旦大学 机电智控实验\n复旦大学 机电智控实验室 复旦大学 机电智控实验室 复旦\n大学 机电智控实验室 复旦大学 机电智控实验室 复旦大学 机电\n电智控实验室 复旦大学 机电智控实验室 复旦大学 机电智控实\n验室 复旦大学 机电智控实验室 复旦大学 机电智控实验室 \n旦大学 机电智控实验室 复旦大学 机电智控\n电智控实验室 复旦大学 \n验室 复\n",
+  "cleaned_text": "§3 无刷直流电机原理\n驱动方式——FOC\n磁场定向控制（field-oriented control），即矢量控制。\n该表由AI生成",
+  "key_points": [
+    "磁场定向控制（field-oriented control），即矢量控制。"
+  ],
+  "technical_terms": [
+    "FOC",
+    "即矢量控制",
+    "无刷直流电机",
+    "磁场定向控制"
+  ],
+  "has_images": true,
+  "image_count": 2,
+  "image_paths": [
+    "extraction/output/qwen_qwen3.7-plus_9/debug/images/w03-1-直流电机原理_p12_img2.png",
+    "extraction/output/qwen_qwen3.7-plus_9/debug/images/w03-1-直流电机原理_p12_img3.png"
+  ],
+  "metadata": {
+    "char_count": 348,
+    "word_count": 49,
+    "line_count": 18
+  }
+}

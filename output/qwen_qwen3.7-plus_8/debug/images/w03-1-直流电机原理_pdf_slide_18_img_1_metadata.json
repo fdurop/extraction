@@ -1,0 +1,33 @@
+{
+  "original_path": "extraction/output/qwen_qwen3.7-plus_8/debug/images/w03-1-直流电机原理_p18_img2.jpeg",
+  "enhanced_path": "extraction/output/qwen_qwen3.7-plus_8/debug/images/w03-1-直流电机原理_p18_img2_enhanced.jpeg",
+  "description": "类型：照片\n图片展示了一套步进电机系统实物，左侧为黑色方形步进电机，具有金属输出轴和安装法兰；右侧为配套的黑色步进电机驱动器，面板印有“Microstep Driver DM542”字样。驱动器表面印有电流设置表（Current Table）和细分设置表（Pulse/rev Table）。右侧边缘设有绿色接线端子，信号区标注有PUL+/-、DIR+/-、ENA+/-，电源及电机连接区标注有V+、V-、A+、A-、B+、B-及DC 18-50V。上方设有红绿指示灯及蓝色拨码开关。",
+  "metadata": {
+    "generation": {
+      "method": "qwen_api",
+      "backend": "api",
+      "provider": "qwen",
+      "model": "qwen3.7-plus",
+      "status": "success",
+      "api_error": null
+    },
+    "review": {
+      "required": false,
+      "status": null,
+      "reason": null,
+      "course_relevant": true
+    }
+  },
+  "error": null,
+  "method": "qwen_api",
+  "backend": "api",
+  "provider": "qwen",
+  "model": "qwen3.7-plus",
+  "status": "success",
+  "api_error": null,
+  "indexable": true,
+  "review_required": false,
+  "review_reason": null,
+  "review_status": null,
+  "course_relevant": true
+}

@@ -1,0 +1,33 @@
+{
+  "original_path": "extraction/output/qwen_qwen3.7-plus_9/debug/images/w15-2-机器人运动学及其应用_p15_img8.jpeg",
+  "enhanced_path": "extraction/output/qwen_qwen3.7-plus_9/debug/images/w15-2-机器人运动学及其应用_p15_img8_enhanced.jpeg",
+  "description": "类型：示意图\n图片展示了FOC电流环控制系统的方框图，信号流向从左至右。输入端为“设定角度”，与反馈的“当前角度”在求和点比较，经“位置环Kp”放大后进入“速度限制”模块。输出与反馈的“当前速度”在第二个求和点比较，进入“速度环Kp”。此处存在并联支路：主路直接通过，另一路经“S”（注：S为速度解算）和增益“Ki”处理后汇入。两路信号叠加后进入“力限保护”模块（标注黑限Iq (Iq_m0)及周限Id=0 (Id_m0)），最终输入“FOC电流环”模块并输出。图中明确标注了位置模式对应运动学控制，运控模式对应动力学控制及PID控制。",
+  "metadata": {
+    "generation": {
+      "method": "qwen_api",
+      "backend": "api",
+      "provider": "qwen",
+      "model": "qwen3.7-plus",
+      "status": "success",
+      "api_error": null
+    },
+    "review": {
+      "required": false,
+      "status": null,
+      "reason": null,
+      "course_relevant": true
+    }
+  },
+  "error": null,
+  "method": "qwen_api",
+  "backend": "api",
+  "provider": "qwen",
+  "model": "qwen3.7-plus",
+  "status": "success",
+  "api_error": null,
+  "indexable": true,
+  "review_required": false,
+  "review_reason": null,
+  "review_status": null,
+  "course_relevant": true
+}

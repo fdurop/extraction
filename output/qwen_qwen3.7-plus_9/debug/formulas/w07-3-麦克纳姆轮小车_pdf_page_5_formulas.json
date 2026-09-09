@@ -1,0 +1,39 @@
+{
+  "page": 5,
+  "formula_count": 1,
+  "accepted_count": 1,
+  "review_count": 0,
+  "formulas": [
+    {
+      "source_image": "extraction/output/qwen_qwen3.7-plus_9/debug/images/w07-3-麦克纳姆轮小车_p5_img2.png",
+      "source_type": "image_vlm",
+      "extraction_method": "qwen_api_formula",
+      "backend": "api",
+      "provider": "qwen",
+      "model": "qwen3.7-plus",
+      "image_index": 0,
+      "raw_response": "{\n  \"has_formula\": true,\n  \"formulas\": [\n    {\n      \"latex\": \"\\\\gamma=45^\\\\circ\",\n      \"uncertain_symbols\": [],\n      \"is_complete_formula\": true,\n      \"confidence\": 1.0\n    }\n  ]\n}",
+      "parse_error": null,
+      "partial_response": false,
+      "review_reason": null,
+      "latex": "\\gamma=45^\\circ",
+      "uncertain_symbols": [],
+      "is_complete_formula": true,
+      "confidence": 1.0,
+      "plain_text": "\\gamma=45^\\circ",
+      "name": "",
+      "meaning": "",
+      "description": "",
+      "symbols": [],
+      "conditions": [],
+      "validation_issues": [],
+      "validation_status": "passed",
+      "review_required": false,
+      "review_status": null,
+      "indexable": true,
+      "formula_id": "w07-3-麦克纳姆轮小车_pdf_page_5_formula_1",
+      "page_num": 5
+    }
+  ],
+  "timestamp": "2026-09-09T21:11:45.328659"
+}
