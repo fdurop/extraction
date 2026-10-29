@@ -136,8 +136,11 @@ assert.deepEqual(empty,{nodes:[],edges:[]});
 """)
 
     def test_5000_nodes_10000_edges_clip_to_a_small_local_view_without_global_edge_scan(self):
-        fixture = ROOT / "runtime/course_scale/2026-10-24/synthetic_course_5000_nodes_50_documents.json"
-        self.js("const fs=require('node:fs');const raw=JSON.parse(fs.readFileSync(" + repr(str(fixture)) + ",'utf8'));\n" + """
+        generator = ROOT / "scripts/benchmark_graph_map_layout.js"
+        self.js("const generated=require(" + repr(str(generator)) + ").syntheticCourse(5000);\n" + """
+const raw={simulation:{real_teaching_result:false},documents:Array.from({length:50},(_,i)=>({document_id:'simulation-doc'+i})),
+ nodes:generated.nodes.map(node=>({...node,type:'knowledge',suggested_teaching_role:node.displayTier>=3?'detail':'learning',
+ importance_level:node.displayTier%2===1?1:2})),links:generated.links};
 assert.equal(raw.simulation.real_teaching_result,false);assert.equal(raw.documents.length,50);
 const before=JSON.stringify(raw),{view,model,spatial}=build(raw);
 assert.equal(view.nodes.length,5000);assert.equal(view.links.length,10000);

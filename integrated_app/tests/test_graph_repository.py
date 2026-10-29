@@ -15,7 +15,7 @@ from backend.models.db import db
 
 class RepositoryTests(unittest.TestCase):
     def setUp(self):
-        self.tmp = tempfile.TemporaryDirectory(dir=ROOT / "runtime")
+        self.tmp = tempfile.TemporaryDirectory()
         self.path = Path(self.tmp.name)
         (self.path / "courses.json").write_text(json.dumps([{"id": "a", "name": "课程A"}, {"id": "b", "name": "课程B"}]), encoding="utf-8")
         self.repo = GraphRepository({"APP_DATA_DIR": str(self.path), "KG_GRAPH_PATH": str(self.path / "graphs.json"), "DATABASE_MODE": "local"})

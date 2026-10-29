@@ -38,7 +38,7 @@ class StorageTests(unittest.TestCase):
                 driver_for(uri, "neo4j", "test-only")
 
     def test_same_data_directory_cannot_start_two_service_instances(self):
-        with tempfile.TemporaryDirectory(dir=ROOT / "runtime") as path:
+        with tempfile.TemporaryDirectory() as path:
             with InstanceLock(path):
                 with self.assertRaises(RuntimeError):
                     with InstanceLock(path):

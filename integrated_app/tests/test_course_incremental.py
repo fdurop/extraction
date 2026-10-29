@@ -90,7 +90,7 @@ class IncrementalCourseTests(unittest.TestCase):
     def test_two_document_publish_keeps_materials_other_concepts_and_teacher_edits(self):
         # This is a real local repository publish/review/publish cycle. The
         # cumulative native-export equivalent retains both PDFs' actual nodes.
-        with tempfile.TemporaryDirectory(dir=ROOT / "runtime") as temporary:
+        with tempfile.TemporaryDirectory() as temporary:
             directory = Path(temporary)
             (directory / "courses.json").write_text(json.dumps([
                 {"id": "course-a", "name": "Course A"}, {"id": "course-b", "name": "Course B"}

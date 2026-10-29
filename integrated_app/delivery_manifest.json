@@ -419,6 +419,10 @@
       "sha256": "22bee20d8ca1e8a2433c101a84189afdb91b83c7e7a85919f301d9a02b3f1e6f"
     },
     {
+      "path": "scripts/benchmark_graph_map_layout.js",
+      "sha256": "34e8f632389a854116e2841166c953fef3e480991722baff28edc3dd5842110a"
+    },
+    {
       "path": "scripts/pipeline_worker.py",
       "sha256": "fb05a0d7476d798750cd227e200745f9ed607d402029af10f573121f7eca0d5a"
     },
@@ -448,7 +452,7 @@
     },
     {
       "path": "tests/test_course_incremental.py",
-      "sha256": "99fa8288f4205165e111650b6a5d1643ab797f89f27f6db9bf37512379012652"
+      "sha256": "cc2ce3b9734ee5ae2ec0a3dcb9f2c611682af37d30a0d2d29b6365ddc10af2e0"
     },
     {
       "path": "tests/test_frontend_contract.py",
@@ -480,7 +484,7 @@
     },
     {
       "path": "tests/test_graph_repository.py",
-      "sha256": "f3cdea00e3781cbf3707607a02e8deb7bd7b8a9ace1ded57f7d63e7c3b71a850"
+      "sha256": "9dbfcd12bc41d65792a43c4e35b03fa9a0c4fddef674c480bc75e0142dbc6a4e"
     },
     {
       "path": "tests/test_graph_semantic_zoom.py",
@@ -488,7 +492,7 @@
     },
     {
       "path": "tests/test_graph_viewport_subset.py",
-      "sha256": "10c856cc76552b7050e872f79e9cb16df70ce02f7dded819ad8a53aaf5af528e"
+      "sha256": "283839fba8721aaf0217e3e38f47c151165cae4b2871a193360fdbce8dd18d42"
     },
     {
       "path": "tests/test_jobs_api.py",
@@ -504,8 +508,8 @@
     },
     {
       "path": "tests/test_storage_identity.py",
-      "sha256": "c92a25c61e8776ff5c64478e2e5c4cd976421c7dc634a9a3b80ba1890551f8ba"
+      "sha256": "a242e2ef181e783997af3238b4d02b5d7fa7ac817020607574093198e5957541"
     }
   ],
-  "updated_at": "2026-10-25"
+  "updated_at": "2026-10-29"
 }
